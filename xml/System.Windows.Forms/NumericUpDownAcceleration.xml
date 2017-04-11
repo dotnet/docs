@@ -1,0 +1,94 @@
+<Type Name="NumericUpDownAcceleration" FullName="System.Windows.Forms.NumericUpDownAcceleration">
+  <TypeSignature Language="C#" Value="public class NumericUpDownAcceleration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAcceleration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAcceleration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information specifying how acceleration should be performed on a spin box (also known as an up-down control) when the up or down button is pressed for specified time period.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.NumericUpDownAcceleration> object is used by the <xref:System.Windows.Forms.NumericUpDown> control to optionally provide acceleration when incrementing or decrementing the control through a large quantity of numbers.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDownAcceleration> class. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+  
+ [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+ [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NumericUpDownAcceleration (int seconds, decimal increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seconds, valuetype System.Decimal increment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAcceleration.#ctor(System.Int32,System.Decimal)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="seconds" Type="System.Int32" />
+        <Parameter Name="increment" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="seconds">The number of seconds the up or down button is pressed before the acceleration starts.</param>
+        <param name="increment">The quantity the value displayed in the control should be incremented or decremented during acceleration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="seconds" /> or <paramref name="increment" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public decimal Increment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Increment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Increment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the quantity to increment or decrement the displayed value during acceleration.</summary>
+        <value>The quantity to increment or decrement the displayed value during acceleration.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Seconds">
+      <MemberSignature Language="C#" Value="public int Seconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Seconds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAcceleration.Seconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of seconds the up or down button must be pressed before the acceleration starts.</summary>
+        <value>Gets or sets the number of seconds the up or down button must be pressed before the acceleration starts.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

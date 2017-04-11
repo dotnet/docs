@@ -1,0 +1,563 @@
+<Type Name="SignatureTypeCode" FullName="System.Reflection.Metadata.SignatureTypeCode">
+  <TypeSignature Language="C#" Value="public enum SignatureTypeCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureTypeCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureTypeCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Array">
+      <MemberSignature Language="C#" Value="Array" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Array = unsigned int8(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Array" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Boolean = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ByReference">
+      <MemberSignature Language="C#" Value="ByReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode ByReference = unsigned int8(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.ByReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Byte">
+      <MemberSignature Language="C#" Value="Byte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Byte = unsigned int8(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Byte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Char">
+      <MemberSignature Language="C#" Value="Char" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Char = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Char" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Double = unsigned int8(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionPointer">
+      <MemberSignature Language="C#" Value="FunctionPointer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode FunctionPointer = unsigned int8(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.FunctionPointer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericMethodParameter">
+      <MemberSignature Language="C#" Value="GenericMethodParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode GenericMethodParameter = unsigned int8(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.GenericMethodParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeInstance">
+      <MemberSignature Language="C#" Value="GenericTypeInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode GenericTypeInstance = unsigned int8(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.GenericTypeInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeParameter">
+      <MemberSignature Language="C#" Value="GenericTypeParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode GenericTypeParameter = unsigned int8(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.GenericTypeParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int16">
+      <MemberSignature Language="C#" Value="Int16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Int16 = unsigned int8(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Int16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int32">
+      <MemberSignature Language="C#" Value="Int32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Int32 = unsigned int8(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Int32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int64">
+      <MemberSignature Language="C#" Value="Int64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Int64 = unsigned int8(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Int64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntPtr">
+      <MemberSignature Language="C#" Value="IntPtr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode IntPtr = unsigned int8(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.IntPtr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Invalid = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="Object" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Object = unsigned int8(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Object" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptionalModifier">
+      <MemberSignature Language="C#" Value="OptionalModifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode OptionalModifier = unsigned int8(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.OptionalModifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pinned">
+      <MemberSignature Language="C#" Value="Pinned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Pinned = unsigned int8(69)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Pinned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pointer">
+      <MemberSignature Language="C#" Value="Pointer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Pointer = unsigned int8(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Pointer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredModifier">
+      <MemberSignature Language="C#" Value="RequiredModifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode RequiredModifier = unsigned int8(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.RequiredModifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SByte">
+      <MemberSignature Language="C#" Value="SByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode SByte = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.SByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sentinel">
+      <MemberSignature Language="C#" Value="Sentinel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Sentinel = unsigned int8(65)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Sentinel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Single = unsigned int8(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode String = unsigned int8(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SZArray">
+      <MemberSignature Language="C#" Value="SZArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode SZArray = unsigned int8(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.SZArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypedReference">
+      <MemberSignature Language="C#" Value="TypedReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode TypedReference = unsigned int8(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.TypedReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeHandle">
+      <MemberSignature Language="C#" Value="TypeHandle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode TypeHandle = unsigned int8(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.TypeHandle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt16">
+      <MemberSignature Language="C#" Value="UInt16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode UInt16 = unsigned int8(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.UInt16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt32">
+      <MemberSignature Language="C#" Value="UInt32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode UInt32 = unsigned int8(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.UInt32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt64">
+      <MemberSignature Language="C#" Value="UInt64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode UInt64 = unsigned int8(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.UInt64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UIntPtr">
+      <MemberSignature Language="C#" Value="UIntPtr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode UIntPtr = unsigned int8(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.UIntPtr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Void">
+      <MemberSignature Language="C#" Value="Void" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureTypeCode Void = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureTypeCode.Void" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,118 @@
+<Type Name="PropertyEntry" FullName="System.Web.UI.PropertyEntry">
+  <TypeSignature Language="C#" Value="public abstract class PropertyEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyEntry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PropertyEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Acts as the base class for all property entry classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.PropertyEntry> is the base class for all property entry classes; you cannot create an instance of this class. It defines fields that are used in the derived classes <xref:System.Web.UI.BoundPropertyEntry>, <xref:System.Web.UI.BuilderPropertyEntry>, <xref:System.Web.UI.ComplexPropertyEntry>, <xref:System.Web.UI.TemplatePropertyEntry>, and <xref:System.Web.UI.SimplePropertyEntry>.  
+  
+ The page parser uses property entry classes during parsing to represent expressions found within server control tags.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeclaringType">
+      <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PropertyEntry.DeclaringType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the class that declares this member.</summary>
+        <value>The <see cref="T:System.Type" /> that declares this member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PropertyEntry.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value pertaining to the filter portion of an expression.</summary>
+        <value>A <see cref="T:System.String" /> containing the value of the filter on an expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PropertyEntry.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property name that the expression applies to.</summary>
+        <value>A <see cref="T:System.String" /> containing the property name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyInfo">
+      <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo PropertyInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.PropertyInfo PropertyInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PropertyEntry.PropertyInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object containing attributes of the property the expression applies to.</summary>
+        <value>A <see cref="T:System.Reflection.PropertyInfo" /> containing the attributes of the property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PropertyEntry.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the entry.</summary>
+        <value>The <see cref="T:System.Type" /> of the entry.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,197 @@
+<Type Name="DesignTimeParseData" FullName="System.Web.UI.DesignTimeParseData">
+  <TypeSignature Language="C#" Value="public sealed class DesignTimeParseData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignTimeParseData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DesignTimeParseData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information to the parser during design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DesignTimeParseData> class is used to provide design-time parameters for several methods in the <xref:System.Web.UI.DesignTimeTemplateParser> class, which parses a template into a set of controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignTimeParseData (System.ComponentModel.Design.IDesignerHost designerHost, string parseText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesignerHost designerHost, string parseText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeParseData.#ctor(System.ComponentModel.Design.IDesignerHost,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designerHost" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="parseText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="designerHost">The object for managing designer transactions and components.</param>
+        <param name="parseText">The text to parse during design time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DesignTimeParseData" /> class without a specified filter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignTimeParseData (System.ComponentModel.Design.IDesignerHost designerHost, string parseText, string filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesignerHost designerHost, string parseText, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeParseData.#ctor(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designerHost" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="parseText" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="designerHost">The object for managing designer transactions and components.</param>
+        <param name="parseText">The text to parse during design time.</param>
+        <param name="filter">The filter to apply during design time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DesignTimeParseData" /> class with the specified filter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parseText" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindingHandler">
+      <MemberSignature Language="C#" Value="public EventHandler DataBindingHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler DataBindingHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.DataBindingHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the delegate for data binding at design time.</summary>
+        <value>An <see cref="T:System.EventHandler" /> for data binding at design time.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerHost">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.IDesignerHost DesignerHost { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.IDesignerHost DesignerHost" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.DesignerHost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.IDesignerHost</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object for managing designer transactions and components.</summary>
+        <value>An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> object for managing designer transactions and components.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentUrl">
+      <MemberSignature Language="C#" Value="public string DocumentUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DocumentUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.DocumentUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL at which the document is located.</summary>
+        <value>A <see cref="T:System.String" /> containing the URL.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the filter used at design time.</summary>
+        <value>A <see cref="T:System.String" /> representing the filter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseText">
+      <MemberSignature Language="C#" Value="public string ParseText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParseText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.ParseText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text to parse.</summary>
+        <value>A <see cref="T:System.String" /> containing the text to parse.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldApplyTheme">
+      <MemberSignature Language="C#" Value="public bool ShouldApplyTheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShouldApplyTheme" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.ShouldApplyTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a theme should be applied.</summary>
+        <value>
+          <see langword="true" /> if a theme should be applied; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserControlRegisterEntries">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection UserControlRegisterEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection UserControlRegisterEntries" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DesignTimeParseData.UserControlRegisterEntries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of information about user control registrations.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the tag prefix, tag name, and location of the user control. The collection is populated automatically by the .NET Framework at parse time.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

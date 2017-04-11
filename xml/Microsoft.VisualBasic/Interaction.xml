@@ -1,0 +1,1268 @@
+<Type Name="Interaction" FullName="Microsoft.VisualBasic.Interaction">
+  <TypeSignature Language="C#" Value="public sealed class Interaction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Interaction extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Interaction" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="Interaction" /> module contains procedures used to interact with objects, applications, and systems.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic language keywords and run-time library members that run other programs, call a method or property, sound a beep from the computer, provide a command-line string, manipulate COM objects, and control dialog boxes.  
+  
+   
+  
+## Examples  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=fullName> as the second argument opens the application in normal size and gives it the focus.  
+  
+```  
+Dim procID As Integer  
+' Run calculator.  
+procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)  
+' The preceding path is for Windows XP.  
+' The Windows 2000 path is C:\WINNT\system32\calc.exe.  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppActivate">
+      <MemberSignature Language="C#" Value="public static void AppActivate (int ProcessId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void AppActivate(int32 ProcessId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.AppActivate(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProcessId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ProcessId">
+          <see langword="Integer" /> specifying the Win32 process ID number assigned to this process. You can use the ID returned by the <see cref="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />, provided it is not zero.</param>
+        <summary>Activates an application that is already running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use `AppActivate` to bring an application's active window into focus. You might not have a handle or a reference to the active window, or even know which window is active at a given moment. In such a case, you cannot use the <xref:System.Windows.Forms.Control.Focus%2A> method.  
+  
+ The `AppActivate` function changes the focus to the named application or window but does not affect whether it is maximized or minimized. Focus moves away from the activated application window when the user takes some action to change the focus or close the window. You can use the `Shell` function to start an application and set the window style.  
+  
+ If you use the `Title` parameter, `AppActivate` uses a case-insensitive comparison but otherwise requires an exact match with the contents of the title bar. It first looks through the top-level windows and then through the child windows. If it cannot find a match, it throws an <xref:System.ArgumentException>.  
+  
+ You can use `AppActivate` only with processes that own windows. Most console applications do not own windows, which means that they do not appear in the list of processes that `AppActivate` searches. When running from a console application, the system creates a separate process to run the application and returns the output to the console process. Consequently, when you request the current process ID, you get the process ID of this separate process, rather than the console application's process ID.  
+  
+ At run time, the `AppActivate` function activates any running application with a title that matches `Title` or with a process ID that matches `ProcessId`. If there is no exact match, it activates any application whose title string ends with `Title`. If there is more than one application named `Title`, the `AppActivate` function arbitrarily chooses one to activate.  
+  
+> [!NOTE]
+>  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
+  
+   
+  
+## Examples  
+ This example illustrates various uses of the `AppActivate` function to activate an application window. If a Notepad process is not running, the example throws an <xref:System.ArgumentException>. The `Shell` procedure assumes the applications are in the paths specified.  
+  
+ [!code-vb[VbVbalrCatRef#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppActivate">
+      <MemberSignature Language="C#" Value="public static void AppActivate (string Title);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void AppActivate(string Title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.AppActivate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Title">
+          <see langword="String" /> expression specifying the title in the title bar of the application you want to activate. You can use the title assigned to the application when it was launched.</param>
+        <summary>Activates an application that is already running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use `AppActivate` to bring an application's active window into focus. You might not have a handle or a reference to the active window, or even know which window is active at a given moment. In such a case, you cannot use the <xref:System.Windows.Forms.Control.Focus%2A> method.  
+  
+ The `AppActivate` function changes the focus to the named application or window but does not affect whether it is maximized or minimized. Focus moves away from the activated application window when the user takes some action to change the focus or close the window. You can use the `Shell` function to start an application and set the window style.  
+  
+ If you use the `Title` parameter, `AppActivate` uses a case-insensitive comparison but otherwise requires an exact match with the contents of the title bar. It first looks through the top-level windows and then through the child windows. If it cannot find a match, it throws an <xref:System.ArgumentException>.  
+  
+ You can use `AppActivate` only with processes that own windows. Most console applications do not own windows, which means that they do not appear in the list of processes that `AppActivate` searches. When running from a console application, the system creates a separate process to run the application and returns the output to the console process. Consequently, when you request the current process ID, you get the process ID of this separate process, rather than the console application's process ID.  
+  
+ At run time, the `AppActivate` function activates any running application with a title that matches `Title` or with a process ID that matches `ProcessId`. If there is no exact match, it activates any application whose title string ends with `Title`. If there is more than one application named `Title`, the `AppActivate` function arbitrarily chooses one to activate.  
+  
+> [!NOTE]
+>  The `AppActivate` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission> .  
+  
+   
+  
+## Examples  
+ This example illustrates various uses of the `AppActivate` function to activate an application window. If a Notepad process is not running, the example throws an <xref:System.ArgumentException>. The `Shell` procedure assumes the applications are in the paths specified.  
+  
+ [!code-vb[VbVbalrCatRef#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Beep">
+      <MemberSignature Language="C#" Value="public static void Beep ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Beep() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Beep" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sounds a tone through the computer's speaker.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pitch and duration of the beep depend on your hardware and system software and therefore vary among computers.  
+  
+> [!NOTE]
+>  The `Beep` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
+  
+   
+  
+## Examples  
+ This example uses the `Beep` function to sound a tone through the computer's speaker.  
+  
+ [!code-vb[VbVbalrCatRef#59](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#59)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallByName">
+      <MemberSignature Language="C#" Value="public static object CallByName (object ObjectRef, string ProcName, Microsoft.VisualBasic.CallType UseCallType, object[] Args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object ObjectRef, string ProcName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ObjectRef" Type="System.Object" />
+        <Parameter Name="ProcName" Type="System.String" />
+        <Parameter Name="UseCallType" Type="Microsoft.VisualBasic.CallType" />
+        <Parameter Name="Args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="ObjectRef">Required. <see langword="Object" />. A pointer to the object exposing the property or method.</param>
+        <param name="ProcName">Required. <see langword="String" />. A string expression containing the name of the property or method on the object.</param>
+        <param name="UseCallType">Required. An enumeration member of type <see cref="T:Microsoft.VisualBasic.CallType" /> representing the type of procedure being called. The value of <see langword="CallType" /> can be <see langword="Method" />, <see langword="Get" />, or <see langword="Set" />.</param>
+        <param name="Args">Optional. <see langword="ParamArray" />. A parameter array containing the arguments to be passed to the property or method being called.</param>
+        <summary>Executes a method on an object, or sets or returns a property on an object.</summary>
+        <returns>Executes a method on an object, or sets or returns a property on an object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `CallByName` function is used at runtime to get a property, set a property, or invoke a method.  
+  
+   
+  
+## Examples  
+ In the following example, the first line uses `CallByName` to set the `Text` property of a text box, the second line retrieves the value of the `Text` property, and the third line invokes the `Move` method to move the text box.  
+  
+ [!code-vb[VbVbalrFunctions#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#99)]  
+  
+ [!code-vb[VbVbalrFunctions#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#20)]  
+  
+ The next example uses the `CallByName` function to invoke the `Add` and `Item` methods of a collection object.  
+  
+ [!code-vb[VbVbalrFunctions#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Invalid <paramref name="UseCallType" /> value; must be <see langword="Method" />, <see langword="Get" />, or <see langword="Set" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose">
+      <MemberSignature Language="C#" Value="public static object Choose (double Index, object[] Choice);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object Choose(float64 Index, object[] Choice) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Choose(System.Double,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Double" />
+        <Parameter Name="Choice" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Index">Required. <see langword="Double" />. Numeric expression that results in a value between 1 and the number of elements passed in the <c>Choice</c> argument.</param>
+        <param name="Choice">Required. <see langword="Object" /> parameter array. You can supply either a single variable or an expression that evaluates to the <see langword="Object" /> data type, to a list of <see langword="Object" /> variables or expressions separated by commas, or to a single-dimensional array of <see langword="Object" /> elements.</param>
+        <summary>Selects and returns a value from a list of arguments.</summary>
+        <returns>Selects and returns a value from a list of arguments.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Choose` function returns a member of the list passed in `Choice()`, based on the value of `Index`. The first member of the list is selected when `Index` is 1. The last member of the list is selected when `Index` is `UBound`(`Choice()`). If `Index` is outside these limits, `Choose` returns `Nothing`.  
+  
+ If `Index` is not a whole number, it is rounded to the nearest whole number before being evaluated.  
+  
+ You can use `Choose` to look up a value in a list of possibilities.  
+  
+> [!NOTE]
+>  The expressions in the argument list can include function calls. As part of preparing the argument list for the call to `Choose`, the Visual Basic compiler calls every function in every expression. This means that you cannot rely on a particular function not being called if a different expression is selected by `Index`.  
+  
+   
+  
+## Examples  
+ This example uses the `Choose` function to display a name in response to an index passed into the procedure in the `Ind` parameter.  
+  
+ [!code-vb[VbVbalrFunctions#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public static string Command ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Command() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Command" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
+        <returns>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic.  
+  
+ The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the arguments are returned, you can search for common delimiters, such as spaces, backward or forward slashes, hyphens, or quotation marks, to split or search the string for individual parameters.  
+  
+ For applications developed with Visual Basic and compiled to an .exe file, the `Command` function returns any arguments that appear after the name of the application on the command line, in this form: `MyApp(cmdlineargs)`.  
+  
+   
+  
+## Examples  
+ This example uses the `Command` function to return the command-line arguments in an object that contains an array.  
+  
+ [!code-vb[VbVbalrCatRef#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#58)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public static object CreateObject (string ProgId, string ServerName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CreateObject(string ProgId, string ServerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.CreateObject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProgId" Type="System.String" />
+        <Parameter Name="ServerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ProgId">Required. <see langword="String" />. The program ID of the object to create.</param>
+        <param name="ServerName">Optional. <see langword="String" />. The name of the network server where the object will be created. If <c>ServerName</c> is an empty string (""), the local computer is used.</param>
+        <summary>Creates and returns a reference to a COM object. <see langword="CreateObject" /> cannot be used to create instances of classes in Visual Basic unless those classes are explicitly exposed as COM components.</summary>
+        <returns>Creates and returns a reference to a COM object. <see langword="CreateObject" /> cannot be used to create instances of classes in Visual Basic unless those classes are explicitly exposed as COM components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an instance of a COM component, assign the object returned by `CreateObject` to an object variable:  
+  
+```vb  
+Sub CreateADODB()  
+   Dim adoApp As Object  
+   adoApp = CreateObject("ADODB.Connection")  
+End Sub  
+```  
+  
+ The type of object variable you use to store the returned object can affect your application's performance. Declaring an object variable with the `As Object` clause creates a variable that can contain a reference to any type of object. However, access to the object through that variable is *late-bound*, that is, the binding occurs when your program runs. There are many reasons you should avoid late binding, including slower application performance.  
+  
+ You can create an object variable that results in early binding—that is, binding when the program is compiled. To do so, add a reference to the type library for your object from the **COM** tab of the **Add Reference** dialog box on the **Project** menu. Then declare the object variable of the specific type of your object. In most cases, it is more efficient to use the `Dim` statement and a primary interop assembly to create objects than it is to use the `CreateObject` function.  
+  
+## Interacting with Unmanaged Code  
+ Another issue is that COM objects use unmanaged code — code without the benefit of the common language runtime. There is a fair degree of complexity involved in mixing the managed code of Visual Basic with unmanaged code from COM. When you add a reference to a COM object, Visual Basic searches for a primary interop assembly (PIA) for that library; if it finds one, then it uses it. If it does not find a PIA, then it creates an interoperability assembly that contains local interoperability classes for each class in the COM library. For more information, see [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md).  
+  
+ You should generally use strongly bound objects and primary interop assemblies whenever possible. The examples below use the `CreateObject` function with Microsoft Office objects for demonstration purposes only. However, these objects are easier to use and more reliable when used with the appropriate primary interop assembly.  
+  
+## Creating an Object on a Remote Computer  
+ You can create an object on a remote networked computer by passing the name of the computer to the `ServerName` argument of the `CreateObject` function. That name is the same as the Machine Name portion of a share name: for a share named "\\\MyServer\Public," `ServerName` is "MyServer."  
+  
+> [!NOTE]
+>  Refer to COM documentation (see Microsoft Developer Network) for additional information on making an application accessible on a remote networked computer. You may need to add a registry key for your application.  
+  
+ The following code returns the version number of an instance of Excel running on a remote computer named `MyServer`:  
+  
+```vb  
+Sub CreateRemoteExcelObj()  
+    Dim xlApp As Object  
+    ' Replace string "\\MyServer" with name of the remote computer.  
+    xlApp = CreateObject("Excel.Application", "\\MyServer")  
+    MsgBox(xlApp.Version)  
+End Sub  
+```  
+  
+ If the remote server name is incorrect, or if it is unavailable, a run-time error occurs.  
+  
+> [!NOTE]
+>  Use `CreateObject` when there is no current instance of the object. If an instance of the object is already running, a new instance is started, and an object of the specified type is created. To use the current instance, or to start the application and have it load a file, use the `GetObject` function. If an object has registered itself as a single-instance object, only one instance of the object is created, no matter how many times `CreateObject` is executed.  
+  
+## Creating Framework Objects  
+ You can use the `CreateObject` function only to create a COM object. While there is no exact equivalent mechanism for creating a .NET Framework object, the <xref:System.Activator> in the <xref:System> namespace contains methods to create local or remote objects. In particular, the <xref:System.Activator.CreateInstance%2A> method or the <xref:System.Activator.CreateInstanceFrom%2A> method might be useful.  
+  
+> [!IMPORTANT]
+>  The `CreateObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+  
+   
+  
+## Examples  
+ The following example uses the `CreateObject` function to create a Microsoft Excel worksheet and saves the worksheet to a file. To use this example, Excel must be installed on the computer where this program runs. Also, you must add a reference to the type library from the **COM** tab of the **Add Reference** dialog box on the **Project** menu. The name of the type library varies depending on the version of Excel installed on your computer. For example, the type library for Microsoft Excel 2002 is named **Microsoft Excel 10.0 Object Library**.  
+  
+ [!code-vb[VbVbalrExcelObject#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExcelObject/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">Server is unavailable</exception>
+        <exception cref="T:System.IO.FileNotFoundException">No object of the specified type exists</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteSetting">
+      <MemberSignature Language="C#" Value="public static void DeleteSetting (string AppName, string Section = null, string Key = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void DeleteSetting(string AppName, string Section, string Key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.DeleteSetting(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the section or key setting applies.</param>
+        <param name="Section">Required. <see langword="String" /> expression containing the name of the section from which the key setting is being deleted. If only <c>AppName</c> and <c>Section</c> are provided, the specified section is deleted along with all related key settings.</param>
+        <param name="Key">Optional. <see langword="String" /> expression containing the name of the key setting being deleted.</param>
+        <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting " />function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If all arguments are provided, the specified setting is deleted. A run-time error occurs if you attempt to use `DeleteSetting` on a nonexistent section or key setting.  
+  
+ `DeleteSetting` requires that a user be logged on since it operates under the `HKEY_LOCAL_USER` registry key, which is not active until a user logs on interactively.  
+  
+ Registry settings that are to be accessed from a non-interactive process (such as Mtx.exe) should be stored under either the `HKEY_LOCAL_MACHINE\Software\` or the `HKEY_USER\DEFAULT\Software` registry keys.  
+  
+   
+  
+## Examples  
+ The following example first uses the `SaveSetting` procedure to make entries in the Windows registry for the `MyApp` application, and then uses the `DeleteSetting` function to remove them. Because no `Key` argument is specified, the whole `Startup` section is deleted, including the section name and all of its keys.  
+  
+ [!code-vb[VbVbalrCatRef#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#45)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">User is not logged in.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Environ">
+      <MemberSignature Language="C#" Value="public static string Environ (int Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Environ(int32 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Environ(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Expression that evaluates either a string containing the name of an environment variable, or an integer corresponding to the numeric order of an environment string in the environment-string table.</param>
+        <summary>Returns the string associated with an operating-system environment variable.</summary>
+        <returns>Returns the string associated with an operating-system environment variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string—that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
+  
+ If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
+  
+> [!IMPORTANT]
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+  
+   
+  
+## Examples  
+ This example uses the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function to supply the entry number and length of the `PATH` statement from the environment-string table.  
+  
+ [!code-vb[VbVbalrCatRef#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Expression" /> is missing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Environ">
+      <MemberSignature Language="C#" Value="public static string Environ (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Environ(string Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Environ(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Expression that evaluates either a string containing the name of an environment variable, or an integer corresponding to the numeric order of an environment string in the environment-string table.</param>
+        <summary>Returns the string associated with an operating-system environment variable.</summary>
+        <returns>Returns the string associated with an operating-system environment variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Expression` contains a string, the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function returns the text assigned to the specified environment string—that is, the text following the equal sign (=) in the environment-string table for that environment variable. If the string in `Expression` cannot be found in the environment-string table, a zero-length string ("") is returned.  
+  
+ If `Expression` contains an integer, the string occupying that numeric position in the environment-string table is returned. In this case, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns all of the text, including the name of the environment variable. If there is no environment string in the specified position, <xref:Microsoft.VisualBasic.Interaction.Environ%2A> returns a zero-length string.  
+  
+> [!IMPORTANT]
+>  The <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function requires environment permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+  
+   
+  
+## Examples  
+ This example uses the <xref:Microsoft.VisualBasic.Interaction.Environ%2A> function to supply the entry number and length of the `PATH` statement from the environment-string table.  
+  
+ [!code-vb[VbVbalrCatRef#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Expression" /> is missing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllSettings">
+      <MemberSignature Language="C#" Value="public static string[,] GetAllSettings (string AppName, string Section);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[,] GetAllSettings(string AppName, string Section) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.GetAllSettings(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[,]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project whose key settings are requested.</param>
+        <param name="Section">Required. <see langword="String" /> expression containing the name of the section whose key settings are requested. <see langword="GetAllSettings" /> returns an object that contains a two-dimensional array of strings. The strings contain all the key settings in the specified section, plus their corresponding values.</param>
+        <summary>Returns a list of key settings and their respective values (originally created with <see langword="SaveSetting" />) from an application's entry in the Windows registry. Using the <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
+        <returns>Returns a list of key settings and their respective values (originally created with <see langword="SaveSetting" />) from an application's entry in the Windows registry.  
+  
+ Using the <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `GetAllSettings` returns an uninitialized `Object` if either `AppName` or `Section` does not exist.  
+  
+ Because it operates under the `HKEY_LOCAL_USER` registry key, which is not active until a user logs on interactively, `GetAllSettings` requires that a user be logged on.  
+  
+ Registry settings that are to be accessed from a non-interactive process (such as Mtx.exe) should be stored under either the `HKEY_LOCAL_MACHINE\Software\` or the `HKEY_USER\DEFAULT\Software` registry keys.  
+  
+   
+  
+## Examples  
+ This example first uses the `SaveSetting` function to make entries in the Windows registry for the application specified as `AppName`, then uses the `GetAllSettings` function to display the settings. Note that application names and `Section` names cannot be retrieved with `GetAllSettings`. Finally, the `DeleteSetting` function removes the application's entries.  
+  
+ [!code-vb[VbVbalrCatRef#68](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#68)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">User is not logged in.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public static object GetObject (string PathName = null, string Class = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object GetObject(string PathName, string Class) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.GetObject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Class" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">Optional. <see langword="String" />. The full path and name of the file containing the object to retrieve. If <c>PathName</c> is omitted, <c>Class</c> is required.</param>
+        <param name="Class">Required if <c>PathName</c> is not supplied. <see langword="String" />. A string representing the class of the object. The <c>Class</c> argument has the following syntax and parts:  
+  
+ <c>appname</c> <c>.</c> <c>objecttype</c>  
+  
+ [1|1] Parameter  
+  
+ [1|2] Description  
+  
+ [2|1] <c>appname</c>  
+  
+ [2|2] Required. <see langword="String" />. The name of the application providing the object.  
+  
+ [3|1] <c>objecttype</c>  
+  
+ [3|2] Required. <see langword="String" />. The type or class of object to create.</param>
+        <summary>Returns a reference to an object provided by a COM component.</summary>
+        <returns>Returns a reference to an object provided by a COM component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `GetObject` function to load an instance of a COM component from a file. The following example illustrates this.  
+  
+```vb  
+Dim CADObject As Object  
+CADObject = GetObject("C:\CAD\schema.cad")  
+```  
+  
+ When this code runs, the application associated with the specified `PathName` is started and the object in the specified file is activated.  
+  
+## Default Cases  
+ If `PathName` is a zero-length string (`""`), `GetObject` returns a new object instance of the specified class type. If the `PathName` argument is omitted, `GetObject` returns a currently active object of the class type specified in `Class`. If no object of the specified type exists, an error occurs.  
+  
+## Accessing a Subobject  
+ Some applications allow you to activate a subobject associated with a file. To do this, add an exclamation point (`!`) to the end of the file name and follow it with a string that identifies the part of the file you want to activate. For information on how to create this string, see the documentation for the application that created the object.  
+  
+ For example, in a drawing application you might have multiple layers to a drawing stored in a file. You could use the following code to activate a layer within a drawing called `schema.cad`.  
+  
+```vb  
+layerObject = GetObject("C:\CAD\schema.cad!Layer3")  
+```  
+  
+## Specifying a Class  
+ If you do not specify the object's `Class`, Automation determines the application to start and the object to activate, based on the file name you provide. Some files, however, can support more than one class of object. For example, a drawing might support three different types of objects: an `Application` object, a `Drawing` object, and a `Toolbar` object, all of which are part of the same file. To specify which object in a file you want to activate, use the optional `Class` argument. The following example illustrates this.  
+  
+```vb  
+Dim drawObj As Object  
+drawObj = GetObject("C:\Drawings\sample.drw", "Figment.Drawing")  
+```  
+  
+ In the preceding example, `Figment` is the name of a drawing application and `Drawing` is one of the object types it supports.  
+  
+## Using the Object  
+ Once an object is activated, you refer to it in code using the object variable you declared. In the preceding example, you access properties and methods of the new object using the object variable `drawObj`. The following example illustrates this.  
+  
+```vb  
+drawObj.Line(9, 90)  
+drawObj.InsertText(9, 100, "Hello, world.")  
+drawObj.SaveAs("C:\Drawings\sample.drw")  
+```  
+  
+> [!NOTE]
+>  Use the `GetObject` function when there is a current instance of the object or if you want to create the object with a file loaded. If there is no current instance, and you do not want the object started with a file loaded, use the <xref:Microsoft.VisualBasic.Interaction.CreateObject%2A> function.  
+>   
+>  If an object has registered itself as an ActiveX single-instance object, only one instance of the object is created, no matter how many times `CreateObject` is called. With a single-instance object, `GetObject` always returns the same instance when called with the zero-length string (`""`) syntax, and it causes an error if the `PathName` argument is omitted. You cannot use `GetObject` to obtain a reference to a class created with Visual Basic.  
+  
+> [!IMPORTANT]
+>  The `GetObject` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+  
+   
+  
+## Examples  
+ The following example uses the `GetObject` function to obtain a reference to a specific Microsoft Excel worksheet (`excelObj`). It uses the worksheet's `Application` property to make Excel visible, to close it, and to perform other actions. Using two API calls, the `detectExcel` procedure looks for Excel, and if it is running, enters it in the Running Object table. The first call to `GetObject` causes an error if Excel is not already running, which in this example causes the `excelWasNotRunning` flag to be set to `True`. The second call to `GetObject` specifies a file to open. If Excel is not already running, the second call starts it and returns a reference to the worksheet represented by the specified file, `test.xls`. The file must exist in the specified location; otherwise, Visual Basic throws a <xref:System.IO.FileNotFoundException>. Next, the example code makes both Excel and the window containing the specified worksheet visible.  
+  
+ This example requires `Option Strict Off` because it uses late binding, where objects are assigned to variables of type `Object`. You can specify `Option Strict On` and declare objects of specific object types if you add a reference to the Excel type library from the **COM** tab of the **Add Reference** dialog box of the **Project** menu in Visual Studio.  
+  
+ [!code-vb[VbVbalrExcelObject#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExcelObject/VB/Class1.vb#2)]  
+  
+ [!code-vb[VbVbalrExcelObject#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExcelObject/VB/Class1.vb#4)]  
+  
+ [!code-vb[VbVbalrExcelObject#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExcelObject/VB/Class1.vb#5)]  
+  
+ When you call the `getExcel` function, a check is made to see if Excel is already running. If it is not, then an instance is created.  
+  
+> [!IMPORTANT]
+>  For simplicity, the preceding example assumes that any window called `XLMAIN` belongs to an instance of Microsoft Excel. If another object, possibly launched by illicit tampering, created a window with that name, it would receive all the messages you intended for Excel. In an application to be used for production, you should include some more rigorous testing to verify that `XLMAIN` really belongs to Excel.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">No object of the specified class type exists.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">No object with the specified path and file name exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSetting">
+      <MemberSignature Language="C#" Value="public static string GetSetting (string AppName, string Section, string Key, string Default = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string GetSetting(string AppName, string Section, string Key, string Default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.GetSetting(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Default" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project whose key setting is requested.</param>
+        <param name="Section">Required. <see langword="String" /> expression containing the name of the section in which the key setting is found.</param>
+        <param name="Key">Required. <see langword="String" /> expression containing the name of the key setting to return.</param>
+        <param name="Default">Optional. Expression containing the value to return if no value is set in the <c>Key</c> setting. If omitted, <c>Default</c> is assumed to be a zero-length string ("").</param>
+        <summary>Returns a key setting value from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
+        <returns>Returns a key setting value from an application's entry in the Windows registry.  
+  
+ The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any of the items named in the `GetSetting` arguments do not exist, `GetSetting` returns a value of `Default`.  
+  
+ Because it operates under the `HKEY_LOCAL_USER` registry key, which is not active until a user logs on interactively, `GetSetting` requires that a user be logged on.  
+  
+ Registry settings that are to be accessed from a non-interactive process (such as Mtx.exe) should be stored under either the `HKEY_LOCAL_MACHINE\Software\` or the `HKEY_USER\DEFAULT\Software` registry keys.  
+  
+ `GetSetting` requires `Read`<xref:System.Security.Permissions.RegistryPermission> .  
+  
+   
+  
+## Examples  
+ This example first uses the `SaveSetting` function to make entries in the Windows registry for the application specified as `AppName`, and then uses the `GetSetting` function to display one of the settings. Because the `Default` argument is specified, some value is guaranteed to be returned. Notice that `Section` names cannot be retrieved with `GetSetting`. Finally, the `DeleteSetting` function removes all the application's entries.  
+  
+ [!code-vb[VbVbalrCatRef#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#61)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">One or more arguments are not <see langword="String" /> expressions, or user is not logged in.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IIf">
+      <MemberSignature Language="C#" Value="public static object IIf (bool Expression, object TruePart, object FalsePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object IIf(bool Expression, object TruePart, object FalsePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.IIf(System.Boolean,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Boolean" />
+        <Parameter Name="TruePart" Type="System.Object" />
+        <Parameter Name="FalsePart" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. <see langword="Boolean" />. The expression you want to evaluate.</param>
+        <param name="TruePart">Required. <see langword="Object" />. Returned if <c>Expression</c> evaluates to <see langword="True" />.</param>
+        <param name="FalsePart">Required. <see langword="Object" />. Returned if <c>Expression</c> evaluates to <see langword="False" />.</param>
+        <summary>Returns one of two objects, depending on the evaluation of an expression.</summary>
+        <returns>Returns one of two objects, depending on the evaluation of an expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `IIf` function provides a counterpart for the ternary [Conditional Operator: ? :](http://msdn.microsoft.com/library/88643ee8-7100-4f86-880a-705ec22b6271) in Visual C++.  
+  
+   
+  
+## Examples  
+ This example uses the `IIf` function to evaluate the `testMe` parameter of the `checkIt` procedure and returns the word "Large" if the amount is greater than 1000; otherwise, it returns the word "Small".  
+  
+ [!code-vb[VbVbalrFunctions#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#33)]  
+  
+ Note that if `Option Strict` is `On`, you must use the `CStr` keyword to explicitly convert the return from `Object` to `String`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputBox">
+      <MemberSignature Language="C#" Value="public static string InputBox (string Prompt, string Title = &quot;&quot;, string DefaultResponse = &quot;&quot;, int XPos = -1, int YPos = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string InputBox(string Prompt, string Title, string DefaultResponse, int32 XPos, int32 YPos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.InputBox(System.String,System.String,System.String,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prompt" Type="System.String" />
+        <Parameter Name="Title" Type="System.String" />
+        <Parameter Name="DefaultResponse" Type="System.String" />
+        <Parameter Name="XPos" Type="System.Int32" />
+        <Parameter Name="YPos" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Prompt">Required <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <c>Prompt</c> is approximately 1024 characters, depending on the width of the characters used. If <c>Prompt</c> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/line feed combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
+        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <c>Title</c>, the application name is placed in the title bar.</param>
+        <param name="DefaultResponse">Optional. <see langword="String" /> expression displayed in the text box as the default response if no other input is provided. If you omit <c>DefaultResponse</c>, the displayed text box is empty.</param>
+        <param name="XPos">Optional. Numeric expression that specifies, in twips, the distance of the left edge of the dialog box from the left edge of the screen. If you omit <c>XPos</c>, the dialog box is centered horizontally.</param>
+        <param name="YPos">Optional. Numeric expression that specifies, in twips, the distance of the upper edge of the dialog box from the top of the screen. If you omit <c>YPos</c>, the dialog box is positioned vertically approximately one-third of the way down the screen.</param>
+        <summary>Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.</summary>
+        <returns>Displays a prompt in a dialog box, waits for the user to input text or click a button, and then returns a string containing the contents of the text box.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the user clicks **Cancel**, a zero-length string is returned.  
+  
+ To specify more than the first argument, you must use the `InputBox` function in an expression. If you omit any positional arguments, you must retain the corresponding comma delimiter.  
+  
+> [!NOTE]
+>  The `InputBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see  and <xref:System.Security.Permissions.UIPermission> .  
+  
+   
+  
+## Examples  
+ This example shows various ways to use the `InputBox` function to prompt the user to enter a value. If the x and y positions are omitted, the dialog box is automatically centered for the respective axes. The variable `MyValue` contains the value entered by the user if the user clicks OK or presses the ENTER key.  
+  
+ [!code-vb[VbVbalrCatRef#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MsgBox">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.MsgBoxResult MsgBox (object Prompt, Microsoft.VisualBasic.MsgBoxStyle Buttons = Microsoft.VisualBasic.MsgBoxStyle.ApplicationModal, object Title = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.MsgBoxResult MsgBox(object Prompt, valuetype Microsoft.VisualBasic.MsgBoxStyle Buttons, object Title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.MsgBox(System.Object,Microsoft.VisualBasic.MsgBoxStyle,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Prompt" Type="System.Object" />
+        <Parameter Name="Buttons" Type="Microsoft.VisualBasic.MsgBoxStyle" />
+        <Parameter Name="Title" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Prompt">Required. <see langword="String" /> expression displayed as the message in the dialog box. The maximum length of <c>Prompt</c> is approximately 1024 characters, depending on the width of the characters used. If <c>Prompt</c> consists of more than one line, you can separate the lines using a carriage return character (<see langword="Chr(" />13<see langword=")" />), a line feed character (<see langword="Chr(" />10<see langword=")" />), or a carriage return/linefeed character combination (<see langword="Chr(" />13<see langword=")" /> &amp; <see langword="Chr(" />10<see langword=")" />) between each line.</param>
+        <param name="Buttons">Optional. Numeric expression that is the sum of values specifying the number and type of buttons to display, the icon style to use, the identity of the default button, and the modality of the message box. If you omit <c>Buttons</c>, the default value is zero.</param>
+        <param name="Title">Optional. <see langword="String" /> expression displayed in the title bar of the dialog box. If you omit <c>Title</c>, the application name is placed in the title bar.</param>
+        <summary>Displays a message in a dialog box, waits for the user to click a button, and then returns an integer indicating which button the user clicked.</summary>
+        <returns>
+          <list type="table">  
+<item>  
+<term> Constant  
+  
+ </term>  
+<description> Value  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="OK" />  
+  
+ </term>  
+<description> 1  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="Cancel" />  
+  
+ </term>  
+<description> 2  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="Abort" />  
+  
+ </term>  
+<description> 3  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="Retry" />  
+  
+ </term>  
+<description> 4  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="Ignore" />  
+  
+ </term>  
+<description> 5  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="Yes" />  
+  
+ </term>  
+<description> 6  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="No" />  
+  
+ </term>  
+<description> 7  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you omit any positional arguments, you must retain the corresponding comma delimiter.  
+  
+ If the dialog box displays a **Cancel** button, pressing the ESC key has the same effect as clicking **Cancel**  
+  
+ If the dialog box contains a **Help** button, context-sensitive Help is provided for the dialog box. However, no value is returned until one of the other buttons is chosen. In Windows Form applications, choosing the **Help** button executes the <xref:System.Windows.Forms.Control.HelpRequested> event for the form.  
+  
+> [!NOTE]
+>  The `MsgBox` function requires `UIPermission` at the <xref:System.Security.Permissions.UIPermissionWindow> level, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.UIPermission>.  
+  
+ The `MsgBoxStyle` enumeration values are listed in the following table.  
+  
+|Member|Value|Description|  
+|-|-|-|  
+|Member|Value|Description|  
+|`OKOnly`|0|Displays OK button only.|  
+|`OKCancel`|1|Displays OK and Cancel buttons.|  
+|`AbortRetryIgnore`|2|Displays Abort, Retry, and Ignore buttons.|  
+|`YesNoCancel`|3|Displays Yes, No, and Cancel buttons.|  
+|`YesNo`|4|Displays Yes and No buttons.|  
+|`RetryCancel`|5|Displays Retry and Cancel buttons.|  
+|`Critical`|16|Displays Critical Message icon.|  
+|`Question`|32|Displays Warning Query icon.|  
+|`Exclamation`|48|Displays Warning Message icon.|  
+|`Information`|64|Displays Information Message icon.|  
+|`DefaultButton1`|0|First button is default.|  
+|`DefaultButton2`|256|Second button is default.|  
+|`DefaultButton3`|512|Third button is default.|  
+|`ApplicationModal`|0|Application is modal. The user must respond to the message box before continuing work in the current application.|  
+|`SystemModal`|4096|System is modal. All applications are suspended until the user responds to the message box.|  
+|`MsgBoxSetForeground`|65536|Specifies the message box window as the foreground window.|  
+|`MsgBoxRight`|524288|Text is right-aligned.|  
+|`MsgBoxRtlReading`|1048576|Specifies text should appear as right-to-left reading on Hebrew and Arabic systems.|  
+  
+ The first group of values (0–5) describes the number and type of buttons displayed in the dialog box. The second group (16, 32, 48, 64) describes the icon style. The third group (0, 256, 512) determines which button is the default. The fourth group (0, 4096) determines the modality of the message box, and the fifth group specifies whether or not the message box window is the foreground window, along with the alignment and direction of the text. When adding numbers to create a final value for the `Buttons` argument, use only one number from each group.  
+  
+   
+  
+## Examples  
+ This example uses the `MsgBox` function to display a critical-error message in a dialog box with Yes and No buttons. The No button is specified as the default response. This is done by combining the `MsgBox` constant values into one numeric expression. In this case, adding 4 (the Yes/No button combination) and 16 (the **Critical Message** window) and 256 (the second button as default button) gives a total of 276. The value returned by the `MsgBox` function depends on the button chosen by the user: Yes returns a value of 6; No returns a value of 7.  
+  
+ [!code-vb[VbVbalrCatRef#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Prompt" /> is not a <see langword="String" /> expression, or <paramref name="Title" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">Process is not running in User Interactive mode.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">One or more parameters not a member of <see langword="MsgBoxResult" /> or <see langword="MsgBoxStyle" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition">
+      <MemberSignature Language="C#" Value="public static string Partition (long Number, long Start, long Stop, long Interval);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Partition(int64 Number, int64 Start, int64 Stop, int64 Interval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Partition(System.Int64,System.Int64,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int64" />
+        <Parameter Name="Start" Type="System.Int64" />
+        <Parameter Name="Stop" Type="System.Int64" />
+        <Parameter Name="Interval" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="Number">Required. <see langword="Long" />. Whole number that you want to locate within one of the calculated ranges.</param>
+        <param name="Start">Required. <see langword="Long" />. Whole number that indicates the start of the set of calculated ranges. <c>Start</c> cannot be less than 0.</param>
+        <param name="Stop">Required. <see langword="Long" />. Whole number that indicates the end of the set of calculated ranges. <c>Stop</c> cannot be less than or equal to <c>Start</c>.</param>
+        <param name="Interval">Required. <see langword="Long" />. Whole number that indicates the size of each range calculated between <c>Start</c> and <c>Stop</c>. <c>Interval</c> cannot be less than 1.</param>
+        <summary>Returns a string representing the calculated range that contains a number.</summary>
+        <returns>Returns a string representing the calculated range that contains a number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Partition` function calculates a set of numeric ranges, each containing the number of values specified by `Interval`. The first range begins at `Start`, and the last range ends at `Stop`. The `Partition` function then identifies which range contains `Number` and returns a string describing that range. The range is represented in the string as "*lowervalue*:*uppervalue*", where the low end of the range (*lowervalue*) is separated from the high end (*uppervalue*) by a colon (:).  
+  
+ If necessary, the `Partition` function inserts leading spaces before *lowervalue* and *uppervalue* so that they both have the same number of characters as the string representation of the value (`Stop` + 1). This ensures that if you use the output of the `Partition` function with several values of `Number`, the resulting text will be handled properly during any subsequent sort operation.  
+  
+ The following table shows some sample strings for ranges calculated using three sets of `Start`, `Stop`, and `Interval`. The "First range" and "Last range" columns show the lowest and highest ranges possible given the values of `Start` and `Stop`. The "Before first range" and "After last range" columns show the strings returned for values of `Number` less than `Start` and greater than `Stop`, respectively.  
+  
+|`Start`|`Stop`|`Interval`|Before first range|First range|Last range|After last range|  
+|-|-|-|-|-|-|-|  
+|0|99|5|"   : -1"|"  0:  4"|" 95: 99"|"100:   "|  
+|20|199|10|"   : 19"|" 20: 29"|"190:199"|"200:   "|  
+|100|1010|20|"    : 99"|" 100: 119"|"1000:1010"|"1011:    "|  
+  
+ In the preceding table, the third line shows the result when `Start` and `Stop` define a set of numbers that cannot be evenly divided by `Interval`. The last range ends at `Stop`, making it only 11 numbers long, even though `Interval` is 20.  
+  
+ If `Interval` is 1, the range is "`Number`:`Number`", regardless of the `Start` and `Stop` arguments. For example, if `Number` is 267, `Stop` is 1000, and `Interval` is 1, `Partition` returns " 267: 267".  
+  
+ `Partition` can be useful when constructing database queries. You can create a SELECT query that shows how many orders occur within various value ranges, for example with invoice values from 1 to 1000, 1001 to 2000, and so on.  
+  
+   
+  
+## Examples  
+ The following example sets up a series of ranges for decades from 1950 through 2049. It locates the value of `year` within the appropriate range and returns a `String` value showing the range. If `year` has a value of 1984, for example, `Partition` returns "1980:1989".  
+  
+ [!code-vb[VbVbalrFunctions#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#45)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Start" /> &lt; 0, <paramref name="Stop" /> &lt;= <paramref name="Start" />, or <paramref name="Interval" /> &lt; 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSetting">
+      <MemberSignature Language="C#" Value="public static void SaveSetting (string AppName, string Section, string Key, string Setting);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SaveSetting(string AppName, string Section, string Key, string Setting) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.SaveSetting(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="AppName" Type="System.String" />
+        <Parameter Name="Section" Type="System.String" />
+        <Parameter Name="Key" Type="System.String" />
+        <Parameter Name="Setting" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the setting applies.</param>
+        <param name="Section">Required. <see langword="String" /> expression containing the name of the section in which the key setting is being saved.</param>
+        <param name="Key">Required. <see langword="String" /> expression containing the name of the key setting being saved.</param>
+        <param name="Setting">Required. Expression containing the value to which <c>Key</c> is being set.</param>
+        <summary>Saves or creates an application entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="SaveSetting" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SaveSetting` function adds the key to `HKEY_CURRENT_USER\Software\VB and VBA Program Settings`.  
+  
+ If the key setting cannot be saved for any reason, an error occurs.  
+  
+ `SaveSetting` requires that a user be logged on since it operates under the `HKEY_LOCAL_USER` registry key, which is not active until a user logs on interactively.  
+  
+ Registry settings that are to be accessed from a non-interactive process (such as Mtx.exe) should be stored under either the `HKEY_LOCAL_MACHINE\Software\` or the `HKEY_USER\DEFAULT\Software` registry keys.  
+  
+ `SaveSetting` requires `Write` and `Create`<xref:System.Security.Permissions.RegistryPermission> .  
+  
+   
+  
+## Examples  
+ The following example first uses the `SaveSetting` function to make entries in the Windows registry for the `MyApp` application, and then uses the `DeleteSetting` function to remove them.  
+  
+ [!code-vb[VbVbalrCatRef#56](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#56)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Key registry could not be created, or user is not logged in.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Shell">
+      <MemberSignature Language="C#" Value="public static int Shell (string PathName, Microsoft.VisualBasic.AppWinStyle Style = Microsoft.VisualBasic.AppWinStyle.MinimizedFocus, bool Wait = false, int Timeout = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Shell(string PathName, valuetype Microsoft.VisualBasic.AppWinStyle Style, bool Wait, int32 Timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Shell(System.String,Microsoft.VisualBasic.AppWinStyle,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PathName" Type="System.String" />
+        <Parameter Name="Style" Type="Microsoft.VisualBasic.AppWinStyle" />
+        <Parameter Name="Wait" Type="System.Boolean" />
+        <Parameter Name="Timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="PathName">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <c>PathName</c> can also include the drive and the directory path or folder.  
+  
+ If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>
+        <param name="Style">Optional. <see langword="AppWinStyle" />. A value chosen from the <see cref="T:Microsoft.VisualBasic.AppWinStyle" /> specifying the style of the window in which the program is to run. If <c>Style</c> is omitted, <see langword="Shell" /> uses <see langword="AppWinStyle.MinimizedFocus" />, which starts the program minimized and with focus.</param>
+        <param name="Wait">Optional. <see langword="Boolean" />. A value indicating whether the <see langword="Shell" /> function should wait for completion of the program. If <c>Wait</c> is omitted, <see langword="Shell" /> uses <see langword="False" />.</param>
+        <param name="Timeout">Optional. <see langword="Integer" />. The number of milliseconds to wait for completion if <c>Wait</c> is <see langword="True" />. If <c>Timeout</c> is omitted, <see langword="Shell" /> uses -1, which means there is no timeout and <see langword="Shell" /> does not return until the program finishes. Therefore, if you omit <c>Timeout</c> or set it to -1, it is possible that <see langword="Shell" /> might never return control to your program.</param>
+        <summary>Runs an executable program and returns an integer containing the program's process ID if it is still running.</summary>
+        <returns>Runs an executable program and returns an integer containing the program's process ID if it is still running.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of the `Shell` function depends on whether the program named in `PathName` is still executing when `Shell` returns. If you set `Wait` to `True` and the program finishes before the timeout expires, `Shell` returns zero. If the timeout expires, or if you omit `Wait` or set it to `False`, `Shell` returns the process ID of the program. The process ID is a unique number that identifies the running program.  
+  
+## Failure to Start  
+ If the `Shell` function cannot start the named program, a <xref:System.IO.FileNotFoundException> error occurs. This can happen, for example, when you attempt to run a 16-bit program, such as `command.com`, from an application using <xref:System.Windows.Forms?displayProperty=fullName>. For a workaround, you can run a 32-bit program that calls the desired 16-bit program. In the case of `command.com`, you can run `cmd.exe` as an alternative.  
+  
+## Waiting for Completion  
+ By default, the `Shell` function runs the program asynchronously. This means that a program started with the `Shell` function might not finish executing before the statements following the `Shell` function are executed. If you want to wait for the program to finish before you continue, set `Wait` to `True`.  
+  
+## Determining the Exit Code  
+ A process can return an *exit code* when it terminates. However, you cannot use `Shell` to retrieve this exit code, because `Shell` returns zero if it waits for termination, and also because the process runs in a different object from `Shell`.  
+  
+ To retrieve the exit code from a process, you must write your own code to initiate the process and wait for termination. The following example shows how to initiate a process, wait for it to terminate, and retrieve its exit code.  
+  
+```vb  
+Dim procID As Integer  
+Dim newProc As Diagnostics.Process  
+newProc = Diagnostics.Process.Start("C:\WINDOWS\NOTEPAD.EXE")  
+procID = newProc.Id  
+newProc.WaitForExit()  
+Dim procEC As Integer = -1  
+If newProc.HasExited Then  
+    procEC = newProc.ExitCode  
+End If  
+MsgBox("Process with ID " & CStr(ProcID) & _  
+    " terminated with exit code " & CStr(procEC))  
+```  
+  
+## Protecting the File Specification  
+ You should always enclose the entire path and file specification in quotation marks, as the following example shows.  
+  
+```vb  
+ID = Shell("""C:\Program Files\display.exe"" -a -q", , True, 100000)  
+```  
+  
+ Each pair of adjacent double quotation marks (`" "`) within the string literal is interpreted as one double quotation character in the string. Therefore, the preceding example presents the following string to the `Shell` function:  
+  
+```  
+"C:\Program Files\display.exe" -a -q  
+```  
+  
+ If you did not have the path enclosed in quotation marks, Windows would look for a file called `Program.exe` in the C:\ directory, instead of `display.exe` in the C:\Program Files directory.  
+  
+> [!IMPORTANT]
+>  If you do not enclose the path and file specification in quotation marks, there is a security risk if the file name or a path node contains spaces. In the preceding example, the path node `\Program Files` includes a space. If the specification were not inside quotation marks and a program named `Program.exe` had been installed in C:\\, for example by illicit tampering, Windows would execute it instead of `display.exe`.  
+  
+> [!IMPORTANT]
+>  The `Shell` function requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+  
+   
+  
+## Examples  
+ The following example uses the `Shell` function to run an application specified by the user. Specifying <xref:Microsoft.VisualBasic.AppWinStyle?displayProperty=fullName> as the second argument opens the application in normal size and gives it the focus.  
+  
+ [!code-vb[VbVbalrFunctions#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#47)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Style" /> is not within range 0 through 9, inclusive.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <see langword="Shell" /> cannot find the <paramref name="PathName" /> file.</exception>
+        <exception cref="T:System.NullReferenceException">
+          <paramref name="PathName" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="public static object Switch (object[] VarExpr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object Switch(object[] VarExpr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Interaction.Switch(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="VarExpr" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="VarExpr">Required. <see langword="Object" /> parameter array. Must have an even number of elements. You can supply a list of <see langword="Object" /> variables or expressions separated by commas, or a single-dimensional array of <see langword="Object" /> elements.</param>
+        <summary>Evaluates a list of expressions and returns an <see langword="Object" /> value corresponding to the first expression in the list that is <see langword="True" />.</summary>
+        <returns>Evaluates a list of expressions and returns an <see langword="Object" /> value corresponding to the first expression in the list that is <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The argument supplied to `VarExpr` consists of paired expressions and values. The `Switch` function evaluates the odd-numbered expressions from lowest to highest index in `VarExpr`, and returns the even-numbered value associated with the first expression that evaluates to `True`. For example, if `VarExpr(0)` is `True`, `Switch` returns `VarExpr(1)`, and if `VarExpr(0)` is `False` but `VarExpr(2)` is `True`, `Switch` returns `VarExpr(3)`, and so on.  
+  
+ If you do not supply the `VarExpr` argument, `Switch` returns `Nothing`.  
+  
+> [!NOTE]
+>  The expressions in the argument list can include function calls. As part of preparing the argument list for the call to `Switch`, the Visual Basic compiler calls every function in every expression. This means that you cannot rely on a particular function not being called if an expression earlier in the argument list is `True`.  
+  
+   
+  
+## Examples  
+ The following example uses the `Switch` function to return the name of a language that matches the name of a city. It requires that `Option Strict` be `Off`.  
+  
+ [!code-vb[VbVbalrFunctions#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#48)]  
+  
+ Because the <xref:System.Diagnostics> namespace also contains a class called <xref:System.Diagnostics.Switch>, a call to the `Switch` function must be qualified with the <xref:Microsoft.VisualBasic> namespace.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Number of arguments is odd.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

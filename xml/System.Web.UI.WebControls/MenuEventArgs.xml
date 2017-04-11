@@ -1,0 +1,235 @@
+<Type Name="MenuEventArgs" FullName="System.Web.UI.WebControls.MenuEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class MenuEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.CommandEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" /> and <see cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" /> events of a <see cref="T:System.Web.UI.WebControls.Menu" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MenuEventArgs> class is used to store the event data passed to an event handler for the events in the following table.  
+  
+|Event|Description|  
+|-----------|-----------------|  
+|<xref:System.Web.UI.WebControls.Menu.MenuItemClick>|Occurs when a menu item is clicked. This event is commonly used to synchronize a <xref:System.Web.UI.WebControls.Menu> control with another control on the page.|  
+|<xref:System.Web.UI.WebControls.Menu.MenuItemDataBound>|Occurs when a menu item is bound to data. This event is commonly used to modify a menu item before it is rendered in a <xref:System.Web.UI.WebControls.Menu> control.|  
+  
+ Depending on the event raised, you can access the menu item clicked by the user or the menu item being bound to data by using the <xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A> property.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.MenuEventArgs> class, see the <xref:System.Web.UI.WebControls.MenuEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventArgs> object passed to the event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event to modify the properties of a menu item before it is displayed in a <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.WebControls.MenuItem.ImageUrl%2A> property of the `Home` menu item is set to display an image in that menu item only. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MenuEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgs/CS/menueventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MenuEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgs/VB/menueventargsvb.aspx#1)]  -->  
+  
+ The following is sample site map data for the previous example.  
+  
+ `<siteMap>`  
+  
+ `<siteMapNode url="~\Home.aspx"`  
+  
+ `title="Home"`  
+  
+ `description="Home">`  
+  
+ `<siteMapNode url="~\Music.aspx"`  
+  
+ `title="Music"`  
+  
+ `description="Music">`  
+  
+ `<siteMapNode url="~\Classical.aspx"`  
+  
+ `title="Classical"`  
+  
+ `description="Classical"/>`  
+  
+ `<siteMapNode url="~\Rock.aspx"`  
+  
+ `title="Rock"`  
+  
+ `description="Rock"/>`  
+  
+ `<siteMapNode url="~\Jazz.aspx"`  
+  
+ `title="Jazz"`  
+  
+ `description="Jazz"/>`  
+  
+ `</siteMapNode>`  
+  
+ `<siteMapNode url="~\Movies.aspx"`  
+  
+ `title="Movies"`  
+  
+ `description="Movies">`  
+  
+ `<siteMapNode url="~\Action.aspx"`  
+  
+ `title="Action"`  
+  
+ `description="Action"/>`  
+  
+ `<siteMapNode url="~\Drama.aspx"`  
+  
+ `title="Drama"`  
+  
+ `description="Drama"/>`  
+  
+ `<siteMapNode url="~\Musical.aspx"`  
+  
+ `title="Musical"`  
+  
+ `description="Musical"/>`  
+  
+ `</siteMapNode>`  
+  
+ `</siteMapNode>`  
+  
+ `</siteMap>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuEventArgs (System.Web.UI.WebControls.MenuItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.MenuItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuEventArgs.#ctor(System.Web.UI.WebControls.MenuItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.MenuItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">For the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" /> event, this parameter represents the menu item clicked by the user. For the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" /> event, this parameter represents the menu item being bound to data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuEventArgs" /> class using the specified menu item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuEventArgs> class from the specified menu item. The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.MenuEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A>|`null`|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A>|<xref:System.String.Empty>|  
+|<xref:System.Web.UI.WebControls.MenuEventArgs.CommandSource%2A>|`null`|  
+|<xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A>|The <xref:System.Web.UI.WebControls.MenuItem> object specified by the `item` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuEventArgs (System.Web.UI.WebControls.MenuItem item, object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.MenuItem item, object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuEventArgs.#ctor(System.Web.UI.WebControls.MenuItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.MenuItem" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="item">For the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" /> event, this parameter represents the menu item clicked by the user. For the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" /> event, this parameter represents the menu item being bound to data.</param>
+        <param name="commandSource">The <see cref="T:System.Object" /> that raised the event.</param>
+        <param name="originalArgs">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> that contains the command name and command argument values for the menu item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MenuEventArgs" /> class using the specified menu item, command source, and event arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.MenuEventArgs> class from the specified menu item, command source, and event arguments. The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.MenuEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A>|The value of the `originalArgs.CommandArgument` parameter.|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A>|The value of the `originalArgs.CommandName` parameter.|  
+|<xref:System.Web.UI.WebControls.MenuEventArgs.CommandSource%2A>|The <xref:System.Object> specified by the `commandSource` parameter.|  
+|<xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A>|The <xref:System.Web.UI.WebControls.MenuItem> object specified by the `item` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandSource">
+      <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuEventArgs.CommandSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Object" /> that raised the event.</summary>
+        <value>The <see cref="T:System.Object" /> that raised the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.MenuEventArgs.CommandSource%2A> property to access the <xref:System.Object> that raised the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.MenuItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the menu item associated with the event raised.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.MenuItem" /> that represents the menu item associated with the event raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A> property to access or modify the properties of the menu item associated with the event raised. For the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event, this item represents the menu item clicked by the user. For the <xref:System.Web.UI.WebControls.Menu.MenuItemDataBound> event, this item represents the menu item being bound to data.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventArgs.Item%2A> property to access the properties of the menu item clicked by the user. The text of the selected menu item is displayed on the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MenuEventArgsItem#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventArgsItem/CS/menueventargsitemcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MenuEventArgsItem#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventArgsItem/VB/menueventargsitemvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

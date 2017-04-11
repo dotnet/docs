@@ -1,0 +1,66 @@
+<Type Name="DataAnnotationsModelMetadata" FullName="System.Web.ModelBinding.DataAnnotationsModelMetadata">
+  <TypeSignature Language="C#" Value="public class DataAnnotationsModelMetadata : System.Web.ModelBinding.ModelMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAnnotationsModelMetadata extends System.Web.ModelBinding.ModelMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.ModelMetadata</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for common metadata, for the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" /> class, and for the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelValidator" /> class for a data model.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataAnnotationsModelMetadata (System.Web.ModelBinding.DataAnnotationsModelMetadataProvider provider, Type containerType, Func&lt;object&gt; modelAccessor, Type modelType, string propertyName, System.ComponentModel.DataAnnotations.DisplayColumnAttribute displayColumnAttribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.DataAnnotationsModelMetadataProvider provider, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName, class System.ComponentModel.DataAnnotations.DisplayColumnAttribute displayColumnAttribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadata.#ctor(System.Web.ModelBinding.DataAnnotationsModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String,System.ComponentModel.DataAnnotations.DisplayColumnAttribute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Web.ModelBinding.DataAnnotationsModelMetadataProvider" />
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="displayColumnAttribute" Type="System.ComponentModel.DataAnnotations.DisplayColumnAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The provider object.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> if there is no container.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> if the model is not a property.</param>
+        <param name="displayColumnAttribute">The display column attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.DataAnnotationsModelMetadata" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSimpleDisplayText">
+      <MemberSignature Language="C#" Value="protected override string GetSimpleDisplayText ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetSimpleDisplayText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelMetadata.GetSimpleDisplayText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns text to display for the model when the model represents a complex object.</summary>
+        <returns>The text to display for a complex object. If there is a <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> attribute for the model, the default is the name of the display column. Otherwise the default is determined by calling the <see cref="M:System.Web.ModelBinding.ModelMetadata.GetSimpleDisplayText" /> method of the <see cref="T:System.Web.ModelBinding.ModelMetadata" /> base class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

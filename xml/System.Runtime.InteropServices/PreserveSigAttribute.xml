@@ -1,0 +1,115 @@
+<Type Name="PreserveSigAttribute" FullName="System.Runtime.InteropServices.PreserveSigAttribute">
+  <TypeSignature Language="C#" Value="public sealed class PreserveSigAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PreserveSigAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.PreserveSigAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that the HRESULT or <see langword="retval" /> signature transformation that takes place during COM interop calls should be suppressed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to methods.  
+  
+ By default, the [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) ensures that a call that returns an HRESULT of S_OK is transformed such that the [out, retval] parameter is used as the function return value. The S_OK HRESULT is discarded. For HRESULTs other than S_OK, the runtime throws an exception and discards the [out, retval] parameter. When you apply the <xref:System.Runtime.InteropServices.PreserveSigAttribute> to a managed method signature, the managed and unmanaged signatures of the attributed method are identical.  
+  
+ Preserving the original method signature is necessary if the member returns more than one success HRESULT value and you want to detect the different values. Since most COM member return an HRESULT, by applying the <xref:System.Runtime.InteropServices.PreserveSigAttribute>, you can retrieve an integer representing the success or failure HRESULT. Tlbexp.exe preserves any [out, retavl] parameters as out parameters in the managed signature.  
+  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) also applies this attribute; it applies the attribute to dispinterfaces when it imports a type library.  
+  
+> [!NOTE]
+>  Return types of <xref:System.Runtime.InteropServices.UnmanagedType>, <xref:System.Guid>, and <xref:System.Object> are not supported by the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class when interoperation occurs from COM to managed code and the managed code is marked with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class.  When you attempt to use one of these return types with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class during these conditions, a <xref:System.TypeLoadException> is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how Tlbexp.exe converts a C# method without <xref:System.Runtime.InteropServices.PreserveSigAttribute> when exporting an assembly to a COM type library.  
+  
+ Managed signature:  
+  
+```  
+int DoSomething (long l);  
+```  
+  
+ Unmanaged signature:  
+  
+```  
+HRESULT DoSomething ([in] long l, [out, retval] int * i);  
+```  
+  
+ When you apply <xref:System.Runtime.InteropServices.PreserveSigAttribute> to the same C# method and export the assembly, the method conversion differs from the previous example. Notice that Tlbexp.exe removes the HRESULT and the [out, retval] parameter modifier.  
+  
+ Managed signature:  
+  
+```  
+[PreserveSig] int DoSomething (long l);  
+```  
+  
+ Unmanaged signature:  
+  
+```  
+int DoSomething ([in] long l);  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PreserveSigAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.PreserveSigAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.PreserveSigAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,104 @@
+<Type Name="CounterSampleCalculator" FullName="System.Diagnostics.CounterSampleCalculator">
+  <TypeSignature Language="C#" Value="public static class CounterSampleCalculator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CounterSampleCalculator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.CounterSampleCalculator" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of utility functions for interpreting performance counter data.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComputeCounterValue">
+      <MemberSignature Language="C#" Value="public static float ComputeCounterValue (System.Diagnostics.CounterSample newSample);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ComputeCounterValue(valuetype System.Diagnostics.CounterSample newSample) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newSample" Type="System.Diagnostics.CounterSample" />
+      </Parameters>
+      <Docs>
+        <param name="newSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates the most recent sample the system has taken.</param>
+        <summary>Computes the calculated value of a single raw counter sample.</summary>
+        <returns>A floating-point representation of the performance counter's calculated value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%29> method overload returns meaningful results only for performance counters of the following <xref:System.Diagnostics.PerformanceCounterType>:  
+  
+-   <xref:System.Diagnostics.PerformanceCounterType>  
+  
+-   <xref:System.Diagnostics.PerformanceCounterType>  
+  
+-   <xref:System.Diagnostics.PerformanceCounterType>  
+  
+-   <xref:System.Diagnostics.PerformanceCounterType>  
+  
+-   <xref:System.Diagnostics.PerformanceCounterType>  
+  
+ For other counter types, this overload always returns a value of 0 (zero).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeCounterValue">
+      <MemberSignature Language="C#" Value="public static float ComputeCounterValue (System.Diagnostics.CounterSample oldSample, System.Diagnostics.CounterSample newSample);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 ComputeCounterValue(valuetype System.Diagnostics.CounterSample oldSample, valuetype System.Diagnostics.CounterSample newSample) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("What's the algorithm?")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldSample" Type="System.Diagnostics.CounterSample" />
+        <Parameter Name="newSample" Type="System.Diagnostics.CounterSample" />
+      </Parameters>
+      <Docs>
+        <param name="oldSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates a previous sample the system has taken.</param>
+        <param name="newSample">A <see cref="T:System.Diagnostics.CounterSample" /> that indicates the most recent sample the system has taken.</param>
+        <summary>Computes the calculated value of two raw counter samples.</summary>
+        <returns>A floating-point representation of the performance counter's calculated value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Diagnostics.CounterSampleCalculator.ComputeCounterValue%28System.Diagnostics.CounterSample%2CSystem.Diagnostics.CounterSample%29> method overload to calculate the value of two raw counter samples.  
+  
+ [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+ [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+ [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="oldSample" /> uses a counter type that is different from <paramref name="newSample" />.</exception>
+        <exception cref="T:System.ComponentModel.Win32Exception">
+          <paramref name="newSample" /> counter type has a Performance Data Helper (PDH) error. For more information, see "Checking PDH Interface Return Values" in the Win32 and COM Development section of this documentation.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

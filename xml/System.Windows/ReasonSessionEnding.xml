@@ -1,0 +1,50 @@
+<Type Name="ReasonSessionEnding" FullName="System.Windows.ReasonSessionEnding">
+  <TypeSignature Language="C#" Value="public enum ReasonSessionEnding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReasonSessionEnding extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ReasonSessionEnding" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the reason for which the user's session is ending. Used by the <see cref="P:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Logoff">
+      <MemberSignature Language="C#" Value="Logoff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ReasonSessionEnding Logoff = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.ReasonSessionEnding.Logoff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ReasonSessionEnding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The session is ending because the user is logging off.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shutdown">
+      <MemberSignature Language="C#" Value="Shutdown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ReasonSessionEnding Shutdown = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.ReasonSessionEnding.Shutdown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ReasonSessionEnding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The session is ending because the user is shutting down [!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)].</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

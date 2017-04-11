@@ -32,7 +32,7 @@ When you assign a method to a delegate, *covariance* and *contravariance* provid
   
 ### Code  
   
-```cs  
+```csharp  
 class Mammals{}  
 class Dogs : Mammals{}  
   
@@ -68,7 +68,7 @@ class Program
   
 ### Code  
   
-```cs  
+```csharp  
 // Event hander that accepts a parameter of the EventArgs type.  
 private void MultiHandler(object sender, System.EventArgs e)  
 {  

@@ -1,0 +1,937 @@
+<Type Name="XmlWriterSettings" FullName="System.Xml.XmlWriterSettings">
+  <TypeSignature Language="C#" Value="public sealed class XmlWriterSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlWriterSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlWriterSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a set of features to support on the <see cref="T:System.Xml.XmlWriter" /> object created by the <see cref="Overload:System.Xml.XmlWriter.Create" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlWriter.Create%2A> method is the preferred mechanism for obtaining <xref:System.Xml.XmlWriter> instances. The <xref:System.Xml.XmlWriter.Create%2A> method uses the <xref:System.Xml.XmlWriterSettings> class to specify which features to implement in the <xref:System.Xml.XmlWriter> object that is created.  
+  
+> [!NOTE]
+>  If you're using the <xref:System.Xml.XmlWriter> object with the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method, you should use the <xref:System.Xml.Xsl.XslCompiledTransform.OutputSettings%2A> property to obtain an <xref:System.Xml.XmlWriterSettings> object with the correct settings. This ensures that the created <xref:System.Xml.XmlWriter> object has the correct output settings.  
+  
+ The <xref:System.Xml.XmlWriterSettings> class provides properties that control data conformance and output format.  
+  
+ For data conformance checks and auto-corrections, use these properties:  
+  
+|Property|Specifies|Value|Default|  
+|--------------|---------------|-----------|-------------|  
+|<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|Whether to check that characters are in the legal XML character set, as defined by W3C.|`true` or `false`|`true`|  
+|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|Whether to check that output is a well-formed XML 1.0 document or fragment.|<xref:System.Xml.ConformanceLevel?displayProperty=fullName> (document-level), <xref:System.Xml.ConformanceLevel> (fragment-level), or <xref:System.Xml.ConformanceLevel> (auto-detection)|<xref:System.Xml.ConformanceLevel?displayProperty=fullName> (document-level conformance)|  
+|<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|Whether to add closing tags to all unclosed elements when the <xref:System.Xml.XmlWriter.Close%2A> method is called.|`true` or `false`|`true`|  
+  
+ To specify output format, use these properties:  
+  
+|Property|Specifies|Value|Default|  
+|--------------|---------------|-----------|-------------|  
+|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|Text encoding to use.|<xref:System.Text.Encoding?displayProperty=fullName> value|<xref:System.Text.Encoding.UTF8?displayProperty=fullName>|  
+|<xref:System.Xml.XmlWriterSettings.Indent%2A>|Whether to indent elements|`true` or `false`|`false` (no indentation)|  
+|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Character string to use when indenting (used when <xref:System.Xml.XmlWriterSettings.Indent%2A> is set to `true`).|String|Two spaces|  
+|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|Character string to use for line breaks.|String|`\r\n` (carriage return, line feed)|  
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|How to handle newline characters.|<xref:System.Xml.NewLineHandling?displayProperty=fullName> value: <xref:System.Xml.NewLineHandling> (normalize), <xref:System.Xml.NewLineHandling> (replace), or <xref:System.Xml.NewLineHandling> (leave unchanged)|<xref:System.Xml.NewLineHandling> (replace with characters specified by <xref:System.Xml.XmlWriterSettings.NewLineChars%2A>)|  
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|Whether to write attributes on individual lines (has no effect when <xref:System.Xml.XmlWriterSettings.Indent%2A> is `false`).|`true` or `false`|`false`|  
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|Whether to write an XML declaration.|`true` or `false`|`false`|  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> that writes to an XML file and writes each attribute on a new line.  
+  
+ [!code-csharp[XmlWriterSettings.NewLineOnAttributes#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.NewLineOnAttributes/CS/writenewlineattrs.cs#1)]
+ [!code-vb[XmlWriterSettings.NewLineOnAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.NewLineOnAttributes/VB/writenewlineattrs.vb#1)]  
+  
+ The sample produces the following output:  
+  
+```  
+<order  
+  orderID="367A54"  
+  date="2001-05-03">  
+  <price>19.95</price>  
+</order>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlWriterSettings" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Xml.XmlWriterSettings>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Xml.XmlWriterSettings.Async%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|`true`.|  
+|<xref:System.Xml.XmlWriterSettings.CloseOutput%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel>.|  
+|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|`Encoding.UTF8`.|  
+|<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces.|  
+|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n` (carriage return, new line).|  
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling>.|  
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|`true`.|  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> object that uses the TAB character for indentation.  
+  
+ [!code-csharp[XmlWriterSettings.Indent#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.Indent/CS/writeindent.cs#1)]
+ [!code-vb[XmlWriterSettings.Indent#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.Indent/VB/writeindent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Async">
+      <MemberSignature Language="C#" Value="public bool Async { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Async" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Async" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether asynchronous <see cref="T:System.Xml.XmlWriter" /> methods can be used on a particular <see cref="T:System.Xml.XmlWriter" /> instance.</summary>
+        <value>
+          <see langword="true" /> if asynchronous methods can be used; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set this value to `true` when you create a new <xref:System.Xml.XmlWriter> instance if you want to use asynchronous <xref:System.Xml.XmlWriter> methods on that instance. After the <xref:System.Xml.XmlWriter> instance is created, the <xref:System.Xml.XmlWriterSettings.Async%2A> property is read-only. The default value of this property is `false`.  
+  
+ This flag is ignored by the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=fullName> overload. This means that if you create a new <xref:System.Xml.XmlWriter> based on an existing <xref:System.Xml.XmlWriter>, the async behavior depends on the input <xref:System.Xml.XmlWriter>, and you cannot use the <xref:System.Xml.XmlWriterSettings.Async%2A> flag to change the async behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckCharacters">
+      <MemberSignature Language="C#" Value="public bool CheckCharacters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckCharacters" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.CheckCharacters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the XML writer should check to ensure that all characters in the document conform to the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/#charsets).</summary>
+        <value>
+          <see langword="true" /> to do character checking; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Xml.XmlWriter> object supports character checking, it throws an exception if any characters are outside the range of legal XML characters specified by the "2.2 Characters" section of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/#charsets).  
+  
+ Character checking does not include checking for illegal characters in XML names or checking that all XML names are valid. These checks are part of conformance checking and are always performed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlWriterSettings Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlWriterSettings Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlWriterSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the <see cref="T:System.Xml.XmlWriterSettings" /> instance.</summary>
+        <returns>The cloned <see cref="T:System.Xml.XmlWriterSettings" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cloned <xref:System.Xml.XmlWriterSettings> object can be modified without affecting the settings on the original object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseOutput">
+      <MemberSignature Language="C#" Value="public bool CloseOutput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CloseOutput" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.CloseOutput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Xml.XmlWriter" /> should also close the underlying stream or <see cref="T:System.IO.TextWriter" /> when the <see cref="M:System.Xml.XmlWriter.Close" /> method is called.</summary>
+        <value>
+          <see langword="true" /> to also close the underlying stream or <see cref="T:System.IO.TextWriter" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting is useful when you wish to write XML to a stream, and then add extra information to the end of the stream after the <xref:System.Xml.XmlWriter> has finished writing.  
+  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output XML content to a stream or <xref:System.IO.TextWriter>; otherwise, this setting is ignored.  
+  
+   
+  
+## Examples  
+ The following example writes an XML fragment to a memory stream.  
+  
+ [!code-csharp[XmlWriterSettings.CloseOutput#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.CloseOutput/CS/writestream2.cs#1)]
+ [!code-vb[XmlWriterSettings.CloseOutput#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.CloseOutput/VB/writestream2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConformanceLevel">
+      <MemberSignature Language="C#" Value="public System.Xml.ConformanceLevel ConformanceLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.ConformanceLevel ConformanceLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.ConformanceLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.ConformanceLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of conformance that the XML writer checks the XML output for.</summary>
+        <value>One of the enumeration values that specifies the level of conformance (document, fragment, or automatic detection). The default is <see cref="F:System.Xml.ConformanceLevel.Document" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A?displayProperty=fullName> property configures the XML writer to check and guarantee that the stream being written complies with a certain set of rules. The XML data can be checked to see that it conforms to the rules for a well-formed XML 1.0 document or a document fragment. The following table describes the three settings. The default is document-level conformance.  
+  
+|Setting|Description|  
+|-------------|-----------------|  
+|<xref:System.Xml.ConformanceLevel>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document](http://www.w3.org/TR/REC-xml/#sec-well-formed) and can be processed by any conforming processor.<br /><br /> The document conformance checks include most of the fragment-level checks and also ensure the following:<br /><br /> -   The top-level item doesn't have any nodes other than XML Declaration, DTD, element, comment, white space, or processing instruction.<br />-   The XML data has one and only one top-level element node.<br /><br /> The XML writer doesn't parse DTD information that is written. The user is responsible for ensuring that the DTD is well-formed.|  
+|<xref:System.Xml.ConformanceLevel>|Ensures that the XML output conforms to the [rules for a well-formed XML 1.0 document fragment](http://www.w3.org/TR/REC-xml/#wf-entities).<br /><br /> This setting accepts XML data that has multiple root elements or text nodes at the top level. This level of checking ensures that any processor can consume the stream being read as an XML 1.0 external parsed entity.<br /><br /> DTD information isn't allowed in document fragments.|  
+|<xref:System.Xml.ConformanceLevel>|Specifies that the XML writer should determine the level of conformance checking based on the incoming data. This setting can be useful when you don't know whether the generated XML will be a well-formed XML document or a fragment.<br /><br /> Document conformance checking is applied in the following cases:<br /><br /> -   If the <xref:System.Xml.XmlWriter.WriteStartDocument%2A> method is called.<br />-   If DTD information is written.<br /><br /> Fragment conformance checking is applied if the XML data contains one of these:<br /><br /> -   Text, CDATA, or EntityReference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when you try to write a text node and a DTD at the root level.<br /><br /> If you are wrapping another <xref:System.Xml.XmlWriter> object, the outer object doesn't do any additional conformance checking; this is left to the underlying object.|  
+  
+ If the XML writer detects any information that would violate the specified level of conformance, it throws an exception. In some cases, the XML writer automatically corrects the conformance error. For example, the writer closes an unclosed attribute without throwing an exception. The following table shows how various conformance violations are handled in each setting.  
+  
+|Condition|<xref:System.Xml.ConformanceLevel>|<xref:System.Xml.ConformanceLevel>|<xref:System.Xml.ConformanceLevel>|  
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|  
+|DTD information is found.|Not a violation for this setting. However, the XML writer doesn't check the DTD; the user must ensure that the DTD is well-formed.|<xref:System.Xml.XmlException> is thrown.|Document conformance checking is applied.|  
+|<xref:System.Xml.XmlWriter.WriteStartDocument%2A> is called.|Not considered a violation for this setting.|<xref:System.Xml.XmlException> is thrown.|Document conformance checking is applied.|  
+|<xref:System.Xml.XmlWriter.WriteStartDocument%2A> is called multiple times.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|A text value appears at the top level (not below an element or attribute node).|<xref:System.Xml.XmlException> is thrown.|Not considered a violation.|Fragment conformance checking is applied.|  
+|Multiple elements or no elements appear at the top level.|<xref:System.Xml.XmlException> is thrown.|Not considered a violation.|Fragment conformance checking is applied.|  
+|Top-level item is white space.|Not considered a violation.|Not considered a violation.|Not considered a violation.|  
+|<xref:System.Xml.XmlWriter.WriteEndAttribute%2A> isn't called to end an attribute node.|Fixed by XML writer.|Fixed by XML writer.|Fixed by XML writer.|  
+|The XML writer is in an improperly nested state (for example, a <xref:System.Xml.XmlWriter.WriteStartElement%2A> call is followed by a <xref:System.Xml.XmlWriter.WriteEndAttribute%2A>).|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|Top-level item is an attribute.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|Multiple, contiguous text nodes are found.|Not considered a violation, but it's the responsibility of the user to concatenate the text nodes.|Not considered a violation, but it's the responsibility of the user to concatenate the text nodes.|Not considered a violation, but it's the responsibility of the user to concatenate the text nodes.|  
+|The same namespace prefix is declared twice in an element.|The XML writer generates a new prefix for the second namespace.|The XML writer generates a new prefix for the second namespace.|The XML writer generates a new prefix for the second namespace.|  
+|<xref:System.Xml.XmlWriter.WriteStartElement%2A> specifies a prefix and a namespace that isn't declared within that scope, or the prefix is associated with a different namespace.|The XML writer writes the necessary namespace node.|The XML writer writes the necessary namespace node.|The XML writer writes the necessary namespace node.|  
+|<xref:System.Xml.XmlWriter.WriteStartAttribute%2A> specifies a prefix and a namespace that isn't declared within that scope.|The XML writer writes the necessary namespace node.|The XML writer writes the necessary namespace node.|The XML writer writes the necessary namespace node.|  
+|<xref:System.Xml.XmlWriter.WriteStartAttribute%2A> specifies a prefix and a namespace, but the prefix is associated with a different in-scope namespace.|The XML writer ignores the specified prefix and either looks up the correct prefix or generates a new prefix.|The XML writer ignores the specified prefix and either looks up the correct prefix or generates a new prefix.|The XML writer ignores the specified prefix and either looks up the correct prefix or generates a new prefix.|  
+|<xref:System.Xml.XmlWriter.WriteQualifiedName%2A> is used to write element content by using a namespace that doesn't exist within the scope.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|<xref:System.Xml.XmlWriter.WriteQualifiedName%2A> is used to write attribute content by using a namespace that doesn't exist within the scope.|The XML writer writes the necessary namespace declaration.|The XML writer writes the necessary namespace declaration.|The XML writer writes the necessary namespace declaration.|  
+|The `xml:space` attribute doesn't contain a valid value.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|An invalid name is encountered.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|The `xml` prefix isn't matched to a URI.|The XML writer doesn't check for this type of violation.|The XML writer doesn't check for this type of violation.|The XML writer doesn't check for this type of violation.|  
+|The `xml` prefix isn't matched to the http://www.w3.org/XML/1998/namespace URI.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+|The `xmlns` prefix or local name isn't matched to a URI.|The XML writer doesn't check for this type of violation.|The XML writer doesn't check for this type of violation.|The XML writer doesn't check for this type of violation.|  
+|The `xmlns` prefix or local name isn't matched to the http://www.w3.org/2000/xmlns URI.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|<xref:System.Xml.XmlException> is thrown.|  
+  
+   
+  
+## Examples  
+ The following example writes an XML fragment to a memory stream.  
+  
+ [!code-csharp[XmlWriterSettings.CloseOutput#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.CloseOutput/CS/writestream2.cs#1)]
+ [!code-vb[XmlWriterSettings.CloseOutput#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.CloseOutput/VB/writestream2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotEscapeUriAttributes">
+      <MemberSignature Language="C#" Value="public bool DoNotEscapeUriAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DoNotEscapeUriAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.DoNotEscapeUriAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.XmlWriter" /> does not escape URI attributes.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.XmlWriter" /> do not escape URI attributes; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Encoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of text encoding to use.</summary>
+        <value>The text encoding to use. The default is <see langword="Encoding.UTF8" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlWriter> encodes a buffer of characters all at once, rather than character by character. An exception is thrown when the <xref:System.Xml.XmlWriter.Flush%2A> method is called if any encoding errors are encountered.  
+  
+ The <xref:System.Xml.XmlWriterSettings.Encoding%2A> property only applies to the <xref:System.Xml.XmlWriter> instances that are created either with the specified <xref:System.IO.Stream> or with the specified file name. If the <xref:System.Xml.XmlWriter> instance is created with the specified <xref:System.IO.TextWriter>, the <xref:System.Xml.XmlWriterSettings.Encoding%2A> property is overridden by the encoding of the underlying <xref:System.IO.TextWriter>. For example, if this property is set to Unicode (UTF-16) for a particular <xref:System.Xml.XmlWriter>, but the underlying writer is a <xref:System.IO.StreamWriter> (which derives from <xref:System.IO.TextWriter>) with its encoding set to UTF8, the output will be UTF-8 encoded.  
+  
+ If the <xref:System.Xml.XmlWriter> instance is created with other output parameters, the <xref:System.Xml.XmlWriterSettings.Encoding%2A> property is ignored.  
+  
+ In the following example:  
+  
+-   The default value of <xref:System.Xml.XmlWriterSettings.Encoding%2A> is `Encoding.UTF8`.  
+  
+-   The <xref:System.IO.StreamWriter> is set to `Encoding.Unicode` and the <xref:System.IO.StreamWriter>’s encoding overrides the <xref:System.Xml.XmlWriterSettings.Encoding%2A> setting.  
+  
+-   The output will be `Encoding.Unicode`.  
+  
+```csharp  
+using (StreamWriter output =  
+    new StreamWriter(new FileStream("Xml01.xml", FileMode.Create), Encoding.Unicode))  
+{  
+    using (XmlWriter xmlWriter =  
+        XmlWriter.Create(output, new XmlWriterSettings()))  
+    {  
+        xmlWriter.WriteStartDocument();  
+        xmlWriter.WriteStartElement("Root");  
+        xmlWriter.WriteEndElement();  
+        xmlWriter.WriteEndDocument();  
+    }  
+}  
+```  
+  
+> [!IMPORTANT]
+>  Do not accept an <xref:System.Text.Encoding> object from an untrusted source.  
+  
+   
+  
+## Examples  
+ The following example writes an XML fragment to a memory stream.  
+  
+ [!code-csharp[XmlWriterSettings.CloseOutput#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.CloseOutput/CS/writestream2.cs#1)]
+ [!code-vb[XmlWriterSettings.CloseOutput#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.CloseOutput/VB/writestream2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indent">
+      <MemberSignature Language="C#" Value="public bool Indent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Indent" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.Indent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to indent elements.</summary>
+        <value>
+          <see langword="true" /> to write individual elements on new lines and indent; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output text content; otherwise, this setting is ignored.  
+  
+ The elements are indented as long as the element does not contain mixed content. Once the <xref:System.Xml.XmlWriter.WriteString%2A> or <xref:System.Xml.XmlWriter.WriteWhitespace%2A> method is called to write out a mixed element content, the <xref:System.Xml.XmlWriter> stops indenting. The indenting resumes once the mixed content element is closed.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> object that uses the TAB character for indentation.  
+  
+ [!code-csharp[XmlWriterSettings.Indent#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.Indent/CS/writeindent.cs#1)]
+ [!code-vb[XmlWriterSettings.Indent#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.Indent/VB/writeindent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentChars">
+      <MemberSignature Language="C#" Value="public string IndentChars { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IndentChars" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.IndentChars" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character string to use when indenting. This setting is used when the <see cref="P:System.Xml.XmlWriterSettings.Indent" /> property is set to <see langword="true" />.</summary>
+        <value>The character string to use when indenting. This can be set to any string value. However, to ensure valid XML, you should specify only valid white space characters, such as space characters, tabs, carriage returns, or line feeds. The default is two spaces.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output text content; otherwise, this setting is ignored. The <xref:System.Xml.XmlWriter> throws an exception if the indent characters would result in invalid XML.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> object that uses the TAB character for indentation.  
+  
+ [!code-csharp[XmlWriterSettings.Indent#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.Indent/CS/writeindent.cs#1)]
+ [!code-vb[XmlWriterSettings.Indent#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.Indent/VB/writeindent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Xml.XmlWriterSettings.IndentChars" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceHandling">
+      <MemberSignature Language="C#" Value="public System.Xml.NamespaceHandling NamespaceHandling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.NamespaceHandling NamespaceHandling" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NamespaceHandling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.NamespaceHandling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.XmlWriter" /> should remove duplicate namespace declarations when writing XML content. The default behavior is for the writer to output all namespace declarations that are present in the writer's namespace resolver.</summary>
+        <value>The <see cref="T:System.Xml.NamespaceHandling" /> enumeration used to specify whether to remove duplicate namespace declarations in the <see cref="T:System.Xml.XmlWriter" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLineChars">
+      <MemberSignature Language="C#" Value="public string NewLineChars { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewLineChars" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineChars" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character string to use for line breaks.</summary>
+        <value>The character string to use for line breaks. This can be set to any string value. However, to ensure valid XML, you should specify only valid white space characters, such as space characters, tabs, carriage returns, or line feeds. The default is <c>\r\n</c> (carriage return, new line).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output text content; otherwise, this setting is ignored. The <xref:System.Xml.XmlWriter> throws an exception if the line break characters would result in invalid XML.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value assigned to the <see cref="P:System.Xml.XmlWriterSettings.NewLineChars" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLineHandling">
+      <MemberSignature Language="C#" Value="public System.Xml.NewLineHandling NewLineHandling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.NewLineHandling NewLineHandling" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineHandling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.NewLineHandling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to normalize line breaks in the output.</summary>
+        <value>One of the <see cref="T:System.Xml.NewLineHandling" /> values. The default is <see cref="F:System.Xml.NewLineHandling.Replace" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting applies when writing text content or attribute values. Each of the <xref:System.Xml.NewLineHandling> values is described below:  
+  
+-   The <xref:System.Xml.NewLineHandling> setting tells the <xref:System.Xml.XmlWriter> to replace new line characters that would not be otherwise preserved by a normalizing <xref:System.Xml.XmlReader> with character entities. This is useful in round-trip scenarios where the output is read by a normalizing <xref:System.Xml.XmlReader>. Additional normalization rules apply for attribute values when round tripping since `\t`, `\n` and `\r` are replaced with a space in attribute values when normalized in an <xref:System.Xml.XmlReader>.  
+  
+-   The <xref:System.Xml.NewLineHandling> setting tells the <xref:System.Xml.XmlWriter> to replace new line characters with `\r\n`, which is the new line format used by the Microsoft Windows operating system. This helps to ensure that the file can be correctly displayed by the Notepad or Microsoft Word applications. This setting also replaces new lines in attributes with character entities to preserve the characters. This is the default value.  
+  
+-   The <xref:System.Xml.NewLineHandling> setting tells the <xref:System.Xml.XmlWriter> to leave the input unchanged. This setting is used when you not want any new-line processing. This is useful when the output is read by an <xref:System.Xml.XmlReader> that does not do any normalization (for example, an <xref:System.Xml.XmlTextReader> with default settings.)  
+  
+ The following tables show the output of the <xref:System.Xml.XmlWriter.WriteString%2A> method when supplied with the input value depending on the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property setting. The tables show the output when writing text content and also when writing an attribute value.  
+  
+ `Text Node Value:`  
+  
+||\r\n|\n|\r|\t|  
+|-|------------|---------|---------|---------|  
+|Entitize|&#D;\n|\n|&#D;|\t|  
+|Replace|\r\n|\r\n|\r\n|\t|  
+|None|\r\n|\n|\r|\t|  
+  
+ `Attribute Value:`  
+  
+||\r\n|\n|\r|\t|  
+|-|------------|---------|---------|---------|  
+|Entitize|&#D;&#A;|&#A;|&#D;|&\#9;|  
+|Replace|&#D;&#A;|&#A;|&#D;|&\#9;|  
+|None|\r\n|\n|\r|\t|  
+  
+> [!NOTE]
+>  The <xref:System.Xml.XmlWriter> has the following behavior when writing content within a CDATA section, comment, or processing instruction. New lines are never replaced with their character entities, even when the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property is set to <xref:System.Xml.NewLineHandling>. This is because character entities are not recognized in CDATA sections, comments or processing instructions. If the <xref:System.Xml.XmlWriterSettings.NewLineHandling%2A> property is set to <xref:System.Xml.NewLineHandling> or <xref:System.Xml.NewLineHandling>, the behavior is the same as when writing a text node value.  
+  
+ The following table describes what a normalizing <xref:System.Xml.XmlReader> returns for each white space input. For more information, see sections 2.11 and 3.3.3 of the W3C [XML 1.0 Recommendation](http://www.w3.org/TR/REC-xml/).  
+  
+> [!NOTE]
+>  A normalizing reader is any <xref:System.Xml.XmlReader> object created by the <xref:System.Xml.XmlReader.Create%2A?displayProperty=fullName> method. These objects always perform line break normalization and full normalization of attributes. The <xref:System.Xml.XmlTextReader> object can also be a normalizing reader if it's <xref:System.Xml.XmlTextReader.Normalization%2A> property is set to `true`.  
+  
+||\r\n|\n|\r|\t|  
+|-|------------|---------|---------|---------|  
+|Text Node Value|\n|\n|\n|\t|  
+|Attribute Value|single space|single space|single space|single space|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLineOnAttributes">
+      <MemberSignature Language="C#" Value="public bool NewLineOnAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NewLineOnAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.NewLineOnAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to write attributes on a new line.</summary>
+        <value>
+          <see langword="true" /> to write attributes on individual lines; otherwise, <see langword="false" />. The default is <see langword="false" />.  
+  
+ <block subset="none" type="note">  
+<para>  
+ This setting has no effect when the <see cref="P:System.Xml.XmlWriterSettings.Indent" /> property value is <see langword="false" />.  
+  
+</para>  
+</block>  
+  
+ When <see cref="P:System.Xml.XmlWriterSettings.NewLineOnAttributes" /> is set to <see langword="true" />, each attribute is pre-pended with a new line and one extra level of indentation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output text content; otherwise, this setting is ignored.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> that writes to an XML file and writes each attribute on a new line.  
+  
+ [!code-csharp[XmlWriterSettings.NewLineOnAttributes#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.NewLineOnAttributes/CS/writenewlineattrs.cs#1)]
+ [!code-vb[XmlWriterSettings.NewLineOnAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.NewLineOnAttributes/VB/writenewlineattrs.vb#1)]  
+  
+ The sample produces the following output:  
+  
+```  
+<order  
+  orderID="367A54"  
+  date="2001-05-03">  
+  <price>19.95</price>  
+</order>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OmitXmlDeclaration">
+      <MemberSignature Language="C#" Value="public bool OmitXmlDeclaration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OmitXmlDeclaration" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.OmitXmlDeclaration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to omit an XML declaration.</summary>
+        <value>
+          <see langword="true" /> to omit the XML declaration; otherwise, <see langword="false" />. The default is <see langword="false" />, an XML declaration is written.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only applies to <xref:System.Xml.XmlWriter> instances that output text content; otherwise, this setting is ignored.  
+  
+ If <xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A> is set to `false`, The XML declaration is written automatically  
+  
+ The XML declaration is always written if <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A> is set to <xref:System.Xml.ConformanceLevel>, even if <xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A> is set to `true`.  
+  
+ The XML declaration is never written if <xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A> is set to <xref:System.Xml.ConformanceLevel>. You can call <xref:System.Xml.XmlWriter.WriteProcessingInstruction%2A> to explicitly write out an XML declaration.  
+  
+   
+  
+## Examples  
+ The following example writes an XML fragment to a memory stream.  
+  
+ [!code-csharp[XmlWriterSettings.CloseOutput#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlWriterSettings.CloseOutput/CS/writestream2.cs#1)]
+ [!code-vb[XmlWriterSettings.CloseOutput#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlWriterSettings.CloseOutput/VB/writestream2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputMethod">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlOutputMethod OutputMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlOutputMethod OutputMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.OutputMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlOutputMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the method used to serialize the <see cref="T:System.Xml.XmlWriter" /> output.</summary>
+        <value>One of the <see cref="T:System.Xml.XmlOutputMethod" /> values. The default is <see cref="F:System.Xml.XmlOutputMethod.Xml" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the method used to serialize the output. The output can be serialized using the HTML rules, the XML 1.0 rules, and so on. This setting is set by the XSLT processor and is used internally by Visual Studio.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlWriterSettings.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the members of the settings class to their default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default property values for an instance of <xref:System.Xml.XmlWriterSettings>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Xml.XmlWriterSettings.Async%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.CheckCharacters%2A>|`true`.|  
+|<xref:System.Xml.XmlWriterSettings.CloseOutput%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel>.|  
+|<xref:System.Xml.XmlWriterSettings.Encoding%2A>|`Encoding.UTF8`.|  
+|<xref:System.Xml.XmlWriterSettings.Indent%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.IndentChars%2A>|Two spaces.|  
+|<xref:System.Xml.XmlWriterSettings.NewLineChars%2A>|`\r\n`.|  
+|<xref:System.Xml.XmlWriterSettings.NewLineHandling%2A>|<xref:System.Xml.NewLineHandling>.|  
+|<xref:System.Xml.XmlWriterSettings.NewLineOnAttributes%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.OmitXmlDeclaration%2A>|`false`.|  
+|<xref:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndDocumentOnClose">
+      <MemberSignature Language="C#" Value="public bool WriteEndDocumentOnClose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WriteEndDocumentOnClose" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlWriterSettings.WriteEndDocumentOnClose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.XmlWriter" /> will add closing tags to all unclosed element tags when the <see cref="M:System.Xml.XmlWriter.Close" /> method is called.</summary>
+        <value>
+          <see langword="true" /> if all unclosed element tags will be closed out; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set this flag to `false`, the output XML file may not be well-formed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

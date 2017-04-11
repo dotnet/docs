@@ -1,0 +1,197 @@
+<Type Name="WebEventProvider" FullName="System.Web.Management.WebEventProvider">
+  <TypeSignature Language="C#" Value="public abstract class WebEventProvider : System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebEventProvider extends System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class for non buffered event providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ If you want to customize the health-event processing, you can derive from the <xref:System.Web.Management.WebEventProvider> class to create your own custom provider.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of deriving from the <xref:System.Web.Management.WebEventProvider> class, see the example provided in this topic.  
+  
+   
+  
+## Examples  
+ The following code example shows how to derive from the <xref:System.Web.Management.WebEventProvider> class to create a custom provider that writes the configured events to a local file for which appropriate access rights must be granted. This custom provider example is simple and its main intent is to give you as developer full control of its basic mechanisms. In a real-world scenario, you could use this provider and especially the example buffered provider available at <xref:System.Web.Management.BufferedWebEventProvider>, as a preliminary probe into the behavior of an application. This can help you during the design stage to gain an understanding of the information available; then later you can direct this information to a more complex provider.  
+  
+ The following configuration file excerpt shows a `healthMonitoring` section configuration that enables ASP.NET to use the custom provider defined above to process all health-monitoring events.  
+  
+```  
+<healthMonitoring   
+  heartBeatInterval="0"   
+  enabled="true">  
+  
+    <providers>  
+  
+      <add name="SampleWebEventProvider"   
+        type="SamplesAspNet.SampleEventProvider,webeventprovider, Version=1.0.1773.33989, Culture=neutral, PublicKeyToken=cf85aa6c978d9dea, processorArchitecture=MSIL" />  
+  
+    </providers>  
+  
+    <rules>  
+  
+      <rule   
+        name="Custom Event Provider"  
+        eventName="All Events"  
+        provider="SampleWebEventProvider"  
+        profile="Default" />  
+    </rules>  
+  
+</healthMonitoring>  
+```  
+  
+ [!code-csharp[System.Web.Management.WebEventProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/CS/webeventprovider.cs#1)]
+ [!code-vb[System.Web.Management.WebEventProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/VB/webeventprovider.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebEventProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebEventProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebEventProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by ASP.NET. You can call the <xref:System.Web.Management.WebEventProvider.%23ctor%2A> constructor when deriving from the <xref:System.Web.Management.WebEventProvider> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor in a custom event provider.  
+  
+ [!code-csharp[System.Web.Management.WebEventProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/CS/webeventprovider.cs#2)]
+ [!code-vb[System.Web.Management.WebEventProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/VB/webeventprovider.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public abstract void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Flush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Moves the events from the provider's buffer into the event log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is called, all the events in the buffer are immediately moved from the buffer to the event log, regardless of how much time has elapsed since last write or how many events are in the buffer. The time of the last write is reset to the time of the flushing action.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventProvider.Flush%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebEventProvider#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/CS/webeventprovider.cs#3)]
+ [!code-vb[System.Web.Management.WebEventProvider#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/VB/webeventprovider.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEvent">
+      <MemberSignature Language="C#" Value="public abstract void ProcessEvent (System.Web.Management.WebBaseEvent raisedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessEvent(class System.Web.Management.WebBaseEvent raisedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raisedEvent" Type="System.Web.Management.WebBaseEvent" />
+      </Parameters>
+      <Docs>
+        <param name="raisedEvent">The <see cref="T:System.Web.Management.WebBaseEvent" /> object to process.</param>
+        <summary>Processes the event passed to the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the method that ASP.NET health monitoring calls to start processing the event.  
+  
+   
+  
+## Examples  
+ The following code example shows how to implement the <xref:System.Web.Management.WebEventProvider.ProcessEvent%2A> method. This method appends the customized string representation of the event to a specific log file.  
+  
+ [!code-csharp[System.Web.Management.WebEventProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/CS/webeventprovider.cs#5)]
+ [!code-vb[System.Web.Management.WebEventProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/VB/webeventprovider.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shutdown">
+      <MemberSignature Language="C#" Value="public abstract void Shutdown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Shutdown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs tasks associated with shutting down the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET calls the <xref:System.Web.Management.EventLogWebEventProvider.Shutdown%2A> method when the application domain hosting the Web application terminates. The method is called to perform tasks that will allow the application to end gracefully, such as closing resources.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebEventProvider.Shutdown%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebEventProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/CS/webeventprovider.cs#4)]
+ [!code-vb[System.Web.Management.WebEventProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebEventProvider/VB/webeventprovider.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

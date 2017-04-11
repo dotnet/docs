@@ -1,0 +1,13 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="Page1"
+    >
+    <Grid Background="LightBlue">
+        <TextBlock FontSize="40">
+            Page 1
+            <LineBreak />
+            <Hyperlink NavigateUri="Page2.xaml">Page 2</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>

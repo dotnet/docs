@@ -1,0 +1,61 @@
+<Type Name="RecycleOption" FullName="Microsoft.VisualBasic.FileIO.RecycleOption">
+  <TypeSignature Language="C#" Value="public enum RecycleOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecycleOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a file should be deleted permanently or placed in the **Recycle Bin**.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory%2A> and <xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A> methods.  
+  
+ To protect users against accidental deletion of important files, the **Recycle Bin** collects deleted files and provides a method for restoring those files. You must explicitly delete the files from the **Recycle Bin** to make the deletion permanent. Until the files are deleted from the **Recycle Bin**, the disk space occupied by those files is unavailable for other uses.  
+  
+ Sometimes it is beneficial to bypass the **Recycle Bin**, especially if you are deleting a large number of files (or a smaller number of very large files) that you are sure are no longer needed, and you want to reclaim the disk space.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeletePermanently">
+      <MemberSignature Language="C#" Value="DeletePermanently" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.RecycleOption DeletePermanently = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.DeletePermanently" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Delete the file or directory permanently. Default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToRecycleBin">
+      <MemberSignature Language="C#" Value="SendToRecycleBin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.RecycleOption SendToRecycleBin = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.SendToRecycleBin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Send the file or directory to the **Recycle Bin**.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+<Type Name="StopBits" FullName="System.IO.Ports.StopBits">
+  <TypeSignature Language="C#" Value="public enum StopBits" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StopBits extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Ports.StopBits" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the number of stop bits used on the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this enumeration when setting the value of the <xref:System.IO.Ports.SerialPort.StopBits%2A> property on the <xref:System.IO.Ports.SerialPort> class. Stop bits separate each unit of data on an asynchronous serial connection. They are also sent continuously when no data is available for transmission.  
+  
+ The <xref:System.IO.Ports.SerialPort> class throws an <xref:System.ArgumentOutOfRangeException> exception when you set the <xref:System.IO.Ports.SerialPort.StopBits%2A> property to None.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.IO.Ports.SerialPort.StopBits%2A> property to `One`.  
+  
+ [!code-cpp[System.IO.Ports.SerialPort#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/datareceived.cpp#20)]
+ [!code-csharp[System.IO.Ports.SerialPort#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/datareceived.cs#20)]
+ [!code-vb[System.IO.Ports.SerialPort#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/datareceived.vb#20)]  
+  
+ The following code example displays the possible values of the <xref:System.IO.Ports.StopBits> enumeration to the console, then prompts the user to choose one. This code example is part of a larger code example provided for the <xref:System.IO.Ports.SerialPort> class.  
+  
+ [!code-cpp[System.IO.Ports.SerialPort#04](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cpp/serialport.cpp#04)]
+ [!code-csharp[System.IO.Ports.SerialPort#04](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/cs/SerialPort.cs#04)]
+ [!code-vb[System.IO.Ports.SerialPort#04](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Ports.SerialPort/vb/SerialPort.vb#04)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.StopBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No stop bits are used. This value is not supported by the <see cref="P:System.IO.Ports.SerialPort.StopBits" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="One">
+      <MemberSignature Language="C#" Value="One" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits One = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.One" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.StopBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One stop bit is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnePointFive">
+      <MemberSignature Language="C#" Value="OnePointFive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits OnePointFive = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.OnePointFive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.StopBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>1.5 stop bits are used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Two">
+      <MemberSignature Language="C#" Value="Two" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits Two = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.Two" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.StopBits</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Two stop bits are used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

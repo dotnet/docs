@@ -1,0 +1,182 @@
+<Type Name="WindowsStreamSecurityElement" FullName="System.ServiceModel.Configuration.WindowsStreamSecurityElement">
+  <TypeSignature Language="C#" Value="public sealed class WindowsStreamSecurityElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsStreamSecurityElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WindowsStreamSecurityElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.BindingElementExtensionElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that is used to specify settings for Windows stream security for a binding. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsStreamSecurityElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsStreamSecurityElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WindowsStreamSecurityElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyConfiguration">
+      <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsStreamSecurityElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindingElement">A binding element.</param>
+        <summary>Applies the content of a specified binding element to this binding configuration element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElementType">
+      <MemberSignature Language="C#" Value="public override Type BindingElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsStreamSecurityElement.BindingElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> object that represents the binding element.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the binding type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFrom">
+      <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsStreamSecurityElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="from" Type="System.ServiceModel.Configuration.ServiceModelExtensionElement" />
+      </Parameters>
+      <Docs>
+        <param name="from">The configuration element to be copied.</param>
+        <summary>Copies the content of a specified configuration element to this configuration element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElement">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsStreamSecurityElement.CreateBindingElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFrom">
+      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WindowsStreamSecurityElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingElement" Type="System.ServiceModel.Channels.BindingElement" />
+      </Parameters>
+      <Docs>
+        <param name="bindingElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsStreamSecurityElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WindowsStreamSecurityElement.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("protectionLevel", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message-level security used.</summary>
+        <value>A <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the message-level security used. The default value is <see cref="F:System.Net.Security.ProtectionLevel.EncryptAndSign" /> .</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the message-level security used for signing and encryption. Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

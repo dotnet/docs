@@ -1,0 +1,621 @@
+<Type Name="RecognizedWordUnit" FullName="System.Speech.Recognition.RecognizedWordUnit">
+  <TypeSignature Language="C#" Value="public class RecognizedWordUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RecognizedWordUnit extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizedWordUnit" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Text: {Text}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the atomic unit of recognized speech.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All results returned by a recognition engine are constructed of <xref:System.Speech.Recognition.RecognizedWordUnit> objects.  
+  
+ An array of <xref:System.Speech.Recognition.RecognizedWordUnit> objects is accessible for any recognition operation through the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+ In addition to providing a measure of recognition certainty (<xref:System.Speech.Recognition.RecognizedWordUnit.Confidence%2A>) a <xref:System.Speech.Recognition.RecognizedWordUnit> instance provides:  
+  
+-   Normalized and exact (or lexical) text representations for a recognized word. For more information, see <xref:System.Speech.Recognition.ReplacementText>, <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>, and <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>.  
+  
+-   Pronunciation information using characters from a supported phonetic alphabet, such as the International Phonetic Alphabet (IPA) or the Universal Phone Set (UPS). For more information see <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>.  
+  
+-   Formatting for printing. For more information see the <xref:System.Speech.Recognition.DisplayAttributes> class and its <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows a utility routine (`stringFromWordArray`) that generates strings. The strings contain lexical output (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized text (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), or phonetic characters from the International Phonetic Alphabet (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). Strings are formatted using <xref:System.Speech.Recognition.DisplayAttributes> objects obtained from the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects. The <xref:System.Speech.Recognition.RecognizedWordUnit> objects are obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+```csharp  
+  
+internal enum WordType   
+{  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
+}  
+```  
+  
+```csharp  
+internal static string stringFromWordArray(ReadOnlyCollection<RecognizedWordUnit> words, WordType type)   
+{  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(String.Format("[0}: is not a valid input", type));  
+    }  
+    // Use display attribute  
+  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecognizedWordUnit (string text, float confidence, string pronunciation, string lexicalForm, System.Speech.Recognition.DisplayAttributes displayAttributes, TimeSpan audioPosition, TimeSpan audioDuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, float32 confidence, string pronunciation, string lexicalForm, valuetype System.Speech.Recognition.DisplayAttributes displayAttributes, valuetype System.TimeSpan audioPosition, valuetype System.TimeSpan audioDuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedWordUnit.#ctor(System.String,System.Single,System.String,System.String,System.Speech.Recognition.DisplayAttributes,System.TimeSpan,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="confidence" Type="System.Single" />
+        <Parameter Name="pronunciation" Type="System.String" />
+        <Parameter Name="lexicalForm" Type="System.String" />
+        <Parameter Name="displayAttributes" Type="System.Speech.Recognition.DisplayAttributes" />
+        <Parameter Name="audioPosition" Type="System.TimeSpan" />
+        <Parameter Name="audioDuration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="text">The normalized text for a recognized word.  
+  
+ This value can be <see langword="null" />, "", or <see cref="F:System.String.Empty" />.</param>
+        <param name="confidence">A <see langword="float" /> value from 0.0 through 1.0 indicating the certainty of word recognition.</param>
+        <param name="pronunciation">The phonetic spelling of a recognized word.  
+  
+ This value can be <see langword="null" />, "", or <see cref="F:System.String.Empty" />.</param>
+        <param name="lexicalForm">The unnormalized text for a recognized word.  
+  
+ This argument is required and may not be <see langword="null" />, "", or <see cref="F:System.String.Empty" />.</param>
+        <param name="displayAttributes">Defines the use of white space to display recognized words.</param>
+        <param name="audioPosition">The location of the recognized word in the audio input stream.  
+  
+ This value can be <see cref="F:System.TimeSpan.Zero" />.</param>
+        <param name="audioDuration">The length of the audio input corresponding to the recognized word.  
+  
+ This value can be <see cref="F:System.TimeSpan.Zero" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.RecognizedWordUnit" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `text` or `pronunciation` are `null`, "", or <xref:System.String> and the <xref:System.Speech.Recognition.RecognizedWordUnit> is used in a recognition operation, the recognition engine will generate appropriate values in any output <xref:System.Speech.Recognition.RecognizedWordUnit> instance.  
+  
+ Direct construction of <xref:System.Speech.Recognition.RecognizedWordUnit> instances is typically used only when emulating recognition operations using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognize%2A> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.EmulateRecognizeAsync%2A> methods of the <xref:System.Speech.Recognition.SpeechRecognitionEngine> class and the <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognize%2A> or <xref:System.Speech.Recognition.SpeechRecognizer.EmulateRecognizeAsync%2A> methods of the <xref:System.Speech.Recognition.SpeechRecognizer> class.  
+  
+ For actual applications, do not directly construct <xref:System.Speech.Recognition.RecognizedWordUnit>, rather obtain it through the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+   
+  
+## Examples  
+ The following example is a somewhat contrived test of emulation, where new words are generated from the input and passed to the emulator, and then verified.  
+  
+```csharp  
+private void _emulateAndVerify_Click(object sender, EventArgs e)   
+{  
+  char[] delimiterChars = { ' ', ',', '.', ':', ';', '\t' };  
+  string text = _emulateTextBox.Text;  
+  string[] words = text.Split(delimiterChars);  
+  
+  RecognizedWordUnit[] InputWordUnits = new RecognizedWordUnit[words.Length];  
+  for (int i = 0; i < words.Length; i++)   
+  {  
+    InputWordUnits[i] = new RecognizedWordUnit(  
+        "",   
+        0,   
+        "",  
+        words[i].ToLower(),   
+        DisplayAttributes.OneTrailingSpace,   
+        new TimeSpan(),   
+        new TimeSpan());  
+  }  
+  
+  RecognitionResult rec = _recognizer.EmulateRecognize(  
+        InputWordUnits,   
+        System.Globalization.CompareOptions.IgnoreCase);  
+  if (rec == null)   
+  {  
+    MessageBox.Show(String.Format("Recognition emulation for {0} failed.\n", text));  
+  }   
+  else if (InputWordUnits.Length != rec.Words.Count)   
+  {  
+    MessageBox.Show(  
+       String.Format("Length mismatch: Input was {0} words, Recognition has {1} words.\n}"));  
+  }   
+  else   
+  {  
+    for (int i = 0; i < InputWordUnits.Length; i++)   
+    {  
+  
+      if (rec.Words[i].LexicalForm.ToLower() != InputWordUnits[i].LexicalForm.ToLower())   
+      {  
+        MessageBox.Show(  
+          String.Format("Input word {0} \"{1}\" not found. Recognition output is {2}",  
+          i, InputWordUnits[i].LexicalForm, rec.Words[i].LexicalForm));  
+        continue;  
+      }  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confidence">
+      <MemberSignature Language="C#" Value="public float Confidence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Confidence" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Confidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value, assigned by the recognizer, that represents the likelihood that a recognized word matches a given input.</summary>
+        <value>A relative measure of the certainty of correct recognition for a word. The value is from 0.0 to 1.0, for low to high confidence, respectively.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Confidence scores do not indicate the absolute likelihood that a word was recognized correctly. Instead, confidence scores provide a mechanism for comparing the relative accuracy of multiple recognition alternates for a given input. This facilitates returning the most accurate recognition result. For example, if a recognized word has a confidence score of 0.8, this does not mean that the word has an 80% chance of being the correct match for the input.  It means that the word is more likely to be the correct match for the input than other results that have confidence scores less than 0.8.  
+  
+ A confidence score on its own is not meaningful unless you have alternative results to compare against, either from the same recognition operation or from previous recognitions of the same input.  
+  
+ The values returned by <xref:System.Speech.Recognition.RecognizedWordUnit.Confidence%2A> are relative and unique to each recognition engine. There is no definition of how confidence values between two different recognition engines compare, nor how the <xref:System.Speech.Recognition.RecognizedWordUnit.Confidence%2A> of individual <xref:System.Speech.Recognition.RecognizedWordUnit> objects define the <xref:System.Speech.Recognition.RecognizedPhrase.Confidence%2A> of a <xref:System.Speech.Recognition.RecognizedPhrase>.  
+  
+ A speech recognition engine may assign a low confidence score to spoken input for various reasons, including background interference, inarticulate speech, or unanticipated words or word sequences. If your application is using a <xref:System.Speech.Recognition.SpeechRecognitionEngine> instance, you can modify the confidence level at which speech input is accepted or rejected with one of the <xref:System.Speech.Recognition.SpeechRecognitionEngine.UpdateRecognizerSetting%2A> methods. Confidence thresholds for the shared recognizer, managed by <xref:System.Speech.Recognition.SpeechRecognizer>, are associated with a user profile and stored in the Windows registry. Applications should not write changes to the registry for the properties of the shared recognizer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayAttributes">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.DisplayAttributes DisplayAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.DisplayAttributes DisplayAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets formatting information used to create the text output from the current <see cref="T:System.Speech.Recognition.RecognizedWordUnit" /> instance.</summary>
+        <value>Specifies the use of white space to display of the contents of a <see cref="T:System.Speech.Recognition.RecognizedWordUnit" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.DisplayAttributes> object returned by the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property specifies the leading and trailing spaces to be used with a given word, if any.  
+  
+ For more information about how to use this formatting information, see the <xref:System.Speech.Recognition.DisplayAttributes> enumeration.  
+  
+   
+  
+## Examples  
+ The following example shows a utility routine (`stringFromWordArray`) that generates a string that is formatted in one of three ways: lexically (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), or phonetically (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from the <xref:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes%2A> property on a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on a <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+```csharp  
+  
+internal enum WordType   
+{  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
+}  
+```  
+  
+```csharp  
+internal static string stringFromWordArray(  
+        ReadOnlyCollection<RecognizedWordUnit> words,   
+        WordType type)   
+{  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }  
+    else if (type == WordType.Pronunciation)   
+    {  
+       wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+         String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LexicalForm">
+      <MemberSignature Language="C#" Value="public string LexicalForm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LexicalForm" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.LexicalForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unnormalized text of a recognized word.</summary>
+        <value>Returns a <see cref="T:System.String" /> containing the text of a recognized word, without any normalization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In most cases the values returned by <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A> and <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A> are identical. However, recognition engines may use speech normalization to return more user-friendly or colloquial text representations of audio input.  
+  
+ Speech normalization is the use of special constructs or symbols to express speech in writing. For example, normalization can replace the spoken words "a dollar and sixteen cents" with "$1.16" in output text.  
+  
+   
+  
+## Examples  
+ The following example shows a utility routine that generates text in one of three formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+```csharp  
+  
+internal enum WordType   
+{  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
+}  
+```  
+  
+```csharp  
+internal static string stringFromWordArray(  
+         ReadOnlyCollection<RecognizedWordUnit> words,   
+         WordType type)   
+{  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+          String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)  
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)  
+    {  
+    wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pronunciation">
+      <MemberSignature Language="C#" Value="public string Pronunciation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Pronunciation" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Pronunciation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the phonetic spelling of a recognized word.</summary>
+        <value>A string of characters from a supported phonetic alphabet, such as the International Phonetic Alphabet (IPA) or the Universal Phone Set (UPS).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A> indicate which pronunciation the speech recognition engine used to match speech input to one of its loaded <xref:System.Speech.Recognition.Grammar> objects. Pronunciations may be defined in the speech recognition engine's internal lexicon, in a lexicon document that is linked from a recognition grammar in a loaded <xref:System.Speech.Recognition.Grammar> object, or inline in a recognition grammar in a loaded <xref:System.Speech.Recognition.Grammar> object. A speech recognition engine may also create pronunciations for uncommon words whose pronunciations are not defined in a lexicon or grammar to which the speech recognition engine currently has access.  
+  
+ Many Windows-based Unicode fonts, such as Courier New, support the display of IPA strings. For more information, see [International Phonetic Alphabet](http://go.microsoft.com/fwlink/?LinkId=58363).  
+  
+   
+  
+## Examples  
+ The following example shows a utility routine that generates a string with one of three possible formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+```csharp  
+  
+internal enum WordType   
+{  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
+}  
+```  
+  
+```csharp  
+internal static string stringFromWordArray(  
+          ReadOnlyCollection<RecognizedWordUnit> words,   
+          WordType type)   
+{  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+          String.Format("[0}: is not a valid input", type));  
+    }  
+    // Use display attribute  
+  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  }  
+  return text;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the normalized text for a recognized word.</summary>
+        <value>A string that contains the normalized text output for a given input word.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In most cases the values returned by <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A> and <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A> will be identical. However, recognition engines may use speech normalization to return more user-friendly or colloquial text representations of audio input.  
+  
+ Speech normalization is the use of special constructs or symbols to express speech in writing. For example, normalization can replace the spoken words "a dollar and sixteen cents" with "$1.16" in output text.  
+  
+   
+  
+## Examples  
+ The following example shows a utility routine that generates a string in one of three formats: lexical (using <xref:System.Speech.Recognition.RecognizedWordUnit.LexicalForm%2A>), normalized (using <xref:System.Speech.Recognition.RecognizedWordUnit.Text%2A>), and phonetic (using <xref:System.Speech.Recognition.RecognizedWordUnit.Pronunciation%2A>). The text output is obtained from a <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.Speech.Recognition.RecognizedWordUnit> objects, which is obtained from the <xref:System.Speech.Recognition.RecognizedPhrase.Words%2A> property on the <xref:System.Speech.Recognition.RecognizedPhrase> object.  
+  
+```csharp  
+  
+internal enum WordType   
+{  
+  Text,  
+  Normalized = Text,  
+  Lexical,  
+  Pronunciation  
+}  
+```  
+  
+```csharp  
+internal static string stringFromWordArray(  
+          ReadOnlyCollection<RecognizedWordUnit> words,   
+          WordType type)   
+{  
+  string text = "";  
+  foreach (RecognizedWordUnit word in words)   
+  {  
+    string wordText = "";  
+    if (type == WordType.Text || type == WordType.Normalized)   
+    {  
+      wordText = word.Text;  
+    }   
+    else if (type == WordType.Lexical)   
+    {  
+      wordText = word.LexicalForm;  
+    }   
+    else if (type == WordType.Pronunciation)   
+    {  
+      wordText = word.Pronunciation;  
+    }   
+    else   
+    {  
+      throw new InvalidEnumArgumentException(  
+           String.Format("[0}: is not a valid input", type));  
+    }  
+  
+    // Use display attribute  
+    if ((word.DisplayAttributes & DisplayAttributes.OneTrailingSpace) != 0)   
+    {  
+      wordText += " ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.TwoTrailingSpaces) != 0)   
+    {  
+      wordText += "  ";  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ConsumeLeadingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimStart();  
+    }  
+    if ((word.DisplayAttributes & DisplayAttributes.ZeroTrailingSpaces) != 0)   
+    {  
+      wordText = wordText.TrimEnd();  
+    }  
+  
+    text += wordText;  
+  
+  }  
+  return text;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

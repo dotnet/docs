@@ -1,0 +1,338 @@
+<Type Name="ControlStyles" FullName="System.Windows.Forms.ControlStyles">
+  <TypeSignature Language="C#" Value="public enum ControlStyles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlStyles extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlStyles" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the style and behavior of a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls use this enumeration in various properties and methods to specify functionality. A control can enable a style by calling the <xref:System.Windows.Forms.Control.SetStyle%2A> method and passing in the appropriate <xref:System.Windows.Forms.ControlStyles> bit (or bits) and the Boolean value to set the bit(s) to. For example, the following line of Visual Basic code would enable double-buffering.  
+  
+```  
+myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)  
+```  
+  
+ If the AllPaintingInWmPaint bit is set to `true`, the window message WM_ERASEBKGND is ignored, and both <xref:System.Windows.Forms.Control.OnPaintBackground%2A> and <xref:System.Windows.Forms.Control.OnPaint%2A> methods are called directly from the window message WM_PAINT. This generally reduces flicker unless other controls send the window message WM_ERASEBKGND to the control. You might send the window message WM_ERASEBKGRND to achieve a pseudo-transparent effect similar to SupportsTransparentBackColor; for example, a <xref:System.Windows.Forms.ToolBar> with flat appearance does this.  
+  
+ To fully enable double-buffering, you can set the OptimizedDoubleBuffer and AllPaintingInWmPaint bits to `true`. However the preferred method for enabling double buffering, which yields the same result, is to set the <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property for the control to `true`.  
+  
+ If the SupportsTransparentBackColor bit is set to `true`, and the <xref:System.Windows.Forms.Control.BackColor%2A> is set to a color whose alpha component is less than 255, <xref:System.Windows.Forms.Control.OnPaintBackground%2A> will simulate transparency by asking its parent control to paint the background. This is not true transparency.  
+  
+> [!NOTE]
+>  If there is another control between the control and its parent, the current control will not show the control in the middle.  
+  
+ When the UserMouse bit is set to `true`, the following methods are still called: <xref:System.Windows.Forms.Control.OnMouseDown%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseUp%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseEnter%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseMove%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseHover%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.OnMouseLeave%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Control.OnMouseWheel%2A?displayProperty=fullName>.  
+  
+ When the control is clicked, if the StandardClick bit is set to `true` the <xref:System.Windows.Forms.Control.OnClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> event. When the control is double-clicked, and both the StandardClick and StandardDoubleClick bits are set to `true`, the click is passed on to the <xref:System.Windows.Forms.Control.DoubleClick> event. Then the <xref:System.Windows.Forms.Control.OnDoubleClick%2A?displayProperty=fullName> method is called and it raises the <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> event. However, the control can call <xref:System.Windows.Forms.Control.OnClick%2A> or <xref:System.Windows.Forms.Control.OnDoubleClick%2A> directly regardless of the StandardClick and StandardDoubleClick bit values. For more information on control click and double click behaviors, see the <xref:System.Windows.Forms.Control.Click?displayProperty=fullName> and <xref:System.Windows.Forms.Control.DoubleClick?displayProperty=fullName> topics.  
+  
+ When the UseTextForAccessibility bit is set and there is a value in the control's `Text` property, the value of that control's `Text` property determines the control's default Active Accessibility name and shortcut key. Otherwise, the text of the preceding <xref:System.Windows.Forms.Label> control will be used instead. This style is set by default. Certain built-in control types, such as <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.ComboBox>, reset this style so that the `Text` property of those controls will not be used by Active Accessibility.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a use of <xref:System.Windows.Forms.ControlStyles> with the <xref:System.Windows.Forms.Control.StyleChanged> event.  
+  
+ [!code-cpp[Control_StyleChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control_StyleChanged/CPP/control_stylechanged.cpp#1)]
+ [!code-csharp[Control_StyleChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control_StyleChanged/CS/control_stylechanged.cs#1)]
+ [!code-vb[Control_StyleChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control_StyleChanged/VB/control_stylechanged.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Inheriting from a standard Windows Forms control and changing the <see cref="F:System.Windows.Forms.ControlStyles.StandardClick" /> or <see cref="F:System.Windows.Forms.ControlStyles.StandardDoubleClick" /> bit values to <see langword="true" /> can cause unexpected behavior or can have no effect at all if the control does not support the <see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" /> events.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="AllPaintingInWmPaint">
+      <MemberSignature Language="C#" Value="AllPaintingInWmPaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles AllPaintingInWmPaint = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control ignores the window message WM_ERASEBKGND to reduce flicker. This style should only be applied if the <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> bit is set to <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheText">
+      <MemberSignature Language="C#" Value="CacheText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles CacheText = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.CacheText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control keeps a copy of the text rather than getting it from the <see cref="P:System.Windows.Forms.Control.Handle" /> each time it is needed. This style defaults to <see langword="false" />. This behavior improves performance, but makes it difficult to keep the text synchronized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerControl">
+      <MemberSignature Language="C#" Value="ContainerControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles ContainerControl = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.ContainerControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control is a container-like control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleBuffer">
+      <MemberSignature Language="C#" Value="DoubleBuffer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles DoubleBuffer = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.DoubleBuffer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, drawing is performed in a buffer, and after it completes, the result is output to the screen. Double-buffering prevents flicker caused by the redrawing of the control. If you set <see cref="F:System.Windows.Forms.ControlStyles.DoubleBuffer" /> to <see langword="true" />, you should also set <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> and <see cref="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" /> to <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableNotifyMessage">
+      <MemberSignature Language="C#" Value="EnableNotifyMessage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles EnableNotifyMessage = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.EnableNotifyMessage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the <see cref="M:System.Windows.Forms.Control.OnNotifyMessage(System.Windows.Forms.Message)" /> method is called for every message sent to the control's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />. This style defaults to <see langword="false" />. <see cref="F:System.Windows.Forms.ControlStyles.EnableNotifyMessage" /> does not work in partial trust.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedHeight">
+      <MemberSignature Language="C#" Value="FixedHeight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles FixedHeight = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.FixedHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control has a fixed height when auto-scaled. For example, if a layout operation attempts to rescale the control to accommodate a new <see cref="T:System.Drawing.Font" />, the control's <see cref="P:System.Windows.Forms.Control.Height" /> remains unchanged.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedWidth">
+      <MemberSignature Language="C#" Value="FixedWidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles FixedWidth = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.FixedWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control has a fixed width when auto-scaled. For example, if a layout operation attempts to rescale the control to accommodate a new <see cref="T:System.Drawing.Font" />, the control's <see cref="P:System.Windows.Forms.Control.Width" /> remains unchanged.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Opaque">
+      <MemberSignature Language="C#" Value="Opaque" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles Opaque = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.Opaque" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control is drawn opaque and the background is not painted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OptimizedDoubleBuffer">
+      <MemberSignature Language="C#" Value="OptimizedDoubleBuffer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles OptimizedDoubleBuffer = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control is first drawn to a buffer rather than directly to the screen, which can reduce flicker. If you set this property to <see langword="true" />, you should also set the <see cref="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" /> to <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResizeRedraw">
+      <MemberSignature Language="C#" Value="ResizeRedraw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles ResizeRedraw = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.ResizeRedraw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control is redrawn when it is resized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selectable">
+      <MemberSignature Language="C#" Value="Selectable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles Selectable = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.Selectable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control can receive focus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardClick">
+      <MemberSignature Language="C#" Value="StandardClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles StandardClick = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.StandardClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control implements the standard <see cref="E:System.Windows.Forms.Control.Click" /> behavior.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardDoubleClick">
+      <MemberSignature Language="C#" Value="StandardDoubleClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles StandardDoubleClick = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.StandardDoubleClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control implements the standard <see cref="E:System.Windows.Forms.Control.DoubleClick" /> behavior. This style is ignored if the <see cref="F:System.Windows.Forms.ControlStyles.StandardClick" /> bit is not set to <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsTransparentBackColor">
+      <MemberSignature Language="C#" Value="SupportsTransparentBackColor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles SupportsTransparentBackColor = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.SupportsTransparentBackColor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control accepts a <see cref="P:System.Windows.Forms.Control.BackColor" /> with an alpha component of less than 255 to simulate transparency. Transparency will be simulated only if the <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> bit is set to <see langword="true" /> and the parent control is derived from <see cref="T:System.Windows.Forms.Control" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserMouse">
+      <MemberSignature Language="C#" Value="UserMouse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles UserMouse = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UserMouse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control does its own mouse processing, and mouse events are not handled by the operating system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPaint">
+      <MemberSignature Language="C#" Value="UserPaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles UserPaint = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UserPaint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If <see langword="true" />, the control paints itself rather than the operating system doing so. If <see langword="false" />, the <see cref="E:System.Windows.Forms.Control.Paint" /> event is not raised. This style only applies to classes derived from <see cref="T:System.Windows.Forms.Control" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTextForAccessibility">
+      <MemberSignature Language="C#" Value="UseTextForAccessibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlStyles UseTextForAccessibility = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlStyles.UseTextForAccessibility" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the value of the control's <c>Text</c> property, if set, determines the control's default Active Accessibility name and shortcut key.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

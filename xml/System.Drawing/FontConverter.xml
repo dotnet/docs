@@ -1,0 +1,291 @@
+<Type Name="FontConverter" FullName="System.Drawing.FontConverter">
+  <TypeSignature Language="C#" Value="public class FontConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.FontConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts <see cref="T:System.Drawing.Font" /> objects from one data type to another.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A type converter is used to convert values between data types. A type converter also supports property configuration at design time by providing text-to-value conversion or a list of values that users can select from. Access the <xref:System.Drawing.FontConverter> class through the <xref:System.ComponentModel.TypeDescriptor> class by calling the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.FontConverter> to convert a <xref:System.Drawing.Font> to and from a string. This example is designed to be used with Windows Forms. Paste this code into a form and call the `ShowFontStringConversion` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing e as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.Converters#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Converters/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.Converters#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Converters/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.Converters#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Converters/VB/form1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FontConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.FontConverter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should access a <xref:System.Drawing.FontConverter> object through the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
+        <param name="sourceType">The type you want to convert from.</param>
+        <summary>Determines whether this converter can convert an object in the specified source type to the native type of the converter.</summary>
+        <returns>This method returns <see langword="true" /> if this object can perform the conversion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see langword="ITypeDescriptorContext" /> object that provides a format context.</param>
+        <param name="destinationType">A <see cref="T:System.Type" /> object that represents the type you want to convert to.</param>
+        <summary>Gets a value indicating whether this converter can convert an object to the given destination type using the context.</summary>
+        <returns>This method returns <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `context` parameter can be used to extract additional information about the environment this converter is being invoked from. This can be `null`, so always check. Also, properties on the context object can return `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
+        <param name="culture">A <see langword="CultureInfo" /> object that specifies the culture used to represent the font.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to the native type of the converter.</summary>
+        <returns>The converted object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A formatter context. This object can be used to get additional information about the environment this converter is being called from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the culture used to represent the object.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The data type to convert the object to.</param>
+        <summary>Converts the specified object to another type.</summary>
+        <returns>The converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most common type conversion is to and from a string type. The default implementation calls the <xref:System.Object.ToString%2A> method of the object if the object is valid and if the destination type is string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The conversion was not successful.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public override object CreateInstance (System.ComponentModel.ITypeDescriptorContext context, System.Collections.IDictionary propertyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object CreateInstance(class System.ComponentModel.ITypeDescriptorContext context, class System.Collections.IDictionary propertyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="propertyValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="context">A type descriptor through which additional context can be provided.</param>
+        <param name="propertyValues">A dictionary of new property values. The dictionary contains a series of name-value pairs, one for each property returned from the <see cref="Overload:System.Drawing.FontConverter.GetProperties" /> method.</param>
+        <summary>Creates an object of this type by using a specified set of property values for the object.</summary>
+        <returns>The newly created object, or <see langword="null" /> if the object could not be created. The default implementation returns <see langword="null" />.  
+  
+ <see cref="M:System.Drawing.FontConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" /> useful for creating non-changeable objects that have changeable properties.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~FontConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows the <see cref="T:System.Drawing.FontConverter" /> to attempt to free resources and perform other cleanup operations before the <see cref="T:System.Drawing.FontConverter" /> is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCreateInstanceSupported">
+      <MemberSignature Language="C#" Value="public override bool GetCreateInstanceSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetCreateInstanceSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A type descriptor through which additional context can be provided.</param>
+        <summary>Determines whether changing a value on this object should require a call to the <see cref="Overload:System.Drawing.FontConverter.CreateInstance" /> method to create a new value.</summary>
+        <returns>This method returns <see langword="true" /> if the <see langword="CreateInstance" /> object should be called when a change is made to one or more properties of this object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object value, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="context">A type descriptor through which additional context can be provided.</param>
+        <param name="value">The value of the object to get the properties for.</param>
+        <param name="attributes">An array of <see cref="T:System.Attribute" /> objects that describe the properties.</param>
+        <summary>Retrieves the set of properties for this type. By default, a type does not have any properties to return.</summary>
+        <returns>The set of properties that should be exposed for this data type. If no properties should be exposed, this may return <see langword="null" />. The default implementation always returns <see langword="null" />.  
+  
+ An easy implementation of this method can call the <see cref="Overload:System.ComponentModel.TypeConverter.GetProperties" /> method for the correct data type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertiesSupported">
+      <MemberSignature Language="C#" Value="public override bool GetPropertiesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPropertiesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A type descriptor through which additional context can be provided.</param>
+        <summary>Determines whether this object supports properties. The default is <see langword="false" />.</summary>
+        <returns>This method returns <see langword="true" /> if the <see cref="M:System.Drawing.FontConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" /> method should be called to find the properties of this object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

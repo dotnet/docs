@@ -1,0 +1,202 @@
+<Type Name="SortDescription" FullName="System.ComponentModel.SortDescription">
+  <TypeSignature Language="C#" Value="public struct SortDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SortDescription extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.SortDescription" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the direction and the property name to be used as the criteria for sorting a collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortDescription (string propertyName, System.ComponentModel.ListSortDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, valuetype System.ComponentModel.ListSortDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.#ctor(System.String,System.ComponentModel.ListSortDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="direction" Type="System.ComponentModel.ListSortDirection" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to sort the list by.</param>
+        <param name="direction">The sort order.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.SortDescription" /> structure.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="propertyName" /> parameter cannot be null.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="propertyName" /> parameter cannot be empty</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="direction" /> parameter does not specify a valid value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ListSortDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.ListSortDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to sort in ascending or descending order.</summary>
+        <value>A <see cref="T:System.ComponentModel.ListSortDirection" /> value to indicate whether to sort in ascending or descending order.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.ComponentModel.SortDescription" /> instance to compare.</param>
+        <summary>Compares the specified instance and the current instance of <see cref="T:System.ComponentModel.SortDescription" /> for value equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance of <see cref="T:System.ComponentModel.SortDescription" /> have the same values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance of <see cref="T:System.ComponentModel.SortDescription" />.</summary>
+        <returns>The hash code for this instance of <see cref="T:System.ComponentModel.SortDescription" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSealed">
+      <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.IsSealed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this object is in an immutable state.</summary>
+        <value>
+          <see langword="true" /> if this object is in use; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Equality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sd1" Type="System.ComponentModel.SortDescription" />
+        <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
+      </Parameters>
+      <Docs>
+        <param name="sd1">The first instance to compare.</param>
+        <param name="sd2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value equality.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Equals%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ComponentModel.SortDescription sd1, System.ComponentModel.SortDescription sd2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.ComponentModel.SortDescription sd1, valuetype System.ComponentModel.SortDescription sd2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescription.op_Inequality(System.ComponentModel.SortDescription,System.ComponentModel.SortDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sd1" Type="System.ComponentModel.SortDescription" />
+        <Parameter Name="sd2" Type="System.ComponentModel.SortDescription" />
+      </Parameters>
+      <Docs>
+        <param name="sd1">The first instance to compare.</param>
+        <param name="sd2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.ComponentModel.SortDescription" /> objects for value inequality.</summary>
+        <returns>
+          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.ComponentModel.SortDescription.Compare%28System.ComponentModel.SortDescription%2CSystem.ComponentModel.SortDescription%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.SortDescription.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property name being used as the sorting criteria.</summary>
+        <value>The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should be a public property of the items in the underlying collection.  
+  
+ The string is interpreted by the particular <xref:System.ComponentModel.ICollectionView> object involved in the sorting. <xref:System.Windows.Data.BindingListCollectionView> only supports simple column names. <xref:System.Windows.Data.ListCollectionView> supports general property paths and `XPath` for [!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data. Therefore, when the view is a <xref:System.Windows.Data.ListCollectionView> object, you can sort [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] nodes in an <xref:System.Windows.Data.XmlDataProvider> based on an attribute of those nodes. For example, if the attribute name is `Cost`, you would specify "@Cost" for the <xref:System.ComponentModel.SortDescription.PropertyName%2A> in the <xref:System.ComponentModel.SortDescription>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

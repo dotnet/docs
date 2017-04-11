@@ -1,0 +1,55 @@
+<Type Name="LayoutExceptionEventArgs" FullName="System.Windows.Forms.Integration.LayoutExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public class LayoutExceptionEventArgs : System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LayoutExceptionEventArgs extends System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.LayoutExceptionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsFormsIntegration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Integration.IntegrationExceptionEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Integration.WindowsFormsHost.LayoutError" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs> class enables the user to preview a layout-related exception before it is raised.  
+  
+ In your event handler, set the value of the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> property to `true` to indicate that the exception should be raised.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LayoutExceptionEventArgs (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.LayoutExceptionEventArgs.#ctor(System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The <see cref="T:System.Exception" /> to raise.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.LayoutExceptionEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In your event handler, set the value of the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> property to `true` to indicate that the exception should be raised.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exception" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+<Type Name="ClipboardData" FullName="System.Activities.Presentation.ClipboardData">
+  <TypeSignature Language="C#" Value="public class ClipboardData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ClipboardData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ClipboardData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the data passed around with the clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.ClipboardData> contains three types of data:  
+  
+-   The data itself, accessed through the <xref:System.Activities.Presentation.ClipboardData.Data%2A> property.  
+  
+-   The metadata, accessed through the <xref:System.Activities.Presentation.ClipboardData.Metadata%2A> property.  
+  
+-   The version information, accessed through the <xref:System.Activities.Presentation.ClipboardData.Version%2A> property.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ClipboardData#0](WFD_ClipboardData#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClipboardData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ClipboardData.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.ClipboardData" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;object&gt; Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;object&gt; Data" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data passed around on the clipboard.</summary>
+        <value>A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.Object" /> that contains the data passed around on the clipboard.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;object&gt; Metadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;object&gt; Metadata" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Metadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the metadata passed around on the clipboard.</summary>
+        <value>A <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.Object" /> that contains the metadata passed around on the clipboard.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ClipboardData.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version information passed around on the clipboard.</summary>
+        <value>The version information passed around on the clipboard.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

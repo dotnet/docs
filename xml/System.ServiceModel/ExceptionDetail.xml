@@ -1,0 +1,229 @@
+<Type Name="ExceptionDetail" FullName="System.ServiceModel.ExceptionDetail">
+  <TypeSignature Language="C#" Value="public class ExceptionDetail" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExceptionDetail extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ExceptionDetail" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents fault detail information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.ExceptionDetail> class is the type parameter used as the fault detail object when a <xref:System.ServiceModel.FaultException?displayProperty=fullName> is sent by a service as a result of setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=fullName> property to `true`.  
+  
+ To send a <xref:System.ServiceModel.ExceptionDetail> object the type must be serializable. For more information on serialization options, see [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExceptionDetail (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionDetail.#ctor(System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception to be serialized as an <see cref="T:System.ServiceModel.ExceptionDetail" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ExceptionDetail" /> class from the exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The help link, message, stack trace, and type name information is extracted and added to the equivalent properties in <xref:System.ServiceModel.ExceptionDetail>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpLink">
+      <MemberSignature Language="C#" Value="public string HelpLink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpLink" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.HelpLink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the help link from the exception passed to the constructor.</summary>
+        <value>The help link information of the exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value, which represents a help file, is a URN or URL.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerException">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.ExceptionDetail InnerException { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ExceptionDetail InnerException" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.InnerException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ExceptionDetail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.ExceptionDetail" /> object that represents the inner exception.</summary>
+        <value>The inner exception information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.ExceptionDetail.InnerException%2A> property to obtain the set of exceptions that led to the current exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message from the exception passed to the constructor.</summary>
+        <value>The exception message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text of <xref:System.ServiceModel.ExceptionDetail.Message%2A> should completely describe the error and should, when possible, explain how to correct it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackTrace">
+      <MemberSignature Language="C#" Value="public string StackTrace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.StackTrace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the stack trace information from the exception passed to the constructor.</summary>
+        <value>The stack trace of the exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The execution stack keeps track of all the methods that are in execution at a given instant. A trace of the method calls is called a stack trace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ExceptionDetail.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the exception detail information for the exception passed to the constructor.</summary>
+        <returns>The message and stack trace of the exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExceptionDetail.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type string for the exception passed to the constructor.</summary>
+        <value>The type string for the exception passed to the constructor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

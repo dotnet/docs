@@ -1,0 +1,147 @@
+<Type Name="XmlDateTimeSerializationMode" FullName="System.Xml.XmlDateTimeSerializationMode">
+  <TypeSignature Language="C#" Value="public enum XmlDateTimeSerializationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlDateTimeSerializationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDateTimeSerializationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to treat the time value when converting between string and <see cref="T:System.DateTime" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Xml.XmlConvert.ToDateTime%2A> and <xref:System.Xml.XmlConvert.ToString%2A> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDateTimeSerializationMode Local = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDateTimeSerializationMode.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Treat as local time. If the <see cref="T:System.DateTime" /> object represents a Coordinated Universal Time (UTC), it is converted to the local time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundtripKind">
+      <MemberSignature Language="C#" Value="RoundtripKind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDateTimeSerializationMode RoundtripKind = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDateTimeSerializationMode.RoundtripKind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Time zone information should be preserved when converting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDateTimeSerializationMode Unspecified = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDateTimeSerializationMode.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Treat as a local time if a <see cref="T:System.DateTime" /> is being converted to a string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a string is being converted to <xref:System.DateTime>, convert to a local time if a time zone is specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Utc">
+      <MemberSignature Language="C#" Value="Utc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDateTimeSerializationMode Utc = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDateTimeSerializationMode.Utc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Treat as a UTC. If the <see cref="T:System.DateTime" /> object represents a local time, it is converted to a UTC.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

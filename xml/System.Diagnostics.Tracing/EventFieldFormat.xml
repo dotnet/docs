@@ -1,0 +1,210 @@
+<Type Name="EventFieldFormat" FullName="System.Diagnostics.Tracing.EventFieldFormat">
+  <TypeSignature Language="C#" Value="public enum EventFieldFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventFieldFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventFieldFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to format the value of a user-defined type and can be used to override the default formatting for a field.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat Boolean = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Boolean</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hexadecimal">
+      <MemberSignature Language="C#" Value="Hexadecimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat Hexadecimal = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Hexadecimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hexadecimal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HResult">
+      <MemberSignature Language="C#" Value="HResult" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat HResult = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.HResult" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>HResult.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Json">
+      <MemberSignature Language="C#" Value="Json" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat Json = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Json" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>JSON.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat String = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>String.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xml">
+      <MemberSignature Language="C#" Value="Xml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventFieldFormat Xml = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventFieldFormat.Xml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventFieldFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

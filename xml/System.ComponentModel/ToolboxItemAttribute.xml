@@ -1,0 +1,310 @@
+<Type Name="ToolboxItemAttribute" FullName="System.ComponentModel.ToolboxItemAttribute">
+  <TypeSignature Language="C#" Value="public class ToolboxItemAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolboxItemAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ToolboxItemAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an attribute of a toolbox item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.ToolboxItemAttribute> class provides a way to specify an attribute for a <xref:System.Drawing.Design.ToolboxItem>. In addition to what the <xref:System.Attribute> class provides, this class of object stores the type of the toolbox item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.ComponentModel.ToolboxItemAttribute> with the <xref:System.Drawing.Design.ToolboxItem> class as a base class for a custom toolbox item implementation. This code example is part of a larger example provided for the <xref:System.Drawing.Design.ToolboxItem> class.  
+  
+ [!code-csharp[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/CS/Form1.cs#2)]
+ [!code-vb[System.Drawing.Design.ToolboxItem#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Design.ToolboxItem/VB/Form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemAttribute (bool defaultType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool defaultType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultType" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="defaultType">
+          <see langword="true" /> to create a toolbox item attribute for a default type; <see langword="false" /> to associate no default toolbox item support for this attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class and specifies whether to use default initialization values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemAttribute (string toolboxItemTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolboxItemTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolboxItemTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolboxItemTypeName">The names of the type of the toolbox item and of the assembly that contains the type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class using the specified name of the type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor expects the `toolboxItemTypeName` parameter to be in the form \<*name of the item type*>*,* \<*name of the assembly*> (for example, System.Drawing.Design.ToolboxItem, System.Drawing.Design).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemAttribute (Type toolboxItemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolboxItemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolboxItemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="toolboxItemType">The type of the toolbox item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class using the specified type of the toolbox item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ToolboxItemAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ToolboxItemAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ToolboxItemAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class and sets the type to the default, <see cref="T:System.Drawing.Design.ToolboxItem" />. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType%2A> property is set to <xref:System.Drawing.Design.ToolboxItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> to compare with this instance or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> equals the type and value of this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ToolboxItemAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the current value of the attribute is the default value for the attribute.</summary>
+        <returns>
+          <see langword="true" /> if the current value of the attribute is the default; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this value returns `false` from the method defined in the <xref:System.Attribute> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ToolboxItemAttribute None;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ToolboxItemAttribute None" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.ToolboxItemAttribute.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ToolboxItemAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ToolboxItemAttribute" /> class and sets the type to <see langword="null" />. This field is read-only.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolboxItemType">
+      <MemberSignature Language="C#" Value="public Type ToolboxItemType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ToolboxItemType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ToolboxItemAttribute.ToolboxItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the toolbox item.</summary>
+        <value>The type of the toolbox item.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The type cannot be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolboxItemTypeName">
+      <MemberSignature Language="C#" Value="public string ToolboxItemTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolboxItemTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.ToolboxItemAttribute.ToolboxItemTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the type of the current <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <value>The fully qualified type name of the current toolbox item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

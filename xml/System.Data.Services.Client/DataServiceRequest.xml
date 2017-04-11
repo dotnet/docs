@@ -1,0 +1,92 @@
+<Type Name="DataServiceRequest" FullName="System.Data.Services.Client.DataServiceRequest">
+  <TypeSignature Language="C#" Value="public abstract class DataServiceRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataServiceRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents request objects submitted as a batch to [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a group of queries submitted as a batch to the data service, the queries are specified as <xref:System.Data.Services.Client.DataServiceRequest> instances. A <xref:System.Data.Services.Client.DataServiceResponse> is returned that represents the response of the batch request as a whole. Individual query responses are represented as <xref:System.Data.Services.Client.QueryOperationResponse> objects, derived from <xref:System.Data.Services.Client.OperationResponse>, that are accessible by enumerating the <xref:System.Data.Services.Client.DataServiceResponse> instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ElementType">
+      <MemberSignature Language="C#" Value="public abstract Type ElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ElementType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest.ElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of object submitted as a batch to the data service.</summary>
+        <value>Type object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUri">
+      <MemberSignature Language="C#" Value="public abstract Uri RequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequest.RequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI of the request object submitted to a data service.</summary>
+        <value>URI of the request object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceRequest.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Represents the URI of the query to the data service.</summary>
+        <returns>The requested URI as a <see cref="T:System.String" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overrides the <xref:System.Object.ToString> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

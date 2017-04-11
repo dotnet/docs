@@ -1,0 +1,100 @@
+<Type Name="ITask" FullName="Microsoft.Build.Framework.ITask">
+  <TypeSignature Language="C#" Value="public interface ITask" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITask" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a task, which is a unit of executable code used by [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] to perform build operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All task classes must implement this interface to be recognized by the build engine. Instead of implenting this interface directly, you can also derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which provides default implementations of some <xref:Microsoft.Build.Framework.ITask> members.  
+  
+   
+  
+## Examples  
+ The following example shows the code from a complete task implementation.  
+  
+ [!code-csharp[msbuild_MakeDirTask#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_MakeDirTask/CS/msbuild_MakeDirTask.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildEngine">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IBuildEngine BuildEngine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IBuildEngine BuildEngine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.BuildEngine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.IBuildEngine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the build engine associated with the task.</summary>
+        <value>The build engine associated with the task.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITask.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes a task.</summary>
+        <returns>
+          <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the build engine to execute a task. Upon termination of this method, a task should indicate if the execution was successful. If a task throws an exception from this method, the engine assumes that the task has failed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost HostObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskHost HostObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.HostObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskHost</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets any host object that is associated with the task.</summary>
+        <value>The host object associated with the task.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be a null reference (`Nothing` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

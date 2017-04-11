@@ -1,0 +1,209 @@
+<Type Name="HwndTarget" FullName="System.Windows.Interop.HwndTarget">
+  <TypeSignature Language="C#" Value="public class HwndTarget : System.Windows.Media.CompositionTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi HwndTarget extends System.Windows.Media.CompositionTarget" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndTarget" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.CompositionTarget</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a binding to a window handle that supports visual composition.</summary>
+    <remarks>To be added.</remarks>
+    <threadsafe>A <see cref="T:System.Windows.Interop.HwndTarget" /> is not thread-safe. You can reference a <see cref="T:System.Windows.Interop.HwndTarget" /> only from the thread that created it. If you try to access <see cref="T:System.Windows.Interop.HwndTarget" /> from a different thread, an <see cref="T:System.InvalidOperationException" /> is thrown.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HwndTarget (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int hwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndTarget.#ctor(System.IntPtr)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">The handle for the window that this object draws to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndTarget" /> class, using the specified HWND.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermissionWindow">to create an instance. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundColor">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Color BackgroundColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Color BackgroundColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.BackgroundColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the window referenced by this <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
+        <value>The background color, as a <see cref="T:System.Windows.Media.Color" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The background is drawn before any other visual component. The color used must have an alpha component of 1.0. If you attempt to specify a different alpha value in the provided <xref:System.Windows.Media.Color>, it automatically resets to 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public override void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.HwndTarget.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.RenderMode RenderMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Interop.RenderMode RenderMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.RenderMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.RenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rendering mode for the window referenced by this <see cref="T:System.Windows.Interop.HwndTarget" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Interop.RenderMode" /> values that specifies the current render mode. The default is <see cref="F:System.Windows.Interop.RenderMode.Default" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootVisual">
+      <MemberSignature Language="C#" Value="public override System.Windows.Media.Visual RootVisual { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual RootVisual" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.RootVisual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root visual object of the page that is hosted by the window.</summary>
+        <value>The root visual object of the hosted page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This class only overrides the set{} implementation of this property. Although a get{} implementation exists, it comes from the <xref:System.Windows.Media.CompositionTarget> base class that originally declared this virtual property. On <xref:System.Windows.Interop.HwndTarget> instances, this property is really read-write, despite how the syntax reads in this documentation topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformFromDevice">
+      <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix TransformFromDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix TransformFromDevice" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.TransformFromDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a matrix that transforms the coordinates of the device that is associated with the rendering destination of this target.</summary>
+        <value>The transform matrix.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToDevice">
+      <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix TransformToDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix TransformToDevice" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.TransformToDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a matrix that transforms the coordinates of this target to the device that is associated with the rendering destination.</summary>
+        <value>The transform matrix.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesPerPixelOpacity">
+      <MemberSignature Language="C#" Value="public bool UsesPerPixelOpacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesPerPixelOpacity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.HwndTarget.UsesPerPixelOpacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that declares whether the per-pixel opacity value of the source window content is used for rendering.</summary>
+        <value>
+          <see langword="true" /> if using per-pixel opacity; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you enable  per-pixel opacity, the rendering subsystem no longer draws the non-client area (edge of window).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

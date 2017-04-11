@@ -1,0 +1,90 @@
+<Type Name="SearchOptionsControl" FullName="System.DirectoryServices.Protocols.SearchOptionsControl">
+  <TypeSignature Language="C#" Value="public class SearchOptionsControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchOptionsControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchOptionsControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class is used to pass flags to the server to control search behavior.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchOptionsControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchOptionsControl (System.DirectoryServices.Protocols.SearchOption flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.Protocols.SearchOption flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor(System.DirectoryServices.Protocols.SearchOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="flags" Type="System.DirectoryServices.Protocols.SearchOption" />
+      </Parameters>
+      <Docs>
+        <param name="flags">The <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration value that specifies the search behavior.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.#ctor(System.DirectoryServices.Protocols.SearchOption)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.SearchOptionsControl" /> class using the specified search options.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchOptionsControl.GetValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchOptionsControl.GetValue" /> method returns search option for this object.</summary>
+        <returns>The search option associated with this control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchOption">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.SearchOption SearchOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.SearchOption SearchOption" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchOptionsControl.SearchOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SearchOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchOptionsControl.SearchOption" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" /> enumeration that specifies the search behavior.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the values of <see cref="T:System.DirectoryServices.Protocols.SearchOption" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

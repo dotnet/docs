@@ -1,0 +1,215 @@
+<Type Name="MessageHeader&lt;T&gt;" FullName="System.ServiceModel.MessageHeader&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class MessageHeader&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageHeader`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeader`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The message header type.</typeparam>
+    <summary>Represents the content of a SOAP header.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message header contains optional metadata that describe a message, encapsulated by the <xref:System.ServiceModel.Channels.Message> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageHeader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeader`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageHeader (T content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeader`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="content" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of the new header.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class with the specified header content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageHeader (T content, bool mustUnderstand, string actor, bool relay);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T content, bool mustUnderstand, string actor, bool relay) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeader`1.#ctor(`0,System.Boolean,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="content" Type="T" />
+        <Parameter Name="mustUnderstand" Type="System.Boolean" />
+        <Parameter Name="actor" Type="System.String" />
+        <Parameter Name="relay" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="content">The content of the new header.</param>
+        <param name="mustUnderstand">A value that indicates whether the header must be understood.</param>
+        <param name="actor">The targeted recipient of the message header.</param>
+        <param name="relay">A value that indicates whether the header should be relayed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeader`1" /> class with the specified header content and metadata.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Actor">
+      <MemberSignature Language="C#" Value="public string Actor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Actor" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeader`1.Actor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the targeted recipient of the message header.</summary>
+        <value>The targeted recipient of the message header. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is empty, the header is interpreted as targeted for the ultimate recipient of the message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public T Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Content" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeader`1.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of the header.</summary>
+        <value>The content of the header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUntypedHeader">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageHeader GetUntypedHeader (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.MessageHeader GetUntypedHeader(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageHeader`1.GetUntypedHeader(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.MessageHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the header XML element</param>
+        <param name="ns">The namespace URI of the header XML element.</param>
+        <summary>Gets the message header with the specified namespace and local name.</summary>
+        <returns>A message header with the specified namespace and local name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustUnderstand">
+      <MemberSignature Language="C#" Value="public bool MustUnderstand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustUnderstand" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeader`1.MustUnderstand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the header must be understood, as stated in the SOAP 1.1/1.2 specification.</summary>
+        <value>
+          <see langword="true" /> if the header must be understood; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `true` and the message receiver cannot interpret the message header, the message is not processed and an exception is thrown. If this property is `false`, the receiver can ignore the message header and continue processing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relay">
+      <MemberSignature Language="C#" Value="public bool Relay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Relay" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeader`1.Relay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the header should be relayed.</summary>
+        <value>
+          <see langword="true" /> if the header should be relayed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As stated in the SOAP 1.1 spec, this value is always `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

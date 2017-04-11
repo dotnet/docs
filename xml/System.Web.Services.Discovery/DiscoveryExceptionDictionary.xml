@@ -1,0 +1,244 @@
+<Type Name="DiscoveryExceptionDictionary" FullName="System.Web.Services.Discovery.DiscoveryExceptionDictionary">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryExceptionDictionary : System.Collections.DictionaryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryExceptionDictionary extends System.Collections.DictionaryBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.DictionaryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Collects exceptions that occurred during XML Web services discovery. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Errors%2A> property of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol> is of type <xref:System.Web.Services.Discovery.DiscoveryExceptionDictionary>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#1)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#1)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryExceptionDictionary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string url, Exception value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string url, class System.Exception value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Add(System.String,System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="value" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL that caused an exception during XML Web services discovery.</param>
+        <param name="value">The <see cref="T:System.Exception" /> that occurred during XML Web services discovery.</param>
+        <summary>Adds an <see cref="T:System.Exception" /> with a key of <paramref name="url" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#6](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#6)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#6](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#6)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An entry with a key of <paramref name="url" /> already exists in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL of the <see cref="T:System.Exception" /> to locate within the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</param>
+        <summary>Determines whether the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> contains an <see cref="T:System.Exception" /> with the specified URL.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" /> contains an <see cref="T:System.Exception" /> with the specified URL; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#2)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#2)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Exception this[string url] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL of the discovery document that caused an exception to be thrown during XML Web services discovery.</param>
+        <summary>Gets or sets the <see cref="T:System.Exception" /> that occurred while discovering the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
+        <value>An <see cref="T:System.Exception" /> that was thrown discovering <paramref name="url" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#3)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#3)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.ICollection" /> object with all the keys in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys of the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#7](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#7)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#7](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#7)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL of the <see cref="T:System.Exception" /> to remove from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</param>
+        <summary>Removes an <see cref="T:System.Exception" /> with the specified URL from the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#4)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#4)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="url" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.ICollection" /> object containing all the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryExceptionDictionary_Property_Method#8](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CPP/discoveryexceptiondictionary_property_method.cpp#8)]
+ [!code-csharp[DiscoveryExceptionDictionary_Property_Method#8](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/CS/discoveryexceptiondictionary_property_method.cs#8)]
+ [!code-vb[DiscoveryExceptionDictionary_Property_Method#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryExceptionDictionary_Property_Method/VB/discoveryexceptiondictionary_property_method.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

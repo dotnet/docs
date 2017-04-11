@@ -1,0 +1,218 @@
+<Type Name="IQueryProvider" FullName="System.Linq.IQueryProvider">
+  <TypeSignature Language="C#" Value="public interface IQueryProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IQueryProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Linq.IQueryProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods to create and execute queries that are described by an <see cref="T:System.Linq.IQueryable" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryProvider> interface is intended for implementation by query providers.  
+  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateQuery">
+      <MemberSignature Language="C#" Value="public System.Linq.IQueryable CreateQuery (System.Linq.Expressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable CreateQuery(class System.Linq.Expressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.IQueryProvider.CreateQuery(System.Linq.Expressions.Expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">An expression tree that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.</param>
+        <summary>Constructs an <see cref="T:System.Linq.IQueryable" /> object that can evaluate the query represented by a specified expression tree.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable" /> that can evaluate the query represented by the specified expression tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Linq.IQueryable.Expression%2A> property of the returned <xref:System.Linq.IQueryable> object is equal to `expression`.  
+  
+ The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
+  
+ Several of the standard query operator methods defined in <xref:System.Linq.Queryable>, such as <xref:System.Linq.Queryable.OfType%2A> and <xref:System.Linq.Queryable.Cast%2A>, call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateQuery&lt;TElement&gt;">
+      <MemberSignature Language="C#" Value="public System.Linq.IQueryable&lt;TElement&gt; CreateQuery&lt;TElement&gt; (System.Linq.Expressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable`1&lt;!!TElement&gt; CreateQuery&lt;TElement&gt;(class System.Linq.Expressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.IQueryProvider.CreateQuery``1(System.Linq.Expressions.Expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;TElement&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TElement" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TElement">The type of the elements of the <see cref="T:System.Linq.IQueryable`1" /> that is returned.</typeparam>
+        <param name="expression">An expression tree that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.</param>
+        <summary>Constructs an <see cref="T:System.Linq.IQueryable`1" /> object that can evaluate the query represented by a specified expression tree.</summary>
+        <returns>An <see cref="T:System.Linq.IQueryable`1" /> that can evaluate the query represented by the specified expression tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Linq.IQueryable.Expression%2A> property of the returned <xref:System.Linq.IQueryable%601> object is equal to `expression`.  
+  
+ The <xref:System.Linq.IQueryProvider.CreateQuery%2A> method is used to create new <xref:System.Linq.IQueryable%601> objects, given an expression tree. The query that is represented by the returned object is associated with a specific LINQ provider.  
+  
+ Most of the <xref:System.Linq.Queryable> standard query operator methods that return enumerable results call this method. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public object Execute (System.Linq.Expressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Execute(class System.Linq.Expressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.IQueryProvider.Execute(System.Linq.Expressions.Expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">An expression tree that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.</param>
+        <summary>Executes the query represented by a specified expression tree.</summary>
+        <returns>The value that results from executing the specified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when their associated <xref:System.Linq.IQueryable> object is enumerated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public TResult Execute&lt;TResult&gt; (System.Linq.Expressions.Expression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TResult Execute&lt;TResult&gt;(class System.Linq.Expressions.Expression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.IQueryProvider.Execute``1(System.Linq.Expressions.Expression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">The type of the value that results from executing the query.</typeparam>
+        <param name="expression">An expression tree that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.</param>
+        <summary>Executes the strongly-typed query represented by a specified expression tree.</summary>
+        <returns>The value that results from executing the specified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryProvider.Execute%2A> method executes queries that return a single value (instead of an enumerable sequence of values). Expression trees that represent queries that return enumerable results are executed when the <xref:System.Linq.IQueryable%601> object that contains the expression tree is enumerated.  
+  
+ The <xref:System.Linq.Queryable> standard query operator methods that return singleton results call <xref:System.Linq.IQueryProvider.Execute%2A>. They pass it a <xref:System.Linq.Expressions.MethodCallExpression> that represents a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

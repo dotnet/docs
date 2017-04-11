@@ -1,0 +1,399 @@
+<Type Name="ContextMenu" FullName="System.Windows.Forms.ContextMenu">
+  <TypeSignature Language="C#" Value="public class ContextMenu : System.Windows.Forms.Menu" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextMenu extends System.Windows.Forms.Menu" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenu" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Menu</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Popup")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a shortcut menu. Although <see cref="T:System.Windows.Forms.ContextMenuStrip" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.ContextMenu" /> control of previous versions, <see cref="T:System.Windows.Forms.ContextMenu" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ContextMenu> class represents shortcut menus that can be displayed when the user clicks the right mouse button over a control or area of the form. Shortcut menus are typically used to combine different menu items from a <xref:System.Windows.Forms.MainMenu> of a form that are useful for the user given the context of the application. For example, you can use a shortcut menu assigned to a <xref:System.Windows.Forms.TextBox> control to provide menu items for changing the font of the text, finding text within the control, or Clipboard features for copying and pasting text. You can also display new <xref:System.Windows.Forms.MenuItem> objects in a shortcut menu that are not located within a <xref:System.Windows.Forms.MainMenu> to provide situation specific commands that are not appropriate for the <xref:System.Windows.Forms.MainMenu> to display.  
+  
+ Typically, a shortcut menu is displayed when a user clicks the right mouse button over a control or the form itself. Visible controls and <xref:System.Windows.Forms.Form> have a <xref:System.Windows.Forms.Control.ContextMenu%2A> property that binds the <xref:System.Windows.Forms.ContextMenu> class to the control that displays the shortcut menu. More than one control can use a <xref:System.Windows.Forms.ContextMenu>. You can use the <xref:System.Windows.Forms.ContextMenu.SourceControl%2A> property to determine which control last displayed the shortcut menu in order to perform tasks specific to the control or to modify the shortcut menu displayed for the control.  
+  
+ You might want to know when the shortcut menu is being displayed in order to set check marks, disable items, and perform other menu tasks before the menu is displayed to the user. You can handle the <xref:System.Windows.Forms.ContextMenu.Popup> event to determine when the shortcut menu is being displayed.  
+  
+> [!NOTE]
+>  In order to reuse <xref:System.Windows.Forms.MenuItem> objects that are displayed in a <xref:System.Windows.Forms.MainMenu> for use in a <xref:System.Windows.Forms.ContextMenu>, you must create a copy of the menu using the <xref:System.Windows.Forms.MenuItem.CloneMenu%2A> method of the <xref:System.Windows.Forms.MenuItem> class. You can also merge menu items and their submenu items into a single <xref:System.Windows.Forms.MenuItem> object using the <xref:System.Windows.Forms.MenuItem.MergeMenu%2A> method of the <xref:System.Windows.Forms.MenuItem> class.  
+  
+   
+  
+## Examples  
+ The following code example creates an event handler for the <xref:System.Windows.Forms.ContextMenu.Popup> event of the <xref:System.Windows.Forms.ContextMenu>. The code in the event handler determines which of two controls a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and a <xref:System.Windows.Forms.TextBox> named `textBox1` is the control displaying the shortcut menu. Depending on which control caused the <xref:System.Windows.Forms.ContextMenu> to display its shortcut menu, the control adds the appropriate <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.ContextMenu>. This example requires that you have an instance of the <xref:System.Windows.Forms.ContextMenu> class, named `contextMenu1`, defined within the form. This example also requires that you have a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.PictureBox> added to a form and that the <xref:System.Windows.Forms.Control.ContextMenu%2A> property of these controls is set to `contextMenu1`.  
+  
+ [!code-cpp[Classic ContextMenu Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ContextMenu Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ContextMenu Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ContextMenu Example/CS/source.cs#1)]
+ [!code-vb[Classic ContextMenu Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ContextMenu Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextMenu ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenu" /> class with no menu items specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once you have used this version of the constructor, you can add menu items to the <xref:System.Windows.Forms.ContextMenu> by using the <xref:System.Windows.Forms.Menu.MenuItemCollection.Add%2A> method of the <xref:System.Windows.Forms.Menu.MenuItemCollection> class. You can access the <xref:System.Windows.Forms.Menu.MenuItemCollection> through the <xref:System.Windows.Forms.Menu.MenuItems%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextMenu (System.Windows.Forms.MenuItem[] menuItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.MenuItem[] menuItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.#ctor(System.Windows.Forms.MenuItem[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="menuItems" Type="System.Windows.Forms.MenuItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="menuItems">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that represent the menu items to add to the shortcut menu.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenu" /> class with a specified set of <see cref="T:System.Windows.Forms.MenuItem" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this version of the constructor to create a <xref:System.Windows.Forms.ContextMenu> that has its menu items specified at the time it is created. Once you have used this version of the constructor, you can add additional menu items to the <xref:System.Windows.Forms.ContextMenu> by using the <xref:System.Windows.Forms.Menu.MenuItemCollection.Add%2A> method of the <xref:System.Windows.Forms.Menu.MenuItemCollection> class. You can access the <xref:System.Windows.Forms.Menu.MenuItemCollection> through the <xref:System.Windows.Forms.Menu.MenuItems%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing a shortcut menu and using the <xref:System.Windows.Forms.ContextMenu.Show%2A> method. To run the example, paste the following code in a form containing a button named Button1. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public event EventHandler Collapse;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Collapse" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ContextMenu.Collapse" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the shortcut menu collapses.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ContextMenu.Collapse> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ContextMenu> named `ContextMenu1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ContextMenu.Collapse> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#170)]
+ [!code-vb[System.Windows.Forms.EventExamples#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#170)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollapse">
+      <MemberSignature Language="C#" Value="protected virtual void OnCollapse (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnCollapse(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.OnCollapse(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ContextMenu.Collapse" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPopup">
+      <MemberSignature Language="C#" Value="protected virtual void OnPopup (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPopup(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.OnPopup(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ContextMenu.Popup" /> event</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Popup">
+      <MemberSignature Language="C#" Value="public event EventHandler Popup;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Popup" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ContextMenu.Popup" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the shortcut menu is displayed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this event to initialize the <xref:System.Windows.Forms.MenuItem> objects before they are displayed. For example, if you use a <xref:System.Windows.Forms.ContextMenu> for three <xref:System.Windows.Forms.TextBox> controls and you want to disable certain menu items in the <xref:System.Windows.Forms.ContextMenu> depending on which <xref:System.Windows.Forms.TextBox> is displaying the shortcut menu, you can create an event handler for this event. You could use the <xref:System.Windows.Forms.ContextMenu.SourceControl%2A> property to determine which <xref:System.Windows.Forms.TextBox> is about to display the <xref:System.Windows.Forms.ContextMenu> and disable the appropriate <xref:System.Windows.Forms.MenuItem> objects.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example creates an event handler for the <xref:System.Windows.Forms.ContextMenu.Popup> event of the <xref:System.Windows.Forms.ContextMenu>. The code in the event handler determines which of two controls a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and a <xref:System.Windows.Forms.TextBox> named `textBox1` is the control displaying the shortcut menu. Depending on which control caused the <xref:System.Windows.Forms.ContextMenu> to display its shortcut menu, the control adds the appropriate <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.ContextMenu>. This example requires that you have an instance of the <xref:System.Windows.Forms.ContextMenu> class, named `contextMenu1`, defined within the form. This example also requires that you have a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.PictureBox> added to a form and that the <xref:System.Windows.Forms.Control.ContextMenu%2A> property of these controls is set to `contextMenu1`.  
+  
+ [!code-cpp[Classic ContextMenu Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ContextMenu Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ContextMenu Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ContextMenu Example/CS/source.cs#1)]
+ [!code-vb[Classic ContextMenu Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ContextMenu Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCmdKey">
+      <MemberSignature Language="C#" Value="protected virtual bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData, System.Windows.Forms.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData, class System.Windows.Forms.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys,System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
+        <param name="control">The control to which the command key applies.</param>
+        <summary>Processes a command key.</summary>
+        <returns>
+          <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called during message preprocessing to handle command keys. Command keys are keys that always take precedence over regular input keys. Examples of command keys include accelerators and menu shortcuts. The method must return `true` to indicate that it has processed the command key, or `false` to indicate that the key is not a command key. This method is only called when the control is hosted in a Windows Forms application or as an ActiveX control.  
+  
+ The <xref:System.Windows.Forms.ContextMenu.ProcessCmdKey%2A> method first determines whether the control has a <xref:System.Windows.Forms.ContextMenu>, and if so, enables the <xref:System.Windows.Forms.ContextMenu> to process the command key. If the command key is not a menu shortcut and the control has a parent, the key is passed to the parent's <xref:System.Windows.Forms.ContextMenu.ProcessCmdKey%2A> method. The net effect is that command keys are "bubbled" up the control hierarchy. In addition to the key the user pressed, the key data also indicates which, if any, modifier keys were pressed at the same time as the key. Modifier keys include the SHIFT, CTRL, and ALT keys.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the immediate caller to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" /> method in a derived class, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of calling the base class's <see cref="M:System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" /> method should be returned. Controls will seldom, if ever, need to override this method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenu.RightToLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether text displayed by the control is displayed from right to left.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables your menus to support languages that are written from right to left. When this property is set to `RightToLeft.Yes`, the menu item text is displayed from right to left instead of the default left to right method.  
+  
+> [!NOTE]
+>  For more information about how enabling right-to-left alignment affects Windows Forms controls, see the <xref:System.Windows.Forms.Control.RightToLeft%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a valid member of the <see cref="T:System.Windows.Forms.RightToLeft" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show (System.Windows.Forms.Control control, System.Drawing.Point pos);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(class System.Windows.Forms.Control control, valuetype System.Drawing.Point pos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.Show(System.Windows.Forms.Control,System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+        <Parameter Name="pos" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="control">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control with which this shortcut menu is associated.</param>
+        <param name="pos">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates at which to display the menu. These coordinates are specified relative to the client coordinates of the control specified in the <c>control</c> parameter.</param>
+        <summary>Displays the shortcut menu at the specified position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, a <xref:System.Windows.Forms.ContextMenu> is displayed when the user clicks the right mouse button on a control or area of the form that the <xref:System.Windows.Forms.ContextMenu> is bound to. You can use this method to manually display the shortcut menu at a specific location and bind it with a specific control. This method does not return until the menu is dismissed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates constructing a shortcut menu and using the <xref:System.Windows.Forms.ContextMenu.Show%2A> method. To run the example, paste the following code in a form containing a button named Button1. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ManualContextMenu#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ManualContextMenu/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="control" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The handle of the control does not exist or the control is not visible.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show (System.Windows.Forms.Control control, System.Drawing.Point pos, System.Windows.Forms.LeftRightAlignment alignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(class System.Windows.Forms.Control control, valuetype System.Drawing.Point pos, valuetype System.Windows.Forms.LeftRightAlignment alignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenu.Show(System.Windows.Forms.Control,System.Drawing.Point,System.Windows.Forms.LeftRightAlignment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+        <Parameter Name="pos" Type="System.Drawing.Point" />
+        <Parameter Name="alignment" Type="System.Windows.Forms.LeftRightAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="control">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control with which this shortcut menu is associated.</param>
+        <param name="pos">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates at which to display the menu. These coordinates are specified relative to the client coordinates of the control specified in the <c>control</c> parameter.</param>
+        <param name="alignment">A <see cref="T:System.Windows.Forms.LeftRightAlignment" /> that specifies the alignment of the control relative to the <c>pos</c> parameter.</param>
+        <summary>Displays the shortcut menu at the specified position and with the specified alignment.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control SourceControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control SourceControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenu.SourceControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control that is displaying the shortcut menu.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Control" /> that represents the control that is displaying the shortcut menu. If no control has displayed the shortcut menu, the property returns <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine which control currently displays the shortcut menu defined in the <xref:System.Windows.Forms.ContextMenu>. If the shortcut menu is not currently displayed, you can use this property to determine which control last displayed the shortcut menu. You can use this property in the <xref:System.Windows.Forms.ContextMenu.Popup> event to ensure that the control displays the proper menu items. You can also use this property to pass a reference to the control to a method that performs the tasks associated with a menu command displayed in the shortcut menu. Since the <xref:System.Windows.Forms.Form> class inherits from <xref:System.Windows.Forms.Control>, you can also use this property if the <xref:System.Windows.Forms.ContextMenu> is associated with a form.  
+  
+   
+  
+## Examples  
+ The following code example creates an event handler for the <xref:System.Windows.Forms.ContextMenu.Popup> event of the <xref:System.Windows.Forms.ContextMenu>. The code in the event handler determines which of two controls a <xref:System.Windows.Forms.PictureBox> named `pictureBox1` and a <xref:System.Windows.Forms.TextBox> named `textBox1` is the control displaying the shortcut menu. Depending on which control caused the <xref:System.Windows.Forms.ContextMenu> to display its shortcut menu, the control adds the appropriate <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.ContextMenu>. This example requires that you have an instance of the <xref:System.Windows.Forms.ContextMenu> class, named `contextMenu1`, defined within the form. This example also requires that you have a <xref:System.Windows.Forms.TextBox> and <xref:System.Windows.Forms.PictureBox> added to a form and that the <xref:System.Windows.Forms.Control.ContextMenu%2A> property of these controls is set to `contextMenu1`.  
+  
+ [!code-cpp[Classic ContextMenu Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ContextMenu Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ContextMenu Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ContextMenu Example/CS/source.cs#1)]
+ [!code-vb[Classic ContextMenu Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ContextMenu Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

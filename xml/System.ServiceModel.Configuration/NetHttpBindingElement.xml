@@ -1,0 +1,222 @@
+<Type Name="NetHttpBindingElement" FullName="System.ServiceModel.Configuration.NetHttpBindingElement">
+  <TypeSignature Language="C#" Value="public sealed class NetHttpBindingElement : System.ServiceModel.Configuration.HttpBindingBaseElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetHttpBindingElement extends System.ServiceModel.Configuration.HttpBindingBaseElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetHttpBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.HttpBindingBaseElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a net http binding element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetHttpBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpBindingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetHttpBindingElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpBindingElement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" /> class with specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElementType">
+      <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.BindingElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFrom">
+      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageEncoding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.NetHttpMessageEncoding MessageEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.NetHttpMessageEncoding MessageEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.MessageEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("messageEncoding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.NetHttpMessageEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message encoding used for the <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" />.</summary>
+        <value>The message encoding used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyConfiguration">
+      <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReliableSession">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement ReliableSession" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.ReliableSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("reliableSession")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.StandardBindingOptionalReliableSessionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the established reliable session for the <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" />.</summary>
+        <value>The established reliable session.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Security">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BasicHttpSecurityElement Security { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BasicHttpSecurityElement Security" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.Security" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("security")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BasicHttpSecurityElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the secure binding for the binding element.</summary>
+        <value>The secure binding for the binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebSocketSettings">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement WebSocketSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement WebSocketSettings" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetHttpBindingElement.WebSocketSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("webSocketSettings")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.NetHttpWebSocketTransportSettingsElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the web socket settings used for the <see cref="T:System.ServiceModel.Configuration.NetHttpBindingElement" />.</summary>
+        <value>The web socket settings used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

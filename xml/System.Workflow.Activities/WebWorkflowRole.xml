@@ -1,0 +1,180 @@
+<Type Name="WebWorkflowRole" FullName="System.Workflow.Activities.WebWorkflowRole">
+  <TypeSignature Language="C#" Value="public class WebWorkflowRole : System.Workflow.Activities.WorkflowRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WebWorkflowRole extends System.Workflow.Activities.WorkflowRole" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebWorkflowRole" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.WorkflowRole</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a Workflow role that is backed by a <see cref="T:System.Web.Security.RoleProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For more information about roles in ASP.NET, see [Role Providers](http://go.microsoft.com/fwlink/?LinkId=96709).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebWorkflowRole (string roleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">A string that defines the name of the role.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> class by using the specified role name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="roleName" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebWorkflowRole (string roleName, string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string roleName, string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="provider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">A string that defines the name of the role.</param>
+        <param name="provider">A string that defines the role provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> class by using the specified role name and role provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="roleName" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentities">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;string&gt; GetIdentities ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetIdentities() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.GetIdentities" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a generic list of ASP.NET accounts associated with the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</summary>
+        <returns>A generic list of string values that represent the ASP.NET accounts associated with the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Security.WindowsTokenRoleProvider> supports only <xref:System.Web.Security.Roles.IsUserInRole%2A> and <xref:System.Web.Security.Roles.GetRolesForUser%2A>. Furthermore, it supports these methods only for the user account that is currently the WindowsPrincipal associated with the request context, so you cannot call <xref:System.Web.Security.Roles.GetRolesForUser%2A> for any user account in the domain. When using the <xref:System.Workflow.Activities.WebWorkflowRole.GetIdentities%2A> method with the <xref:System.Web.Security.WindowsTokenRoleProvider>, the following provider exception is thrown:  
+  
+ The configured Role Provider (WindowsTokenRoleProvider) relies upon Windows authentication to determine the groups that the user is allowed to be a member of. ASP.NET Role Manager cannot be used to manage Windows users and groups. Use the SQLRoleProvider if you want to support custom user/role assignment.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesIdentity">
+      <MemberSignature Language="C#" Value="public override bool IncludesIdentity (string identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IncludesIdentity(string identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebWorkflowRole.IncludesIdentity(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The name of the identity to test for.</param>
+        <summary>Returns a value indicating whether the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> contains the specified identity</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Activities.WebWorkflowRole" /> contains the specified identity; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</summary>
+        <value>A string that contains the name of the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Workflow.Activities.WebWorkflowRole.Name" /> was set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleProvider">
+      <MemberSignature Language="C#" Value="public string RoleProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RoleProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebWorkflowRole.RoleProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the role provider for the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</summary>
+        <value>A string that contains the role provider for the <see cref="T:System.Workflow.Activities.WebWorkflowRole" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most commonly used role providers for <xref:System.Workflow.Activities.WebWorkflowRole> are classes that inherit from <xref:System.Web.Security.RoleProvider>. These classes include <xref:System.Web.Security.AuthorizationStoreRoleProvider>, <xref:System.Web.Security.SqlRoleProvider> and <xref:System.Web.Security.WindowsTokenRoleProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

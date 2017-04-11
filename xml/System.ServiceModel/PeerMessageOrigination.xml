@@ -1,0 +1,53 @@
+<Type Name="PeerMessageOrigination" FullName="System.ServiceModel.PeerMessageOrigination">
+  <TypeSignature Language="C#" Value="public enum PeerMessageOrigination" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerMessageOrigination extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessageOrigination" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the network origin of a peer channel message.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessageOrigination Local = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message originated on the local computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remote">
+      <MemberSignature Language="C#" Value="Remote" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessageOrigination Remote = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Remote" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message originated from a remote computer.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

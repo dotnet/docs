@@ -1,0 +1,139 @@
+<Type Name="InheritanceMappingAttribute" FullName="System.Data.Linq.Mapping.InheritanceMappingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class InheritanceMappingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InheritanceMappingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.InheritanceMappingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Maps an inheritance hierarchy in a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> is specified per mapped class.  
+  
+ Note the following when you map inheritance hierarchies:  
+  
+-   All classes in a hierarchy must be mapped to a single table.  
+  
+-   The table for an inheritance hierarchy must be declared on the mapped type that is at the top of the hierarchy. You cannot specify the table or mapping attributes in a class that is derived from the top class.  
+  
+-   You can use an interface in a hierarchy, but [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] does not map it.  
+  
+-   You can skip a class in the hierarchy when you map classes, but you can query against mapped classes only.  
+  
+ For correct materialization, discriminator code values must be unique and match the values in the database. A row with a discriminator code value that does not exactly match (even by casing) instantiates the class by using <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> set to `true`.  
+  
+   
+  
+## Examples  
+ This example shows inheritance mapping for a hierarchy where the top, mapped class (`Shape`) is abstract.  
+  
+ [!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#1)]
+ [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#1)]  
+  
+ The following example shows the inclusion of unmapped classes. You can put unmapped classes anywhere in the hierarchy.  
+  
+ [!code-csharp[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/cs/Program.cs#2)]
+ [!code-vb[System.Data.Linq.Mapping.InheritanceMappingAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.Mapping.InheritanceMappingAttribute/vb/Module1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InheritanceMappingAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.InheritanceMappingAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.InheritanceMappingAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="public object Code { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Code" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.Code" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the discriminator code value in a mapped inheritance hierarchy.</summary>
+        <value>Must be user-specified. There is no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefault">
+      <MemberSignature Language="C#" Value="public bool IsDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether an object of this type in instantiated when the discriminator value does not match a specified value.</summary>
+        <value>Default = <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Exactly one of the <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute> attributes must be declared with <xref:System.Data.Linq.Mapping.InheritanceMappingAttribute.IsDefault%2A> as `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.InheritanceMappingAttribute.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the class in the hierarchy.</summary>
+        <value>Must be user-specified. There is no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use any non-abstract type in the inheritance hierarchy, including the root type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,135 @@
+<Type Name="FolderNameEditor+FolderBrowserStyles" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles">
+  <TypeSignature Language="C#" Value="protected enum FolderNameEditor.FolderBrowserStyles" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed FolderNameEditor/FolderBrowserStyles extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers used to specify behavior of a <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BrowseForComputer">
+      <MemberSignature Language="C#" Value="BrowseForComputer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles BrowseForComputer = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.BrowseForComputer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser can only return computers. If the user selects anything other than a computer, the **OK** button is grayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowseForEverything">
+      <MemberSignature Language="C#" Value="BrowseForEverything" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles BrowseForEverything = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.BrowseForEverything" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser can return any object that it can return.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowseForPrinter">
+      <MemberSignature Language="C#" Value="BrowseForPrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles BrowseForPrinter = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.BrowseForPrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser can only return printers. If the user selects anything other than a printer, the **OK** button is grayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictToDomain">
+      <MemberSignature Language="C#" Value="RestrictToDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles RestrictToDomain = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.RestrictToDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser will not include network folders below the domain level in the dialog box's tree view control, or allow navigation to network locations outside of the domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictToFilesystem">
+      <MemberSignature Language="C#" Value="RestrictToFilesystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles RestrictToFilesystem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.RestrictToFilesystem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser will only return local file system directories. If the user selects folders that are not part of the local file system, the **OK** button is grayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictToSubfolders">
+      <MemberSignature Language="C#" Value="RestrictToSubfolders" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles RestrictToSubfolders = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.RestrictToSubfolders" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser will only return obejcts of the local file system that are within the root folder or a subfolder of the root folder. If the user selects a subfolder of the root folder that is not part of the local file system, the **OK** button is grayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowTextBox">
+      <MemberSignature Language="C#" Value="ShowTextBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserStyles ShowTextBox = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles.ShowTextBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The folder browser includes a <see cref="T:System.Windows.Forms.TextBox" /> control in the browse dialog box that allows the user to type the name of an item.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

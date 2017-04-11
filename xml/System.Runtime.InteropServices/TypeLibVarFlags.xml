@@ -1,0 +1,257 @@
+<Type Name="TypeLibVarFlags" FullName="System.Runtime.InteropServices.TypeLibVarFlags">
+  <TypeSignature Language="C#" Value="public enum TypeLibVarFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibVarFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibVarFlags" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the original settings of the <see cref="T:System.Runtime.InteropServices.VARFLAGS" /> in the COM type library from which the variable was imported.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `TypeLibVarFlags` is used in conjunction with the <xref:System.Runtime.InteropServices.TypeLibVarAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
+  
+ For more information, see `VARFLAGS` in the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FBindable">
+      <MemberSignature Language="C#" Value="FBindable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FBindable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FBindable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable supports data binding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FDefaultBind">
+      <MemberSignature Language="C#" Value="FDefaultBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDefaultBind = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDefaultBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable is the single property that best represents the object. Only one variable in a type info can have this value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FDefaultCollelem">
+      <MemberSignature Language="C#" Value="FDefaultCollelem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDefaultCollelem = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDefaultCollelem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Permits an optimization in which the compiler looks for a member named "xyz" on the type "abc". If such a member is found and is flagged as an accessor function for an element of the default collection, then a call is generated to that member function.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FDisplayBind">
+      <MemberSignature Language="C#" Value="FDisplayBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FDisplayBind = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FDisplayBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable is displayed as bindable. <see cref="F:System.Runtime.InteropServices.TypeLibVarFlags.FBindable" /> must also be set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FHidden">
+      <MemberSignature Language="C#" Value="FHidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FHidden = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FHidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable should not be displayed in a browser, though it exists and is bindable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FImmediateBind">
+      <MemberSignature Language="C#" Value="FImmediateBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FImmediateBind = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FImmediateBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable is mapped as individual bindable properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FNonBrowsable">
+      <MemberSignature Language="C#" Value="FNonBrowsable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FNonBrowsable = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FNonBrowsable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable appears in an object browser, but not in a properties browser.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FReadOnly">
+      <MemberSignature Language="C#" Value="FReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FReadOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Assignment to the variable should not be allowed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FReplaceable">
+      <MemberSignature Language="C#" Value="FReplaceable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FReplaceable = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FReplaceable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tags the interface as having default behaviors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FRequestEdit">
+      <MemberSignature Language="C#" Value="FRequestEdit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FRequestEdit = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FRequestEdit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the property supports the COM <see langword="OnRequestEdit" /> notification.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FRestricted">
+      <MemberSignature Language="C#" Value="FRestricted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FRestricted = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FRestricted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This flag is intended for system-level functions or functions that type browsers should not display.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FSource">
+      <MemberSignature Language="C#" Value="FSource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FSource = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FSource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The variable returns an object that is a source of events.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FUiDefault">
+      <MemberSignature Language="C#" Value="FUiDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibVarFlags FUiDefault = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibVarFlags.FUiDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibVarFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default display in the user interface.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

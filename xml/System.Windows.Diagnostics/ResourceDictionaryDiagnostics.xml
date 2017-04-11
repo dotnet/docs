@@ -1,0 +1,116 @@
+<Type Name="ResourceDictionaryDiagnostics" FullName="System.Windows.Diagnostics.ResourceDictionaryDiagnostics">
+  <TypeSignature Language="C#" Value="public static class ResourceDictionaryDiagnostics" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ResourceDictionaryDiagnostics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.ResourceDictionaryDiagnostics" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables enumeration of generic and themed <see cref="T:System.Windows.ResourceDictionary" /> instances, and provides      a notification infrastructure for listening to the loading and unloading of <see cref="T:System.Windows.ResourceDictionary" /> instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type supports the .NET Framework infrastructure and is not intended to be used directly      from application code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenericResourceDictionaries">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt; GenericResourceDictionaries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Diagnostics.ResourceDictionaryInfo&gt; GenericResourceDictionaries" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all instances of generic <see cref="T:System.Windows.ResourceDictionary" /> objects loaded by the application when a managed debugger is attached.</summary>
+        <value>
+          <see cref="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaries" /> property</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericResourceDictionaryLoaded">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; GenericResourceDictionaryLoaded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; GenericResourceDictionaryLoaded" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GenericResourceDictionaryLoaded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a managed debugger is attached and a generic <see cref="T:System.Windows.ResourceDictionary" /> object is loaded         by the application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemedResourceDictionaries">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt; ThemedResourceDictionaries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Diagnostics.ResourceDictionaryInfo&gt; ThemedResourceDictionaries" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Diagnostics.ResourceDictionaryInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all instances of themed <see cref="T:System.Windows.ResourceDictionary" /> objects loaded by the application when a managed debugger is attached.</summary>
+        <value>
+          <see cref="P:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaries" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemedResourceDictionaryLoaded">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; ThemedResourceDictionaryLoaded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt; ThemedResourceDictionaryLoaded" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryLoaded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryLoadedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a managed debugger is attached, and a themed <see cref="T:System.Windows.ResourceDictionary" /> object is loaded         by the application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThemedResourceDictionaryUnloaded">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt; ThemedResourceDictionaryUnloaded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt; ThemedResourceDictionaryUnloaded" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.ThemedResourceDictionaryUnloaded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Diagnostics.ResourceDictionaryUnloadedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a managed debugger is attached and a themed <see cref="T:System.Windows.ResourceDictionary" /> object is unloaded         from the application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

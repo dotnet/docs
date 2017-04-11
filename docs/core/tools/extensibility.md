@@ -38,6 +38,7 @@ depends largely on what's the goal you are trying to achieve with your extension
 ## Per-project based extensibility
 Per-project tools are [framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) that are distributed as NuGet packages. Tools are 
 only available in the context of the project that references them and for which they are restored. Invocation outside 
+
 of the context of the project (for example, outside of the directory that contains the project) will fail as the command will 
 not be able to be found.
 

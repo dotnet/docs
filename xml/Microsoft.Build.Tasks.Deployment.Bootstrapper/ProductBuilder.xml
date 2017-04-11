@@ -1,0 +1,41 @@
+<Type Name="ProductBuilder" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder">
+  <TypeSignature Language="C#" Value="public class ProductBuilder : Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProductBuilder extends System.Object implements class Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilder</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a buildable version of a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Product">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.Product Product { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.Product Product" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder.Product" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.Product</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</summary>
+        <value>Returns the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

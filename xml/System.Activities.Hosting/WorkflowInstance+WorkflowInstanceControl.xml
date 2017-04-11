@@ -1,0 +1,658 @@
+<Type Name="WorkflowInstance+WorkflowInstanceControl" FullName="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl">
+  <TypeSignature Language="C#" Value="protected struct WorkflowInstance.WorkflowInstanceControl" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected sequential ansi sealed beforefieldinit WorkflowInstance/WorkflowInstanceControl extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for <see cref="T:System.Activities.Hosting.WorkflowInstance" /> derived classes to access the functionality of the workflow runtime.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort (Exception reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort(class System.Exception reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reason" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="reason">The reason for aborting the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</param>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> using the specified exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFlushTrackingRecords">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFlushTrackingRecords (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFlushTrackingRecords(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.BeginFlushTrackingRecords(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which to abort the attempt.</param>
+        <param name="callback">The method to be called when the track operation has completed.</param>
+        <param name="state">The information about the asynchronous operation.</param>
+        <summary>Called by the workflow runtime to begin sending pending tracking records to tracking participants asynchronously.</summary>
+        <returns>The status of the current track operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFlushTrackingRecords">
+      <MemberSignature Language="C#" Value="public void EndFlushTrackingRecords (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndFlushTrackingRecords(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.EndFlushTrackingRecords(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The status of the asynchronous track operation.</param>
+        <summary>Called by the workflow runtime to end the track operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> of the object is equal to the current <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushTrackingRecords">
+      <MemberSignature Language="C#" Value="public void FlushTrackingRecords (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FlushTrackingRecords(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.FlushTrackingRecords(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which to abort the attempt.</param>
+        <summary>Called by the workflow runtime to send pending tracking records to tracking participants.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbortReason">
+      <MemberSignature Language="C#" Value="public Exception GetAbortReason ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Exception GetAbortReason() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetAbortReason" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the exception that causes the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to abort.</summary>
+        <returns>The exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to abort, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not abort.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBookmarks">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <returns>A collection of bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBookmarks">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks (System.Activities.BookmarkScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks(class System.Activities.BookmarkScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks(System.Activities.BookmarkScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The bookmark scope to inspect.</param>
+        <summary>Returns the collection of available bookmarks for the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> created in the specified <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <returns>The collection of bookmarks created in the specified <see cref="T:System.Activities.BookmarkScope" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompletionState">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState GetCompletionState ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompletionState">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState GetCompletionState (out Exception terminationException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState(class System.Exception terminationException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Exception@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including termination exception.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompletionState">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityInstanceState GetCompletionState (out System.Collections.Generic.IDictionary&lt;string,object&gt; outputs, out Exception terminationException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.ActivityInstanceState GetCompletionState(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; outputs, class System.Exception terminationException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState(System.Collections.Generic.IDictionary{System.String,System.Object}@,System.Exception@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityInstanceState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputs" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&amp;" RefType="out" />
+        <Parameter Name="terminationException" Type="System.Exception&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="outputs">When this method returns, <c>outputs</c> contains a dictionary of <see cref="F:System.Activities.ArgumentDirection.Out" /> arguments of the workflow, keyed by argument name. This parameter is passed uninitialized.</param>
+        <param name="terminationException">When this method returns, <c>terminationException</c> contains the exception that caused the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to terminate, or <see langword="null" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> did not terminate. This parameter is passed uninitialized.</param>
+        <summary>Returns the final <see cref="T:System.Activities.ActivityInstanceState" /> of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />, including workflow outputs and termination exception.</summary>
+        <returns>One of the enumeration members that describes the state of an activity instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMappedVariables">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,System.Activities.Hosting.LocationInfo&gt; GetMappedVariables ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Activities.Hosting.LocationInfo&gt; GetMappedVariables() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetMappedVariables" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Activities.Hosting.LocationInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a dictionary of variables in the current scope that have been specified with <see cref="F:System.Activities.VariableModifiers.Mapped" />.</summary>
+        <returns>A dictionary of mapped variables currently in scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasPendingTrackingRecords">
+      <MemberSignature Language="C#" Value="public bool HasPendingTrackingRecords { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPendingTrackingRecords" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.HasPendingTrackingRecords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Called by the workflow runtime to determine whether this workflow instance has pending tracking records and a tracking participant.</summary>
+        <value>
+          <see langword="true" /> if this workflow instance has pending tracking records and a tracking participant; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPersistable">
+      <MemberSignature Language="C#" Value="public bool IsPersistable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPersistable" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.IsPersistable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is in a state where it can be persisted.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be persisted; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl left, valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Equality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
+        <Parameter Name="right" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl left, System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl left, valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
+        <Parameter Name="right" Type="System.Activities.Hosting.WorkflowInstance+WorkflowInstanceControl" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> to compare.</param>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" /> instances are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PauseWhenPersistable">
+      <MemberSignature Language="C#" Value="public void PauseWhenPersistable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PauseWhenPersistable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PauseWhenPersistable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Requests that the workflow runtime pause the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> at the next point of execution where it is possible to persist. Note that the scheduler queue may not be empty at this point.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareForSerialization">
+      <MemberSignature Language="C#" Value="public object PrepareForSerialization ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PrepareForSerialization() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.PrepareForSerialization" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Prepares the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> state for serialization.</summary>
+        <returns>A workflow instance state.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPause">
+      <MemberSignature Language="C#" Value="public void RequestPause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequestPause() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.RequestPause" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Requests that the scheduler stops.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public void Run ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Run() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Run" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Instructs the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> to begin execution.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleBookmarkResumption">
+      <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption (System.Activities.Bookmark bookmark, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption(class System.Activities.Bookmark bookmark, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkResumptionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="bookmark">The bookmark to resume.</param>
+        <param name="value">The data to be passed to the activity that created the <see cref="T:System.Activities.Bookmark" />.</param>
+        <summary>Schedules a bookmark resumption with the specified value.</summary>
+        <returns>One of the enumeration values that indicates the result of a <see cref="T:System.Activities.Bookmark" /> scheduling operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleBookmarkResumption">
+      <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption (System.Activities.Bookmark bookmark, object value, System.Activities.BookmarkScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ScheduleBookmarkResumption(class System.Activities.Bookmark bookmark, object value, class System.Activities.BookmarkScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object,System.Activities.BookmarkScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkResumptionResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="scope" Type="System.Activities.BookmarkScope" />
+      </Parameters>
+      <Docs>
+        <param name="bookmark">The bookmark to resume.</param>
+        <param name="value">The data to be passed to the activity that created the <see cref="T:System.Activities.Bookmark" />.</param>
+        <param name="scope">The <see cref="T:System.Activities.Bookmark" /> under which the <see cref="T:System.Activities.Bookmark" /> was created.</param>
+        <summary>Schedules a <see cref="T:System.Activities.Bookmark" /> resumption from the specified <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <returns>One of the enumeration values that indicates the result of a <see cref="T:System.Activities.Bookmark" /> scheduling operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleCancel">
+      <MemberSignature Language="C#" Value="public void ScheduleCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Schedules the cancellation of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method schedules a cancel request for the root activity of the <xref:System.Activities.Hosting.WorkflowInstance>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Activities.Hosting.WorkflowInstanceState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.Hosting.WorkflowInstanceState State" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <value>One of the enumeration values that specifies the state of a <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminate">
+      <MemberSignature Language="C#" Value="public void Terminate (Exception reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(class System.Exception reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Terminate(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reason" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="reason">The exception that is the reason for terminating the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</param>
+        <summary>Transitions the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> into the terminal <see cref="F:System.Activities.ActivityInstanceState.Faulted" /> state using the specified exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Track">
+      <MemberSignature Language="C#" Value="public void Track (System.Activities.Tracking.WorkflowInstanceRecord instanceRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Track(class System.Activities.Tracking.WorkflowInstanceRecord instanceRecord) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Track(System.Activities.Tracking.WorkflowInstanceRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceRecord" Type="System.Activities.Tracking.WorkflowInstanceRecord" />
+      </Parameters>
+      <Docs>
+        <param name="instanceRecord">The tracking record to add.</param>
+        <summary>Called by the workflow runtime to add the specified pending record to the list of pending records.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingEnabled">
+      <MemberSignature Language="C#" Value="public bool TrackingEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrackingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.TrackingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Called by the workflow runtime to determine whether tracking is enabled in this workflow instance.</summary>
+        <value>
+          <see langword="true" /> if tracking is enabled in this workflow instance; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Abort">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Aborts the <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> is called, most <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl> APIs except <xref:System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort%2A> throw an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

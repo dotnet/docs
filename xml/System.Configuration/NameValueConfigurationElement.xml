@@ -1,0 +1,112 @@
+<Type Name="NameValueConfigurationElement" FullName="System.Configuration.NameValueConfigurationElement">
+  <TypeSignature Language="C#" Value="public sealed class NameValueConfigurationElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NameValueConfigurationElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueConfigurationElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A configuration element that contains a <see cref="T:System.String" /> name and <see cref="T:System.String" /> value. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.NameValueConfigurationElement> inherits from the <xref:System.Configuration.ConfigurationElement> base class. The <xref:System.Configuration.ConfigurationElement> represents an element within a configuration file.  
+  
+ There is a difference between the <xref:System.Configuration.NameValueConfigurationElement> class and <xref:System.Configuration.KeyValueConfigurationElement> class. The <xref:System.Configuration.NameValueConfigurationElement> class does not require the first string to be unique, whereas <xref:System.Configuration.KeyValueConfigurationElement> class requires the first string to be a key, and therefore unique in the collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueConfigurationElement (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationElement.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <param name="value">The value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> class based on supplied parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</summary>
+        <value>The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationElement.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("value", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</summary>
+        <value>The value of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,145 @@
+<Type Name="RoutingConfiguration" FullName="System.ServiceModel.Routing.RoutingConfiguration">
+  <TypeSignature Language="C#" Value="public sealed class RoutingConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoutingConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Routing.RoutingConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the configuration information used by <see cref="T:System.ServiceModel.Routing.RoutingExtension" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutingConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingConfiguration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.RoutingConfiguration" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutingConfiguration (System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt; filterTable, bool routeOnHeadersOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.MessageFilterTable`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt;&gt; filterTable, bool routeOnHeadersOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.RoutingConfiguration.#ctor(System.ServiceModel.Dispatcher.MessageFilterTable{System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint}},System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filterTable" Type="System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt;" />
+        <Parameter Name="routeOnHeadersOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="filterTable">The message filter table to use for this configuration.</param>
+        <param name="routeOnHeadersOnly">
+          <see langword="true" /> if the <see cref="T:System.ServiceModel.Dispatcher.MessageFilterTable`1" /> can only examine message headers; otherwise, <see langword="false" />. The default is <see langword="true" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Routing.RoutingConfiguration" /> class using the specified <see cref="T:System.ServiceModel.Dispatcher.MessageFilterTable`1" /> and routeOnHeadersOnly parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureOrderedDispatch">
+      <MemberSignature Language="C#" Value="public bool EnsureOrderedDispatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnsureOrderedDispatch" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.EnsureOrderedDispatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether messages are to be dispatched in the order they were sent.</summary>
+        <value>
+          <see langword="true" /> if messages are to be dispatched in the order they were sent; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTable">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt; FilterTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.MessageFilterTable`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt;&gt; FilterTable" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.FilterTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.MessageFilterTable&lt;System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Dispatcher.MessageFilterTable`1" /> used by this configuration.</summary>
+        <value>The message filter table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteOnHeadersOnly">
+      <MemberSignature Language="C#" Value="public bool RouteOnHeadersOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RouteOnHeadersOnly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the filter can examine the message body.</summary>
+        <value>
+          <see langword="true" /> if the filter can only examine message headers; otherwise, <see langword="false" />. The default is **true**.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapProcessingEnabled">
+      <MemberSignature Language="C#" Value="public bool SoapProcessingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SoapProcessingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Routing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether messages should be processed between SOAP <see cref="T:System.ServiceModel.Channels.MessageVersion" />s.</summary>
+        <value>
+          <see langword="true" /> if messages should be processed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SOAP processing is the process where messages are converted between SOAP <xref:System.ServiceModel.Channels.MessageVersion>s.  
+  
+ Setting this value to `false` indicates that the <xref:System.ServiceModel.Routing.RoutingBehavior> should not install the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on the client endpoints. If set to `false`, you must add your own message inspector or other code to handle some aspects of messages before they are sent. It is also possible to disable SOAP processing on each endpoint. [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> class.  
+  
+ By default, the <xref:System.ServiceModel.Routing.RoutingBehavior> creates and attaches a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with <xref:System.ServiceModel.Routing.SoapProcessingBehavior.ProcessMessages%2A> set to `true` for each client endpoint. If you do not want to use the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on a specific endpoint, create a new <xref:System.ServiceModel.Routing.SoapProcessingBehavior> with this value set to `false` and then attach it to the endpoint on which you do not want processing to occur. If the <xref:System.ServiceModel.Routing.RoutingBehavior> observes that a client already has a <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, it does not attempt to attach another.  
+  
+ To disable the application of <xref:System.ServiceModel.Routing.SoapProcessingBehavior> on any endpoint, disable SOAP processing on the <xref:System.ServiceModel.Routing.RoutingBehavior>and the <xref:System.ServiceModel.Routing.RoutingConfiguration>.  
+  
+ If <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> is `true`, the <xref:System.ServiceModel.Routing.SoapProcessingBehavior> is added to the client endpoint <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

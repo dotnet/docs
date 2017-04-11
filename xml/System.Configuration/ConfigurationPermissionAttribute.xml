@@ -1,0 +1,68 @@
+<Type Name="ConfigurationPermissionAttribute" FullName="System.Configuration.ConfigurationPermissionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ConfigurationPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConfigurationPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationPermissionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Creates a <see cref="T:System.Configuration.ConfigurationPermission" /> object that either grants or denies the marked target permission to access sections of configuration files.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">The security action represented by an enumeration member of <see cref="T:System.Security.Permissions.SecurityAction" />. Determines the permission state of the attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationPermissionAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationPermissionAttribute.CreatePermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an object that implements the <see cref="T:System.Security.IPermission" /> interface.</summary>
+        <returns>Returns an object that implements <see cref="T:System.Security.IPermission" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a new <xref:System.Configuration.ConfigurationPermission> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

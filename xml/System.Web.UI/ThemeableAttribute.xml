@@ -1,0 +1,297 @@
+<Type Name="ThemeableAttribute" FullName="System.Web.UI.ThemeableAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ThemeableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThemeableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ThemeableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the metadata attribute that Web server controls and their members use to indicate whether their rendering can be affected by themes and control skins. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control developers use the <xref:System.Web.UI.ThemeableAttribute> attribute to decorate control types and their members, to signal which ones can and cannot be affected by themes and control skins. By default, all properties exposed by a control are themeable. However, themes are typically applied only to stylistic properties; the `Themeable(false)` attribute should be applied explicitly to all non-stylistic properties. Decorating a member with the `Themeable(false)` attribute ensures that the member is not themed, regardless of the value of the <xref:System.Web.UI.Control.EnableTheming%2A> property. For example, if the <xref:System.Web.UI.ThemeableAttribute> attribute is applied to a control and set to `false`, the control is not affected by themes even when its <xref:System.Web.UI.Control.EnableTheming%2A> property is set to `true`.  
+  
+ The <xref:System.Web.UI.ThemeableAttribute> class maintains a static list of all types that support themes, and this list is consulted whenever the static methods <xref:System.Web.UI.ThemeableAttribute.IsObjectThemeable%2A> and <xref:System.Web.UI.ThemeableAttribute.IsTypeThemeable%2A> are called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can apply the <xref:System.Web.UI.ThemeableAttribute> attribute to a member of a control. In this example, <xref:System.Web.UI.ThemeableAttribute> is applied to a data-bound control and `false` is passed to the <xref:System.Web.UI.ThemeableAttribute.%23ctor%2A> constructor, indicating that the `DataSourceID` member cannot have themes applied. (Passing `false` to the constructor results in a <xref:System.Web.UI.ThemeableAttribute> instance that is equivalent to the <xref:System.Web.UI.ThemeableAttribute.No> field.)  
+  
+ [!code-csharp[System.Web.UI.ThemeableAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ThemeableAttribute/CS/themeableattribute1.cs#1)]
+ [!code-vb[System.Web.UI.ThemeableAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ThemeableAttribute/VB/themeableattribute1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ThemeableAttribute (bool themeable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool themeable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="themeable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="themeable">
+          <see langword="true" /> to initialize the <see cref="T:System.Web.UI.ThemeableAttribute" /> to represent a type or member that can be affected by themes; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ThemeableAttribute" /> class, using the specified Boolean value to determine whether the attribute represents a type or member that is affected by themes and control skins.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Passing `true` to this constructor is equivalent to using the <xref:System.Web.UI.ThemeableAttribute> field, while passing `false` is equivalent to using the <xref:System.Web.UI.ThemeableAttribute> field.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can apply the <xref:System.Web.UI.ThemeableAttribute> attribute to a member of a control. In this example, <xref:System.Web.UI.ThemeableAttribute> is applied to a data-bound control and `false` is passed to the <xref:System.Web.UI.ThemeableAttribute.%23ctor%2A> constructor, indicating that the `DataSourceID` member cannot have themes applied. (Passing `false` to the constructor results in a <xref:System.Web.UI.ThemeableAttribute> instance that is equivalent to the <xref:System.Web.UI.ThemeableAttribute.No> field.)  
+  
+ [!code-csharp[System.Web.UI.ThemeableAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ThemeableAttribute/CS/themeableattribute1.cs#1)]
+ [!code-vb[System.Web.UI.ThemeableAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ThemeableAttribute/VB/themeableattribute1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.ThemeableAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.ThemeableAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ThemeableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ThemeableAttribute" /> instance that represents the application-defined default value of the attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Web.UI.ThemeableAttribute> class is equivalent to the <xref:System.Web.UI.ThemeableAttribute> field. This is not necessarily equivalent to an instance that is created using the default class constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see langword="object" /> to compare with this instance, or <see langword="null" />.</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is the same instance as the current instance, or if the instances are different, but the attribute values are equivalent; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.ThemeableAttribute" /> type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Web.UI.ThemeableAttribute" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ThemeableAttribute.GetHashCode%2A> method is suitable for use in hashing algorithms and data structures like a hash table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the current instance is equivalent to a <see cref="F:System.Web.UI.ThemeableAttribute.Default" /> instance of the <see cref="T:System.Web.UI.ThemeableAttribute" /> class.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equivalent to a <see cref="F:System.Web.UI.ThemeableAttribute.Default" /> instance of the class; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObjectThemeable">
+      <MemberSignature Language="C#" Value="public static bool IsObjectThemeable (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsObjectThemeable(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsObjectThemeable(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to test for themes support.</param>
+        <summary>Returns a value indicating whether the object passed to the method supports themes.</summary>
+        <returns>
+          <see langword="true" /> if the object supports themes and control skins; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="instance" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTypeThemeable">
+      <MemberSignature Language="C#" Value="public static bool IsTypeThemeable (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTypeThemeable(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ThemeableAttribute.IsTypeThemeable(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> to test for themes support.</param>
+        <summary>Returns a value indicating whether the <see cref="T:System.Type" /> passed to the method supports themes.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Type" /> supports themes and control skins; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ThemeableAttribute> class maintains a static internal catalog of types that support themes, and this method checks the catalog to determine whether the specified <xref:System.Type> is represented there. If it is not, the method examines the <xref:System.ComponentModel.AttributeCollection> object associated with the <xref:System.Type> for the <xref:System.Web.UI.ThemeableAttribute> attribute to determine whether themes are supported.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="type" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.ThemeableAttribute No;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.ThemeableAttribute No" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ThemeableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ThemeableAttribute" /> instance used to decorate a type or member that is not affected by themes and control skins.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ThemeableAttribute.No> field is equivalent to creating an instance using the <xref:System.Web.UI.ThemeableAttribute.%23ctor%28System.Boolean%29> constructor and passing `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Themeable">
+      <MemberSignature Language="C#" Value="public bool Themeable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Themeable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ThemeableAttribute.Themeable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current control or member of a control can be affected by themes and control skins defined for the Web application.</summary>
+        <value>
+          <see langword="true" /> if the current type or member can be affected by themes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A member is affected by themes if no <xref:System.Web.UI.ThemeableAttribute> attribute is defined explicitly for the member, or the `Themeable(true)` attribute is applied. A member is not affected by themes if the `Themeable(false)` attribute is applied; this is the default value for <xref:System.Web.UI.ThemeableAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.ThemeableAttribute Yes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.ThemeableAttribute Yes" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ThemeableAttribute.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ThemeableAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ThemeableAttribute" /> instance used to decorate a type or member that is affected by themes and control skins.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ThemeableAttribute.Yes> field is equivalent to creating an instance using the <xref:System.Web.UI.ThemeableAttribute.%23ctor%28System.Boolean%29> constructor and passing `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

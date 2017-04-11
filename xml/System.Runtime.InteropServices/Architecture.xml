@@ -1,0 +1,92 @@
+<Type Name="Architecture" FullName="System.Runtime.InteropServices.Architecture">
+  <TypeSignature Language="C#" Value="public enum Architecture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Architecture extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Architecture" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arm">
+      <MemberSignature Language="C#" Value="Arm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture Arm = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Arm64">
+      <MemberSignature Language="C#" Value="Arm64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture Arm64 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X64">
+      <MemberSignature Language="C#" Value="X64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture X64 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X86">
+      <MemberSignature Language="C#" Value="X86" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture X86 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X86" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

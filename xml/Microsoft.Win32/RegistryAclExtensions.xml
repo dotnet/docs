@@ -1,0 +1,93 @@
+<Type Name="RegistryAclExtensions" FullName="Microsoft.Win32.RegistryAclExtensions">
+  <TypeSignature Language="C#" Value="public static class RegistryAclExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RegistryAclExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryAclExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.RegistrySecurity GetAccessControl (this Microsoft.Win32.RegistryKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.RegistrySecurity GetAccessControl(class Microsoft.Win32.RegistryKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.GetAccessControl(Microsoft.Win32.RegistryKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.RegistrySecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Win32.RegistryKey" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.RegistrySecurity GetAccessControl (this Microsoft.Win32.RegistryKey key, System.Security.AccessControl.AccessControlSections includeSections);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.RegistrySecurity GetAccessControl(class Microsoft.Win32.RegistryKey key, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.GetAccessControl(Microsoft.Win32.RegistryKey,System.Security.AccessControl.AccessControlSections)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.RegistrySecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Win32.RegistryKey" RefType="this" />
+        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="includeSections">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessControl">
+      <MemberSignature Language="C#" Value="public static void SetAccessControl (this Microsoft.Win32.RegistryKey key, System.Security.AccessControl.RegistrySecurity registrySecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class Microsoft.Win32.RegistryKey key, class System.Security.AccessControl.RegistrySecurity registrySecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.RegistryAclExtensions.SetAccessControl(Microsoft.Win32.RegistryKey,System.Security.AccessControl.RegistrySecurity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="Microsoft.Win32.RegistryKey" RefType="this" />
+        <Parameter Name="registrySecurity" Type="System.Security.AccessControl.RegistrySecurity" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <param name="registrySecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

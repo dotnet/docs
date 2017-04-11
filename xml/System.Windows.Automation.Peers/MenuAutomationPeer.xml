@@ -1,0 +1,95 @@
+<Type Name="MenuAutomationPeer" FullName="System.Windows.Automation.Peers.MenuAutomationPeer">
+  <TypeSignature Language="C#" Value="public class MenuAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.MenuAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.FrameworkElementAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Menu" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuAutomationPeer (System.Windows.Controls.Menu owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Menu owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.#ctor(System.Windows.Controls.Menu)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Menu" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Controls.Menu" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.MenuAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.MenuAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Menu" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.MenuAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Menu" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.Menu" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.MenuAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "Menu".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContentElementCore">
+      <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuAutomationPeer.IsContentElementCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the element that is associated with this automation peer contains data that is presented to the user. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

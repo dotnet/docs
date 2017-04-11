@@ -1,0 +1,348 @@
+<Type Name="NativeActivity&lt;TResult&gt;" FullName="System.Activities.NativeActivity&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public abstract class NativeActivity&lt;TResult&gt; : System.Activities.Activity&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NativeActivity`1&lt;TResult&gt; extends System.Activities.Activity`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivity`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.Activity&lt;TResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">TResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TResult">The result returned by the activity.</typeparam>
+    <summary>Abstract base class for custom activities that implement execution logic using the <see cref="M:System.Activities.NativeActivity`1.Execute(System.Activities.ActivityExecutionContext)" /> method, that has full access to the runtime’s features.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [How to: Create an Activity](~/docs/framework/windows-workflow-foundation/how-to-create-an-activity.md) step of the  [Getting Started Tutorial &#91;.NET Framework 4.5&#93;](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md).  
+  
+ [!code-csharp[CFX_WF_GettingStarted#1](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/readint.cs#1)]
+ [!code-vb[CFX_WF_GettingStarted#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/readint.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected NativeActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="protected virtual void Abort (System.Activities.NativeActivityAbortContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Abort(class System.Activities.NativeActivityAbortContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Abort(System.Activities.NativeActivityAbortContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityAbortContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, takes actions in response to the activity being aborted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override sealed void CacheMetadata (System.Activities.ActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.ActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.ActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.ActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">Not implemented.</param>
+        <summary>Not implemented. Use <see cref="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.NativeActivityMetadata)" /> instead.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected virtual void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow runtime uses the default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> to ensure correct construction of a workflow as well as to manage run-time relationships and lifetime rules. The default implementation of <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> examines the public members of the activity type using the type’s <xref:System.ComponentModel.TypeDescriptor>. These public members are of type <xref:System.Activities.Argument>, <xref:System.Activities.Variable>, [T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>](assetId:///T:System.Collections.Generic.IEnumerable\<T:System.Activities.Variable>?qualifyHint=False&amp;autoUpgrade=True), <xref:System.Activities.Activity>, [T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>](assetId:///T:System.Collections.Generic.IEnumerable\<T:System.Activities.Activity>?qualifyHint=False&amp;autoUpgrade=True), or <xref:System.Activities.ActivityDelegate>. You can override this method to customize the building of the activity’s run-time description and to provide custom validation logic. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using CacheMetadata in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Custom Composite using Native Activity](~/docs/framework/windows-workflow-foundation/samples/custom-composite-using-native-activity.md) sample.  
+  
+ [!code-csharp[wfs_CustomCompositeNativeActivity#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_customcompositenativeactivity/cs/mysequence.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="protected virtual void Cancel (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Cancel(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, runs logic to cause graceful early completion of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Cancel in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
+  
+ [!code-csharp[wfs_NonGenericParallelForEach#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInduceIdle">
+      <MemberSignature Language="C#" Value="protected virtual bool CanInduceIdle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.CanInduceIdle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the activity can cause the workflow to become idle.</summary>
+        <value>
+          <see langword="true" /> if the activity can cause the workflow to become idle, otherwise <see langword="false" />. This value is <see langword="false" /> by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using CanInduceIdle in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md) sample.  
+  
+ [!code-csharp[wfs_WaitForInput#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_waitforinput/cs/waitforinput/waitforinput.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected abstract void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context in which the activity executes.</param>
+        <summary>When implemented in a derived class, runs the activity’s execution logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Execute in a class that inherits from <xref:System.Activities.NativeActivity%601>. This example is from the [Non-Generic ParallelForEach](~/docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md) sample.  
+  
+ [!code-csharp[wfs_NonGenericParallelForEach#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_nongenericparallelforeach/cs/parallelforeach.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Implementation">
+      <MemberSignature Language="C#" Value="protected override sealed Func&lt;System.Activities.Activity&gt; Implementation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`1&lt;class System.Activities.Activity&gt; Implementation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.Implementation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.IgnoreDataMember</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Activities.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The execution logic of the activity.</summary>
+        <value>The execution logic.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplementationVersion">
+      <MemberSignature Language="C#" Value="protected override sealed Version ImplementationVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version ImplementationVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.ImplementationVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the implementation version of the activity.</summary>
+        <value>The implementation version of the activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateDynamicUpdateMap">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
+        <Parameter Name="originalActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The metadata.</param>
+        <param name="originalActivity">The original activity.</param>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateDynamicUpdateMap">
+      <MemberSignature Language="C#" Value="protected override sealed void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.UpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.UpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.UpdateMapMetadata" />
+        <Parameter Name="originalActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The metadata.</param>
+        <param name="originalActivity">The original activity.</param>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateInstance">
+      <MemberSignature Language="C#" Value="protected virtual void UpdateInstance (System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateInstance(class System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateContext" Type="System.Activities.DynamicUpdate.NativeActivityUpdateContext" />
+      </Parameters>
+      <Docs>
+        <param name="updateContext">The update context.</param>
+        <summary>Updates the instance of <see cref="T:System.Activities.NativeActivity`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="CacheMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom activity authors can provide validation logic in an activity's <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> override. Any exceptions that are thrown from <xref:System.Activities.NativeActivity%601.CacheMetadata%2A> are not treated as validation errors. These exceptions will escape from the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> and must be handled by the caller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,163 @@
+<Type Name="ClaimTypeRequirement" FullName="System.ServiceModel.Security.Tokens.ClaimTypeRequirement">
+  <TypeSignature Language="C#" Value="public class ClaimTypeRequirement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClaimTypeRequirement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ClaimTypeRequirement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the types of required and optional claims expected to appear in the federated credential.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a federated scenario, services state the requirements on incoming credentials. For example, the incoming credentials must possess a certain set of claim types. This requirement is manifested in a security policy. When a client requests a security token from a security token service (for example, [!INCLUDE[infocard](~/includes/infocard-md.md)]), it puts the requirements into a token request so that the security token service can issue the security token that satisfies the requirements accordingly.  
+  
+   
+  
+## Examples  
+ The following code adds two claim type requirements to a security binding.  
+  
+ [!code-csharp[S_UEClaimTypeRequirement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueclaimtyperequirement/cs/client.cs#1)]  
+  
+ The following config file is used with the preceding code.  
+  
+ <!-- TODO: review snippet reference [!code[S_UEClaimTypeRequirement#101](~/samples/snippets/common/VS_Snippets_CFX/s_ueclaimtyperequirement/common/app.config#101)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClaimTypeRequirement (string claimType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="claimType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="claimType">The claim type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.ClaimTypeRequirement" /> class for a required claim of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The predefined claim types can be found at   <xref:System.IdentityModel.Claims.ClaimTypes>.  
+  
+   
+  
+## Examples  
+ The following code adds two claim type requirements to a security binding.  
+  
+ [!code-csharp[S_UEClaimTypeRequirement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueclaimtyperequirement/cs/client.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClaimTypeRequirement (string claimType, bool isOptional);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, bool isOptional) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.#ctor(System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="claimType" Type="System.String" />
+        <Parameter Name="isOptional" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="claimType">The claim type.</param>
+        <param name="isOptional">If <see langword="false" />, the claim is required; otherwise, it is optional.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.ClaimTypeRequirement" /> class for a claim of the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code adds two claim type requirements to a security binding.  
+  
+ [!code-csharp[S_UEClaimTypeRequirement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueclaimtyperequirement/cs/client.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClaimType">
+      <MemberSignature Language="C#" Value="public string ClaimType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClaimType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.ClaimType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the claim type that was specified in the constructor.</summary>
+        <value>The claim type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a URI that defines the type of a claim.  For example, to purchase a product from a Web site, the user must present a valid credit card with a sufficient credit limit. The claim type would be the credit card URI.  
+  
+   
+  
+## Examples  
+ The following code shows how to get this property.  
+  
+ [!code-csharp[S_UEClaimTypeRequirement#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueclaimtyperequirement/cs/client.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOptional">
+      <MemberSignature Language="C#" Value="public bool IsOptional { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOptional" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.ClaimTypeRequirement.IsOptional" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the claim is optional.</summary>
+        <value>
+          <see langword="true" /> if this instance of the class is for an optional claim; <see langword="false" /> if it specifies a required claim.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An example of how to use this property is the scenario in which the service asks for some information but does not require it. For instance, you are required to enter your first name, last name, and address, but your phone number is optional.  
+  
+   
+  
+## Examples  
+ The following code shows how to get this property.  
+  
+ [!code-csharp[S_UEClaimTypeRequirement#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueclaimtyperequirement/cs/client.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

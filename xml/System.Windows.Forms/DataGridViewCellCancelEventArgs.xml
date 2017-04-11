@@ -1,0 +1,111 @@
+<Type Name="DataGridViewCellCancelEventArgs" FullName="System.Windows.Forms.DataGridViewCellCancelEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewCellCancelEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellCancelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for <see cref="E:System.Windows.Forms.DataGridView.CellBeginEdit" /> and <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#220)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#220)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewCellCancelEventArgs (int columnIndex, int rowIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 columnIndex, int32 rowIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellCancelEventArgs.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">The index of the column containing the cell that the event occurs for.</param>
+        <param name="rowIndex">The index of the row containing the cell that the event occurs for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellCancelEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="columnIndex" /> is less than -1.  
+  
+ -or-  
+  
+ <paramref name="rowIndex" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellCancelEventArgs.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column index of the cell that the event occurs for.</summary>
+        <value>The column index of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that the event occurs for.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#220)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#220)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellCancelEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row index of the cell that the event occurs for.</summary>
+        <value>The row index of the <see cref="T:System.Windows.Forms.DataGridViewCell" /> that the event occurs for.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#220)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#220)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

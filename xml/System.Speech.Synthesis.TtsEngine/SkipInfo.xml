@@ -1,0 +1,70 @@
+<Type Name="SkipInfo" FullName="System.Speech.Synthesis.TtsEngine.SkipInfo">
+  <TypeSignature Language="C#" Value="public class SkipInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SkipInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.SkipInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about text stream items to be skipped.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkipInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.SkipInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see langword="SkipInfo" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SkipInfo.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of items to be skipped.</summary>
+        <value>An <see langword="int" /> containing the number of items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.SkipInfo.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of object to skip.</summary>
+        <value>An <see langword="int" /> representing the type of the object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

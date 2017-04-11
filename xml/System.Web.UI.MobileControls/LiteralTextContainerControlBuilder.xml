@@ -1,0 +1,74 @@
+<Type Name="LiteralTextContainerControlBuilder" FullName="System.Web.UI.MobileControls.LiteralTextContainerControlBuilder">
+  <TypeSignature Language="C#" Value="public class LiteralTextContainerControlBuilder : System.Web.UI.MobileControls.MobileControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralTextContainerControlBuilder extends System.Web.UI.MobileControls.MobileControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.LiteralTextContainerControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.MobileControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides parsing support for literal text containers. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class extends the <xref:System.Web.UI.MobileControls.MobileControlBuilder> class to provide parsing support for literal text containers.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendLiteralString">
+      <MemberSignature Language="C#" Value="public override void AppendLiteralString (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralTextContainerControlBuilder.AppendLiteralString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The content to add to the control.</param>
+        <summary>Adds the specified literal content to a control. This method is called by the ASP.NET page framework. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSubBuilder">
+      <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.LiteralTextContainerControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subBuilder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="subBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> object assigned to the child control.</param>
+        <summary>Adds builders to the <see cref="T:System.Web.UI.ControlBuilder" /> object for any child controls that belong to the container control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

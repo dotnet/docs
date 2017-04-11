@@ -1,0 +1,129 @@
+<Type Name="UseRequestHeadersForMetadataAddressBehavior" FullName="System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior">
+  <TypeSignature Language="C#" Value="public class UseRequestHeadersForMetadataAddressBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UseRequestHeadersForMetadataAddressBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Enables the retrieval of metadata address information from request message headers for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UseRequestHeadersForMetadataAddressBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPortsByScheme">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,int&gt; DefaultPortsByScheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, int32&gt; DefaultPortsByScheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.DefaultPortsByScheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of default ports keyed by the address schemes.</summary>
+        <value>A dictionary of default ports keyed by the address schemes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">Not implemented.</param>
+        <param name="serviceHostBase">Not implemented.</param>
+        <param name="endpoints">Not implemented.</param>
+        <param name="bindingParameters">Not implemented.</param>
+        <summary>Not implemented.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">Not implemented.</param>
+        <param name="serviceHostBase">Not implemented.</param>
+        <summary>Not implemented.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.UseRequestHeadersForMetadataAddressBehavior.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">Not implemented.</param>
+        <param name="serviceHostBase">Not implemented.</param>
+        <summary>Not implemented.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

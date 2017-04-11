@@ -1,0 +1,1284 @@
+<Type Name="ListView+ColumnHeaderCollection" FullName="System.Windows.Forms.ListView+ColumnHeaderCollection">
+  <TypeSignature Language="C#" Value="public class ListView.ColumnHeaderCollection : System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ListView/ColumnHeaderCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the collection of column headers in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> class stores the column headers that are displayed in the <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> stores <xref:System.Windows.Forms.ColumnHeader> objects that define the text to display for a column as well as how the column header is displayed in the <xref:System.Windows.Forms.ListView> control when displaying columns. When a <xref:System.Windows.Forms.ListView> displays columns, the items and their subitems are displayed in their own columns. To specify which columns subitem data is displayed under, see the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class.  
+  
+ There are a number of ways to add column headers to the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method adds a single column header to the collection. To add a number of column headers to the collection, you create an array of <xref:System.Windows.Forms.ColumnHeader> objects and pass it to the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method. If you want to insert a column header at a specific location in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To remove column headers, you can use either the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method or the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method if you know where the column header is located in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method allows you to remove all column headers from the collection instead of using the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method to remove a single column header at a time.  
+  
+ In addition to methods and properties for adding and removing column headers, the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> also provides methods to find column headers in the collection. The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a column header is a member of the collection. Once you know that the column header is located in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine where the column header is located in the collection.  
+  
+> [!NOTE]
+>  Unexpected behavior can result when the combined width of all columns exceeds 32,768 pixels.  
+  
+   
+  
+## Examples  
+ The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
+  
+ [!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
+ [!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
+ [!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnHeaderCollection (System.Windows.Forms.ListView owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListView owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.#ctor(System.Windows.Forms.ListView)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Forms.ListView" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Forms.ListView" /> that owns this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of this class without associating it with a <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display in the column header.</param>
+        <summary>Creates and adds a column with the specified text to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified text that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The column header will be added to the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual int Add (System.Windows.Forms.ColumnHeader value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(class System.Windows.Forms.ColumnHeader value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.Windows.Forms.ColumnHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Forms.ColumnHeader" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Forms.ColumnHeader" /> to add to the collection.</param>
+        <summary>Adds an existing <see cref="T:System.Windows.Forms.ColumnHeader" /> to the collection.</summary>
+        <returns>The zero-based index into the collection where the item was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to add an existing <xref:System.Windows.Forms.ColumnHeader> to the collection. If you want to create a new <xref:System.Windows.Forms.ColumnHeader> at the time you add it to the collection, you can use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method.  
+  
+ When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
+  
+ [!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
+ [!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
+ [!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string text, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string text, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text of the <see cref="T:System.Windows.Forms.ColumnHeader" /> to add to the collection.</param>
+        <param name="width">The width of the <see cref="T:System.Windows.Forms.ColumnHeader" /> to add to the collection.</param>
+        <summary>Creates and adds a column with the specified text and width to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified text and width that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The column is added at the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string key, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string key, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the <see cref="T:System.Windows.Forms.ColumnHeader" /> to add to the collection.</param>
+        <param name="text">The text of the <see cref="T:System.Windows.Forms.ColumnHeader" /> to add to the collection.</param>
+        <summary>Creates and adds a column with the specified text and key to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key and text that was added to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ The column is added at the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string text, int width, System.Windows.Forms.HorizontalAlignment textAlign);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <summary>Adds a column header to the collection with specified text, width, and alignment settings.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> that was created and added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method to create a new <xref:System.Windows.Forms.ColumnHeader> to add to the collection. The text of the new <xref:System.Windows.Forms.ColumnHeader> added to the control is based on the `text` parameter. This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method also allows you to specify the width of the column and the alignment of text in the column header. If you have an existing <xref:System.Windows.Forms.ColumnHeader> that you want to add to the collection, use the version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method that accepts a <xref:System.Windows.Forms.ColumnHeader> as its parameter.  
+  
+ When column headers are added, they are added to the end of the collection. To insert a column header into the collection at a specific position, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a set of column headers to the collection in a single operation, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+  
+-   <xref:System.Windows.Forms.ListView.View%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.GridLines%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.Sorting%2A>  
+  
+ This example requires that you have added the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example also requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+  
+ [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+ [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+ [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string key, string text, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string key, string text, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width of the <see cref="T:System.Windows.Forms.ColumnHeader" />.</param>
+        <summary>Creates and adds a column with the specified text, key, and width to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the given text, key, and width that was added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ The column is added at the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string key, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign, int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string key, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign, int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <param name="imageIndex">The index value of the image to display in the column.</param>
+        <summary>Creates and adds a column with the specified key, aligned text, width, and image index to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key, aligned text, width, and image index that has been added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ The column is added at the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader Add (string key, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign, string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.ColumnHeader Add(string key, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign, string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Add(System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <param name="imageKey">The key value of the image to display in the column header.</param>
+        <summary>Creates and adds a column with the specified key, aligned text, width, and image key to the collection.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key, aligned text, width, and image key that has been added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ The column is added at the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.ColumnHeader[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.ColumnHeader[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange(System.Windows.Forms.ColumnHeader[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Windows.Forms.ColumnHeader[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Windows.Forms.ColumnHeader" /> objects to add to the collection.</param>
+        <summary>Adds an array of column headers to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to reuse the column headers used in a different <xref:System.Windows.Forms.ListView> control. If you want to add a single <xref:System.Windows.Forms.ColumnHeader>, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. You can also use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method if you want to add a single <xref:System.Windows.Forms.ColumnHeader> at a specific position in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all column headers from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove column headers from the collection, all information about the deleted column headers is lost. To remove a single column header from the collection use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> or <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Forms.ColumnHeader value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.ColumnHeader value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains(System.Windows.Forms.ColumnHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Forms.ColumnHeader" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Windows.Forms.ColumnHeader" /> representing the column header to locate in the collection.</param>
+        <summary>Determines whether the specified column header is located in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the column header is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method enables you to determine whether a <xref:System.Windows.Forms.ColumnHeader> is a member of the collection. Once you know that the column header is in the collection, you can use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method to determine the position of the column header in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.ContainsKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the column to search for.</param>
+        <summary>Determines if a column with the specified key is contained in the collection.</summary>
+        <returns>
+          <see langword="true" /> if a column with the specified name is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key comparison is not case-sensitive. If `key` is `null` or empty, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.ContainsKey%2A> returns `false.`  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for an item in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items in the collection.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the number of columns that are displayed in the <xref:System.Windows.Forms.ListView> when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. You can then use this value when you are looping through the values of the collection and you need to provide a number of iterations to perform the loop.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator to use to iterate through the column header collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the column header collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Forms.ColumnHeader value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.ColumnHeader value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf(System.Windows.Forms.ColumnHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Forms.ColumnHeader" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Windows.Forms.ColumnHeader" /> representing the column header to locate in the collection.</param>
+        <summary>Returns the index, within the collection, of the specified column header.</summary>
+        <returns>The zero-based index of the column header's location in the collection. If the column header is not located in the collection, the return value is -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method enables you to determine the position of a column header in the collection. To determine whether a column header is contained in the collection before calling this method, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Contains%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOfKey">
+      <MemberSignature Language="C#" Value="public virtual int IndexOfKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the column to retrieve the index for.</param>
+        <summary>Determines the index for a column with the specified key.</summary>
+        <returns>The zero-based index for the first occurrence of the column with the specified name, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> returns -1`.`  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ If <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOfKey%2A> is called successively, the last returned index will be checked for a key match first, and if there is no match, the search starts at the beginning of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="text">The text to display in the column header.</param>
+        <summary>Creates a new column header with the specified text, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Forms.ColumnHeader value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.ColumnHeader value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.Windows.Forms.ColumnHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Windows.Forms.ColumnHeader" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="value">The <see cref="T:System.Windows.Forms.ColumnHeader" /> to insert into the collection.</param>
+        <summary>Inserts an existing column header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to insert an existing <xref:System.Windows.Forms.ColumnHeader> at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ If you want to create a new <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string text, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string text, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width, in pixels, of the column header.</param>
+        <summary>Creates a new column header with the specified text and initial width, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string key, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string key, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="key">The name of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <summary>Creates a new column header with the specified text and key, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width of the column header. Set to -1 to autosize the column header to the size of the largest subitem text in the column or -2 to autosize the column header to the size of the text of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <summary>Creates a new column header and inserts it into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method enables you to create a new <xref:System.Windows.Forms.ColumnHeader> with specific column header text, width, and text alignment setting and insert it at a specific position in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>. You can use this method if you want to insert a new column header into an existing collection of column headers. If you want to use an existing <xref:System.Windows.Forms.ColumnHeader> and insert it at a specific position in the collection, use the other version of the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert%2A> method. To add a column header without specifying a specific position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string key, string text, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string key, string text, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="key">The name of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width, in pixels, of the column header.</param>
+        <summary>Creates a new column header with the specified text, key, and width, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string key, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign, int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string key, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign, int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="key">The name of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width, in pixels, of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <param name="imageIndex">The index of the image to display in the column header.</param>
+        <summary>Creates a new column header with the specified aligned text, key, width, and image index, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, string key, string text, int width, System.Windows.Forms.HorizontalAlignment textAlign, string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string key, string text, int32 width, valuetype System.Windows.Forms.HorizontalAlignment textAlign, string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Insert(System.Int32,System.String,System.String,System.Int32,System.Windows.Forms.HorizontalAlignment,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="textAlign" Type="System.Windows.Forms.HorizontalAlignment" />
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="key">The name of the column header.</param>
+        <param name="text">The text to display in the column header.</param>
+        <param name="width">The initial width, in pixels, of the column header.</param>
+        <param name="textAlign">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values.</param>
+        <param name="imageKey">The key of the image to display in the column header.</param>
+        <summary>Creates a new column header with the specified aligned text, key, width, and image key, and inserts the header into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a column header without specifying a position in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Add%2A> method. If you want to add an array of column headers to the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.AddRange%2A> method.  
+  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `false` for this collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ColumnHeader Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the column header to retrieve from the collection.</param>
+        <summary>Gets the column header at the specified index within the collection.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ColumnHeader" /> representing the column header located at the specified index within the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to obtain the <xref:System.Windows.Forms.ColumnHeader> stored at a specific location in the collection. To determine the index of a specific column header in the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.IndexOf%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ColumnHeader this[string key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ColumnHeader Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the column header to retrieve from the collection.</param>
+        <summary>Gets the column header with the specified key from the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ColumnHeader" /> with the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key comparison is not case-sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Item%2A> returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (System.Windows.Forms.ColumnHeader column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Windows.Forms.ColumnHeader column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove(System.Windows.Forms.ColumnHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Windows.Forms.ColumnHeader" />
+      </Parameters>
+      <Docs>
+        <param name="column">A <see cref="T:System.Windows.Forms.ColumnHeader" /> representing the column header to remove from the collection.</param>
+        <summary>Removes the specified column header from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the actual <xref:System.Windows.Forms.ColumnHeader> to remove. To specify the index of the column header to remove instead of the column header itself, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the column header to remove.</param>
+        <summary>Removes the column header at the specified index within the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you remove a column header from the collection, the indexes change for subsequent column headers in the collection. All information about the removed column header is deleted. You can use this method to remove a specific column header from the collection by specifying the index of the column header to remove from the collection. To specify the column header to remove instead of the index to the column header, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Remove%2A> method. To remove all column headers from the collection, use the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.Clear%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveByKey">
+      <MemberSignature Language="C#" Value="public virtual void RemoveByKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveByKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveByKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the column to remove from the collection.</param>
+        <summary>Removes the column with the specified key from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeader.Name%2A> property corresponds to the key for a column in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection>.  
+  
+ The key comparison is not-case sensitive. If `key` is `null` or an empty string, <xref:System.Windows.Forms.ListView.ColumnHeaderCollection.RemoveByKey%2A> does not change the collection`.`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array dest, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array dest, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dest" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dest">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Forms.ColumnHeader" /> objects in the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> to an array, starting at a particular array index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection of controls.</summary>
+        <value>The object used to synchronize the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Forms.ColumnHeader" /> to be added to the <see cref="T:System.Windows.Forms.ListView" />.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ColumnHeader" /> to the <see cref="T:System.Windows.Forms.ListView" />.</summary>
+        <returns>The zero-based index indicating the location of the object that was added to the collection</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.ColumnHeader" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object that represents the column header to locate in the collection.</param>
+        <summary>Determines whether the specified column header is located in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the object is a column header that is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object that represents the column header to locate in the collection.</param>
+        <summary>Returns the index, within the collection, of the specified column header.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index location where the column header is inserted.</param>
+        <param name="value">The <see cref="T:System.Windows.Forms.ColumnHeader" /> to insert into the collection.</param>
+        <summary>Inserts an existing column header into the collection at the specified index.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" /> has a fixed size.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the column header at the specified index within the collection.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ColumnHeader" /> that represents the column header located at the specified index within the collection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ColumnHeaderCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ColumnHeaderCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ColumnHeaderCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Windows.Forms.ColumnHeader" /> that represents the column header to remove from the collection.</param>
+        <summary>Removes the specified column header from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

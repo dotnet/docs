@@ -1,0 +1,114 @@
+<Type Name="UriPartial" FullName="System.UriPartial">
+  <TypeSignature Language="C#" Value="public enum UriPartial" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UriPartial extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.UriPartial" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the parts of a URI for the <see cref="M:System.Uri.GetLeftPart(System.UriPartial)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.UriPartial> enumeration defines the values that can be passed to the <xref:System.Uri.GetLeftPart%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authority">
+      <MemberSignature Language="C#" Value="Authority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriPartial Authority = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.UriPartial.Authority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriPartial</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scheme and authority segments of the URI.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="Path" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriPartial Path = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.UriPartial.Path" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriPartial</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scheme, authority, and path segments of the URI.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="Query" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriPartial Query = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.UriPartial.Query" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriPartial</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scheme, authority, path, and query segments of the URI.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="Scheme" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriPartial Scheme = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.UriPartial.Scheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriPartial</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scheme segment of the URI.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

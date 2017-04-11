@@ -1,0 +1,74 @@
+<Type Name="NativeCppClassAttribute" FullName="System.Runtime.CompilerServices.NativeCppClassAttribute">
+  <TypeSignature Language="C#" Value="public sealed class NativeCppClassAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NativeCppClassAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.NativeCppClassAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Struct, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Applies metadata to an assembly that indicates that a type is an unmanaged type.  This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compilers use the <xref:System.Runtime.CompilerServices.NativeCppClassAttribute> attribute when building assemblies to indicate that a type is an unmanaged type defined in C or C++.  This attribute is used later to correctly handle the unmanaged type when it is imported during interop.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NativeCppClassAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.NativeCppClassAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.NativeCppClassAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compilers use the <xref:System.Runtime.CompilerServices.NativeCppClassAttribute> attribute when building assemblies to indicate that a type is an unmanaged type defined in C or C++.  This attribute is used later to correctly handle the unmanaged type when it is imported during interop.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

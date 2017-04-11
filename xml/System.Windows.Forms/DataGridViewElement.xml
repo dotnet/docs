@@ -1,0 +1,251 @@
+<Type Name="DataGridViewElement" FullName="System.Windows.Forms.DataGridViewElement">
+  <TypeSignature Language="C#" Value="public class DataGridViewElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class for elements of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework supplies two specialized classes that derive from <xref:System.Windows.Forms.DataGridViewElement>: <xref:System.Windows.Forms.DataGridViewCell>, which represents individual elements, and <xref:System.Windows.Forms.DataGridViewBand>, which represents a series of grouped subelements.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.DataGridViewElement.DataGridView%2A> property to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataGridView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridView DataGridView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridView DataGridView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridView" /> control associated with this element.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridView" /> control that contains this element. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataGridViewChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataGridViewChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataGridViewChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.OnDataGridViewChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when the element is associated with a different <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCellClick">
+      <MemberSignature Language="C#" Value="protected void RaiseCellClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellClick" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCellContentClick">
+      <MemberSignature Language="C#" Value="protected void RaiseCellContentClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellContentClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellContentClick" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCellContentDoubleClick">
+      <MemberSignature Language="C#" Value="protected void RaiseCellContentDoubleClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellContentDoubleClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellContentDoubleClick" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCellValueChanged">
+      <MemberSignature Language="C#" Value="protected void RaiseCellValueChanged (System.Windows.Forms.DataGridViewCellEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellValueChanged(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellValueChanged(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.CellValueChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseDataError">
+      <MemberSignature Language="C#" Value="protected void RaiseDataError (System.Windows.Forms.DataGridViewDataErrorEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseDataError(class System.Windows.Forms.DataGridViewDataErrorEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseDataError(System.Windows.Forms.DataGridViewDataErrorEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DataGridViewDataErrorEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewDataErrorEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridView.DataError" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseMouseWheel">
+      <MemberSignature Language="C#" Value="protected void RaiseMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewElementStates State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewElementStates State" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewElement.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user interface (UI) state of the element.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values representing the state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The states specified by the <xref:System.Windows.Forms.DataGridViewElementStates> values are enforced by the UI but may be programmatically overruled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

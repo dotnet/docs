@@ -1,0 +1,73 @@
+<Type Name="ConfigurationSaveMode" FullName="System.Configuration.ConfigurationSaveMode">
+  <TypeSignature Language="C#" Value="public enum ConfigurationSaveMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationSaveMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSaveMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines which properties are written out to a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationSaveMode> enumeration values identify which properties are written out to a configuration file when calling the <xref:System.Configuration.Configuration.Save%2A> and <xref:System.Configuration.Configuration.SaveAs%2A> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Full">
+      <MemberSignature Language="C#" Value="Full" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationSaveMode Full = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Full" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes all properties to be written to the configuration file. This is useful mostly for creating information configuration files or moving configuration values from one machine to another.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimal">
+      <MemberSignature Language="C#" Value="Minimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationSaveMode Minimal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Minimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes only properties that differ from inherited values to be written to the configuration file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modified">
+      <MemberSignature Language="C#" Value="Modified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationSaveMode Modified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationSaveMode.Modified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSaveMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes only modified properties to be written to the configuration file, even when the value is the same as the inherited value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,86 @@
+<Type Name="DetailsViewMode" FullName="System.Web.UI.WebControls.DetailsViewMode">
+  <TypeSignature Language="C#" Value="public enum DetailsViewMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DetailsViewMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the different data-entry modes of a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DetailsViewMode> enumeration is used to represent the data-entry modes of a <xref:System.Web.UI.WebControls.DetailsView> control. To determine the current mode of the control, use the <xref:System.Web.UI.WebControls.DetailsView.CurrentMode%2A> property. After an insert or update operation, the <xref:System.Web.UI.WebControls.DetailsView> control returns to the mode specified by the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property. By default, the control returns to read-only mode. You can specify an alternate mode to return to by setting the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property. To change modes programmatically, use the <xref:System.Web.UI.WebControls.DetailsView.ChangeMode%2A> method. When the <xref:System.Web.UI.WebControls.DetailsView> control changes modes, the events in the following table are raised.  
+  
+|Event|Description|  
+|-----------|-----------------|  
+|<xref:System.Web.UI.WebControls.DetailsView.ModeChanging>|Occurs when a <xref:System.Web.UI.WebControls.DetailsView> control attempts to change between edit, insert, and read-only mode, but before the mode actually changes. This event is often used to cancel a mode change.|  
+|<xref:System.Web.UI.WebControls.DetailsView.ModeChanged>|Occurs after a <xref:System.Web.UI.WebControls.DetailsView> control has changed from edit, insert, or read-only mode to another mode. This event is often used to perform a task when the <xref:System.Web.UI.WebControls.DetailsView> control changes modes.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to keep the <xref:System.Web.UI.WebControls.DetailsView> control in edit mode after an update operation by setting the <xref:System.Web.UI.WebControls.DetailsView.DefaultMode%2A> property to `DetailsViewMode.Edit`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewDefaultMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewDefaultMode/CS/detailsviewdefaultmodecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewDefaultMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewDefaultMode/VB/detailsviewdefaultmodevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="Edit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DetailsViewMode Edit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.Edit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DetailsViewMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An editing mode that allows the user to update the values of an existing record.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DetailsViewMode Insert = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DetailsViewMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An inserting mode that allows the user to enter the values for a new record.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DetailsViewMode ReadOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DetailsViewMode.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DetailsViewMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A display mode that prevents the user from modifying the values of a record.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

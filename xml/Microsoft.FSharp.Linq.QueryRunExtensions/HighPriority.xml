@@ -1,0 +1,67 @@
+<Type Name="HighPriority" FullName="Microsoft.FSharp.Linq.QueryRunExtensions.HighPriority">
+  <TypeSignature Language="C#" Value="public static class HighPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed HighPriority extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.QueryRunExtensions.HighPriority" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RunQueryAsEnumerable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; RunQueryAsEnumerable&lt;T&gt; (Microsoft.FSharp.Linq.QueryBuilder this, Microsoft.FSharp.Quotations.FSharpExpr&lt;Microsoft.FSharp.Linq.QuerySource&lt;T,System.Collections.IEnumerable&gt;&gt; q);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; RunQueryAsEnumerable&lt;T&gt;(class Microsoft.FSharp.Linq.QueryBuilder this, class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, class System.Collections.IEnumerable&gt;&gt; q) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryRunExtensions.HighPriority.RunQueryAsEnumerable``1(Microsoft.FSharp.Linq.QueryBuilder,Microsoft.FSharp.Quotations.FSharpExpr{Microsoft.FSharp.Linq.QuerySource{``0,System.Collections.IEnumerable}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("Run")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="this" Type="Microsoft.FSharp.Linq.QueryBuilder" />
+        <Parameter Name="q" Type="Microsoft.FSharp.Quotations.FSharpExpr&lt;Microsoft.FSharp.Linq.QuerySource&lt;T,System.Collections.IEnumerable&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="this">To be added.</param>
+        <param name="q">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

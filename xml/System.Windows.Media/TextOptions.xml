@@ -1,0 +1,211 @@
+<Type Name="TextOptions" FullName="System.Windows.Media.TextOptions">
+  <TypeSignature Language="C#" Value="public static class TextOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextOptions" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a set of attached properties that affect the way text is displayed in an element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTextFormattingMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.TextFormattingMode GetTextFormattingMode (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.TextFormattingMode GetTextFormattingMode(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextFormattingMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextFormattingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormattingMode" /> for <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextHintingMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.TextHintingMode GetTextHintingMode (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.TextHintingMode GetTextHintingMode(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextHintingMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextHintingMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextHintingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextHintingMode" /> for <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextRenderingMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.TextRenderingMode GetTextRenderingMode (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.TextRenderingMode GetTextRenderingMode(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.GetTextRenderingMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to get the <see cref="T:System.Windows.Media.TextRenderingMode" /> for.</param>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextRenderingMode" /> for <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextFormattingMode">
+      <MemberSignature Language="C#" Value="public static void SetTextFormattingMode (System.Windows.DependencyObject element, System.Windows.Media.TextFormattingMode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTextFormattingMode(class System.Windows.DependencyObject element, valuetype System.Windows.Media.TextFormattingMode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextFormattingMode(System.Windows.DependencyObject,System.Windows.Media.TextFormattingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Media.TextFormattingMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextFormattingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextFormattingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextFormattingMode" /> for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextHintingMode">
+      <MemberSignature Language="C#" Value="public static void SetTextHintingMode (System.Windows.DependencyObject element, System.Windows.Media.TextHintingMode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTextHintingMode(class System.Windows.DependencyObject element, valuetype System.Windows.Media.TextHintingMode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextHintingMode(System.Windows.DependencyObject,System.Windows.Media.TextHintingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Media.TextHintingMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextHintingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextHintingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextHintingMode" /> for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextRenderingMode">
+      <MemberSignature Language="C#" Value="public static void SetTextRenderingMode (System.Windows.DependencyObject element, System.Windows.Media.TextRenderingMode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTextRenderingMode(class System.Windows.DependencyObject element, valuetype System.Windows.Media.TextRenderingMode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextOptions.SetTextRenderingMode(System.Windows.DependencyObject,System.Windows.Media.TextRenderingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Media.TextRenderingMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to set the <see cref="T:System.Windows.Media.TextRenderingMode" /> for.</param>
+        <param name="value">The <see cref="T:System.Windows.Media.TextRenderingMode" /> to set on <c>element</c>.</param>
+        <summary>Sets the <see cref="T:System.Windows.Media.TextRenderingMode" /> for the specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFormattingModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextFormattingModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextFormattingModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextFormattingModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextFormattingMode" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextHintingModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextHintingModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextHintingModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextHintingModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextHintingMode" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextRenderingModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextRenderingModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextRenderingModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextOptions.TextRenderingModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.TextOptions.TextRenderingMode" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

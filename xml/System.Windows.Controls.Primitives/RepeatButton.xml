@@ -1,0 +1,372 @@
+<Type Name="RepeatButton" FullName="System.Windows.Controls.Primitives.RepeatButton">
+  <TypeSignature Language="C#" Value="public class RepeatButton : System.Windows.Controls.Primitives.ButtonBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi RepeatButton extends System.Windows.Controls.Primitives.ButtonBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.RepeatButton" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Primitives.ButtonBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a control that raises its <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event repeatedly from the time it is pressed until it is released.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.Primitives.RepeatButton> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+ The <xref:System.Windows.Controls.Primitives.RepeatButton> class represents a control that is similar to a <xref:System.Windows.Controls.Button>. However, repeat buttons give you control over when and how the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event occurs. The <xref:System.Windows.Controls.Primitives.RepeatButton> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event repeatedly from the time it is pressed until it is released. The <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property determines when the event begins. You can also control the interval of the repetitions with the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property.  
+  
+## Customizing the RepeatButton Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.RepeatButton> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.RepeatButton>, see [RepeatButton Syles and Templates](~/docs/framework/wpf/controls/repeatbutton-syles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+[!code-csharp[RepeatButton#2](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml.cs#2)]
+[!code-vb[RepeatButton#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RepeatButton/VisualBasic/Pane1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RepeatButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay">
+      <MemberSignature Language="C#" Value="public int Delay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Delay" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.RepeatButton.Delay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in milliseconds, the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> waits while it is pressed before it starts repeating. The value must be non-negative.</summary>
+        <value>The amount of time, in milliseconds, the <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> waits while it is pressed before it starts repeating. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardDelay" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Delay"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Delay%2A> property to set the time that a <xref:System.Windows.Controls.Primitives.RepeatButton> waits before it starts repeating.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DelayProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DelayProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.RepeatButton.DelayProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.RepeatButton.Delay" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public int Interval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Interval" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.RepeatButton.Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in milliseconds, between repeats once repeating starts. The value must be non-negative.</summary>
+        <value>The amount of time, in milliseconds, between repeats after repeating starts. The default is the value of <see cref="P:System.Windows.SystemParameters.KeyboardSpeed" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Interval"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.RepeatButton.IntervalProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.Primitives.RepeatButton.Interval%2A> property to set the time between repeats after the <xref:System.Windows.Controls.Primitives.RepeatButton> starts repeating.  
+  
+ [!code-xml[RepeatButton#1](~/samples/snippets/csharp/VS_Snippets_Wpf/RepeatButton/CSharp/Pane1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IntervalProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IntervalProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.RepeatButton.IntervalProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.RepeatButton.Interval" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClick">
+      <MemberSignature Language="C#" Value="protected override void OnClick ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnClick" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises an automation event and calls the base method to raise the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.RepeatButtonAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.KeyDown" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.KeyDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyUp">
+      <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Input.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Input.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.KeyUp" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.KeyUp" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLostMouseCapture">
+      <MemberSignature Language="C#" Value="protected override void OnLostMouseCapture (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostMouseCapture(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.LostMouseCapture" /> event.</param>
+        <summary>Called when a <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> loses mouse capture.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseEnter">
+      <MemberSignature Language="C#" Value="protected override void OnMouseEnter (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseEnter(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnMouseEnter(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseEnter" /> event.</param>
+        <summary>Reports when the mouse enters an element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeave">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeave (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnMouseLeave(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseLeave" /> event.</param>
+        <summary>Reports when the mouse leaves an element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonUp">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonUp (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.RepeatButton.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data for a <see cref="E:System.Windows.ContentElement.MouseLeftButtonUp" /> event.</param>
+        <summary>Responds to the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

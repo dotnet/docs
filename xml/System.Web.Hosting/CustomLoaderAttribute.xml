@@ -1,0 +1,66 @@
+<Type Name="CustomLoaderAttribute" FullName="System.Web.Hosting.CustomLoaderAttribute">
+  <TypeSignature Language="C#" Value="public sealed class CustomLoaderAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomLoaderAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.CustomLoaderAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Provides a custom loader to ASP.NET so that an application can provide its own implementation of the hosting environment.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomLoaderAttribute (Type customLoaderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type customLoaderType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.CustomLoaderAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="customLoaderType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="customLoaderType">To be added.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Initializes a new instance of the <see cref="T:System.Web.Hosting.CustomLoaderAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomLoaderType">
+      <MemberSignature Language="C#" Value="public Type CustomLoaderType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CustomLoaderType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Hosting.CustomLoaderAttribute.CustomLoaderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets the type of the custom loader.</summary>
+        <value>The type of the custom loader.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

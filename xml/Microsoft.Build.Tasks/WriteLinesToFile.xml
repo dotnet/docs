@@ -1,0 +1,132 @@
+<Type Name="WriteLinesToFile" FullName="Microsoft.Build.Tasks.WriteLinesToFile">
+  <TypeSignature Language="C#" Value="public class WriteLinesToFile : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WriteLinesToFile extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.WriteLinesToFile" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>WriteLinesToFile</c> task. Use the <c>WriteLinesToFile</c> element in your project file to create and execute this task. For usage and parameter information, see <c>WriteLinesToFile</c>[WriteLinesToFile Task](http://msdn.microsoft.com/library/9c8862ac-8da5-4437-9430-ecc30421f1c9).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WriteLinesToFile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WriteLinesToFile.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.WriteLinesToFile" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Encoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the system text encoding, for example UTF-8.</summary>
+        <value>Returns the system text encoding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WriteLinesToFile.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>WriteLinesToFile</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="File">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem File { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem File" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.File" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file to write the items to.</summary>
+        <value>The file to write the items to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Lines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Lines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Lines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the items to write to the file.</summary>
+        <value>The items to write to the file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overwrite">
+      <MemberSignature Language="C#" Value="public bool Overwrite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Overwrite" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Overwrite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the task overwrites any existing content in the file.</summary>
+        <value>
+          <see langword="true" /> if the task overwrites any existing content in the file; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

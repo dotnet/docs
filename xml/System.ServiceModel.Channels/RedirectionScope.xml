@@ -1,0 +1,265 @@
+<Type Name="RedirectionScope" FullName="System.ServiceModel.Channels.RedirectionScope">
+  <TypeSignature Language="C#" Value="public class RedirectionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RedirectionScope extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RedirectionScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents redirection scope.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionScope Create (string scope, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.RedirectionScope Create(string scope, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.Create(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.RedirectionScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="scope">The redirection scope.</param>
+        <param name="ns">The redirection namespace.</param>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance with the specified scope and namespace.</summary>
+        <returns>A new redirection scope instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionScope Endpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.RedirectionScope Endpoint" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionScope.Endpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.RedirectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> that represents the endpoint redirection scope.</summary>
+        <value>The endpoint redirection scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The endpoint redirection scope indicates the endpoint and all of its service operations are relocated to the specified location(s).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare to the current <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.ServiceModel.Channels.RedirectionScope" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionScope Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.RedirectionScope Message" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionScope.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.RedirectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> that represents the message redirection scope.</summary>
+        <value>The message redirection scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message redirection scope indicates the redirection is valid for a single message. The interpretation of a single message may mean a single message instance or it may mean a specific message type, for example, any message that results in the invocation of a specific service method. This is the default value for <xref:System.ServiceModel.Channels.RedirectionScope>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionScope.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace of the <see cref="T:System.ServiceModel.Channels.RedirectionScope" />.</summary>
+        <value>The namespace of the redirection scope.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.ServiceModel.Channels.RedirectionScope left, System.ServiceModel.Channels.RedirectionScope right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.ServiceModel.Channels.RedirectionScope left, class System.ServiceModel.Channels.RedirectionScope right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.op_Equality(System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.ServiceModel.Channels.RedirectionScope" />
+        <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionScope" />
+      </Parameters>
+      <Docs>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> types are equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.ServiceModel.Channels.RedirectionScope left, System.ServiceModel.Channels.RedirectionScope right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.ServiceModel.Channels.RedirectionScope left, class System.ServiceModel.Channels.RedirectionScope right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.op_Inequality(System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.ServiceModel.Channels.RedirectionScope" />
+        <Parameter Name="right" Type="System.ServiceModel.Channels.RedirectionScope" />
+      </Parameters>
+      <Docs>
+        <param name="left">A <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</param>
+        <param name="right">A <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</param>
+        <summary>Returns a value that indicates whether two instances of the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> types are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the values of <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.RedirectionScope Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.RedirectionScope Session" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionScope.Session" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.RedirectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> that represents the session redirection scope.</summary>
+        <value>The session redirection scope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The session redirection scope indicates the redirection is valid for the scope of the logical session. What the application deems a session is not defined in this protocol. An example may be the transport's physical connection lifetime.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionScope.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the current <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> to its equivalent string representation.</summary>
+        <returns>A string representation of the value of the current <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionScope.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.ServiceModel.Channels.RedirectionScope" /> instance.</summary>
+        <value>The value of the redirection scope.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,21 @@
+<Namespace Name="System.Windows.Forms.VisualStyles">
+  <Docs>
+    <summary>The <see cref="N:System.Windows.Forms.VisualStyles" /> namespace contains classes for rendering controls and other Windows user interface (UI) elements with visual styles in operating systems that support them.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles> namespace contains the following main classes:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> is a foundation class for identifying any control or UI element supported by visual styles. In addition to <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> itself, the <xref:System.Windows.Forms.VisualStyles> namespace includes many nested classes of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> with `static` properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for every state of a control, control part, or other UI element supported by visual styles. For example, the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.PushButton.Pressed%2A> property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.PushButton> class returns a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> that identifies a button in the pressed state with visual styles.  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> provides methods that draw and get information about each <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> defined by the current visual style of the operating system. Information that can be retrieved about an element includes its default size, background type, and color definitions.  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleInformation> provides a set of `static` properties that provide information about the current visual style of the operating system.  
+  
+ The <xref:System.Windows.Forms.VisualStyles> namespace also includes a set of enumerations. Some of these enumerations, such as <xref:System.Windows.Forms.VisualStyles.PushButtonState> and <xref:System.Windows.Forms.VisualStyles.ComboBoxState>, provide state definitions for related visual style elements. Most of the other enumerations support <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> methods that return information about a particular element. For example, the <xref:System.Windows.Forms.VisualStyles.EnumProperty> enumeration provides the possible argument values for the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method. Finally, the <xref:System.Windows.Forms.VisualStyles.VisualStyleState> enumeration provides values that define how visual styles are currently applied to the application.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

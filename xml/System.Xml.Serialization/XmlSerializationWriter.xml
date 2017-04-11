@@ -1,0 +1,3546 @@
+<Type Name="XmlSerializationWriter" FullName="System.Xml.Serialization.XmlSerializationWriter">
+  <TypeSignature Language="C#" Value="public abstract class XmlSerializationWriter : System.Xml.Serialization.XmlSerializationGeneratedCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSerializationWriter extends System.Xml.Serialization.XmlSerializationGeneratedCode" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Serialization.XmlSerializationGeneratedCode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an abstract class used for controlling serialization by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from the abstract <xref:System.Xml.Serialization.XmlSerializationWriter> class. <xref:System.Xml.Serialization.XmlSerializationWriter> is also implemented within the .NET Framework for serialization of <xref:System.Web.Services.Discovery.DiscoveryDocument> and <xref:System.Web.Services.Description.ServiceDescription> objects into XML documents.  
+  
+ You should not derive classes from <xref:System.Xml.Serialization.XmlSerializationWriter>. Instead, call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XmlSerializationWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializationWriter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWriteCallback">
+      <MemberSignature Language="C#" Value="protected void AddWriteCallback (Type type, string typeName, string typeNs, System.Xml.Serialization.XmlSerializationWriteCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddWriteCallback(class System.Type type, string typeName, string typeNs, class System.Xml.Serialization.XmlSerializationWriteCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.AddWriteCallback(System.Type,System.String,System.String,System.Xml.Serialization.XmlSerializationWriteCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="typeNs" Type="System.String" />
+        <Parameter Name="callback" Type="System.Xml.Serialization.XmlSerializationWriteCallback" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> of objects that are serialized.</param>
+        <param name="typeName">The name of the type of objects that are serialized.</param>
+        <param name="typeNs">The namespace of the type of objects that are serialized.</param>
+        <param name="callback">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializationWriteCallback" /> delegate.</param>
+        <summary>Stores an implementation of the <see cref="T:System.Xml.Serialization.XmlSerializationWriteCallback" /> delegate and the type it applies to, for a later invocation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized via SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
+  
+ You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChoiceIdentifierValueException">
+      <MemberSignature Language="C#" Value="protected Exception CreateChoiceIdentifierValueException (string value, string identifier, string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateChoiceIdentifierValueException(string value, string identifier, string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateChoiceIdentifierValueException(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="identifier" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The name that is not valid.</param>
+        <param name="identifier">The <see langword="choice" /> element declaration that the name belongs to.</param>
+        <param name="name">The expected local name of an element.</param>
+        <param name="ns">The expected namespace of an element.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates an unexpected name for an element that adheres to an XML Schema <see langword="choice" /> element declaration.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInvalidAnyTypeException">
+      <MemberSignature Language="C#" Value="protected Exception CreateInvalidAnyTypeException (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidAnyTypeException(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object that represents the invalid member.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> which has been invalidly applied to a member; only members that are of type <see cref="T:System.Xml.XmlNode" />, or derived from <see cref="T:System.Xml.XmlNode" />, are valid.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInvalidAnyTypeException">
+      <MemberSignature Language="C#" Value="protected Exception CreateInvalidAnyTypeException (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidAnyTypeException(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidAnyTypeException(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> that is invalid.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates the <see cref="T:System.Xml.Serialization.XmlAnyElementAttribute" /> which has been invalidly applied to a member; only members that are of type <see cref="T:System.Xml.XmlNode" />, or derived from <see cref="T:System.Xml.XmlNode" />, are valid.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInvalidChoiceIdentifierValueException">
+      <MemberSignature Language="C#" Value="protected Exception CreateInvalidChoiceIdentifierValueException (string type, string identifier);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidChoiceIdentifierValueException(string type, string identifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidChoiceIdentifierValueException(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="identifier" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type being serialized.</param>
+        <param name="identifier">A name for the <see langword="choice" /> element declaration.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates a failure while writing an array where an XML Schema <see langword="choice" /> element declaration is applied.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInvalidEnumValueException">
+      <MemberSignature Language="C#" Value="protected Exception CreateInvalidEnumValueException (object value, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateInvalidEnumValueException(object value, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateInvalidEnumValueException(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">An object that represents the invalid enumeration.</param>
+        <param name="typeName">The XML type name.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> for an invalid enumeration value.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMismatchChoiceException">
+      <MemberSignature Language="C#" Value="protected Exception CreateMismatchChoiceException (string value, string elementName, string enumValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateMismatchChoiceException(string value, string elementName, string enumValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateMismatchChoiceException(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="enumValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value that is not valid.</param>
+        <param name="elementName">The name of the XML element with an invalid value.</param>
+        <param name="enumValue">The valid value.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates that a value for an XML element does not match an enumeration type.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnknownAnyElementException">
+      <MemberSignature Language="C#" Value="protected Exception CreateUnknownAnyElementException (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateUnknownAnyElementException(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownAnyElementException(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The XML element that cannot be processed.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates that an XML element that should adhere to the XML Schema <see langword="any" /> element declaration cannot be processed.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnknownTypeException">
+      <MemberSignature Language="C#" Value="protected Exception CreateUnknownTypeException (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateUnknownTypeException(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object whose type cannot be serialized.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates that a type being serialized is not being used in a valid manner or is unexpectedly encountered.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnknownTypeException">
+      <MemberSignature Language="C#" Value="protected Exception CreateUnknownTypeException (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Exception CreateUnknownTypeException(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.CreateUnknownTypeException(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type that cannot be serialized.</param>
+        <summary>Creates an <see cref="T:System.InvalidOperationException" /> that indicates that a type being serialized is not being used in a valid manner or is unexpectedly encountered.</summary>
+        <returns>The newly created exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EscapeName">
+      <MemberSignature Language="C#" Value="protected bool EscapeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EscapeName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.EscapeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="M:System.Xml.XmlConvert.EncodeName(System.String)" /> method is used to write valid XML.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName)" /> method returns an encoded name; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlConvert.EncodeName%2A> method writes valid XML from invalid sources. For example, the <xref:System.Data.DataColumn.ColumnName%2A> property of the <xref:System.Data.DataColumn> class can contain spaces, which are invalid as XML. The <xref:System.Xml.XmlConvert.DecodeName%2A> method reads the encoded XML and restores it to the original value. However, the <xref:System.Xml.Schema.XmlSchema.Read%2A> method of the <xref:System.Xml.Schema.XmlSchema> cannot read such encoded XML. In that case, set the <xref:System.Xml.Serialization.XmlSerializationWriter.EscapeName%2A> property to `false` to disable the encoding of the XML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromByteArrayBase64">
+      <MemberSignature Language="C#" Value="protected static byte[] FromByteArrayBase64 (byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig unsigned int8[] FromByteArrayBase64(unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">A base-64 <see cref="T:System.Byte" /> array.</param>
+        <summary>Processes a base-64 byte array.</summary>
+        <returns>The same byte array that was passed in as an argument.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ Rather than return a string as other similar "from" methods, the static <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayBase64%2A> method returns the original `byte[]` object to improve performance and conserve memory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromByteArrayHex">
+      <MemberSignature Language="C#" Value="protected static string FromByteArrayHex (byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromByteArrayHex(unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">A hexadecimal byte array to translate to a string.</param>
+        <summary>Produces a string from an input hexadecimal byte array.</summary>
+        <returns>The byte array value converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromChar">
+      <MemberSignature Language="C#" Value="protected static string FromChar (char value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromChar(char value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromChar(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Char" /> to translate to a string.</param>
+        <summary>Produces a string from an input <see cref="T:System.Char" />.</summary>
+        <returns>The <see cref="T:System.Char" /> value converted to a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromChar%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromDate">
+      <MemberSignature Language="C#" Value="protected static string FromDate (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromDate(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromDate(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.DateTime" /> to translate to a string.</param>
+        <summary>Produces a string from a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>A string representation of the <see cref="T:System.DateTime" /> that shows the date but no time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDate%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromDateTime">
+      <MemberSignature Language="C#" Value="protected static string FromDateTime (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromDateTime(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromDateTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.DateTime" /> to translate to a string.</param>
+        <summary>Produces a string from an input <see cref="T:System.DateTime" />.</summary>
+        <returns>A string representation of the <see cref="T:System.DateTime" /> that shows the date and time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromDateTime%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromEnum">
+      <MemberSignature Language="C#" Value="protected static string FromEnum (long value, string[] values, long[] ids);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromEnum(int64 value, string[] values, int64[] ids) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="values" Type="System.String[]" />
+        <Parameter Name="ids" Type="System.Int64[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">The enumeration value as a series of bitwise <see langword="OR" /> operations.</param>
+        <param name="values">The enumeration's name values.</param>
+        <param name="ids">The enumeration's constant values.</param>
+        <summary>Produces a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
+        <returns>A string that consists of delimited identifiers, where each represents a member from the set enumerator list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The [FromEnum Method (Int64, String\<xref:System.Xml.Serialization.XmlSerializationWriter.FromEnum%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromEnum">
+      <MemberSignature Language="C#" Value="protected static string FromEnum (long value, string[] values, long[] ids, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromEnum(int64 value, string[] values, int64[] ids, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromEnum(System.Int64,System.String[],System.Int64[],System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="values" Type="System.String[]" />
+        <Parameter Name="ids" Type="System.Int64[]" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The enumeration value as a series of bitwise <see langword="OR" /> operations.</param>
+        <param name="values">The values of the enumeration.</param>
+        <param name="ids">The constants of the enumeration.</param>
+        <param name="typeName">The name of the type</param>
+        <summary>Takes a numeric enumeration value and the names and constants from the enumerator list for the enumeration and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
+        <returns>A string that consists of delimited identifiers, where each item is one of the values set by the bitwise operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromTime">
+      <MemberSignature Language="C#" Value="protected static string FromTime (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromTime(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.DateTime" /> that is translated to a string.</param>
+        <summary>Produces a string from a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>A string representation of the <see cref="T:System.DateTime" /> object that shows the time but no date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromTime%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlName">
+      <MemberSignature Language="C#" Value="protected static string FromXmlName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromXmlName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A string to be used as an XML name.</param>
+        <summary>Encodes a valid XML name by replacing characters that are not valid with escape sequences.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlName%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlNCName">
+      <MemberSignature Language="C#" Value="protected static string FromXmlNCName (string ncName);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromXmlNCName(string ncName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ncName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ncName">A string to be used as a local (unqualified) XML name.</param>
+        <summary>Encodes a valid XML local name by replacing characters that are not valid with escape sequences.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of the <xref:System.Xml.Serialization.XmlSerializationWriter> class are intended for use by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNCName%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlNmToken">
+      <MemberSignature Language="C#" Value="protected static string FromXmlNmToken (string nmToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromXmlNmToken(string nmToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nmToken" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nmToken">An XML name to be encoded.</param>
+        <summary>Encodes an XML name.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmToken%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlNmTokens">
+      <MemberSignature Language="C#" Value="protected static string FromXmlNmTokens (string nmTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string FromXmlNmTokens(string nmTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nmTokens" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nmTokens">A space-delimited sequence of XML names to be encoded.</param>
+        <summary>Encodes a space-delimited sequence of XML names into a single XML name.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.FromXmlNmTokens%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlQualifiedName">
+      <MemberSignature Language="C#" Value="protected string FromXmlQualifiedName (System.Xml.XmlQualifiedName xmlQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string FromXmlQualifiedName(class System.Xml.XmlQualifiedName xmlQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlQualifiedName" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="xmlQualifiedName">An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the XML to be written.</param>
+        <summary>Returns an XML qualified name, with invalid characters replaced by escape sequences.</summary>
+        <returns>An XML qualified name, with invalid characters replaced by escape sequences.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXmlQualifiedName">
+      <MemberSignature Language="C#" Value="protected string FromXmlQualifiedName (System.Xml.XmlQualifiedName xmlQualifiedName, bool ignoreEmpty);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string FromXmlQualifiedName(class System.Xml.XmlQualifiedName xmlQualifiedName, bool ignoreEmpty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.FromXmlQualifiedName(System.Xml.XmlQualifiedName,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlQualifiedName" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="ignoreEmpty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="xmlQualifiedName">An <see cref="T:System.Xml.XmlQualifiedName" /> that represents the XML to be written.</param>
+        <param name="ignoreEmpty">
+          <see langword="true" /> to ignore empty spaces in the string; otherwise, <see langword="false" />.</param>
+        <summary>Produces a string that can be written as an XML qualified name, with invalid characters replaced by escape sequences.</summary>
+        <returns>An XML qualified name, with invalid characters replaced by escape sequences.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitCallbacks">
+      <MemberSignature Language="C#" Value="protected abstract void InitCallbacks ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitCallbacks() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.InitCallbacks" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instances of the <see cref="T:System.Xml.Serialization.XmlSerializationWriteCallback" /> delegate to serialize SOAP-encoded XML data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization that is derived from <xref:System.Xml.Serialization.XmlSerializationWriter>. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized using SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
+  
+ The abstract <xref:System.Xml.Serialization.XmlSerializationWriter.InitCallbacks%2A> method is where the temporary derived class creates an instance of and initializes write callback methods.  
+  
+ You should not directly create an instance of <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespaces">
+      <MemberSignature Language="C#" Value="protected System.Collections.ArrayList Namespaces { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Namespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.Namespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of XML qualified name objects that contain the namespaces and prefixes used to produce qualified names in XML documents.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> that contains the namespaces and prefix pairs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveDynamicAssembly">
+      <MemberSignature Language="C#" Value="protected static System.Reflection.Assembly ResolveDynamicAssembly (string assemblyFullName);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Reflection.Assembly ResolveDynamicAssembly(string assemblyFullName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFullName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFullName">The full name of the assembly.</param>
+        <summary>Gets a dynamically generated assembly by name.</summary>
+        <returns>A dynamically generated assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.ResolveDynamicAssembly%2A> method is static.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLevelElement">
+      <MemberSignature Language="C#" Value="protected void TopLevelElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TopLevelElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.TopLevelElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes object references only while serializing a SOAP-encoded SOAP message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element and to be referenced any number of times by substitute elements. The <xref:System.Xml.Serialization.XmlSerializationWriter.TopLevelElement%2A> method helps keep track of the objects that can be serialized as `multiRef` elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteAttribute (string localName, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteAttribute(string localName, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML attribute.</param>
+        <param name="value">The value of the XML attribute as a byte array.</param>
+        <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an XML attribute that has no namespace specified for its name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteAttribute (string localName, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteAttribute(string localName, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML attribute.</param>
+        <param name="value">The value of the XML attribute as a string.</param>
+        <summary>Instructs the <see cref="T:System.Xml.XmlWriter" /> to write an XML attribute that has no namespace specified for its name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteAttribute (string localName, string ns, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteAttribute(string localName, string ns, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML attribute.</param>
+        <param name="ns">The namespace of the XML attribute.</param>
+        <param name="value">The value of the XML attribute as a byte array.</param>
+        <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an XML attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteAttribute (string localName, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteAttribute(string localName, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML attribute.</param>
+        <param name="ns">The namespace of the XML attribute.</param>
+        <param name="value">The value of the XML attribute as a string.</param>
+        <summary>Writes an XML attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteAttribute (string prefix, string localName, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteAttribute(string prefix, string localName, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteAttribute(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The namespace prefix to write.</param>
+        <param name="localName">The local name of the XML attribute.</param>
+        <param name="ns">The namespace represented by the prefix.</param>
+        <param name="value">The value of the XML attribute as a string.</param>
+        <summary>Writes an XML attribute where the namespace prefix is provided manually.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementEncoded">
+      <MemberSignature Language="C#" Value="protected void WriteElementEncoded (System.Xml.XmlNode node, string name, string ns, bool isNullable, bool any);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementEncoded(class System.Xml.XmlNode node, string name, string ns, bool isNullable, bool any) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementEncoded(System.Xml.XmlNode,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+        <Parameter Name="any" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="node">The XML node to write, possibly a child XML element.</param>
+        <param name="name">The local name of the parent XML element to write.</param>
+        <param name="ns">The namespace of the parent XML element to write.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the object to serialize is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <param name="any">
+          <see langword="true" /> to indicate that the node, if an XML element, adheres to an XML Schema <see langword="any" /> element declaration; otherwise, <see langword="false" />.</param>
+        <summary>Writes an XML node object within the body of a named XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementLiteral">
+      <MemberSignature Language="C#" Value="protected void WriteElementLiteral (System.Xml.XmlNode node, string name, string ns, bool isNullable, bool any);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementLiteral(class System.Xml.XmlNode node, string name, string ns, bool isNullable, bool any) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral(System.Xml.XmlNode,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+        <Parameter Name="any" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="node">The XML node to write, possibly a child XML element.</param>
+        <param name="name">The local name of the parent XML element to write.</param>
+        <param name="ns">The namespace of the parent XML element to write.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the object to serialize is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <param name="any">
+          <see langword="true" /> to indicate that the node, if an XML element, adheres to an XML Schema <see langword="any" /> element declaration; otherwise, <see langword="false" />.</param>
+        <summary>Instructs an <see cref="T:System.Xml.XmlWriter" /> object to write an <see cref="T:System.Xml.XmlNode" /> object within the body of a named XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteElementLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementQualifiedName">
+      <MemberSignature Language="C#" Value="protected void WriteElementQualifiedName (string localName, System.Xml.XmlQualifiedName value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementQualifiedName(string localName, class System.Xml.XmlQualifiedName value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The name to write, using its prefix if namespace-qualified, in the element text.</param>
+        <summary>Writes an XML element with a specified qualified name in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementQualifiedName">
+      <MemberSignature Language="C#" Value="protected void WriteElementQualifiedName (string localName, string ns, System.Xml.XmlQualifiedName value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementQualifiedName(string localName, string ns, class System.Xml.XmlQualifiedName value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The name to write, using its prefix if namespace-qualified, in the element text.</param>
+        <summary>Writes an XML element with a specified qualified name in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementQualifiedName">
+      <MemberSignature Language="C#" Value="protected void WriteElementQualifiedName (string localName, System.Xml.XmlQualifiedName value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementQualifiedName(string localName, class System.Xml.XmlQualifiedName value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The name to write, using its prefix if namespace-qualified, in the element text.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified qualified name in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementQualifiedName">
+      <MemberSignature Language="C#" Value="protected void WriteElementQualifiedName (string localName, string ns, System.Xml.XmlQualifiedName value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementQualifiedName(string localName, string ns, class System.Xml.XmlQualifiedName value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementQualifiedName(System.String,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The name to write, using its prefix if namespace-qualified, in the element text.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified qualified name in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="protected void WriteElementString (string localName, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementString(string localName, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element to be written without namespace qualification.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="protected void WriteElementString (string localName, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementString(string localName, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="protected void WriteElementString (string localName, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementString(string localName, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementString">
+      <MemberSignature Language="C#" Value="protected void WriteElementString (string localName, string ns, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementString(string localName, string ns, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementString(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, byte[] value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, unsigned int8[] value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string ns, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string ns, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string ns, byte[] value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string ns, unsigned int8[] value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementStringRaw">
+      <MemberSignature Language="C#" Value="protected void WriteElementStringRaw (string localName, string ns, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteElementStringRaw(string localName, string ns, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteElementStringRaw(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the XML element.</param>
+        <param name="ns">The namespace of the XML element.</param>
+        <param name="value">The text value of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element with a specified value in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEmptyTag">
+      <MemberSignature Language="C#" Value="protected void WriteEmptyTag (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEmptyTag(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <summary>Writes an XML element whose body is empty.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEmptyTag">
+      <MemberSignature Language="C#" Value="protected void WriteEmptyTag (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEmptyTag(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEmptyTag(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <summary>Writes an XML element whose body is empty.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndElement">
+      <MemberSignature Language="C#" Value="protected void WriteEndElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEndElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEndElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes a <see langword="&lt;closing&gt;" /> element tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndElement">
+      <MemberSignature Language="C#" Value="protected void WriteEndElement (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEndElement(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteEndElement(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object being serialized.</param>
+        <summary>Writes a <see langword="&lt;closing&gt;" /> element tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteId">
+      <MemberSignature Language="C#" Value="protected void WriteId (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteId(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteId(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object being serialized.</param>
+        <summary>Writes an <see langword="id" /> attribute that appears in a SOAP-encoded <see langword="multiRef" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times by `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNamespaceDeclarations">
+      <MemberSignature Language="C#" Value="protected void WriteNamespaceDeclarations (System.Xml.Serialization.XmlSerializerNamespaces xmlns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNamespaceDeclarations(class System.Xml.Serialization.XmlSerializerNamespaces xmlns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNamespaceDeclarations(System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlns" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="xmlns">The XML namespaces to declare.</param>
+        <summary>Writes the namespace declaration attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableQualifiedNameEncoded">
+      <MemberSignature Language="C#" Value="protected void WriteNullableQualifiedNameEncoded (string name, string ns, System.Xml.XmlQualifiedName value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableQualifiedNameEncoded(string name, string ns, class System.Xml.XmlQualifiedName value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded(System.String,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The XML qualified name to write in the body of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element whose body contains a valid XML qualified name. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableQualifiedNameLiteral">
+      <MemberSignature Language="C#" Value="protected void WriteNullableQualifiedNameLiteral (string name, string ns, System.Xml.XmlQualifiedName value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableQualifiedNameLiteral(string name, string ns, class System.Xml.XmlQualifiedName value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral(System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The XML qualified name to write in the body of the XML element.</param>
+        <summary>Writes an XML element whose body contains a valid XML qualified name. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableQualifiedNameLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringEncoded">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringEncoded (string name, string ns, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringEncoded(string name, string ns, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The string to write in the body of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringEncodedRaw">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringEncodedRaw (string name, string ns, byte[] value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringEncodedRaw(string name, string ns, unsigned int8[] value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.Byte[],System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The byte array to write in the body of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The [WriteNullableStringEncodedRaw Method (String, String, Byte\<xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringEncodedRaw">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringEncodedRaw (string name, string ns, string value, System.Xml.XmlQualifiedName xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringEncodedRaw(string name, string ns, string value, class System.Xml.XmlQualifiedName xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw(System.String,System.String,System.String,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="xsiType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The string to write in the body of the XML element.</param>
+        <param name="xsiType">The name of the XML Schema data type to be written to the <see langword="xsi:type" /> attribute.</param>
+        <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringEncodedRaw%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringLiteral">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringLiteral (string name, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringLiteral(string name, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The string to write in the body of the XML element.</param>
+        <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringLiteralRaw">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringLiteralRaw (string name, string ns, byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringLiteralRaw(string name, string ns, unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The byte array to write in the body of the XML element.</param>
+        <summary>Writes a byte array as the body of an XML element. <see cref="T:System.Xml.XmlWriter" /> inserts an <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullableStringLiteralRaw">
+      <MemberSignature Language="C#" Value="protected void WriteNullableStringLiteralRaw (string name, string ns, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullableStringLiteralRaw(string name, string ns, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="value">The string to write in the body of the XML element.</param>
+        <summary>Writes an XML element that contains a string as the body. <see cref="T:System.Xml.XmlWriter" /> inserts a <see langword="xsi:nil='true'" /> attribute if the string's value is <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullableStringLiteralRaw%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullTagEncoded">
+      <MemberSignature Language="C#" Value="protected void WriteNullTagEncoded (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullTagEncoded(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullTagEncoded">
+      <MemberSignature Language="C#" Value="protected void WriteNullTagEncoded (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullTagEncoded(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagEncoded%2A> method is called only when writing SOAP-encoded XML, as described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullTagLiteral">
+      <MemberSignature Language="C#" Value="protected void WriteNullTagLiteral (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullTagLiteral(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNullTagLiteral">
+      <MemberSignature Language="C#" Value="protected void WriteNullTagLiteral (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteNullTagLiteral(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <summary>Writes an XML element with an <see langword="xsi:nil='true'" /> attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ When set to `true`, the `nil` attribute from the XML Schema instance namespace (abbreviated `xsi`) indicates a null value.  
+  
+ The <xref:System.Xml.Serialization.XmlSerializationWriter.WriteNullTagLiteral%2A> method is called only when writing literal XML that can be defined in an XML Schema document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePotentiallyReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WritePotentiallyReferencingElement (string n, string ns, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePotentiallyReferencingElement(string n, string ns, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized either in the current XML element or a <see langword="multiRef" /> element that is referenced by the current element.</param>
+        <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePotentiallyReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WritePotentiallyReferencingElement (string n, string ns, object o, Type ambientType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePotentiallyReferencingElement(string n, string ns, object o, class System.Type ambientType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="ambientType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized either in the current XML element or a <see langword="multiRef" /> element that referenced by the current element.</param>
+        <param name="ambientType">The type stored in the object's type mapping (as opposed to the object's type found directly through the <see langword="typeof" /> operation).</param>
+        <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `<multiRef>` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePotentiallyReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WritePotentiallyReferencingElement (string n, string ns, object o, Type ambientType, bool suppressReference);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePotentiallyReferencingElement(string n, string ns, object o, class System.Type ambientType, bool suppressReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="ambientType" Type="System.Type" />
+        <Parameter Name="suppressReference" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized either in the current XML element or a <see langword="multiRef" /> element that is referenced by the current element.</param>
+        <param name="ambientType">The type stored in the object's type mapping (as opposed to the object's type found directly through the <see langword="typeof" /> operation).</param>
+        <param name="suppressReference">
+          <see langword="true" /> to serialize the object directly into the XML element rather than make the element reference another element that contains the data; otherwise, <see langword="false" />.</param>
+        <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="&lt;multiRef&gt;" /> XML element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePotentiallyReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WritePotentiallyReferencingElement (string n, string ns, object o, Type ambientType, bool suppressReference, bool isNullable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePotentiallyReferencingElement(string n, string ns, object o, class System.Type ambientType, bool suppressReference, bool isNullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WritePotentiallyReferencingElement(System.String,System.String,System.Object,System.Type,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="ambientType" Type="System.Type" />
+        <Parameter Name="suppressReference" Type="System.Boolean" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized either in the current XML element or a <see langword="multiRef" /> element that referenced by the current element.</param>
+        <param name="ambientType">The type stored in the object's type mapping (as opposed to the object's type found directly through the <see langword="typeof" /> operation).</param>
+        <param name="suppressReference">
+          <see langword="true" /> to serialize the object directly into the XML element rather than make the element reference another element that contains the data; otherwise, <see langword="false" />.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the object to serialize is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <summary>Writes a SOAP message XML element that can contain a reference to a <see langword="multiRef" /> XML element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Writer">
+      <MemberSignature Language="C#" Value="protected System.Xml.XmlWriter Writer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlWriter Writer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializationWriter.Writer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Xml.XmlWriter" /> that is being used by the <see cref="T:System.Xml.Serialization.XmlSerializationWriter" />.</summary>
+        <value>The <see cref="T:System.Xml.XmlWriter" /> used by the class instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteReferencedElements">
+      <MemberSignature Language="C#" Value="protected void WriteReferencedElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteReferencedElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencedElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serializes objects into SOAP-encoded <see langword="multiRef" /> XML elements in a SOAP message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WriteReferencingElement (string n, string ns, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteReferencingElement(string n, string ns, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencingElement(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the referencing element being written.</param>
+        <param name="ns">The namespace of the referencing element being written.</param>
+        <param name="o">The object being serialized.</param>
+        <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef " />element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteReferencingElement">
+      <MemberSignature Language="C#" Value="protected void WriteReferencingElement (string n, string ns, object o, bool isNullable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteReferencingElement(string n, string ns, object o, bool isNullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteReferencingElement(System.String,System.String,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="n">The local name of the referencing element being written.</param>
+        <param name="ns">The namespace of the referencing element being written.</param>
+        <param name="o">The object being serialized.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the object to serialize is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef" /> element for a given object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ SOAP encoding allows a unique XML element to appear once within a SOAP message as a `multiRef` element identified by an `id` attribute. The `id` value can be referenced multiple times using `href` attributes (or `ref` attributes in SOAP 1.2) in substitute elements.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRpcResult">
+      <MemberSignature Language="C#" Value="protected void WriteRpcResult (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteRpcResult(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteRpcResult(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the result body.</param>
+        <param name="ns">The namespace of the result body.</param>
+        <summary>Writes a SOAP 1.2 RPC result element with a specified qualified name in its body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The `result` element is defined in the namespace "http://www.w3.org/2002/12/soap-rpc".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSerializable">
+      <MemberSignature Language="C#" Value="protected void WriteSerializable (System.Xml.Serialization.IXmlSerializable serializable, string name, string ns, bool isNullable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteSerializable(class System.Xml.Serialization.IXmlSerializable serializable, string name, string ns, bool isNullable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(System.Xml.Serialization.IXmlSerializable,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializable" Type="System.Xml.Serialization.IXmlSerializable" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="serializable">An object that implements the <see cref="T:System.Xml.Serialization.IXmlSerializable" /> interface that uses custom XML formatting.</param>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the <see cref="T:System.Xml.Serialization.IXmlSerializable" /> class object is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <summary>Writes an object that uses custom XML formatting as an XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSerializable">
+      <MemberSignature Language="C#" Value="protected void WriteSerializable (System.Xml.Serialization.IXmlSerializable serializable, string name, string ns, bool isNullable, bool wrapped);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteSerializable(class System.Xml.Serialization.IXmlSerializable serializable, string name, string ns, bool isNullable, bool wrapped) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteSerializable(System.Xml.Serialization.IXmlSerializable,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializable" Type="System.Xml.Serialization.IXmlSerializable" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="isNullable" Type="System.Boolean" />
+        <Parameter Name="wrapped" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="serializable">An object that implements the <see cref="T:System.Xml.Serialization.IXmlSerializable" /> interface that uses custom XML formatting.</param>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="isNullable">
+          <see langword="true" /> to write an <see langword="xsi:nil='true'" /> attribute if the <see cref="T:System.Xml.Serialization.IXmlSerializable" /> object is <see langword="null" />; otherwise, <see langword="false" />.</param>
+        <param name="wrapped">
+          <see langword="true" /> to ignore writing the opening element tag; otherwise, <see langword="false" /> to write the opening element tag.</param>
+        <summary>Instructs <see cref="T:System.Xml.XmlNode" /> to write an object that uses custom XML formatting as an XML element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartDocument">
+      <MemberSignature Language="C#" Value="protected void WriteStartDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartDocument() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartDocument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes the XML declaration if the writer is positioned at the start of an XML document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name, string ns, bool writePrefixed);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name, string ns, bool writePrefixed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="writePrefixed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="writePrefixed">
+          <see langword="true" /> to write the element name with a prefix if none is available for the specified namespace; otherwise, <see langword="false" />.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name, string ns, object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name, string ns, object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized as an XML element.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name, string ns, object o, bool writePrefixed);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name, string ns, object o, bool writePrefixed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="writePrefixed" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized as an XML element.</param>
+        <param name="writePrefixed">
+          <see langword="true" /> to write the element name with a prefix if none is available for the specified namespace; otherwise, <see langword="false" />.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartElement">
+      <MemberSignature Language="C#" Value="protected void WriteStartElement (string name, string ns, object o, bool writePrefixed, System.Xml.Serialization.XmlSerializerNamespaces xmlns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteStartElement(string name, string ns, object o, bool writePrefixed, class System.Xml.Serialization.XmlSerializerNamespaces xmlns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteStartElement(System.String,System.String,System.Object,System.Boolean,System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="writePrefixed" Type="System.Boolean" />
+        <Parameter Name="xmlns" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the XML element to write.</param>
+        <param name="ns">The namespace of the XML element to write.</param>
+        <param name="o">The object being serialized as an XML element.</param>
+        <param name="writePrefixed">
+          <see langword="true" /> to write the element name with a prefix if none is available for the specified namespace; otherwise, <see langword="false" />.</param>
+        <param name="xmlns">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> class that contains prefix and namespace pairs to be used in the generated XML.</param>
+        <summary>Writes an opening element tag, including any attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTypedPrimitive">
+      <MemberSignature Language="C#" Value="protected void WriteTypedPrimitive (string name, string ns, object o, bool xsiType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteTypedPrimitive(string name, string ns, object o, bool xsiType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteTypedPrimitive(System.String,System.String,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="xsiType" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of the element to write.</param>
+        <param name="ns">The namespace of the element to write.</param>
+        <param name="o">The object to be serialized in the element body.</param>
+        <param name="xsiType">
+          <see langword="true" /> if the XML element explicitly specifies the text value's type using the <see langword="xsi:type" /> attribute; otherwise, <see langword="false" />.</param>
+        <summary>Writes an XML element whose text body is a value of a simple XML Schema data type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="protected void WriteValue (byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteValue(unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">The byte array to write.</param>
+        <summary>Writes a base-64 byte array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="protected void WriteValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteValue(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value of the string to write.</param>
+        <summary>Writes a specified string value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteXmlAttribute (System.Xml.XmlNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteXmlAttribute(class System.Xml.XmlNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The XML node to write.</param>
+        <summary>Writes the specified <see cref="T:System.Xml.XmlNode" /> as an XML attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXmlAttribute">
+      <MemberSignature Language="C#" Value="protected void WriteXmlAttribute (System.Xml.XmlNode node, object container);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteXmlAttribute(class System.Xml.XmlNode node, object container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXmlAttribute(System.Xml.XmlNode,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="container" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="node">The XML node to write.</param>
+        <param name="container">An <see cref="T:System.Xml.Schema.XmlSchemaObject" /> object (or <see langword="null" />) used to generate a qualified name value for an <see langword="arrayType" /> attribute from the Web Services Description Language (WSDL) namespace ("http://schemas.xmlsoap.org/wsdl/").</param>
+        <summary>Writes the specified <see cref="T:System.Xml.XmlNode" /> object as an XML attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXsiType">
+      <MemberSignature Language="C#" Value="protected void WriteXsiType (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteXsiType(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializationWriter.WriteXsiType(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The local name of an XML Schema data type.</param>
+        <param name="ns">The namespace of an XML Schema data type.</param>
+        <summary>Writes an <see langword="xsi:type" /> attribute for an XML element that is being serialized into a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ The `xsi:type` attribute explicitly indicates the XML Schema data type. The prefix `xsi` refers to the XML Schema instance namespace.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="FromEnum">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Takes a numeric enumeration value and returns a string that consists of delimited identifiers that represent the enumeration members that have been set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The protected members of <xref:System.Xml.Serialization.XmlSerializationWriter> are intended for use only by derived classes that are used internally within the .NET Framework XML serialization infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

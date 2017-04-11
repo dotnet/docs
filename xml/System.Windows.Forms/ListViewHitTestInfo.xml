@@ -1,0 +1,138 @@
+<Type Name="ListViewHitTestInfo" FullName="System.Windows.Forms.ListViewHitTestInfo">
+  <TypeSignature Language="C#" Value="public class ListViewHitTestInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewHitTestInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewHitTestInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.ListView" /> control or a <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ListViewHitTestInfo> is returned by the <xref:System.Windows.Forms.ListView> class when the <xref:System.Windows.Forms.ListView.HitTest%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ListViewHitTestInfo> class and the <xref:System.Windows.Forms.ListView.HitTest%2A> method to determine the location of a <xref:System.Windows.Forms.Control.MouseDown> event. To run this code, paste it into a Windows Form that contains a <xref:System.Windows.Forms.ListView> named `listView1` that is populated with items. Associate the <xref:System.Windows.Forms.Control.MouseDown> event for the form and `listView1` with the `HandleMouseDown` method in this example.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/CS/form1.cs#7)]
+ [!code-vb[System.Windows.Forms.ListViewWhidbeyProperties#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewWhidbeyProperties/VB/form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewHitTestInfo (System.Windows.Forms.ListViewItem hitItem, System.Windows.Forms.ListViewItem.ListViewSubItem hitSubItem, System.Windows.Forms.ListViewHitTestLocations hitLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem hitItem, class System.Windows.Forms.ListViewItem/ListViewSubItem hitSubItem, valuetype System.Windows.Forms.ListViewHitTestLocations hitLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewHitTestInfo.#ctor(System.Windows.Forms.ListViewItem,System.Windows.Forms.ListViewItem.ListViewSubItem,System.Windows.Forms.ListViewHitTestLocations)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hitItem" Type="System.Windows.Forms.ListViewItem" />
+        <Parameter Name="hitSubItem" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
+        <Parameter Name="hitLocation" Type="System.Windows.Forms.ListViewHitTestLocations" />
+      </Parameters>
+      <Docs>
+        <param name="hitItem">The <see cref="T:System.Windows.Forms.ListViewItem" /> located at the position indicated by the hit test.</param>
+        <param name="hitSubItem">The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> located at the position indicated by the hit test.</param>
+        <param name="hitLocation">One of the <see cref="T:System.Windows.Forms.ListViewHitTestLocations" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewHitTestInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `hitItem` and `hitSubItem` parameters can be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain items or the position indicated is not on an item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewHitTestLocations Location { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ListViewHitTestLocations Location" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of a hit test on a <see cref="T:System.Windows.Forms.ListView" /> control, in relation to the <see cref="T:System.Windows.Forms.ListView" /> and the items it contains.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ListViewHitTestLocations" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will return <xref:System.Windows.Forms.ListViewHitTestLocations> if the hit test indicates a position that is within the client area of the <xref:System.Windows.Forms.ListView> but is not located on a <xref:System.Windows.Forms.ListViewItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItem SubItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem/ListViewSubItem SubItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewHitTestInfo.SubItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem+ListViewSubItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> at the position indicated by a hit test on a <see cref="T:System.Windows.Forms.ListView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value will be `null` if the <xref:System.Windows.Forms.ListView> does not contain subitems or the position indicated is not on a subitem.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

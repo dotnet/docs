@@ -1,0 +1,55 @@
+<Type Name="InkCanvasSelectionEditingEventArgs" FullName="System.Windows.Controls.InkCanvasSelectionEditingEventArgs">
+  <TypeSignature Language="C#" Value="public class InkCanvasSelectionEditingEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasSelectionEditingEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionEditingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.SelectionMoving" /> and <see cref="E:System.Windows.Controls.InkCanvas.SelectionResizing" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NewRectangle">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect NewRectangle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect NewRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.NewRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bounds of the selection after it is moved or resized.</summary>
+        <value>The bounds of the selection after it is moved or resized.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldRectangle">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect OldRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect OldRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasSelectionEditingEventArgs.OldRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounds of the selection before the user moved or resized it.</summary>
+        <value>The bounds of the selection before the user moved or resized it.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

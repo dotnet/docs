@@ -1,0 +1,46 @@
+<Type Name="IConfigurationManagerHelper" FullName="System.Configuration.Internal.IConfigurationManagerHelper">
+  <TypeSignature Language="C#" Value="public interface IConfigurationManagerHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConfigurationManagerHelper" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IConfigurationManagerHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an interface used by the .NET Framework to support configuration management.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnsureNetConfigLoaded">
+      <MemberSignature Language="C#" Value="public void EnsureNetConfigLoaded ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureNetConfigLoaded() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IConfigurationManagerHelper.EnsureNetConfigLoaded" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that the networking configuration is loaded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to prevent deadlocks in the networking classes by ensuring that networking configuration is loaded before networking requests are made.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

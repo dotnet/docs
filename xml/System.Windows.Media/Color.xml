@@ -1,0 +1,1057 @@
+<Type Name="Color" FullName="System.Windows.Media.Color">
+  <TypeSignature Language="C#" Value="public struct Color : IEquatable&lt;System.Windows.Media.Color&gt;, IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Color extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.Color&gt;, class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Color" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Media.Color&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.ColorConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a color in terms of alpha, red, green, and blue channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Color"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="predefinedColor"/>  
+- or -  
+<object property="#rgb"/>  
+- or -  
+<object property="#argb"/>  
+- or -  
+<object property="#rrggbb"/>  
+- or -  
+<object property="#aarrggbb"/>  
+- or -  
+<object property="sc# scA,scR,scG,scB"/>  
+- or -  
+<object property="ContextColor profileUri alphaValue,colorValue"/>  
+  
+```  
+  
+<a name="xamlValues_Color"></a>   
+## XAML Values  
+ *predefinedColor*  
+ One of the colors predefined by the <xref:System.Windows.Media.Colors> class.  
+  
+ *rgb*  
+ A three-digit hexadecimal number. The first digit specifies the color's <xref:System.Windows.Media.Color.R%2A> value, the second digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the third digit specifies the <xref:System.Windows.Media.Color.B%2A> value. For example, `00F`.  
+  
+ *argb*  
+ A four-digit hexadecimal number. The first digit specifies the color's <xref:System.Windows.Media.Color.A%2A> value, the second digit specifies its <xref:System.Windows.Media.Color.R%2A> value, the next digit specifies the <xref:System.Windows.Media.Color.G%2A> value, and the final digit specifies its <xref:System.Windows.Media.Color.B%2A> value. For example, `F00F`.  
+  
+ *rrggbb*  
+ A six-digit hexadecimal number. The first two digits specify the color's <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `0000FF`.  
+  
+ *aarrggbb*  
+ An eight-digit hexadecimal number. The first two digits specify the color's <xref:System.Windows.Media.Color.A%2A> value, the next two specify its <xref:System.Windows.Media.Color.R%2A> value, the next two specify its <xref:System.Windows.Media.Color.G%2A> value, and the final two specify its <xref:System.Windows.Media.Color.B%2A> value. For example, `FF0000FF`.  
+  
+ *scA*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The color's <xref:System.Windows.Media.Color.ScA%2A> value.  
+  
+ *scR*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The color's <xref:System.Windows.Media.Color.ScR%2A> value.  
+  
+ *scG*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The color's <xref:System.Windows.Media.Color.ScG%2A> value.  
+  
+ *scB*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The color's <xref:System.Windows.Media.Color.ScB%2A> value.  
+  
+ *profileUri*  
+ <xref:System.Uri?displayProperty=fullName>  
+  
+ The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.  
+  
+ *alphaValue*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ The alpha channel color value. The value range is 0.0 to 1.0.  
+  
+ *colorValue*  
+ <xref:System.Single?displayProperty=fullName>  
+  
+ A comma-delimited list of three to eight values that represent the color channels of the color profile. The value range is 0.0 to 1.0.  
+  
+   
+  
+## Examples  
+ This example shows how to use sRGB, ScRGB, and color profile values to create the color blue.  
+  
+ [!code-xml[GraphicsMMMiscSnippets_snip#ColorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GraphicsMMMiscSnippets_snip/CS/ColorExample.xaml#colorexample)]
+ <!-- TODO: review snippet reference [!code-xml[GraphicsMMMiscSnippets_snip#ColorExample](~/samples/snippets/xaml/VS_Snippets_Wpf/GraphicsMMMiscSnippets_snip/XAML/ColorExample.xaml#colorexample)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="A">
+      <MemberSignature Language="C#" Value="public byte A { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 A" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.A" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="sRGB" /> alpha channel value of the color.</summary>
+        <value>The <see langword="sRGB" /> alpha channel value of the color, a value between 0 and 255.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The alpha channel of a <xref:System.Windows.Media.Color> structure determines the amount of transparency the <xref:System.Windows.Media.Color> has.  An alpha value of 255 indicates the <xref:System.Windows.Media.Color> is completely opaque and a value of 0 indicates the color is completely transparent.  
+  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the ScRGB channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.A%2A>, the `sRGB` alpha channel, is modified, the `ScRGB` alpha channel, <xref:System.Windows.Media.Color.ScA%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color Add (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color Add(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Add(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first <see cref="T:System.Windows.Media.Color" /> structure to add.</param>
+        <param name="color2">The second <see cref="T:System.Windows.Media.Color" /> structure to add.</param>
+        <summary>Adds two <see cref="T:System.Windows.Media.Color" /> structures.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the addition operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Color> structures are added together by adding the alpha, red, green, and blue channels of the first color to the alpha, red, green, and blue channels of the second color. For example, the alpha channel of `color1` and the alpha channel of `color2` are added together to produce the alpha channel of the resulting color. The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreClose">
+      <MemberSignature Language="C#" Value="public static bool AreClose (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreClose(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.AreClose(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first color to compare.</param>
+        <param name="color2">The second color to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Color" /> structures for fuzzy equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are nearly identical; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This equality method compensates for the fact that floating-point values can acquire a small amount of error when operated upon.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="B">
+      <MemberSignature Language="C#" Value="public byte B { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 B" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.B" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="sRGB" /> blue channel value of the color.</summary>
+        <value>The <see langword="sRGB" /> blue channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 255.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.B%2A>, the `sRGB` blue channel, is modified, the `ScRGB` blue channel, <xref:System.Windows.Media.Color.ScB%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clamp">
+      <MemberSignature Language="C#" Value="public void Clamp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clamp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Clamp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the <see langword="ScRGB" /> channels of the color to within the gamut of 0 to 1, if they are outside that range.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The gamut of the `ScRGB` color space is larger than the clamp range, so the use of this method may result in the loss of color information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorContext">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.ColorContext ColorContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ColorContext ColorContext" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ColorContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ColorContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile of the color.</summary>
+        <value>The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile of the color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile contains a color system profile for a particular application or device such as a color printer. This profile is matched to a common profile that in turn can be mapped to the individual profiles of other devices. This allows the color system used by one computer device to match the colors from other applications and devices on the same or other computer systems.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare to this <see cref="T:System.Windows.Media.Color" /> structure.</param>
+        <summary>Tests whether the specified object is a <see cref="T:System.Windows.Media.Color" /> structure and is equivalent to this color.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is a <see cref="T:System.Windows.Media.Color" /> structure and is identical to the current <see cref="T:System.Windows.Media.Color" /> structure; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Floating-point values can acquire a small degree of error when they are operated upon.  The <xref:System.Windows.Media.Color.Equals%2A> method, the <xref:System.Windows.Media.Color.op_Equality%2A> operator, and the <xref:System.Windows.Media.Color.op_Inequality%2A> operator do not compensate for this and thus may not return the expected Boolean result.  
+  
+ The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.Color color) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color">The <see cref="T:System.Windows.Media.Color" /> structure to compare to the current <see cref="T:System.Windows.Media.Color" /> structure.</param>
+        <summary>Tests whether the specified <see cref="T:System.Windows.Media.Color" /> structure is identical to this color.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Media.Color" /> structure is identical to the current <see cref="T:System.Windows.Media.Color" /> structure; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Equals(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <param name="color2">The second <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <summary>Tests whether two <see cref="T:System.Windows.Media.Color" /> structures are identical.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are exactly identical; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Floating-point values can acquire a small degree of error when they are operated upon.  The <xref:System.Windows.Media.Color.Equals%2A> method, the <xref:System.Windows.Media.Color.op_Equality%2A> operator, and the <xref:System.Windows.Media.Color.op_Inequality%2A> operator do not compensate for this and thus may not return the expected Boolean result.  
+  
+ The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromArgb">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FromArgb (byte a, byte r, byte g, byte b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color FromArgb(unsigned int8 a, unsigned int8 r, unsigned int8 g, unsigned int8 b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Byte" />
+        <Parameter Name="r" Type="System.Byte" />
+        <Parameter Name="g" Type="System.Byte" />
+        <Parameter Name="b" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="a">The alpha channel, <see cref="P:System.Windows.Media.Color.A" />, of the new color.</param>
+        <param name="r">The red channel, <see cref="P:System.Windows.Media.Color.R" />, of the new color.</param>
+        <param name="g">The green channel, <see cref="P:System.Windows.Media.Color.G" />, of the new color.</param>
+        <param name="b">The blue channel, <see cref="P:System.Windows.Media.Color.B" />, of the new color.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified <see langword="sRGB" /> alpha channel and color channel values.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Color.FromArgb%2A> method allows you to specify the alpha channel; the <xref:System.Windows.Media.Color.FromRgb%2A> method uses a default value of 255 for the alpha channel.  
+  
+ The alpha channel of a color determines the amount of transparency of the color. An alpha value of 255 indicates that the color is completely opaque, and a value of 0 indicates that the color is completely transparent.  
+  
+   
+  
+## Examples  
+ [!code-csharp[BrushesMiscSnippets_procedural_snip#FromArgbExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/CreateColorsFromExample.cs#fromargbexample)]
+ [!code-vb[BrushesMiscSnippets_procedural_snip#FromArgbExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/createcolorsfromexample.vb#fromargbexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromAValues">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FromAValues (float a, float[] values, Uri profileUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color FromAValues(float32 a, float32[] values, class System.Uri profileUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromAValues(System.Single,System.Single[],System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Single" />
+        <Parameter Name="values" Type="System.Single[]" />
+        <Parameter Name="profileUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="a">The alpha channel for the new color,a value between 0 and 1.</param>
+        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <c>profileUri</c>.</param>
+        <param name="profileUri">The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile for the new color.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified alpha channel, color channel values, and color profile.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile contains a color system profile for a particular application or device such as a color printer. This profile is matched to a common profile that in turn can be mapped to the individual profiles of other devices. This allows the color system used by one computer device to match the colors from other applications and devices on the same or other computer systems.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Color.FromAValues%2A> method to create a <xref:System.Windows.Media.Color> structure.  
+  
+ [!code-csharp[BrushesMiscSnippets_procedural_snip#FromAValuesExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/CreateColorsFromExample.cs#fromavaluesexample)]
+ [!code-vb[BrushesMiscSnippets_procedural_snip#FromAValuesExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/createcolorsfromexample.vb#fromavaluesexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromRgb">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FromRgb (byte r, byte g, byte b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color FromRgb(unsigned int8 r, unsigned int8 g, unsigned int8 b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromRgb(System.Byte,System.Byte,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r" Type="System.Byte" />
+        <Parameter Name="g" Type="System.Byte" />
+        <Parameter Name="b" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="r">The <see langword="sRGB" /> red channel, <see cref="P:System.Windows.Media.Color.R" />, of the new color.</param>
+        <param name="g">The <see langword="sRGB" /> green channel, <see cref="P:System.Windows.Media.Color.G" />, of the new color.</param>
+        <param name="b">The <see langword="sRGB" /> blue channel, <see cref="P:System.Windows.Media.Color.B" />, of the new color.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified <see langword="sRGB" /> color channel values.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values and an alpha channel value of 255.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Color.FromArgb%2A> method allows you to specify the alpha channel; the <xref:System.Windows.Media.Color.FromRgb%2A> method uses a default value of 1 for the alpha channel.  
+  
+ The alpha channel of a color determines the amount of transparency of the color. An alpha value of 1 indicates that the color is completely opaque, and a value of 0 indicates that the color is completely transparent.  
+  
+ The sRGB channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the ScRGB channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.R%2A>, the sRGB red channel, is modified the ScRGB red channel, <xref:System.Windows.Media.Color.ScR%2A>, is transformed to the equivalent value.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Color.FromRgb%2A> method to create a <xref:System.Windows.Media.Color> structure.  
+  
+ [!code-csharp[BrushesMiscSnippets_procedural_snip#FromRgbExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/CreateColorsFromExample.cs#fromrgbexample)]
+ [!code-vb[BrushesMiscSnippets_procedural_snip#FromRgbExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/createcolorsfromexample.vb#fromrgbexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromScRgb">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FromScRgb (float a, float r, float g, float b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color FromScRgb(float32 a, float32 r, float32 g, float32 b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromScRgb(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Single" />
+        <Parameter Name="r" Type="System.Single" />
+        <Parameter Name="g" Type="System.Single" />
+        <Parameter Name="b" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="a">The <see langword="ScRGB" /> alpha channel, <see cref="P:System.Windows.Media.Color.ScA" />, of the new color.</param>
+        <param name="r">The <see langword="ScRGB" /> red channel, <see cref="P:System.Windows.Media.Color.ScR" />, of the new color.</param>
+        <param name="g">The <see langword="ScRGB" /> green channel, <see cref="P:System.Windows.Media.Color.ScG" />, of the new color.</param>
+        <param name="b">The <see langword="ScRGB" /> blue channel, <see cref="P:System.Windows.Media.Color.ScB" />, of the new color.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified <see langword="ScRGB" /> alpha channel and color channel values.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The alpha channel of a color determines the amount of transparency of the color. An alpha value of 1 indicates that the color is completely opaque, and a value of 0 indicates that the color is completely transparent.  
+  
+   
+  
+## Examples  
+ [!code-csharp[BrushesMiscSnippets_procedural_snip#FromScRgbExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/CreateColorsFromExample.cs#fromscrgbexample)]
+ [!code-vb[BrushesMiscSnippets_procedural_snip#FromScRgbExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/createcolorsfromexample.vb#fromscrgbexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromValues">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color FromValues (float[] values, Uri profileUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color FromValues(float32[] values, class System.Uri profileUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.FromValues(System.Single[],System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Single[]" />
+        <Parameter Name="profileUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="values">A collection of values that specify the color channels for the new color. These values map to the <c>profileUri</c>.</param>
+        <param name="profileUri">The [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile for the new color.</param>
+        <summary>Creates a new <see cref="T:System.Windows.Media.Color" /> structure by using the specified color channel values and color profile.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Color" /> structure with the specified values and an alpha channel value of 1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile contains a color system profile for a particular application or device such as a color printer. This profile is matched to a common profile that in turn can be mapped to the individual profiles of other devices. This allows the color system used by one computer device to match the colors from other applications and devices on the same or other computer systems.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Color.FromValues%2A> method to create a <xref:System.Windows.Media.Color> structure.  
+  
+ [!code-csharp[BrushesMiscSnippets_procedural_snip#FromValuesExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/CSharp/CreateColorsFromExample.cs#fromvaluesexample)]
+ [!code-vb[BrushesMiscSnippets_procedural_snip#FromValuesExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushesMiscSnippets_procedural_snip/visualbasic/createcolorsfromexample.vb#fromvaluesexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="G">
+      <MemberSignature Language="C#" Value="public byte G { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 G" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.G" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="sRGB" /> green channel value of the color.</summary>
+        <value>The <see langword="sRGB" /> green channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 255.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.G%2A>, the `sRGB` green channel, is modified, the `ScRGB` green channel, <xref:System.Windows.Media.Color.ScG%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for this <see cref="T:System.Windows.Media.Color" /> structure.</summary>
+        <returns>A hash code for this <see cref="T:System.Windows.Media.Color" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNativeColorValues">
+      <MemberSignature Language="C#" Value="public float[] GetNativeColorValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32[] GetNativeColorValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.GetNativeColorValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the color channel values of the color.</summary>
+        <returns>An array of color channel values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color Multiply (System.Windows.Media.Color color, float coefficient);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color Multiply(valuetype System.Windows.Media.Color color, float32 coefficient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Multiply(System.Windows.Media.Color,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="System.Windows.Media.Color" />
+        <Parameter Name="coefficient" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="color">The <see cref="T:System.Windows.Media.Color" /> to be multiplied.</param>
+        <param name="coefficient">The value to multiply by.</param>
+        <summary>Multiplies the alpha, red, blue, and green channels of the specified <see cref="T:System.Windows.Media.Color" /> structure by the specified value.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the multiplication operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Addition (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Addition(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Addition(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first <see cref="T:System.Windows.Media.Color" /> structure to add.</param>
+        <param name="color2">The second <see cref="T:System.Windows.Media.Color" /> structure to add.</param>
+        <summary>Adds two <see cref="T:System.Windows.Media.Color" /> structures.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the addition operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Color> structures are added together by adding the alpha, red, green, and blue channels of the first color to the alpha, red, green, and blue channels of the second color.  For example, the alpha channel of `color1` and the alpha channel of `color2` are added together to produce the alpha channel of the resulting color.  The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new color.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Add%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Equality(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <param name="color2">The second <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <summary>Tests whether two <see cref="T:System.Windows.Media.Color" /> structures are identical.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are exactly identical; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Floating-point values can acquire a small degree of error when they are operated upon.  The <xref:System.Windows.Media.Color.Equals%2A> method, the <xref:System.Windows.Media.Color.op_Equality%2A> operator, and the <xref:System.Windows.Media.Color.op_Inequality%2A> operator do not compensate for this and thus may not return the expected Boolean result.  
+  
+ The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Inequality(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The first <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <param name="color2">The second <see cref="T:System.Windows.Media.Color" /> structure to compare.</param>
+        <summary>Tests whether two <see cref="T:System.Windows.Media.Color" /> structures are not identical.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="color1" /> and <paramref name="color2" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Floating-point values can acquire a small degree of error when they are operated upon.  The <xref:System.Windows.Media.Color.Equals%2A> method, the <xref:System.Windows.Media.Color.op_Equality%2A> operator, and the <xref:System.Windows.Media.Color.op_Inequality%2A> operator do not compensate for this and thus may not return the expected Boolean result.  
+  
+ The <xref:System.Windows.Media.Color.AreClose%2A> method uses a fuzzy equality algorithm that compensates for this floating-point arithmetic error by returning `true` for a comparison of two <xref:System.Windows.Media.Color> structures that are practically identical, but whose values may differ by a minuscule amount.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Equals%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Multiply (System.Windows.Media.Color color, float coefficient);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Multiply(valuetype System.Windows.Media.Color color, float32 coefficient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Multiply(System.Windows.Media.Color,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="System.Windows.Media.Color" />
+        <Parameter Name="coefficient" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="color">The <see cref="T:System.Windows.Media.Color" /> to be multiplied.</param>
+        <param name="coefficient">The value to multiply by.</param>
+        <summary>Multiplies the alpha, red, blue, and green channels of the specified <see cref="T:System.Windows.Media.Color" /> structure by the specified value.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the multiplication operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Media.Color.Multiply%28System.Windows.Media.Color%2CSystem.Single%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color op_Subtraction (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Color op_Subtraction(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.op_Subtraction(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The <see cref="T:System.Windows.Media.Color" /> structure to be subtracted from.</param>
+        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <c>color1</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Color" /> structure from a <see cref="T:System.Windows.Media.Color" /> structure.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the subtraction operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Color> structures are subtracted from one another by subtracting the alpha, red, green, and blue channels of the second color from the alpha, red, green, and blue channels of the first color.  For example, the alpha channel of `color2` is subtracted from  the alpha channel of `color1` to produce the alpha channel of the resulting <xref:System.Windows.Media.Color> structure.  The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new <xref:System.Windows.Media.Color> structure.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Media.Color.Subtract%28System.Windows.Media.Color%2CSystem.Windows.Media.Color%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="R">
+      <MemberSignature Language="C#" Value="public byte R { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 R" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.R" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="sRGB" /> red channel value of the color.</summary>
+        <value>The <see langword="sRGB" /> red channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 255.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.R%2A>, the `sRGB` red channel, is modified, the `ScRGB` red channel, <xref:System.Windows.Media.Color.ScR%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScA">
+      <MemberSignature Language="C#" Value="public float ScA { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScA" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="ScRGB" /> alpha channel value of the color.</summary>
+        <value>The <see langword="ScRGB" /> alpha channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The alpha channel of a <xref:System.Windows.Media.Color> structure determines the amount of transparency the <xref:System.Windows.Media.Color> has.  An alpha value of 1 indicates the <xref:System.Windows.Media.Color> is completely opaque and a value of 0 indicates the color is completely transparent.  
+  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.A%2A>, the `sRGB` alpha channel, is modified, the `ScRGB` alpha channel, <xref:System.Windows.Media.Color.ScA%2A>is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScB">
+      <MemberSignature Language="C#" Value="public float ScB { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScB" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ScRGB blue channel value of the color.</summary>
+        <value>The ScRGB red channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.B%2A>, the `sRGB` blue channel, is modified, the `ScRGB` blue channel, <xref:System.Windows.Media.Color.ScB%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScG">
+      <MemberSignature Language="C#" Value="public float ScG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScG" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScG" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="ScRGB" /> green channel value of the color.</summary>
+        <value>The <see langword="ScRGB" /> green channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.G%2A>, the `sRGB` green channel, is modified, the `ScRGB` green channel, <xref:System.Windows.Media.Color.ScG%2A>is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScR">
+      <MemberSignature Language="C#" Value="public float ScR { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ScR" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Color.ScR" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="ScRGB" /> red channel value of the color.</summary>
+        <value>The <see langword="ScRGB" /> red channel value of the <see cref="T:System.Windows.Media.Color" /> structure, a value between 0 and 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sRGB` channels (<xref:System.Windows.Media.Color.A%2A>, <xref:System.Windows.Media.Color.R%2A>, <xref:System.Windows.Media.Color.G%2A>, <xref:System.Windows.Media.Color.B%2A>) and the `ScRGB` channels (<xref:System.Windows.Media.Color.ScA%2A>, <xref:System.Windows.Media.Color.ScR%2A>, <xref:System.Windows.Media.Color.ScG%2A>, <xref:System.Windows.Media.Color.ScB%2A>) of the <xref:System.Windows.Media.Color> structure are synchronized properties.  For example, when <xref:System.Windows.Media.Color.R%2A>, the `sRGB` red channel, is modified, the `ScRGB` red channel, <xref:System.Windows.Media.Color.ScR%2A>, is converted to the equivalent value using the 0-1 range that the `Sc` scheme supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Color Subtract (System.Windows.Media.Color color1, System.Windows.Media.Color color2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Color Subtract(valuetype System.Windows.Media.Color color1, valuetype System.Windows.Media.Color color2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.Subtract(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color1" Type="System.Windows.Media.Color" />
+        <Parameter Name="color2" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="color1">The <see cref="T:System.Windows.Media.Color" /> structure to be subtracted from.</param>
+        <param name="color2">The <see cref="T:System.Windows.Media.Color" /> structure to subtract from <c>color1</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Color" /> structure from a <see cref="T:System.Windows.Media.Color" /> structure.</summary>
+        <returns>A new <see cref="T:System.Windows.Media.Color" /> structure whose color values are the results of the subtraction operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Color> structures are subtracted from one another by subtracting the alpha, red, green, and blue channels of the second color from the alpha, red, green, and blue channels of the first color.  For example, the alpha channel of `color2` is subtracted from the alpha channel of `color1` to produce the alpha channel of the resulting <xref:System.Windows.Media.Color> structure.  The same is done with the red, green, and blue channels to produce the red, green, and blue channels of the new <xref:System.Windows.Media.Color> structure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of the color using the <see langword="sRGB" /> channels.</summary>
+        <returns>The string representation of the color. The default implementation represents the <see cref="T:System.Byte" /> values in hex form, prefixes with the <c>#</c> character, and starts with the alpha channel. For example, the <see cref="M:System.Windows.Media.Color.ToString" /> value for <see cref="P:System.Windows.Media.Colors.AliceBlue" /> is <c>#FFF0F8FF</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Color.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Culture-specific formatting information.</param>
+        <summary>Creates a string representation of the color by using the <see langword="sRGB" /> channels and the specified format provider.</summary>
+        <returns>The string representation of the color.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

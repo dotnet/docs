@@ -1,0 +1,194 @@
+<Type Name="XmlQueryItemSequence" FullName="System.Xml.Xsl.Runtime.XmlQueryItemSequence">
+  <TypeSignature Language="C#" Value="public sealed class XmlQueryItemSequence : System.Xml.Xsl.Runtime.XmlQuerySequence&lt;System.Xml.XPath.XPathItem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlQueryItemSequence extends System.Xml.Xsl.Runtime.XmlQuerySequence`1&lt;class System.Xml.XPath.XPathItem&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Xsl.Runtime.XmlQuerySequence&lt;System.Xml.XPath.XPathItem&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Xml.XPath.XPathItem</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A sequence of XML items that dynamically expands and allows random access to items.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlQueryItemSequence ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlQueryItemSequence (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">A value of type <see langword="Int32" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlQueryItemSequence (System.Xml.XPath.XPathItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XPath.XPathItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor(System.Xml.XPath.XPathItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClone">
+      <MemberSignature Language="C#" Value="public void AddClone (System.Xml.XPath.XPathItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddClone(class System.Xml.XPath.XPathItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.AddClone(System.Xml.XPath.XPathItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Adds an item to the sequence. If the item is a navigator, this method clones it before adding it to the sequence.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrReuse">
+      <MemberSignature Language="C#" Value="public static System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse (System.Xml.Xsl.Runtime.XmlQueryItemSequence seq);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse(class System.Xml.Xsl.Runtime.XmlQueryItemSequence seq) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQueryItemSequence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.XmlQueryItemSequence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Xml.Xsl.Runtime.XmlQueryItemSequence" />
+      </Parameters>
+      <Docs>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</param>
+        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrReuse">
+      <MemberSignature Language="C#" Value="public static System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse (System.Xml.Xsl.Runtime.XmlQueryItemSequence seq, System.Xml.XPath.XPathItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse(class System.Xml.Xsl.Runtime.XmlQueryItemSequence seq, class System.Xml.XPath.XPathItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQueryItemSequence,System.Xml.XPath.XPathItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.XmlQueryItemSequence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seq" Type="System.Xml.Xsl.Runtime.XmlQueryItemSequence" />
+        <Parameter Name="item" Type="System.Xml.XPath.XPathItem" />
+      </Parameters>
+      <Docs>
+        <param name="seq">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</param>
+        <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
+        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />. This method then adds a new item to reused or new sequence.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static readonly System.Xml.Xsl.Runtime.XmlQueryItemSequence Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Xsl.Runtime.XmlQueryItemSequence Empty" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.XmlQueryItemSequence.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.XmlQueryItemSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a properly initialized, empty <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

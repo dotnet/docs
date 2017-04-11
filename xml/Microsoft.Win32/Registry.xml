@@ -1,0 +1,644 @@
+<Type Name="Registry" FullName="Microsoft.Win32.Registry">
+  <TypeSignature Language="C#" Value="public static class Registry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Registry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.Registry" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides <see cref="T:Microsoft.Win32.RegistryKey" /> objects that represent the root keys in the Windows registry, and <see langword="static" /> methods to access key/value pairs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides the set of standard root keys found in the registry on machines running Windows. The registry is a storage facility for information about applications, users, and default system settings. For example, applications can use the registry for storing information that needs to be preserved after the application is closed, and access that same information when the application is reloaded. For instance, you can store color preferences, screen locations, or the size of the window. You can control this data for each user by storing the information in a different location in the registry.  
+  
+ The base, or root <xref:Microsoft.Win32.RegistryKey> instances that are exposed by the `Registry` class delineate the basic storage mechanism for subkeys and values in the registry. All keys are read-only because the registry depends on their existence. The keys exposed by `Registry` are:  
+  
+ <xref:Microsoft.Win32.Registry.CurrentUser>  
+ Stores information about user preferences.  
+  
+ <xref:Microsoft.Win32.Registry.LocalMachine>  
+ Stores configuration information for the local machine.  
+  
+ <xref:Microsoft.Win32.Registry.ClassesRoot>  
+ Stores information about types (and classes) and their properties.  
+  
+ <xref:Microsoft.Win32.Registry.Users>  
+ Stores information about the default user configuration.  
+  
+ <xref:Microsoft.Win32.Registry.PerformanceData>  
+ Stores performance information for software components.  
+  
+ <xref:Microsoft.Win32.Registry.CurrentConfig>  
+ Stores non-user-specific hardware information.  
+  
+ <xref:Microsoft.Win32.Registry.DynData>  
+ Stores dynamic data.  
+  
+ Once you have identified the root key under which you want to store/retrieve information from the registry, you can use the <xref:Microsoft.Win32.RegistryKey> class to add or remove subkeys, and manipulate the values for a given key.  
+  
+ Hardware devices can place information in the registry automatically using the Plug and Play interface. Software for installing device drivers can place information in the registry by writing to standard APIs.  
+  
+## Static Methods for Getting and Setting Values  
+ In the .NET Framework version 2.0, the <xref:Microsoft.Win32.Registry> class also contains `static`<xref:Microsoft.Win32.Registry.GetValue%2A> and <xref:Microsoft.Win32.Registry.SetValue%2A> methods for setting and retrieving values from registry keys. These methods open and close registry keys each time they are used, so they do not perform as well as analogous methods in the <xref:Microsoft.Win32.RegistryKey> class, when you access a large number of values.  
+  
+ The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to set Windows access control security for registry keys, to test the data type of a value before retrieving it, and to delete keys.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first example demonstrates root keys, and the second example demonstrates the `static`<xref:Microsoft.Win32.Registry.GetValue%2A> and <xref:Microsoft.Win32.Registry.SetValue%2A> methods.  
+  
+ Example 1  
+  
+ The following code example demonstrates how to retrieve the subkeys of the HKEY_USERS key, and print their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in `RegistryKey` to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.Users Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.Users Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.Users Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.Users Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.Users Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.Users Example/VB/source.vb#1)]  
+  
+ Example 2  
+  
+ The following code example stores values of several data types in an example key, creating the key as it does so, and then retrieves and displays the values. The example demonstrates storing and retrieving the default (nameless) name/value pair, and the use of `defaultValue` when a name/value pair does not exist.  
+  
+ [!code-cpp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClassesRoot">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey ClassesRoot;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey ClassesRoot" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.ClassesRoot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines the types (or classes) of documents and the properties associated with those types. This field reads the Windows registry base key HKEY_CLASSES_ROOT.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both conventional applications and OLE applications use data that is stored under this key. This key also provides backward compatibility with the Windows 3.1 registration database by storing information for DDE and OLE support. File viewers and user interface extensions store their OLE class identifiers in this key, and processing servers are registered in this key.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.ClassesRoot Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.ClassesRoot Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.ClassesRoot Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.ClassesRoot Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.ClassesRoot Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.ClassesRoot Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentConfig">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey CurrentConfig;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey CurrentConfig" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.CurrentConfig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains configuration information pertaining to the hardware that is not specific to the user. This field reads the Windows registry base key HKEY_CURRENT_CONFIG.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is mapped to a subkey within <xref:Microsoft.Win32.Registry.LocalMachine>.  
+  
+ An example of using this member is an application that stores a different server name for its data depending on whether the system is attached to a network.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.CurrentConfig Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.CurrentConfig Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.CurrentConfig Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.CurrentConfig Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.CurrentConfig Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.CurrentConfig Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey CurrentUser;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey CurrentUser" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.CurrentUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains information about the current user preferences. This field reads the Windows registry base key HKEY_CURRENT_USER</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Information stored in this key includes the settings of environment variables and data about program groups, colors, printers, network connections, and application preferences. This key makes it easier to establish the current user's settings. In this key, software vendors store the current user-specific preferences to be used within their applications. Microsoft, for example, creates the HKEY_CURRENT_USER\Software\Microsoft key for its applications to use, with each application creating its own subkey under the Microsoft key.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.CurrentUser Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.CurrentUser Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.CurrentUser Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.CurrentUser Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.CurrentUser Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.CurrentUser Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynData">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey DynData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey DynData" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.DynData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use PerformanceData instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains dynamic registry data. This field reads the Windows registry base key HKEY_DYN_DATA.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Windows 98/Windows Me registry supports both static data (which is stored on disk in the registry) and dynamic data (which changes frequently, such as performance statistics). This dynamic data area is the mechanism that allows Virtual Device Drivers (VxDs) to provide real-time data to Win32 applications that can run remotely as well as locally. It also allows the system monitor to provide performance statistics on remote Windows 98/Windows Me systems.  
+  
+ VxDs are not limited to performance data. They can provide any data they want to pass from Ring 0 to Ring 3 efficiently without monopolizing the CPU. The registry supports dynamic data by storing a pointer to a function that returns a value (or many values). When a Registry call queries values associated with a dynamic key, that function is called to return the desired value or values.  
+  
+> [!NOTE]
+>  Dynamic keys were introduced in Microsoft Windows 95 to handle dynamic Registry data. They are supported only in Windows 98/Windows Me.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key. Note that this example can return no results, since there might not be dynamic data available, or you might not be running Windows 98/ME. Using this key may cause an error on other systems.  
+  
+ [!code-cpp[Classic Registry.DynData Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.DynData Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.DynData Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.DynData Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.DynData Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.DynData Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The operating system does not support dynamic data; that is, it is not Windows 98, Windows 98 Second Edition, or Windows Millennium Edition (Windows Me).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public static object GetValue (string keyName, string valueName, object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetValue(string keyName, string valueName, object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.GetValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".</param>
+        <param name="valueName">The name of the name/value pair.</param>
+        <param name="defaultValue">The value to return if <c>valueName</c> does not exist.</param>
+        <summary>Retrieves the value associated with the specified name, in the specified registry key. If the name is not found in the specified key, returns a default value that you provide, or <see langword="null" /> if the specified key does not exist.</summary>
+        <returns>
+          <see langword="null" /> if the subkey specified by <paramref name="keyName" /> does not exist; otherwise, the value associated with <paramref name="valueName" />, or <paramref name="defaultValue" /> if <paramref name="valueName" /> is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string `valueName` is not case-sensitive.  
+  
+> [!NOTE]
+>  A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To retrieve this unnamed value, specify either `null` or the empty string ("") for `valuName`.  
+  
+ Valid root names are HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_CLASSES_ROOT, HKEY_USERS, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA. For example, in Visual Basic the string "HKEY_CURRENT_USER\MyTestKey" accesses key/value pairs for the subkey "MyTestKey" in the HKEY_CURRENT_USER root.  
+  
+ When the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method retrieves expandable string values (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>), it expands environment strings using data from the local environment. If a value containing expandable references to environment variables has been stored as a string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>), rather than as an expandable string (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>), <xref:Microsoft.Win32.RegistryKey.GetValue%2A> does not expand it. You can expand such a string after it has been retrieved by calling the <xref:System.Environment.ExpandEnvironmentVariables%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  The recommended way to retrieve data from HKEY_PERFORMANCE_DATA is to use the <xref:System.Diagnostics.PerformanceCounter> class rather than the <xref:Microsoft.Win32.RegistryKey.GetValue%2A?displayProperty=fullName> method.  
+  
+ The <xref:Microsoft.Win32.Registry.GetValue%2A> and <xref:Microsoft.Win32.Registry.SetValue%2A> methods open and close registry keys each time they are used, so they do not perform as well as the methods of the <xref:Microsoft.Win32.RegistryKey> class if you access a large number of values.  
+  
+ <xref:Microsoft.Win32.RegistryKey> also provides methods that allow you to add an access control list (ACL) to a registry key, to test the data type of a value before retrieving it, and to delete keys.  
+  
+   
+  
+## Examples  
+ The following code example stores values of several data types in an example key, creating the key as it does so, and then retrieves and displays the values. The example demonstrates storing and retrieving the default (nameless) name/value pair, and the use of `defaultValue` when a name/value pair does not exist.  
+  
+ [!code-cpp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to read from the registry key.</exception>
+        <exception cref="T:System.IO.IOException">The <see cref="T:Microsoft.Win32.RegistryKey" /> that contains the specified value has been marked for deletion.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalMachine">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey LocalMachine;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey LocalMachine" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.LocalMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the configuration data for the local machine. This field reads the Windows registry base key HKEY_LOCAL_MACHINE.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `LocalMachine` contains five keys:  
+  
+ Hardware  
+ Describes the physical hardware in the computer, the way device drivers use that hardware, and mappings and related data that link kernel-mode drivers with user-mode code. All data in this key is recreated each time the system is started. The Description subkey describes the actual computer hardware. The DeviceMap subkey contains miscellaneous data in formats specific to particular classes of drivers. The ResourceMap subkey describes which device drivers claim which hardware resources. The Windows NT Diagnostics program (Winmsdp.exe) can report on its contents in an easy-to-read form.  
+  
+ SAM  
+ The directory services database of security information for user and group accounts, and for the domains in Windows 2000 Server (SAM is the Security Account Manager, known as the directory services database).  
+  
+ Security  
+ Contains the local security policy, such as specific user rights. This key is used only by the Windows 2000 security subsystem.  
+  
+ Software  
+ The per-computer software database. This key contains data about software installed on the local computer, along with various items of miscellaneous configuration data.  
+  
+ System  
+ Controls system startup, device driver loading, Windows 2000 services, and operating system behavior.  
+  
+ By convention, if similar data exists under <xref:Microsoft.Win32.Registry.CurrentUser> and under <xref:Microsoft.Win32.Registry.LocalMachine>, the data in <xref:Microsoft.Win32.Registry.CurrentUser> takes precedence. However, values in this key can also extend (rather than replace) data in Registry.LocalMachine. Also, some items (such as device driver loading entries) are meaningless if they occur outside of Registry.LocalMachine.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.LocalMachine Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.LocalMachine Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.LocalMachine Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.LocalMachine Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.LocalMachine Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.LocalMachine Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformanceData">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey PerformanceData;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey PerformanceData" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.PerformanceData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains performance information for software components. This field reads the Windows registry base key HKEY_PERFORMANCE_DATA.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each software component creates keys for its objects, counters when it is installed, and writes counter data while it is executing. You can access this data as you would access any other registry data, using the <xref:Microsoft.Win32.RegistryKey> functions.  
+  
+ Although you use the registry to collect performance data, the data is not stored in the registry database. Instead, accessing the registry with this key causes the system to collect the data from the appropriate system object managers.  
+  
+ To obtain performance data from the local system, use the <xref:Microsoft.Win32.RegistryKey.GetValue%2A> method, with the Registry.PerformanceData key. The first call opens the key (you do not need to explicitly open the key first). However, be sure to use the <xref:Microsoft.Win32.RegistryKey.Close%2A> method to close the handle to the key when you are finished obtaining performance data. The user cannot install or remove a software component while its performance data is in use.  
+  
+ To obtain performance data from a remote system, you must use the <xref:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey%2A> method, with the computer name of the remote system and the Registry.PerformanceData key. This call retrieves a key representing the performance data for the remote system. To retrieve the data, call <xref:Microsoft.Win32.RegistryKey.GetValue%2A> using this key, rather than the Registry.PerformanceData key.  
+  
+> [!NOTE]
+>  On Windows Server 2003, a user must at least belong to the Performance Monitor Users group in order to access subkeys of this base key.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key. Note that this example can often return no results, since there might be no performance data.  
+  
+ [!code-cpp[Classic Registry.PerformanceData Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.PerformanceData Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.PerformanceData Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.PerformanceData Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.PerformanceData Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.PerformanceData Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public static void SetValue (string keyName, string valueName, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetValue(string keyName, string valueName, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".</param>
+        <param name="valueName">The name of the name/value pair.</param>
+        <param name="value">The value to be stored.</param>
+        <summary>Sets the specified name/value pair on the specified registry key. If the specified key does not exist, it is created.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the `valueName` parameter is no longer restricted to a maximum of 255 characters; however, the `keyName` parameter continues to have the 255-character restriction.  
+  
+ Because many values can be stored in each key in the registry, you must use the `valueName` parameter to specify the particular value you want to set.  
+  
+> [!NOTE]
+>  A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To set this unnamed value, specify either `null` or the empty string ("") for `valueName`.  
+  
+ If `valueName` does not exist in the key, it is created and the associated value is set to `value`.  
+  
+ If `keyName` specifies a subkey that does not exist, the subkey is created in the specified root. For example, in Visual Basic the string "HKEY_CURRENT_USER\MyTestKey" creates the subkey "MyTestKey" in the HKEY_CURRENT_USER root. The string "HKEY_CURRENT_USER\MyTestKey\Key2\Key3" creates the nested subkeys "MyTestKey", "MyTestKey\Key2", and "MyTestKey\Key2\Key3".  
+  
+ Valid root names include HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_CLASSES_ROOT, HKEY_USERS, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.  
+  
+> [!NOTE]
+>  The <xref:Microsoft.Win32.Registry.SetValue%2A> method opens a registry key, sets the value, and closes the key each time it is called. If you need to modify a large number of values, the <xref:Microsoft.Win32.RegistryKey.SetValue%2A?displayProperty=fullName> method might provide better performance. The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to add an access control list (ACL) to a registry key, to test the data type of a value before retrieving it, and to delete keys.  
+  
+ This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores 64-bit integers as strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>). To store 64-bit numbers as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName> values, use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
+  
+ This overload of <xref:Microsoft.Win32.Registry.SetValue%2A> stores all string values as <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName> objects, even if they contain expandable references to environment variables. To save string values as expandable strings (<xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>), use the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload.  
+  
+ This overload is equivalent to calling the <xref:Microsoft.Win32.Registry.SetValue%28System.String%2CSystem.String%2CSystem.Object%2CMicrosoft.Win32.RegistryValueKind%29> method overload with <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>.  
+  
+> [!NOTE]
+>  On Windows 98 and Windows Millennium Edition (Windows Me), the registry is not Unicode, and not all Unicode characters are valid for all code pages. A Unicode character that is invalid for the current code page is replaced by the best available match. No exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example stores values of several data types in an example key, creating the key as it does so, and then retrieves and displays the values. The example demonstrates storing and retrieving the default (nameless) name/value pair, and the use of `defaultValue` when a name/value pair does not exist.  
+  
+ [!code-cpp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.  
+  
+ -or-  
+  
+ <paramref name="keyName" /> is longer than the maximum length allowed (255 characters).</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only, and thus cannot be written to; for example, it is a root-level node.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public static void SetValue (string keyName, string valueName, object value, Microsoft.Win32.RegistryValueKind valueKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetValue(string keyName, string valueName, object value, valuetype Microsoft.Win32.RegistryValueKind valueKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.Registry.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="valueKind" Type="Microsoft.Win32.RegistryValueKind" />
+      </Parameters>
+      <Docs>
+        <param name="keyName">The full registry path of the key, beginning with a valid registry root, such as "HKEY_CURRENT_USER".</param>
+        <param name="valueName">The name of the name/value pair.</param>
+        <param name="value">The value to be stored.</param>
+        <param name="valueKind">The registry data type to use when storing the data.</param>
+        <summary>Sets the name/value pair on the specified registry key, using the specified registry data type. If the specified key does not exist, it is created.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the `valueName` parameter is no longer restricted to a maximum of 255 characters; however, the `keyName` parameter continues have the 255-character restriction.  
+  
+ Because many values can be stored in each key in the registry, you must use the `valueName` parameter to specify the particular value you want to set.  
+  
+> [!NOTE]
+>  A registry key can contain one value that is not associated with any name. When this unnamed value is displayed in the registry editor, the string "(Default)" appears instead of a name. To set this unnamed value, specify either `null` or the empty string ("") for `valueName`.  
+  
+ If `valueName` does not exist in the key, it is created and the associated value is set to `value`.  
+  
+ If `keyName` specifies a subkey that does not exist, the subkey is created in the specified root. For example, in Visual Basic the string "HKEY_CURRENT_USER\MyTestKey" creates the subkey "MyTestKey" in the HKEY_CURRENT_USER root. The string "HKEY_CURRENT_USER\MyTestKey\Key2\Key3" creates the nested subkeys "MyTestKey", "MyTestKey\Key2", and "MyTestKey\Key2\Key3".  
+  
+ Valid root names include HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_CLASSES_ROOT, HKEY_USERS, HKEY_PERFORMANCE_DATA, HKEY_CURRENT_CONFIG, and HKEY_DYN_DATA.  
+  
+> [!NOTE]
+>  The <xref:Microsoft.Win32.Registry.SetValue%2A> method opens a registry key, sets the value, and closes the key each time it is called. If you need to modify a large number of values, the <xref:Microsoft.Win32.RegistryKey.SetValue%2A?displayProperty=fullName> method might provide better performance. The <xref:Microsoft.Win32.RegistryKey> class also provides methods that allow you to add an access control list (ACL) to a registry key, to test the data type of a value before retrieving it, and to delete keys.  
+  
+ If the type of the specified `value` does not match the specified `valueKind`, and the data cannot be converted, <xref:System.ArgumentException> is thrown. For example, you can store a <xref:System.Int64?displayProperty=fullName> as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>, but only if its value is less than the maximum value of a <xref:System.Int32?displayProperty=fullName>. You cannot store a single string value as a <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>.  
+  
+> [!NOTE]
+>  If boxed values are passed for <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName> or <xref:Microsoft.Win32.RegistryValueKind?displayProperty=fullName>, the conversion is done using the invariant culture.  
+  
+> [!NOTE]
+>  On Windows 98 and Windows Millennium Edition (Windows Me), the registry is not Unicode, and not all Unicode characters are valid for all code pages. A Unicode character that is invalid for the current code page is replaced by the best available match. No exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example stores values of several data types in an example key, creating the key as it does so, and then retrieves and displays the values. The example demonstrates storing and retrieving the default (nameless) name/value pair, and the use of `defaultValue` when a name/value pair does not exist.  
+  
+ [!code-cpp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="keyName" /> does not begin with a valid registry root.  
+  
+ -or-  
+  
+ <paramref name="keyName" /> is longer than the maximum length allowed (255 characters).  
+  
+ -or-  
+  
+ The type of <paramref name="value" /> did not match the registry data type specified by <paramref name="valueKind" />, therefore the data could not be converted properly.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <see cref="T:Microsoft.Win32.RegistryKey" /> is read-only, and thus cannot be written to; for example, it is a root-level node, or the key has not been opened with write access.</exception>
+        <exception cref="T:System.Security.SecurityException">The user does not have the permissions required to create or modify registry keys.</exception>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Users">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.Win32.RegistryKey Users;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.Win32.RegistryKey Users" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.Registry.Users" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains information about the default user configuration. This field reads the Windows registry base key HKEY_USERS.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This key contains a branch for each user of the computer. The default configuration is supplied for new users on the local computer and for the default current user if the user has not changed preferences. Because Windows 98/ME also supports Registry.Users, applications can access the user-specific information the same way they do under Windows 2000. Each user's information is stored in a separate file, which can be stored locally or on a network server. Windows 98/ME can copy this file to the user's current system so that settings can move from one computer to another with the user.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to retrieve the subkeys of this key, and prints their names to the screen. Use the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method to create an instance of the particular subkey of interest. You can then use other operations in <xref:Microsoft.Win32.RegistryKey> to manipulate that key.  
+  
+ [!code-cpp[Classic Registry.Users Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Registry.Users Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Registry.Users Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Registry.Users Example/CS/source.cs#1)]
+ [!code-vb[Classic Registry.Users Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Registry.Users Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the value of a name/value pair in a registry key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example stores values of several data types in an example key, creating the key as it does so, and then retrieves and displays the values. The example demonstrates storing and retrieving the default (nameless) name/value pair, and the use of `defaultValue` when a name/value pair does not exist.  
+  
+ [!code-cpp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.Registry.GetSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.Registry.GetSet/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

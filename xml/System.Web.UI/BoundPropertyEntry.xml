@@ -1,0 +1,265 @@
+<Type Name="BoundPropertyEntry" FullName="System.Web.UI.BoundPropertyEntry">
+  <TypeSignature Language="C#" Value="public class BoundPropertyEntry : System.Web.UI.PropertyEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BoundPropertyEntry extends System.Web.UI.PropertyEntry" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.BoundPropertyEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.PropertyEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a control property that is data-bound to an expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a page is parsed, the page parser retains information about an expression and the property it is bound to in a <xref:System.Web.UI.BoundPropertyEntry> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ControlID">
+      <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ControlID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of the control that contains this binding.</summary>
+        <value>A <see cref="T:System.String" /> with the <see cref="P:System.Web.UI.Control.ID" /> of the control that contains this binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlType">
+      <MemberSignature Language="C#" Value="public Type ControlType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ControlType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ControlType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the control that is being bound to at run time.</summary>
+        <value>The <see cref="T:System.Type" /> of the control bound by the expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value representing an expression during page parsing.</summary>
+        <value>A <see cref="T:System.String" /> that contains the expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionBuilder">
+      <MemberSignature Language="C#" Value="public System.Web.Compilation.ExpressionBuilder ExpressionBuilder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Compilation.ExpressionBuilder ExpressionBuilder" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ExpressionBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.ExpressionBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object used for evaluating the expression during page parsing.</summary>
+        <value>An <see cref="T:System.Web.Compilation.ExpressionBuilder" /> for evaluating this expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionPrefix">
+      <MemberSignature Language="C#" Value="public string ExpressionPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExpressionPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ExpressionPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the prefix for this expression.</summary>
+        <value>A <see cref="T:System.String" /> containing the prefix.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldName">
+      <MemberSignature Language="C#" Value="public string FieldName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FieldName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.FieldName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data field bound to by the expression.</summary>
+        <value>A <see cref="T:System.String" /> containing the data field name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatString">
+      <MemberSignature Language="C#" Value="public string FormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.FormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format specifier characters that indicate how a value is to be displayed.</summary>
+        <value>A <see cref="T:System.String" /> containing the format specifier characters that indicate how a value is to be displayed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Generated">
+      <MemberSignature Language="C#" Value="public bool Generated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Generated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.Generated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the expression was generated by the parser.</summary>
+        <value>
+          <see langword="true" /> if the expression was generated by the parser; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncoded">
+      <MemberSignature Language="C#" Value="public bool IsEncoded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncoded" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.IsEncoded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the value of the control property is encoded.</summary>
+        <value>
+          <see langword="true" /> if the value of the control property is encoded; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParsedExpressionData">
+      <MemberSignature Language="C#" Value="public object ParsedExpressionData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ParsedExpressionData" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ParsedExpressionData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data retrieved from an expression builder object during page parsing.</summary>
+        <value>An <see cref="T:System.Object" /> containing the data retrieved from an <see cref="T:System.Web.Compilation.ExpressionBuilder" /> after it has called <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnlyProperty">
+      <MemberSignature Language="C#" Value="public bool ReadOnlyProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnlyProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ReadOnlyProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the property contains a <see langword="set" /> accessor.</summary>
+        <value>
+          <see langword="true" /> if the property does not contain a <see langword="set" /> accessor, which indicates that the property is <see langword="ReadOnly" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoWayBound">
+      <MemberSignature Language="C#" Value="public bool TwoWayBound { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TwoWayBound" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.TwoWayBound" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the expression is bound to a control that allows for inserting, updating, or deleting data.</summary>
+        <value>
+          <see langword="true" /> if the expression is bound to a control that allows for inserting, updating, or deleting data; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSetAttribute">
+      <MemberSignature Language="C#" Value="public bool UseSetAttribute { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSetAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.UseSetAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a control's <see langword="SetAttribute" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="SetAttribute" /> method can be called; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

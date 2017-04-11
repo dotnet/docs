@@ -1,0 +1,92 @@
+<Type Name="IMultiTargetingSupportService" FullName="System.Activities.Presentation.Hosting.IMultiTargetingSupportService">
+  <TypeSignature Language="C#" Value="public interface IMultiTargetingSupportService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultiTargetingSupportService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.IMultiTargetingSupportService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides multi-targeting for [!INCLUDE[wfd1](~/includes/wfd1-md.md)] hosts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ *Multi-targeting* is the ability to find the right version of the loaded assembly that corresponds to the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] version of the current workflow project in [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+  
+ This interface is implemented and used internally by [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components to resolve [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies in a multi-targeting aware fashion within the [!INCLUDE[vs2010](~/includes/vs2010-md.md)] hosting application. The [!INCLUDE[wf1](~/includes/wf1-md.md)] designer components use the implementation of this interface only when additional assemblies need to be loaded dynamically into the editing `AppDomain`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetReflectionAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetReflectionAssembly (System.Reflection.AssemblyName targetAssemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetReflectionAssembly(class System.Reflection.AssemblyName targetAssemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetReflectionAssembly(System.Reflection.AssemblyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetAssemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="targetAssemblyName">The assembly name.</param>
+        <summary>Returns the currently loaded assembly given the assembly name.</summary>
+        <returns>The currently loaded assembly given the assembly name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRuntimeType">
+      <MemberSignature Language="C#" Value="public Type GetRuntimeType (Type reflectionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetRuntimeType(class System.Type reflectionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetRuntimeType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reflectionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="reflectionType">The type to get the runtime type of.</param>
+        <summary>Gets the runtime type that corresponds to the specified type.</summary>
+        <returns>The runtime type that corresponds to the specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedType">
+      <MemberSignature Language="C#" Value="public bool IsSupportedType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSupportedType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IMultiTargetingSupportService.IsSupportedType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to inspect.</param>
+        <summary>Returns a value that indicates whether the specified type is supported.</summary>
+        <returns>
+          <see langword="true" /> if the specified type is supported; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

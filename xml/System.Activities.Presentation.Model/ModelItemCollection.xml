@@ -1,0 +1,872 @@
+<Type Name="ModelItemCollection" FullName="System.Activities.Presentation.Model.ModelItemCollection">
+  <TypeSignature Language="C#" Value="public abstract class ModelItemCollection : System.Activities.Presentation.Model.ModelItem, System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt;, System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;, System.Collections.Generic.IList&lt;System.Activities.Presentation.Model.ModelItem&gt;, System.Collections.IList, System.Collections.Specialized.INotifyCollectionChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelItemCollection extends System.Activities.Presentation.Model.ModelItem implements class System.Collections.Generic.ICollection`1&lt;class System.Activities.Presentation.Model.ModelItem&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Model.ModelItem&gt;, class System.Collections.Generic.IList`1&lt;class System.Activities.Presentation.Model.ModelItem&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Specialized.INotifyCollectionChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.Model.ModelItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Model.ModelItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Model.ModelItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;System.Activities.Presentation.Model.ModelItem&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of model items that can be individually accessed by index.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If changes are made to the item collection during an editing scope, such as within a drag and drop operation, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> property will not be updated until the editing scope completes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ModelItemCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public abstract void Add (System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Add(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The model item to add to the collection.</param>
+        <summary>Adds a model item to the end of the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to add to the collection.</param>
+        <summary>Adds a model item to the end of the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <returns>Returns <paramref name="value" /> wrapped in a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object will be stored as a <xref:System.Activities.Presentation.Model.ModelItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public abstract void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionChanged">
+      <MemberSignature Language="C#" Value="public abstract event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Model.ModelItemCollection.CollectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the collection changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Contains(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The value to locate in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains an element that has the specified value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public abstract bool Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to locate in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains an element that has the specified value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public abstract void CopyTo (System.Activities.Presentation.Model.ModelItem[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Activities.Presentation.Model.ModelItem[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.CopyTo(System.Activities.Presentation.Model.ModelItem[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Activities.Presentation.Model.ModelItem[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the collection into.</param>
+        <param name="arrayIndex">The index in the array to start copying at.</param>
+        <summary>Copies the contents of the collection into the given array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="arrayIndex" /> is out of range, or there is not sufficient room in the array to hold the contents of the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the count of items in the collection.</summary>
+        <value>Returns the <see cref="T:System.Int32" /> count of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is not updated during an <xref:System.Activities.Presentation.EditingContext> session. If an object is added to the <xref:System.Activities.Presentation.Model.ModelItemCollection> during a session, the <xref:System.Activities.Presentation.Model.ModelItemCollection.Count%2A> value will not be updated until the session exits.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.Model.ModelItem&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public abstract int IndexOf (System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.IndexOf(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to locate in the collection.</param>
+        <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="item" /> within the entire <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />, if found; otherwise, –1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public abstract void Insert (int index, System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Insert(System.Int32,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">The model item to insert.</param>
+        <summary>Inserts an element into the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert.</param>
+        <summary>Inserts an element into the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> at the specified index.</summary>
+        <returns>Returns <paramref name="value" /> wrapped in a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="protected virtual bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the collection is a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns `true` if the collection is read-only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public abstract bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection cannot be modified; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="protected virtual bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the collection is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the collection.</param>
+        <summary>Gets or sets the item at the given index in the collection.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Model.ModelItemCollection.ItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the Item dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Item property represents all the items in the collection and is defined as type <xref:System.Activities.Presentation.Model.ModelItem>. The Item property points to the <xref:System.Activities.Presentation.Model.ModelItemCollection> itself.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public abstract void Move (int fromIndex, int toIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Move(int32 fromIndex, int32 toIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Move(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fromIndex" Type="System.Int32" />
+        <Parameter Name="toIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fromIndex">The index of the item to be moved before the move.</param>
+        <param name="toIndex">The index of the item after it is moved.</param>
+        <summary>Moves an item in the collection to a different index.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">Either <paramref name="fromIndex" /> or <paramref name="toIndex" /> is negative or greater than or equal to <see cref="P:System.Activities.Presentation.Model.ModelItemCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract bool Remove (System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Remove(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</param>
+        <summary>Removes the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> from the collection.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> was removed from the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract bool Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" />.</param>
+        <summary>Removes the value from the collection.</summary>
+        <returns>
+          <see langword="true" /> if the value was removed from the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public abstract void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item.</param>
+        <summary>Removes the item at the given index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="protected virtual object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>Returns an <see cref="T:System.Object" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>Returns an <see cref="T:System.Int32" /> value that is the number of elements contained in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of elements contained in the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>Returns an <see cref="T:System.Object" /> that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.Presentation.Model.ModelItemCollection/&lt;System-Collections-IEnumerable-GetEnumerator&gt;d__54))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to add to the collection.</param>
+        <summary>Adds a model item to the end of the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
+        <returns>Returns the index of the newly added object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the <see cref="T:System.Collections.IList" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to locate in the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</param>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> contains an element that has the specified value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
+        <returns>Returns the <see cref="T:System.Int32" /> index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The object to insert.</param>
+        <summary>Inserts an element into the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" /> at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IList" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IList" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Collections.IList" />.</param>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:System.Collections.IList" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table. If `value` is not found in the <xref:System.Collections.IList>, the <xref:System.Collections.IList> remains unchanged and no exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the <see cref="T:System.Collections.IList" /> item at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

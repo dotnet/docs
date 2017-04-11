@@ -1,0 +1,53 @@
+<Type Name="SoapServiceRoutingStyle" FullName="System.Web.Services.Protocols.SoapServiceRoutingStyle">
+  <TypeSignature Language="C#" Value="public enum SoapServiceRoutingStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapServiceRoutingStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapServiceRoutingStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a SOAP message is routed to the Web server hosting the XML Web service.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RequestElement">
+      <MemberSignature Language="C#" Value="RequestElement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapServiceRoutingStyle RequestElement = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.RequestElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapServiceRoutingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SOAP Message is routed based on the first child element following the <see langword="&lt;Body&gt;" /> XML element of the SOAP message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapAction">
+      <MemberSignature Language="C#" Value="SoapAction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapServiceRoutingStyle SoapAction = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapServiceRoutingStyle.SoapAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapServiceRoutingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SOAP message is routed based on the <see langword="SOAPAction" /> HTTP header.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,932 @@
+<Type Name="LenientGlobalObject" FullName="Microsoft.JScript.LenientGlobalObject">
+  <TypeSignature Language="C#" Value="public sealed class LenientGlobalObject : Microsoft.JScript.GlobalObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientGlobalObject extends Microsoft.JScript.GlobalObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientGlobalObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.GlobalObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores constructor function objects, data type information, and objects that represent the static methods of the <see cref="T:Microsoft.JScript.GlobalObject" /> class. The <see cref="T:Microsoft.JScript.LenientGlobalObject" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveXObject">
+      <MemberSignature Language="C#" Value="public object ActiveXObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveXObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.ActiveXObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Array">
+      <MemberSignature Language="C#" Value="public object Array { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Array" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Array" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ArrayConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="boolean">
+      <MemberSignature Language="C#" Value="public object boolean;" />
+      <MemberSignature Language="ILAsm" Value=".field public object boolean" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="boolean" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="public object Boolean { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Boolean" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Boolean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.BooleanConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="byte">
+      <MemberSignature Language="C#" Value="public object byte;" />
+      <MemberSignature Language="ILAsm" Value=".field public object byte" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.byte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="byte" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="char">
+      <MemberSignature Language="C#" Value="public object char;" />
+      <MemberSignature Language="ILAsm" Value=".field public object char" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.char" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="char" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public object Date { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Date" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Date" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientDateConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientDateConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="decimal">
+      <MemberSignature Language="C#" Value="public object decimal;" />
+      <MemberSignature Language="ILAsm" Value=".field public object decimal" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="decimal" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="decodeURI">
+      <MemberSignature Language="C#" Value="public object decodeURI;" />
+      <MemberSignature Language="ILAsm" Value=".field public object decodeURI" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decodeURI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="decodeURIComponent">
+      <MemberSignature Language="C#" Value="public object decodeURIComponent;" />
+      <MemberSignature Language="ILAsm" Value=".field public object decodeURIComponent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.decodeURIComponent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="double">
+      <MemberSignature Language="C#" Value="public object double;" />
+      <MemberSignature Language="ILAsm" Value=".field public object double" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="double" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="encodeURI">
+      <MemberSignature Language="C#" Value="public object encodeURI;" />
+      <MemberSignature Language="ILAsm" Value=".field public object encodeURI" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.encodeURI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="encodeURIComponent">
+      <MemberSignature Language="C#" Value="public object encodeURIComponent;" />
+      <MemberSignature Language="ILAsm" Value=".field public object encodeURIComponent" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.encodeURIComponent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enumerator">
+      <MemberSignature Language="C#" Value="public object Enumerator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Enumerator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Enumerator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public object Error { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Error" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Error" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="escape">
+      <MemberSignature Language="C#" Value="public object escape;" />
+      <MemberSignature Language="ILAsm" Value=".field public object escape" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.escape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.NotRecommended("escape")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="eval">
+      <MemberSignature Language="C#" Value="public object eval;" />
+      <MemberSignature Language="ILAsm" Value=".field public object eval" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.eval" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvalError">
+      <MemberSignature Language="C#" Value="public object EvalError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object EvalError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.EvalError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="float">
+      <MemberSignature Language="C#" Value="public object float;" />
+      <MemberSignature Language="ILAsm" Value=".field public object float" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.float" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="float" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Function">
+      <MemberSignature Language="C#" Value="public object Function { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Function" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Function" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.FunctionConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public object GetObject;" />
+      <MemberSignature Language="ILAsm" Value=".field public object GetObject" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.GetObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Infinity">
+      <MemberSignature Language="C#" Value="public object Infinity;" />
+      <MemberSignature Language="ILAsm" Value=".field public object Infinity" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.Infinity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents positive infinity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="int">
+      <MemberSignature Language="C#" Value="public object int;" />
+      <MemberSignature Language="ILAsm" Value=".field public object int" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.int" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="int" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isFinite">
+      <MemberSignature Language="C#" Value="public object isFinite;" />
+      <MemberSignature Language="ILAsm" Value=".field public object isFinite" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.isFinite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isNaN">
+      <MemberSignature Language="C#" Value="public object isNaN;" />
+      <MemberSignature Language="ILAsm" Value=".field public object isNaN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.isNaN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="long">
+      <MemberSignature Language="C#" Value="public object long;" />
+      <MemberSignature Language="ILAsm" Value=".field public object long" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.long" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="long" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Math">
+      <MemberSignature Language="C#" Value="public object Math { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Math" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Math" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NaN">
+      <MemberSignature Language="C#" Value="public object NaN;" />
+      <MemberSignature Language="ILAsm" Value=".field public object NaN" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.NaN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a value that is not a number (NaN).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="public object Number { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Number" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Number" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.NumberConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public object Object { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Object" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.Object" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ObjectConstructor" /> constructor function object.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parseFloat">
+      <MemberSignature Language="C#" Value="public object parseFloat;" />
+      <MemberSignature Language="ILAsm" Value=".field public object parseFloat" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.parseFloat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parseInt">
+      <MemberSignature Language="C#" Value="public object parseInt;" />
+      <MemberSignature Language="ILAsm" Value=".field public object parseInt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.parseInt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeError">
+      <MemberSignature Language="C#" Value="public object RangeError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RangeError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.RangeError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceError">
+      <MemberSignature Language="C#" Value="public object ReferenceError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReferenceError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.ReferenceError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegExp">
+      <MemberSignature Language="C#" Value="public object RegExp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RegExp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.RegExp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.RegExpConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sbyte">
+      <MemberSignature Language="C#" Value="public object sbyte;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sbyte" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.sbyte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="sbyte" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptEngine">
+      <MemberSignature Language="C#" Value="public object ScriptEngine;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ScriptEngine" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptEngineBuildVersion">
+      <MemberSignature Language="C#" Value="public object ScriptEngineBuildVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ScriptEngineBuildVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineBuildVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptEngineMajorVersion">
+      <MemberSignature Language="C#" Value="public object ScriptEngineMajorVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ScriptEngineMajorVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineMajorVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptEngineMinorVersion">
+      <MemberSignature Language="C#" Value="public object ScriptEngineMinorVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ScriptEngineMinorVersion" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ScriptEngineMinorVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="short">
+      <MemberSignature Language="C#" Value="public object short;" />
+      <MemberSignature Language="ILAsm" Value=".field public object short" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.short" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="short" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="public object String { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object String" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.String" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientStringConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.LenientStringConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyntaxError">
+      <MemberSignature Language="C#" Value="public object SyntaxError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyntaxError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.SyntaxError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeError">
+      <MemberSignature Language="C#" Value="public object TypeError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TypeError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.TypeError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="uint">
+      <MemberSignature Language="C#" Value="public object uint;" />
+      <MemberSignature Language="ILAsm" Value=".field public object uint" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.uint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="uint" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ulong">
+      <MemberSignature Language="C#" Value="public object ulong;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ulong" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ulong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="ulong" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="undefined">
+      <MemberSignature Language="C#" Value="public object undefined;" />
+      <MemberSignature Language="ILAsm" Value=".field public object undefined" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.undefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a value that is null.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="unescape">
+      <MemberSignature Language="C#" Value="public object unescape;" />
+      <MemberSignature Language="ILAsm" Value=".field public object unescape" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.unescape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.NotRecommended("unescape")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URIError">
+      <MemberSignature Language="C#" Value="public object URIError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object URIError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.URIError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
+        <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ushort">
+      <MemberSignature Language="C#" Value="public object ushort;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ushort" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.ushort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the JScript <see langword="ushort" /> data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VBArray">
+      <MemberSignature Language="C#" Value="public object VBArray { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object VBArray" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.LenientGlobalObject.VBArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> constructor function object.</summary>
+        <value>A <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="void">
+      <MemberSignature Language="C#" Value="public object void;" />
+      <MemberSignature Language="ILAsm" Value=".field public object void" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientGlobalObject.void" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the managed type that corresponds to the return value of a function that does not return a value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

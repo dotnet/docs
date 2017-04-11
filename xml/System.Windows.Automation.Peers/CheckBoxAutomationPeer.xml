@@ -1,0 +1,75 @@
+<Type Name="CheckBoxAutomationPeer" FullName="System.Windows.Automation.Peers.CheckBoxAutomationPeer">
+  <TypeSignature Language="C#" Value="public class CheckBoxAutomationPeer : System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBoxAutomationPeer extends System.Windows.Automation.Peers.ToggleButtonAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ToggleButtonAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.CheckBox" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CheckBoxAutomationPeer (System.Windows.Controls.CheckBox owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.CheckBox owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CheckBoxAutomationPeer.#ctor(System.Windows.Controls.CheckBox)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.CheckBox" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Controls.CheckBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CheckBoxAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationControlType" /> for the element associated with this <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.CheckBox" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CheckBoxAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the element associated with this <see cref="T:System.Windows.Automation.Peers.CheckBoxAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "CheckBox".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

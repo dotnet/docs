@@ -1,0 +1,221 @@
+<Type Name="CallInfo" FullName="System.Dynamic.CallInfo">
+  <TypeSignature Language="C#" Value="public sealed class CallInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CallInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Dynamic.CallInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes arguments in the dynamic binding process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `ArgumentCount` - all inclusive number of arguments.  
+  
+ `ArgumentNames` - names for those arguments that are named.  
+  
+ Argument names match to the argument values in left to right order and last name corresponds to the last argument.  
+  
+   
+  
+## Examples  
+ `SampleMethod(arg1, arg2, arg3, name1 = arg4, name2 = arg5, name3 = arg6)` will correspond to `ArgumentCount: 6 ArgumentNames: {"name1", "name2", "name3"}`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallInfo (int argCount, System.Collections.Generic.IEnumerable&lt;string&gt; argNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 argCount, class System.Collections.Generic.IEnumerable`1&lt;string&gt; argNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="argCount" Type="System.Int32" />
+        <Parameter Name="argNames" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="argCount">The number of arguments.</param>
+        <param name="argNames">The argument names.</param>
+        <summary>Creates a new CallInfo that represents arguments in the dynamic binding process.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallInfo (int argCount, string[] argNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 argCount, string[] argNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.#ctor(System.Int32,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="argCount" Type="System.Int32" />
+        <Parameter Name="argNames" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="argCount">The number of arguments.</param>
+        <param name="argNames">The argument names.</param>
+        <summary>Creates a new <c>PositionalArgumentInfo</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgumentCount">
+      <MemberSignature Language="C#" Value="public int ArgumentCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ArgumentCount" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.CallInfo.ArgumentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of arguments.</summary>
+        <value>The number of arguments.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgumentNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; ArgumentNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; ArgumentNames" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.CallInfo.ArgumentNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument names.</summary>
+        <value>The read-only collection of argument names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The instance of <see cref="T:System.Dynamic.CallInfo" /> to compare with the current instance.</param>
+        <summary>Determines whether the specified CallInfo instance is considered equal to the current.</summary>
+        <returns>true if the specified instance is equal to the current one otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Dynamic.CallInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the current <see cref="T:System.Dynamic.CallInfo" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Dynamic.CallInfo" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

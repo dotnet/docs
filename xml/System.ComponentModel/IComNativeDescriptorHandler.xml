@@ -1,0 +1,481 @@
+<Type Name="IComNativeDescriptorHandler" FullName="System.ComponentModel.IComNativeDescriptorHandler">
+  <TypeSignature Language="C#" Value="public interface IComNativeDescriptorHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComNativeDescriptorHandler" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IComNativeDescriptorHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This interface has been deprecated. Add a TypeDescriptionProvider to handle type TypeDescriptor.ComObjectType instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a top-level mapping layer between a COM object and a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. Add a <xref:System.ComponentModel.TypeDescriptionProvider> to handle a <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A> instead.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAttributes">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.AttributeCollection GetAttributes (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection GetAttributes(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetAttributes(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get attributes for.</param>
+        <summary>Gets the attributes for the specified component.</summary>
+        <returns>A collection of attributes for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassName">
+      <MemberSignature Language="C#" Value="public string GetClassName (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetClassName(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetClassName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the class name for.</param>
+        <summary>Gets the class name for the specified component.</summary>
+        <returns>The name of the class that corresponds with <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConverter">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.TypeConverter GetConverter (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeConverter GetConverter(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetConverter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the <see cref="T:System.ComponentModel.TypeConverter" /> for.</param>
+        <summary>Gets the type converter for the specified component.</summary>
+        <returns>The <see cref="T:System.ComponentModel.TypeConverter" /> for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultEvent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.EventDescriptor GetDefaultEvent (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor GetDefaultEvent(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetDefaultEvent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the default event for.</param>
+        <summary>Gets the default event for the specified component.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents <paramref name="component" />'s default event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptor GetDefaultProperty (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetDefaultProperty(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the default property for.</param>
+        <summary>Gets the default property for the specified component.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents <paramref name="component" />'s default property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditor">
+      <MemberSignature Language="C#" Value="public object GetEditor (object component, Type baseEditorType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditor(object component, class System.Type baseEditorType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetEditor(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="baseEditorType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the editor for.</param>
+        <param name="baseEditorType">The base type of the editor for <c>component</c>.</param>
+        <summary>Gets the editor for the specified component.</summary>
+        <returns>The editor for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvents">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.EventDescriptorCollection GetEvents (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetEvents(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get events for.</param>
+        <summary>Gets the events for the specified component.</summary>
+        <returns>A collection of event descriptors for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvents">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.EventDescriptorCollection GetEvents (object component, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection GetEvents(object component, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetEvents(System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get events for.</param>
+        <param name="attributes">The attributes used to filter events.</param>
+        <summary>Gets the events with the specified attributes for the specified component.</summary>
+        <returns>A collection of event descriptors for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public string GetName (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get the name of.</param>
+        <summary>Gets the name of the specified component.</summary>
+        <returns>The name of <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetProperties(System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to get events for.</param>
+        <param name="attributes">The attributes used to filter properties.</param>
+        <summary>Gets the properties with the specified attributes for the specified component.</summary>
+        <returns>A collection of property descriptors for <paramref name="component" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetPropertyValue (object component, int dispid, ref bool success);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, int32 dispid, bool success) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetPropertyValue(System.Object,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="dispid" Type="System.Int32" />
+        <Parameter Name="success" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="component">The object to which the property belongs.</param>
+        <param name="dispid">The dispatch identifier.</param>
+        <param name="success">A <see cref="T:System.Boolean" />, passed by reference, that represents whether the property was retrieved.</param>
+        <summary>Gets the value of the property that has the specified dispatch identifier.</summary>
+        <returns>The value of the property that has the specified dispatch identifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetPropertyValue (object component, string propertyName, ref bool success);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object component, string propertyName, bool success) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IComNativeDescriptorHandler.GetPropertyValue(System.Object,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="success" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="component">The object to which the property belongs.</param>
+        <param name="propertyName">The name of the property.</param>
+        <param name="success">A <see cref="T:System.Boolean" />, passed by reference, that represents whether the property was retrieved.</param>
+        <summary>Gets the value of the property that has the specified name.</summary>
+        <returns>The value of the property that has the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This API is now obsolete. The non-obsolete alternative is <xref:System.ComponentModel.TypeDescriptor.ComObjectType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

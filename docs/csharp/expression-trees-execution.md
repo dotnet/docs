@@ -61,7 +61,7 @@ generated delegate.
 You would convert an expression into a delegate using the following
 code:
 
-```cs
+```csharp
 Expression<Func<int>> add = () => 1 + 2;
 var func = add.Compile(); // Create Delegate
 var answer = func(); // Invoke Delegate
@@ -119,7 +119,7 @@ is still held by the expression tree.
 For example, this code works fine, because `int` does not implement
 `IDisposable`:
 
-```cs
+```csharp
 private static Func<int, int> CreateBoundFunc()
 {
     var constant = 5; // constant is captured by the expression tree
@@ -136,7 +136,7 @@ by `CreateBoundFunc` executes.
 However, consider this (rather contrived) class that implements
 `IDisposable`:
 
-```cs
+```csharp
 public class Resource : IDisposable
 {
     private bool isDisposed = false;
@@ -161,7 +161,7 @@ If you use it in an expression as shown below, you'll get an
 `ObjectDisposedException` when you execute the code referenced
 by the `Resource.Argument` property:
 
-```cs
+```csharp
 private static Func<int, int> CreateBoundResource()
 {
     using (var constant = new Resource()) // constant is captured by the expression tree

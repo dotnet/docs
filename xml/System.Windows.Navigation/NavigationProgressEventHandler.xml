@@ -1,0 +1,40 @@
+<Type Name="NavigationProgressEventHandler" FullName="System.Windows.Navigation.NavigationProgressEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void NavigationProgressEventHandler(object sender, NavigationProgressEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigationProgressEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationProgressEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Navigation.NavigationProgressEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle <see langword="NavigationProgress" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler is used for the following events:  
+  
+-   <xref:System.Windows.Navigation.NavigationService.NavigationProgress?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow.NavigationProgress?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.Frame.NavigationProgress?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Application.NavigationProgress?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

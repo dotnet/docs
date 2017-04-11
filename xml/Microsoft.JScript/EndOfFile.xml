@@ -1,0 +1,18 @@
+<Type Name="EndOfFile" FullName="Microsoft.JScript.EndOfFile">
+  <TypeSignature Language="C#" Value="public class EndOfFile : Microsoft.JScript.ParserException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EndOfFile extends Microsoft.JScript.ParserException" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EndOfFile" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ParserException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used by the JScript parser to represent reaching the end of a file as an exception. Code can throw this error to stop the parser.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

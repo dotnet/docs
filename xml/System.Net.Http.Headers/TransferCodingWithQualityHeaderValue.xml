@@ -1,0 +1,197 @@
+<Type Name="TransferCodingWithQualityHeaderValue" FullName="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue">
+  <TypeSignature Language="C#" Value="public sealed class TransferCodingWithQualityHeaderValue : System.Net.Http.Headers.TransferCodingHeaderValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransferCodingWithQualityHeaderValue extends System.Net.Http.Headers.TransferCodingHeaderValue" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.Http.Headers.TransferCodingHeaderValue</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an Accept-Encoding header value.with optional quality factor.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue> class provides support for the Accept-Encoding header as defined in [RFC 2616](http://go.microsoft.com/fwlink/?LinkID=241642) by the IETF.  
+  
+ Quality factors allow a user agent to indicate the relative degree of preference for an Accept-Encoding header value, using the qvalue scale from 0 to 1. The default value is q=1.  
+  
+ This type derives from <xref:System.Net.Http.Headers.TransferCodingHeaderValue>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferCodingWithQualityHeaderValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string used to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransferCodingWithQualityHeaderValue (string value, double quality);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, float64 quality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="quality" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string used to initialize the new instance.</param>
+        <param name="quality">A value for the quality factor.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.TransferCodingWithQualityHeaderValue Parse (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.TransferCodingWithQualityHeaderValue Parse(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.TransferCodingWithQualityHeaderValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">A string that represents transfer-coding value information.</param>
+        <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</summary>
+        <returns>A <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is a <see langword="null" /> reference.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is not valid transfer-coding with quality header value information.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Quality">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Quality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Quality" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the quality factor from the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />.</summary>
+        <value>The quality factor from the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.System#ICloneable#Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</summary>
+        <returns>A copy of the current instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.TransferCodingWithQualityHeaderValue parsedValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, class System.Net.Http.Headers.TransferCodingWithQualityHeaderValue parsedValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="parsedValue" Type="System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to validate.</param>
+        <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> version of the string.</param>
+        <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> information.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> information; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

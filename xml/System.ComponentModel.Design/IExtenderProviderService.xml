@@ -1,0 +1,103 @@
+<Type Name="IExtenderProviderService" FullName="System.ComponentModel.Design.IExtenderProviderService">
+  <TypeSignature Language="C#" Value="public interface IExtenderProviderService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtenderProviderService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IExtenderProviderService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for adding and removing extender providers at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, only components that have been added to a container offer extender providers. The <xref:System.ComponentModel.Design.IExtenderProviderService> allows you to extend this capability to objects that are not in the container.  
+  
+   
+  
+## Examples  
+ The following example demosntrates using the <xref:System.ComponentModel.Design.IExtenderProviderService> from a designer to add and remove an <xref:System.ComponentModel.IExtenderProvider> implementation.  
+  
+ [!code-cpp[ExtenderServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ExtenderServiceExample/CPP/extenderservicedesigner.cpp#1)]
+ [!code-csharp[ExtenderServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ExtenderServiceExample/CS/extenderservicedesigner.cs#1)]
+ [!code-vb[ExtenderServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ExtenderServiceExample/VB/extenderservicedesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddExtenderProvider">
+      <MemberSignature Language="C#" Value="public void AddExtenderProvider (System.ComponentModel.IExtenderProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddExtenderProvider(class System.ComponentModel.IExtenderProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.AddExtenderProvider(System.ComponentModel.IExtenderProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.ComponentModel.IExtenderProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The extender provider to add.</param>
+        <summary>Adds the specified extender provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows objects besides components to add extender providers to the design time set of extender providers. All properties that are displayed from these extender providers are marked as design time only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveExtenderProvider">
+      <MemberSignature Language="C#" Value="public void RemoveExtenderProvider (System.ComponentModel.IExtenderProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveExtenderProvider(class System.ComponentModel.IExtenderProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.RemoveExtenderProvider(System.ComponentModel.IExtenderProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.ComponentModel.IExtenderProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The extender provider to remove.</param>
+        <summary>Removes the specified extender provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface allows objects besides components to add extender providers to the design-time set of extender providers. All properties that are displayed from these extender providers are marked as design time only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

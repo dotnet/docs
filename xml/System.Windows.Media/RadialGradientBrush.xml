@@ -1,0 +1,312 @@
+<Type Name="RadialGradientBrush" FullName="System.Windows.Media.RadialGradientBrush">
+  <TypeSignature Language="C#" Value="public sealed class RadialGradientBrush : System.Windows.Media.GradientBrush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RadialGradientBrush extends System.Windows.Media.GradientBrush" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.RadialGradientBrush" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.GradientBrush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Paints an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.RadialGradientBrush> is similar in programming model to the <xref:System.Windows.Media.LinearGradientBrush>. However, the linear gradient has a start and an end point to define the gradient vector, while the radial gradient has a circle, along with a focal point, to define the gradient behavior. The circle defines the end point of the gradient. In other words, a gradient stop at 1.0 defines the color at the circle's circumference. The focal point defines the center of the gradient. A gradient stop at 0.0 defines the color at the focal point.  
+  
+ The following image shows a rectangle filled with a radial gradient. The radial gradient that goes from white to gray. The outside circle represents the gradient circle while the red dot denotes the focal point. This gradient has its <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> set to <xref:System.Windows.Media.GradientSpreadMethod>.  
+  
+ ![A radial gradient with highlighted components](~/add/media/art-radialgradientfocalpoint.jpg "A radial gradient with highlighted components")  
+Radial gradient with a highlighted focal point  
+  
+> [!NOTE]
+>  <xref:System.Windows.Media.RadialGradientBrush> objects are rendered using hardware acceleration on <xref:System.Windows.Media.RenderCapability.Tier%2A> 2 systems. For more information about hardware tiers, see [Graphics Rendering Tiers](~/docs/framework/wpf/advanced/graphics-rendering-tiers.md).  
+  
+## Freezable Features  
+ Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.RadialGradientBrush> class provides several special features: <xref:System.Windows.Media.RadialGradientBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadialGradientBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RadialGradientBrush" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadialGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.#ctor(System.Windows.Media.GradientStopCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStopCollection" Type="System.Windows.Media.GradientStopCollection" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStopCollection">The gradient stops to set on this brush.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RadialGradientBrush" /> class that has the specified gradient stops.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadialGradientBrush (System.Windows.Media.Color startColor, System.Windows.Media.Color endColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color startColor, valuetype System.Windows.Media.Color endColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startColor" Type="System.Windows.Media.Color" />
+        <Parameter Name="endColor" Type="System.Windows.Media.Color" />
+      </Parameters>
+      <Docs>
+        <param name="startColor">Color value at the focus (<see cref="P:System.Windows.Media.RadialGradientBrush.GradientOrigin" />) of the radial gradient.</param>
+        <param name="endColor">Color value at the outer edge of the radial gradient.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.RadialGradientBrush" /> class with the specified start and stop colors.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="public System.Windows.Point Center { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Center" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RadialGradientBrush.Center" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the center of the outermost circle of the radial gradient.</summary>
+        <value>The two-dimensional point located at the center of the radial gradient.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default central point location of the gradient circle is (0.5, 0.5).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RadialGradientBrush.CenterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RadialGradientBrush.Center" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.RadialGradientBrush Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RadialGradientBrush Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.RadialGradientBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.RadialGradientBrush" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.RadialGradientBrush CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.RadialGradientBrush CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.RadialGradientBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.RadialGradientBrush" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.RadialGradientBrush.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientOrigin">
+      <MemberSignature Language="C#" Value="public System.Windows.Point GradientOrigin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point GradientOrigin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RadialGradientBrush.GradientOrigin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the two-dimensional focal point that defines the beginning of the gradient.</summary>
+        <value>The location of the two-dimensional focal point of the gradient. The default is (0.5, 0.5).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientOriginProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GradientOriginProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GradientOriginProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RadialGradientBrush.GradientOriginProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RadialGradientBrush.GradientOrigin" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiusX">
+      <MemberSignature Language="C#" Value="public double RadiusX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RadiusX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RadialGradientBrush.RadiusX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal radius of the outermost circle of the radial gradient.</summary>
+        <value>The horizontal radius of the outermost circle of the radial gradient. The default is 0.5.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiusXProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RadiusXProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RadiusXProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RadialGradientBrush.RadiusXProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RadialGradientBrush.RadiusX" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiusY">
+      <MemberSignature Language="C#" Value="public double RadiusY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RadiusY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.RadialGradientBrush.RadiusY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the vertical radius of the outermost circle of a radial gradient.</summary>
+        <value>The vertical radius of the outermost circle of a radial gradient. The default is 0.5.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadiusYProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RadiusYProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RadiusYProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.RadialGradientBrush.RadiusYProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.RadialGradientBrush.RadiusY" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

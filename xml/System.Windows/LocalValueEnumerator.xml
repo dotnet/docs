@@ -1,0 +1,262 @@
+<Type Name="LocalValueEnumerator" FullName="System.Windows.LocalValueEnumerator">
+  <TypeSignature Language="C#" Value="public struct LocalValueEnumerator : System.Collections.IEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalValueEnumerator extends System.ValueType implements class System.Collections.IEnumerator" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.LocalValueEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides enumeration support for the local values of any dependency properties that exist on a <see cref="T:System.Windows.DependencyObject" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+  
+ A <xref:System.Windows.LocalValueEnumerator> is returned by the <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> method and implements the <xref:System.Collections.IEnumerator> interface. A public <xref:System.Windows.LocalValueEnumerator> constructor does not exist; therefore, you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> to obtain an instance of this class.  
+  
+ Do not modify local values (by calling <xref:System.Windows.DependencyObject.SetValue%2A> or <xref:System.Windows.DependencyObject.ClearValue%2A>) while enumerating local values. If you change or clear the property values based on properties that are returned by the enumerator, the change or clear operations do not invalidate the enumerator collection, as is the case for many <xref:System.Collections.IEnumerator> implementations. Also, the enumerator view is a snapshot. A change to the collection is not guaranteed to be thread safe, and no lock is enforced. Other threads still have free access to the local values from a context other than the enumerator.  
+  
+ Use this type if you have operations in your class where it is important to know whether a property's value came from a local value. For example, use this type in an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> implementation, or where you want to query the metadata on all locally set properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items that are represented in the collection.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not a defined member of <xref:System.Collections.IEnumerator> but is provided as a convenience.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.LocalValueEntry Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LocalValueEntry Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.LocalValueEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current element in the collection.</summary>
+        <value>The current <see cref="T:System.Windows.LocalValueEntry" /> in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This generally accessible version of the property relies on a snapshot of the collection that is taken at creation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Windows.LocalValueEnumerator" /> to compare with the current <see cref="T:System.Windows.LocalValueEnumerator" />.</param>
+        <summary>Determines whether the provided <see cref="T:System.Windows.LocalValueEnumerator" /> is equivalent to this <see cref="T:System.Windows.LocalValueEnumerator" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the current <see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation supports reference equality only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for the current <see cref="T:System.Windows.LocalValueEnumerator" />.</summary>
+        <returns>A 32-bit integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the enumerator to the next element of the collection.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.LocalValueEnumerator obj1, System.Windows.LocalValueEnumerator obj2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.LocalValueEnumerator obj1, valuetype System.Windows.LocalValueEnumerator obj2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.op_Equality(System.Windows.LocalValueEnumerator,System.Windows.LocalValueEnumerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj1" Type="System.Windows.LocalValueEnumerator" />
+        <Parameter Name="obj2" Type="System.Windows.LocalValueEnumerator" />
+      </Parameters>
+      <Docs>
+        <param name="obj1">The first object to compare.</param>
+        <param name="obj2">The second object to compare.</param>
+        <summary>Compares whether two specified <see cref="T:System.Windows.LocalValueEnumerator" /> objects are the same.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="obj1" /><see cref="T:System.Windows.LocalValueEnumerator" /> is equal to the <paramref name="obj2" /><see cref="T:System.Windows.LocalValueEnumerator" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation supports reference equality only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.LocalValueEnumerator obj1, System.Windows.LocalValueEnumerator obj2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.LocalValueEnumerator obj1, valuetype System.Windows.LocalValueEnumerator obj2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.op_Inequality(System.Windows.LocalValueEnumerator,System.Windows.LocalValueEnumerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj1" Type="System.Windows.LocalValueEnumerator" />
+        <Parameter Name="obj2" Type="System.Windows.LocalValueEnumerator" />
+      </Parameters>
+      <Docs>
+        <param name="obj1">The first object to compare.</param>
+        <param name="obj2">The second object to compare.</param>
+        <summary>Compares two specified <see cref="T:System.Windows.LocalValueEnumerator" /> objects to determine whether they are not the same.</summary>
+        <returns>
+          <see langword="true" /> if the instances are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation supports reference equality only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LocalValueEnumerator.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerator.Current">
+      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.LocalValueEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this members, see <see cref="P:System.Collections.IEnumerator.Current" />.</summary>
+        <value>The current element in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.LocalValueEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

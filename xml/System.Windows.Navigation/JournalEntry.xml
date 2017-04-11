@@ -1,0 +1,323 @@
+<Type Name="JournalEntry" FullName="System.Windows.Navigation.JournalEntry">
+  <TypeSignature Language="C#" Value="public class JournalEntry : System.Windows.DependencyObject, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit JournalEntry extends System.Windows.DependencyObject implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalEntry" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an entry in either back or forward navigation history.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] implements a navigation history service that stores one entry for each piece of content that has been previously navigated to, just like navigation history in [!INCLUDE[TLA#tla_ie](~/includes/tlasharptla-ie-md.md)]. Navigation history comprises two stacks, one that remembers back navigation history, and one that remembers forward navigation history.  
+  
+ An entry for the current item is added to back navigation history when a forward navigation occurs. This occurs in the following situations:  
+  
+-   The `Navigate` method is called (<xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.Navigate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.Navigate%2A?displayProperty=fullName>).  
+  
+-   The `GoForward` method is called (<xref:System.Windows.Navigation.NavigationService.GoForward%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.GoForward%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.GoForward%2A?displayProperty=fullName>).  
+  
+-   The forward button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
+  
+ Likewise, an entry for the current item is added to forward navigation history before a back navigation occurs, which happens when:  
+  
+-   The `GoBack` method is called (<xref:System.Windows.Navigation.NavigationService.GoBack%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.GoBack%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.GoBack%2A?displayProperty=fullName>).  
+  
+-   The back button on the navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that is displayed from the current navigator ([!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>).  
+  
+ Each entry in back and forward navigation history is an instance of the <xref:System.Windows.Navigation.JournalEntry> class.  
+  
+ Each <xref:System.Windows.Navigation.JournalEntry> object encapsulates information about a particular navigation, including a name for the entry (<xref:System.Windows.Navigation.JournalEntry.Name%2A>), whether the entry is kept alive (<xref:System.Windows.Navigation.JournalEntry.KeepAlive%2A>) and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the content that is navigated to (<xref:System.Windows.Navigation.JournalEntry.Source%2A>).  
+  
+ You can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects in back navigation history by enumerating the <xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=fullName> properties. For forward navigation history, you can retrieve all the <xref:System.Windows.Navigation.JournalEntry> objects by enumerating the <xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=fullName> or <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=fullName> properties.  
+  
+ If you need to remove the most recent <xref:System.Windows.Navigation.JournalEntry> object from back navigation history, to prevent navigation to it, for example, you can call the `RemoveBackEntry` method (<xref:System.Windows.Navigation.NavigationService.RemoveBackEntry%2A?displayProperty=fullName>, <xref:System.Windows.Navigation.NavigationWindow.RemoveBackEntry%2A?displayProperty=fullName>, <xref:System.Windows.Controls.Frame.RemoveBackEntry%2A?displayProperty=fullName>), which removes the <xref:System.Windows.Navigation.JournalEntry> object and returns a reference to it.  
+  
+ You cannot add <xref:System.Windows.Navigation.JournalEntry> objects to navigation history, however, because you can neither instantiate nor derive from <xref:System.Windows.Navigation.JournalEntry>, and because no type implements a member to do so. However, you can add custom <xref:System.Windows.Navigation.CustomContentState> objects to back navigation history by calling the `AddBackEntry` method (<xref:System.Windows.Navigation.NavigationService.AddBackEntry%2A>, <xref:System.Windows.Navigation.NavigationWindow.AddBackEntry%2A>, <xref:System.Windows.Controls.Frame.AddBackEntry%2A>); <xref:System.Windows.Navigation.NavigationService> adds the <xref:System.Windows.Navigation.CustomContentState> object to an internally-created <xref:System.Windows.Navigation.JournalEntry> object, which is then added to the back navigation history.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the most recent <xref:System.Windows.Navigation.JournalEntry> object from the back navigation stack to get the <xref:System.Windows.Navigation.JournalEntry.Name%2A> and <xref:System.Windows.Navigation.JournalEntry.Source%2A> property values.  
+  
+ [!code-csharp[JournalEntrySnippets#GetJournalEntryCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntrySnippets/CSharp/DatePage.xaml.cs#getjournalentrycodebehind)]
+ [!code-vb[JournalEntrySnippets#GetJournalEntryCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/JournalEntrySnippets/visualbasic/datepage.xaml.vb#getjournalentrycodebehind)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected JournalEntry (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The serialization information.</param>
+        <param name="context">The streaming context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.JournalEntry" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomContentState">
+      <MemberSignature Language="C#" Value="public System.Windows.Navigation.CustomContentState CustomContentState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Navigation.CustomContentState CustomContentState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.CustomContentState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.CustomContentState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Navigation.CustomContentState" /> object that is associated with this journal entry.</summary>
+        <value>The <see cref="T:System.Windows.Navigation.CustomContentState" /> object that is associated with this journal entry. If one is not associated, <see langword="null" /> is returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeepAlive">
+      <MemberSignature Language="C#" Value="public static bool GetKeepAlive (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetKeepAlive(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetKeepAlive(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The element from which to get the attached property value.</param>
+        <summary>Returns the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the journal entry for the specified element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public static string GetName (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetName(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The element from which to get the attached property value.</param>
+        <summary>Gets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</summary>
+        <returns>The <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the journal entry for the specified element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The data that is required to serialize the target object.</param>
+        <param name="context">The streaming context.</param>
+        <summary>Called when this object is serialized.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAliveProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeepAliveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepAliveProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntry.KeepAliveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the journal entry.</summary>
+        <value>The name of the journal entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Content hosted by <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], display navigation [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that allows users to navigate through back and forward navigation history. The text that is displayed for each entry in navigation history depends on which of the following pieces of data are used to automatically construct a navigation history entry name, in order of precedence:  
+  
+-   The attached <xref:System.Windows.Navigation.JournalEntry.Name%2A> attribute.  
+  
+-   <xref:System.Windows.Controls.Page.Title%2A>.  
+  
+-   <xref:System.Windows.Controls.Page.WindowTitle%2A> and the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page  
+  
+-   The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the current page.  
+  
+<a name="xamlAttributeUsage_Name"></a>   
+## XAML Attribute Usage  
+ \<*object* **JournalEntry.Name**="<xref:System.String>"/>  
+  
+<a name="dependencyPropertyInfo_Name"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Navigation.JournalEntry.NameProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Navigation.JournalEntry.Name%2A> property for a <xref:System.Windows.Controls.Page> from markup, with a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attached property usage.  
+  
+ [!code-xml[JournalEntrySnippets#JENameMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntrySnippets/CSharp/JENamePage.xaml#jenamemarkup)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalEntry.NameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetKeepAlive">
+      <MemberSignature Language="C#" Value="public static void SetKeepAlive (System.Windows.DependencyObject dependencyObject, bool keepAlive);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetKeepAlive(class System.Windows.DependencyObject dependencyObject, bool keepAlive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.SetKeepAlive(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="keepAlive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The element on which to set the attached property value.</param>
+        <param name="keepAlive">
+          <see langword="true" /> to keep the journal entry in memory; otherwise, <see langword="false" />.</param>
+        <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.KeepAlive" /> attached property of the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetName">
+      <MemberSignature Language="C#" Value="public static void SetName (System.Windows.DependencyObject dependencyObject, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetName(class System.Windows.DependencyObject dependencyObject, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.JournalEntry.SetName(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The element on which to set the attached property value.</param>
+        <param name="name">The name to be assigned to the attached property.</param>
+        <summary>Sets the <see cref="P:System.Windows.Navigation.JournalEntry.Name" /> attached property of the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.JournalEntry.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI of the content that was navigated to.</summary>
+        <value>The URI of the content that was navigated to, or <see langword="null" /> if no URI is associated with the entry.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

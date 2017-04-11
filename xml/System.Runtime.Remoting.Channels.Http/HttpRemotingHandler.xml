@@ -1,0 +1,119 @@
+<Type Name="HttpRemotingHandler" FullName="System.Runtime.Remoting.Channels.Http.HttpRemotingHandler">
+  <TypeSignature Language="C#" Value="public class HttpRemotingHandler : System.Web.IHttpHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRemotingHandler extends System.Object implements class System.Web.IHttpHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Implements an ASP.NET handler that forwards requests to the remoting HTTP channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom HTTP handlers process specific, predefined types of HTTP requests. Executable code defined in the <xref:System.Web.IHttpHandler> classes, rather than conventional ASP or ASP.NET Web pages, responds to these specific requests. HTTP handlers provide a way of interacting with the low-level request and response services of the IIS Web server, and provide functionality similar to ISAPI extensions but with a simpler programming model.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpRemotingHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpRemotingHandler (Type type, object srvID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, object srvID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor(System.Type,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="srvID" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="type">The constructor ignores the <c>type</c> parameter.</param>
+        <param name="srvID">The constructor ignores the <c>srvID</c> parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the default <xref:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler>constructor instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReusable">
+      <MemberSignature Language="C#" Value="public bool IsReusable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.IsReusable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether another request can use the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" />.</summary>
+        <value>
+          <see langword="true" /> for all instances of <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public void ProcessRequest (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Web.HttpContext" /> that provides references to the intrinsic server objects (for example, <see langword="Request" />, <see langword="Response" />, <see langword="Session" />, and <see langword="Server" />) used to service HTTP requests.</param>
+        <summary>Enables processing of HTTP Web requests by the current instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Web.IHttpHandler.ProcessRequest%2A> methods, see <xref:System.Web.IHttpHandler.ProcessRequest%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,46 @@
+<Type Name="IMobileDesigner" FullName="System.Web.UI.Design.MobileControls.IMobileDesigner">
+  <TypeSignature Language="C#" Value="public interface IMobileDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMobileDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.IMobileDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the interface for all mobile control designers between the .NET framework and a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface adds one method to the base designer interface: <xref:System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UpdateRendering">
+      <MemberSignature Language="C#" Value="public void UpdateRendering ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateRendering() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.IMobileDesigner.UpdateRendering" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates design-time rendering for the container control that implements the <see cref="T:System.Web.UI.Design.MobileControls.IMobileDesigner" /> interface. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

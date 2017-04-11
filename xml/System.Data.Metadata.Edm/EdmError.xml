@@ -1,0 +1,37 @@
+<Type Name="EdmError" FullName="System.Data.Metadata.Edm.EdmError">
+  <TypeSignature Language="C#" Value="public abstract class EdmError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EdmError extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmError" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the error information for a generic conceptual model error.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmError.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the error message.</summary>
+        <value>The error message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

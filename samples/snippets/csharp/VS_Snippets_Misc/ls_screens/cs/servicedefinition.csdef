@@ -1,0 +1,20 @@
+<ServiceDefinition name="LS_Screens_CS" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+    <WebRole name="LightSwitchWebRole"
+             vmsize="Small"
+             enableNativeCodeExecution="true">
+        <ConfigurationSettings>
+            <Setting name="Microsoft.LightSwitch.Trace.Enabled" />
+            <Setting name="Microsoft.LightSwitch.Trace.LocalOnly" />
+            <Setting name="Microsoft.LightSwitch.Trace.Level" />
+            <Setting name="Microsoft.LightSwitch.Trace.Sensitive" />
+            <Setting name="Microsoft.LightSwitch.Trace.Categories" />
+        </ConfigurationSettings>
+        <InputEndpoints>
+            <InputEndpoint name="HttpIn" protocol="http" port="80" />
+            <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="SSLCertificate" />
+        </InputEndpoints>
+        <Certificates>
+            <Certificate name="SSLCertificate" storeLocation="LocalMachine" storeName="My" />
+        </Certificates>
+    </WebRole>
+</ServiceDefinition>

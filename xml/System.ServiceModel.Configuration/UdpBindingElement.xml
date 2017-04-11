@@ -1,0 +1,361 @@
+<Type Name="UdpBindingElement" FullName="System.ServiceModel.Configuration.UdpBindingElement">
+  <TypeSignature Language="C#" Value="public class UdpBindingElement : System.ServiceModel.Configuration.StandardBindingElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpBindingElement extends System.ServiceModel.Configuration.StandardBindingElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.UdpBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardBindingElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a UDP binding element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UdpBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.UdpBindingElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UdpBindingElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.UdpBindingElement" /> class with specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElementType">
+      <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.BindingElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the binding.</summary>
+        <value>The type of the binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateMessageHistoryLength">
+      <MemberSignature Language="C#" Value="public int DuplicateMessageHistoryLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DuplicateMessageHistoryLength" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.DuplicateMessageHistoryLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("duplicateMessageHistoryLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the maximum number of message hashes used in a UDP transport configuration element.</summary>
+        <value>The value of the maximum number of message hashes used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFrom">
+      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding used.</param>
+        <summary>Initializes this binding configuration element with the content of the specified binding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferPoolSize">
+      <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxBufferPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.LongValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size of any buffer pools used by the transport.</summary>
+        <value>The maximum size of any buffer pools used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPendingMessagesTotalSize">
+      <MemberSignature Language="C#" Value="public long MaxPendingMessagesTotalSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxPendingMessagesTotalSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxPendingMessagesTotalSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxPendingMessagesTotalSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.LongValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the total size of messages that have been received but not yet removed from the property in a UDP binding element.</summary>
+        <value>The total size of pending messages.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxReceivedMessageSize">
+      <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxReceivedMessageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxReceivedMessageSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.LongValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the maximum received message size property in a UDP binding element.</summary>
+        <value>The value of the maximum received message size property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxRetransmitCount">
+      <MemberSignature Language="C#" Value="public int MaxRetransmitCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxRetransmitCount" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MaxRetransmitCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxRetransmitCount", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum retransmit count for the UDP binding element.</summary>
+        <value>The maximum retransmit count.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MulticastInterfaceId">
+      <MemberSignature Language="C#" Value="public string MulticastInterfaceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MulticastInterfaceId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.MulticastInterfaceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("multicastInterfaceId", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the network adapter that is used in a UDP binding element.</summary>
+        <value>The value of the network adapter that is used in a UDP binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyConfiguration">
+      <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding to be applied.</param>
+        <summary>Applies the specified binding to the <see cref="T:System.ServiceModel.Configuration.UdpBindingElement" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the properties associated with the UDP binding element.</summary>
+        <value>The properties associated with the UDP binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement ReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.ReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("readerQuotas")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the reader quotas used in the UDP binding element.</summary>
+        <value>The reader quotas used in the UDP binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding TextEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.TextEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.EncodingConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("textEncoding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text encoding used in the UDP binding element.</summary>
+        <value>The text encoding used in the UDP binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToLive">
+      <MemberSignature Language="C#" Value="public int TimeToLive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimeToLive" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.UdpBindingElement.TimeToLive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("timeToLive", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MaxValue=255, MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time to live for the UDP binding element.</summary>
+        <value>The time to live for the UDP binding element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

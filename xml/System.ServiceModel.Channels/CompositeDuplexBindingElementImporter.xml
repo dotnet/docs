@@ -1,0 +1,63 @@
+<Type Name="CompositeDuplexBindingElementImporter" FullName="System.ServiceModel.Channels.CompositeDuplexBindingElementImporter">
+  <TypeSignature Language="C#" Value="public class CompositeDuplexBindingElementImporter : System.ServiceModel.Description.IPolicyImportExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeDuplexBindingElementImporter extends System.Object implements class System.ServiceModel.Description.IPolicyImportExtension" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CompositeDuplexBindingElementImporter" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IPolicyImportExtension</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a policy import extension for mapping policy assertions into [!INCLUDE[indigo1](~/includes/indigo1-md.md)] bindings in which the client must expose an endpoint for the service to send messages back to the client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompositeDuplexBindingElementImporter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CompositeDuplexBindingElementImporter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CompositeDuplexBindingElementImporter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy">
+      <MemberSignature Language="C#" Value="void IPolicyImportExtension.ImportPolicy (System.ServiceModel.Description.MetadataImporter importer, System.ServiceModel.Description.PolicyConversionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(class System.ServiceModel.Description.MetadataImporter importer, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CompositeDuplexBindingElementImporter.System#ServiceModel#Description#IPolicyImportExtension#ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importer" Type="System.ServiceModel.Description.MetadataImporter" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" />
+      </Parameters>
+      <Docs>
+        <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> that imports the metadata information.</param>
+        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> object that contains the policy assertions that can be imported and the collections of binding elements to which custom binding elements that implements the policy can be added.</param>
+        <summary>Imports custom policy assertions for composite duplex bindings.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="importer" /> or <paramref name="context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

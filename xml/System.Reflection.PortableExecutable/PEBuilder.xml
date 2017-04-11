@@ -1,0 +1,196 @@
+<Type Name="PEBuilder" FullName="System.Reflection.PortableExecutable.PEBuilder">
+  <TypeSignature Language="C#" Value="public abstract class PEBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PEBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PEBuilder (System.Reflection.PortableExecutable.PEHeaderBuilder header, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt; deterministicIdProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Reflection.PortableExecutable.PEHeaderBuilder header, class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Blob&gt;, valuetype System.Reflection.Metadata.BlobContentId&gt; deterministicIdProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.#ctor(System.Reflection.PortableExecutable.PEHeaderBuilder,System.Func{System.Collections.Generic.IEnumerable{System.Reflection.Metadata.Blob},System.Reflection.Metadata.BlobContentId})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="header" Type="System.Reflection.PortableExecutable.PEHeaderBuilder" />
+        <Parameter Name="deterministicIdProvider" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="header">To be added.</param>
+        <param name="deterministicIdProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSections">
+      <MemberSignature Language="C#" Value="protected abstract System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder.Section&gt; CreateSections ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.PortableExecutable.PEBuilder/Section&gt; CreateSections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.CreateSections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder+Section&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectories">
+      <MemberSignature Language="C#" Value="protected abstract System.Reflection.PortableExecutable.PEDirectoriesBuilder GetDirectories ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.PortableExecutable.PEDirectoriesBuilder GetDirectories() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.GetDirectories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEDirectoriesBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSections">
+      <MemberSignature Language="C#" Value="protected System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder.Section&gt; GetSections ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.PortableExecutable.PEBuilder/Section&gt; GetSections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.GetSections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.PEBuilder+Section&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEHeaderBuilder Header { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.PortableExecutable.PEHeaderBuilder Header" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEHeaderBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdProvider">
+      <MemberSignature Language="C#" Value="public Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt; IdProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Blob&gt;, valuetype System.Reflection.Metadata.BlobContentId&gt; IdProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.IdProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeterministic">
+      <MemberSignature Language="C#" Value="public bool IsDeterministic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeterministic" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEBuilder.IsDeterministic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobContentId Serialize (System.Reflection.Metadata.BlobBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobContentId Serialize(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.Serialize(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobContentId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeSection">
+      <MemberSignature Language="C#" Value="protected abstract System.Reflection.Metadata.BlobBuilder SerializeSection (string name, System.Reflection.PortableExecutable.SectionLocation location);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.Metadata.BlobBuilder SerializeSection(string name, valuetype System.Reflection.PortableExecutable.SectionLocation location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.SerializeSection(System.String,System.Reflection.PortableExecutable.SectionLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="location" Type="System.Reflection.PortableExecutable.SectionLocation" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="location">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

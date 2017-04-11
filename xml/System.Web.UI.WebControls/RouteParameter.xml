@@ -1,0 +1,262 @@
+<Type Name="RouteParameter" FullName="System.Web.UI.WebControls.RouteParameter">
+  <TypeSignature Language="C#" Value="public class RouteParameter : System.Web.UI.WebControls.Parameter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteParameter extends System.Web.UI.WebControls.Parameter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RouteParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Parameter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("RouteKey")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Binds the value of a URL segment to a parameter object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement ASP.NET routing in a Web site, you can use the <xref:System.Web.UI.WebControls.RouteParameter> object to bind the value of a segment of the requested URL to a database query or command. You can declare <xref:System.Web.UI.WebControls.RouteParameter> objects in markup for data source controls or the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=168640).  
+  
+   
+  
+## Examples  
+ The examples in this section show how to use <xref:System.Web.UI.WebControls.RouteParameter> objects in markup to pass URL parameter values to a query that is specified for a data source control.  
+  
+ The following example shows code in the Global.asax page that defines a route that is named `ProductRoute`. The route defines a URL parameter that is named `productname`. The route also defines an optional catchall parameter that is named `culture`, which can be used to specify the language in which the product description is displayed. The Product.aspx page handles requests for this route.  
+  
+  
+  
+  
+  
+ The following example shows the Product.aspx page. The page contains a <xref:System.Web.UI.WebControls.SqlDataSource> control that has a query that requires two parameters, one for the name of the product and one for the language of the product description. <xref:System.Web.UI.WebControls.RouteParameter> objects are used to supply the values for the query parameters. The value of the route URL parameter `productname` is passed to the query parameter `@productname`. The value of the route URL parameter `culture` is passed to the query parameter `@culture`. If a route URL does not include the URL parameter `culture`, a default value of "en" is used.  
+  
+  
+  
+ The following example shows a page that is named ProductLinks.aspx, which contains hyperlinks that link to the Product.aspx page by using route URLs. These hyperlinks use `RouteUrl` expressions to create route URLs. The first link does not include a `culture` route parameter. Therefore, the default value of "en" that is defined in the <xref:System.Web.UI.WebControls.RouteParameter> object for `@culture` query parameter will be used in the query. The second link provides a `culture` value of "fr", which causes the description to be displayed in French. For more information about how to use `RouteUrl` expressions, see [How to: Construct URLs from Routes](http://msdn.microsoft.com/library/1ffd4085-71f6-4822-be8f-f682ca638650).  
+  
+  
+  
+ When you click the first hyperlink, you see the Product.aspx page with the following values in the <xref:System.Web.UI.WebControls.GridView> control:  
+  
+|ProductID|Name|Description|  
+|---------------|----------|-----------------|  
+|`994`|`LL Bottom Bracket`|`Chromoly steel.`|  
+  
+ When you click the second hyperlink, you see the following values in the <xref:System.Web.UI.WebControls.GridView> control:  
+  
+|ProductID|Name|Description|  
+|---------------|----------|-----------------|  
+|`994`|`LL Bottom Bracket`|`Acier chromé.`|  
+  
+ To run this example, add the two .aspx pages and the code in the Global.asax file to an ASP.NET Web site or Web application that defines a connection string named `AdventureWorksLTConnectionString` for the AdventureWorksLT database. For information about how to set up a connection to the AdventureWorksLT database, see [How to: Set Up an AdventureWorksLT Sample Database for ASP.NET Development](http://msdn.microsoft.com/library/2baad633-9d63-49cc-a6b2-917cafd35356).  
+  
+ For more information about ASP.NET routing, see [ASP.NET Routing](http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor method to initialize a <xref:System.Web.UI.WebControls.RouteParameter> object and set default values. The properties are initialized to the following values:  
+  
+-   <xref:System.Web.UI.WebControls.RouteParameter.RouteKey%2A> is set to an empty string ("").  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Name%2A> is set to an empty string.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Type%2A> is set to <xref:System.TypeCode>.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.Direction%2A> is set to <xref:System.Data.ParameterDirection>.  
+  
+-   <xref:System.Web.UI.WebControls.Parameter.DefaultValue%2A> is set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RouteParameter (System.Web.UI.WebControls.RouteParameter original);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.RouteParameter original) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.Web.UI.WebControls.RouteParameter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="original" Type="System.Web.UI.WebControls.RouteParameter" />
+      </Parameters>
+      <Docs>
+        <param name="original">An object from which the current instance is initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the values of the specified instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to clone a <xref:System.Web.UI.WebControls.RouteParameter> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteParameter (string name, string routeKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string routeKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="routeKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name for the parameter and the specified key for route data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteParameter (string name, System.Data.DbType dbType, string routeKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.DbType dbType, string routeKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.Data.DbType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="dbType" Type="System.Data.DbType" />
+        <Parameter Name="routeKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="dbType">The database type of the parameter instance.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and database type for the parameter, and by using the specified key for the route data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteParameter (string name, TypeCode type, string routeKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.TypeCode type, string routeKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.#ctor(System.String,System.TypeCode,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.TypeCode" />
+        <Parameter Name="routeKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the parameter instance.</param>
+        <param name="type">The type that the parameter represents.</param>
+        <param name="routeKey">The name of the route segment that contains the value for the parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RouteParameter" /> class by using the specified name and type for the parameter, and by using the specified key for the route data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Parameter Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Parameter Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Parameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a duplicate of the current <see cref="T:System.Web.UI.WebControls.RouteParameter" /> instance.</summary>
+        <returns>An object that is a duplicate of the current one.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RouteParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current <see cref="T:System.Web.HttpContext" /> instance of the request.</param>
+        <param name="control">The control that the parameter is bound to.</param>
+        <summary>Evaluates the request URL and returns the value of the parameter.</summary>
+        <returns>The current value of the parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteKey">
+      <MemberSignature Language="C#" Value="public string RouteKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RouteKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RouteParameter.RouteKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the route segment from which to retrieve the value for the route parameter.</summary>
+        <value>The name of the route segment that contains the value for the parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you define a route pattern, you can include segments that serve as placeholders for the actual values in the Web request URL. You define placeholders by enclosing them in braces ( `{` and `}` ). For example, a route pattern in the format `blog/{action}/{entry}` contains placeholders named `action` and `entry`. To retrieve the value of a placeholder, set the <xref:System.Web.UI.WebControls.RouteParameter.RouteKey%2A> property to the name of the placeholder and call the <xref:System.Web.UI.WebControls.RouteParameter.Evaluate%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

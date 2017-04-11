@@ -1,0 +1,255 @@
+<Type Name="ArrayTypeMismatchException" FullName="System.ArrayTypeMismatchException">
+  <TypeSignature Language="C#" Value="public class ArrayTypeMismatchException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayTypeMismatchException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.ArrayTypeMismatchException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when an attempt is made to store an element of the wrong type within an array.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ArrayTypeMismatchException> is thrown when the system cannot convert the element to the type declared for the array. For example, an element of type <xref:System.String> cannot be stored in an <xref:System.Int32> array because conversion between these types is not supported. It is generally unnecessary for applications to throw this exception.  
+  
+ The following Microsoft intermediate language (MSIL) instructions throw <xref:System.ArrayTypeMismatchException> :  
+  
+-   ldelem.\<type>  
+  
+-   ldelema  
+  
+-   stelem.\<type>  
+  
+ <xref:System.ArrayTypeMismatchException> uses the HRESULT COR_E_ARRAYTYPEMISMATCH, which has the value 0x80131503.  
+  
+ For a list of initial property values for an instance of <xref:System.ArrayTypeMismatchException>, see the <xref:System.ArrayTypeMismatchException> constructors.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates scenarios where <xref:System.ArrayTypeMismatchException> is thrown.  
+  
+ [!code-cpp[System.ArrayTypeMismatch#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.ArrayTypeMismatch/CPP/class1.cpp#1)]
+ [!code-csharp[System.ArrayTypeMismatch#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.ArrayTypeMismatch/CS/class1.cs#1)]
+ [!code-vb[System.ArrayTypeMismatch#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ArrayTypeMismatch/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayTypeMismatchException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ArrayTypeMismatchException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ArrayTypeMismatchException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Source array type cannot be assigned to destination array type." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.ArrayTypeMismatchException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates the ArrayTypeMismatchException() constructor of the <xref:System.ArrayTypeMismatchException> class. It contains a function which takes two arrays as arguments and checks whether the two arrays are of the same type. If the arrays are of different types, a new <xref:System.ArrayTypeMismatchException> is thrown and then caught in the calling method.  
+  
+ [!code-cpp[ArrayTypeMisMatch_Constructor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor1/CPP/arraytypemismatch_constructor1.cpp#1)]
+ [!code-csharp[ArrayTypeMisMatch_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor1/CS/arraytypemismatch_constructor1.cs#1)]
+ [!code-vb[ArrayTypeMisMatch_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor1/VB/arraytypemismatch_constructor1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayTypeMismatchException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ArrayTypeMismatchException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.String" /> that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ArrayTypeMismatchException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.ArrayTypeMismatchException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates the ArrayTypeMismatchException(String) constructor of the <xref:System.ArrayTypeMismatchException> class. It contains a function which takes two arrays as arguments and checks whether the two arrays are of the same type. If the arrays are of different types, a new <xref:System.ArrayTypeMismatchException> is thrown and then caught in the calling method.  
+  
+ [!code-cpp[ArrayTypeMisMatch_Constructor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor2/CPP/arraytypemismatch_constructor2.cpp#1)]
+ [!code-csharp[ArrayTypeMisMatch_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor2/CS/arraytypemismatch_constructor2.cs#1)]
+ [!code-vb[ArrayTypeMisMatch_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor2/VB/arraytypemismatch_constructor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ArrayTypeMismatchException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ArrayTypeMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ArrayTypeMismatchException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayTypeMismatchException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ArrayTypeMismatchException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ArrayTypeMismatchException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.ArrayTypeMismatchException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.ArrayTypeMismatchException.%23ctor%2A> constructor of the <xref:System.ArrayTypeMismatchException> class. It contains a function that takes two arrays as arguments and checks whether the two arrays are of the same type. If the arrays are of different types, a new <xref:System.ArrayTypeMismatchException> is thrown and then caught in the calling method.  
+  
+ [!code-cpp[ArrayTypeMisMatch_Constructor3#1](~/samples/snippets/cpp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor3/CPP/arraytypemismatch_constructor3.cpp#1)]
+ [!code-csharp[ArrayTypeMisMatch_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor3/CS/arraytypemismatch_constructor3.cs#1)]
+ [!code-vb[ArrayTypeMisMatch_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ArrayTypeMisMatch_Constructor3/VB/arraytypemismatch_constructor3.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

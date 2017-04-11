@@ -1,0 +1,64 @@
+<Type Name="ProcessModuleDesigner" FullName="System.Diagnostics.Design.ProcessModuleDesigner">
+  <TypeSignature Language="C#" Value="public class ProcessModuleDesigner : System.ComponentModel.Design.ComponentDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessModuleDesigner extends System.ComponentModel.Design.ComponentDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Design.ProcessModuleDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.ComponentDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Base designer class for extending the design-mode behavior of a process module.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProcessModuleDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Design.ProcessModuleDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Design.ProcessModuleDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to access unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Design.ProcessModuleDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">An <see cref="T:System.Collections.IDictionary" /> containing the properties for the class of the component.</param>
+        <summary>Adjusts the set of properties the process module exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the nonbrowsable "FileVersionInfo" property to the designer's process module at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

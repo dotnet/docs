@@ -1,0 +1,130 @@
+<Type Name="SeekOrigin" FullName="System.IO.SeekOrigin">
+  <TypeSignature Language="C#" Value="public enum SeekOrigin" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SeekOrigin extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.SeekOrigin" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the position in a stream to use for seeking.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.SeekOrigin> is used by the `Seek` methods of <xref:System.IO.Stream>, <xref:System.IO.BufferedStream>, <xref:System.IO.FileStream>, <xref:System.IO.MemoryStream>, <xref:System.IO.BinaryWriter>, and other classes. The `Seek` methods take an offset parameter that is relative to the position specified by <xref:System.IO.SeekOrigin>.  
+  
+   
+  
+## Examples  
+ The following example shows how to read backwards starting at the end of the stream, and how to read from a specified point in the stream.  
+  
+ [!code-csharp[System.IO.FileStream.Seek#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.filestream.seek/cs/source.cs#1)]
+ [!code-vb[System.IO.FileStream.Seek#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.filestream.seek/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Begin">
+      <MemberSignature Language="C#" Value="Begin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.SeekOrigin Begin = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.Begin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.SeekOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the beginning of a stream.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="Current" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.SeekOrigin Current = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.SeekOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the current position within a stream.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="End" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.SeekOrigin End = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.SeekOrigin.End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.SeekOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the end of a stream.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

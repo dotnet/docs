@@ -1,0 +1,69 @@
+<Type Name="TypeProviderXmlDocAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderXmlDocAttribute">
+  <TypeSignature Language="C#" Value="public class TypeProviderXmlDocAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable TypeProviderXmlDocAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderXmlDocAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeProviderXmlDocAttribute (string commentText);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string commentText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderXmlDocAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commentText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="commentText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommentText">
+      <MemberSignature Language="C#" Value="public string CommentText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommentText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderXmlDocAttribute.CommentText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

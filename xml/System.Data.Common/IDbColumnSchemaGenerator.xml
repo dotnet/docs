@@ -1,0 +1,48 @@
+<Type Name="IDbColumnSchemaGenerator" FullName="System.Data.Common.IDbColumnSchemaGenerator">
+  <TypeSignature Language="C#" Value="public interface IDbColumnSchemaGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDbColumnSchemaGenerator" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.IDbColumnSchemaGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetColumnSchema">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.DbColumn&gt; GetColumnSchema ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Common.DbColumn&gt; GetColumnSchema() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.IDbColumnSchemaGenerator.GetColumnSchema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.DbColumn&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

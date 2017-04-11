@@ -1,0 +1,54 @@
+<Type Name="IRaiseItemChangedEvents" FullName="System.ComponentModel.IRaiseItemChangedEvents">
+  <TypeSignature Language="C#" Value="public interface IRaiseItemChangedEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRaiseItemChangedEvents" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IRaiseItemChangedEvents" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Indicates whether a class converts property change events to <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.IRaiseItemChangedEvents> interface is typically implemented together with the <xref:System.ComponentModel.IBindingList> interface and indicates that the list converts property change events to <xref:System.ComponentModel.IBindingList.ListChanged> events.  
+  
+ You rarely need to implement the <xref:System.ComponentModel.IRaiseItemChangedEvents> interface. However, for performance purposes, your data source should implement <xref:System.ComponentModel.IRaiseItemChangedEvents> if it provides the functionality described previously, and your data source is interacting with the <xref:System.Windows.Forms.BindingSource> component, because this functionality is built into the <xref:System.Windows.Forms.BindingSource>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RaisesItemChangedEvents">
+      <MemberSignature Language="C#" Value="public bool RaisesItemChangedEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RaisesItemChangedEvents" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.ComponentModel.IRaiseItemChangedEvents" /> object raises <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> events.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.IRaiseItemChangedEvents" /> object raises <see cref="E:System.ComponentModel.IBindingList.ListChanged" /> events when one of its property values changes; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

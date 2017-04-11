@@ -1,0 +1,1108 @@
+<Type Name="TextFieldParser" FullName="Microsoft.VisualBasic.FileIO.TextFieldParser">
+  <TypeSignature Language="C#" Value="public class TextFieldParser : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi TextFieldParser extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.TextFieldParser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides methods and properties for parsing structured text files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `TextFieldParser` object provides methods and properties for parsing structured text files. Parsing a text file with the `TextFieldParser` is similar to iterating over a text file, while the `ReadFields` method to extract fields of text is similar to splitting the strings.  
+  
+ The `TextFieldParser` can parse two types of files: delimited or fixed-width. Some properties, such as `Delimiters` and `HasFieldsEnclosedInQuotes` are meaningful only when working with delimited files, while the `FieldWidths` property is meaningful only when working with fixed-width files.  
+  
+ The following table lists examples of tasks involving the `Microsoft.VisualBasic.FileIO.TextFieldParser` object.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+|Read from a text file with multiple formats|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+  
+   
+  
+## Examples  
+ This example parses through a tab-delimited text file, `Bigfile`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#17)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />. The stream to be parsed.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> cannot be read from.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.TextReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.TextReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.TextReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">
+          <see cref="T:System.IO.TextReader" />. The <see cref="T:System.IO.TextReader" /> stream to be parsed.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `reader` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+          <see langword="String" />. The complete path of the file to be parsed.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="defaultEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />. The stream to be parsed.</param>
+        <param name="defaultEncoding">
+          <see cref="T:System.Text.Encoding" />. The character encoding to use if encoding is not determined from file. Default is <see cref="P:System.Text.Encoding.UTF8" />.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+  
+> [!CAUTION]
+>  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> cannot be read from.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (string path, System.Text.Encoding defaultEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding defaultEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="defaultEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+          <see langword="String" />. The complete path of the file to be parsed.</param>
+        <param name="defaultEncoding">
+          <see cref="T:System.Text.Encoding" />. The character encoding to use if encoding is not determined from file. Default is <see cref="P:System.Text.Encoding.UTF8" />.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+  
+> [!CAUTION]
+>  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is an empty string or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding, bool detectEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding, bool detectEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="defaultEncoding" Type="System.Text.Encoding" />
+        <Parameter Name="detectEncoding" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />. The stream to be parsed.</param>
+        <param name="defaultEncoding">
+          <see cref="T:System.Text.Encoding" />. The character encoding to use if encoding is not determined from file. Default is <see cref="P:System.Text.Encoding.UTF8" />.</param>
+        <param name="detectEncoding">
+          <see langword="Boolean" />. Indicates whether to look for byte order marks at the beginning of the file. Default is <see langword="True" />.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+  
+ If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+  
+> [!CAUTION]
+>  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> cannot be read from.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (string path, System.Text.Encoding defaultEncoding, bool detectEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding defaultEncoding, bool detectEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.String,System.Text.Encoding,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="defaultEncoding" Type="System.Text.Encoding" />
+        <Parameter Name="detectEncoding" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">
+          <see langword="String" />. The complete path of the file to be parsed.</param>
+        <param name="defaultEncoding">
+          <see cref="T:System.Text.Encoding" />. The character encoding to use if encoding is not determined from file. Default is <see cref="P:System.Text.Encoding.UTF8" />.</param>
+        <param name="detectEncoding">
+          <see langword="Boolean" />. Indicates whether to look for byte order marks at the beginning of the file. Default is <see langword="True" />.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file specified by the `path` parameter.  
+  
+ If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+  
+> [!CAUTION]
+>  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is an empty string or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextFieldParser (System.IO.Stream stream, System.Text.Encoding defaultEncoding, bool detectEncoding, bool leaveOpen);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding defaultEncoding, bool detectEncoding, bool leaveOpen) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="defaultEncoding" Type="System.Text.Encoding" />
+        <Parameter Name="detectEncoding" Type="System.Boolean" />
+        <Parameter Name="leaveOpen" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" />. The stream to be parsed.</param>
+        <param name="defaultEncoding">
+          <see cref="T:System.Text.Encoding" />. The character encoding to use if encoding is not determined from file. Default is <see cref="P:System.Text.Encoding.UTF8" />.</param>
+        <param name="detectEncoding">
+          <see langword="Boolean" />. Indicates whether to look for byte order marks at the beginning of the file. Default is <see langword="True" />.</param>
+        <param name="leaveOpen">
+          <see langword="Boolean" />. Indicates whether to leave <c>stream</c> open when the <see langword="TextFieldParser" /> object is closed. Default is <see langword="False" />.</param>
+        <summary>Initializes a new instance of the <see langword="TextFieldParser" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new `TextFieldParser` object to parse the file or stream that is represented by the `stream` parameter.  
+  
+ If the `detectEncoding` parameter is `True`, this constructor attempts to detect the encoding by looking at the first three bytes of the file or stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte-order marks. Otherwise, the encoding specified by `defaultEncoding` is used.  
+  
+> [!CAUTION]
+>  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable and could cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="defaultEncoding" /> is <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="stream" /> cannot be read from.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the current <see langword="TextFieldParser" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example closes the `TextFieldParser``FileReader`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommentTokens">
+      <MemberSignature Language="C#" Value="public string[] CommentTokens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] CommentTokens" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines comment tokens. A comment token is a string that, when placed at the beginning of a line, indicates that the line is a comment and should be ignored by the parser.</summary>
+        <value>A string array that contains all of the comment tokens for the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+ Zero-length comment tokens are ignored.  
+  
+   
+  
+## Examples  
+ This example specifies that for the `TextFieldParser`, `FileReader` lines beginning with a single quotation mark (') should be ignored.  
+  
+ [!code-vb[VbVbalrTextFieldParser#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A comment token includes white space.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Delimiters">
+      <MemberSignature Language="C#" Value="public string[] Delimiters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Delimiters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines the delimiters for a text file.</summary>
+        <value>A string array that contains all of the field delimiters for the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.Delimited`.  
+  
+ Defining the delimiters for a text file can also be accomplished with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A> method.  
+  
+ The following table lists an example of a task involving the `Delimiters` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example specifies that the delimiter for the `TextFieldParser` object, `FileReader`, is a comma (,).  
+  
+ [!code-vb[VbVbalrTextFieldParser#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A delimiter value is set to a newline character, an empty string, or <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">Boolean. <see langword="True" /> releases both managed and unmanaged resources; <see langword="False" /> releases only unmanaged resources.</param>
+        <summary>Releases resources used by the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfData">
+      <MemberSignature Language="C#" Value="public bool EndOfData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EndOfData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.EndOfData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns <see langword="True" /> if there are no non-blank, non-comment lines between the current cursor position and the end of the file.</summary>
+        <value>
+          <see langword="True" /> if there is no more data to read; otherwise, <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used when reading from files to determine the end of the data being read.  
+  
+ The following table lists examples of tasks involving the `EndOfData` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example uses the `EndofData` property to loop through all the fields in the file with the `TextFieldReader`, `FileReader`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorLine">
+      <MemberSignature Language="C#" Value="public string ErrorLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</summary>
+        <value>The line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, an empty string is returned.  
+  
+ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber%2A> property can be used to display the number of the line that caused the exception.  
+  
+ The following table lists examples of tasks involving the `ErrorLine` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example uses the `ErrorLine` property to display the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
+  
+ [!code-vb[VbVbalrTextFieldParser#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorLineNumber">
+      <MemberSignature Language="C#" Value="public long ErrorLineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ErrorLineNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the number of the line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</summary>
+        <value>The number of the line that caused the most recent <see cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException" /> exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exceptions have been thrown, -1 is returned.  
+  
+ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property can be used to display the number of the line that caused the exception. Blank lines and comments are not ignored when determining the line number.  
+  
+ The following table lists examples of tasks involving the `ErrorLineNumber` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example uses the `ErrorLineNumber` property to display the location of the line causing the current <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception.  
+  
+ [!code-vb[VbVbalrTextFieldParser#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldWidths">
+      <MemberSignature Language="C#" Value="public int[] FieldWidths { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] FieldWidths" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.FieldWidths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Denotes the width of each column in the text file being parsed.</summary>
+        <value>An integer array that contains the width of each column in the text file that is being parsed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is meaningful only if the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType%2A> property is set to `FieldType.FixedWidth`. If the last entry in the array is less than or equal to zero, the field is assumed to be of variable width.  
+  
+ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths%2A> method can also be used to set field widths.  
+  
+ The following table lists examples of tasks involving the `FieldWidths` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example reads the file `ParserText.txt`, specifying the widths; the first column is 5 characters wide, the second is 10, the third is 11, and the fourth is of variable width  
+  
+ [!code-vb[VbVbalrTextFieldParser#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A width value in any location other than the last entry of the array is less than or equal to zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~TextFieldParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows the <see cref="T:Microsoft.VisualBasic.FileIO.TextFieldParser" /> object to attempt to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFieldsEnclosedInQuotes">
+      <MemberSignature Language="C#" Value="public bool HasFieldsEnclosedInQuotes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasFieldsEnclosedInQuotes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.HasFieldsEnclosedInQuotes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Denotes whether fields are enclosed in quotation marks when a delimited file is being parsed.</summary>
+        <value>
+          <see langword="True" /> if fields are enclosed in quotation marks; otherwise, <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+ If the property is `True`, the parser assumes that fields are enclosed in quotation marks (" ") and may contain line endings.  
+  
+ If a field is enclosed in quotation marks, for example, `abc, "field2a,field2b", field3` and this property is `True`, then all text enclosed in quotation marks will be returned as is; this example would return `abc|field2a,field2b|field3`. Setting this property to `False` would make this example return `abc|"field2a|field2b"|field3`.  
+  
+   
+  
+## Examples  
+ This example sets the `HasFieldsEnclosedInQuotes` property to `True` for `myReader`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineNumber">
+      <MemberSignature Language="C#" Value="public long LineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LineNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.LineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the current line number, or returns -1 if no more characters are available in the stream.</summary>
+        <value>The current line number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+ Blank lines and comments are not ignored when determining the line number.  
+  
+   
+  
+## Examples  
+ This example searches for the name "Jones" in the text file and reports what line(s) it occurs on.  
+  
+ [!code-vb[VbVbalrTextFieldParser#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeekChars">
+      <MemberSignature Language="C#" Value="public string PeekChars (int numberOfChars);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string PeekChars(int32 numberOfChars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.PeekChars(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="numberOfChars" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="numberOfChars">
+          <see langword="Int32" />. Number of characters to read. Required.</param>
+        <summary>Reads the specified number of characters without advancing the cursor.</summary>
+        <returns>A string that contains the specified number of characters read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `numberOfChars` value must be less than the total number of characters in the line. If it is not, the string returned by `PeekChars` will be truncated to the length of the line.  
+  
+ Blank lines are ignored.  
+  
+ End-of-line characters are not returned.  
+  
+ The `PeekChars` method performs no parsing; an end-of- line character within a delimited field is interpreted as the actual end of the line.  
+  
+ The following table lists examples of tasks involving the `PeekChars` method.  
+  
+|To|See|  
+|--------|---------|  
+|Determine the format of a field before parsing it|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+  
+   
+  
+## Examples  
+ This example uses `PeekChars` to find the end of the data and stop parsing the file at that point.  
+  
+ [!code-vb[VbVbalrTextFieldParser#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="numberOfChars" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFields">
+      <MemberSignature Language="C#" Value="public string[] ReadFields ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string[] ReadFields() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadFields" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads all fields on the current line, returns them as an array of strings, and advances the cursor to the next line containing data.</summary>
+        <returns>An array of strings that contains field values for the current line.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to allow users to parse text files in multiple formats, the `ReadFields` method examines the values of `TextFieldType`, `Delimiters`, and `FieldWidths`, if they are specified, each time it is called. Users need to correctly configure the `TextFieldType` and `FieldWidths` or `Delimiters` properties, as appropriate. If `TextFieldType` is set to `Delimited`, and `Delimiters` is not set, or if `TextFieldType` is set to `FixedWidth` and `FieldWidths`, an exception is thrown.  
+  
+ If `ReadFields` encounters blank lines, they are skipped and the next non-blank line is returned.  
+  
+ If the `ReadFields` method cannot parse the current line, it raises an exception and does not move to the next line. This enables your application to attempt to parse the line again.  
+  
+ The following table lists examples of tasks involving the `ReadFields` method.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+  
+   
+  
+## Examples  
+ This example uses the `ReadFields` method to read from the comma-delimited file `ParserText.txt`. The example writes the fields to `Testfile.txt`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.VisualBasic.FileIO.MalformedLineException">A field cannot be parsed by using the specified format.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLine">
+      <MemberSignature Language="C#" Value="public string ReadLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string ReadLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadLine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the current line as a string and advances the cursor to the next line.</summary>
+        <returns>The current line from the file or stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ReadLine` method performs no parsing; an end-of-line character within a delimited field is interpreted as the actual end of the line.  
+  
+ `Nothing` is returned if the end of the file is reached.  
+  
+   
+  
+## Examples  
+ This example reads through the file `ParserText.txt` and writes it to `Testfile.txt`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#15)]  
+  
+ If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
+  
+ This example writes the fields as a single string; to have each line display on its own line in the destination file, a `VbCrLf` character should be appended at the end of each line.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadToEnd">
+      <MemberSignature Language="C#" Value="public string ReadToEnd ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string ReadToEnd() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.ReadToEnd" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads the remainder of the text file and returns it as a string.</summary>
+        <returns>The remaining text from the file or stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+ If there is nothing more to read because the end of the file has been reached, `Nothing` is returned.  
+  
+ The `ReadToEnd` method does not ignore blank lines and comments.  
+  
+   
+  
+## Examples  
+ This example uses the `ReadToEnd` method to read the entire file `ParserText.txt` and write it to the file `Testfile.txt`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#10)]  
+  
+ If `Testfile.txt` does not exist, it is created by the `WriteAllText` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelimiters">
+      <MemberSignature Language="C#" Value="public void SetDelimiters (string[] delimiters);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetDelimiters(string[] delimiters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delimiters" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="delimiters">Array of type <see langword="String" />.</param>
+        <summary>Sets the delimiters for the reader to the specified values, and sets the field type to <see langword="Delimited" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The existing contents of the `Delimiters` property are cleared when this method is set.  
+  
+ This method provides a way to set delimiters without creating an array.  
+  
+ The following table lists an example of a task involving the `SetDelimiters` method.  
+  
+|To|See|  
+|--------|---------|  
+|Parse a text file|[Parsing Text Files with the TextFieldParser Object](~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)|  
+  
+   
+  
+## Examples  
+ This example opens a text field parser and defines the delimiter as `vbTab`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#4)]  
+  
+ Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A delimiter is zero-length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFieldWidths">
+      <MemberSignature Language="C#" Value="public void SetFieldWidths (int[] fieldWidths);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetFieldWidths(int32[] fieldWidths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.TextFieldParser.SetFieldWidths(System.Int32[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldWidths" Type="System.Int32[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="fieldWidths">Array of <see langword="Integer" />.</param>
+        <summary>Sets the delimiters for the reader to the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The existing contents of the `Delimiters` property are cleared when this is set.  
+  
+ This method provides a way to set delimiters without creating an array.  
+  
+ The following table lists example of tasks involving the `SetFieldWidths` method.  
+  
+|To|See|  
+|--------|---------|  
+|Parse a text file.|[Parsing Text Files with the TextFieldParser Object](~/docs/visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)|  
+  
+   
+  
+## Examples  
+ This example opens a text-field parser and defines the field width as `5`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#12)]  
+  
+ Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+  
+ The following example opens a text-field parser and defines the field widths as `5`, `10`, and variable.  
+  
+ [!code-vb[VbVbalrTextFieldParser#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#13)]  
+  
+ Replace the path `C:\logs\test.log` with the path and name of the file you wish to parse.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFieldType">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.FileIO.FieldType TextFieldType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.FileIO.FieldType TextFieldType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the file to be parsed is delimited or fixed-width.</summary>
+        <value>A <see cref="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TextFieldType" /> value that indicates whether the file to be parsed is delimited or fixed-width.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is delimited.  
+  
+ The following table lists examples of tasks involving the `TextFieldType` property.  
+  
+|To|See|  
+|--------|---------|  
+|Read from a delimited text file|[How to: Read From Comma-Delimited Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)|  
+|Read from a fixed-width text file|[How to: Read From Fixed-width Text Files](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)|  
+|Read from a text file with multiple formats|[How to: Read From Text Files with Multiple Formats](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)|  
+  
+   
+  
+## Examples  
+ This example creates a `TextFieldParser`, `FileReader`, and specifies that it is delimited.  
+  
+ [!code-vb[VbVbalrTextFieldParser#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#19)]  
+  
+ This example creates a `TextFieldParser`, `FileReader`, and specifies that it is fixed-width.  
+  
+ [!code-vb[VbVbalrTextFieldParser#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimWhiteSpace">
+      <MemberSignature Language="C#" Value="public bool TrimWhiteSpace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TrimWhiteSpace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.TextFieldParser.TrimWhiteSpace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether leading and trailing white space should be trimmed from field values.</summary>
+        <value>
+          <see langword="True" /> if leading and trailing white space should be trimmed from field values; otherwise, <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for this property is `True`.  
+  
+   
+  
+## Examples  
+ This example creates a `TextFieldParser`, `FileReader`, and sets the `TrimWhiteSpace` property to `True`.  
+  
+ [!code-vb[VbVbalrTextFieldParser#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

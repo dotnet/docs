@@ -1,0 +1,154 @@
+<Type Name="ManagementQuery" FullName="System.Management.ManagementQuery">
+  <TypeSignature Language="C#" Value="public abstract class ManagementQuery : ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ManagementQuery extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Management.ManagementQueryConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an abstract base class for all management query objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public abstract object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementQuery.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseQuery">
+      <MemberSignature Language="C#" Value="protected virtual void ParseQuery (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ParseQuery(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementQuery.ParseQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query string to be parsed.</param>
+        <summary>Parses the query string and sets the property values accordingly. If the query is valid, the class name property and condition property of the query will be parsed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example parses a query into class name and condition properties.  
+  
+ [!code-csharp[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/cs/ManagementQuery_ParseQuery.cs#1)]
+ [!code-vb[wminet_ManagementQuery_ParseQuery#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementQuery_ParseQuery/vb/ManagementQuery.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryLanguage">
+      <MemberSignature Language="C#" Value="public virtual string QueryLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementQuery.QueryLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query language used in the query string, defining the format of the query string.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the format of the query string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ Can be set to any supported query language. "WQL" is the only value supported intrinsically by WMI.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public virtual string QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementQuery.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query in text format.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ If the query object is constructed with no parameters, the property is null until specifically set. If the object was constructed with a specified query, the property returns the specified query string.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,58 @@
+<Type Name="ITargetBlock&lt;TInput&gt;" FullName="System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;">
+  <TypeSignature Language="C#" Value="public interface ITargetBlock&lt;in TInput&gt; : System.Threading.Tasks.Dataflow.IDataflowBlock" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITargetBlock`1&lt;- TInput&gt; implements class System.Threading.Tasks.Dataflow.IDataflowBlock" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ITargetBlock`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TInput">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TInput">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OfferMessage">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Dataflow.DataflowMessageStatus OfferMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, TInput messageValue, System.Threading.Tasks.Dataflow.ISourceBlock&lt;in TInput&gt; source, bool consumeToAccept);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus OfferMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, !TInput messageValue, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TInput&gt; source, bool consumeToAccept) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="messageValue" Type="TInput" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;TInput&gt;" />
+        <Parameter Name="consumeToAccept" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">To be added.</param>
+        <param name="messageValue">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="consumeToAccept">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

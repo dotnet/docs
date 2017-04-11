@@ -1,0 +1,26 @@
+<!--<snippet2>-->
+<?xml version='1.0'?>
+<bookstore xmlns="urn:bookstore-schema">
+  <book>
+    <author>
+      <first-name>Benjamin</first-name>
+      <last-name>Franklin</last-name>
+    </author>
+  </book>
+  <book genre="novel">
+    <title>The Confidence Man</title>
+    <author>
+      <first-name>Herman</first-name>
+      <last-name>Melville</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+  <book genre="philosophy">
+    <title>The Gorgias</title>
+    <author>
+      <name>Plato</name>
+    </author>
+    <price>9.99</price>
+  </book>
+</bookstore>
+<!--</snippet2>-->

@@ -1,0 +1,177 @@
+<Type Name="ObjectStatementCollection" FullName="System.ComponentModel.Design.Serialization.ObjectStatementCollection">
+  <TypeSignature Language="C#" Value="public sealed class ObjectStatementCollection : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectStatementCollection extends System.Object implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Holds a table of statements that is offered by the <see cref="T:System.ComponentModel.Design.Serialization.StatementContext" />. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public bool ContainsKey (object statementOwner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsKey(object statementOwner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.ContainsKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statementOwner" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="statementOwner">The owner of the statement collection.</param>
+        <summary>Determines whether the table contains the given statement owner.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="statementOwner" /> is in the table; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statementOwner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection this[object statementOwner] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeStatementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statementOwner" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="statementOwner">The owner of the statement collection.</param>
+        <summary>Gets the statement collection for the given owner.</summary>
+        <value>The statement collection for <paramref name="statementOwner" />, or <see langword="null" /> if <paramref name="statementOwner" /> is not in the table.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statementOwner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Populate">
+      <MemberSignature Language="C#" Value="public void Populate (System.Collections.ICollection statementOwners);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Populate(class System.Collections.ICollection statementOwners) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statementOwners" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="statementOwners">A collection of statement owners to add to the table.</param>
+        <summary>Populates the statement table with a collection of statement owners.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are the creator of the statement context, you should call the <xref:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate%2A> method if you want statement tables to be used to store values for certain objects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statementOwner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Populate">
+      <MemberSignature Language="C#" Value="public void Populate (object owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Populate(object owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The statement owner to add to the table.</param>
+        <summary>Populates the statement table with a statement owner.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are the creator of the statement context, you should call the <xref:System.ComponentModel.Design.Serialization.ObjectStatementCollection.Populate%2A> method if you want statement tables to be used to store values for certain objects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="owner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ObjectStatementCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see the <see cref="M:System.Collections.IEnumerable.GetEnumerator" /> method.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.Serialization.ObjectStatementCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

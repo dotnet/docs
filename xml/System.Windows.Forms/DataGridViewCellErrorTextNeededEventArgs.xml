@@ -1,0 +1,81 @@
+<Type Name="DataGridViewCellErrorTextNeededEventArgs" FullName="System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewCellErrorTextNeededEventArgs : System.Windows.Forms.DataGridViewCellEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellErrorTextNeededEventArgs extends System.Windows.Forms.DataGridViewCellEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataGridViewCellEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellErrorTextNeeded" /> event of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event occurs only when the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`. Handling the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event is useful when you want to determine the error for a cell depending on its value or state.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event and specify error text in the handler, an error glyph appears in the cell unless the <xref:System.Windows.Forms.DataGridView.ShowCellErrors%2A?displayProperty=fullName> property is set to `false` or the cell is in edit mode. When the user moves the mouse pointer over the error glyph, the error text appears in a ToolTip.  
+  
+ The <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property is retrieved.  
+  
+ You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> property to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A?displayProperty=fullName> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> property, which the event value overrides.  
+  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ In the following code example demonstrates how to create error messages for cells without unsharing rows or causing the cell error to be duplicated over all the shared cells.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView_SharedRowScenarios#20](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/CPP/sharedrows.cpp#20)]
+ [!code-csharp[System.Windows.Forms.DataGridView_SharedRowScenarios#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/CS/sharedrows.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridView_SharedRowScenarios#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/VB/sharedrows.vb#20)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ErrorText">
+      <MemberSignature Language="C#" Value="public string ErrorText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message that is displayed when the cell is selected.</summary>
+        <value>The error message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property initially contains the value of the <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A?displayProperty=fullName> property if it has been set for a row.  
+  
+ The <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A> property value displays as a ToolTip for the error glyph in the cell.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an event handler that uses the <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A> property to set the error text of a cell.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView_SharedRowScenarios#24](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/CPP/sharedrows.cpp#24)]
+ [!code-csharp[System.Windows.Forms.DataGridView_SharedRowScenarios#24](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/CS/sharedrows.cs#24)]
+ [!code-vb[System.Windows.Forms.DataGridView_SharedRowScenarios#24](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_SharedRowScenarios/VB/sharedrows.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

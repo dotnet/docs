@@ -1,0 +1,99 @@
+<Type Name="VARDESC+DESCUNION" FullName="System.Runtime.InteropServices.ComTypes.VARDESC+DESCUNION">
+  <TypeSignature Language="C#" Value="public struct VARDESC.DESCUNION" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sealed beforefieldinit VARDESC/DESCUNION extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about a variable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The common language runtime throws an exception when a COM method in native code returns an HRESULT. For more information, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="lpvarValue">
+      <MemberSignature Language="C#" Value="public IntPtr lpvarValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int lpvarValue" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.lpvarValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Describes a symbolic constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="oInst">
+      <MemberSignature Language="C#" Value="public int oInst;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 oInst" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION.oInst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the offset of this variable within the instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

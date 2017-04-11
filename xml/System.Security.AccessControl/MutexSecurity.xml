@@ -1,0 +1,826 @@
+<Type Name="MutexSecurity" FullName="System.Security.AccessControl.MutexSecurity">
+  <TypeSignature Language="C#" Value="public sealed class MutexSecurity : System.Security.AccessControl.NativeObjectSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MutexSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.NativeObjectSecurity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the Windows access control security for a named mutex. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Security.AccessControl.MutexSecurity> object specifies access rights for a named system mutex, and also specifies how access attempts are audited. Access rights to the mutex are expressed as rules, with each access rule represented by a <xref:System.Security.AccessControl.MutexAccessRule> object. Each auditing rule is represented by a <xref:System.Security.AccessControl.MutexAuditRule> object.  
+  
+ This mirrors the underlying Windows security system, in which each securable object has at most one discretionary access control list (DACL) that controls access to the secured object, and at most one system access control list (SACL) that specifies which access attempts are audited. The DACL and SACL are ordered lists of access control entries (ACE) that specify access and auditing for users and groups. A <xref:System.Security.AccessControl.MutexAccessRule> or <xref:System.Security.AccessControl.MutexAuditRule> object might represent more than one ACE.  
+  
+> [!NOTE]
+>  A <xref:System.Threading.Mutex> object can represent a local mutex or a named system mutex. Windows access control security is meaningful only for named system mutexes.  
+  
+ The <xref:System.Security.AccessControl.MutexSecurity>, <xref:System.Security.AccessControl.MutexAccessRule>, and <xref:System.Security.AccessControl.MutexAuditRule> classes hide the implementation details of ACLs and ACEs. They allow you to ignore the seventeen different ACE types and the complexity of correctly maintaining inheritance and propagation of access rights. These objects are also designed to prevent the following common access control errors:  
+  
+-   Creating a security descriptor with a null DACL. A null reference to a DACL allows any user to add access rules to an object, potentially creating a denial-of-service attack. A new <xref:System.Security.AccessControl.MutexSecurity> object always starts with an empty DACL, which denies all access for all users.  
+  
+-   Violating the canonical ordering of ACEs. If the ACE list in the DACL is not kept in the canonical order, users might inadvertently be given access to the secured object. For example, denied access rights must always appear before allowed access rights. <xref:System.Security.AccessControl.MutexSecurity> objects maintain the correct order internally.  
+  
+-   Manipulating security descriptor flags, which should be under resource manager control only.  
+  
+-   Creating invalid combinations of ACE flags.  
+  
+-   Manipulating inherited ACEs. Inheritance and propagation are handled by the resource manager, in response to changes you make to access and audit rules.  
+  
+-   Inserting meaningless ACEs into ACLs.  
+  
+ The only capabilities not supported by the .NET security objects are dangerous activities that should be avoided by the majority of application developers, such as the following:  
+  
+-   Low-level tasks that are normally performed by the resource manager.  
+  
+-   Adding or removing access control entries in ways that do not maintain the canonical ordering.  
+  
+ To modify Windows access control security for a named mutex, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get the <xref:System.Security.AccessControl.MutexSecurity> object. Modify the security object by adding and removing rules, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to reattach it.  
+  
+> [!IMPORTANT]
+>  Changes you make to a <xref:System.Security.AccessControl.MutexSecurity> object do not affect the access levels of the named mutex until you call the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method to assign the altered security object to the named mutex.  
+  
+ To copy access control security from one mutex to another, use the <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> method to get a <xref:System.Security.AccessControl.MutexSecurity> object representing the access and audit rules for the first mutex, and then use the <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName> method, or a constructor that accepts a <xref:System.Security.AccessControl.MutexSecurity> object, to assign those rules to the second mutex.  
+  
+ Users with an investment in the security descriptor definition language (SDDL) can use the <xref:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm%2A> method to set access rules for a named mutex, and the <xref:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm%2A> method to obtain a string that represents the access rules in SDDL format. This is not recommended for new development.  
+  
+> [!NOTE]
+>  Security on synchronization objects is not supported for Windows 98 or Windows Millennium Edition.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MutexSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new <xref:System.Security.AccessControl.MutexSecurity> object always starts with an empty discretionary access list (DACL), which denies all access for all users.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This class is not supported on Windows 98 or Windows Millennium Edition.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MutexSecurity (string name, System.Security.AccessControl.AccessControlSections includeSections);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the system mutex whose access control security rules are to be retrieved.</param>
+        <param name="includeSections">A combination of <see cref="T:System.Security.AccessControl.AccessControlSections" /> flags specifying the sections to retrieve.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class with the specified sections of the access control security rules from the system mutex with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor allows you to obtain the access control security for a named system mutex without first creating a <xref:System.Threading.Mutex> object.  
+  
+ Caution must be exercised when working with named system objects. If there is a system object named `name` that is not a mutex, its control access security might be retrieved.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.FileNotFoundException">There is no system object with the specified name.</exception>
+        <exception cref="T:System.NotSupportedException">This class is not supported on Windows 98 or Windows Millennium Edition.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRightType">
+      <MemberSignature Language="C#" Value="public override Type AccessRightType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRightType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the enumeration that the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class uses to represent access rights.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexRights" /> enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRuleFactory">
+      <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AccessRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identityReference" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="accessMask" Type="System.Int32" />
+        <Parameter Name="isInherited" Type="System.Boolean" />
+        <Parameter Name="inheritanceFlags" Type="System.Security.AccessControl.InheritanceFlags" />
+        <Parameter Name="propagationFlags" Type="System.Security.AccessControl.PropagationFlags" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+      </Parameters>
+      <Docs>
+        <param name="identityReference">An <see cref="T:System.Security.Principal.IdentityReference" /> that identifies the user or group the rule applies to.</param>
+        <param name="accessMask">A bitwise combination of <see cref="T:System.Security.AccessControl.MutexRights" /> values specifying the access rights to allow or deny, cast to an integer.</param>
+        <param name="isInherited">Meaningless for named mutexes, because they have no hierarchy.</param>
+        <param name="inheritanceFlags">Meaningless for named mutexes, because they have no hierarchy.</param>
+        <param name="propagationFlags">Meaningless for named mutexes, because they have no hierarchy.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values specifying whether the rights are allowed or denied.</param>
+        <summary>Creates a new access control rule for the specified user, with the specified access rights, access control, and flags.</summary>
+        <returns>A <see cref="T:System.Security.AccessControl.MutexAccessRule" /> object representing the specified rights for the specified user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recommended way to create access control rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAccessRule> class.  
+  
+> [!NOTE]
+>  Although inheritance and propagation flags are meaningless for named mutexes, it is still possible to specify them. This is not recommended, because it needlessly complicates the maintenance of rules, for example by interfering with the combination of rules that would otherwise be compatible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="accessMask" />, <paramref name="inheritanceFlags" />, <paramref name="propagationFlags" />, or <paramref name="type" /> specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identityReference" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="accessMask" /> is zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="identityReference" /> is neither of type <see cref="T:System.Security.Principal.SecurityIdentifier" />, nor of a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRuleType">
+      <MemberSignature Language="C#" Value="public override Type AccessRuleType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRuleType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class uses to represent access rules.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexAccessRule" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AccessRuleType%2A> property and return the type they use to represent access rules. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct access rule type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAccessRule">
+      <MemberSignature Language="C#" Value="public void AddAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The access control rule to add.</param>
+        <summary>Searches for a matching access control rule with which the new rule can be merged. If none are found, adds the new rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.MutexSecurity.AddAccessRule%2A> method searches for rules with the same user or group and the same <xref:System.Security.AccessControl.AccessControlType> as `rule`. If none are found, `rule` is added. If a matching rule is found, the rights in `rule` are merged with the existing rule.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName><xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.AddAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.AddAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Principal.IdentityNotMappedException">
+          <paramref name="rule " />cannot be mapped to a known identity.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAuditRule">
+      <MemberSignature Language="C#" Value="public void AddAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The audit rule to add. The user specified by this rule determines the search.</param>
+        <summary>Searches for an audit rule with which the new rule can be merged. If none are found, adds the new rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.MutexSecurity.AddAuditRule%2A> method searches for rules with the same user or group as `rule`. If none are found, `rule` is added. If a matching rule is found, the flags in `rule` are merged into the existing rule.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditRuleFactory">
+      <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AuditRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identityReference" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="accessMask" Type="System.Int32" />
+        <Parameter Name="isInherited" Type="System.Boolean" />
+        <Parameter Name="inheritanceFlags" Type="System.Security.AccessControl.InheritanceFlags" />
+        <Parameter Name="propagationFlags" Type="System.Security.AccessControl.PropagationFlags" />
+        <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
+      </Parameters>
+      <Docs>
+        <param name="identityReference">An <see cref="T:System.Security.Principal.IdentityReference" /> that identifies the user or group the rule applies to.</param>
+        <param name="accessMask">A bitwise combination of <see cref="T:System.Security.AccessControl.MutexRights" /> values specifying the access rights to audit, cast to an integer.</param>
+        <param name="isInherited">Meaningless for named wait handles, because they have no hierarchy.</param>
+        <param name="inheritanceFlags">Meaningless for named wait handles, because they have no hierarchy.</param>
+        <param name="propagationFlags">Meaningless for named wait handles, because they have no hierarchy.</param>
+        <param name="flags">A bitwise combination of <see cref="T:System.Security.AccessControl.AuditFlags" /> values that specify whether to audit successful access, failed access, or both.</param>
+        <summary>Creates a new audit rule, specifying the user the rule applies to, the access rights to audit, and the outcome that triggers the audit rule.</summary>
+        <returns>A <see cref="T:System.Security.AccessControl.MutexAuditRule" /> object representing the specified audit rule for the specified user. The return type of the method is the base class, <see cref="T:System.Security.AccessControl.AuditRule" />, but the return value can be cast safely to the derived class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recommended way to create audit rules is to use the constructors of the <xref:System.Security.AccessControl.MutexAuditRule> class.  
+  
+> [!NOTE]
+>  Although inheritance and propagation flags are meaningless for named mutexes, it is still possible to specify them. This is not recommended, because it needlessly complicates the maintenance of rules, for example by interfering with the combination of rules that would otherwise be compatible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="accessMask" />, <paramref name="inheritanceFlags" />, <paramref name="propagationFlags" />, or <paramref name="flags" /> specifies an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identityReference" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="accessMask" /> is zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="identityReference" /> is neither of type <see cref="T:System.Security.Principal.SecurityIdentifier" />, nor of a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditRuleType">
+      <MemberSignature Language="C#" Value="public override Type AuditRuleType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AuditRuleType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class uses to represent audit rules.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.MutexAuditRule" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.ObjectSecurity> class override the <xref:System.Security.AccessControl.ObjectSecurity.AuditRuleType%2A> property and return the type they use to represent audit rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct audit rule type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRule">
+      <MemberSignature Language="C#" Value="public bool RemoveAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.MutexAccessRule" /> that specifies the user and <see cref="T:System.Security.AccessControl.AccessControlType" /> to search for, and a set of inheritance and propagation flags that a matching rule, if found, must be compatible with. Specifies the rights to remove from the compatible rule, if found.</param>
+        <summary>Searches for an access control rule with the same user and <see cref="T:System.Security.AccessControl.AccessControlType" /> (allow or deny) as the specified rule, and with compatible inheritance and propagation flags; if such a rule is found, the rights contained in the specified access rule are removed from it.</summary>
+        <returns>
+          <see langword="true" /> if a compatible rule is found; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current <xref:System.Security.AccessControl.MutexSecurity> is searched for a rule that has the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
+  
+> [!IMPORTANT]
+>  Although you can specify inheritance and propagation flags for mutex access rules, by creating them with the <xref:System.Security.AccessControl.MutexSecurity.AccessRuleFactory%2A> method, this is not recommended. Inheritance and propagation have no meaning for named mutexes, and they make the maintenance of access rules more complicated.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove rights from an <xref:System.Security.AccessControl.AccessControlType> rule in a <xref:System.Security.AccessControl.MutexSecurity> object. It also shows that other rights in `rule` are ignored.  
+  
+ The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The rights allowed include <xref:System.Security.AccessControl.MutexRights>, <xref:System.Security.AccessControl.MutexRights>, and <xref:System.Security.AccessControl.MutexRights>. The example then creates a new rule for the current user, including <xref:System.Security.AccessControl.MutexRights> and <xref:System.Security.AccessControl.MutexRights> rights, and uses that rule with the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRule%2A> method to remove <xref:System.Security.AccessControl.MutexRights> from the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object. The extraneous <xref:System.Security.AccessControl.MutexRights> right in `rule` is ignored.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRuleAll">
+      <MemberSignature Language="C#" Value="public void RemoveAccessRuleAll (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.MutexAccessRule" /> that specifies the user and <see cref="T:System.Security.AccessControl.AccessControlType" /> to search for. Any rights specified by this rule are ignored.</param>
+        <summary>Searches for all access control rules with the same user and <see cref="T:System.Security.AccessControl.AccessControlType" /> (allow or deny) as the specified rule and, if found, removes them.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current <xref:System.Security.AccessControl.MutexSecurity> object is searched for rules that have the same user and the same <xref:System.Security.AccessControl.AccessControlType> value as `rule`. Any rights specified by `rule` are ignored when performing this search. If no matching rules are found, no action is taken.  
+  
+   
+  
+## Examples  
+ The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll%2A> method removes all rules that match user and <xref:System.Security.AccessControl.AccessControlType>, ignoring rights.  
+  
+ The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> rule. The example then creates a new rule that allows the current user to take ownership, and uses that rule to remove the <xref:System.Security.AccessControl.AccessControlType> rule from the <xref:System.Security.AccessControl.MutexSecurity> object.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRuleSpecific">
+      <MemberSignature Language="C#" Value="public void RemoveAccessRuleSpecific (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.MutexAccessRule" /> to remove.</param>
+        <summary>Searches for an access control rule that exactly matches the specified rule and, if found, removes it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The rule is removed only if it exactly matches `rule` in all details, including flags. Other rules with the same user and <xref:System.Security.AccessControl.AccessControlType> are not affected.  
+  
+> [!IMPORTANT]
+>  A rule represents one or more underlying access control entries (ACE), and these entries are split or combined as necessary when you modify the access security rules for a user. Thus, a rule might no longer exist in the specific form it had when it was added, and in that case the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method cannot remove it.  
+  
+   
+  
+## Examples  
+ The following code example shows that the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method requires an exact match in order to remove a rule, and that rules to allow and deny rights are independent of each other.  
+  
+ The example creates a <xref:System.Security.AccessControl.MutexSecurity> object, adds rules that allow and deny various rights for the current user, and then merges additional rights into the <xref:System.Security.AccessControl.AccessControlType> access rule. The example then passes the original <xref:System.Security.AccessControl.AccessControlType> rule to the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method, and displays the results, showing that nothing is deleted. The example then constructs a rule that matches the <xref:System.Security.AccessControl.AccessControlType> rule in the <xref:System.Security.AccessControl.MutexSecurity> object, and successfully uses the <xref:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific%2A> method to remove the rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRule">
+      <MemberSignature Language="C#" Value="public bool RemoveAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.MutexAuditRule" /> that specifies the user to search for, and a set of inheritance and propagation flags that a matching rule, if found, must be compatible with. Specifies the rights to remove from the compatible rule, if found.</param>
+        <summary>Searches for an audit control rule with the same user as the specified rule, and with compatible inheritance and propagation flags; if a compatible rule is found, the rights contained in the specified rule are removed from it.</summary>
+        <returns>
+          <see langword="true" /> if a compatible rule is found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current <xref:System.Security.AccessControl.MutexSecurity> is searched for an audit rule that has the same user as `rule`. If no such rule is found, no action is taken, and the method returns `false`. If matching rules are found, their inheritance and compatibility flags are checked for compatibility with the flags specified in `rule`. If no compatible rule is found, no action is taken, and the method returns `false`. If a rule with compatible flags is found, the rights specified in `rule` are removed from the compatible rule, and the method returns `true`. If `rule` specifies rights not contained in the compatible rule, no action is taken with respect to those rights. If all rights are removed from the compatible rule, the entire rule is removed from the current <xref:System.Security.AccessControl.MutexSecurity> object.  
+  
+> [!IMPORTANT]
+>  Although you can specify inheritance and propagation flags for mutex audit rules, by creating them with the <xref:System.Security.AccessControl.MutexSecurity.AccessRuleFactory%2A> method, this is not recommended. Inheritance and propagation have no meaning for named mutexes, and they make the maintenance of audit rules more complicated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRuleAll">
+      <MemberSignature Language="C#" Value="public void RemoveAuditRuleAll (System.Security.AccessControl.MutexAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleAll(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.MutexAuditRule" /> that specifies the user to search for. Any rights specified by this rule are ignored.</param>
+        <summary>Searches for all audit rules with the same user as the specified rule and, if found, removes them.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current <xref:System.Security.AccessControl.MutexSecurity> is searched for audit rules that have the same user as `rule`. Any rights specified by `rule` are ignored when performing this search. All matching rules are removed. If no matching rules are found, no action is taken.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRuleSpecific">
+      <MemberSignature Language="C#" Value="public void RemoveAuditRuleSpecific (System.Security.AccessControl.MutexAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.MutexAuditRule" /> to be removed.</param>
+        <summary>Searches for an audit rule that exactly matches the specified rule and, if found, removes it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The rule is removed only if it exactly matches `rule` in all details, including flags. Other audit rules for the same user are not affected.  
+  
+> [!IMPORTANT]
+>  A rule represents one or more underlying access control entries (ACE), and these entries are split or combined as necessary when you modify the audit security rules for a user. Thus, a rule might no longer exist in the specific form it had when it was added, and in that case the <xref:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleSpecific%2A> method cannot remove it.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetAccessRule">
+      <MemberSignature Language="C#" Value="public void ResetAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.ResetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.MutexAccessRule" /> to add. The user specified by this rule determines the rules to remove before this rule is added.</param>
+        <summary>Removes all access control rules with the same user as the specified rule, regardless of <see cref="T:System.Security.AccessControl.AccessControlType" />, and then adds the specified rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are no access rules whose user matches the specified rule, `rule` is added.  
+  
+   
+  
+## Examples  
+ The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method replaces all rules for the matching user with the rule specified for the match.  
+  
+ The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.ResetAccessRule%2A> method to replace both of the existing rules with the new rule.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.ResetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.ResetAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessRule">
+      <MemberSignature Language="C#" Value="public void SetAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.MutexAccessRule" /> to add. The user and <see cref="T:System.Security.AccessControl.AccessControlType" /> of this rule determine the rules to remove before this rule is added.</param>
+        <summary>Removes all access control rules with the same user and <see cref="T:System.Security.AccessControl.AccessControlType" /> (allow or deny) as the specified rule, and then adds the specified rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, the effect of this method is to remove all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user, replacing them with the specified rule. If the specified rule has <xref:System.Security.AccessControl.AccessControlType>, all <xref:System.Security.AccessControl.AccessControlType> rules for the specified user are replaced with the specified rule.  
+  
+ If there are no rules whose user and <xref:System.Security.AccessControl.AccessControlType> match the specified rule, `rule` is added.  
+  
+   
+  
+## Examples  
+ The following code example shows how the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method removes all rules that match both the user and the <xref:System.Security.AccessControl.AccessControlType> of `rule`, replacing them with `rule`.  
+  
+ The example creates a <xref:System.Security.AccessControl.MutexSecurity> object and adds rules that allow and deny various rights for the current user. The example then creates a new rule that allows the current user full control, and uses the <xref:System.Security.AccessControl.MutexSecurity.SetAccessRule%2A> method to replace the existing Allow rule with the new rule. The rule that denies access is not affected.  
+  
+> [!NOTE]
+>  This example does not attach the security object to a <xref:System.Threading.Mutex> object. Examples that attach security objects can be found in <xref:System.Threading.Mutex.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Mutex.SetAccessControl%2A?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/CS/source.cs#1)]
+ [!code-vb[System.Security.AccessControl.MutexSecurity.SetAccessRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.AccessControl.MutexSecurity.SetAccessRule/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuditRule">
+      <MemberSignature Language="C#" Value="public void SetAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.MutexAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.MutexAuditRule" /> to add. The user specified by this rule determines the rules to remove before this rule is added.</param>
+        <summary>Removes all audit rules with the same user as the specified rule, regardless of the <see cref="T:System.Security.AccessControl.AuditFlags" /> value, and then adds the specified rule.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are no audit rules whose user matches the specified rule, `rule` is added.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rule" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

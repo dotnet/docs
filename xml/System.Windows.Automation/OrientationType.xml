@@ -1,0 +1,74 @@
+<Type Name="OrientationType" FullName="System.Windows.Automation.OrientationType">
+  <TypeSignature Language="C#" Value="public enum OrientationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OrientationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.OrientationType" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5F8A77B4-E685-48c1-94D0-8BB6AFA43DF9")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the orientation of a control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.OrientationType Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.OrientationType.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the control has horizontal orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.OrientationType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.OrientationType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the control has no orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.OrientationType Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.OrientationType.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.OrientationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the control has vertical orientation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

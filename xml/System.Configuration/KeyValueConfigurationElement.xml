@@ -1,0 +1,166 @@
+<Type Name="KeyValueConfigurationElement" FullName="System.Configuration.KeyValueConfigurationElement">
+  <TypeSignature Language="C#" Value="public class KeyValueConfigurationElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi KeyValueConfigurationElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.KeyValueConfigurationElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that contains a key/value pair.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.KeyValueConfigurationElement> object inherits from the <xref:System.Configuration.ConfigurationElement> base class. The <xref:System.Configuration.ConfigurationElement> object represents an element within a configuration file. The <xref:System.Configuration.KeyValueConfigurationElement> object can belong in a <xref:System.Configuration.KeyValueConfigurationCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use members of the <xref:System.Configuration.KeyValueConfigurationElement> class.  
+  
+ [!code-csharp[System.Configuration.KeyValueConfigurationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/CS/KeyValueConfigurationCollection.cs#1)]
+ [!code-vb[System.Configuration.KeyValueConfigurationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/VB/KeyValueConfigurationCollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyValueConfigurationElement (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationElement.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the <see cref="T:System.Configuration.KeyValueConfigurationElement" />.</param>
+        <param name="value">The value of the <see cref="T:System.Configuration.KeyValueConfigurationElement" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.KeyValueConfigurationElement" /> class based on the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.KeyValueConfigurationElement.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Configuration.KeyValueConfigurationCollection> class overview.  
+  
+ [!code-csharp[System.Configuration.KeyValueConfigurationCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/CS/KeyValueConfigurationCollection.cs#2)]
+ [!code-vb[System.Configuration.KeyValueConfigurationCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/VB/KeyValueConfigurationCollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="protected override void Init ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Init() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.KeyValueConfigurationElement.Init" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object to its initial state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public string Key { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Key" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationElement.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("key", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key of the <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object.</summary>
+        <value>The key of the <see cref="T:System.Configuration.KeyValueConfigurationElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.KeyValueConfigurationElement.Key%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.KeyValueConfigurationCollection> class overview.  
+  
+ [!code-csharp[System.Configuration.KeyValueConfigurationCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/CS/KeyValueConfigurationCollection.cs#5)]
+ [!code-vb[System.Configuration.KeyValueConfigurationCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/VB/KeyValueConfigurationCollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of properties.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> of properties for the element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.KeyValueConfigurationElement.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("value", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see cref="T:System.Configuration.KeyValueConfigurationElement" /> object.</summary>
+        <value>The value of the <see cref="T:System.Configuration.KeyValueConfigurationElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.KeyValueConfigurationElement.Value%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.KeyValueConfigurationCollection> class overview.  
+  
+ [!code-csharp[System.Configuration.KeyValueConfigurationCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/CS/KeyValueConfigurationCollection.cs#5)]
+ [!code-vb[System.Configuration.KeyValueConfigurationCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.KeyValueConfigurationCollection/VB/KeyValueConfigurationCollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

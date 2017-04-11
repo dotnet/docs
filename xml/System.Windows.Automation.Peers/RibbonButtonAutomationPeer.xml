@@ -1,0 +1,113 @@
+<Type Name="RibbonButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonButtonAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonButtonAutomationPeer : System.Windows.Automation.Peers.ButtonAutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonButtonAutomationPeer extends System.Windows.Automation.Peers.ButtonAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ButtonAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonButtonAutomationPeer (System.Windows.Controls.Ribbon.RibbonButton owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonButton owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonButton)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessKeyCore">
+      <MemberSignature Language="C#" Value="protected override string GetAccessKeyCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAccessKeyCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetAccessKeyCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the accelerator key combinations for the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />.</summary>
+        <returns>The accelerator key combinations for the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHelpTextCore">
+      <MemberSignature Language="C#" Value="protected override string GetHelpTextCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetHelpTextCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetHelpTextCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the text that describes the functionality of the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
+        <returns>The text that describes the functionality of the <see cref="T:System.Windows.Controls.Ribbon.RibbonButton" /> control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name that describes the element that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
+        <returns>The name that describes the element that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

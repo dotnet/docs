@@ -1,0 +1,44 @@
+<Type Name="UnhandledExceptionEventHandler" FullName="System.UnhandledExceptionEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void UnhandledExceptionEventHandler(object sender, UnhandledExceptionEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UnhandledExceptionEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.UnhandledExceptionEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.UnhandledExceptionEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the unhandled exception event.</param>
+    <param name="e">An <c>UnhandledExceptionEventArgs</c> that contains the event data.</param>
+    <summary>Represents the method that will handle the event raised by an exception that is not handled by the application domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.UnhandledExceptionEventHandler> can only be specified for the default application domain that is created by the system to execute an application. Specifying an <xref:System.UnhandledExceptionEventHandler> for an <xref:System.AppDomain> created by an application has no effect.  
+  
+ When you create an <xref:System.UnhandledExceptionEventHandler> delegate, you identify the method that will handle the event. To associate the event handler with your event, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

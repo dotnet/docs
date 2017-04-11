@@ -1,0 +1,73 @@
+<Type Name="FixedPanel" FullName="System.Windows.Forms.FixedPanel">
+  <TypeSignature Language="C#" Value="public enum FixedPanel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FixedPanel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FixedPanel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />, <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />, or neither panel is fixed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a value of <xref:System.Windows.Forms.FixedPanel> to specify which panel stays the same size and which panel increases in size when a user resizes the <xref:System.Windows.Forms.SplitContainer>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FixedPanel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FixedPanel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that neither <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />, <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects both panels.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Panel1">
+      <MemberSignature Language="C#" Value="Panel1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FixedPanel Panel1 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FixedPanel.Panel1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel1" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Panel2">
+      <MemberSignature Language="C#" Value="Panel2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FixedPanel Panel2 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FixedPanel.Panel2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

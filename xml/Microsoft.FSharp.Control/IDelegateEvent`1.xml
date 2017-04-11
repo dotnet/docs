@@ -1,0 +1,77 @@
+<Type Name="IDelegateEvent&lt;TDelegate&gt;" FullName="Microsoft.FSharp.Control.IDelegateEvent&lt;TDelegate&gt;">
+  <TypeSignature Language="C#" Value="public interface IDelegateEvent&lt;TDelegate&gt; where TDelegate : Delegate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract serializable IDelegateEvent`1&lt;(class System.Delegate) TDelegate&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.IDelegateEvent`1" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TDelegate">
+      <Constraints>
+        <BaseTypeName>System.Delegate</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TDelegate">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddHandler">
+      <MemberSignature Language="C#" Value="public void AddHandler (TDelegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddHandler(!TDelegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.IDelegateEvent`1.AddHandler(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="TDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveHandler">
+      <MemberSignature Language="C#" Value="public void RemoveHandler (TDelegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveHandler(!TDelegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.IDelegateEvent`1.RemoveHandler(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="TDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

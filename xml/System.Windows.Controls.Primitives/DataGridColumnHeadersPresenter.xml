@@ -1,0 +1,298 @@
+<Type Name="DataGridColumnHeadersPresenter" FullName="System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter">
+  <TypeSignature Language="C#" Value="public class DataGridColumnHeadersPresenter : System.Windows.Controls.ItemsControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi DataGridColumnHeadersPresenter extends System.Windows.Controls.ItemsControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ItemsControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_FillerColumnHeader", Type=typeof(System.Windows.Controls.Primitives.DataGridColumnHeader))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used within the template of a <see cref="T:System.Windows.Controls.DataGrid" /> to specify the location in the control's visual tree where the column headers are to be added.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class generates the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> instances that are added to the <xref:System.Windows.Controls.DataGrid> visual tree.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridColumnHeadersPresenter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finalSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="finalSize">The final area within the parent that this element should use to arrange itself and its children.</param>
+        <summary>Called to arrange and size the content of a <see cref="T:System.Windows.Controls.Control" /> object.</summary>
+        <returns>The size of the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The container element.</param>
+        <param name="item">The item.</param>
+        <summary>When overridden in a derived class, undoes the effects of the <see cref="M:System.Windows.Controls.ItemsControl.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.GetContainerForItemOverride" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeader" /> instance to contain a column header value.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.Primitives.DataGridColumnHeader" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutClip">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry GetLayoutClip (System.Windows.Size layoutSlotSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Geometry GetLayoutClip(valuetype System.Windows.Size layoutSlotSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.GetLayoutClip(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="layoutSlotSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="layoutSlotSize">The rendered size of the column header.</param>
+        <summary>Returns a geometry for a clipping mask. The mask applies if the layout system attempts to arrange an element that is larger than the available display space.</summary>
+        <returns>The clipping geometry.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method override always returns a clipping geometry that is the same size as the column header, regardless of the <xref:System.Windows.UIElement.ClipToBounds%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualChild">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.GetVisualChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Windows.Media.Visual" /> child to return.</param>
+        <summary>Returns the <see cref="T:System.Windows.Media.Visual" /> child at the specified index.</summary>
+        <returns>The child.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method override includes the column header drag indicator as a visual child.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemItsOwnContainerOverride">
+      <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to check.</param>
+        <summary>Determines if the specified item is (or is eligible to be) its own container.</summary>
+        <returns>
+          <see langword="true" /> if the item is (or is eligible to be) its own container; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="availableSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="availableSize">The available size that this element can give to child elements.</param>
+        <summary>Called to remeasure a control.</summary>
+        <returns>The size of the control, up to the maximum specified by constraint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.OnApplyTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>It's invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new <see cref="T:System.Windows.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer" /> for this presenter.</summary>
+        <returns>A new automation peer for this presenter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">Element used to display the specified item.</param>
+        <param name="item">Specified item.</param>
+        <summary>Prepares the specified element to display the specified item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualChildrenCount">
+      <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter.VisualChildrenCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Windows.Media.Visual" /> children in this presenter.</summary>
+        <value>The number of visual children.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method override includes the column header drag indicator as a visual child.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

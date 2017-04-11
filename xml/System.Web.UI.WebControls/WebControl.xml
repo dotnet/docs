@@ -1,0 +1,1798 @@
+<Type Name="WebControl" FullName="System.Web.UI.WebControls.WebControl">
+  <TypeSignature Language="C#" Value="public class WebControl : System.Web.UI.Control, System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebControl extends System.Web.UI.Control implements class System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.Themeable(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the base class that defines the methods, properties and events common to all controls in the <see cref="N:System.Web.UI.WebControls" /> namespace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl> class provides the properties, methods, and events that are common to all Web server controls. You can control the appearance and behavior of a Web server control by setting properties defined in this class. For example, the background color and font color of a control are controlled by using the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> and <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> properties, respectively. On controls that can display a border, you can control the border width, the border style, and the border color by setting the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A>, <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A>, and <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> properties. The size of a Web server control can be specified by using the <xref:System.Web.UI.WebControls.WebControl.Height%2A> and <xref:System.Web.UI.WebControls.WebControl.Width%2A> properties.  
+  
+ The behavior of the control can be specified by setting certain properties. You can enable and disable a control by setting the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property. The place of the control in the tab order is controlled by setting the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property. You can specify a ToolTip for the control by setting the <xref:System.Web.UI.WebControls.WebControl.ToolTip%2A> property.  
+  
+> [!NOTE]
+>  Not all controls support every property defined in this class. For specific information about whether a property is supported, see the documentation for the specific control.  
+  
+> [!NOTE]
+>  Some properties in this class render differently, depending on the browser. Some properties do not render at all, while others render, but have no effect. The <xref:System.Web.Configuration.HttpCapabilitiesBase.TagWriter%2A> property of the <xref:System.Web.HttpBrowserCapabilities> object determines the way in which a Web server control renders. For browsers that support HTML 4.0, the <xref:System.Web.Configuration.HttpCapabilitiesBase.TagWriter%2A> property will contain a regular <xref:System.Web.HttpBrowserCapabilities> object, and most properties will be rendered using HTML 4.0 style attributes. Browsers that are not known to support HTML 4.0 will use the <xref:System.Web.UI.Html32TextWriter> object. This will automatically map the style attributes to any relevant HTML 3.2 tag attributes. In some cases, such as with the <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property, the style attributes will be converted into additional tags, such as `<font>` tags. In some cases, there will be no mapping performed. For specific information about how a property is rendered in different browsers, see the documentation for the specific property.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.WebControl>, see the <xref:System.Web.UI.WebControls.WebControl.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ [!code-csharp[WebControlAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlAddAttributesToRender/CS/addattrib.cs#1)]
+ [!code-vb[WebControlAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlAddAttributesToRender/VB/addattrib.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebControl" /> class that represents a <see langword="Span" /> HTML tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class that represents a `Span` HTML element.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.WebControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`TagKey`|The <xref:System.Web.UI.HtmlTextWriterTag> enumeration value.|  
+  
+> [!NOTE]
+>  This constructor is not called directly. Instead, it is often called by the constructor of a derived class to initialize the <xref:System.Web.UI.WebControls.WebControl.TagKey%2A> property to the <xref:System.Web.UI.HtmlTextWriterTag> enumeration value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebControl (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">An HTML tag.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebControl" /> class using the specified HTML tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified HTML tag.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.WebControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`TagKey`|The <xref:System.Web.UI.HtmlTextWriterTag> enumeration value.|  
+|`TagName`|The value of the `tag` parameter.|  
+  
+> [!NOTE]
+>  This constructor is not called directly. Instead, it is often called by the constructor of a derived class to initialize the <xref:System.Web.UI.WebControls.WebControl.TagKey%2A> and <xref:System.Web.UI.WebControls.WebControl.TagName%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebControl (System.Web.UI.HtmlTextWriterTag tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.HtmlTextWriterTag tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.#ctor(System.Web.UI.HtmlTextWriterTag)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.Web.UI.HtmlTextWriterTag" />
+      </Parameters>
+      <Docs>
+        <param name="tag">One of the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebControl" /> class using the specified HTML tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.WebControl> class using the specified <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName> value.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.WebControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`TagKey`|The <xref:System.Web.UI.HtmlTextWriterTag> enumeration value specified by the `tag` parameter.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the constructor for the <xref:System.Web.UI.WebControls.WebControl> class to create a `TextArea` HTML element and display it on the Web Forms page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx file name extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.WebControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.WebControl Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.WebControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.WebControl Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessKey">
+      <MemberSignature Language="C#" Value="public virtual string AccessKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AccessKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.AccessKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the access key that allows you to quickly navigate to the Web server control.</summary>
+        <value>The access key for quick navigation to the Web server control. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A> property to specify the keyboard shortcut for the Web server control. This allows you to navigate quickly to the control by pressing the ALT key and the key for the specified character on the keyboard. For example, setting the access key of a control to the string `"D"` indicates that the user can navigate to the control by pressing ALT+D.  
+  
+ Only a single character string is allowed for the <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A> property. If you attempt to set this property to a value that is neither `null`, <xref:System.String>, nor a single character string, an exception is thrown.  
+  
+> [!NOTE]
+>  This property is supported only in Internet Explorer 4.0 and later.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set and use the <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A> property of a <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.AccessKey Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.AccessKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.AccessKey Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified access key is neither <see langword="null" />, <see cref="F:System.String.Empty" /> nor a single character string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected virtual void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriterTag" />. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To render attributes and styles for a Web Server control on the client, you typically call the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods to insert each attribute and style individually to the <xref:System.Web.UI.HtmlTextWriter> output stream. To simplify the process, this method encapsulates all calls to the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A?displayProperty=fullName> and <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A?displayProperty=fullName> methods for every attribute and style associated with the Web server control. All attributes and styles are inserted into the <xref:System.Web.UI.HtmlTextWriter> output stream in a single method call. This method is typically overridden by control developers in derived classes to insert the appropriate attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for the class.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method cannot be used to insert client script. To use client script, see the <xref:System.Web.UI.ClientScriptManager> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a class that derives from the <xref:System.Web.UI.WebControls.WebControl> class. The base implementation of the <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method is overridden to add attributes appropriate to the derived class in the <xref:System.Web.UI.HtmlTextWriter> output stream.  
+  
+ [!code-csharp[WebControlAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlAddAttributesToRender/CS/addattrib.cs#1)]
+ [!code-vb[WebControlAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlAddAttributesToRender/VB/addattrib.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyStyle">
+      <MemberSignature Language="C#" Value="public void ApplyStyle (System.Web.UI.WebControls.Style s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyStyle(class System.Web.UI.WebControls.Style s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.ApplyStyle(System.Web.UI.WebControls.Style)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Web.UI.WebControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="s">A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the style to be copied.</param>
+        <summary>Copies any nonblank elements of the specified style to the Web control, overwriting any existing style elements of the control. This method is primarily used by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WebControl.ApplyStyle%2A> method to apply a style to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebControlApplyStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlApplyStyle/CS/webcontrolapplystylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebControlApplyStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlApplyStyle/VB/webcontrolapplystylevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of arbitrary attributes (for rendering only) that do not correspond to properties on the control.</summary>
+        <value>A <see cref="T:System.Web.UI.AttributeCollection" /> of name and value pairs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection contains a collection of all attributes declared in the opening tag of a Web server control. This allows you to programmatically control the attributes associated with a Web server control. You can add attributes to the collection or remove attributes from the collection.  
+  
+> [!NOTE]
+>  This property is rendered with all attributes in the collection in the control’s opening tag, regardless of the browser settings. Not all browsers support every attribute that is rendered. The unsupported attributes are usually ignored by the browser.  
+  
+> [!NOTE]
+>  You cannot add client-side script to a <xref:System.Web.UI.WebControls.WebControl> instance using the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> collection. To add client-side script, use the <xref:System.Web.UI.Page.ClientScript%2A> property on the <xref:System.Web.UI.Page> control.  
+  
+   
+  
+## Examples  
+ The following example illustrates how the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> property of a <xref:System.Web.UI.WebControls.WebControl> can be used to run a JavaScript command when the <xref:System.Web.UI.WebControls.TextBox> control loses focus.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Attributes Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Attributes Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Attributes Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Attributes Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the Web server control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is <see cref="F:System.Drawing.Color.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property to specify the background color of the Web server control. This property is set using a <xref:System.Drawing.Color?displayProperty=fullName> object.  
+  
+> [!NOTE]
+>  This property will render for only certain controls. For example, <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> will render this property. It will also work for <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> if their `RepeatLayout` property is `RepeatLayout.Table`, not `RepeatLayout.Flow`.  
+  
+ In general, only controls that render as a `<table>` tag can display a background color in HTML 3.2, whereas almost any control can in HTML 4.0.  
+  
+ For controls that render as a `<span>` tag (including <xref:System.Web.UI.WebControls.Label>, all validation controls, and list controls with their `RepeatLayout` property set to `RepeatLayout.Flow`), this property will work in Microsoft Internet Explorer version 5 and later, but not in Microsoft Internet Explorer version 4.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BackColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BackColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BackColor Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BackColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BackColor Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of the Web control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the border color of the control. The default is <see cref="F:System.Drawing.Color.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property to specify the border color of the Web Server control. This property is set using a <xref:System.Drawing.Color> object.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property will render only for certain controls. For example, the <xref:System.Web.UI.WebControls.Table>, <xref:System.Web.UI.WebControls.Panel>, <xref:System.Web.UI.WebControls.DataGrid>, <xref:System.Web.UI.WebControls.Calendar>, and <xref:System.Web.UI.WebControls.ValidationSummary> controls will render this property. It will also work for the <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList>, and <xref:System.Web.UI.WebControls.DataList> controls, if their `RepeatLayout` property is set to `RepeatLayout.Table`, not `RepeatLayout.Flow`. However, it is rendered as the `bordercolor` attribute, which is not part of the HTML 3.2 standard. The `bordercolor` attribute works for Microsoft Internet Explorer version 3.0 or later, but not most other browsers.  
+  
+ When the <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property is not set, the browser will use its default border color. Refer to your browser to determine its default color scheme.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderColor Example/VB/sourcevb.aspx#1)]  -->  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of the Web server control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.BorderStyle" /> enumeration values. The default is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property to specify the border style for the Web server control. This property is set using one of the <xref:System.Web.UI.WebControls.BorderStyle> enumeration values. The following table lists the possible values.  
+  
+|Border Style|Description|  
+|------------------|-----------------|  
+|`NotSet`|The border style is not set.|  
+|`None`|No border|  
+|`Dotted`|A dotted line border.|  
+|`Dashed`|A dashed line border.|  
+|`Solid`|A solid line border.|  
+|`Double`|A solid double line border.|  
+|`Groove`|A grooved border for a sunken border appearance.|  
+|`Ridge`|A ridged border for a raised border appearance.|  
+|`Inset`|An inset border for a sunken control appearance.|  
+|`Outset`|An outset border for a raised control appearance.|  
+  
+> [!NOTE]
+>  This property will not render on browsers earlier than Microsoft Internet Explorer 4 for any Web server control. There is no equivalent to it in HTML 3.2.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the <xref:System.Web.UI.WebControls.Table> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderStyle Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderStyle Example/VB/sourcevb.aspx#1)]  -->  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.BorderWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width of the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the border width of a Web server control. The default value is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property to specify a border width for a control.  
+  
+> [!NOTE]
+>  This property does not work with all Web server controls. It applies only to controls that display as a table, such as <xref:System.Web.UI.WebControls.Table> and <xref:System.Web.UI.WebControls.DataGrid>.  
+  
+ This property is set with a <xref:System.Web.UI.WebControls.Unit> object. If the <xref:System.Web.UI.WebControls.Unit.Value%2A> property of the <xref:System.Web.UI.WebControls.Unit> contains a negative number, an exception is thrown.  
+  
+> [!NOTE]
+>  The border width can be expressed only in pixels for browsers earlier than Microsoft Internet Explorer version 5. All unit types are supported in Microsoft Internet Explorer version 5 and later. Refer to the specific control for details.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.BorderWidth%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.BorderWidth Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.BorderWidth Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.BorderWidth Example/VB/sourcevb.aspx#1)]  -->  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/CS/borderpropertiescs.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControl.BorderProperties#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControl.BorderProperties/VB/borderpropertiesvb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified border width is a negative value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style ControlStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style ControlStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.ControlStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style of the Web server control. This property is used primarily by control developers.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that encapsulates the appearance properties of the Web server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> property encapsulates all properties of the <xref:System.Web.UI.WebControls.WebControl> class that specify the appearance of the control, such as <xref:System.Web.UI.WebControls.WebControl.BorderColor%2A> and <xref:System.Web.UI.WebControls.WebControl.Font%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlStyleCreated">
+      <MemberSignature Language="C#" Value="public bool ControlStyleCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ControlStyleCreated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.ControlStyleCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Web.UI.WebControls.Style" /> object has been created for the <see cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" /> property. This property is primarily used by control developers.</summary>
+        <value>
+          <see langword="true" /> if a <see cref="T:System.Web.UI.WebControls.Style" /> object has been created for the <see cref="P:System.Web.UI.WebControls.WebControl.ControlStyle" /> property; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyBaseAttributes">
+      <MemberSignature Language="C#" Value="public void CopyBaseAttributes (System.Web.UI.WebControls.WebControl controlSrc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyBaseAttributes(class System.Web.UI.WebControls.WebControl controlSrc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.CopyBaseAttributes(System.Web.UI.WebControls.WebControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlSrc" Type="System.Web.UI.WebControls.WebControl" />
+      </Parameters>
+      <Docs>
+        <param name="controlSrc">A <see cref="T:System.Web.UI.WebControls.WebControl" /> that represents the source control with properties to be copied to the Web server control that this method is called from.</param>
+        <summary>Copies the properties not encapsulated by the <see cref="P:System.Web.UI.WebControls.WebControl.Style" /> object from the specified Web server control to the Web server control that this method is called from. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.CopyBaseAttributes%2A> method copies the <xref:System.Web.UI.WebControls.WebControl.AccessKey%2A>, <xref:System.Web.UI.WebControls.WebControl.Enabled%2A>, <xref:System.Web.UI.WebControls.WebControl.ToolTip%2A>, <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A>, and <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> properties from the specified Web server control to the Web server control that this method is called from. This is commonly used in cases where a Web server control works by dynamically creating new controls while it is rendering and using the controls. This method is useful in this situation because it copies all properties of Web server controls not encapsulated by the <xref:System.Web.UI.WebControls.Style> object so they can be placed on the outermost control of a tag that is being rendered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="controlSrc" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlStyle">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Style CreateControlStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.CreateControlStyle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the style object that is used internally by the <see cref="T:System.Web.UI.WebControls.WebControl" /> class to implement all style related properties. This method is used primarily by control developers.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> that is used to implement all style-related properties of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.CreateControlStyle%2A> method is used to create the style object that is used internally to implement all style related properties. Derived classes can override this method to create a style that is appropriate to the class. This method is primarily used by control developers.  
+  
+ **Note** Control developers should return a <xref:System.Web.UI.WebControls.Style> that derives from the <xref:System.Web.UI.WebControls.Style> that the base control returns. It cannot be assumed that the <xref:System.Web.UI.WebControls.WebControl.ControlStyle%2A> is of a particular Style type since a derived control may return a different type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CssClass">
+      <MemberSignature Language="C#" Value="public virtual string CssClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CssClass" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.CssClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.CssClassProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Cascading Style Sheet (CSS) class rendered by the Web server control on the client.</summary>
+        <value>The CSS class rendered by the Web server control on the client. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property to specify the CSS class to render on the client for the Web Server control. This property will render on browsers for all controls. It will always be rendered as the class attribute, regardless of the browser.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ For example, suppose you have the following Web server control declaration:  
+  
+```  
+<asp:TextBox id="TextBox1" ForeColor="Red" CssClass="class1" />  
+```  
+  
+ The following HTML is rendered on the client for the previous Web server control declaration:  
+  
+```  
+<input type=text class="class1" style="ForeColor:red">  
+```  
+  
+ If you use cascading style sheets (CSS) to customize the appearance of a control, use either inline styles or a separate CSS file, but not both. Using both inline styles and a separate CSS file could cause unexpected results.  
+  
+> [!NOTE]
+>  On browsers that do not support CSS, setting the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property will have no effect.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property to change the style of a <xref:System.Web.UI.WebControls.HyperLink> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.CssClass Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.CssClass Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.CssClass Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.CssClass Example/VB/sourcevb.aspx#1)]  -->
+ [!code-xml[Classic WebControl.CssClass Example#1](~/samples/snippets/common/VS_Snippets_WebNet/Classic WebControl.CssClass Example/Common/source.xml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledCssClass">
+      <MemberSignature Language="C#" Value="public static string DisabledCssClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DisabledCssClass" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.DisabledCssClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the CSS class to apply to the rendered HTML element when the control is disabled.</summary>
+        <value>The CSS class that should be applied to the rendered HTML element when the control is disabled. The default value is "aspNetDisabled".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to change the name that is rendered for the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property of individual Web controls. By default, this property returns "aspNetDisabled".  
+  
+ When <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> is overridden in a derived class to return `false`, the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property is rendered as the value of the `class` attribute of the HTML element for the control. In that case, if there is a value in the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property, both CSS classes will be applied to the rendered HTML element. The `class` attribute will consist of the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property followed by the value of the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property, separated by a space.  
+  
+ This property is static, which means that you can set it only for the <xref:System.Web.UI.WebControls.WebControl> class. Whatever value you set it to is used for all controls in a Web application. You cannot specify different values for individual controls.  
+  
+ If you want to use a class name different from the default value of "aspNetDisabled", you typically put the code to do that in the `Application_Start` method of the Global.asax file, as shown in the following example:  
+  
+```vb  
+Private Sub Application_Start(  
+    ByVal sender As Object, ByVal e As EventArgs)  
+    WebControl.DisabledCssClass = "customDisabledClassName"  
+End Sub  
+```  
+  
+```csharp  
+void Application_Start(object sender, EventArgs e)  
+{  
+    WebControl.DisabledCssClass = "customDisabledClassName";  
+}  
+```  
+  
+   
+  
+## Examples  
+ The following example shows rendered HTML for a disabled <xref:System.Web.UI.WebControls.Label> control when the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property is `false`, when the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property has its default value, and when the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property is empty.  
+  
+ `<span id="Label1" class="aspNetDisabled">Test</span>`  
+  
+ The following example shows rendered HTML under the same conditions except that the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property has the value "SampleStyle"`:`  
+  
+ `<span id="Label1" class="aspNetDisabled SampleStyle">Test</span>`  
+  
+ For more information, see the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public virtual bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the Web server control is enabled.</summary>
+        <value>
+          <see langword="true" /> if control is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property of a control is set to `false`, the control typically appears dimmed. If the control is an input element, the browser prevents the user from clicking or typing in it. HTML elements that are rendered for a server control are marked as disabled by setting their `disabled` attribute or their CSS `class` attribute. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> and <xref:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion%2A>.  
+  
+ This property propagates down the control hierarchy. If you disable a container control, the child controls within that container are also disabled. For more information, see the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property.  
+  
+> [!NOTE]
+>  In a custom composite control, this inheritance behavior does not apply to controls that have not yet created their child controls. You must either set the enabled state of the child controls when they are created, or override the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property to call the <xref:System.Web.UI.Control.EnsureChildControls%2A> method.  
+  
+> [!NOTE]
+>  Disabling a control only prevents interaction with the control by the user through the browser UI. It is possible for a user to craft a request that submits a postback that is processed by the page even if controls on the page are disabled. Before you process a postback request, check to make sure that the control is enabled and visible.  
+  
+ Not all controls support this property. See the individual controls for details.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example illustrates how to enable and disable a <xref:System.Web.UI.WebControls.TextBox> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class, by setting its <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property programmatically.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Enabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Enabled Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Enabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Enabled Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTheming">
+      <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.EnableTheming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether themes apply to this control.</summary>
+        <value>
+          <see langword="true" /> to use themes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property indicates whether themes are enabled for a specified control. When the <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property is `true`, the theme directory for the application is searched for control skins to apply. If no skin for the particular control exists in the theme directory, skins are not applied.  
+  
+ When the <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property is `false`, the theme directory is not searched and the contents of the <xref:System.Web.UI.WebControls.WebControl.SkinID%2A> property is not used.  
+  
+ A control can override the <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> value set by its parent control or the containing page. For example, if a parent control has the <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property set to `false`, you can selectively apply themes to child controls that are contained within the parent by setting the <xref:System.Web.UI.WebControls.WebControl.EnableTheming%2A> property to `true` on the individual child controls.  
+  
+ Themes can be enabled at the page, container, or control level. When theming is disabled at the page or container level, themes are disabled for all controls that are contained by the page or container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.FontInfo Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.FontInfo Font" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.FontInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font properties associated with the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.FontInfo" /> that represents the font properties of the Web server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property to specify the font properties of the Web Server control. This property includes subproperties that can be accessed declaratively in the form of `Property-Subproperty` (for example `Font-Bold`) or programmatically in the form of `Property.Subproperty` (for example `Font.Bold`).  
+  
+ All but one subproperty will render in browsers prior to Microsoft Internet Explorer version 4 for all controls. They are: <xref:System.Web.UI.WebControls.FontInfo.Bold%2A>, <xref:System.Web.UI.WebControls.FontInfo.Italic%2A>, <xref:System.Web.UI.WebControls.FontInfo.Name%2A>, <xref:System.Web.UI.WebControls.FontInfo.Names%2A>, <xref:System.Web.UI.WebControls.FontInfo.Strikeout%2A>, <xref:System.Web.UI.WebControls.FontInfo.Underline%2A>, and <xref:System.Web.UI.WebControls.FontInfo.Size%2A> (but only named font sizes, such as `Small`, `Smaller`, and so on, will work).  
+  
+> [!NOTE]
+>  Although these subproperties render in browsers prior to Microsoft Internet Explorer version 4, the HTML that is rendered is different than later browsers. Instead of rendering as style attributes, these subproperties are rendered as HTML elements, such as `<b>` and `<font>`.  
+  
+ The one subproperty that will not render on earlier browsers for all controls is <xref:System.Web.UI.WebControls.FontInfo.Overline%2A>.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.Web.UI.WebControls.WebControl.Font%2A> property to gather font information from a <xref:System.Web.UI.WebControls.Label> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Font Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Font Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Font Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Font Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color (typically the color of the text) of the Web server control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the control. The default is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property to specify the foreground color of the Web server control. The foreground color is usually the color of the text. This property will render on browsers earlier than Microsoft Internet Explorer version 4 for all controls, except the <xref:System.Web.UI.WebControls.Image>, <xref:System.Web.UI.WebControls.AdRotator>, <xref:System.Web.UI.WebControls.HyperLink> and <xref:System.Web.UI.WebControls.LinkButton>.  
+  
+> [!NOTE]
+>  On browsers earlier than Microsoft Internet Explorer version 4, this property is rendered as `<font>` tags.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.ForeColor%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ForeColor Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ForeColor Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ForeColor Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAttributes">
+      <MemberSignature Language="C#" Value="public bool HasAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.HasAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control has attributes set.</summary>
+        <value>
+          <see langword="true" /> if the control has attributes set; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.HasAttributes%2A> property returns `true` when the <xref:System.Web.UI.WebControls.WebControl> instance has attribute name/value pairs. The attribute pairs can be set either in the  property or in the view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the height of the control. The default is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property to specify the height of the Web server control.  
+  
+> [!NOTE]
+>  This property does not render for all controls in browsers earlier than Microsoft Internet Explorer version 4. Controls that do not render this property in earlier browsers include <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.HyperLink>, <xref:System.Web.UI.WebControls.LinkButton>, and any validation controls. The <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> also do not render this property in earlier browsers when their `RepeatLayout` property is set to `RepeatLayout.Flow`. Furthermore, only unit types of `Pixel` and `Percentage` are supported in earlier browsers.  
+  
+ Because this property is nonstandard HTML, Web server controls that display as a table, such as <xref:System.Web.UI.WebControls.Table> and <xref:System.Web.UI.WebControls.DataGrid>, do not support this property in browsers earlier than Microsoft Internet Explorer version 4.  
+  
+> [!NOTE]
+>  To set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property to a unit type other than the default of `Pixel`, you must create a new unit type specific to the unit type you want. For example, to set a control's <xref:System.Web.UI.WebControls.WebControl.Height%2A> property to a percentage value of 100, you could do the following:  
+>   
+>  `myWebControl.Width = Unit.Percentage(100);`  
+>   
+>  For more information on the unit types available for the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property, see the <xref:System.Web.UI.WebControls.Unit> class.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Height Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Height Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The height was set to a negative value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="protected bool IsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control is enabled.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebControl" /> object is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a read-only property. If you want to disable a control, you set its <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property to `false`.  
+  
+ If a control is not contained by another control, the value of the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property is always the same as the value of the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property has a value that is different from the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property if a control is a child of another control and if all the following circumstances are true:  
+  
+-   The value of the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property or the <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property of the parent control is `false`.  
+  
+-   The <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property of the child control is set to `true`.  
+  
+ In this situation, the child control inherits the disabled state of the parent control. The <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property of the child control returns `false` to indicate that the control is disabled even though the child control was not explicitly disabled by setting its <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property to `false`. The parent control itself might have its <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property set to `true` but might inherit the disabled state from its parent, and so on.  
+  
+ When ASP.NET renders HTML elements for a server control, it marks the elements as disabled by setting their `disabled` attribute or their CSS `class` attribute. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> and <xref:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An object that represents the control state to restore.</param>
+        <summary>Restores view-state information from a previous request that was saved with the <see cref="M:System.Web.UI.WebControls.WebControl.SaveViewState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.LoadViewState%2A> method restores the view-state information that was saved during a previous <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A> request. The <xref:System.Web.UI.WebControls.WebControl> class overrides the base <xref:System.Web.UI.Control.LoadViewState%2A> method to handle the <xref:System.Web.UI.Control.ViewState%2A>, <xref:System.Web.UI.WebControls.WebControl.Style%2A>, and <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeStyle">
+      <MemberSignature Language="C#" Value="public void MergeStyle (System.Web.UI.WebControls.Style s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MergeStyle(class System.Web.UI.WebControls.Style s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.MergeStyle(System.Web.UI.WebControls.Style)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Web.UI.WebControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="s">A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the style to be copied.</param>
+        <summary>Copies any nonblank elements of the specified style to the Web control, but will not overwrite any existing style elements of the control. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WebControl.MergeStyle%2A> method to merge a style with the style of a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebControlMergeStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebControlMergeStyle/CS/webcontrolmergestylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebControlMergeStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebControlMergeStyle/VB/webcontrolmergestylevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the control content.</param>
+        <summary>Renders the control to the specified HTML writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.Render%2A> method is used primarily by control developers.  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.Render%2A> method sends the Web control to the specified <xref:System.Web.UI.HtmlTextWriter> instance. Override this method to send your custom server control to the client.  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.Render%2A> method first calls the <xref:System.Web.UI.WebControls.WebControl.RenderBeginTag%2A> method, then the <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> method, and finally the <xref:System.Web.UI.WebControls.WebControl.RenderEndTag%2A> method to send the control to the client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBeginTag">
+      <MemberSignature Language="C#" Value="public virtual void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the HTML opening tag of the control to the specified writer. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is made public so other controls can render multiple controls in between the opening and closing tags of a Web server control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderContents">
+      <MemberSignature Language="C#" Value="protected virtual void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the contents of the control to the specified writer. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> method to render the contents of the control between the begin and end tags. The default implementation of this method renders any child controls.  
+  
+ If your control has child controls, you must either call the base <xref:System.Web.UI.WebControls.WebControl.RenderContents%2A> method or call the <xref:System.Web.UI.Control.RenderChildren%2A> at the point where you want the child controls to be rendered to the text writer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndTag">
+      <MemberSignature Language="C#" Value="public virtual void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the HTML closing tag of the control into the specified writer. This method is used primarily by control developers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is made public so other controls can render multiple controls in between the opening and closing tags of a Web server control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
+        <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A> method is used primarily by control developers.  
+  
+ View state is the cumulative values of the properties for a server control. These values are placed automatically in the <xref:System.Web.UI.Control.ViewState%2A> property for the server control, which is an instance of the <xref:System.Web.UI.StateBag> class. The <xref:System.Web.UI.Control.ViewState%2A> property value is then persisted to a string object after the save state stage of the life cycle for the server control. For more information, see [ASP.NET Page Life Cycle Overview](http://msdn.microsoft.com/library/7949d756-1a79-464e-891f-904b1cfc7991).  
+  
+ When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML `input` element. When you author custom server controls, you can improve efficiency by overriding the <xref:System.Web.UI.WebControls.WebControl.SaveViewState%2A> method and modifying the <xref:System.Web.UI.Control.ViewState%2A> property for your server control. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkinID">
+      <MemberSignature Language="C#" Value="public override string SkinID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkinID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.SkinID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the skin to apply to the control.</summary>
+        <value>The name of the skin to apply to the control. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Skins available to a control are contained in one or more skin files in a theme directory. The <xref:System.Web.UI.WebControls.WebControl.SkinID%2A> property specifies which of these skins to apply to the control. A skin is specific to a particular control; you cannot share skin setting between controls of different types.  
+  
+ If you do not set the <xref:System.Web.UI.WebControls.WebControl.SkinID%2A> property, a control uses the default skin if one is defined. For example, if a skin without an ID is defined for an <xref:System.Web.UI.WebControls.Image> control, then that skin applies to all <xref:System.Web.UI.WebControls.Image> controls that do not explicitly reference a skin by ID and that are not set to disable theming. If a skin with an ID is defined for an <xref:System.Web.UI.WebControls.Image> control, then that skin applies to only <xref:System.Web.UI.WebControls.Image> controls whose <xref:System.Web.UI.WebControls.WebControl.SkinID%2A> is set to that ID.  
+  
+ If the skin files in a theme directory do not contain a skin with the specified <xref:System.Web.UI.WebControls.WebControl.SkinID%2A>, an <xref:System.ArgumentException> exception is thrown at runtime.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The skin specified in the <see cref="P:System.Web.UI.WebControls.WebControl.SkinID" /> property does not exist in the theme.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CssStyleCollection Style { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CssStyleCollection Style" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CssStyleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of text attributes that will be rendered as a style attribute on the outer tag of the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.CssStyleCollection" /> that contains the HTML style attributes to render on the outer tag of the Web server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.Style%2A> collection to manage the style attributes rendered in the outer tag of the Web server control. This property will render on all browsers for all controls.  
+  
+> [!NOTE]
+>  Browsers that do not support style attributes will ignore the rendered HTML.  
+  
+ Any style values set through the strongly typed style properties (for example, `BackColor="Red"`) will automatically override a corresponding value in this collection.  
+  
+ Values set in this collection are not automatically reflected by the strongly typed style properties.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.Web.UI.WebControls.WebControl.Style%2A> property to hide or display a <xref:System.Web.UI.WebControls.Label> control on a page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Style Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Style Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Style Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Style Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In derived classes, this property indicates how ASP.NET should render HTML for a control when the control is disabled.  
+  
+## Disabling ASP.NET Web Controls  
+ When the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property of an ASP.NET control is set to `false` (that is, when the control is disabled), the intent is that ASP.NET should render the control in the page, but display it in a disabled state (typically dimmed). If a parent control is disabled, children of that control are also displayed as disabled. In that case, the child control's <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property is set to `false`, even though its <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property might be set to `true`.  
+  
+ In ASP.NET 3.5 and earlier versions, when a control's <xref:System.Web.UI.WebControls.WebControl.IsEnabled%2A> property is `false`, ASP.NET sets the `disabled` attribute to "disabled" in the HTML element that it renders for the control. However, the HTML 4.01 standard allows the `disabled` attribute only on certain elements that are used for user input. For example, the `disabled` attribute is allowed for `input` elements, but not for `span` elements.  
+  
+ Most browsers support a default disabled appearance for display-only elements that have `disabled` attributes. However, in order to comply with HTML standards, by default ASP.NET 4 omits invalid attributes.  
+  
+## How the SupportsDisabledAttribute Property is Used  
+ If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property is `true`, ASP.NET renders a `disabled` attribute when the control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when the control is disabled.  
+  
+ Derived classes override this property to return `false` if all the following conditions are true:  
+  
+-   The control renders an HTML element that does not support the `disabled` attribute.  
+  
+-   The <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates an ASP.NET version number lower than 4.0.  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property does not necessarily indicate whether the HTML element that is rendered for a control supports (allows) the `disabled` attribute. If a control's <xref:System.Web.UI.Control.RenderingCompatibility%2A> property indicates an ASP.NET version number lower than 4.0, the value of the control's <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property might return `true` even if the rendered HTML does not support the `disabled` attribute.  
+  
+## Backward Compatibility for Disabled Controls  
+ When you use Visual Studio to upgrade a Web project to ASP.NET 4 from an earlier version, Visual Studio automatically sets the `controlRenderingCompatibilityVersion` attribute in the Web.config file (which sets the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property) to the earlier version number. Because the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property always returns `true` when the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is lower than 4.0, this causes Web controls to render HTML for disabled controls as they did in the earlier version. If you want an upgraded Web site to render HTML using the algorithm introduced in ASP.NET 4, you can change or remove the `controlRenderingCompatibilityVersion` attribute. For more information, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property.  
+  
+## Setting a Disabled Appearance By Using CSS  
+ If the <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A> property of a control is `false` and the control is disabled, ASP.NET sets the `class` attribute of the rendered HTML element to the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property. The default value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property is "aspNetDisabled".  
+  
+ To provide a disabled appearance for disabled controls, you must define a CSS rule for the class that is represented by the value of the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A?displayProperty=fullName> property.  
+  
+ The HTML element that is rendered for a control might have more than one value in its `class` attribute if there is a value in its <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property. For more information, see the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows markup for a disabled <xref:System.Web.UI.WebControls.Label> control:  
+  
+ `<asp:Label id="Label1" runat="server" Text="Test" Enabled="false"/>`  
+  
+ In ASP.NET 3.5 and earlier versions, this markup renders the following HTML:  
+  
+ `<span id="Label1" disabled="disabled">Test</span>`  
+  
+ In ASP.NET 4, if the value of the <xref:System.Web.UI.Control.RenderingCompatibility%2A> property is 4.0 or greater, and if the <xref:System.Web.UI.WebControls.WebControl.DisabledCssClass%2A> property is set to its default value, the same markup renders the following HTML:  
+  
+ `<span id="Label1" class="aspNetDisabled">Test</span>`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
+      <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute.</param>
+        <summary>Gets an attribute of the Web control with the specified name.</summary>
+        <returns>The value of the attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.System%23Web%23UI%23IAttributeAccessor%23GetAttribute%2A> method is an explicit interface member implementation. It can be used only when the instance of the <xref:System.Web.UI.WebControls.WebControl> class is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
+      <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name component of the attribute's name/value pair.</param>
+        <param name="value">The value component of the attribute's name/value pair.</param>
+        <summary>Sets an attribute of the Web control to the specified name and value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.System%23Web%23UI%23IAttributeAccessor%23SetAttribute%2A> method is an explicit interface member implementation. It can be used only when the instance of the <xref:System.Web.UI.WebControls.WebControl> class is cast to an <xref:System.Web.UI.IAttributeAccessor> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndex">
+      <MemberSignature Language="C#" Value="public virtual short TabIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 TabIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.TabIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tab index of the Web server control.</summary>
+        <value>The tab index of the Web server control. The default is <see langword="0" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property to specify or determine the tab index of a Web server control on the Web Forms page. When you press the `Tab` key, the order in which the Web server controls receive focus is determined by the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property of each control. When a page is initially loaded, the first item that receives focus when the `Tab` key is pressed is the address bar. Next, the controls on the Web Forms page are tabbed to in ascending order, based on the value of the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property of each control, starting with the smallest positive, nonzero value. If multiple controls share the same tab index, the controls will receive focus in the order they are declared on the Web Forms page. Finally, controls that have a tab index of zero are tabbed to in the order they are declared.  
+  
+> [!NOTE]
+>  Only controls with a nonzero tab index will render the `tabindex` attribute.  
+  
+ You can remove a Web Server control from the tab order by setting the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property to a negative value.  
+  
+> [!NOTE]
+>  This property is supported only in Internet Explorer 4 and later.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.Web.UI.WebControls.WebControl.TabIndex%2A> property of the <xref:System.Web.UI.WebControls.WebControl> to set the tab order of controls on the page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.TabIndex Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.TabIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.TabIndex Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified tab index is not between -32768 and 32767.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TagKey">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.TagKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to this Web server control. This property is used primarily by control developers.</summary>
+        <value>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value that is associated with this Web server control. This property is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagName">
+      <MemberSignature Language="C#" Value="protected virtual string TagName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.TagName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the control tag. This property is used primarily by control developers.</summary>
+        <value>The name of the control tag.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.TagName%2A> property to determine the name of the control tag associated with this Web server control. This property is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTip">
+      <MemberSignature Language="C#" Value="public virtual string ToolTip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.ToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed when the mouse pointer hovers over the Web server control.</summary>
+        <value>The text displayed when the mouse pointer hovers over the Web server control. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.ToolTip%2A> property to specify the custom text that is displayed when the mouse pointer hovers over the Web server control.  
+  
+> [!NOTE]
+>  This property is rendered for all browsers. However, only Microsoft Internet Explorer will display this property as a ToolTip. All other browsers will ignore this property.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example illustrates how to set the <xref:System.Web.UI.WebControls.WebControl.ToolTip%2A> property on the <xref:System.Web.UI.WebControls.Button> control, which is inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.ToolTip Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.ToolTip Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.ToolTip Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebControl.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the control to track changes to its view state so they can be stored in the object's <see cref="P:System.Web.UI.Control.ViewState" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebControl.TrackViewState%2A> method is used primarily by control developers.  
+  
+ The <xref:System.Web.UI.WebControls.WebControl.TrackViewState%2A> marks the starting point at which to begin tracking and saving changes to the view state for the control. The <xref:System.Web.UI.WebControls.WebControl.TrackViewState%2A> method is called automatically by ASP.NET when a server control is initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebControl.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Web.UI.WebControls.Unit), "")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the Web server control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that represents the width of the control. The default is <see cref="F:System.Web.UI.WebControls.Unit.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property to specify the width of the Web server control.  
+  
+> [!NOTE]
+>  This property does not render for all controls in browsers earlier than Microsoft Internet Explorer version 4. Controls that do not render this property in earlier browsers include <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.HyperLink>, <xref:System.Web.UI.WebControls.LinkButton>, and any validation controls. The <xref:System.Web.UI.WebControls.CheckBoxList>, <xref:System.Web.UI.WebControls.RadioButtonList> and <xref:System.Web.UI.WebControls.DataList> also do not render this property in earlier browsers when their `RepeatLayout` property is set to `RepeatLayout.Flow`. Furthermore, only unit types of `Pixel` and `Percentage` are supported in earlier browsers.  
+  
+ Because this property is nonstandard HTML, Web server controls that display as a table, such as <xref:System.Web.UI.WebControls.Table> and <xref:System.Web.UI.WebControls.DataGrid>, do not support this property in browsers earlier than Microsoft Internet Explorer version 4.  
+  
+> [!NOTE]
+>  To set the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property declaratively to a unit type other than the default of `Pixel`, you must create a new unit type specific to the unit type you want. For example, to set a control's <xref:System.Web.UI.WebControls.WebControl.Width%2A> property to a percentage value of 100, you could do the following:  
+>   
+>  `myWebControl.width = Unit.Percentage(100);`  
+>   
+>  For more information on the unit types available for the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property, see the <xref:System.Web.UI.WebControls.Unit> class.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to declaratively set the <xref:System.Web.UI.WebControls.WebControl.Width%2A> property of the <xref:System.Web.UI.WebControls.Table> control, inherited from the <xref:System.Web.UI.WebControls.WebControl> base class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic WebControl.Width Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic WebControl.Width Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic WebControl.Width Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic WebControl.Width Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The width of the Web server control was set to a negative value.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

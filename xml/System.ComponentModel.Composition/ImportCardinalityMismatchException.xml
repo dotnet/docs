@@ -1,0 +1,163 @@
+<Type Name="ImportCardinalityMismatchException" FullName="System.ComponentModel.Composition.ImportCardinalityMismatchException">
+  <TypeSignature Language="C#" Value="public class ImportCardinalityMismatchException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ImportCardinalityMismatchException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{Message}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.ComponentModel.Composition.ImportCardinalityMismatchExceptionDebuggerProxy))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when the cardinality of an import is not compatible with the cardinality of the matching exports.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImportCardinalityMismatchException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportCardinalityMismatchException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" /> class with a system-supplied message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply". This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImportCardinalityMismatchException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportCardinalityMismatchException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message that describes the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" />, or <see langword="null" /> to set the <see cref="P:System.Exception.Message" /> property to its default value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" /> class with a specified message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of <xref:System.ComponentModel.Composition.ImportCardinalityMismatchException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ImportCardinalityMismatchException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportCardinalityMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">An object that holds the serialized object data about the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" />.</param>
+        <param name="context">An object that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">
+          <paramref name="info" /> is missing a required value.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="info" /> contains a value that cannot be cast to the correct type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImportCardinalityMismatchException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ImportCardinalityMismatchException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ImportCardinalityMismatchException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.ComponentModel.Composition.ImportCardinalityMismatchException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

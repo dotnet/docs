@@ -1,0 +1,215 @@
+<Type Name="DecoderReplacementFallbackBuffer" FullName="System.Text.DecoderReplacementFallbackBuffer">
+  <TypeSignature Language="C#" Value="public sealed class DecoderReplacementFallbackBuffer : System.Text.DecoderFallbackBuffer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DecoderReplacementFallbackBuffer extends System.Text.DecoderFallbackBuffer" />
+  <TypeSignature Language="DocId" Value="T:System.Text.DecoderReplacementFallbackBuffer" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Text.DecoderFallbackBuffer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a substitute output string that is emitted when the original input byte sequence cannot be decoded. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It might not be possible to convert an encoded byte sequence to an equivalent character if no suitable decoding exists. A common reason for a decoding to fail is that the conversion operation uses a code page that cannot represent the character to decode.  
+  
+ If the input byte sequence cannot be converted to an output character, a <xref:System.Text.DecoderReplacementFallback?displayProperty=fullName> object provides a replacement string that is substituted for the output character. The replacement string initializes the value of the <xref:System.Text.DecoderReplacementFallback> object, and the value of the <xref:System.Text.DecoderReplacementFallback> object initializes the value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object. The value of a <xref:System.Text.DecoderReplacementFallbackBuffer> object is called the replacement fallback buffer. The conversion operation uses the replacement fallback buffer to emit a replacement string instead of a decoded character, then continues to process the remainder of the input.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DecoderReplacementFallbackBuffer (System.Text.DecoderReplacementFallback fallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.DecoderReplacementFallback fallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallbackBuffer.#ctor(System.Text.DecoderReplacementFallback)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fallback" Type="System.Text.DecoderReplacementFallback" />
+      </Parameters>
+      <Docs>
+        <param name="fallback">A <see cref="T:System.Text.DecoderReplacementFallback" /> object that contains a replacement string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderReplacementFallbackBuffer" /> class using the value of a <see cref="T:System.Text.DecoderReplacementFallback" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fallback">
+      <MemberSignature Language="C#" Value="public override bool Fallback (byte[] bytesUnknown, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(unsigned int8[] bytesUnknown, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallbackBuffer.Fallback(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytesUnknown" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytesUnknown">An input byte sequence. This parameter is ignored unless an exception is thrown.</param>
+        <param name="index">The index position of the byte in <c>bytesUnknown</c>. This parameter is ignored in this operation.</param>
+        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
+        <returns>
+          <see langword="true" /> if the replacement string is not empty; <see langword="false" /> if the replacement string is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Encoding.GetBytes%2A> and <xref:System.Text.Encoder.Convert%2A> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown input byte sequence that cannot be decoded. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke the <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> method to obtain each character of the fallback buffer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">This method is called again before the <see cref="M:System.Text.DecoderReplacementFallbackBuffer.GetNextChar" /> method has read all the characters in the replacement fallback buffer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextChar">
+      <MemberSignature Language="C#" Value="public override char GetNextChar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetNextChar() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallbackBuffer.GetNextChar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the next character in the replacement fallback buffer.</summary>
+        <returns>The next character in the replacement fallback buffer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> and <xref:System.Text.Decoder.Convert%2A?displayProperty=fullName> methods call <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> if they encounter an unknown surrogate pair or character in their input. If the return value of <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> is `true`, the calling method can invoke <xref:System.Text.DecoderReplacementFallbackBuffer.GetNextChar%2A> to obtain each character of the replacement fallback buffer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MovePrevious">
+      <MemberSignature Language="C#" Value="public override bool MovePrevious ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MovePrevious() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallbackBuffer.MovePrevious" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the next call to <see cref="M:System.Text.DecoderReplacementFallbackBuffer.GetNextChar" /> to access the character position in the replacement fallback buffer prior to the current character position.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="M:System.Text.DecoderReplacementFallbackBuffer.MovePrevious" /> operation was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remaining">
+      <MemberSignature Language="C#" Value="public override int Remaining { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Remaining" />
+      <MemberSignature Language="DocId" Value="P:System.Text.DecoderReplacementFallbackBuffer.Remaining" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of characters in the replacement fallback buffer that remain to be processed.</summary>
+        <value>The number of characters in the replacement fallback buffer that have not yet been processed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.DecoderReplacementFallbackBuffer.Fallback%2A> method returns `true` if the <xref:System.Text.DecoderReplacementFallbackBuffer.Remaining%2A> property is nonzero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public override void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallbackBuffer.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes all internal state information and data in the <see cref="T:System.Text.DecoderReplacementFallbackBuffer" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method discards any persisted state information and data that govern the emitting of a replacement string. Unpredictable results occur if the decoding operation continues after the <xref:System.Text.DecoderReplacementFallbackBuffer.Reset%2A> method is invoked.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

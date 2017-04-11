@@ -47,7 +47,7 @@ Although you can set an object's properties to default values at design time, an
   
 3.  Add the following public members to the class:  
   
-    ```cs  
+    ```csharp  
     public class Loan : System.ComponentModel.INotifyPropertyChanged  
     {  
         public double LoanAmount {get; set;}  
@@ -103,7 +103,7 @@ Although you can set an object's properties to default values at design time, an
   
 9. In the Code Editor, add the following code:  
   
-    ```cs  
+    ```csharp  
     private LoanClass.Loan TestLoan = new LoanClass.Loan(10000.0, 0.075, 36, "Neil Black");  
   
     private void Form1_Load(object sender, EventArgs e)  
@@ -117,7 +117,7 @@ Although you can set an object's properties to default values at design time, an
   
 10. Add an event handler for the `PropertyChanged` event to the form by using the following code:  
   
-    ```cs  
+    ```csharp  
     private void CustomerPropertyChanged(object sender,   
         System.ComponentModel.PropertyChangedEventArgs e)  
     {  
@@ -136,7 +136,7 @@ Although you can set an object's properties to default values at design time, an
   
 -   Change the class declaration for the Loan class as follows:  
   
-    ```cs  
+    ```csharp  
     [Serializable()]  
     public class Loan : System.ComponentModel.INotifyPropertyChanged  
     {  
@@ -148,7 +148,7 @@ Although you can set an object's properties to default values at design time, an
   
 -   Change the declaration for the `PropertyChanged` event as follows:  
   
-    ```cs  
+    ```csharp  
     [field: NonSerialized()]  
     public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;  
     ```  
@@ -159,7 +159,7 @@ Although you can set an object's properties to default values at design time, an
   
 -   Add the following statements to the top of the `Form1` class:  
   
-    ```cs  
+    ```csharp  
     using System.IO;  
     using System.Runtime.Serialization.Formatters.Binary;  
     ```  
@@ -172,13 +172,13 @@ Although you can set an object's properties to default values at design time, an
   
 1.  Add a constant to the class for the serialized data's file name.  
   
-    ```cs  
+    ```csharp  
     const string FileName = @"..\..\SavedLoan.bin";  
     ```  
   
 2.  Modify the code in the `Form1_Load` event procedure as follows:  
   
-    ```cs  
+    ```csharp  
     private LoanClass.Loan TestLoan = new LoanClass.Loan(10000.0, 0.075, 36, "Neil Black");  
   
     private void Form1_Load(object sender, EventArgs e)  
@@ -208,7 +208,7 @@ Although you can set an object's properties to default values at design time, an
   
 -   Add the following code to the `Form1_FormClosing` event procedure:  
   
-    ```cs  
+    ```csharp  
     private void Form1_FormClosing(object sender, FormClosingEventArgs e)  
     {  
         TestLoan.LoanAmount = Convert.ToDouble(textBox1.Text);  

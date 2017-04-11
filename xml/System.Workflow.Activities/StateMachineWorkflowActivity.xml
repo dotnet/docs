@@ -1,0 +1,356 @@
+<Type Name="StateMachineWorkflowActivity" FullName="System.Workflow.Activities.StateMachineWorkflowActivity">
+  <TypeSignature Language="C#" Value="public class StateMachineWorkflowActivity : System.Workflow.Activities.StateActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateMachineWorkflowActivity extends System.Workflow.Activities.StateActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateMachineWorkflowActivity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.StateActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.StateMachineWorkflowDesigner), typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.StateMachineWorkflowDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.StateMachineWorkflowActivity), "Resources.StateMachineWorkflowActivity.png")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.StateActivityValidator))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the root container for state machine workflows. Contains event-driven activities and states.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> is an activity container used to create workflows that follow a state machine model.  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, which means the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> can contain other activities. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> and the <xref:System.Workflow.Activities.EventDrivenActivity> activities are the only permitted child activities of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. <xref:System.Workflow.Activities.EventDrivenActivity> activities are permitted because the root activity itself behaves like a state. Therefore, you can have <xref:System.Workflow.Activities.EventDrivenActivity> activities at the root level that are used by all the State activities in the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. <xref:System.Workflow.Activities.EventDrivenActivity> activities at this level provide a global mechanism for processing workflow events and automate state transitions. <xref:System.Workflow.Activities.StateActivity> activities provide a mechanism to define the various stages in the model.  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> has properties that are required for the execution of the state machine workflow. Most notably, the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> has two properties that are important: <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty> and <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty>.  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty> of the state machine is the state in which the state machine is when an instance of the state machine is created. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty> property is mandatory and must be provided when a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> is created. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty> of the state machine is like any other state activity that is contained within the state machine. The state activity can be a direct child of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> root activity and a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> can have only one <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty>.  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty> of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> is a <xref:System.Workflow.Activities.StateActivity> activity that is designated as the end state of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity>. When a transition is made to the <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty>, the workflow execution is completed. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty> is not mandatory. This means that you can have a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> that is not completed. This does not mean that the state machine workflow is always active in memory. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> might be unloaded as it waits for an event.  
+  
+ <xref:System.Workflow.Activities.StateMachineWorkflowActivity> activities that never complete are especially useful in processing long running business transactions, as in the case of a purchase order received by a supplier. The fact that the purchase order was fulfilled does not mean that the purchase order process is over. The goods that are part of the purchase order might be returned or the purchase order might be amended and have additional items added to it after the fulfillment. Sometimes there might be a requirement to keep the purchase order records for an extended period of time for legal or other purposes. The fact that a workflow does not finish just means that the workflow remains in an unloaded state. There may be a case for retiring the workflows, which means that after a set period of time the workflow instance may be forced to shut down.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> class and use it to implement a basic state machine to transition between three states. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#181](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#181)]
+ [!code-vb[wf_samples#181](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#181)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StateMachineWorkflowActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowActivity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StateMachineWorkflowActivity (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowActivity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user-defined name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> class using the name of the activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedStateName">
+      <MemberSignature Language="C#" Value="public string CompletedStateName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompletedStateName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.Activities.StateDropDownEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the end <see cref="T:System.Workflow.Activities.StateActivity" /> of the workflow.</summary>
+        <value>The end <see cref="T:System.Workflow.Activities.StateActivity" /> of the workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a transition is made to the <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName%2A>, the workflow execution is completed. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName%2A> is not mandatory. This means that you can have a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> that is not completed. This does not mean that the state machine workflow is always active in memory. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> might be unloaded as it waits for an event.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A> and <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName%2A>, see <xref:System.Workflow.Activities.StateMachineWorkflowActivity>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the value of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName%2A> property. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#184](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#184)]
+ [!code-vb[wf_samples#184](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#184)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompletedStateNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CompletedStateNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CompletedStateNameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> that targets the <see cref="P:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentStateName">
+      <MemberSignature Language="C#" Value="public string CurrentStateName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentStateName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the currently executing <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+        <value>The name of the current <see cref="T:System.Workflow.Activities.StateActivity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName%2A> property only returns the name of the current state when accessed from within the workflow, for example, from a code handler in a <xref:System.Workflow.Activities.CodeActivity> activity. The property does not work from host code because the host only has access to a copy of the workflow definition, and never to the live instance tree.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] how to determine the current state from the host, see the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.CurrentStateName%2A> property of the <xref:System.Workflow.Activities.StateMachineWorkflowInstance> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicUpdateCondition">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCondition DynamicUpdateCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityCondition DynamicUpdateCondition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.DynamicUpdateCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that determines whether dynamic updates can be made in the workflow, when overridden in a derived class.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.ActivityCondition" /> that identifies when dynamic updates can be made.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the `DynamicUpdateCondition` property. This example is from the Ordering State Machine SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+  
+ [!code-csharp[wf_samples#127](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#127)]
+ [!code-vb[wf_samples#127](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#127)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialStateName">
+      <MemberSignature Language="C#" Value="public string InitialStateName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InitialStateName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.Activities.StateDropDownEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Workflow.ComponentModel.Compiler.ValidationOption(System.Workflow.ComponentModel.Compiler.ValidationOption.Optional)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Activities.StateActivity" /> in which the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> is when an instance of the state machine is created.</summary>
+        <value>The <see cref="T:System.Workflow.Activities.StateActivity" /> in which the <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" /> is when an instance of the state machine is created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A> property is mandatory and must be provided when a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> is created. The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A> of the state machine is like any other state activity that is contained within the state machine. The state activity can be a direct child of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> root activity and a <xref:System.Workflow.Activities.StateMachineWorkflowActivity> can have only one <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A>.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A> and <xref:System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateName%2A>, see <xref:System.Workflow.Activities.StateMachineWorkflowActivity>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the value of the <xref:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName%2A> property. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#184](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#184)]
+ [!code-vb[wf_samples#184](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#184)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialStateNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty InitialStateNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty InitialStateNameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> that targets the <see cref="P:System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateName" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousStateName">
+      <MemberSignature Language="C#" Value="public string PreviousStateName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreviousStateName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the previously executed <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+        <value>The name of the previous <see cref="T:System.Workflow.Activities.StateActivity" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName%2A> property only returns the name of the previous state when accessed from within the workflow, for example, from a code handler in a <xref:System.Workflow.Activities.CodeActivity>. The property does not work from host code because the host only has access to a copy of the workflow definition, never to the live instance tree.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] how to determine the previous state from the host, see the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.StateHistory%2A> property of the <xref:System.Workflow.Activities.StateMachineWorkflowInstance> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStateQueueName">
+      <MemberSignature Language="C#" Value="public const string SetStateQueueName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SetStateQueueName" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.StateMachineWorkflowActivity.SetStateQueueName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> that is used to change the state of a <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

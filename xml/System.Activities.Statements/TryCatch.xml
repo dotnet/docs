@@ -1,0 +1,293 @@
+<Type Name="TryCatch" FullName="System.Activities.Statements.TryCatch">
+  <TypeSignature Language="C#" Value="public sealed class TryCatch : System.Activities.NativeActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TryCatch extends System.Activities.NativeActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.TryCatch" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains activities to be executed by the workflow runtime in an exception handling block.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Activities.Statements.TryCatch.Finally%2A> activity member of a <xref:System.Activities.Statements.TryCatch> activity that is the child of a <xref:System.Activities.Statements.TransactionScope> will not execute if an unhandled exception propagates past the <xref:System.Activities.Statements.TransactionScope> boundary.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TryCatch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="M:System.Activities.Statements.TryCatch.#ctor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="protected override void Cancel (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.Cancel(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Catches">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.Catch&gt; Catches { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Statements.Catch&gt; Catches" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TryCatch.Catches" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Try")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Statements.Catch&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The collection of <see langword="Catch" /> elements to be checked when the <see cref="P:System.Activities.Statements.TryCatch.Try" /> activity throws an exception.</summary>
+        <value>The catch collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Catches are evaluated in the order in which they are added to the collection. If an exact match for the exception type is found, the matching <xref:System.Activities.Statements.Catch> activity is executed.  If no exact match is found, the <xref:System.Activities.Statements.Catch> with the closest matching <xref:System.Activities.Statements.Catch.ExceptionType%2A> is executed.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates setting the Catches property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+  
+ Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finally">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Finally { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Finally" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TryCatch.Finally" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Catches")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The activity to be executed when the <see cref="P:System.Activities.Statements.TryCatch.Try" /> and any necessary activities in the <see cref="P:System.Activities.Statements.TryCatch.Catches" /> collection complete execution.</summary>
+        <value>The activity that represents the <see cref="P:System.Activities.Statements.TryCatch.Finally" /> logic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the <xref:System.Activities.Statements.TryCatch.Finally%2A> property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateDynamicUpdateMap">
+      <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
+        <Parameter Name="originalActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <param name="originalActivity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Try">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Try { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Try" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TryCatch.Try" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DependsOn("Variables")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The activity first executed when the <see cref="T:System.Activities.Statements.TryCatch" /> executes.</summary>
+        <value>The activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates setting the Try property of a <xref:System.Activities.Statements.TransactionScope> activity. This example is from the [Nesting of TransactionScope within a service](~/docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_TRSCompostability#1](wfs_TRSCompostability#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateInstance">
+      <MemberSignature Language="C#" Value="protected override void UpdateInstance (System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateInstance(class System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.TryCatch.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateContext" Type="System.Activities.DynamicUpdate.NativeActivityUpdateContext" />
+      </Parameters>
+      <Docs>
+        <param name="updateContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; Variables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; Variables" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.TryCatch.Variables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The collection of contained variables.</summary>
+        <value>The collection of variables.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

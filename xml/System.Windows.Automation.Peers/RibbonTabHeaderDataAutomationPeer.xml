@@ -1,0 +1,120 @@
+<Type Name="RibbonTabHeaderDataAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonTabHeaderDataAutomationPeer : System.Windows.Automation.Peers.ItemAutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonTabHeaderDataAutomationPeer extends System.Windows.Automation.Peers.ItemAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ItemAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonTabHeaderDataAutomationPeer (object item, System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer itemsControlPeer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer itemsControlPeer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="itemsControlPeer" Type="System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element associated with this automation peer.</param>
+        <param name="itemsControlPeer">The <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderItemsControlAutomationPeer" /> that is associated with the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeaderItemsControl" /> that holds the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Header" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer" />.</summary>
+        <returns>
+          <see langword="null" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContentElementCore">
+      <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTabHeaderDataAutomationPeer.IsContentElementCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the element that is associated with this automation peer contains data that is presented to the user. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

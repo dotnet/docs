@@ -1,0 +1,135 @@
+<Type Name="CircleEase" FullName="System.Windows.Media.Animation.CircleEase">
+  <TypeSignature Language="C#" Value="public class CircleEase : System.Windows.Media.Animation.EasingFunctionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CircleEase extends System.Windows.Media.Animation.EasingFunctionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.CircleEase" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.EasingFunctionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an easing function that creates an animation that accelerates and/or decelerates using a circular function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can control whether the animation accelerates, decelerates, or both by specifying the <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>. The following graph demonstrates the different values of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>, where *f*(*t*) represents the animation progress and *t* represents time.  
+  
+ ![CircleEase EasingMode graphs.](~/add/media/circleease-graph.png "CircleEase EasingMode graphs.")  
+  
+ The formula used for this function is the following.  
+  
+ ![Mathematical formula for CircleEase](~/add/media/circleease-formula.png "Mathematical formula for CircleEase")  
+  
+ The valid values for *t* are -1 <= *t* <= 1. Values greater than 1 are evaluated as 1, and values less than -1 are evaluated as -1. This means that for values outside this interval, the animation continues, but the easing function pauses when it enters the invalid domain, and it resumes after it leaves the invalid domain.  
+  
+ There are several other easing functions besides <xref:System.Windows.Media.Animation.CircleEase> which you can explore using the following Silverlight sample.  
+  
+ [Run this sample](http://go.microsoft.com/fwlink/?LinkId=139798&sref=easing_functions_gallery)  
+  
+ In addition to using the easing functions included in the run-time, you can create your own custom easing functions by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>.  
+  
+<a name="xamlObjectElementUsage_CircleEase"></a>   
+## XAML Object Element Usage  
+  
+```  
+<CircleEase .../>  
+```  
+  
+   
+  
+## Examples  
+ The following example applies a <xref:System.Windows.Media.Animation.CircleEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
+  
+ <!-- TODO: review snippet reference [!code-xml[CircleEase#CircleEase](~/samples/snippets/xaml/VS_Snippets_Wpf/circleease/xaml/window1.xaml#circleease)]  -->
+ [!code-xml[CircleEase#CircleEase](~/samples/snippets/csharp/VS_Snippets_Wpf/circleease/CS/window1.xaml#circleease)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CircleEase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CircleEase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.CircleEase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CircleEase.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Freezable" /> derived class. When creating a derived class, you must override this method.</summary>
+        <returns>The new instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Animation classes inherit indirectly from <xref:System.Windows.Freezable>. Because of this, you need to override the <xref:System.Windows.Media.Animation.BackEase.CreateInstanceCore%2A> method to construct a custom animation object.  
+  
+   
+  
+## Examples  
+ The following example shows a typical implementation of <xref:System.Windows.Freezable.CreateInstanceCore%2A>.  
+  
+ [!code-csharp[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#createinstancecoreexample)]
+ [!code-vb[freezablesample_procedural#CreateInstanceCoreExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#createinstancecoreexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EaseInCore">
+      <MemberSignature Language="C#" Value="protected override double EaseInCore (double normalizedTime);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 EaseInCore(float64 normalizedTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CircleEase.EaseInCore(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="normalizedTime" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="normalizedTime">Normalized time (progress) of the animation.</param>
+        <summary>Provides the logic portion of the easing function that you can override to produce the <see cref="F:System.Windows.Media.Animation.EasingMode.EaseIn" /> mode of the custom easing function.</summary>
+        <returns>A double that represents the transformed progress.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+  
+ You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

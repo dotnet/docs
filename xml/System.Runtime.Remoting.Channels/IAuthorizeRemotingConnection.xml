@@ -1,0 +1,83 @@
+<Type Name="IAuthorizeRemotingConnection" FullName="System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection">
+  <TypeSignature Language="C#" Value="public interface IAuthorizeRemotingConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizeRemotingConnection" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection" /> interface provides methods that indicate whether a client is authorized to connect on the current channel, based on the client's network address and user identity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection> interface is passed to <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.%23ctor%28System.Collections.IDictionary%2CSystem.Runtime.Remoting.Channels.IServerChannelSinkProvider%2CSystem.Runtime.Remoting.Channels.IAuthorizeRemotingConnection%29>. It provides a single point of authorization for all incoming connections on a <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel>. It allows for the authorization of the caller before any incoming messages are deserialized to minimize the security threat from untrusted sources.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsConnectingEndPointAuthorized">
+      <MemberSignature Language="C#" Value="public bool IsConnectingEndPointAuthorized (System.Net.EndPoint endPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConnectingEndPointAuthorized(class System.Net.EndPoint endPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection.IsConnectingEndPointAuthorized(System.Net.EndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endPoint" Type="System.Net.EndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="endPoint">The <see cref="T:System.Net.EndPoint" /> that identifies the network address of the client.</param>
+        <summary>Gets a Boolean value that indicates whether the network address of the client is authorized to connect on the current channel.</summary>
+        <returns>
+          <see langword="true" /> if the network address of the client is authorized; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection> interface is passed to <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.%23ctor%28System.Collections.IDictionary%2CSystem.Runtime.Remoting.Channels.IServerChannelSinkProvider%2CSystem.Runtime.Remoting.Channels.IAuthorizeRemotingConnection%29>. It provides a single point of authorization for all incoming connections on a <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel>. It allows for the authorization of the caller before any incoming messages are deserialized to minimize the security threat from untrusted sources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnectingIdentityAuthorized">
+      <MemberSignature Language="C#" Value="public bool IsConnectingIdentityAuthorized (System.Security.Principal.IIdentity identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConnectingIdentityAuthorized(class System.Security.Principal.IIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection.IsConnectingIdentityAuthorized(System.Security.Principal.IIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The <see cref="T:System.Security.Principal.IIdentity" /> that represents the user identity of the client.</param>
+        <summary>Gets a Boolean value that indicates whether the user identity of the client is authorized to connect on the current channel.</summary>
+        <returns>
+          <see langword="true" /> if the user identity of the client is authorized; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection> interface is passed to <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel.%23ctor%28System.Collections.IDictionary%2CSystem.Runtime.Remoting.Channels.IServerChannelSinkProvider%2CSystem.Runtime.Remoting.Channels.IAuthorizeRemotingConnection%29>. It provides a single point of authorization for all incoming connections on a <xref:System.Runtime.Remoting.Channels.Tcp.TcpServerChannel>. It allows for the authorization of the caller before any incoming messages are deserialized to minimize the security threat from untrusted sources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,151 @@
+<Type Name="SecurityTokenTypes" FullName="System.IdentityModel.Tokens.SecurityTokenTypes">
+  <TypeSignature Language="C#" Value="public static class SecurityTokenTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SecurityTokenTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a set of static properties that returns strings that represent security token types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.IdentityModel.Tokens.SecurityTokenTypes> to specify the security token type that must be included in a SOAP message sent by a client or required by a service. To specify the security token type requirement, set the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Kerberos">
+      <MemberSignature Language="C#" Value="public static string Kerberos { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Kerberos" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Kerberos" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents a security token based upon a Kerberos ticket.</summary>
+        <value>A string that represents a security token based upon a Kerberos ticket.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The two types of security tokens that are based on a Kerberos ticket are <xref:System.IdentityModel.Tokens.KerberosReceiverSecurityToken> and <xref:System.IdentityModel.Tokens.KerberosRequestorSecurityToken>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rsa">
+      <MemberSignature Language="C#" Value="public static string Rsa { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Rsa" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Rsa" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents a security token based upon an RSA key.</summary>
+        <value>A string that represents a security token based upon an RSA key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.RsaSecurityToken> security token is based upon an RSA key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Saml">
+      <MemberSignature Language="C#" Value="public static string Saml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Saml" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.Saml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents a security token based upon a SAML assertion.</summary>
+        <value>A string that represents a security token based upon a SAML assertion.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token is based upon a SAML assertion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public static string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents a security token based upon a user name and password.</summary>
+        <value>A string that represents a security token based upon a user name and password.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.UserNameSecurityToken> security token is based upon a user name and password.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X509Certificate">
+      <MemberSignature Language="C#" Value="public static string X509Certificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string X509Certificate" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenTypes.X509Certificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents a security token based upon an X.509 certificate.</summary>
+        <value>A string that represents a security token based upon an X.509 certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.X509SecurityToken> security token is based upon an X.509 certificate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,198 @@
+<Type Name="IAnimatable" FullName="System.Windows.Media.Animation.IAnimatable">
+  <TypeSignature Language="C#" Value="public interface IAnimatable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAnimatable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IAnimatable" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>This type supports the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. To make a class animatable, it should derive from <see cref="T:System.Windows.UIElement" />, <see cref="T:System.Windows.ContentElement" />, or <see cref="T:System.Windows.Media.Animation.Animatable" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyAnimationClock">
+      <MemberSignature Language="C#" Value="public void ApplyAnimationClock (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationClock clock);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyAnimationClock(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationClock clock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="clock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The <see cref="T:System.Windows.DependencyProperty" /> to animate.</param>
+        <param name="clock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that animates the property.</param>
+        <summary>Applies the effect of a given <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to a given dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyAnimationClock">
+      <MemberSignature Language="C#" Value="public void ApplyAnimationClock (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationClock clock, System.Windows.Media.Animation.HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyAnimationClock(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationClock clock, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="clock" Type="System.Windows.Media.Animation.AnimationClock" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The <see cref="T:System.Windows.DependencyProperty" /> to animate.</param>
+        <param name="clock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that animates the property.</param>
+        <param name="handoffBehavior">Determines how the new <see cref="T:System.Windows.Media.Animation.AnimationClock" /> will transition from or affect any current animations on the property.</param>
+        <summary>Applies the effect of a given <see cref="T:System.Windows.Media.Animation.AnimationClock" /> to a given dependency property. The effect of the new <see cref="T:System.Windows.Media.Animation.AnimationClock" /> on any current animations is determined by the value of the <paramref name="handoffBehavior" /> parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAnimation">
+      <MemberSignature Language="C#" Value="public void BeginAnimation (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationTimeline animation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginAnimation(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationTimeline animation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="animation" Type="System.Windows.Media.Animation.AnimationTimeline" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The object to animate.</param>
+        <param name="animation">The timeline with the necessary functionality to animate the property.</param>
+        <summary>Initiates an animation sequence for the <see cref="T:System.Windows.DependencyProperty" /> object, based on the specified <see cref="T:System.Windows.Media.Animation.AnimationTimeline" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The animation sequence is triggered once the next frame is rendered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAnimation">
+      <MemberSignature Language="C#" Value="public void BeginAnimation (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationTimeline animation, System.Windows.Media.Animation.HandoffBehavior handoffBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginAnimation(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationTimeline animation, valuetype System.Windows.Media.Animation.HandoffBehavior handoffBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="animation" Type="System.Windows.Media.Animation.AnimationTimeline" />
+        <Parameter Name="handoffBehavior" Type="System.Windows.Media.Animation.HandoffBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The object to animate.</param>
+        <param name="animation">The timeline with the necessary functionality to tailor the new animation.</param>
+        <param name="handoffBehavior">The object specifying the manner in which to interact with all relevant animation sequences.</param>
+        <summary>Initiates an animation sequence for the <see cref="T:System.Windows.DependencyProperty" />.object, based on both the specified <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> and <see cref="T:System.Windows.Media.Animation.HandoffBehavior" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The animation sequence is triggered once the next frame is rendered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAnimationBaseValue">
+      <MemberSignature Language="C#" Value="public object GetAnimationBaseValue (System.Windows.DependencyProperty dp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetAnimationBaseValue(class System.Windows.DependencyProperty dp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.IAnimatable.GetAnimationBaseValue(System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dp" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="dp">The object for which the base value is being requested.</param>
+        <summary>Retrieves the base value of the specified <see cref="T:System.Windows.DependencyProperty" /> object.</summary>
+        <returns>The object representing the base value of <paramref name="Dp" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method instead of <xref:System.Windows.DependencyObject.GetValue%2A> when you want to retrieve the non-animated value of an animated property. This method takes advantage of the fact that [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] animations do not remove the target property's original value. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAnimatedProperties">
+      <MemberSignature Language="C#" Value="public bool HasAnimatedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAnimatedProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.IAnimatable.HasAnimatedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this instance has any animated properties.</summary>
+        <value>
+          <see langword="true" /> if a <see cref="T:System.Windows.Media.Animation.Clock" /> is associated with at least one of the current object's properties; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState> or <xref:System.Windows.Media.Animation.ClockState>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="BeginAnimation">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an animation sequence for this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The animation sequence is triggered once the next frame is rendered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

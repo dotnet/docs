@@ -1,0 +1,112 @@
+<Type Name="InitiatorServiceModelSecurityTokenRequirement" FullName="System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement">
+  <TypeSignature Language="C#" Value="public sealed class InitiatorServiceModelSecurityTokenRequirement : System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InitiatorServiceModelSecurityTokenRequirement extends System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a security property requirements specific to channel creation in the [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Token requirement classes are used by a security token manager to specify what is required of a security token, such as the key size, key type, and how the key can be used. When a security token can be identified that matches the specified criteria, a SecurityTokenProvider and SecurityTokenAuthenticator can be created.  
+  
+ This token requirement class specifies initiator-related requirements.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InitiatorServiceModelSecurityTokenRequirement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.SupportSecurityContextCancellationProperty%2A> is set to `false`. <xref:System.ServiceModel.Security.Tokens.ServiceModelSecurityTokenRequirement.IsInitiatorProperty%2A> is set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress TargetAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress TargetAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.TargetAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the target address.</summary>
+        <value>The target address.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Outputs a text representation of this instance of the class.</summary>
+        <returns>A text representation of this instance of the class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays the property type name, and for each property, the property name and value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Via">
+      <MemberSignature Language="C#" Value="public Uri Via { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Via" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.InitiatorServiceModelSecurityTokenRequirement.Via" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Via.</summary>
+        <value>The <see cref="T:System.Uri" /> that represents the Via.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

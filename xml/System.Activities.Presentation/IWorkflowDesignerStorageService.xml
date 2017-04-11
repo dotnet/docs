@@ -1,0 +1,135 @@
+<Type Name="IWorkflowDesignerStorageService" FullName="System.Activities.Presentation.IWorkflowDesignerStorageService">
+  <TypeSignature Language="C#" Value="public interface IWorkflowDesignerStorageService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowDesignerStorageService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IWorkflowDesignerStorageService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a service available to the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] host to store and retrieve data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented and used internally by [!INCLUDE[vs2010](~/includes/vs2010-md.md)], which is the primary host of the [!INCLUDE[wfd2](~/includes/wfd2-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddData">
+      <MemberSignature Language="C#" Value="public void AddData (string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddData(string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.AddData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the data to add.</param>
+        <param name="value">The data associated with the specified key.</param>
+        <summary>Adds the specified key/value pair to the dictionary.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.ContainsKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to check.</param>
+        <summary>Returns a value that indicates whether the dictionary contains an item with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the dictionary contains an item with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public object GetData (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetData(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.GetData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get the data for.</param>
+        <summary>Returns the data associated with the specified key.</summary>
+        <returns>The data associated with the specified key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveData">
+      <MemberSignature Language="C#" Value="public void RemoveData (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveData(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.RemoveData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key whose data is to be removed.</param>
+        <summary>Removes the data associated with the specified key from the dictionary.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IWorkflowDesignerStorageService.SetData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">They key of the item to update the value of.</param>
+        <param name="value">The data to update the item with.</param>
+        <summary>Updates the data for an existing dictionary item identified by the specified key.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

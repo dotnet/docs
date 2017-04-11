@@ -1,0 +1,73 @@
+<Type Name="DragAction" FullName="System.Windows.DragAction">
+  <TypeSignature Language="C#" Value="public enum DragAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DragAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how and if a drag-and-drop operation should continue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.QueryContinueDragEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="Cancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragAction Cancel = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragAction.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation is canceled with no drop message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragAction Continue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragAction.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation will continue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="Drop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragAction Drop = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragAction.Drop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operation will stop with a drop.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

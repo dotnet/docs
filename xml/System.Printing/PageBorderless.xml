@@ -1,0 +1,83 @@
+<Type Name="PageBorderless" FullName="System.Printing.PageBorderless">
+  <TypeSignature Language="C#" Value="public enum PageBorderless" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageBorderless extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PageBorderless" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a print device prints to the edge of the media or provides an unprinted margin around the edge.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most laser and inkjet printers do not support borderless printing. They require an unprinted margin to prevent toner from getting on the parts of the printer that move the paper. Many photographic printers, however, do support borderless printing.  
+  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.PageBorderlessCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate whether the device supports borderless printing.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.PageBorderless%2A> property of a <xref:System.Printing.PrintTicket>, the value instructs the printer whether to print to the edge of the media.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the page borderless feature to an unrecognized option, then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.PageBorderless%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Borderless">
+      <MemberSignature Language="C#" Value="Borderless" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageBorderless Borderless = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.Borderless" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageBorderless</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Borderless printing, that is, the device prints to the edge of the print media.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageBorderless None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageBorderless</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Printing with a border, that is, the device provides an unprinted margin around the edge of the print media.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageBorderless Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageBorderless.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageBorderless</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

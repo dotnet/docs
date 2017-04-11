@@ -1,0 +1,418 @@
+<Type Name="LinearGradientBrush" FullName="System.Windows.Media.LinearGradientBrush">
+  <TypeSignature Language="C#" Value="public sealed class LinearGradientBrush : System.Windows.Media.GradientBrush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinearGradientBrush extends System.Windows.Media.GradientBrush" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.LinearGradientBrush" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.GradientBrush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Paints an area with a linear gradient.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.LinearGradientBrush> paints an area with a linear gradient. A linear gradient defines a gradient along a line. The line's end points are defined by the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> properties of the linear gradient. A <xref:System.Windows.Media.LinearGradientBrush> brush paints its <xref:System.Windows.Media.GradientBrush.GradientStops%2A> along this line.  
+  
+ The default linear gradient is diagonal. In the default, the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> of a linear gradient is (0,0), the upper-left corner of the area being painted, and its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is (1,1), the lower-right corner of the area being painted. The colors in the resulting gradient are interpolated along the diagonal path.  
+  
+ The following illustration shows a diagonal gradient. A line was added to highlight the interpolation path of the gradient from the start point to the end point.  
+  
+ ![Gradient axis for a diagonal linear gradient](~/add/media/wcpsdk-graphicsmm-diagonalgradientaxis.png "Gradient axis for a diagonal linear gradient")  
+A diagonal linear gradient  
+  
+ The next illustration shows the same linear gradient, but with highlighted gradient stops.  
+  
+ ![Gradient stops in a linear gradient](~/add/media/wcpsdk-graphicsmm-4gradientstops.png "Gradient stops in a linear gradient")  
+A diagonal linear gradient with highlighted gradient stops  
+  
+ It is possible to specify a gradient axis that does not completely fill area being painted. When this occurs, the <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> property determines how the remaining area is painted.  
+  
+## Freezable Features  
+ A <xref:System.Windows.Media.LinearGradientBrush> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStopCollection" Type="System.Windows.Media.GradientStopCollection" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStopCollection">The <see cref="P:System.Windows.Media.GradientBrush.GradientStops" /> to set on this brush.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class that has the specified gradient stops.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection, double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection, float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStopCollection" Type="System.Windows.Media.GradientStopCollection" />
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStopCollection">The <see cref="P:System.Windows.Media.GradientBrush.GradientStops" /> to set on this brush.</param>
+        <param name="angle">A <see cref="T:System.Double" /> that represents the angle, in degrees, of the gradient. A value of 0.0 creates a horizontal gradient, and a value of 90.0 creates a vertical gradient.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class that has the specified <see cref="T:System.Windows.Media.GradientStopCollection" /> and angle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.Color startColor, System.Windows.Media.Color endColor, double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color startColor, valuetype System.Windows.Media.Color endColor, float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startColor" Type="System.Windows.Media.Color" />
+        <Parameter Name="endColor" Type="System.Windows.Media.Color" />
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="startColor">The <see cref="T:System.Windows.Media.Color" /> at offset 0.0.</param>
+        <param name="endColor">The <see cref="T:System.Windows.Media.Color" /> at offset 1.0.</param>
+        <param name="angle">A <see cref="T:System.Double" /> that represents the angle, in degrees, of the gradient. A value of 0.0 creates a horizontal gradient, and a value of 90.0 creates a vertical gradient.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class that has the specified start <see cref="T:System.Windows.Media.Color" />, end <see cref="T:System.Windows.Media.Color" />, and angle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection, System.Windows.Point startPoint, System.Windows.Point endPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection, valuetype System.Windows.Point startPoint, valuetype System.Windows.Point endPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection,System.Windows.Point,System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="gradientStopCollection" Type="System.Windows.Media.GradientStopCollection" />
+        <Parameter Name="startPoint" Type="System.Windows.Point" />
+        <Parameter Name="endPoint" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="gradientStopCollection">The <see cref="P:System.Windows.Media.GradientBrush.GradientStops" /> to set on this brush.</param>
+        <param name="startPoint">The <see cref="P:System.Windows.Media.LinearGradientBrush.StartPoint" /> of the gradient.</param>
+        <param name="endPoint">The <see cref="P:System.Windows.Media.LinearGradientBrush.EndPoint" /> of the gradient.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class that has the specified gradient stops, <see cref="P:System.Windows.Media.LinearGradientBrush.StartPoint" />, and <see cref="P:System.Windows.Media.LinearGradientBrush.EndPoint" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.Color startColor, System.Windows.Media.Color endColor, System.Windows.Point startPoint, System.Windows.Point endPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color startColor, valuetype System.Windows.Media.Color endColor, valuetype System.Windows.Point startPoint, valuetype System.Windows.Point endPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Point,System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startColor" Type="System.Windows.Media.Color" />
+        <Parameter Name="endColor" Type="System.Windows.Media.Color" />
+        <Parameter Name="startPoint" Type="System.Windows.Point" />
+        <Parameter Name="endPoint" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="startColor">The <see cref="T:System.Windows.Media.Color" /> at offset 0.0.</param>
+        <param name="endColor">The <see cref="T:System.Windows.Media.Color" /> at offset 1.0.</param>
+        <param name="startPoint">The <see cref="P:System.Windows.Media.LinearGradientBrush.StartPoint" /> of the gradient.</param>
+        <param name="endPoint">The <see cref="P:System.Windows.Media.LinearGradientBrush.EndPoint" /> of the gradient.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class that has the specified start <see cref="T:System.Windows.Media.Color" />, end <see cref="T:System.Windows.Media.Color" />, <see cref="P:System.Windows.Media.LinearGradientBrush.StartPoint" />, and <see cref="P:System.Windows.Media.LinearGradientBrush.EndPoint" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.LinearGradientBrush Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LinearGradientBrush Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.LinearGradientBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.LinearGradientBrush" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.LinearGradientBrush CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LinearGradientBrush CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.LinearGradientBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.LinearGradientBrush" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPoint">
+      <MemberSignature Language="C#" Value="public System.Windows.Point EndPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point EndPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.LinearGradientBrush.EndPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ending two-dimensional coordinates of the linear gradient.</summary>
+        <value>The ending two-dimensional coordinates of the linear gradient. The default is (1,1).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.LinearGradientBrush> paints a gradient along a line. The line's start and end points are defined by the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> properties of the <xref:System.Windows.Media.LinearGradientBrush>.  
+  
+ The default linear gradient is diagonal. In the default, the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> of a linear gradient is (0,0), the upper-left corner of the area being filled, and its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is (1,1), the lower-right corner of the area being filled. The colors in the resulting gradient are interpolated along the diagonal path.  
+  
+ The following image shows a diagonal gradient. The black line was added to highlight the interpolation path of the gradient from the start point to the end point.  
+  
+ ![Gradient axis for a diagonal linear gradient](~/add/media/wcpsdk-graphicsmm-diagonalgradientaxis.png "Gradient axis for a diagonal linear gradient")  
+A diagonal linear gradient  
+  
+## Specifying Relative or Absolute Values  
+ Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode>, making the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> a relative value.  
+  
+<a name="dependencyPropertyInfo_EndPoint"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.LinearGradientBrush.EndPointProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPointProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EndPointProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EndPointProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.LinearGradientBrush.EndPointProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.LinearGradientBrush.EndPoint" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPoint">
+      <MemberSignature Language="C#" Value="public System.Windows.Point StartPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point StartPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.LinearGradientBrush.StartPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the starting two-dimensional coordinates of the linear gradient.</summary>
+        <value>The starting two-dimensional coordinates for the linear gradient. The default is (0, 0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.LinearGradientBrush> paints a gradient along a line. The line's start and end points are defined by the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> and <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> properties of the <xref:System.Windows.Media.LinearGradientBrush>.  
+  
+ The default linear gradient is diagonal. In the default, the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> of a linear gradient is (0,0), the upper-left corner of the area being filled, and its <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> is (1,1), the lower-right corner of the area being filled. The colors in the resulting gradient are interpolated along the diagonal path.  
+  
+ The following image shows a diagonal gradient. The black line was added to highlight the interpolation path of the gradient from the start point to the end point.  
+  
+ ![Gradient axis for a diagonal linear gradient](~/add/media/wcpsdk-graphicsmm-diagonalgradientaxis.png "Gradient axis for a diagonal linear gradient")  
+A diagonal linear gradient  
+  
+## Specifying Relative or Absolute Values  
+ Note that the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> property of a <xref:System.Windows.Media.LinearGradientBrush> determines whether its <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> is interpreted as a relative or absolute value. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.EndPoint%2A> value is relative to the size of the painted area. A <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of <xref:System.Windows.Media.BrushMappingMode> specifies that the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> value is expressed in device independent pixels. By default, the <xref:System.Windows.Media.GradientBrush.MappingMode%2A> is set to <xref:System.Windows.Media.BrushMappingMode>, making the <xref:System.Windows.Media.LinearGradientBrush.StartPoint%2A> a relative value.  
+  
+<a name="dependencyPropertyInfo_StartPoint"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.LinearGradientBrush.StartPointProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPointProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StartPointProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StartPointProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.LinearGradientBrush.StartPointProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.LinearGradientBrush.StartPoint" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LinearGradientBrush" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GradientBrush.MappingMode%2A> of the brush is initialized to <xref:System.Windows.Media.BrushMappingMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

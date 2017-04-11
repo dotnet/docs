@@ -1,0 +1,176 @@
+<Type Name="LoaderOptimization" FullName="System.LoaderOptimization">
+  <TypeSignature Language="C#" Value="public enum LoaderOptimization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LoaderOptimization extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.LoaderOptimization" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An enumeration used with the <see cref="T:System.LoaderOptimizationAttribute" /> class to specify loader optimizations for an executable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The meaning of MultiDomainHost changed in the .NET Framework version 2.0. The loader now shares resources across application domains only for assemblies that have been added to the global assembly cache.  
+  
+> [!NOTE]
+>  If custom code access security policy is set for the <xref:System.AppDomain>, by using the <xref:System.AppDomain.SetAppDomainPolicy%2A> property, and the <xref:System.AppDomain> is created using the MultiDomain flag, the effect is the same as specifying the MultiDomainHost flag; that is, only assemblies in the GAC are shared. When this occurs, the loader does not throw an exception and the application does not experience the performance gains associated with the MultiDomain flag.  
+  
+ For more information on assembly sharing and domain-neutral assembly loading, see [Application Domains and Assemblies](http://msdn.microsoft.com/en-us/433b04ae-4ba8-4849-9dbd-79194f240346).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisallowBindings">
+      <MemberSignature Language="C#" Value="DisallowBindings" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization DisallowBindings = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DisallowBindings" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method has been deprecated. Please use Assembly.Load() instead. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignored by the common language runtime.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainMask">
+      <MemberSignature Language="C#" Value="DomainMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization DomainMask = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.DomainMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method has been deprecated. Please use Assembly.Load() instead. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not use. This mask selects the domain-related values, screening out the unused <see cref="F:System.LoaderOptimization.DisallowBindings" /> flag.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiDomain">
+      <MemberSignature Language="C#" Value="MultiDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization MultiDomain = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the application will probably have many domains that use the same code, and the loader must share maximal internal resources across application domains.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiDomainHost">
+      <MemberSignature Language="C#" Value="MultiDomainHost" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization MultiDomainHost = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.MultiDomainHost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the application will probably host unique code in multiple domains, and the loader must share resources across application domains only for globally available (strong-named) assemblies that have been added to the global assembly cache.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSpecified">
+      <MemberSignature Language="C#" Value="NotSpecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization NotSpecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.NotSpecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no optimizations for sharing internal resources are specified. If the default domain or hosting interface specified an optimization, then the loader uses that; otherwise, the loader uses <see cref="F:System.LoaderOptimization.SingleDomain" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleDomain">
+      <MemberSignature Language="C#" Value="SingleDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.LoaderOptimization SingleDomain = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.LoaderOptimization.SingleDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the application will probably have a single domain, and loader must not share internal resources across application domains.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

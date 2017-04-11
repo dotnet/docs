@@ -1,0 +1,220 @@
+<Type Name="TableHeaderCell" FullName="System.Web.UI.WebControls.TableHeaderCell">
+  <TypeSignature Language="C#" Value="public class TableHeaderCell : System.Web.UI.WebControls.TableCell" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableHeaderCell extends System.Web.UI.WebControls.TableCell" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderCell" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TableCell</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a heading cell within a <see cref="T:System.Web.UI.WebControls.Table" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableHeaderCell> class represents a heading cell in a <xref:System.Web.UI.WebControls.Table> control. You can use the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property to specify or determine the contents of the heading cell.  
+  
+ This class allows you to control how the contents of the heading cell are displayed. The alignment of the contents in the heading cell is specified by setting the <xref:System.Web.UI.WebControls.TableCell.HorizontalAlign%2A> and <xref:System.Web.UI.WebControls.TableCell.VerticalAlign%2A> properties. You can use the <xref:System.Web.UI.WebControls.TableCell.Wrap%2A> property to specify whether the contents of the heading cell wrap in the cell.  
+  
+ You can also specify how many rows or columns in the <xref:System.Web.UI.WebControls.Table> control are occupied by an individual heading cell. The <xref:System.Web.UI.WebControls.TableCell.RowSpan%2A> and <xref:System.Web.UI.WebControls.TableCell.ColumnSpan%2A> properties control how may rows and columns are used, respectively.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declaratively program a <xref:System.Web.UI.WebControls.TableHeaderCell> control.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableHeaderCell ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableHeaderCell.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TableHeaderCell> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.TableHeaderCell> control to a Web page. For a complete, working code example, see the <xref:System.Web.UI.WebControls.TableRow> class overview topic.  
+  
+ [!code-csharp[TableCell#7](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#7)]
+ [!code-vb[TableCell#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbbreviatedText">
+      <MemberSignature Language="C#" Value="public virtual string AbbreviatedText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AbbreviatedText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="abbr" /> attribute of the HTML <see langword="th" /> element for the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> control.</summary>
+        <value>A string representing the abbreviated text. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText%2A> property is rendered as the `abbr` attribute of the HTML `th` element. The `abbr` attribute is used by screen readers to read a shortened version of a header for each cell in the table. The <xref:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText%2A> property is significant for browsers that render abbreviated text in place of the content for the <xref:System.Web.UI.WebControls.TableHeaderCell> control.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to program the <xref:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText%2A> property declaratively.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TableHeaderCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableHeaderCell/CS/tableheadercellcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TableHeaderCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderCell/VB/tableheadercellvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableHeaderCell.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Applies attributes to render to the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableHeaderCell.AddAttributesToRender%2A> method overrides the <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A> method for the base class and, in addition to calling the base method, renders the <xref:System.Web.UI.WebControls.TableHeaderCell.Scope%2A> and <xref:System.Web.UI.WebControls.TableHeaderCell.AbbreviatedText%2A> properties to the `scope` and `abbr` attribute of HTML `th` element, respectively.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryText">
+      <MemberSignature Language="C#" Value="public virtual string[] CategoryText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] CategoryText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.CategoryText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.StringArrayConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="axis" /> attribute of the HTML <see langword="th" /> element for the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> control.</summary>
+        <value>An array of string values representing the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> categories.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The categories can be any string values that are pertinent to the table. The <xref:System.Web.UI.WebControls.TableHeaderCell.CategoryText%2A> property is rendered as the `axis` attribute of the HTML `th` element, which is used to group table cells into conceptual categories. The categories are rendered in HTML as a comma-delimited list.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to program the <xref:System.Web.UI.WebControls.TableHeaderCell.CategoryText%2A> property declaratively.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TableHeaderCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableHeaderCell/CS/tableheadercellcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TableHeaderCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderCell/VB/tableheadercellvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableHeaderScope Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableHeaderScope Scope" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableHeaderCell.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the scope of the <see cref="T:System.Web.UI.WebControls.TableHeaderCell" /> control when it is rendered.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.TableHeaderScope" /> value. The default is <see cref="F:System.Web.UI.WebControls.TableHeaderScope.NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TableHeaderCell.Scope%2A> property to get or set the scope of the <xref:System.Web.UI.WebControls.TableHeaderCell> control when it is rendered. The scope of the <xref:System.Web.UI.WebControls.TableHeaderCell> represents the cells that the header applies to. For complex tables, use the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property, which provides more control over the specification of the relationship of header cells to data cells. The <xref:System.Web.UI.WebControls.TableHeaderCell.Scope%2A> property is used to make HTML tables more accessible by providing information about relationships between the cells and the headers.  
+  
+ For a list of the available table header scopes, see <xref:System.Web.UI.WebControls.TableHeaderScope>.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to program the <xref:System.Web.UI.WebControls.TableHeaderCell.Scope%2A> property declaratively. Note the use of the <xref:System.Web.UI.WebControls.TableCell.AssociatedHeaderCellID%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TableHeaderCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TableHeaderCell/CS/tableheadercellcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TableHeaderCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableHeaderCell/VB/tableheadercellvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

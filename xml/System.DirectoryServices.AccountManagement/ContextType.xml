@@ -1,0 +1,66 @@
+<Type Name="ContextType" FullName="System.DirectoryServices.AccountManagement.ContextType">
+  <TypeSignature Language="C#" Value="public enum ContextType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ContextType" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of store to which the principal belongs.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationDirectory">
+      <MemberSignature Language="C#" Value="ApplicationDirectory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextType ApplicationDirectory = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application directory store. This represents the AD LDS store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="Domain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextType Domain = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.Domain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The domain store. This represents the AD DS store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Machine">
+      <MemberSignature Language="C#" Value="Machine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextType Machine = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextType.Machine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer store. This represents the SAM store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

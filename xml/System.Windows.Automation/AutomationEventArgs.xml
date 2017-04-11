@@ -1,0 +1,80 @@
+<Type Name="AutomationEventArgs" FullName="System.Windows.Automation.AutomationEventArgs">
+  <TypeSignature Language="C#" Value="public class AutomationEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] events that are passed to an <see cref="T:System.Windows.Automation.AutomationEventHandler" /> delegate.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutomationEventArgs (System.Windows.Automation.AutomationEvent eventId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.AutomationEvent eventId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationEventArgs.#ctor(System.Windows.Automation.AutomationEvent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Windows.Automation.AutomationEvent" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AutomationEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how a UI Automation provider might create an<xref:System.Windows.Automation.AutomationEventArgs> and raise the event.  
+  
+ [!code-csharp[UIAFragmentProvider_snip#122](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#122)]
+ [!code-vb[UIAFragmentProvider_snip#122](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#122)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventId">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationEvent EventId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationEvent EventId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationEventArgs.EventId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the event identifier.</summary>
+        <value>The event identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a client has added event handlers for more than one event using the same <xref:System.Windows.Automation.AutomationEventHandler> instance, <xref:System.Windows.Automation.AutomationEventArgs.EventId%2A> can be used to identify the event that the delegate should process.  
+  
+   
+  
+## Examples  
+ In the following example, the event handler checks the <xref:System.Windows.Automation.AutomationEventArgs.EventId%2A> of the event and handles the event accordingly.  
+  
+ [!code-csharp[UIAClient_snip#173](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#173)]
+ [!code-vb[UIAClient_snip#173](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#173)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

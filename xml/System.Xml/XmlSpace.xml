@@ -1,0 +1,110 @@
+<Type Name="XmlSpace" FullName="System.Xml.XmlSpace">
+  <TypeSignature Language="C#" Value="public enum XmlSpace" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSpace extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlSpace" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the current <see langword="xml:space" /> scope.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlSpace Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="xml:space" /> scope equals <see langword="default" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlSpace None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No <see langword="xml:space" /> scope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Preserve">
+      <MemberSignature Language="C#" Value="Preserve" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlSpace Preserve = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlSpace.Preserve" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="xml:space" /> scope equals <see langword="preserve" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

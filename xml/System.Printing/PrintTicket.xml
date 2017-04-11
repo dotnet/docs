@@ -1,0 +1,872 @@
+<Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
+  <TypeSignature Language="C#" Value="public sealed class PrintTicket : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintTicket extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicket" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the settings of a print job.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Printing.PrintTicket> object is an easy-to-work-with representation of a certain type of XML document called a *PrintTicket document*. The latter is a set of instructions telling a printer how to set its various features (such as duplexing, collating, and stapling). For example, to instruct the printer to turn on its stapler and staple print jobs in the upper left corner, the document would have a `<JobStapleAllDocuments … >` element that specifies **StapleTopLeft**. The element is, in turn, represented by the <xref:System.Printing.PrintTicket.Stapling%2A> property of the <xref:System.Printing.PrintTicket> object. The PrintTicket document must conform to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).  
+  
+ The <xref:System.Printing.PrintTicket> class enables your application to configure the printer's features without having to engage in any direct writing of XML <xref:System.IO.Stream> objects.  
+  
+ All of the most popular features of home and business file and photo printers are represented by properties of <xref:System.Printing.PrintTicket> the class. But the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) defines many more, less common, features and it can be extended to handle features of specialty printing devices. So, although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+ **Note** When the <xref:System.Printing.PrintTicket> object is created with the constructor that takes a PrintTicket document (as a <xref:System.IO.Stream>) parameter, that entire document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintTicket> class. In fact, if the driver that produced the PrintTicket document is using a private extension of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintTicket document.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to determine the capabilities of a specific printer and how to configure a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintTicket ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintTicket" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor while merging two print tickets.  
+  
+ [!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
+ [!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintTicket (System.IO.Stream xmlStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream xmlStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="xmlStream">An XML stream that describes a print job and conforms to the Print Schema.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintTicket" /> class by using an XML stream (that contains a PrintTicket document) that complies with the XML [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor does not reset the read-write position of the stream back to its original position. Accordingly, you should reset it immediately after calling the constructor.  
+  
+ The entire PrintTicket document is stored in a non-public field in the object, including the XML elements within it that express less common features that are not represented by any of the public properties of the <xref:System.Printing.PrintTicket> class. In fact, if the driver that produced the PrintTicket document is using a private extension of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), that privately defined markup is also stored as part of the non-public PrintTicket document.  
+  
+ The private parts of the document, if any, are not validated by the constructor, but all **Print Schema**-defined parts are validated, including the parts that are not represented by any of the public properties of the <xref:System.Printing.PrintTicket> class. Accordingly, the <xref:System.FormatException> could be thrown even if all of the XML markup that corresponds to the public properties is valid.  
+  
+ When any of the properties of the <xref:System.Printing.PrintTicket> are written to, this non-public PrintTicket document is changed as well.  
+  
+ It is this non-public PrintTicket document that is returned by the <xref:System.Printing.PrintTicket.GetXmlStream%2A> and <xref:System.Printing.PrintTicket.SaveTo%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlStream" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="xmlStream" /> is not valid XML.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintTicket Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintTicket Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintTicket</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Printing.PrintTicket" />, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Collation&gt; Collation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Collation&gt; Collation" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Collation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.Collation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the printer collates its output.</summary>
+        <value>A <see cref="T:System.Printing.Collation" /> value indicating whether the printer collates its output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `DocumentCollate` keyword, not the `JobCollateAllDocuments` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.CollationCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property when testing a printer's capabilities and configuring a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.Collation" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyCount">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CopyCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CopyCount" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.CopyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of copies for the print job.</summary>
+        <value>A nullable <see cref="T:System.Int32" /> value that specifies how many copies to print.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobCopiesAllDocuments` keyword, not the `DocumentCopiesAllPages` keyword, or the `PageCopies` keyword.  
+  
+ You can test for the printer's maximum by using the <xref:System.Printing.PrintCapabilities.MaxCopyCount%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFontSubstitution">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitution" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.DeviceFontSubstitution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.DeviceFontSubstitution&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the printer substitutes device-based fonts for computer-based fonts on the print job.</summary>
+        <value>A <see cref="T:System.Printing.DeviceFontSubstitution" /> value indicating whether the device substitutes device-based fonts for computer-based fonts for the current print job.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageDeviceFontSubstitution` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.DeviceFontSubstitutionCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.DeviceFontSubstitution" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Duplexing">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Duplexing&gt; Duplexing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Duplexing&gt; Duplexing" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Duplexing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.Duplexing&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating what kind of two-sided printing, if any, the printer uses for the print job.</summary>
+        <value>A <see cref="T:System.Printing.Duplexing" /> value indicating what sort of two-sided printing, if any, the printer uses for the print job.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobDuplexAllDocumentsContiguously` keyword, not the `DocumentDuplex` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.DuplexingCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property while merging two print tickets.  
+  
+ [!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
+ [!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.Duplexing" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlStream">
+      <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetXmlStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetXmlStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.GetXmlStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.MemoryStream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.IO.MemoryStream" /> object that represents the property values of a <see cref="T:System.Printing.PrintTicket" /> as an XML stream that conforms to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <returns>A <see cref="T:System.IO.MemoryStream" /> object that describes the print ticket with XML that conforms to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any properties of the <xref:System.Printing.PrintTicket> are `null`, they will simply not be included in the XML markup.  
+  
+ If the <xref:System.Printing.PrintTicket> object was constructed with a PrintTicket document that contains markup elements not represented by any of the <xref:System.Printing.PrintTicket> class's public properties, those elements will be included in the PrintTicket document returned by this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputBin">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.InputBin&gt; InputBin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.InputBin&gt; InputBin" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.InputBin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.InputBin&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating what input bin (paper tray) to use.</summary>
+        <value>An <see cref="T:System.Printing.InputBin" /> value indicating what input tray is used and whether it is chosen manually or automatically.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature. That is, there will be no markup for the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s features `JobInputBin`, `DocumentInputBin`, or `PageInputBin`.  
+  
+ When this property is not `null`, it will have the following relationships to the features defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).  
+  
+-   If the XML form of the <xref:System.Printing.PrintTicket> contains `JobInputBin`, then this property has the same value as `JobInputBin` (regardless of whether or not there is also `DocumentInputBin` or `PageInputBin`. markup in the XML version of the <xref:System.Printing.PrintTicket>).  
+  
+-   If there is no `JobInputBin` markup, but there is `DocumentInputBin`, then this property has the same value as `DocumentInputBin` (regardless of whether or not there is also `PageInputBin` markup) present.  
+  
+-   If there is neither `JobInputBin` nor `DocumentInputBin` markup, but there is `PageInputBin` markup, then this property has the same value as `PageInputBin`.  
+  
+ When this property is set to any <xref:System.Printing.InputBin> value, then matching `JobInputBin` markup will be added to the XML print ticket and any `DocumentInputBin` and `PageInputBin` markup that is already there will be removed.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.InputBinCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.InputBin" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputColor">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.OutputColor&gt; OutputColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.OutputColor&gt; OutputColor" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.OutputColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.OutputColor&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating how the printer handles content that has color or shades of gray.</summary>
+        <value>An <see cref="T:System.Printing.OutputColor" /> value indicating how the printer handles content that has color or shades of gray.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputColor` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.OutputColorCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property to configure a print job.  
+  
+ [!code-csharp[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#outputcolorandpageorientation)]
+ [!code-vb[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#outputcolorandpageorientation)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.OutputColor" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputQuality">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.OutputQuality&gt; OutputQuality { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.OutputQuality&gt; OutputQuality" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.OutputQuality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.OutputQuality&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the quality of output for the print job.</summary>
+        <value>An <see cref="T:System.Printing.OutputQuality" /> value that specifies the needed level of quality.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOutputQuality` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.OutputQualityCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.OutputQuality" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageBorderless">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageBorderless&gt; PageBorderless { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageBorderless&gt; PageBorderless" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageBorderless" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PageBorderless&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the device prints content to the edge of the media or leaves an unprinted margin around the edge.</summary>
+        <value>A <see cref="T:System.Printing.PageBorderless" /> value that specifies whether the printer uses borderless printing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageBorderless` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageBorderlessCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PageBorderless" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageMediaSize">
+      <MemberSignature Language="C#" Value="public System.Printing.PageMediaSize PageMediaSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageMediaSize PageMediaSize" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageMediaSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageMediaSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the page size for the paper (or other media) that a printer uses for a print job.</summary>
+        <value>A <see cref="T:System.Printing.PageMediaSize" /> object that represents the page size by using a name, dimensions, or both.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaSize` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageMediaSizeCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property to scale a visual element to fit within the margins of the paper on which it is to print.  
+  
+ [!code-csharp[XpsPrint#PageMediaSize](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#pagemediasize)]
+ [!code-vb[XpsPrint#PageMediaSize](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#pagemediasize)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object that has at least one <see langword="null" /> property.  
+  
+ \- or -  
+  
+ Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageMediaSize.PageMediaSizeName" /> property is set to a value that is not in the <see cref="T:System.Printing.PageMediaSizeName" /> enumeration.  
+  
+ \- or -  
+  
+ Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageMediaSize.Width" /> or <see cref="P:System.Printing.PageMediaSize.Height" /> property is set to a value less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageMediaType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageMediaType&gt; PageMediaType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageMediaType&gt; PageMediaType" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageMediaType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PageMediaType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating what sort of paper or media the printer uses for the print job.</summary>
+        <value>A <see cref="T:System.Printing.PageMediaType" /> value specifying the print media, such as card stock, label, plain, or photographic.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageMediaType` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageMediaTypeCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PageMediaType" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageOrder">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageOrder&gt; PageOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageOrder&gt; PageOrder" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PageOrder&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the printer prints multiple pages back-to-front or front-to-back.</summary>
+        <value>A <see cref="T:System.Printing.PageOrder" /> value specifying last-page-first printing or first-page-first printing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobPageOrder` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageOrderCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PageOrder" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageOrientation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageOrientation&gt; PageOrientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageOrientation&gt; PageOrientation" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageOrientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PageOrientation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating how the page content is oriented for printing.</summary>
+        <value>A <see cref="T:System.Printing.PageOrientation" /> value specifying how page content is oriented, for example, <see cref="F:System.Printing.PageOrientation.Landscape" /> or <see cref="F:System.Printing.PageOrientation.ReversePortrait" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageOrientation` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageOrientationCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property to configure a print job.  
+  
+ [!code-csharp[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#outputcolorandpageorientation)]
+ [!code-vb[XpsPrint#OutputColorAndPageOrientation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#outputcolorandpageorientation)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PageOrientation" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageResolution">
+      <MemberSignature Language="C#" Value="public System.Printing.PageResolution PageResolution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageResolution PageResolution" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageResolution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageResolution</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of page resolution that the printer uses for a print job.</summary>
+        <value>A <see cref="T:System.Printing.PageResolution" /> value that represents the resolution as a qualitative value, a dots-per-inch value, or both.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Printing.PageResolution> class has properties in which you can specify the dots-per-inch for the X and Y dimensions and a property where you can give a qualitative expression to the resolution.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageResolution` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PageResolutionCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property with a <see cref="T:System.Printing.PageResolution" /> object that has at least one <see langword="null" /> property.  
+  
+ \- or -  
+  
+ Calling code has attempted to set the property with a <see cref="T:System.Printing.PageMediaSize" /> object whose <see cref="P:System.Printing.PageResolution.QualitativeResolution" /> property is set to a value that is not in the <see cref="T:System.Printing.PageQualitativeResolution" /> enumeration.  
+  
+ \- or -  
+  
+ Calling code has attempted to set the property with a <see cref="T:System.Printing.PageResolution" /> object whose <see cref="P:System.Printing.PageResolution.X" /> or <see cref="P:System.Printing.PageResolution.Y" /> property is set to a value less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PageScalingFactor">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PageScalingFactor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PageScalingFactor" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageScalingFactor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the percentage by which the printer enlarges or reduces the print image on a page.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents a percentage.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The printer can have maximum and minimum limits for scaling. You can test for scale limits by using <xref:System.Printing.PrintCapabilities.PageScalingFactorRange%2A>.  
+  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This <xref:System.Printing.PrintTicket.PageScalingFactor%2A> property generally represents the **Scale** `ScoredProperty` of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageScaling` keyword. But there are some complexities as follows.  
+  
+ When reading the <xref:System.Printing.PrintTicket.PageScalingFactor%2A> property, the property behaves as follows.  
+  
+-   If the PrintTicket XML document has the `PageScaling` feature set to the **CustomSquare** option, and the **CustomSquare** option’s **Scale** value is positive value, then that is the value that is returned.  
+  
+-   If the PrintTicket XML document has the `PageScaling` feature set to the **Custom** option, and the **Custom** option’s **ScaleWidth** value is positive value, then that is the value that is returned.  
+  
+-   In all other cases, `null` is returned.  
+  
+ When setting the <xref:System.Printing.PrintTicket.PageScalingFactor%2A> property, the property behaves as follows.  
+  
+-   If it’s set to `null`, then the `PageScaling` markup is removed from the PrintTicket XML document.  
+  
+-   Otherwise, the `PageScaling` feature in the PrintTicket XML document is set to **CustomSquare** and the **CustomSquare** option’s **Scale** value is set to the passed value. (See **Exceptions** for what happens if the property is set to a value less than 1.)  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PagesPerSheet">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PagesPerSheet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PagesPerSheet" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PagesPerSheet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of pages that print on each printed side of a sheet of paper.</summary>
+        <value>A nullable <see cref="T:System.Int32" /> value that represents the number of pages that print on each printed side of a sheet of paper.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most printers support only a limited range of specific possibilities, such as 1, 2, 4, 6, 8, and 16 pages per side. You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PagesPerSheetCapability%2A> property.  
+  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the **PagesPerSheet**`ScoredProperty` of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PagesPerSheetCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PagesPerSheetDirection">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PagesPerSheetDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PagesPerSheetDirection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating how a printer arranges multiple pages that print on each side of a sheet of paper.</summary>
+        <value>A <see cref="T:System.Printing.PagesPerSheetDirection" /> value indicating how a printer presents multiple pages per sheet.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, a printer can present pages in left-to-right rows with rows stacked top-to-bottom.  
+  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the **PresentationDirection** subfeature of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobNUpAllDocumentsContiguously` keyword, not the `DocumentNUp` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PagesPerSheetDirectionCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PagesPerSheetDirection" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotoPrintingIntent">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntent" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PhotoPrintingIntent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PhotoPrintingIntent&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating in qualitative terms the level of quality the printer uses to print a photograph.</summary>
+        <value>A <see cref="T:System.Printing.PhotoPrintingIntent" /> value indicating the level of photo quality.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The photographic printer driver translates the qualitative expression in this property into specific quantitative values for resolution and other factors.  
+  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PagePhotoPrintingIntent` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.PhotoPrintingIntentCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.PhotoPrintingIntent" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Printing.PrintTicket.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when any property of the <see cref="T:System.Printing.PrintTicket" /> changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveTo">
+      <MemberSignature Language="C#" Value="public void SaveTo (System.IO.Stream outStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTo(class System.IO.Stream outStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.SaveTo(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="outStream">The <see cref="T:System.IO.Stream" /> that holds the saved <see cref="T:System.Printing.PrintTicket" />.</param>
+        <summary>Saves the <see cref="T:System.Printing.PrintTicket" /> settings to a <see cref="T:System.IO.Stream" /> object by using an XML format that conforms to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not reset the read-write position of the stream back to its original position. You should reset it immediately after calling this method.  
+  
+ If any properties of the <xref:System.Printing.PrintTicket> are `null`, they will simply not be included in the XML markup.  
+  
+ If the <xref:System.Printing.PrintTicket> object was constructed with a PrintTicket document that contains markup elements not represented by any of the <xref:System.Printing.PrintTicket> class's public properties, those elements will be included in the PrintTicket document saved by this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stapling">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Stapling&gt; Stapling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Stapling&gt; Stapling" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Stapling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.Stapling&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether, and where, a printer staples multiple pages.</summary>
+        <value>A <see cref="T:System.Printing.Stapling" /> value specifying how a printer staples the output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, a printer can place two staples on the left edge of a sheet of paper, or one staple in the upper left corner.  
+  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `JobStapleAllDocuments` keyword, not the `DocumentStaple` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.StaplingCapability%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property when testing a printer's capabilities and configuring a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.Stapling" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueTypeFontMode">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.TrueTypeFontMode&gt; TrueTypeFontMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.TrueTypeFontMode&gt; TrueTypeFontMode" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.TrueTypeFontMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.TrueTypeFontMode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating how the printer handles text that uses TrueType fonts.</summary>
+        <value>A <see cref="T:System.Printing.TrueTypeFontMode" /> value specifying how a printer handles TrueType fonts.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value for this property means that this feature setting is not specified. Also, when the value is `null`, the XML versions of the <xref:System.Printing.PrintTicket> (see <xref:System.Printing.PrintTicket.SaveTo%2A> and <xref:System.Printing.PrintTicket.GetXmlStream%2A>) will not contain any markup for this feature.  
+  
+ This property corresponds to the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)'s `PageTrueTypeFontMode` keyword.  
+  
+ You can test for the options that the printer supports by using the <xref:System.Printing.PrintCapabilities.TrueTypeFontModeCapability%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.TrueTypeFontMode" /> enumeration.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

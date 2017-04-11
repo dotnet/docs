@@ -1,0 +1,298 @@
+<Type Name="ControlDesigner+ControlDesignerAccessibleObject" FullName="System.Windows.Forms.Design.ControlDesigner+ControlDesignerAccessibleObject">
+  <TypeSignature Language="C#" Value="public class ControlDesigner.ControlDesignerAccessibleObject : System.Windows.Forms.AccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ControlDesigner/ControlDesignerAccessibleObject extends System.Windows.Forms.AccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.AccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an <see cref="T:System.Windows.Forms.AccessibleObject" /> for <see cref="T:System.Windows.Forms.Design.ControlDesigner" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlDesignerAccessibleObject (System.Windows.Forms.Design.ControlDesigner designer, System.Windows.Forms.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Design.ControlDesigner designer, class System.Windows.Forms.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.#ctor(System.Windows.Forms.Design.ControlDesigner,System.Windows.Forms.Control)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Windows.Forms.Design.ControlDesigner" />
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> for the accessible object.</param>
+        <param name="control">The <see cref="T:System.Windows.Forms.Control" /> for the accessible object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject" /> class using the specified designer and control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the points that define the boundaries of the accessible object for the designer.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that indicates the boundaries of the accessible object for the designer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAction">
+      <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.DefaultAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that describes the default action of the specified object.</summary>
+        <value>A description of the default action for a specified object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current implementation returns an empty string value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that describes the visual appearance of the specified object.</summary>
+        <value>A description of the object's visual appearance to the user, or <see langword="null" /> if the object does not have a description.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChild">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the accessible child.</param>
+        <summary>Retrieves the accessible child corresponding to the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child corresponding to the specified index.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCount">
+      <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetChildCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the number of children belonging to an accessible object.</summary>
+        <returns>The number of children belonging to an accessible object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFocused">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetFocused ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetFocused() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetFocused" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the object that has the keyboard focus.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that specifies the currently focused child. This method returns the calling object if the object itself is focused. Returns <see langword="null" /> if no object has focus.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelected">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetSelected ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetSelected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetSelected" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the currently selected child.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the currently selected child. This method returns the calling object if the object itself is selected. Returns <see langword="null" /> if is no child is currently selected and the object itself does not have focus.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject HitTest (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject HitTest(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.HitTest(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The horizontal screen coordinate.</param>
+        <param name="y">The vertical screen coordinate.</param>
+        <summary>Retrieves the child object at the specified screen coordinates.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the child object at the given screen coordinates. This method returns the calling object if the object itself is at the location specified. Returns <see langword="null" /> if no object is at the tested location.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object name.</summary>
+        <value>The object name, or <see langword="null" /> if the property has not been set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent of an accessible object.</summary>
+        <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the parent of an accessible object, or <see langword="null" /> if there is no parent object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role of this accessible object.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values, or <see cref="F:System.Windows.Forms.AccessibleRole.None" /> if no role has been specified.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleStates State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleStates State" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of this accessible object.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.AccessibleStates" /> values, or <see cref="F:System.Windows.Forms.AccessibleStates.None" />, if no state has been set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of an accessible object.</summary>
+        <value>The value of an accessible object, or <see langword="null" /> if the object has no value set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

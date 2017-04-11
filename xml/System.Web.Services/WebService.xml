@@ -1,0 +1,301 @@
+<Type Name="WebService" FullName="System.Web.Services.WebService">
+  <TypeSignature Language="C#" Value="public class WebService : System.ComponentModel.MarshalByValueComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebService extends System.ComponentModel.MarshalByValueComponent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.WebService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.MarshalByValueComponent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the optional base class for XML Web services, which provides direct access to common ASP.NET objects, such as application and session state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you don't need access to the common ASP.NET objects, you can still create an XML Web service without deriving from <xref:System.Web.Services.WebService>. Additional ASP.NET objects can be accessed through <xref:System.Web.Services.WebService.Context%2A>.  
+  
+ XML Web service methods that have the <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute.OneWay%2A> property of either <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> or <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> set to `true`, do not have access to their <xref:System.Web.HttpContext>. As such, accessing any of the properties of the <xref:System.Web.Services.WebService> class, from within that XML Web service method, return `null`.  
+  
+ If you are using the .NET Framework version 1.0 XML Web service methods that have either the <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> or <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> attribute applied to them with the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay%2A> property of set to `true`, do not have access to their <xref:System.Web.HttpContext> using the static <xref:System.Web.HttpContext.Current%2A> property. To access the <xref:System.Web.HttpContext>, derive the class implementing the XML Web service method from <xref:System.Web.Services.WebService> and access the <xref:System.Web.Services.WebService.Context%2A> property.  
+  
+   
+  
+## Examples  
+ The example below creates an XML Web service, deriving from <xref:System.Web.Services.WebService>, in order to use the <xref:System.Web.Services.WebService.Context%2A> property to obtain the time of the request on the server.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.WebService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.WebService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public System.Web.HttpApplicationState Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationState Application" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Application" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("The ASP.NET application object for the current request.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpApplicationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application object for the current HTTP request.</summary>
+        <value>An <see cref="T:System.Web.HttpApplicationState" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web services can use both application state and session state. Application state is maintained across all sessions accessing an XML Web service regardless of whether session state is turned off for a method(by using the <xref:System.Web.Services.WebMethodAttribute.EnableSession%2A> property of the <xref:System.Web.Services.WebMethodAttribute>).  
+  
+   
+  
+## Examples  
+ The example below demonstrates a hit counter, incrementing the count every time a browser calls the XML Web service method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ASP.NET <see cref="T:System.Web.HttpContext" /> for the current request, which encapsulates all HTTP-specific context used by the HTTP server to process Web requests.</summary>
+        <value>The ASP.NET <see cref="T:System.Web.HttpContext" /> for the current request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web service methods that have either the <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> or <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> attribute applied to them with the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay%2A> property of set to `true`, do not have access to their <xref:System.Web.HttpContext> using the static <xref:System.Web.HttpContext.Current%2A> property. To access the <xref:System.Web.HttpContext>, derive the class implementing the XML Web service method from <xref:System.Web.Services.WebService> and access the <xref:System.Web.Services.WebService.Context%2A> property.  
+  
+   
+  
+## Examples  
+ The Example below uses the <xref:System.Web.Services.WebService.Context%2A> property to obtain the time of the request on the server.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">
+          <paramref name="Context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public System.Web.HttpServerUtility Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpServerUtility Server" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpServerUtility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpServerUtility" /> for the current request.</summary>
+        <value>An <see cref="T:System.Web.HttpServerUtility" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpServerUtility> class provides several methods that can be used in the processing of Web requests, including <xref:System.Web.HttpServerUtility.CreateObject%2A> (for instantiating COM objects).  
+  
+   
+  
+## Examples  
+ The example below returns the computer name of the Web server using the <xref:System.Web.Services.WebService.Server%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public System.Web.SessionState.HttpSessionState Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.HttpSessionState Session" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Session" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.HttpSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.SessionState.HttpSessionState" /> instance for the current request.</summary>
+        <value>An <see cref="T:System.Web.SessionState.HttpSessionState" /> representing the ASP.NET session state object for the current session.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The example below uses session state to determine how many times a particular session accesses the XML Web service method `SessionHitCounter`. In this example, the <xref:System.Web.Services.WebMethodAttribute.EnableSession%2A> property of the <xref:System.Web.Services.WebMethodAttribute> is set to `true` in order to gain access to session state.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapVersion">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapProtocolVersion SoapVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapProtocolVersion SoapVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.SoapVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapProtocolVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the SOAP protocol used to make the SOAP request to the XML Web service.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Protocols.SoapProtocolVersion" /> values. The default is <see cref="F:System.Web.Services.Protocols.SoapProtocolVersion.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the SOAP protocol was not used to communicate with the XML Web service, such as HTTP-GET or HTTP-POST, the value of the <xref:System.Web.Services.WebService.SoapVersion%2A> property is <xref:System.Web.Services.Protocols.SoapProtocolVersion>.  
+  
+ For XML Web services that do not derive from the <xref:System.Web.Services.WebService> class, the version of the SOAP protocol used to make the SOAP request to the XML Web service can be also be accessed using the "WebServiceSoapVersion" entry of the <xref:System.Web.HttpContext.Items%2A?displayProperty=fullName> property. That entry is of type <xref:System.Web.Services.Protocols.SoapProtocolVersion>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ASP.NET server <see cref="P:System.Web.HttpContext.User" /> object. Can be used to authenticate whether a user is authorized to execute the request.</summary>
+        <value>A <see cref="T:System.Security.Principal.IPrincipal" /> representing the ASP.NET server <see cref="P:System.Web.HttpContext.User" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both Internet Information Services (IIS) and the .NET Framework need to be configured for authentication in order for the <xref:System.Web.Services.WebService.User%2A> property to be meaningful. Authentication is the process of accepting credentials from a user and validating those credentials against some authority. If the credentials are valid, you have an authenticated identity. Authentication in the .NET Framework is configured by placing entries in the web.config file.  
+  
+ The following example demonstrates the entries you place in the web.config file to enable Windows authentication.  
+  
+```  
+<security>  
+ <authentication mode="Windows"> <!-- Mode Options are Windows, Cookie, Passport and None or Empty String -->  
+ </authentication>  
+ </security>  
+```  
+  
+ For more information on setting up security for an XML Web service see [&#91;\<topic://cpconSecuringASPNETWebServices>&#93;](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c).  
+  
+   
+  
+## Examples  
+ The example below looks up the authenticated user name and returns that name.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

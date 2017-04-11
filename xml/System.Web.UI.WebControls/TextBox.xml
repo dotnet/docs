@@ -1,0 +1,1457 @@
+<Type Name="TextBox" FullName="System.Web.UI.WebControls.TextBox">
+  <TypeSignature Language="C#" Value="public class TextBox : System.Web.UI.WebControls.WebControl, System.Web.UI.IEditableTextControl, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBox extends System.Web.UI.WebControls.WebControl implements class System.Web.UI.IEditableTextControl, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.ITextControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IEditableTextControl</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("TextChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.PreviewControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlBuilder(typeof(System.Web.UI.WebControls.TextBoxControlBuilder))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlValueProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.TextDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true, "Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ValidationProperty("Text")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a text box control for user input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.TextBox> server control is an input control that lets the user enter text. By default, the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property of the control is set to `TextBoxMode.SingleLine`, which displays a single-line text box. However, you can also use the <xref:System.Web.UI.WebControls.TextBox> control to display a multiline text box or a text box that masks user input by changing the value of the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property to `TextBoxMode.MultiLine` or `TextBoxMode.Password`, respectively. The text displayed in the <xref:System.Web.UI.WebControls.TextBox> control is specified or determined by using the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.TextBox> control contains several properties that allow you to control the appearance of the control. The display width of the text box, in characters, is determined by its <xref:System.Web.UI.WebControls.TextBox.Columns%2A> property. If the <xref:System.Web.UI.WebControls.TextBox> control is a multiline text box, the number of rows it displays is determined by the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property. To display text that wraps within the <xref:System.Web.UI.WebControls.TextBox> control, set the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property to `true`.  
+  
+ You can also specify how data is entered in the <xref:System.Web.UI.WebControls.TextBox> control by setting a few properties. To prevent the text displayed in the control from being modified, set the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property to `true`. If you want to limit the user input to a specified number of characters, set the <xref:System.Web.UI.WebControls.TextBox.MaxLength%2A> property.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.TextBox>, see the <xref:System.Web.UI.WebControls.TextBox.%23ctor%2A> constructor.  
+  
+> [!CAUTION]
+>  This control can be used to accept user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:TextBox  
+    AccessKey="string"  
+    AutoCompleteType="None|Disabled|Cellular|Company|Department|  
+        DisplayName|Email|FirstName|Gender|HomeCity|HomeCountryRegion|  
+        HomeFax|HomePhone|HomeState|HomeStreetAddress|HomeZipCode|  
+        Homepage|JobTitle|LastName|MiddleName|Notes|Office|Pager|  
+        BusinessCity|BusinessCountryRegion|BusinessFax|BusinessPhone|  
+        BusinessState|BusinessStreetAddress|BusinessUrl|  
+        BusinessZipCode|Search"  
+    AutoPostBack="True|False"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CausesValidation="True|False"  
+    Columns="integer"  
+    CssClass="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    MaxLength="integer"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnTextChanged="TextChanged event handler"  
+    OnUnload="Unload event handler"  
+    ReadOnly="True|False"  
+    Rows="integer"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    Text="string"  
+    TextMode="SingleLine|MultiLine|Password"  
+    ToolTip="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+    Width="size"  
+    Wrap="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192423).  
+  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+```csharp  
+<%@ Page Language="C#" AutoEventWireup="True" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+```vb  
+<%@ Page Language="vb" AutoEventWireup="false" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TextBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TextBox> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.TextBox>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|`TagKey`|`HtmlTextWriterTag.Input`|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.%23ctor%2A> constructor to dynamically add a <xref:System.Web.UI.WebControls.TextBox> control to the page.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBox Constructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox Constructor/CS/textboxctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBox Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox Constructor/VB/textboxctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers to insert the additional attributes and styles to the <xref:System.Web.UI.HtmlTextWriter> output stream for a <xref:System.Web.UI.WebControls.TextBox> control. This method overrides <xref:System.Web.UI.WebControls.WebControl.AddAttributesToRender%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.AddAttributesToRender%2A> method in a custom server control, so that the <xref:System.Web.UI.WebControls.TextBox> control text always appears bold.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/CS/custom_textbox_addattributestorender.cs#2)]
+ [!code-vb[CustomTextBoxAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddAttributesToRender/VB/custom_textbox_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParsedSubObject">
+      <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.AddParsedSubObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
+        <summary>Overridden to allow only literal controls to be added as the <see cref="P:System.Web.UI.WebControls.TextBox.Text" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.AddParsedSubObject%2A> method in a custom server control so that it always sets the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to the parsed object's `Text` property if the parsed object is a <xref:System.Web.UI.WebControls.Literal> control, and throws an exception otherwise.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobjectcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobjectvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/CS/custom_textbox_addparsedsubobject.cs#2)]
+ [!code-vb[CustomTextBoxAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxAddParsedSubObject/VB/custom_textbox_addparsedsubobject.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCompleteType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.AutoCompleteType AutoCompleteType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.AutoCompleteType AutoCompleteType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.AutoCompleteType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the AutoComplete behavior of the <see cref="T:System.Web.UI.WebControls.TextBox" /> control</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.AutoCompleteType" /> enumeration values, indicating the AutoComplete behavior for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control. The default value is <see cref="F:System.Web.UI.WebControls.AutoCompleteType.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To assist with data entry, Microsoft Internet Explorer 5 and later and some other browsers support a feature referred to as AutoComplete. AutoComplete monitors a text box and creates a list of values entered by the user. When the user returns to the text box at a later time, the list is displayed. Instead of retyping a previously entered value, the user can simply select the value from this list. Use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control. The <xref:System.Web.UI.WebControls.AutoCompleteType?displayProperty=fullName> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+  
+> [!NOTE]
+>  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  
+  
+ By default, the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property for a <xref:System.Web.UI.WebControls.TextBox> control is set to `AutoCompleteType.None`. With this setting, the <xref:System.Web.UI.WebControls.TextBox> control shares the list with other <xref:System.Web.UI.WebControls.TextBox> controls with the same <xref:System.Web.UI.Control.ID%2A> property across different pages. You can also share a list between <xref:System.Web.UI.WebControls.TextBox> controls based on a category, instead of an <xref:System.Web.UI.Control.ID%2A> property. When you set the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to one of the category values (such as `AutoCompleteType.FirstName`, `AutoCompleteType.LastName`, and so on), all <xref:System.Web.UI.WebControls.TextBox> controls with the same category share the same list. You can disable the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control by setting the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property to `AutoCompleteType.Disabled`.  
+  
+ Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, select **Internet Options** from the **Tools** menu, and then select the **Content** tab. Click the **AutoComplete** button to view and modify the various browser options for the AutoComplete feature.  
+  
+ For more information about the AutoComplete feature in Internet Explorer, see [Using AutoComplete in HTML Forms](http://go.microsoft.com/fwlink/?LinkId=163828) in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.UI.WebControls.AutoCompleteType" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoPostBack">
+      <MemberSignature Language="C#" Value="public virtual bool AutoPostBack { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoPostBack" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.AutoPostBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an automatic postback to the server occurs when the <see cref="T:System.Web.UI.WebControls.TextBox" /> control loses focus.</summary>
+        <value>
+          <see langword="true" /> if an automatic postback occurs when the <see cref="T:System.Web.UI.WebControls.TextBox" /> control loses focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.AutoPostBack%2A> property to specify whether an automatic postback to the server will occur when the <xref:System.Web.UI.WebControls.TextBox> control loses focus. Pressing the ENTER or the TAB key while in the <xref:System.Web.UI.WebControls.TextBox> control is the most common way to change focus.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.TextBox> control's parent container contains a button marked as the default button (for example, if the container's <xref:System.Web.UI.HtmlControls.HtmlForm.DefaultButton%2A> or <xref:System.Web.UI.WebControls.Panel.DefaultButton%2A> property is set), the default button's `Click` event is not raised in response to the automatic postback.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.TextBox.AutoPostBack%2A> property to automatically display the sum of the values entered in the text boxes when the <xref:System.Web.UI.WebControls.TextBox> control loses focus.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBoxAutoPostBack#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxAutoPostBack/CS/textboxautopostbackcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBoxAutoPostBack#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxAutoPostBack/VB/textboxautopostbackvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether validation is performed when the <see cref="T:System.Web.UI.WebControls.TextBox" /> control is set to validate when a postback occurs.</summary>
+        <value>
+          <see langword="true" /> if validation is performed when the <see cref="T:System.Web.UI.WebControls.TextBox" /> control is set to validate when a postback occurs; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property to determine whether validation is performed on both the client and the server when a <xref:System.Web.UI.WebControls.TextBox> control is set to validate when a postback occurs. Page validation determines whether the input controls associated with a validation control on the page all pass the validation rules specified by the validation control.  
+  
+ By default, a <xref:System.Web.UI.WebControls.TextBox> control does not cause page validation when the control loses focus. To set the <xref:System.Web.UI.WebControls.TextBox> control to validate when a postback occurs, set the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property to `true` and the <xref:System.Web.UI.WebControls.TextBox.AutoPostBack%2A> property to `true`.  
+  
+ When the value of the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.TextBox> control causes validation.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public virtual int Columns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Columns" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display width of the text box in characters.</summary>
+        <value>The display width, in characters, of the text box. The default is 0, which indicates that the property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Columns%2A> property to specify a width of 2 characters for the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBox#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBox/CS/textboxcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBox#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBox/VB/textboxvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The index within the posted collection that references the content to load.</param>
+        <param name="postCollection">The collection posted to the server.</param>
+        <summary>Processes the postback data for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBox.LoadPostData%2A> method checks whether the postback data of the <xref:System.Web.UI.WebControls.TextBox> control is different from its previous value and, if so, loads the content and returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLength">
+      <MemberSignature Language="C#" Value="public virtual int MaxLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.MaxLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of characters allowed in the text box.</summary>
+        <value>The maximum number of characters allowed in the text box. The default is 0, which indicates that the property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.MaxLength%2A> property to limit the number of characters that can be entered in the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!NOTE]
+>  This property is applicable only when the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to `TextBoxMode.SingleLine` or `TextBoxMode.Password`.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192423).  
+  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+```csharp  
+<%@ Page Language="C#" AutoEventWireup="True" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+```vb  
+<%@ Page Language="vb" AutoEventWireup="false" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified width is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Registers client script for generating postback events prior to rendering on the client, if <see cref="P:System.Web.UI.WebControls.TextBox.AutoPostBack" /> is <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.OnPreRender%2A> method so that it always displays a one-point border in a custom <xref:System.Web.UI.WebControls.TextBox> server control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnPreRender/CS/custom_textbox_onprerender.cs#2)]
+ [!code-vb[CustomTextBoxOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnPreRender/VB/custom_textbox_onprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTextChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTextChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains event information.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.TextBox.TextChanged" /> event. This allows you to handle the event directly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBox.TextChanged> event is raised when the content of the text box changes between posts to the server.  
+  
+> [!NOTE]
+>  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method so that it always marks a custom <xref:System.Web.UI.WebControls.TextBox> server control as having been modified.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxOnTextChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxOnTextChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchangedvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxOnTextChanged#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/CS/custom_textbox_ontextchanged.cs#2)]
+ [!code-vb[CustomTextBoxOnTextChanged#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxOnTextChanged/VB/custom_textbox_ontextchanged.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> method when the posted data for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBox.RaisePostDataChangedEvent%2A> method invokes the <xref:System.Web.UI.WebControls.TextBox.OnTextChanged%2A> method if the posted data for the <xref:System.Web.UI.WebControls.TextBox> control has changed. If the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is `true`, the controls in the validation group set in the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property are validated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the contents of the <see cref="T:System.Web.UI.WebControls.TextBox" /> control can be changed.</summary>
+        <value>
+          <see langword="true" /> if the contents of the <see cref="T:System.Web.UI.WebControls.TextBox" /> control cannot be changed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property to specify whether the contents of the <xref:System.Web.UI.WebControls.TextBox> control can be changed. Setting this property to `true` will prevent users from entering a value or changing the existing value. Note that the user of the <xref:System.Web.UI.WebControls.TextBox> control cannot change this property; only the developer can.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.TextBox.Text%2A> value of a <xref:System.Web.UI.WebControls.TextBox> control with the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property set to `true` is sent to the server when a postback occurs, but the server does no processing for a read-only text box. This prevents a malicious user from changing a <xref:System.Web.UI.WebControls.TextBox.Text%2A> value that is read-only. The value of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property is preserved in the view state between postbacks unless modified by server-side code.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property to prevent any changes to the text displayed in the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered output.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.WebControls.TextBox" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBox.Render%2A> method renders the begin tag and end tag of the <xref:System.Web.UI.WebControls.TextBox> control to the <xref:System.Web.UI.HtmlTextWriter> object for output on the client. If the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to <xref:System.Web.UI.WebControls.TextBoxMode>, the content of the <xref:System.Web.UI.WebControls.TextBox> control is rendered as an HTML `<textarea>` element.  
+  
+ The <xref:System.Web.UI.WebControls.TextBox.Render%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.TextBox.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.TextBox> control is always displayed with an image.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_rendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_rendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxRender/CS/custom_textbox_render.cs#2)]
+ [!code-vb[CustomTextBoxRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxRender/VB/custom_textbox_render.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public virtual int Rows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of rows displayed in a multiline text box.</summary>
+        <value>The number of rows in a multiline text box. The default is 0, which displays a two-line text box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property to specify the number of rows displayed in a multiline text box.  
+  
+> [!NOTE]
+>  This property is applicable only when the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to `TextBoxMode.MultiLine`.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property to specify a height of 5 rows for a multiline <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the changes to the text box view state since the time the page was posted back to the server.</summary>
+        <returns>The <see cref="T:System.Object" /> that contains the changes to the <see cref="T:System.Web.UI.WebControls.TextBox" /> view state. If no view state is associated with the object, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers.  
+  
+ View state is the accumulation of the values of a server control's properties. These values are automatically placed in the server control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the server control's life cycle. For more information, see [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](http://msdn.microsoft.com/library/de0d8a1c-b1bc-48e1-b246-26e32289a82f).  
+  
+ When view state is saved, this string object is returned to the client as a variable that is stored in a hidden HTML input element. When you author custom server controls, you can improve efficiency by overriding this method and modifying your server control's `ViewState` property. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The index within the posted collection that references the content to load.</param>
+        <param name="postCollection">The collection posted to the server.</param>
+        <summary>Loads the posted text box content if it is different from the last posting.</summary>
+        <returns>
+          <see langword="true" /> if the posted content is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.TextBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TextBox.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invokes the <see cref="M:System.Web.UI.WebControls.TextBox.OnTextChanged(System.EventArgs)" /> method whenever posted data for the text box has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.TextBox> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagKey">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.TagKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTML tag for the text box control. This property is protected.</summary>
+        <value>
+          <see cref="F:System.Web.UI.HtmlTextWriterTag.Textarea" /> if the text box is multiline; otherwise, <see cref="F:System.Web.UI.HtmlTextWriterTag.Input" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.TagKey%2A> property to create a custom text box.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomTextBoxTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkeycs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomTextBoxTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkeyvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomTextBoxTagKey#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomTextBoxTagKey/CS/custom_textbox_tagkey.cs#2)]
+ [!code-vb[CustomTextBoxTagKey#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomTextBoxTagKey/VB/custom_textbox_tagkey.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true, System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.EncodedInnerDefaultProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text content of the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+        <value>The text displayed in the <see cref="T:System.Web.UI.WebControls.TextBox" /> control. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property to specify or determine the text displayed in the <xref:System.Web.UI.WebControls.TextBox> control. To limit the number of characters accepted by the control, set the <xref:System.Web.UI.WebControls.TextBox.MaxLength%2A> property. If you want to prevent the text from being modified, set the <xref:System.Web.UI.WebControls.TextBox.ReadOnly%2A> property.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ When the text box is rendered, the contents of this property are HTML-encoded. For example, if you set this property to "\<b>Test\</b>", the browser will display "\<b>Test\</b>", not "Test" in bold.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox> control to get user input. When the user clicks the **Add** button, the sum of the values entered in the text boxes is displayed.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+```csharp  
+<%@ Page Language="C#" AutoEventWireup="True" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+      protected void AddButton_Click(Object sender, EventArgs e)  
+      {  
+         int Answer;  
+         Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text);  
+         AnswerMessage.Text = Answer.ToString();  
+      }  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+```vb  
+<%@ Page Language="vb" AutoEventWireup="false" %>  
+  
+<!DOCTYPE html>  
+<html>   
+  
+<head>  
+    <title>TextBox Example</title>  
+    <script runat="server">  
+        Protected Sub AddButton_Click(sender As Object, e As EventArgs)  
+            Dim Answer As Integer  
+            Answer = Convert.ToInt32(Value1.Text) + Convert.ToInt32(Value2.Text)  
+            AnswerMessage.Text = Answer.ToString()  
+        End Sub  
+    </script>  
+</head>  
+<body>  
+  <form id="form1" runat="server">  
+    <h3> TextBox Example </h3>  
+    <p>  
+        <asp:TextBox ID="Value1" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        +  
+        <asp:TextBox ID="Value2" Columns="2" MaxLength="3" Text="1" runat="server"/>  
+        =  
+        <asp:Label ID="AnswerMessage" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:Button ID="AddButton" Text="Add" OnClick="AddButton_Click" runat="server"/>  
+    </p>  
+    <p>  
+        <asp:RequiredFieldValidator ID="Value1RequiredValidator" ControlToValidate="Value1"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RequiredFieldValidator ID="Value2RequiredValidator" ControlToValidate="Value2"  
+             ErrorMessage="Please enter a value.<br />" Display="Dynamic"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value1RangeValidator" ControlToValidate="Value1"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"  
+             runat="server"/>  
+        <asp:RangeValidator ID="Value2RangeValidator" ControlToValidate="Value2"  
+             Type="Integer" MinimumValue="1" MaximumValue="100" Display="Dynamic"  
+             ErrorMessage="Please enter an integer <br /> between than 1 and 100.<br />"      
+             runat="server"/>  
+    </p>  
+  </form>  
+</body>  
+</html>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.TextBox.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the content of the text box changes between posts to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBox.TextChanged> event is raised when the content of the text box changes between posts to the server. The event is only raised if the text is changed by the user; the event is not raised if the text is changed programmatically.  
+  
+> [!NOTE]
+>  A <xref:System.Web.UI.WebControls.TextBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following example shows how you can use this event to respond to changes in the <xref:System.Web.UI.WebControls.TextBox> control. The code displays the contents of the <xref:System.Web.UI.WebControls.TextBox.Text%2A> property of a TextBox control (called TextBox1) in a label (called Label1)  when the `Text` property is changed. User input in a Web Forms page can include potentially malicious client script. By default, the Web Forms page validates that user input does not include script or HTML elements. For more information, see [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b).  
+  
+```vb  
+  
+Protected Sub TextBox1_TextChanged(ByVal sender As Object, _  
+        ByVal e As System.EventArgs) Handles TextBox1.TextChanged  
+   Label1.Text = Server.HtmlEncode(TextBox1.Text)  
+End Sub  
+  
+```  
+  
+```csharp  
+protected void TextBox1_TextChanged(object sender, EventArgs e)  
+{  
+   Label1.Text = Server.HtmlEncode(TextBox1.Text);  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TextBoxMode TextMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TextBoxMode TextMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.TextMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the behavior mode (such as, single-line, multiline, or password) of the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.TextBoxMode" /> enumeration values. The default value is <see langword="SingleLine" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property to specify how a <xref:System.Web.UI.WebControls.TextBox> control is displayed. Three common options are single-line, multiline, or password text box.  
+  
+ When the <xref:System.Web.UI.WebControls.TextBox> control is in multiline mode, you can control the number of rows displayed by setting the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property. You can also specify whether the text should wrap by setting the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property.  
+  
+ If the <xref:System.Web.UI.WebControls.TextBox> control is in password mode, all characters entered in the control are masked.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property to specify a multiline text box.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified mode is not one of the <see cref="T:System.Web.UI.WebControls.TextBoxMode" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the group of controls for which the <see cref="T:System.Web.UI.WebControls.TextBox" /> control causes validation when it posts back to the server.</summary>
+        <value>The group of controls for which the <see cref="T:System.Web.UI.WebControls.TextBox" /> control causes validation when it posts back to the server. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently from other validation groups on the page. Use the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.TextBox> control causes validation when it posts back to the server.  
+  
+ This property has an effect only when the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.TextBox.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.TextBox> control posts back to the server. If you do not specify a value for this property and the <xref:System.Web.UI.WebControls.TextBox.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrap">
+      <MemberSignature Language="C#" Value="public virtual bool Wrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TextBox.Wrap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text content wraps within a multiline text box.</summary>
+        <value>
+          <see langword="true" /> if the text content wraps within a multiline text box; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property to specify whether the text displayed in a multiline <xref:System.Web.UI.WebControls.TextBox> control automatically continues on the next line when the text reaches the end of the control.  
+  
+> [!NOTE]
+>  This property is applicable only when the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to `TextBoxMode.MultiLine`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property to wrap text entered in the <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TextBoxMultiLine#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TextBoxMultiLine/CS/multilinetextboxcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TextBoxMultiLine#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TextBoxMultiLine/VB/multilinetextboxvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,79 @@
+<Type Name="UrlParameterWriter" FullName="System.Web.Services.Protocols.UrlParameterWriter">
+  <TypeSignature Language="C#" Value="public class UrlParameterWriter : System.Web.Services.Protocols.UrlEncodedParameterWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UrlParameterWriter extends System.Web.Services.Protocols.UrlEncodedParameterWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.UrlParameterWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.UrlEncodedParameterWriter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Writes out-going request parameters for Web services implemented using HTTP with name-value pairs encoded in the URL's query string rather than as a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Protocols.UrlParameterWriter> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
+  
+ The <xref:System.Web.Services.Protocols.UrlParameterWriter> class provides a client-side method, [GetRequestUrl(String, Object\<xref:System.Web.Services.Protocols.UrlParameterWriter.GetRequestUrl%2A>, to encode parameters name/value pairs into an HTTP request URL's query string. For example, in the URL `http://contoso.com?a=1&b=2`, `a` and `b` are parameter names, and `1` and `2` are their values.  
+  
+ You typically will not need to use <xref:System.Web.Services.Protocols.UrlParameterWriter> directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET implementation, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter%2A> property to <xref:System.Web.Services.Protocols.UrlParameterWriter>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UrlParameterWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlParameterWriter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.UrlParameterWriter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestUrl">
+      <MemberSignature Language="C#" Value="public override string GetRequestUrl (string url, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetRequestUrl(string url, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlParameterWriter.GetRequestUrl(System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="url">The HTTP request's original URL.</param>
+        <param name="parameters">The Web method parameter values to be added to the URL, if necessary.</param>
+        <summary>Writes Web method parameter values to the query string of an HTTP request.</summary>
+        <returns>A <see cref="T:System.String" /> object that contains the query string and the parameter values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.UrlParameterWriter.GetRequestUrl%2A> method encodes parameters name/value pairs into an HTTP request URL's query string. For example, in the URL `http://contoso.com?a=1&b=2`, `a` and `b` are parameter names, and `1` and `2` are their values. A new URL string, with any encoded parameters, is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

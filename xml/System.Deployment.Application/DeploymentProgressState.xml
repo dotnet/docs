@@ -1,0 +1,82 @@
+<Type Name="DeploymentProgressState" FullName="System.Deployment.Application.DeploymentProgressState">
+  <TypeSignature Language="C#" Value="public enum DeploymentProgressState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeploymentProgressState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the current stage of a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] download operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.DeploymentProgressState> is passed by way of the <xref:System.Deployment.Application.DownloadProgressChangedEventArgs.State%2A> member of <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs>, which is used by the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged>, <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged>, and <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> events. Use the members of this enumeration to determine what portion of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment has already been downloaded to the local machine.  
+  
+   
+  
+## Examples  
+ The following code example installs the latest [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application update asynchronously.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DownloadingApplicationFiles">
+      <MemberSignature Language="C#" Value="DownloadingApplicationFiles" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingApplicationFiles = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationFiles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the DLLs and data files that comprised the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadingApplicationInformation">
+      <MemberSignature Language="C#" Value="DownloadingApplicationInformation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingApplicationInformation = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationInformation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the application manifest.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadingDeploymentInformation">
+      <MemberSignature Language="C#" Value="DownloadingDeploymentInformation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingDeploymentInformation = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingDeploymentInformation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the deployment manifest.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+<Type Name="XpsSerializationManagerAsync" FullName="System.Windows.Xps.Serialization.XpsSerializationManagerAsync">
+  <TypeSignature Language="C#" Value="public sealed class XpsSerializationManagerAsync : System.Windows.Xps.Serialization.XpsSerializationManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XpsSerializationManagerAsync extends System.Windows.Xps.Serialization.XpsSerializationManager" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Serialization.XpsSerializationManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages asynchronous [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] serializers and type converters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Serialization.XpsSerializationManagerAsync> manages asynchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ <xref:System.Windows.Xps.Serialization.XpsSerializationManager> manages synchronous serializers and type converters that write content to an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsSerializationManagerAsync (System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="packagingPolicy" Type="System.Windows.Xps.Serialization.BasePackagingPolicy" />
+        <Parameter Name="batchMode" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="packagingPolicy">An object that provides methods for acquiring serialization readers and writers for different parts of an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.</param>
+        <param name="batchMode">
+          <see langword="true" /> to specify batch mode; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManagerAsync" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public void CancelAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.CancelAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels an asynchronous serialization operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public override void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits all changes and writes all buffered data as output.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsXaml">
+      <MemberSignature Language="C#" Value="public override void SaveAsXaml (object serializedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAsXaml(object serializedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.SaveAsXaml(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializedObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="serializedObject">The object that is saved.</param>
+        <summary>Saves a specified serialized object to an [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] package.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XpsSerializationCompleted">
+      <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler XpsSerializationCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler XpsSerializationCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManagerAsync.XpsSerializationCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsSerializationCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a serialization operation finishes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how to use event handlers, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

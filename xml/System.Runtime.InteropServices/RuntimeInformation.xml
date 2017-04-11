@@ -1,0 +1,125 @@
+<Type Name="RuntimeInformation" FullName="System.Runtime.InteropServices.RuntimeInformation">
+  <TypeSignature Language="C#" Value="public static class RuntimeInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RuntimeInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FrameworkDescription">
+      <MemberSignature Language="C#" Value="public static string FrameworkDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string FrameworkDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOSPlatform">
+      <MemberSignature Language="C#" Value="public static bool IsOSPlatform (System.Runtime.InteropServices.OSPlatform osPlatform);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOSPlatform(valuetype System.Runtime.InteropServices.OSPlatform osPlatform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="osPlatform" Type="System.Runtime.InteropServices.OSPlatform" />
+      </Parameters>
+      <Docs>
+        <param name="osPlatform">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSArchitecture">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture OSArchitecture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture OSArchitecture" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSArchitecture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OSDescription">
+      <MemberSignature Language="C#" Value="public static string OSDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string OSDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.OSDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessArchitecture">
+      <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.Architecture ProcessArchitecture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Runtime.InteropServices.Architecture ProcessArchitecture" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

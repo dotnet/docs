@@ -1,0 +1,178 @@
+<Type Name="IsolatedStoragePermission" FullName="System.Security.Permissions.IsolatedStoragePermission">
+  <TypeSignature Language="C#" Value="public abstract class IsolatedStoragePermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit IsolatedStoragePermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStoragePermission" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents access to generic isolated storage capabilities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is an abstract base class. This class is never instantiated; instead, classes that extend it and represent access to a particular type of isolated storage are used.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for the right to control policy. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IsolatedStoragePermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.IsolatedStoragePermission" /> class with either restricted or unrestricted permission as specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates either fully restricted (`None`) or `Unrestricted` access to isolated storage.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="esd" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="esd">The XML encoding to use to reconstruct the permission.</param>
+        <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="esd" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="esd" /> parameter is not a valid permission element.  
+  
+ -or-  
+  
+ The <paramref name="esd" /> parameter's version number is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the current permission is unrestricted.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted permission represents access to any and all resources protected by the permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the permission and its current state.</summary>
+        <returns>An XML encoding of the permission, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageAllowed">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.IsolatedStorageContainment UsageAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.IsolatedStorageContainment UsageAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermission.UsageAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of isolated storage containment allowed.</summary>
+        <value>One of the <see cref="T:System.Security.Permissions.IsolatedStorageContainment" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserQuota">
+      <MemberSignature Language="C#" Value="public long UserQuota { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 UserQuota" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermission.UserQuota" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the quota on the overall size of each user's total store.</summary>
+        <value>The size, in bytes, of the resource allocated to the user.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

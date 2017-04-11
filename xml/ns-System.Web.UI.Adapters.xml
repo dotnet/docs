@@ -1,0 +1,13 @@
+<Namespace Name="System.Web.UI.Adapters">
+  <Docs>
+    <summary>The <see cref="N:System.Web.UI.Adapters" /> namespace contains the base classes for control adapters and page adapters. You can use these adapters to override the life-cycle states of pages and controls. This is useful if you want to modify a control's markup or behavior for new markup standards or for specific browsers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=fullName> class inherits from the <xref:System.Web.UI.Adapters.ControlAdapter> class. The <xref:System.Web.UI.WebControls.Adapters.DataBoundControlAdapter?displayProperty=fullName> and <xref:System.Web.UI.WebControls.Adapters.MenuAdapter?displayProperty=fullName> classes inherit from the <xref:System.Web.UI.WebControls.Adapters.WebControlAdapter?displayProperty=fullName> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

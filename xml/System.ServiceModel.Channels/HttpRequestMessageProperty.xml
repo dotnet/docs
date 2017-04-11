@@ -1,0 +1,266 @@
+<Type Name="HttpRequestMessageProperty" FullName="System.ServiceModel.Channels.HttpRequestMessageProperty">
+  <TypeSignature Language="C#" Value="public sealed class HttpRequestMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpRequestMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpRequestMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IMessageProperty</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to the HTTP request to access and respond to the additional information made available for requests over the HTTP protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a general-purpose class that gives the developer direct access to the HTTP request information, which can be used for encapsulating HTTP-specific information. One example of the use of this class is to support services implemented in accordance with the Representational State Transfer (REST) architecture.  
+  
+ This class enables support for the following scenarios:  
+  
+-   Varies the HTTP verb used for each request.  
+  
+-   Allows HTTP header (key, value) pairs to be set and queried by request.  
+  
+-   Allows the query string to be specified for an HTTP request.  
+  
+ This class can be used by <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and related classes.  
+  
+ For incoming messages, this property is added to messages.  
+  
+ For outgoing messages, this property causes the following to happen:  
+  
+-   <xref:System.Net.HttpWebRequest.Method%2A> is set to <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Method%2A>.  
+  
+-   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString%2A> is appended to the <xref:System.Net.HttpWebRequest.RequestUri%2A>.  
+  
+-   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Headers%2A> is added to the HTTP headers set to be transmitted.  
+  
+   
+  
+## Examples  
+ The following code shows how to set several of the properties in an instance of this class and incorporate the instance into a message.  
+  
+ [!code-csharp[S_Pox#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_pox/cs/service.cs#3)]
+ [!code-vb[S_Pox#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_pox/vb/service.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpRequestMessageProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.HttpRequestMessageProperty" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the object as follows:  
+  
+-   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.Method%2A> = `POST`.  
+  
+-   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString%2A> is set to the empty string.  
+  
+-   <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody%2A> = `false`.  
+  
+   
+  
+## Examples  
+ The following code shows how to instantiate this class from a message without explicitly calling the constructor.  
+  
+ [!code-csharp[S_Pox#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_pox/cs/service.cs#0)]
+ [!code-vb[S_Pox#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_pox/vb/service.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTTP headers from the HTTP request.</summary>
+        <value>Returns a <see cref="T:System.Net.WebHeaderCollection" /> that contains the HTTP headers in the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are situations in which this property is not available and attempts to access it may cause an exception. This can happen when [!INCLUDE[indigo2](~/includes/indigo2-md.md)] is hosted in IIS, after the HTTP request is complete, especially in one-way scenarios where the reply is sent back before the message has become available.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this property to add custom headers to a message.  
+  
+ [!code-csharp[S_Pox#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_pox/cs/service.cs#3)]
+ [!code-vb[S_Pox#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_pox/vb/service.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public string Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the HTTP verb for the HTTP request.</summary>
+        <value>The HTTP verb for the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses the POST verb for HTTP messages. The GET verb is used by [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to display help information when accessing a ServiceHost's base address. This is useful for checking whether a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service is active when using a Web browser. Other methods defined by the [HTTP RFC](http://go.microsoft.com/fwlink/?LinkId=96616) are PUT, DELETE, HEAD, OPTIONS, TRACE, and CONNECT. These methods have special behaviors when interoperating with other services.  
+  
+   
+  
+## Examples  
+ The following code gets an instance of this class from the message and then dispatches to different methods based on this property.  
+  
+ [!code-csharp[PoxSample#0](~/samples/snippets/csharp/VS_Snippets_CFX/poxsample/cs/server/messagebasedcustomerservice.cs#0)]
+ [!code-vb[PoxSample#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/poxsample/vb/server/messagebasedcustomerservice.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the message property associated with the <see cref="T:System.ServiceModel.Channels.HttpRequestMessageProperty" /> class.</summary>
+        <value>The value "httpRequest".</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public string QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query string for the HTTP request.</summary>
+        <value>The query string from the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are many well-known security attacks based on an HTTP request's query string (for example, the SQL injection attack). Always rigorously validate the parameters contained in the query string. If you use the values without validation, a well-known security hole is open.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressEntityBody">
+      <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the body of the message is ignored and only the headers are sent.</summary>
+        <value>
+          <see langword="true" /> if the message body is suppressed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used for empty message requests: for example, a service that accepts a GET request without a message body. In this case, when building the <xref:System.ServiceModel.Channels.HttpRequestMessageProperty> object for the response message, set the <xref:System.ServiceModel.Channels.HttpRequestMessageProperty.SuppressEntityBody%2A> property to `true`.  
+  
+ When interoperating with non-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] services, it is important to note that certain verbs are expected to contain a message body according to the HTTP standard; these include PUT and POST. Other verbs are expected to suppress the message body; these include GET and HEAD.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_Pox#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_pox/cs/service.cs#2)]
+ [!code-vb[S_Pox#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_pox/vb/service.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IMessageProperty.CreateCopy">
+      <MemberSignature Language="C#" Value="System.ServiceModel.Channels.IMessageProperty IMessageProperty.CreateCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty System.ServiceModel.Channels.IMessageProperty.CreateCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpRequestMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a copy of the current object.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> object that represents a copy of the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

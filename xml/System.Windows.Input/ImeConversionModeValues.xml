@@ -1,0 +1,199 @@
+<Type Name="ImeConversionModeValues" FullName="System.Windows.Input.ImeConversionModeValues">
+  <TypeSignature Language="C#" Value="public enum ImeConversionModeValues" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImeConversionModeValues extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ImeConversionModeValues" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a mode of input conversion to be performed by an input method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alphanumeric">
+      <MemberSignature Language="C#" Value="Alphanumeric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Alphanumeric = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Alphanumeric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses alphanumeric conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CharCode">
+      <MemberSignature Language="C#" Value="CharCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues CharCode = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.CharCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses character code conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotCare">
+      <MemberSignature Language="C#" Value="DoNotCare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues DoNotCare = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.DoNotCare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method does not care what input conversion method is used; the actual conversion method is indeterminate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Eudc">
+      <MemberSignature Language="C#" Value="Eudc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Eudc = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Eudc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses EUDC (end user defined character) conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fixed">
+      <MemberSignature Language="C#" Value="Fixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Fixed = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Fixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses fixed conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullShape">
+      <MemberSignature Language="C#" Value="FullShape" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues FullShape = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.FullShape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses full-shape conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Katakana">
+      <MemberSignature Language="C#" Value="Katakana" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Katakana = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Katakana" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses Katakana conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native">
+      <MemberSignature Language="C#" Value="Native" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Native = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Native" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses a native character (Hiragana, Hangul, Chinese) conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoConversion">
+      <MemberSignature Language="C#" Value="NoConversion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues NoConversion = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.NoConversion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method will not perform any input conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roman">
+      <MemberSignature Language="C#" Value="Roman" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Roman = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Roman" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses Roman character conversion mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Symbol">
+      <MemberSignature Language="C#" Value="Symbol" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Symbol = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Symbol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses symbol conversion mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

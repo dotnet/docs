@@ -1,0 +1,157 @@
+<Type Name="SoapEnvelopeProcessingElement" FullName="System.Web.Services.Configuration.SoapEnvelopeProcessingElement">
+  <TypeSignature Language="C#" Value="public sealed class SoapEnvelopeProcessingElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapEnvelopeProcessingElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures a timeout that helps mitigate denial of service attacks by terminating any request that takes longer than the <see cref="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout" /> property value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The timeout value is checked on every call to <xref:System.Xml.XmlReader.Read%2A> and <xref:System.Xml.XmlReader.MoveToContent%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapEnvelopeProcessingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapEnvelopeProcessingElement (int readTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 readTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="readTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="readTimeout">The value of the timeout period.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.SoapEnvelopeProcessingElement" /> class using the provided <see cref="T:System.Int32" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapEnvelopeProcessingElement (int readTimeout, bool strict);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 readTimeout, bool strict) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor(System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="readTimeout" Type="System.Int32" />
+        <Parameter Name="strict" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="readTimeout">The time to wait before terminating requests to <see cref="M:System.Xml.XmlReader.Read" /> and <see cref="M:System.Xml.XmlReader.MoveToContent" />.</param>
+        <param name="strict">Whether to throw an exception if the serializer encounters elements or attributes that were not in the original schema. For details, see the <see cref="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict" /> property.</param>
+        <summary>Gets or sets the timeout period used to determine whether to terminate requests to mitigate against denial of service attacks.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStrict">
+      <MemberSignature Language="C#" Value="public bool IsStrict { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStrict" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("strict", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to throw an exception if the serializer encounters unexpected elements or attributes.</summary>
+        <value>
+          <see langword="true" /> if the Web services serializer tries to detect unexpected elements or attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict%2A> property to `true` in order to help debug interoperation scenarios. In general, when the <xref:System.Xml.Serialization.XmlSerializer> class meets an element or attribute that it does not expect it raises an <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event and continues processing. (The same is true when the <xref:System.Xml.Serialization.XmlArrayAttribute.Order%2A>, <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A>, or <xref:System.Xml.Serialization.XmlAnyElementAttribute.Order%2A> properties are used but data is sent out of order.) Setting the <xref:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict%2A> property to `true` instructs the Web services run time to handle that event and throw a <xref:System.InvalidOperationException> that contains a list of the expected elements and attributes.  
+  
+> [!NOTE]
+>  Because exceptions are not thrown for all unexpected elements and attributes, the <xref:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.IsStrict%2A> property should not be relied upon except as a debugging aid. For example, unexpected `xml:lang` and `xml:space` attributes may not cause an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadTimeout">
+      <MemberSignature Language="C#" Value="public int ReadTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("readTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the timeout period used to determine whether to terminate requests to mitigate against denial of service attacks.</summary>
+        <value>The time to wait before terminating requests to <see cref="M:System.Xml.XmlReader.Read" /> and <see cref="M:System.Xml.XmlReader.MoveToContent" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

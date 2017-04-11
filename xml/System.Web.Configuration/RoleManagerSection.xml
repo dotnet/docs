@@ -1,0 +1,638 @@
+<Type Name="RoleManagerSection" FullName="System.Web.Configuration.RoleManagerSection">
+  <TypeSignature Language="C#" Value="public sealed class RoleManagerSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoleManagerSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RoleManagerSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines configuration settings that are used to support the role management infrastructure of Web applications. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection> class provides a way to programmatically access and modify the content of the `roleManager` section of the configuration file.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.RoleManagerSection> class. The second demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection> type.  
+  
+ The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+```  
+<system.web>  
+  <roleManager   
+    enabled="false"   
+    cacheRolesInCookie="false"   
+    cookieName=".ASPXROLES" cookieTimeout="30"  
+    cookiePath="/" cookieRequireSSL="false"  
+    cookieSlidingExpiration="true" createPersistentCookie="false"  
+    cookieProtection="All"   
+    defaultProvider="AspNetSqlRoleProvider"  
+    maxCachedResults="25"  >  
+    <providers>  
+      <add   
+        name="AspNetSqlRoleProvider"  
+        connectionStringName="LocalSqlServer"   
+        applicationName="/"  
+        type="System.Web.Security.SqlRoleProvider, System.Web,  
+          Version=2.0.3600.0, Culture=neutral,  
+          PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add   
+        name="AspNetWindowsTokenRoleProvider"   
+        applicationName="/"  
+        type="System.Web.Security.WindowsTokenRoleProvider, System.Web,   
+          Version=2.0.3600.0, Culture=neutral,   
+          PublicKeyToken=b03f5f7f11d50a3a" />  
+    </providers>  
+  </roleManager>  
+</system.web>  
+```  
+  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection> type.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#1)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoleManagerSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RoleManagerSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RoleManagerSection" /> class by using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.RoleManagerSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+  
+ The following table shows the default settings that are used for the <xref:System.Web.Configuration.RoleManagerSection.%23ctor%2A> constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Web.Configuration.RoleManagerSection.Enabled%2A>|`false`|  
+|<xref:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie%2A>|`false`|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookieName%2A>|".ASPXROLES"|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookiePath%2A>|"/"|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A>|`All`|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookieRequireSSL%2A>|`false`|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration%2A>|`true`|  
+|<xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A>|30, in minutes|  
+|<xref:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie%2A>|`false`|  
+|<xref:System.Web.Configuration.RoleManagerSection.DefaultProvider%2A>|"AspNetSqlRoleProvider"|  
+|<xref:System.Web.Configuration.RoleManagerSection.Domain%2A>|An empty string ("")|  
+|<xref:System.Web.Configuration.RoleManagerSection.MaxCachedResults%2A>|25|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheRolesInCookie">
+      <MemberSignature Language="C#" Value="public bool CacheRolesInCookie { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CacheRolesInCookie" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cacheRolesInCookie", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the current user's roles are cached in a cookie.</summary>
+        <value>
+          <see langword="true" /> if the current user's roles are cached in a cookie; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie%2A> property returns a Boolean value indicating whether cookie storage for role names is enabled.  
+  
+ When the <xref:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie%2A> property is set to `true` in the configuration file, role information for each user is stored in a cookie on the client. When role management checks to determine whether a user is in a particular role, the roles cookie is checked before calling the role provider to check the list of roles at the data source. The cookie is dynamically updated on the client to cache the most recently validated role names.  
+  
+ You can improve the reliability of the role names that are cached in a cookie by specifying a <xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A> property when you configure the `roleManager` section of the configuration file. The default <xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A> property is `All`, which encrypts role names in the cookie and validates that the cookie contents have not been altered.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CacheRolesInCookie%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#2)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieName">
+      <MemberSignature Language="C#" Value="public string CookieName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CookieName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.WhiteSpaceTrimStringConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookieName", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the cookie that is used to cache role names.</summary>
+        <value>The name of the cookie used to cache role names. The default is ".ASPXROLES".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.CookieName%2A> property returns the name of the cookie that is used to cache role names. You can specify the name of the cookie where roles are cached for your application by setting the `cookieName` attribute in the Web.config file for your ASP.NET application. This is useful when you want to uniquely identify a cookie for your application or when a cookie is shared across multiple applications.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieName%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#3)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookiePath">
+      <MemberSignature Language="C#" Value="public string CookiePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CookiePath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookiePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.WhiteSpaceTrimStringConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookiePath", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the virtual path of the cookie that is used to cache role names.</summary>
+        <value>The path of the cookie used to store role names. The default is "/".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify the path of the cookie where role names are cached for your application by setting the `cookiePath` attribute in the Web.config file for your ASP.NET application. The <xref:System.Web.Configuration.RoleManagerSection.CookiePath%2A> property returns the value of the `cookiePath` attribute from the Web.config file. The path is case sensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookiePath%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#4)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieProtection">
+      <MemberSignature Language="C#" Value="public System.Web.Security.CookieProtection CookieProtection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.CookieProtection CookieProtection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieProtection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookieProtection", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.CookieProtection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of security that is used to protect the cookie that caches role names.</summary>
+        <value>The type of security protection used within the cookie where role names are cached. The default is <see langword="All" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A> property describes how information in a cookie is securely stored. You can specify the security type of the cookie where roles are cached for your application by setting the `cookieProtection` attribute in the Web.config file for your ASP.NET application. The `cookieProtection` attribute takes a <xref:System.Web.Security.CookieProtection> enumeration value of `All`, `Encryption`, `None`, or `Validation`. The default is `All`. Be sure to use the default value for the <xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A> property if you want both data validation and encryption to help protect the cookie. To improve the protection of your cookie, you can also set the <xref:System.Web.Configuration.RoleManagerSection.CookieRequireSSL%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieProtection%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#5)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieRequireSSL">
+      <MemberSignature Language="C#" Value="public bool CookieRequireSSL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CookieRequireSSL" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieRequireSSL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookieRequireSSL", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the cookie that is used to cache role names requires a Secure Sockets Layer (SSL) connection in order to be returned to the server.</summary>
+        <value>
+          <see langword="true" /> if an SSL connection is needed in order to return to the server the cookie where role names are cached; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify whether SSL is required to return the role names cookie to the server by setting the `cookieRequireSSL` attribute in the Web.config file for your ASP.NET application.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieRequireSSL%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#6)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieSlidingExpiration">
+      <MemberSignature Language="C#" Value="public bool CookieSlidingExpiration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CookieSlidingExpiration" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookieSlidingExpiration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the cookie that is used to cache role names will be reset periodically.</summary>
+        <value>
+          <see langword="true" /> if the role names cookie expiration date and time will be reset periodically; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify whether the cookie that is used to cache role names is periodically reset or expired at a fixed point in time by using the `cookieSlidingExpiration` attribute in the Web.config file for your ASP.NET application. If `true`, the cookie expiration is initially set to the current date and time plus the <xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A> property, in minutes. While the user continues to actively use the ASP.NET application, the expiration date and time of the cookie is automatically refreshed, if there is less than half of the <xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A> remaining. The default is `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#7)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan CookieTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CookieTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CookieTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanMinutesOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("cookieTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of minutes before the cookie that is used to cache role names expires.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that is the number of minutes before the cookie used to cache role names expires. The default is 30, in minutes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A> property sets a value specifying the number of minutes before the role names cookie expires. The default is 30 minutes. If the <xref:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration%2A> property is `false`, the <xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A> property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieTimeout%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#8)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePersistentCookie">
+      <MemberSignature Language="C#" Value="public bool CreatePersistentCookie { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreatePersistentCookie" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("createPersistentCookie", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether a session-based cookie or a persistent cookie is used to cache role names.</summary>
+        <value>
+          <see langword="true" /> to make the role names cookie persistent across browser sessions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie%2A> property indicates whether or not the cookie that is used to cache role names should be a session-based cookie, which means that the cookie is lost when the browser is closed, or a persistent cookie, which means that the cookie is available across browser sessions. The default is `false`, which indicates that a session-based cookie is used to cache role names.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CreatePersistentCookie%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#9)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProvider">
+      <MemberSignature Language="C#" Value="public string DefaultProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.DefaultProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.WhiteSpaceTrimStringConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("defaultProvider", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the default provider that is used to manage roles.</summary>
+        <value>The name of a provider in the <see cref="P:System.Web.Configuration.RoleManagerSection.Providers" />. The default is "AspNetSqlRoleProvider".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.DefaultProvider%2A> property must match a named value in the `providers` subsection of the `roleManager` section of a configuration file. An empty string ("") is not a valid value for the <xref:System.Web.Configuration.RoleManagerSection.DefaultProvider%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.CookieSlidingExpiration%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#10)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="public string Domain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Domain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("domain")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the domain that is associated with the cookie that is used to cache role names.</summary>
+        <value>The <see cref="P:System.Web.HttpCookie.Domain" /> of the cookie used to cache role names. The default is an empty string (<see langword="&quot;&quot;" />).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.Domain%2A> property is set in the configuration for an ASP.NET application by using the `domain` attribute of the `roleManager` configuration element. If no value is specified in the configuration for the `domain` attribute, the <xref:System.Web.Configuration.RoleManagerSection.Domain%2A> property returns `null` and the role names cookie domain defaults to the behavior of the <xref:System.Web.HttpCookie.Domain%2A> property. The default is an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the ASP.NET role management feature is enabled.</summary>
+        <value>
+          <see langword="true" /> if the ASP.NET role management feature is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection.Enabled%2A> property returns a Boolean value indicating whether or not the ASP.NET role management feature can be accessed at run time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.Enabled%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#12)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxCachedResults">
+      <MemberSignature Language="C#" Value="public int MaxCachedResults { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCachedResults" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.MaxCachedResults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxCachedResults", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of roles that ASP.NET caches in the role cookie.</summary>
+        <value>A value indicating the maximum number of roles ASP.NET caches in the role cookie. The default is 25.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.Roles.MaxCachedResults%2A> property returns an integer indicating the maximum number of roles that ASP.NET caches in the role cookie. The default is 25.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RoleManagerSection.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ProviderSettingsCollection" /> object of <see cref="T:System.Configuration.ProviderSettings" /> elements.</summary>
+        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> that contains the providers settings defined within the <see langword="providers" /> subsection of the <see langword="roleManager" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Role management providers are components that provide access to the types of roles for a site. You can specify role management providers in the `providers` subsection of the `roleManager` section of a configuration file.  
+  
+ The <xref:System.Web.Configuration.RoleManagerSection.DefaultProvider%2A> property specifies the provider that is used by default.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.RoleManagerSection.Providers%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.RoleManagerSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.RoleManagerSection#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/CS/rolemanagersection.cs#13)]
+ [!code-vb[System.Web.Configuration.RoleManagerSection#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.RoleManagerSection/VB/rolemanagersection.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

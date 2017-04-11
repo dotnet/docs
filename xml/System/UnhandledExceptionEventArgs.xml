@@ -1,0 +1,151 @@
+<Type Name="UnhandledExceptionEventArgs" FullName="System.UnhandledExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public class UnhandledExceptionEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit UnhandledExceptionEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.UnhandledExceptionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the event that is raised when there is an exception that is not handled in any application domain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.UnhandledExceptionEventArgs> provides access to the exception object and a flag indicating whether the common language runtime is terminating. The <xref:System.UnhandledExceptionEventArgs> is one of the parameters passed into <xref:System.UnhandledExceptionEventHandler> for the <xref:System.AppDomain.UnhandledException?displayProperty=fullName> event.  
+  
+ For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnhandledExceptionEventArgs (object exception, bool isTerminating);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object exception, bool isTerminating) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UnhandledExceptionEventArgs.#ctor(System.Object,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Object" />
+        <Parameter Name="isTerminating" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception that is not handled.</param>
+        <param name="isTerminating">
+          <see langword="true" /> if the runtime is terminating; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.UnhandledExceptionEventArgs" /> class with the exception object and a common language runtime termination flag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionObject">
+      <MemberSignature Language="C#" Value="public object ExceptionObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExceptionObject" />
+      <MemberSignature Language="DocId" Value="P:System.UnhandledExceptionEventArgs.ExceptionObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unhandled exception object.</summary>
+        <value>The unhandled exception object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns an object of type <xref:System.Object> rather than one derived from <xref:System.Exception>. Although the Common Language Specification requires that all exception types derive from <xref:System.Exception>, it is possible for methods to throw exceptions with objects not derived from <xref:System.Exception>. You can do the following to work with this exception:  
+  
+-   Apply the  <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> attribute with a <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute.WrapNonExceptionThrows%2A?displayProperty=fullName> value of `true` to the assembly that contains the event handler. This wraps all exceptions not derived from the <xref:System.Exception> class in a <xref:System.Runtime.CompilerServices.RuntimeWrappedException> object. You can then safely cast (in C#) or convert (in Visual Basic) the object returned by this property to an <xref:System.Exception> object, and retrieve the original exception object from the <xref:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException%2A?displayProperty=fullName> property. Note that some compilers, such as the C# and Visual Basic compilers, automatically apply this attribute.  
+  
+-   Cast the object returned by this property to an <xref:System.Exception> object.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.AppDomain.UnhandledException> event. It defines an event handler, `MyHandler`, that is invoked whenever an unhandled exception is thrown in the default application domain. It then throws two exceptions. The first is handled by a **try/catch** block. The second is unhandled and invokes the `MyHandle` routine before the application terminates.  
+  
+ [!code-cpp[AppDomain_UnhandledException#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomain_UnhandledException/CPP/unhandledexception.cpp#1)]
+ [!code-csharp[AppDomain_UnhandledException#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomain_UnhandledException/CS/unhandledexception.cs#1)]
+ [!code-vb[AppDomain_UnhandledException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AppDomain_UnhandledException/VB/unhandledexception.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTerminating">
+      <MemberSignature Language="C#" Value="public bool IsTerminating { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTerminating" />
+      <MemberSignature Language="DocId" Value="P:System.UnhandledExceptionEventArgs.IsTerminating" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the common language runtime is terminating.</summary>
+        <value>
+          <see langword="true" /> if the runtime is terminating; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Beginning with the .NET Framework version 2.0, this property returns `true` for most unhandled exceptions, unless an application compatibility flag is used to revert to the behavior of versions 1.0 and 1.1. The reason is that most unhandled exceptions in threads, including thread pool threads, are allowed to proceed naturally, which normally results in termination of the application. For more information, including a list of cases in which the runtime does not terminate, see [Exceptions in Managed Threads](~/docs/standard/threading/exceptions-in-managed-threads.md).  
+  
+## Version Information  
+ The following applies to the .NET Framework versions 1.0 and 1.1: This property returns `true` when an exception is received in, but not handled by, an application's main thread. This property also returns `true` if an unmanaged thread is executing managed code and receives an unhandled exception. Finally, this property returns `false` for thread pool threads and managed threads created by an application, because versions 1.0 and 1.1 catch unhandled exceptions in such threads and ignore them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

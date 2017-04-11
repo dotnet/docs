@@ -1,0 +1,201 @@
+<Type Name="ServiceElement" FullName="System.ServiceModel.Configuration.ServiceElement">
+  <TypeSignature Language="C#" Value="public sealed class ServiceElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an XML element that contains the settings for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, as well as endpoints that expose the service. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceElement (string serviceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serviceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceName">The type of the service to be instantiated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceElement" /> class with the type of the service to be instantiated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorConfiguration">
+      <MemberSignature Language="C#" Value="public string BehaviorConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BehaviorConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.BehaviorConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("behaviorConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that contains the behavior name of the behavior to be used to instantiate the service.</summary>
+        <value>The behavior name of the behavior to be used to instantiate the service. The behavior name must be in scope at the point the service is defined. The default value is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoints">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ServiceEndpointElementCollection Endpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ServiceEndpointElementCollection Endpoints" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Endpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.ServiceEndpointElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of endpoints exposed by this service.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.ServiceEndpointElementCollection" /> that contains one or more endpoints exposed by this service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each endpoint has its own address and binding. All bindings used within the configuration file must be defined in the scope of the file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.HostElement Host { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.HostElement Host" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("host", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.HostElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a configuration element that specifies the host of this service instance.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.HostElement" /> that specifies the host of this service instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique name of this service.</summary>
+        <value>The unique name of this service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

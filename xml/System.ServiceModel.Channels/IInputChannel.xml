@@ -1,0 +1,578 @@
+<Type Name="IInputChannel" FullName="System.ServiceModel.Channels.IInputChannel">
+  <TypeSignature Language="C#" Value="public interface IInputChannel : System.ServiceModel.Channels.IChannel" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IInputChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the interface that a channel must implement to receive a message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.IInputChannel> contract includes synchronous and asynchronous variants of receive, try-to-receive and wait-for-a-message functionality.  
+  
+ The pull model is used typically with an <xref:System.ServiceModel.Channels.IInputChannel> to receive messages: you call <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> (to "pull" a message out of the channel) and then wait for a message to arrive. An alternative usage pattern is to call <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> or <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29>, and then call <xref:System.ServiceModel.Channels.IInputChannel.Receive%28System.TimeSpan%29>. This approach is common for transactional usages where you start the transaction between the calls to <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> and <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>.  
+  
+ An <xref:System.ServiceModel.Channels.IInputChannel> is not necessarily bound to a single sender. Other channels and channel interfaces can provide a correlation between particular senders and an <xref:System.ServiceModel.Channels.IInputChannel>, but the base contract makes no such restriction. An implementation can create a new <xref:System.ServiceModel.Channels.IInputChannel> for each message or reuse the same <xref:System.ServiceModel.Channels.IInputChannel> for multiple messages and senders.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginReceive">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReceive(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to receive a message that has a state object associated with it.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous message reception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until the request message is received or the interval of time specified by the `timeout` has been exceeded. The asynchronous operation is available with or without an explicit timeout.  
+  
+ This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until a message becomes available in the channel.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginReceive">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReceive (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReceive(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for a message to become available.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to receive a message that has a specified time out and state object associated with it.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous receive operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until the request message is received or the interval of time specified by the `timeout` has been exceeded. The asynchronous operation is available with or without an explicit timeout.  
+  
+ The operation is not complete until either a message becomes available in the channel or the time out occurs.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+        <block subset="none" type="overrides">
+          <para>The operation throws a <see cref="T:System.TimeoutException" /> if the specified <paramref name="timeout" /> is exceeded before it completes.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTryReceive">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTryReceive (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTryReceive(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for a message to become available.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous operation to receive a message that has a specified time out and state object associated with it.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous receive operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginTryReceive%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method when you want the application processing to continue without waiting. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.TryReceive%28System.TimeSpan%2CSystem.ServiceModel.Channels.Message%40%29> method when it is acceptable for the current thread to be blocked while it replies to the request message or until the timeout interval is exceeded.  
+  
+ The operation is not complete until either a message becomes available in the channel or the timeout occurs.  
+  
+ If you are going to handle timeouts and not just re-throw or wrap the <xref:System.TimeoutException>, then you should call <xref:System.ServiceModel.Channels.IInputChannel.BeginTryReceive%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> instead of <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A>.  
+  
+ If you are not going to treat timeouts specially then just call <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A>, otherwise you lose error information.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#19](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+        <block subset="none" type="overrides">
+          <para>The operation returns <see langword="false" /> from <see cref="M:System.ServiceModel.Channels.IInputChannel.EndTryReceive(System.IAsyncResult,System.ServiceModel.Channels.Message@)" /> if the specified <paramref name="timeout" /> is exceeded.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginWaitForMessage">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginWaitForMessage (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWaitForMessage(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time to wait for a message to become available.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation.</param>
+        <summary>Begins an asynchronous wait-for-a-message-to-arrive operation that has a specified time out and state object associated with it.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation to wait for a message to arrive.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method if you need the application processing to continue without waiting for the message to arrive. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> method when it is acceptable for the current thread to be blocked while it waits for a message to arrive in the queue. The thread is blocked up to the specified `timeout`.  
+  
+ This method receives notification, through a callback, of the identity of the event handler for the operation. The operation is not complete until either a message becomes available in the channel or the time out occurs.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#22](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#22)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+        <block subset="none" type="overrides">
+          <para>The operation returns <see langword="false" /> if the specified <paramref name="timeout" /> is exceeded, not a timeout exception.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndReceive">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndReceive (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndReceive(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndReceive(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to one of the <see cref="Overload:System.ServiceModel.Channels.IInputChannel.BeginReceive" /> methods.</param>
+        <summary>Completes an asynchronous operation to receive a message.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#17](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTryReceive">
+      <MemberSignature Language="C#" Value="public bool EndTryReceive (IAsyncResult result, out System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndTryReceive(class System.IAsyncResult result, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndTryReceive(System.IAsyncResult,System.ServiceModel.Channels.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> returned by a call to the <see cref="M:System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)" /> method.</param>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> received.</param>
+        <summary>Completes the specified asynchronous operation to receive a message.</summary>
+        <returns>
+          <see langword="true" /> if a message is received before the specified interval of time elapses; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#20](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWaitForMessage">
+      <MemberSignature Language="C#" Value="public bool EndWaitForMessage (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndWaitForMessage(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.EndWaitForMessage(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> that identifies the <see cref="M:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage(System.TimeSpan,System.AsyncCallback,System.Object)" /> operation to finish, and from which to retrieve an end result.</param>
+        <summary>Completes the specified asynchronous wait-for-a-message operation.</summary>
+        <returns>
+          <see langword="true" /> if a message has arrived before the <paramref name="timeout" /> has been exceeded; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#23](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#23)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress LocalAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress LocalAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IInputChannel.LocalAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the address on which the input channel receives messages.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> on which the input channel receives messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this input channel does not have a standalone address (for example, it is the input-side of a client-initiated TCP channel), then this property is `null`.  
+  
+ This property can be used by higher-level channels for correlation purposes. For example, if a higher-level channel implements request-reply on top of a <xref:System.ServiceModel.Channels.IDuplexChannel>, it can use the <xref:System.ServiceModel.Channels.IInputChannel.LocalAddress%2A> property in the WS-Addressing ReplyTo header.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this property:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Receive ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Receive() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.Receive" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the message received, if one is available. If a message is not available, blocks for a default interval of time.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until it receives the request message or exceeds the interval of time specified by `timeout`. Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received.  
+  
+ The synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> operation is available with or without an explicit timeout.  
+  
+ If a message is not available, it blocks until one is available or until the timeout is exceeded.  
+  
+ <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> call can complete for each message received.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Receive (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message Receive(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.Receive(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies how long the receive operation has to complete before timing out and throwing a <see cref="T:System.TimeoutException" />.</param>
+        <summary>Returns the message received, if one is available. If a message is not available, blocks for a specified interval of time.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.Message" /> received.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until it receives the request message or exceeds the interval of time specified by `timeout`. Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received.  
+  
+ The synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> operation is available with or without an explicit timeout.  
+  
+ If a message is not available, it blocks until one is available or until the timeout is exceeded.  
+  
+ <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> can be called multiple times or concurrently. Only one <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> call can complete for each message received.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceive">
+      <MemberSignature Language="C#" Value="public bool TryReceive (TimeSpan timeout, out System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(valuetype System.TimeSpan timeout, class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.TryReceive(System.TimeSpan,System.ServiceModel.Channels.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.IAsyncResult" /> returned by a call to one of the <see cref="Overload:System.ServiceModel.Channels.IInputChannel.BeginReceive" /> methods.</param>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> received.</param>
+        <summary>Tries to receive a message within a specified interval of time.</summary>
+        <returns>
+          <see langword="true" /> if a message is received before the <paramref name="timeout" /> has been exceeded; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are going to handle timeouts and not just re-throw or wrap the <xref:System.TimeoutException>, then you should call <xref:System.ServiceModel.Channels.IInputChannel.TryReceive%28System.TimeSpan%2CSystem.ServiceModel.Channels.Message%40%29> instead of <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>.  
+  
+ If you are not going to treat timeouts specially then just call <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A>, otherwise you will lose error information.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#18](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#18)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForMessage">
+      <MemberSignature Language="C#" Value="public bool WaitForMessage (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WaitForMessage(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IInputChannel.WaitForMessage(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> specifies the maximum interval of time to wait for a message to arrive before timing out.</param>
+        <summary>Returns a value that indicates whether a message has arrived within a specified interval of time.</summary>
+        <returns>
+          <see langword="true" /> if a message has arrived before the <paramref name="timeout" /> has been exceeded; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> does not result in a message being received or processed in any other way.  
+  
+ The <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> method exists primarily for transacted scenarios where the user wants to receive the message using a transaction. When using just <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> normally for this, the user must create the transaction and then call <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> and hope the message arrives before the transaction times out, which may not be possible.  
+  
+ Instead, the user can call <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> with whatever time out they want (even infinite), then when a message arrives they can open the transaction, call <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> and be confident that they can get the message back before the transaction expires.  
+  
+ This method is synchronous, so it blocks the current thread until a message is available or the time out occurs. Use <xref:System.ServiceModel.Channels.IInputChannel.WaitForMessage%28System.TimeSpan%29> when it is acceptable for the current thread to be blocked while it waits for a message to arrive in the queue. The thread is blocked up to the specified `timeout`. If you need the application processing to continue without waiting, use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginWaitForMessage%28System.TimeSpan%2CSystem.AsyncCallback%2CSystem.Object%29> method.  
+  
+   
+  
+## Examples  
+ The following code illustrates how to implement this method:  
+  
+ [!code-csharp[S_UE_MessageInterceptor#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageinterceptor/cs/interceptingduplexchannel.cs#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.TimeoutException">The specified <paramref name="timeout" /> is exceeded before the operation is completed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than zero.</exception>
+        <block subset="none" type="overrides">
+          <para>The operation returns <see langword="false" /> if the specified <paramref name="timeout" /> is exceeded, not a timeout exception.</para>
+        </block>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Receive">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.ServiceProcess.TimeoutException">The operation did not complete with the timeout interval.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationException">The input channel failed.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectAbortedException">The input channel has been aborted.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The input channel faulted.</exception>
+        <summary>Returns a message received by the input channel, if one is available with an interval of time that is explicitly or implicitly defined.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until it receives the request message or exceeds the interval of time specified by `timeout`. Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you need the application processing to continue without waiting for the request to be received.  
+  
+ The synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> operation is available with or without an explicit timeout.  
+  
+ If a message is not available, it blocks until one is available or until the timeout is exceeded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="BeginReceive">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous receive operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the asynchronous <xref:System.ServiceModel.Channels.IInputChannel.BeginReceive%2A> method when you want the application processing to continue without waiting for the request to be received. Use the synchronous <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A> method when it is acceptable for the current thread to be blocked until the request message is received or the interval of time specified by the `timeout` has been exceeded. The asynchronous operation is available with or without an explicit timeout.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

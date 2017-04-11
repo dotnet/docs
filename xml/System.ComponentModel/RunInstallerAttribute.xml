@@ -1,0 +1,270 @@
+<Type Name="RunInstallerAttribute" FullName="System.ComponentModel.RunInstallerAttribute">
+  <TypeSignature Language="C#" Value="public class RunInstallerAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunInstallerAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.RunInstallerAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should be invoked when the assembly is installed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a class that inherits from <xref:System.Configuration.Install.Installer> is marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, Visual Studio's Custom Action Installer or the InstallUtil.exe will be invoked when the assembly is installed. Members marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false` will not invoke an installer. The default is `true`.  
+  
+> [!NOTE]
+>  When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value is <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=fullName>.  
+  
+ For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example specifies that the installer should be run for `MyProjectInstaller`.  
+  
+ [!code-cpp[Classic RunInstallerAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic RunInstallerAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic RunInstallerAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/VB/source.vb#1)]  
+  
+ The next example creates an instance of `MyProjectInstaller`. Then it gets the attributes for the class, extracts the <xref:System.ComponentModel.RunInstallerAttribute>, and prints whether to run the installer.  
+  
+ [!code-cpp[Classic RunInstallerAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic RunInstallerAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic RunInstallerAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic RunInstallerAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RunInstallerAttribute (bool runInstaller);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool runInstaller) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RunInstallerAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="runInstaller" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="runInstaller">
+          <see langword="true" /> if an installer should be invoked during installation of an assembly; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.RunInstallerAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RunInstallerAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RunInstallerAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RunInstallerAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RunInstallerAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the default visiblity, which is <see cref="F:System.ComponentModel.RunInstallerAttribute.No" />. This <see langword="static" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with this value, this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RunInstallerAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the value of the specified <see cref="T:System.ComponentModel.RunInstallerAttribute" /> is equivalent to the current <see cref="T:System.ComponentModel.RunInstallerAttribute" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.ComponentModel.RunInstallerAttribute" /> is equal to the current <see cref="T:System.ComponentModel.RunInstallerAttribute" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RunInstallerAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a hash code for the current <see cref="T:System.ComponentModel.RunInstallerAttribute" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.ComponentModel.RunInstallerAttribute" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.RunInstallerAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines if this attribute is the default.</summary>
+        <returns>
+          <see langword="true" /> if the attribute is the default value for this attribute class; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RunInstallerAttribute No;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RunInstallerAttribute No" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RunInstallerAttribute.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RunInstallerAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should not be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is the default setting for this attribute.  
+  
+ When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `false`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.No>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.No?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunInstaller">
+      <MemberSignature Language="C#" Value="public bool RunInstaller { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunInstaller" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.RunInstallerAttribute.RunInstaller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether an installer should be invoked during installation of an assembly.</summary>
+        <value>
+          <see langword="true" /> if an installer should be invoked during installation of an assembly; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.RunInstallerAttribute Yes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.RunInstallerAttribute Yes" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.RunInstallerAttribute.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.RunInstallerAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the Visual Studio Custom Action Installer or the [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md) should be invoked when the assembly is installed. This <see langword="static" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you mark a property with the <xref:System.ComponentModel.RunInstallerAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.RunInstallerAttribute.Yes>. Therefore, when you want to check whether the attribute is set to this value in your code, you must specify the attribute as <xref:System.ComponentModel.RunInstallerAttribute.Yes?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

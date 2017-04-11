@@ -1,0 +1,70 @@
+<Type Name="ActivityAction&lt;T&gt;" FullName="System.Activities.ActivityAction&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ActivityAction&lt;T&gt; : System.Activities.ActivityDelegate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityAction`1&lt;T&gt; extends System.Activities.ActivityDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.ActivityDelegate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the in argument of the activity delegate.</typeparam>
+    <summary>Defines an activity delegate that has one in argument and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity delegate allows a developer to define the required signature of an activity that will be specified by a third party.  
+  
+ There are multiple generic versions of this type that take from 1 to 16 arguments for the activity that is called.  There are also **ActivityFunc** types for activity delegates that return values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityAction`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.ActivityAction`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument">
+      <MemberSignature Language="C#" Value="public System.Activities.DelegateInArgument&lt;T&gt; Argument { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DelegateInArgument`1&lt;!T&gt; Argument" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityAction`1.Argument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.DelegateInArgument&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the in argument of the activity delegate.</summary>
+        <value>An argument to an activity delegate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

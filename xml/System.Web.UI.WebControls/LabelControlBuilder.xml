@@ -1,0 +1,71 @@
+<Type Name="LabelControlBuilder" FullName="System.Web.UI.WebControls.LabelControlBuilder">
+  <TypeSignature Language="C#" Value="public class LabelControlBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelControlBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LabelControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.Label" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LabelControlBuilder> causes the parser to ignore inner text if it contains only white space characters.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To create a custom control builder for a <see cref="T:System.Web.UI.WebControls.Label" /> derived control, you need to inherit from this class.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LabelControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LabelControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LabelControlBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowWhitespaceLiterals">
+      <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LabelControlBuilder.AllowWhitespaceLiterals" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Specifies whether white space literals are allowed.</summary>
+        <returns>
+          <see langword="false" /> for all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> property to ignore white space in the <xref:System.Web.UI.WebControls.Label> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

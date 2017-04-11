@@ -1,0 +1,246 @@
+<Type Name="ColorContext" FullName="System.Windows.Media.ColorContext">
+  <TypeSignature Language="C#" Value="public class ColorContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.ColorContext" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile that is associated with a bitmap image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The supported standard color spaces are sRGB, ScRGB, RGB, CMYK, Gray, Multichannel, and unknown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to get the color profile that is associated with a bitmap image.  
+  
+ [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+ [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorContext (Uri profileUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri profileUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="profileUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="profileUri">The <see cref="T:System.Uri" /> that identifies the location of the desired color profile.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorContext" /> with the [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile located at a given <see cref="T:System.Uri" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use any of the unsupported color profiles, you must install one and use its URI to initialize the <xref:System.Windows.Media.ColorContext> by using the <xref:System.Windows.Media.ColorContext.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorContext (System.Windows.Media.PixelFormat pixelFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.PixelFormat pixelFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.#ctor(System.Windows.Media.PixelFormat)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="pixelFormat" Type="System.Windows.Media.PixelFormat" />
+      </Parameters>
+      <Docs>
+        <param name="pixelFormat">The <see cref="T:System.Windows.Media.PixelFormat" /> from which the <see cref="T:System.Windows.Media.ColorContext" /> is derived.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.ColorContext" /> with the standard color profile (sRGB or RGB ) that most closely matches the supplied <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to construct a new instance of <xref:System.Windows.Media.ColorContext>.  
+  
+ [!code-csharp[bitmapimageprops#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#3)]
+ [!code-vb[bitmapimageprops#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">Identifies the <see cref="T:System.Object" /> to compare for equality.</param>
+        <summary>Determines whether an <see cref="T:System.Object" /> is equal to an instance of <see cref="T:System.Windows.Media.ColorContext" />.</summary>
+        <returns>
+          <see langword="true" /> if the supplied <see cref="T:System.Object" /> is equal to this instance of <see cref="T:System.Windows.Media.ColorContext" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the hash code for this instance of <see cref="T:System.Windows.Media.ColorContext" />.</summary>
+        <returns>An <see cref="T:System.Int32" /> that represents the hash code for the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.ColorContext context1, System.Windows.Media.ColorContext context2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Media.ColorContext context1, class System.Windows.Media.ColorContext context2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.op_Equality(System.Windows.Media.ColorContext,System.Windows.Media.ColorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context1" Type="System.Windows.Media.ColorContext" />
+        <Parameter Name="context2" Type="System.Windows.Media.ColorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context1">The first instance of <see cref="T:System.Windows.Media.ColorContext" /> to compare.</param>
+        <param name="context2">The second instance of <see cref="T:System.Windows.Media.ColorContext" /> to compare.</param>
+        <summary>Operates on two instances of <see cref="T:System.Windows.Media.ColorContext" /> to determine equality.</summary>
+        <returns>
+          <see langword="true" /> if the instances of <see cref="T:System.Windows.Media.ColorContext" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.ColorContext context1, System.Windows.Media.ColorContext context2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Media.ColorContext context1, class System.Windows.Media.ColorContext context2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.op_Inequality(System.Windows.Media.ColorContext,System.Windows.Media.ColorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context1" Type="System.Windows.Media.ColorContext" />
+        <Parameter Name="context2" Type="System.Windows.Media.ColorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context1">The first instance of <see cref="T:System.Windows.Media.ColorContext" /> to compare.</param>
+        <param name="context2">The second instance of <see cref="T:System.Windows.Media.ColorContext" /> to compare.</param>
+        <summary>Operates on two instances of <see cref="T:System.Windows.Media.ColorContext" /> to determine that they are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the instances of <see cref="T:System.Windows.Media.ColorContext" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenProfileStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream OpenProfileStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream OpenProfileStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ColorContext.OpenProfileStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a readable <see cref="T:System.IO.Stream" /> of raw color profile data.</summary>
+        <returns>A readable <see cref="T:System.IO.Stream" /> of raw color profile data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileUri">
+      <MemberSignature Language="C#" Value="public Uri ProfileUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProfileUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ColorContext.ProfileUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Uri" /> that represents the location of a [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.</summary>
+        <value>A <see cref="T:System.Uri" /> that represents the location of a [!INCLUDE[TLA#tla_icc](~/includes/tlasharptla-icc-md.md)] or [!INCLUDE[TLA#tla_icm](~/includes/tlasharptla-icm-md.md)] color profile.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

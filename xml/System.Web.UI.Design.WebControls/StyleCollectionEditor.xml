@@ -1,0 +1,62 @@
+<Type Name="StyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.StyleCollectionEditor">
+  <TypeSignature Language="C#" Value="public class StyleCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StyleCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.StyleCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.CollectionEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a design-time editor in a design host, such as [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], for a <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StyleCollectionEditor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to create an instance of.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.StyleCollectionEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="protected override object CreateInstance (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.CreateInstance(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type to create an instance of.</param>
+        <summary>Creates a new instance of the specified collection item type.</summary>
+        <returns>A collection of the specified type.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.CreateInstance(System.Type)" /> method should throw an exception if it cannot create a new instance of the specified type.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

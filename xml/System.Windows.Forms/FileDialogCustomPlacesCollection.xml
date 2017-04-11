@@ -1,0 +1,128 @@
+<Type Name="FileDialogCustomPlacesCollection" FullName="System.Windows.Forms.FileDialogCustomPlacesCollection">
+  <TypeSignature Language="C#" Value="public class FileDialogCustomPlacesCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Forms.FileDialogCustomPlace&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileDialogCustomPlacesCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Forms.FileDialogCustomPlace&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlacesCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Windows.Forms.FileDialogCustomPlace&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Forms.FileDialogCustomPlace</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] custom places for the <see cref="T:System.Windows.Forms.FileDialog" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On [!INCLUDE[winxp](~/includes/winxp-md.md)] or [!INCLUDE[winxpsvr](~/includes/winxpsvr-md.md)], this class does not have any effect.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection>. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileDialogCustomPlacesCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Guid knownFolderGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(valuetype System.Guid knownFolderGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="knownFolderGuid" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="knownFolderGuid">A <see cref="T:System.Guid" /> that represents a [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder.</param>
+        <summary>Adds a custom place to the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The folder is added to custom places only for a particular <xref:System.Windows.Forms.FileDialog> and is not a system or application wide change.  
+  
+ The folders are positioned in the custom places in the order that they are added to the <xref:System.Windows.Forms.FileDialog>. The last one added will be at the top. If you add a custom place to the collection that does not exist on the computer running the application, the custom place will not be shown. GUIDs are case-insensitive. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A> method. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">A folder path to the custom place.</param>
+        <summary>Adds a custom place to the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The folder is added to custom places only for a particular <xref:System.Windows.Forms.FileDialog> and is not a system or application wide change.  
+  
+ The folders are positioned in the custom places in the order that they are added to the <xref:System.Windows.Forms.FileDialog>. The last one added will be at the top.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialogCustomPlacesCollection.Add%2A> method. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

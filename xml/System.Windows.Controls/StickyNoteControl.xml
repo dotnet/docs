@@ -1,0 +1,865 @@
+<Type Name="StickyNoteControl" FullName="System.Windows.Controls.StickyNoteControl">
+  <TypeSignature Language="C#" Value="public sealed class StickyNoteControl : System.Windows.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StickyNoteControl extends System.Windows.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteControl" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_CloseButton", Type=typeof(System.Windows.Controls.Button))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_TitleThumb", Type=typeof(System.Windows.Controls.Primitives.Thumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_ResizeBottomRightThumb", Type=typeof(System.Windows.Controls.Primitives.Thumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_ContentControl", Type=typeof(System.Windows.Controls.ContentControl))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_IconButton", Type=typeof(System.Windows.Controls.Button))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_CopyMenuItem", Type=typeof(System.Windows.Controls.MenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_PasteMenuItem", Type=typeof(System.Windows.Controls.MenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_InkMenuItem", Type=typeof(System.Windows.Controls.MenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_SelectMenuItem", Type=typeof(System.Windows.Controls.MenuItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_EraseMenuItem", Type=typeof(System.Windows.Controls.MenuItem))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that lets users attach typed text or handwritten annotations to documents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A sticky note provides a rectangular area whose content is separate from the text, image, or other material to which the note is anchored.  
+  
+ The <xref:System.Windows.Controls.StickyNoteControl> class and its members are public so that it can be styled, but is no public constructor.  Instances are created with the <xref:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand> and <xref:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand> of the <xref:System.Windows.Annotations.AnnotationService> class.  
+  
+ When a sticky note is created, it is designated as one of two types:  
+  
+-   **Text** sticky notes have a <xref:System.Windows.Controls.RichTextBox> content area that can be written and edited like any other Rich Text area. Users can type into it and can also cut, copy, and paste both within the note and between the note and other applications. Images can also be pasted into the note. The usual Rich Text keyboard shortcuts are also available.  
+  
+-   **Ink** sticky notes have an <xref:System.Windows.Controls.InkCanvas> content area and it can be edited like other ink canvasses. For example, strokes can be erased. With a tablet PC or other suitable hardware, users can enter handwritten notes.  
+  
+ The [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of the <xref:System.Windows.Controls.StickyNoteControl> makes it a more powerful way to annotate material than marking up a hardcopy or using physical handwritten notes.  It is also more flexible than simply adding to, or striking through, the text of a document.  
+  
+-   Sticky notes can be resized.  
+  
+-   Sticky notes can be minimized to an icon and expanded.  
+  
+-   When maximized, a sticky note can be dragged to a new position in a window without changing the location of its anchor.  
+  
+-   The exact content to which a sticky note applies is highlighted and marked off with brackets.  
+  
+-   Two or more sticky notes can apply to the same content or to overlapping content.  
+  
+-   When change occurs within the document content to which a sticky note is anchored, the sticky note's position moves in position relative to the content to which it was bound.  
+  
+-   With text sticky notes, lines will wrap automatically. If the note is resized, lines will re-wrap as needed. If content extends below the bottom of the note, a vertical scroll bar will appear.  
+  
+-   With ink sticky notes, vertical and horizontal scroll bars will appear whenever content extends beyond the boundaries of the note.  
+  
+   
+  
+## Examples  
+ The following example shows how menu commands in a <xref:System.Windows.Controls.DocumentViewer> can be configured to execute the <xref:System.Windows.Annotations.AnnotationService.CreateTextStickyNoteCommand> and <xref:System.Windows.Annotations.AnnotationService.CreateInkStickyNoteCommand> of the <xref:System.Windows.Annotations.AnnotationService> class. The example shows how to read an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document into a <xref:System.Windows.Controls.DocumentViewer> control and then enable support for adding user-created sticky notes.  
+  
+ [!code-xml[DocViewerAnnotationsXps#CreateDeleteAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXps/CSharp/Window1.xaml#createdeleteannotations)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnchorInfo">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.IAnchorInfo AnchorInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.IAnchorInfo AnchorInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.AnchorInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.IAnchorInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that provides information about the annotated object.</summary>
+        <value>An <see cref="T:System.Windows.Annotations.IAnchorInfo" /> object that provides information about the annotated object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to match the sticky note with the corresponding annotated object.  
+  
+ <xref:System.Windows.Controls.StickyNoteControl.AnchorInfo%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Author">
+      <MemberSignature Language="C#" Value="public string Author { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Author" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.Author" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the author who created the sticky note.</summary>
+        <value>The name of the author who created the sticky note.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Author"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl.AuthorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AuthorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AuthorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.AuthorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.Author" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontFamily">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily CaptionFontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily CaptionFontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font family of the caption for the <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>A <see cref="T:System.Drawing.FontFamily" /> for the control's caption. The default is the value of <see cref="P:System.Windows.SystemFonts.MessageFontFamily" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_CaptionFontFamily"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontFamilyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionFontFamilyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionFontFamilyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontFamilyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.CaptionFontFamily" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontSize">
+      <MemberSignature Language="C#" Value="public double CaptionFontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CaptionFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the font used for the caption of the <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>A <see cref="T:System.Double" /> representing the font size. The default is the value of <see cref="P:System.Windows.SystemFonts.MessageFontSize" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_CaptionFontSize"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionFontSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionFontSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontSizeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.CaptionFontSize" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontStretch">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStretch CaptionFontStretch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch CaptionFontStretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontStretch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the degree to which the font used for the caption of the <see cref="T:System.Windows.Controls.StickyNoteControl" /> is stretched.</summary>
+        <value>A <see cref="T:System.Windows.FontStretch" /> structure representing the degree of stretching compared to a font's normal aspect ratio. The default is <see cref="P:System.Windows.FontStretches.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_CaptionFontStretch"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontStretchProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionFontStretchProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionFontStretchProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontStretchProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.CaptionFontStretch" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStyle CaptionFontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle CaptionFontStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style of the font used for the caption of the <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>A <see cref="T:System.Windows.FontStyle" /> structure representing the style of the caption as normal, italic, or oblique. The default is the value of <see cref="P:System.Windows.SystemFonts.MessageFontStyle" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_CaptionFontStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionFontStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionFontStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.CaptionFontStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontWeight">
+      <MemberSignature Language="C#" Value="public System.Windows.FontWeight CaptionFontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight CaptionFontWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.CaptionFontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the weight of the font used for the caption of the <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>A <see cref="T:System.Windows.FontWeight" /> structure representing the weight of the font, for example, bold, ultrabold, or extralight. The default is the value of <see cref="P:System.Windows.SystemFonts.MessageFontWeight" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_CaptionFontWeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionFontWeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionFontWeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionFontWeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.CaptionFontWeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.CaptionFontWeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteNoteCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.RoutedCommand DeleteNoteCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.RoutedCommand DeleteNoteCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.DeleteNoteCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a command whose <see cref="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" /> method deletes a <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InkCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.RoutedCommand InkCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.RoutedCommand InkCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.InkCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a command whose <see cref="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" /> method will switch the cursor in an ink sticky note to one of several possible modes, including draw and erase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When used, the <xref:System.Windows.Controls.StickyNoteControl.InkCommand> takes a parameter of type <xref:System.Windows.Controls.InkCanvasEditingMode>. The command's <xref:System.Windows.Input.RoutedCommand.Execute%2A> method will put the cursor in the mode specified by the parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InkSchemaName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName InkSchemaName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName InkSchemaName" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.InkSchemaName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Xml type of the ink sticky note annotation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Controls.StickyNoteControl" /> is active.</summary>
+        <value>
+          <see langword="true" /> if the control is active; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read this property directly.  
+  
+<a name="dependencyPropertyInfo_IsActive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActiveProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsActiveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsActiveProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsActiveProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.IsActive" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.StickyNoteControl.IsActive%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpanded">
+      <MemberSignature Language="C#" Value="public bool IsExpanded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExpanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Controls.StickyNoteControl" /> is expanded.</summary>
+        <value>
+          <see langword="true" /> if the control is expanded; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly.  
+  
+<a name="dependencyPropertyInfo_IsExpanded"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpandedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsExpandedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsExpandedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsExpandedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.IsExpanded" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  identifier for the <xref:System.Windows.Controls.StickyNoteControl.IsExpanded%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMouseOverAnchor">
+      <MemberSignature Language="C#" Value="public bool IsMouseOverAnchor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMouseOverAnchor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the mouse cursor is over the anchor of the <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>
+          <see langword="true" /> if the mouse cursor is over the anchor; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read this property directly.  
+  
+<a name="dependencyPropertyInfo_IsMouseOverAnchor"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMouseOverAnchorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsMouseOverAnchorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsMouseOverAnchorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchor" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.StickyNoteControl.IsMouseOverAnchor%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnApplyTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Registers event handlers for all the children of a template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.StickyNoteControl.OnApplyTemplate%2A> is performed automatically after the control applies an ink or text sticky note template to the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGotKeyboardFocus">
+      <MemberSignature Language="C#" Value="protected override void OnGotKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Windows.Input.KeyboardFocusChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnIsKeyboardFocusWithinChanged">
+      <MemberSignature Language="C#" Value="protected override void OnIsKeyboardFocusWithinChanged (System.Windows.DependencyPropertyChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsKeyboardFocusWithinChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTemplateChanged">
+      <MemberSignature Language="C#" Value="protected override void OnTemplateChanged (System.Windows.Controls.ControlTemplate oldTemplate, System.Windows.Controls.ControlTemplate newTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTemplateChanged(class System.Windows.Controls.ControlTemplate oldTemplate, class System.Windows.Controls.ControlTemplate newTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.StickyNoteControl.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldTemplate" Type="System.Windows.Controls.ControlTemplate" />
+        <Parameter Name="newTemplate" Type="System.Windows.Controls.ControlTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="oldTemplate">To be added.</param>
+        <param name="newTemplate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenWidth">
+      <MemberSignature Language="C#" Value="public double PenWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 PenWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.PenWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the pen for an ink <see cref="T:System.Windows.Controls.StickyNoteControl" />.</summary>
+        <value>A <see cref="T:System.Double" /> representing the width of the pen. The default is the value of <see cref="P:System.Windows.Ink.DrawingAttributes.Width" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read or write this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_PenWidth"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>,<br /><br /> <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PenWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PenWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PenWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.PenWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.PenWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StickyNoteType">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.StickyNoteType StickyNoteType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.StickyNoteType StickyNoteType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.StickyNoteControl.StickyNoteType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the sticky note is text or ink.</summary>
+        <value>A <see cref="T:System.Windows.Controls.StickyNoteType" /> value indicating the type of note. The default is <see cref="F:System.Windows.Controls.StickyNoteType.Text" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ink <xref:System.Windows.Controls.StickyNoteControl> can be used for handwritten notes on a tablet PC or other hardware that supports handwritten input.  
+  
+ We recommend that you do not attempt to get a reference to an instance of <xref:System.Windows.Controls.StickyNoteControl> nor, hence, that you read this property directly. This property should be used only in styling <xref:System.Windows.Controls.StickyNoteControl>s.  
+  
+<a name="dependencyPropertyInfo_StickyNoteType"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.StickyNoteControl.StickyNoteTypeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StickyNoteTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StickyNoteTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StickyNoteTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.StickyNoteTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.StickyNoteControl.StickyNoteType" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.StickyNoteControl.StickyNoteType%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextSchemaName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName TextSchemaName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName TextSchemaName" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteControl.TextSchemaName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Xml type of the text sticky note annotation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

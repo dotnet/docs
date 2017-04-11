@@ -1,0 +1,265 @@
+<Type Name="TableCellAutomationPeer" FullName="System.Windows.Automation.Peers.TableCellAutomationPeer">
+  <TypeSignature Language="C#" Value="public class TableCellAutomationPeer : System.Windows.Automation.Peers.TextElementAutomationPeer, System.Windows.Automation.Provider.IGridItemProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableCellAutomationPeer extends System.Windows.Automation.Peers.TextElementAutomationPeer implements class System.Windows.Automation.Provider.IGridItemProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.TextElementAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IGridItemProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Documents.TableCell" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableCellAutomationPeer (System.Windows.Documents.TableCell owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.TableCell owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.#ctor(System.Windows.Documents.TableCell)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Documents.TableCell" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>A string that contains "TableCell".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalizedControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override string GetLocalizedControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.GetLocalizedControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the localized version of the control type for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</summary>
+        <returns>A string that contains "cell".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value from the enumeration.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />.</summary>
+        <returns>If <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.GridItem" />, this method returns the current instance of the <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" />; otherwise, this method returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsControlElementCore">
+      <MemberSignature Language="C#" Value="protected override bool IsControlElementCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsControlElementCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TableCellAutomationPeer.IsControlElementCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Documents.TableCell" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TableCellAutomationPeer" /> is understood by the end user as interactive or as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/includes/tla2sharptla-gui-md.md)]. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" />.</summary>
+        <returns>
+          <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.Column">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridItemProvider.Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.Column" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ordinal number of the column that contains the cell or item.</summary>
+        <value>A zero-based ordinal number that identifies the column containing the cell or item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.ColumnSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ColumnSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of columns spanned by a cell or item.</summary>
+        <value>The number of columns spanned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IGridItemProvider.ContainingGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#ContainingGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a UI Automation provider that implements <see cref="T:System.Windows.Automation.GridPattern" /> and represents the container of the cell or item.</summary>
+        <value>A UI Automation provider that implements the <see cref="T:System.Windows.Automation.GridPattern" /> and represents the cell or item container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.Row">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridItemProvider.Row { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.Row" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#Row" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ordinal number of the row that contains the cell or item.</summary>
+        <value>A zero-based ordinal number that identifies the row containing the cell or item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IGridItemProvider.RowSpan">
+      <MemberSignature Language="C#" Value="int System.Windows.Automation.Provider.IGridItemProvider.RowSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Automation.Provider.IGridItemProvider.RowSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.TableCellAutomationPeer.System#Windows#Automation#Provider#IGridItemProvider#RowSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows spanned by a cell or item.</summary>
+        <value>The number of rows spanned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.TableCellAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IGridItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

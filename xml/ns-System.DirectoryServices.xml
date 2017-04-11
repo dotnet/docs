@@ -1,0 +1,39 @@
+<Namespace Name="System.DirectoryServices">
+  <Docs>
+    <summary>The <see cref="N:System.DirectoryServices" /> namespace provides easy access to Active Directory Domain Services from managed code. The namespace contains two component classes, <see cref="T:System.DirectoryServices.DirectoryEntry" /> and <see cref="T:System.DirectoryServices.DirectorySearcher" />, which use the Active Directory Services Interfaces (ADSI) technology. ADSI is the set of interfaces that Microsoft provides as a flexible tool for working with a variety of network providers. ADSI gives the administrator the ability to locate and manage resources on a network with relative ease, regardless of the size of the network.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace can be used with any of the Active Directory Domain Services service providers. The current providers are: Internet Information Services (IIS), Lightweight Directory Access Protocol (LDAP), Novell NetWare Directory Service (NDS), and WinNT.  
+  
+ ADSI is a programmatic interface for Microsoft Active Directory Domain Services that enables your applications to interact with diverse directories on a network using a single interface. Using ADSI, you can create applications that perform common tasks, such as backing up databases, accessing printers, and administering user accounts.  
+  
+ It is assumed that you have a general understanding of Active Directory Domain Services before using these classes. For more information on Active Directory Domain Services, see the topics [Introduction to Active Directory Objects](http://go.microsoft.com/fwlink/?LinkID=121193&clcid=0x409) and [Active Directory Technology Backgrounder](http://go.microsoft.com/fwlink/?LinkID=121194&clcid=0x409), as well as the following topics in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library):  
+  
+-   [Using Active Directory Domain Services](http://go.microsoft.com/fwlink/?LinkID=121195&clcid=0x409)  
+  
+-   [Active Directory Service Interfaces](http://go.microsoft.com/fwlink/?LinkID=121197&clcid=0x409)  
+  
+-   [Lightweight Directory Access Protocol](http://go.microsoft.com/fwlink/?LinkID=121198&clcid=0x409)  
+  
+-   [Implementing Active Directory Service Interfaces Providers](http://go.microsoft.com/fwlink/?LinkID=121199&clcid=0x409)  
+  
+-   [Binding to an ADSI Object](http://go.microsoft.com/fwlink/?LinkID=121200&clcid=0x409)  
+  
+-   [IADsOpenDSObject::OpenDSObject](http://go.microsoft.com/fwlink/?LinkID=121201&clcid=0x409)  
+  
+ Active Directory Domain Services use a tree structure. Each node in the tree contains a set of properties. Use this namespace to traverse, search, and modify the tree, and read and write to the properties of a node.  
+  
+ The <xref:System.DirectoryServices.DirectoryEntry> class encapsulates a node or object in the Active Directory Domain Services hierarchy. Use this class for binding to objects, reading properties, and updating attributes. Together with helper classes, <xref:System.DirectoryServices.DirectoryEntry> provides support for life-cycle management and navigation methods, including creating, deleting, renaming, moving a child node, and enumerating children.  
+  
+ Use the <xref:System.DirectoryServices.DirectorySearcher> class to perform queries against the Active Directory Domain Services hierarchy. LDAP is the only system-supplied Active Directory Service Interfaces (ADSI) provider that supports searching.  
+  
+ A search of the Active Directory Domain Services hierarchy through <xref:System.DirectoryServices.DirectorySearcher> returns instances of <xref:System.DirectoryServices.SearchResult>, which are contained in an instance of the <xref:System.DirectoryServices.SearchResultCollection> class.  
+  
+ Note: Many of the classes, methods, and properties in the <xref:System.DirectoryServices> namespace use the <xref:System.Security.Permissions.SecurityAction> code access security option. This means that the code access security demand only occurs during just-in-time compilation and that the demand is performed only on the calling assembly and not up the entire call stack. Because of this, callers should not pass objects that are created from this namespace at runtime to code that is not trusted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,365 @@
+<Type Name="WrapPanel" FullName="System.Windows.Controls.WrapPanel">
+  <TypeSignature Language="C#" Value="public class WrapPanel : System.Windows.Controls.Panel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi WrapPanel extends System.Windows.Controls.Panel" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.WrapPanel" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Panel</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering happens sequentially from top to bottom or from right to left, depending on the value of the <see cref="P:System.Windows.Controls.WrapPanel.Orientation" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.WrapPanel> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property. All child elements of a <xref:System.Windows.Controls.WrapPanel> receive the layout partition size of <xref:System.Windows.Controls.WrapPanel.ItemWidth%2A> multiplied by <xref:System.Windows.Controls.WrapPanel.ItemHeight%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Windows.Controls.WrapPanel> in code and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-cpp[WrapPanel_Intro#1](~/samples/snippets/cpp/VS_Snippets_Wpf/WrapPanel_Intro/CPP/WrapPanel_Code.cpp#1)]
+ [!code-csharp[WrapPanel_Intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro/CSharp/WrapPanel_Code.cs#1)]
+ [!code-vb[WrapPanel_Intro#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WrapPanel_Intro/VisualBasic/WrapPanel_vb.vb#1)]
+ [!code-xml[WrapPanel_Intro#1](~/samples/snippets/xaml/VS_Snippets_Wpf/WrapPanel_Intro/XAML/default.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WrapPanel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.WrapPanel" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finalSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="finalSize">The <see cref="T:System.Windows.Size" /> that this element should use to arrange its child elements.</param>
+        <summary>Arranges the content of a <see cref="T:System.Windows.Controls.WrapPanel" /> element.</summary>
+        <returns>The <see cref="T:System.Windows.Size" /> that represents the arranged size of this <see cref="T:System.Windows.Controls.WrapPanel" /> element and its children.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeight">
+      <MemberSignature Language="C#" Value="public double ItemHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ItemHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.ItemHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the height of all items that are contained within a <see cref="T:System.Windows.Controls.WrapPanel" />.</summary>
+        <value>The <see cref="T:System.Double" /> that represents the uniform height of all items that are contained within the <see cref="T:System.Windows.Controls.WrapPanel" />. The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set (or if it is set to `Auto` in XAML or to `Double.NaN` in code), the size of the layout partition is equal to the desired size of the child element.  
+  
+ A child element of a <xref:System.Windows.Controls.WrapPanel> may have its height property set explicitly. <xref:System.Windows.Controls.WrapPanel.ItemHeight%2A> specifies the size of the layout partition that is reserved by the <xref:System.Windows.Controls.WrapPanel> for the child element. As a result, <xref:System.Windows.Controls.WrapPanel.ItemHeight%2A> takes precedence over an element's own height.  
+  
+<a name="xamlAttributeUsage_ItemHeight"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ItemHeight="double"/>  
+- or -  
+<object ItemHeight="qualifiedDouble"/>  
+- or -  
+<object ItemHeight="Auto"/>  
+```  
+  
+<a name="xamlValues_ItemHeight"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value equal to or greater than `0.0034` but equal to or less than `160000`. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ Auto  
+ Causes the line height is determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_ItemHeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.WrapPanel.ItemHeightProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.ItemHeight%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-xml[WrapPanel_Intro2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro2/CS/default.xaml#1)]  
+  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.ItemHeight%2A> property by using code.  
+  
+ [!code-cpp[wrappanel_intro#1](~/samples/snippets/cpp/VS_Snippets_Wpf/WrapPanel_Intro/CPP/WrapPanel_Code.cpp#1)]
+ [!code-csharp[wrappanel_intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro/CSharp/WrapPanel_Code.cs#1)]
+ [!code-vb[wrappanel_intro#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WrapPanel_Intro/VisualBasic/WrapPanel_vb.vb#1)]
+ [!code-xml[wrappanel_intro#1](~/samples/snippets/xaml/VS_Snippets_Wpf/WrapPanel_Intro/XAML/default.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.ItemHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.WrapPanel.ItemHeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemWidth">
+      <MemberSignature Language="C#" Value="public double ItemWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ItemWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.ItemWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the width of all items that are contained within a <see cref="T:System.Windows.Controls.WrapPanel" />.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the uniform width of all items that are contained within the <see cref="T:System.Windows.Controls.WrapPanel" />. The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set (or if it is set to `Auto` in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] or to `Double.NaN` in code), the size of the layout partition is equal to the <xref:System.Windows.UIElement.DesiredSize%2A> of the child element.  
+  
+ A child element of a <xref:System.Windows.Controls.WrapPanel> may have its width property set explicitly. <xref:System.Windows.Controls.WrapPanel.ItemWidth%2A> specifies the size of the layout partition that is reserved by the <xref:System.Windows.Controls.WrapPanel> for the child element. As a result, <xref:System.Windows.Controls.WrapPanel.ItemWidth%2A> takes precedence over an element's own width.  
+  
+<a name="xamlAttributeUsage_ItemWidth"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ItemWidth="double"/>  
+- or -  
+<object ItemWidth="qualifiedDouble"/>  
+- or -  
+<object ItemWidth="Auto"/>  
+```  
+  
+<a name="xamlValues_ItemWidth"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value equal to or greater than `0.0034` but equal to or less than `160000`. An unqualified value is measured in device independent pixels. Strings need not explicitly include decimal points.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, (excepting `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ Auto  
+ Causes the line height is determined automatically from the current font characteristics.  Equivalent to a property value of <xref:System.Double.NaN>.  
+  
+<a name="dependencyPropertyInfo_ItemWidth"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.WrapPanel.ItemWidthProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.ItemWidth%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-xml[WrapPanel_Intro2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro2/CS/default.xaml#1)]  
+  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.ItemWidth%2A> property by using code.  
+  
+ [!code-cpp[wrappanel_intro#1](~/samples/snippets/cpp/VS_Snippets_Wpf/WrapPanel_Intro/CPP/WrapPanel_Code.cpp#1)]
+ [!code-csharp[wrappanel_intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro/CSharp/WrapPanel_Code.cs#1)]
+ [!code-vb[wrappanel_intro#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WrapPanel_Intro/VisualBasic/WrapPanel_vb.vb#1)]
+ [!code-xml[wrappanel_intro#1](~/samples/snippets/xaml/VS_Snippets_Wpf/WrapPanel_Intro/XAML/default.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.ItemWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.WrapPanel.ItemWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WrapPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">An upper limit <see cref="T:System.Windows.Size" /> that should not be exceeded.</param>
+        <summary>Measures the child elements of a <see cref="T:System.Windows.Controls.WrapPanel" /> in anticipation of arranging them during the <see cref="M:System.Windows.Controls.WrapPanel.ArrangeOverride(System.Windows.Size)" /> pass.</summary>
+        <returns>The <see cref="T:System.Windows.Size" /> that represents the desired size of the element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orientation">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WrapPanel.Orientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Orientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the dimension in which child content is arranged.</summary>
+        <value>An <see cref="T:System.Windows.Controls.Orientation" /> value that represents the physical orientation of content within the <see cref="T:System.Windows.Controls.WrapPanel" /> as horizontal or vertical. The default value is <see cref="F:System.Windows.Controls.Orientation.Horizontal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property is set to `Horizontal`, child content forms horizontal rows first and if necessary forms vertical stacks of rows. If the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property is set to `Vertical`, child content is first positioned in a vertical column, and if there is not enough space, wrapping occurs and additional columns in the horizontal dimension are added.  
+  
+<a name="dependencyPropertyInfo_Orientation"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.WrapPanel>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ [!code-xml[WrapPanel_Intro2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro2/CS/default.xaml#1)]  
+  
+ The following example demonstrates how to set the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property by using code.  
+  
+ [!code-cpp[wrappanel_intro#1](~/samples/snippets/cpp/VS_Snippets_Wpf/WrapPanel_Intro/CPP/WrapPanel_Code.cpp#1)]
+ [!code-csharp[wrappanel_intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/WrapPanel_Intro/CSharp/WrapPanel_Code.cs#1)]
+ [!code-vb[wrappanel_intro#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WrapPanel_Intro/VisualBasic/WrapPanel_vb.vb#1)]
+ [!code-xml[wrappanel_intro#1](~/samples/snippets/xaml/VS_Snippets_Wpf/WrapPanel_Intro/XAML/default.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrientationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.WrapPanel.OrientationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.WrapPanel.Orientation" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

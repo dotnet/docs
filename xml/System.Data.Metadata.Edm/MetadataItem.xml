@@ -1,0 +1,128 @@
+<Type Name="MetadataItem" FullName="System.Data.Metadata.Edm.MetadataItem">
+  <TypeSignature Language="C#" Value="public abstract class MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract MetadataItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.MetadataItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base item class for all the metadata in the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata type hierarchy.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuiltInTypeKind">
+      <MemberSignature Language="C#" Value="public abstract System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.BuiltInTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the built-in type kind for this type.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Documentation">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.Documentation Documentation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.Documentation Documentation" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.Documentation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.Documentation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the documentation associated with this type.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.Documentation" /> object that represents the documentation on this type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows you to get and set the <xref:System.Data.Metadata.Edm.Documentation> object that represents the documentation associated with conceptual model constructs such as the <xref:System.Data.Metadata.Edm.EntityContainer>, the <xref:System.Data.Metadata.Edm.EntityType>, the <xref:System.Data.Metadata.Edm.ComplexType>, the <xref:System.Data.Metadata.Edm.AssociationType>, and so on. You can define the documentation tag in the conceptual schema definition language (CSDL) files and store schema definition language (SSDL) files. For more information, see [Documentation Element (CSDL)](http://msdn.microsoft.com/en-us/d49e7bb9-a6a1-4017-9c7e-7836bf3bef48).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBuiltInType">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.EdmType GetBuiltInType (System.Data.Metadata.Edm.BuiltInTypeKind builtInTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.EdmType GetBuiltInType(valuetype System.Data.Metadata.Edm.BuiltInTypeKind builtInTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataItem.GetBuiltInType(System.Data.Metadata.Edm.BuiltInTypeKind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builtInTypeKind" Type="System.Data.Metadata.Edm.BuiltInTypeKind" />
+      </Parameters>
+      <Docs>
+        <param name="builtInTypeKind">One of the <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> values.</param>
+        <summary>Returns a conceptual model built-in type that matches one of the <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> values.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the built-in type in the EDM.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneralFacetDescriptions">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; GetGeneralFacetDescriptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; GetGeneralFacetDescriptions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.MetadataItem.GetGeneralFacetDescriptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the list of the general facet descriptions for a specified type.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> object that represents the list of the general facet descriptions for a specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataProperties">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.MetadataProperty&gt; MetadataProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.MetadataProperty&gt; MetadataProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.MetadataItem.MetadataProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.MetadataProperty&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of properties of the current type.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of properties of the current type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Data.Metadata.Edm.MetadataProperty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

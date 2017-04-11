@@ -1,0 +1,91 @@
+<Type Name="MemoryCacheSection" FullName="System.Runtime.Caching.Configuration.MemoryCacheSection">
+  <TypeSignature Language="C#" Value="public sealed class MemoryCacheSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemoryCacheSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Configuration.MemoryCacheSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a configuration section for a cache based on the <see cref="T:System.Runtime.Caching.MemoryCache" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection> class defines the settings that are available in the `memoryCache` section of a configuration file. In this section, the `namedCaches` element is used to configure a default instance of the cache and to configure any additional named instances.  
+  
+ For more information, see [\&lt;memoryCache\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MemoryCacheSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.Configuration.MemoryCacheSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamedCaches">
+      <MemberSignature Language="C#" Value="public System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection NamedCaches { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection NamedCaches" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("namedCaches")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.Configuration.MemoryCacheSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of configuration settings for the named <see cref="T:System.Runtime.Caching.MemoryCache" /> instances.</summary>
+        <value>A collection of settings for each named cache.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file. For more information about configuration options that are related to this property, see [\&lt;namedCaches\&gt; Element (Cache Settings)](~/docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

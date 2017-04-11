@@ -1,0 +1,962 @@
+<Type Name="DataGridTextBoxColumn" FullName="System.Windows.Forms.DataGridTextBoxColumn">
+  <TypeSignature Language="C#" Value="public class DataGridTextBoxColumn : System.Windows.Forms.DataGridColumnStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridTextBoxColumn extends System.Windows.Forms.DataGridColumnStyle" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridTextBoxColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataGridColumnStyle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Hosts a <see cref="T:System.Windows.Forms.TextBox" /> control in a cell of a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> for editing strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn> class derives from the `abstract` class <xref:System.Windows.Forms.DataGridColumnStyle>. At run time, the <xref:System.Windows.Forms.DataGridTextBoxColumn> hosts a <xref:System.Windows.Forms.DataGridTextBox> control that allows users to edit text.  
+  
+ Special properties added to the class include <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A>, and <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A>. These properties allow you to access the hosted <xref:System.Windows.Forms.DataGridTextBox> control and its attributes, and set the format for displaying values.  
+  
+ If the data source is a <xref:System.Data.DataTable> containing <xref:System.Data.DataColumn> objects, the <xref:System.Data.DataColumn.DataType%2A> property of the <xref:System.Data.DataColumn> should be set to a data type that can logically be edited in a text box control. The following data types are automatically associated with a <xref:System.Windows.Forms.DataGridTextBoxColumn> : <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, and <xref:System.String>.  
+  
+ [Visual Basic]  
+  
+> [!NOTE]
+>  The following types are not fully supported by Visual Basic: <xref:System.DateTime>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.TimeSpan>. (Operators are not allowed.)  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> of a <xref:System.Windows.Forms.DataGrid>. To run this code example, paste it into a form that has a <xref:System.Windows.Forms.DataGrid> named `dataGrid1` and call it from the constructor of the <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridTextBoxColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> for the column with which the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> will be associated.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> with a specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.DataGridTextBoxColumn> and adds it to the <xref:System.Windows.Forms.GridColumnStylesCollection> collection.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.DataGridTextBoxColumn2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, bool isDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, bool isDefault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="isDefault" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to be associated with the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" />.</param>
+        <param name="isDefault">Specifies whether the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> is a default column.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class using the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />. Specifies whether the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> is a default column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> for the column with which the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> will be associated.</param>
+        <param name="format">The format used to format the column values.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> and format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a custom format for the displayed data.  
+  
+ The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member.  
+  
+ [!code-cpp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CPP/datagridtextboxcolumn_2.cpp#2)]
+ [!code-csharp[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/CS/datagridtextboxcolumn_datagridtextboxcolumn_2.cs#2)]
+ [!code-vb[DataGridTextBoxColumn_DataGridTextBoxColumn_2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn_DataGridTextBoxColumn_2/VB/datagridtextboxcolumn_datagridtextboxcolumn_2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridTextBoxColumn (System.ComponentModel.PropertyDescriptor prop, string format, bool isDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.PropertyDescriptor prop, string format, bool isDefault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.#ctor(System.ComponentModel.PropertyDescriptor,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="isDefault" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to be associated with the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" />.</param>
+        <param name="format">The format used.</param>
+        <param name="isDefault">Specifies whether the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> is the default column.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" /> class with a specified <see cref="T:System.ComponentModel.PropertyDescriptor" /> and format. Specifies whether the column is the default column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="protected override void Abort (int rowNum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Abort(int32 rowNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Abort(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNum" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNum">The number of the row in which an edit operation is being interrupted.</param>
+        <summary>Initiates a request to interrupt an edit procedure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method rolls back any change made to the column and invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox%2A> and <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="protected override bool Commit (System.Windows.Forms.CurrencyManager dataSource, int rowNum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool Commit(class System.Windows.Forms.CurrencyManager dataSource, int32 rowNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Commit(System.Windows.Forms.CurrencyManager,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataSource" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dataSource">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> control the column belongs to.</param>
+        <param name="rowNum">The number of the edited row.</param>
+        <summary>Inititates a request to complete an editing procedure.</summary>
+        <returns>
+          <see langword="true" /> if the value was successfully committed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method checks to ensure that an edit is indeed occurring. If so, it formats the value appropriately. If the value is `null`, the method enters <xref:System.Convert.DBNull> into the column; otherwise, it uses the <xref:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow%2A> method to commit the value.  
+  
+ The method is called by the <xref:System.Windows.Forms.DataGrid> when an editing operation is committed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConcedeFocus">
+      <MemberSignature Language="C#" Value="protected override void ConcedeFocus ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ConcedeFocus() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.ConcedeFocus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Informs the column that the focus is being conceded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this overridden method, the <xref:System.Windows.Forms.TextBox> control hosted by the <xref:System.Windows.Forms.DataGridTextBoxColumn> is hidden.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="protected override void Edit (System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Edit(class System.Windows.Forms.CurrencyManager source, int32 rowNum, valuetype System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="readOnly" Type="System.Boolean" />
+        <Parameter Name="displayText" Type="System.String" />
+        <Parameter Name="cellIsVisible" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> control the column belongs to.</param>
+        <param name="rowNum">The row number in this column being edited.</param>
+        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
+        <param name="readOnly">A value indicating whether the column is a read-only. <see langword="true" /> if the value is read-only; otherwise, <see langword="false" />.</param>
+        <param name="displayText">The text to display in the control.</param>
+        <param name="cellIsVisible">A value indicating whether the cell is visible. <see langword="true" /> if the cell is visible; otherwise, <see langword="false" />.</param>
+        <summary>Prepares a cell for editing.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridColumnStyle.Edit%2A> sites a <xref:System.Windows.Forms.TextBox> control on the grid at the location of the cell being edited. The method is called by the <xref:System.Windows.Forms.DataGrid> class's <xref:System.Windows.Forms.DataGrid.BeginEdit%2A> method when an editing operation is about to begin.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Edit%2A> method to change the text of a clicked cell in the <xref:System.Windows.Forms.DataGrid> control.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.Edit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Edit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEdit">
+      <MemberSignature Language="C#" Value="protected void EndEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EndEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.EndEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends an edit operation on the <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To edit the value of a cell, call the <xref:System.Data.DataRow> object's <xref:System.Data.DataRow.BeginEdit%2A> before changing the value. You must invoke the <xref:System.Data.DataRow.AcceptChanges%2A> method on both the <xref:System.Data.DataRow> and <xref:System.Data.DataTable> objects before the change is committed.  
+  
+   
+  
+## Examples  
+ The following example invokes the <xref:System.Windows.Forms.DataGridTextBoxColumn.EndEdit%2A> method before editing a column's value.  
+  
+ [!code-vb[Classic DataGridTextBoxColumn.EndEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EndEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterNullValue">
+      <MemberSignature Language="C#" Value="protected override void EnterNullValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void EnterNullValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.EnterNullValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enters a <see cref="F:System.DBNull.Value" /> in the column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enters the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> value into the cell.  
+  
+   
+  
+## Examples  
+ The following example tests a <xref:System.Windows.Forms.DataGridColumnStyle> to determine its column type. If the column is a <xref:System.Windows.Forms.DataGridTextBoxColumn>, and the <xref:System.Data.DataColumn> allows `null` values, then the <xref:System.Windows.Forms.DataGridColumnStyle.NullText%2A> property is set and the <xref:System.Windows.Forms.DataGridTextBoxColumn.EnterNullValue%2A> method invoked.  
+  
+ [!code-vb[Classic DataGridTextBoxColumn.EnterNullValue Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.EnterNullValue Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public string Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Format" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataGridColumnStyleFormatEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character(s) that specify how text is formatted.</summary>
+        <value>The character or characters that specify how text is formatted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property specifies how values are displayed in the column. For example, set the property to "c" to specify that the values will be formatted as the local currency. The <xref:System.Globalization.CultureInfo> for the computer is used to determine the actual currency format. The values are automatically unformatted to the native type when data is changed.  
+  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+ The format you apply should be appropriate to the data type. For example, if the data is numeric in nature use one of the numeric format strings.  
+  
+ You can change the <xref:System.Globalization.CultureInfo> for a <xref:System.Windows.Forms.DataGridTextBoxColumn> by setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
+  
+ To set the <xref:System.Globalization.CultureInfo> for the application, set the <xref:System.Windows.Forms.Application.CurrentCulture%2A> property of the <xref:System.Windows.Forms.Application> object to a new <xref:System.Globalization.CultureInfo> instance constructed with an appropriate culture ID.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
+  
+ [!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
+ [!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
+ [!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatInfo">
+      <MemberSignature Language="C#" Value="public IFormatProvider FormatInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IFormatProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture specific information used to determine how values are formatted.</summary>
+        <value>An object that implements the <see cref="T:System.IFormatProvider" /> interface, such as the <see cref="T:System.Globalization.CultureInfo" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to one of the formatting characters, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses the information provided by the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to further specify what cultural-specific formatting to use. For example, when the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property is set to the format character "c" (for currency), you can further specify that the symbol for the lira be used. To do this, create a new <xref:System.Globalization.CultureInfo> object with the locale ID for Italy, and set the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to the new <xref:System.Globalization.CultureInfo> object.  
+  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Globalization.CultureInfo> object and assigns it to the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property of a <xref:System.Windows.Forms.DataGridTextBoxColumn> object. The example also sets the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to "c" to specify that the column should display values as currency.  
+  
+ [!code-cpp[DataGridTextBoxColumn Format#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CPP/datagridtextboxcolumn format.cpp#1)]
+ [!code-csharp[DataGridTextBoxColumn Format#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DataGridTextBoxColumn Format/CS/datagridtextboxcolumn format.cs#1)]
+ [!code-vb[DataGridTextBoxColumn Format#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DataGridTextBoxColumn Format/VB/datagridtextboxcolumn format.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMinimumHeight">
+      <MemberSignature Language="C#" Value="protected override int GetMinimumHeight ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance int32 GetMinimumHeight() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetMinimumHeight" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the height of a cell in a <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+        <returns>The height of a cell.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by <xref:System.Windows.Forms.DataGridTextBoxColumn.GetMinimumHeight%2A> is calculated by adding the size of the column's font plus a margin value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredHeight">
+      <MemberSignature Language="C#" Value="protected override int GetPreferredHeight (System.Drawing.Graphics g, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance int32 GetPreferredHeight(class System.Drawing.Graphics g, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="g">A <see cref="T:System.Drawing.Graphics" /> object used to draw shapes on the screen.</param>
+        <param name="value">The value to draw.</param>
+        <summary>Gets the height to be used in for automatically resizing columns.</summary>
+        <returns>The height the cells automatically resize to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight%2A> to return the height a column is automatically resized to.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.GetPreferredHeight Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredHeight Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreferredSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size GetPreferredSize (System.Drawing.Graphics g, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(class System.Drawing.Graphics g, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="g">A <see cref="T:System.Drawing.Graphics" /> object used to draw shapes on the screen.</param>
+        <param name="value">The value to draw.</param>
+        <summary>Returns the optimum width and height of the cell in a specified row relative to the specified value.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that contains the dimensions of the cell.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The optimum width and height is calculated by measuring the string size, taking into account its font and attributes, and adding margin values.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Windows.Forms.DataGridTextBoxColumn.GetPreferredSize%2A> to return a <xref:System.Drawing.Size>.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.GetPreferredSize Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.GetPreferredSize Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideEditBox">
+      <MemberSignature Language="C#" Value="protected void HideEditBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void HideEditBox() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.HideEditBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hides the <see cref="T:System.Windows.Forms.DataGridTextBox" /> control and moves the focus to the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> object to draw to.</param>
+        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
+        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> the that contains the column.</param>
+        <param name="rowNum">The number of the row in the underlying data table.</param>
+        <summary>Paints the a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> with the specified <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, and row number.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, bool alignToRight);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum, bool alignToRight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+        <Parameter Name="alignToRight" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> object to draw to.</param>
+        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
+        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> the that contains the column.</param>
+        <param name="rowNum">The number of the row in the underlying data table.</param>
+        <param name="alignToRight">A value indicating whether to align the column's content to the right. <see langword="true" /> if the content should be aligned to the right; otherwise, <see langword="false" />.</param>
+        <summary>Paints a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> with the specified <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, row number, and alignment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="protected override void Paint (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Brush backBrush, System.Drawing.Brush foreBrush, bool alignToRight);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Paint(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.CurrencyManager source, int32 rowNum, class System.Drawing.Brush backBrush, class System.Drawing.Brush foreBrush, bool alignToRight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+        <Parameter Name="backBrush" Type="System.Drawing.Brush" />
+        <Parameter Name="foreBrush" Type="System.Drawing.Brush" />
+        <Parameter Name="alignToRight" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> object to draw to.</param>
+        <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
+        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the <see cref="T:System.Windows.Forms.DataGrid" /> the that contains the column.</param>
+        <param name="rowNum">The number of the row in the underlying data table.</param>
+        <param name="backBrush">A <see cref="T:System.Drawing.Brush" /> that paints the background.</param>
+        <param name="foreBrush">A <see cref="T:System.Drawing.Brush" /> that paints the foreground color.</param>
+        <param name="alignToRight">A value indicating whether to align the column's content to the right. <see langword="true" /> if the content should be aligned to the right; otherwise, <see langword="false" />.</param>
+        <summary>Paints a <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> with the specified <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, row number, <see cref="T:System.Drawing.Brush" />, and foreground color.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method uses the <xref:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow%2A> to determine the value to draw in the cell. The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method is called to draw the cell and its contents.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Paint%2A> method to paint a clicked cell with new foreground and background color.  
+  
+ [!code-cpp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridTextBoxColumn.Paint2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.Paint2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintText">
+      <MemberSignature Language="C#" Value="protected void PaintText (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string text, bool alignToRight);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PaintText(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string text, bool alignToRight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.PaintText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="alignToRight" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="g">A <see cref="T:System.Drawing.Graphics" /> object used to draw the string.</param>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> which contains the boundary data of the rectangle.</param>
+        <param name="text">The string to be drawn to the screen.</param>
+        <param name="alignToRight">A value indicating whether the text is right-aligned.</param>
+        <summary>Draws the text and rectangle at the given location with the specified alignment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataFormats.Format> object set with the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
+  
+ The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintText">
+      <MemberSignature Language="C#" Value="protected void PaintText (System.Drawing.Graphics g, System.Drawing.Rectangle textBounds, string text, System.Drawing.Brush backBrush, System.Drawing.Brush foreBrush, bool alignToRight);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PaintText(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle textBounds, string text, class System.Drawing.Brush backBrush, class System.Drawing.Brush foreBrush, bool alignToRight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.PaintText(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="textBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="backBrush" Type="System.Drawing.Brush" />
+        <Parameter Name="foreBrush" Type="System.Drawing.Brush" />
+        <Parameter Name="alignToRight" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="g">A <see cref="T:System.Drawing.Graphics" /> object used to draw the string.</param>
+        <param name="textBounds">A <see cref="T:System.Drawing.Rectangle" /> which contains the boundary data of the rectangle.</param>
+        <param name="text">The string to be drawn to the screen.</param>
+        <param name="backBrush">A <see cref="T:System.Drawing.Brush" /> that determines the rectangle's background color</param>
+        <param name="foreBrush">A <see cref="T:System.Drawing.Brush" /> that determines the rectangles foreground color.</param>
+        <param name="alignToRight">A value indicating whether the text is right-aligned.</param>
+        <summary>Draws the text and rectangle at the specified location with the specified colors and alignment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method uses the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to format the value before drawing it to the screen.  
+  
+ The <xref:System.Windows.Forms.DataGridColumnStyle.Paint%2A> method calls the <xref:System.Windows.Forms.DataGridTextBoxColumn.PaintText%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyDescriptor">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptor PropertyDescriptor { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor PropertyDescriptor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.PropertyDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> for the <see cref="T:System.Windows.Forms.DataGridTextBoxColumn" />.</summary>
+        <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that formats the values displayed in the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.ComponentModel.PropertyDescriptor> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
+  
+```  
+[SampleID='Classic DataGridTextBoxColumn.PropertyDescriptor Example' SnippetID='1']  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public override bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets a value indicating whether the text box column is read-only.</summary>
+        <value>
+          <see langword="true" /> if the text box column is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseHostedControl">
+      <MemberSignature Language="C#" Value="protected override void ReleaseHostedControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ReleaseHostedControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.ReleaseHostedControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the reference that the <see cref="T:System.Windows.Forms.DataGrid" /> holds to the control used to edit data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method removes the reference that the <xref:System.Windows.Forms.DataGrid> holds to the <xref:System.Windows.Forms.DataGridTextBox> control, in order to free system resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataGridInColumn">
+      <MemberSignature Language="C#" Value="protected override void SetDataGridInColumn (System.Windows.Forms.DataGrid value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDataGridInColumn(class System.Windows.Forms.DataGrid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.SetDataGridInColumn(System.Windows.Forms.DataGrid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Forms.DataGrid" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Forms.DataGrid" /> control the <see cref="T:System.Windows.Forms.TextBox" /> control is added to.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.TextBox" /> control to the <see cref="T:System.Windows.Forms.DataGrid" /> control's <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this methods is called, the hosted <xref:System.Windows.Forms.TextBox> control is added to the <xref:System.Windows.Forms.DataGrid> control's <xref:System.Windows.Forms.Control.ControlCollection>. This allows the <xref:System.Windows.Forms.CurrencyManager> to associate both controls with the same data source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBox">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.TextBox TextBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TextBox TextBox" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBoxColumn.TextBox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextBox</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the hosted <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TextBox" /> control hosted by the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example changes the background color of the hosted <xref:System.Windows.Forms.TextBox> control.  
+  
+ [!code-vb[Classic DataGridTextBoxColumn.TextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridTextBoxColumn.TextBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateUI">
+      <MemberSignature Language="C#" Value="protected override void UpdateUI (System.Windows.Forms.CurrencyManager source, int rowNum, string displayText);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void UpdateUI(class System.Windows.Forms.CurrencyManager source, int32 rowNum, string displayText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBoxColumn.UpdateUI(System.Windows.Forms.CurrencyManager,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+        <Parameter Name="displayText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> that supplies the data.</param>
+        <param name="rowNum">The index of the row to update.</param>
+        <param name="displayText">The text that will be displayed in the cell.</param>
+        <summary>Updates the user interface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

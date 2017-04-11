@@ -1,0 +1,276 @@
+<Type Name="ControlValuePropertyAttribute" FullName="System.Web.UI.ControlValuePropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ControlValuePropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlValuePropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlValuePropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the default property of a control that a <see cref="T:System.Web.UI.WebControls.ControlParameter" /> object binds to at run time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When defining a <xref:System.Web.UI.WebControls.ControlParameter> object, you typically bind a control's property to a parameter by setting both the <xref:System.Web.UI.WebControls.ControlParameter.ControlID%2A> and <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> properties. If the <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property is not set, a default property is used. The <xref:System.Web.UI.ControlValuePropertyAttribute> attribute is applied to a control to specify its default property that a <xref:System.Web.UI.WebControls.ControlParameter> object binds to at run time.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class, see the <xref:System.Web.UI.ControlValuePropertyAttribute.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.ControlValuePropertyAttribute> attribute that specifies a default property and value to a custom control.  
+  
+ [!code-csharp[ControlValuePropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlValuePropertyAttribute/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[ControlValuePropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlValuePropertyAttribute/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlValuePropertyAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The default property for the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> class using the specified property name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class using the specified property name. The following table shows the initial property value for an instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A>|The value of the `name` parameter.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.ControlValuePropertyAttribute> attribute that specifies a default property to a custom control. This constructor is called internally by ASP.NET to create a <xref:System.Web.UI.ControlValuePropertyAttribute> object that represents the attribute.  
+  
+ [!code-csharp[ControlValuePropertyAttributeCtor1Param#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlValuePropertyAttributeCtor1Param/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[ControlValuePropertyAttributeCtor1Param#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlValuePropertyAttributeCtor1Param/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlValuePropertyAttribute (string name, object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The default property for the control.</param>
+        <param name="defaultValue">The default value for the default property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> class using the specified property name and default value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class using the specified property name and default value. The following table shows initial property values for an instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A>|The value of the `name` parameter.|  
+|<xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A>|The value of the `defaultValue` parameter.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a <xref:System.Web.UI.ControlValuePropertyAttribute> attribute that specifies a default property and value to a custom control. This constructor is called internally by ASP.NET to create a <xref:System.Web.UI.ControlValuePropertyAttribute> object that represents the attribute.  
+  
+ [!code-csharp[ControlValuePropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlValuePropertyAttribute/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[ControlValuePropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlValuePropertyAttribute/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlValuePropertyAttribute (string name, Type type, string defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, string defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.#ctor(System.String,System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="defaultValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The default property for the control.</param>
+        <param name="type">The <see cref="T:System.Type" /> to which the default value is converted.</param>
+        <param name="defaultValue">The default value for the default property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> class using the specified property name and default value. The default value is also converted to the specified data type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class using the specified property name and default value. This version of the constructor also attempts to convert the default value to the data type specified by the `type` parameter. If the default value cannot be converted, the <xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A> property is not set. The following table shows initial property values for an instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A>|The value of the `name` parameter.|  
+|<xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A>|The value of the `defaultValue` parameter, if the value can be converted to the data type specified by the `type` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public object DefaultValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlValuePropertyAttribute.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default value for the default property of a control.</summary>
+        <value>The default value for the default property of a control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the property specified by the <xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A> property is not set, use the <xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A> property to determine the default value for the property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A> property by applying a <xref:System.Web.UI.ControlValuePropertyAttribute> attribute to a custom control.  
+  
+ [!code-csharp[ControlValuePropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlValuePropertyAttribute/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[ControlValuePropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlValuePropertyAttribute/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+        <summary>Determines whether the current instance of the <see cref="T:System.Web.UI.ControlValuePropertyAttribute" /> object is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the object contained in the <paramref name="obj" /> parameter is equal to the current instance of <see cref="T:System.Web.UI.ControlValuePropertyAttribute" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.ControlValuePropertyAttribute.Equals%2A> method to determine whether the current instance of the <xref:System.Web.UI.ControlValuePropertyAttribute> object is equal to the specified object. For the objects to be equal, they must meet the following criteria:  
+  
+1.  The object contained in the `obj` parameter must be a <xref:System.Web.UI.ControlValuePropertyAttribute> object.  
+  
+2.  The <xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A> and <xref:System.Web.UI.ControlValuePropertyAttribute.DefaultValue%2A> properties of both objects must be equal.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlValuePropertyAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlValuePropertyAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default property for a control.</summary>
+        <value>The default property for a control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.WebControls.ControlParameter> object is defined without its <xref:System.Web.UI.WebControls.ControlParameter.PropertyName%2A> property set, use the <xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A> property to determine the default property that is bound to the <xref:System.Web.UI.WebControls.ControlParameter> object at run time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.ControlValuePropertyAttribute.Name%2A> property by applying a <xref:System.Web.UI.ControlValuePropertyAttribute> attribute to a custom control.  
+  
+ [!code-csharp[ControlValuePropertyAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlValuePropertyAttribute/CS/simplecustomcontrol.cs#1)]
+ [!code-vb[ControlValuePropertyAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlValuePropertyAttribute/VB/simplecustomcontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

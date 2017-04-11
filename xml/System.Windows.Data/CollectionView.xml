@@ -1,0 +1,1527 @@
+<Type Name="CollectionView" FullName="System.Windows.Data.CollectionView">
+  <TypeSignature Language="C#" Value="public class CollectionView : System.Windows.Threading.DispatcherObject, System.Collections.IEnumerable, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.ICollectionView, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionView extends System.Windows.Threading.DispatcherObject implements class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.ICollectionView, class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionView" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ICollectionView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a view for grouping, sorting, filtering, and navigating a data collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not create objects of this class in your code. To create a collection view for a collection that only implements <xref:System.Collections.IEnumerable>, create a <xref:System.Windows.Data.CollectionViewSource> object, add your collection to the <xref:System.Windows.Data.CollectionViewSource.Source%2A> property, and get the collection view from the <xref:System.Windows.Data.CollectionViewSource.View%2A> property.  
+  
+ You can think of a collection view as a layer on top of a binding source collection that allows you to navigate and display the collection based on sort, filter, and group queries, all without having to manipulate the underlying source collection itself. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes that raise the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.  
+  
+ Because a view does not change the underlying source collection, a source collection can have multiple views associated with it. By using views, you can display the same data in different ways. For example, you can use two views on a collection of `Task` objects to show tasks sorted by priority on one part of the page and grouped by area on another part of the page.  
+  
+ In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications, all collections have an associated default collection view. Rather than working with the collection directly, the binding engine always accesses the collection through the associated view. To get the default view, use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A?displayProperty=fullName> method. An internal class based on <xref:System.Windows.Data.CollectionView> is the default view for collections that implement only <xref:System.Collections.IEnumerable>. <xref:System.Windows.Data.ListCollectionView> is the default view for collections that implement <xref:System.Collections.IList>. <xref:System.Windows.Data.BindingListCollectionView> is the default view for collections that implement <xref:System.ComponentModel.IBindingListView> or <xref:System.ComponentModel.IBindingList>.  
+  
+ Alternatively, you can create a view of your collection in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by using the <xref:System.Windows.Data.CollectionViewSource> class and then bind your control to that view. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class. For an example, see [How to: Sort and Group Data Using a View in XAML](~/docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
+  
+ For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ To set a view in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], use the <xref:System.Windows.Data.CollectionViewSource> class. <xref:System.Windows.Data.CollectionViewSource> is the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] representation of the <xref:System.Windows.Data.CollectionView> class, and it exposes the most commonly used members of the <xref:System.Windows.Data.CollectionView> class.  
+  
+<a name="xamlTextUsage_CollectionView"></a>   
+## XAML Text Usage  
+ See Remarks  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectionView (System.Collections.IEnumerable collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IEnumerable collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.#ctor(System.Collections.IEnumerable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The underlying collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.CollectionView" /> class that represents a view of the specified collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instance of <xref:System.Windows.Data.CollectionView> is bound to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher of the caller of this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowsCrossThreadChanges">
+      <MemberSignature Language="C#" Value="protected bool AllowsCrossThreadChanges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowsCrossThreadChanges" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.AllowsCrossThreadChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a thread other than the one that created the <see cref="T:System.Windows.Data.CollectionView" /> can change the <see cref="P:System.Windows.Data.CollectionView.SourceCollection" />.</summary>
+        <value>
+          <see langword="true" /> if a thread other than the one that created the <see cref="T:System.Windows.Data.CollectionView" /> can change the <see cref="P:System.Windows.Data.CollectionView.SourceCollection" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanFilter">
+      <MemberSignature Language="C#" Value="public virtual bool CanFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanFilter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.CanFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the view supports filtering.</summary>
+        <value>
+          <see langword="true" /> if the view supports filtering; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property returns `false`, setting the <xref:System.Windows.Data.CollectionView.Filter%2A> property throws an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanGroup">
+      <MemberSignature Language="C#" Value="public virtual bool CanGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.CanGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the view supports grouping.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A>. Derived classes override this property to indicate whether they support grouping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSort">
+      <MemberSignature Language="C#" Value="public virtual bool CanSort { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.CanSort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the view supports sorting.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to test whether the view supports sorting before adding <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>. Derived classes override this property to indicate whether they support sorting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearChangeLog">
+      <MemberSignature Language="C#" Value="protected void ClearChangeLog ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearChangeLog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.ClearChangeLog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Replaced by ClearPendingChanges")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears any pending changes from the change log.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPendingChanges">
+      <MemberSignature Language="C#" Value="protected void ClearPendingChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearPendingChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.ClearPendingChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears unprocessed changed to the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionView.CollectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the view has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comparer">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IComparer Comparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IComparer Comparer" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.Comparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an object that you can use to compare items in the view.</summary>
+        <value>An <see cref="T:System.Collections.IComparer" /> object that you can use to compare items in the view.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to check.</param>
+        <summary>Returns a value that indicates whether the specified item belongs to the view.</summary>
+        <returns>
+          <see langword="true" /> if the item belongs to the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not make any assumptions about whether the item belongs to the underlying collection. If the caller knows that the item belongs to the underlying collection, it is more efficient to call the <xref:System.Windows.Data.CollectionView.PassesFilter%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of records in the view.</summary>
+        <value>The number of records in the view, or –1 if the number of records is unknown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a filter is set, this property value only includes items that pass the filter. If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation. This value is cached until the collection changes.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When deriving from <see cref="T:System.Windows.Data.CollectionView" />, override this property to provide a more efficient implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.CultureInfoIetfLanguageTagConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture information to use during sorting.</summary>
+        <value>The culture information to use during sorting.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChanged">
+      <MemberSignature Language="C#" Value="public virtual event EventHandler CurrentChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionView.CurrentChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> has changed.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Raise this event after changing the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChanging">
+      <MemberSignature Language="C#" Value="public virtual event System.ComponentModel.CurrentChangingEventHandler CurrentChanging;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CurrentChangingEventHandler CurrentChanging" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionView.CurrentChanging" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CurrentChangingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is changing.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Raise this event before changing the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentItem">
+      <MemberSignature Language="C#" Value="public virtual object CurrentItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CurrentItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.CurrentItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current item in the view.</summary>
+        <value>The current item of the view. By default, the first item of the collection starts as the current item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+  
+ Note that moving the current record pointer has some interactions with any sorting or filtering that is applied to the collection. Sorting preserves the current record pointer on the last record selected, but the collection view is restructured around it. (Perhaps the selected record was at the beginning of the list before, but now the selected record might be somewhere in the middle.) Filtering preserves the selected record if that selection remains in view after the filtering. Otherwise, the current record pointer is set to the first record of the filtered collection view.  
+  
+ The current item of the collection is bound to automatically if the target of a binding is a singleton value. If the target is an <xref:System.Windows.Controls.ItemsControl>, the current item is synchronized with the selected item. For example, if a list box is bound to a collection, the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is synchronized with the currently selected item.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Only classes that pass currency handling calls to another internal <see cref="T:System.Windows.Data.CollectionView" /> object should override this property; all other derived classes should use the <see cref="M:System.Windows.Data.CollectionView.SetCurrent(System.Object,System.Int32)" /> method to update the current values stored in the base class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPosition">
+      <MemberSignature Language="C#" Value="public virtual int CurrentPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.CurrentPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ordinal position of the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> within the (optionally sorted and filtered) view.</summary>
+        <value>The ordinal position of the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> within the (optionally sorted and filtered) view.</value>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Only classes that pass currency handling calls to another internal <see cref="T:System.Windows.Data.CollectionView" /> object should override this property; all other derived classes should use the <see cref="M:System.Windows.Data.CollectionView.SetCurrent(System.Object,System.Int32)" /> method to update the current values stored in the base class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DeferRefresh">
+      <MemberSignature Language="C#" Value="public virtual IDisposable DeferRefresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable DeferRefresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.DeferRefresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enters a defer cycle that you can use to merge changes to the view and delay automatic refresh.</summary>
+        <returns>An <see cref="T:System.IDisposable" /> object that you can use to dispose of the calling object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The typical usage is to create a `using` scope with this method and then place multiple view-changing calls within the scope. This delays automatic refresh until the defer cycle is exited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetachFromSourceCollection">
+      <MemberSignature Language="C#" Value="public virtual void DetachFromSourceCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DetachFromSourceCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.DetachFromSourceCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the reference to the underlying collection from the <see cref="T:System.Windows.Data.CollectionView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to unsubscribe to events on the underlying collection and allow the <xref:System.Windows.Data.CollectionView> to be garbage collected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public virtual Predicate&lt;object&gt; Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Predicate`1&lt;object&gt; Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Predicate&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a method used to determine if an item is suitable for inclusion in the view.</summary>
+        <value>A delegate that represents the method used to determine if an item is suitable for inclusion in the view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Simpler implementations do not support filtering and throw a <xref:System.NotSupportedException>. Use the <xref:System.Windows.Data.CollectionView.CanFilter%2A> property to test if filtering is supported before assigning this property with a non-null value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The current implementation does not support filtering.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an object that you can use to enumerate the items in the view.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemAt">
+      <MemberSignature Language="C#" Value="public virtual object GetItemAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetItemAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.GetItemAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to retrieve.</param>
+        <summary>Retrieves the item at the specified zero-based index in the view.</summary>
+        <returns>The item at the specified zero-based index in the view.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method evaluates the index with any <xref:System.Windows.Data.CollectionView.SortDescriptions%2A> or <xref:System.Windows.Data.CollectionView.Filter%2A> property values that are set on the view.  
+  
+ If the underlying collection is of type <xref:System.Collections.IEnumerable>, this is an O(N) operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.</exception>
+        <block subset="none" type="overrides">
+          <para>When deriving from <see cref="T:System.Windows.Data.CollectionView" />, override this method to provide a more efficient implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupDescriptions">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt; GroupDescriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;class System.ComponentModel.GroupDescription&gt; GroupDescriptions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.GroupDescriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ComponentModel.GroupDescription" /> objects that describes how the items in the collection are grouped in the view.</summary>
+        <value>
+          <see langword="null" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Groups">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;object&gt; Groups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyObservableCollection`1&lt;object&gt; Groups" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.Groups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the top-level groups that is constructed based on the <see cref="P:System.Windows.Data.CollectionView.GroupDescriptions" /> property.</summary>
+        <value>
+          <see langword="null" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is always `null` because the <xref:System.Windows.Data.CollectionView> class does not support grouping over its underlying collection. The derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> do support grouping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public virtual int IndexOf (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to locate.</param>
+        <summary>Returns the index at which the specified item is located.</summary>
+        <returns>The index at which the specified item is located, or –1 if the item is unknown.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this method returns an index other than -1, it must always be true that view[index-1] < item <= view[index], where the comparisons are done using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of the view, if one exists.  
+  
+ This particular behavior of the method is used by some <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event handlers to speed up reaction to insertion and deletion. If the derived class does not override this method, a listener does a binary search using the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentAfterLast">
+      <MemberSignature Language="C#" Value="public virtual bool IsCurrentAfterLast { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentAfterLast" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is beyond the end of the collection.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentBeforeFirst">
+      <MemberSignature Language="C#" Value="public virtual bool IsCurrentBeforeFirst { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentBeforeFirst" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is before the beginning of the collection.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> of the view is before the beginning of the collection; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentInSync">
+      <MemberSignature Language="C#" Value="protected bool IsCurrentInSync { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentInSync" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsCurrentInSync" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is at the <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is in the view and at the <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDynamic">
+      <MemberSignature Language="C#" Value="protected bool IsDynamic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDynamic" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsDynamic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the underlying collection provides change notifications.</summary>
+        <value>
+          <see langword="true" /> if the underlying collection provides change notifications; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public virtual bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the resulting (filtered) view is empty.</summary>
+        <value>
+          <see langword="true" /> if the resulting view is empty; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInUse">
+      <MemberSignature Language="C#" Value="public virtual bool IsInUse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInUse" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsInUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether any object is subscribing to the events of this <see cref="T:System.Windows.Data.CollectionView" />.</summary>
+        <value>
+          <see langword="true" /> if any object is subscribing to the events of this <see cref="T:System.Windows.Data.CollectionView" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRefreshDeferred">
+      <MemberSignature Language="C#" Value="protected bool IsRefreshDeferred { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRefreshDeferred" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.IsRefreshDeferred" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether there is an outstanding <see cref="M:System.Windows.Data.CollectionView.DeferRefresh" /> in use.</summary>
+        <value>
+          <see langword="true" /> if there is an outstanding <see cref="M:System.Windows.Data.CollectionView.DeferRefresh" /> in use; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes should avoid calling <see cref="M:System.Windows.Data.CollectionView.Refresh" /> if <see cref="P:System.Windows.Data.CollectionView.IsRefreshDeferred" /> returns <see langword="true" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentTo">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentTo (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentTo(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to set as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</param>
+        <summary>Sets the specified item to be the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> in the view.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified item is not found, the method returns `false` and the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> is positioned before the beginning of the collection in the view.  
+  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ For more information about the current item of a view, see <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of this method.  
+  
+ [!code-csharp[Colors#NewColor](~/samples/snippets/csharp/VS_Snippets_Wpf/Colors/CSharp/Colors.xaml.cs#newcolor)]
+ [!code-vb[Colors#NewColor](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Colors/visualbasic/colors.xaml.vb#newcolor)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentToFirst">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentToFirst ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentToFirst() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentToFirst" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the first item in the view as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentToLast">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentToLast ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentToLast() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentToLast" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the last item in the view as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentToNext">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentToNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentToNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentToNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the item after the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> in the view as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentToPosition">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentToPosition (int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentToPosition(int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentToPosition(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The index to set the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> to.</param>
+        <summary>Sets the item at the specified index to be the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> in the view.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveCurrentToPrevious">
+      <MemberSignature Language="C#" Value="public virtual bool MoveCurrentToPrevious ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveCurrentToPrevious() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.MoveCurrentToPrevious" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the item before the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> in the view as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the resulting <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> is an item within the view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Collection views support the concept of a current record pointer. As you navigate through the objects in a collection view, you are moving a record pointer that allows you to retrieve the object that exists at that particular location in the collection. For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedsRefresh">
+      <MemberSignature Language="C#" Value="public virtual bool NeedsRefresh { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NeedsRefresh" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.NeedsRefresh" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the view needs to be refreshed.</summary>
+        <value>
+          <see langword="true" /> if the view needs to be refreshed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates if the internal state of the view has changed and requires a <xref:System.Windows.Data.CollectionView.Refresh%2A> method call. The typical scenario is if a <xref:System.ComponentModel.SortDescription> or similar has been added to the view while the view is in a deferred refresh cycle (see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>). In this scenario, no explicit call to <xref:System.Windows.Data.CollectionView.Refresh%2A> is needed; as soon as the deferred refresh cycle ends, the view calls refresh automatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewItemPlaceholder">
+      <MemberSignature Language="C#" Value="public static object NewItemPlaceholder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property object NewItemPlaceholder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.NewItemPlaceholder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that is in the collection to represent a new item.</summary>
+        <value>The object that is in the collection to represent a new item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Data.CollectionView> that implements <xref:System.ComponentModel.IEditableCollectionView> has <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> is added to the collection.  The <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> always appears in the collection; it does not participate in grouping, sorting, or filtering.  
+  
+ The <xref:System.Windows.Data.CollectionView.CurrentItem%2A> cannot be the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>. Methods that perform relative navigation, such as the <xref:System.Windows.Data.CollectionView.MoveCurrentToNext%2A>, skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A>.  <xref:System.Windows.Data.CollectionView.MoveCurrentToFirst%2A> and <xref:System.Windows.Data.CollectionView.MoveCurrentToLast%2A> skip the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> if <xref:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition%2A> is set to <xref:System.ComponentModel.NewItemPlaceholderPosition> or <xref:System.ComponentModel.NewItemPlaceholderPosition>, respectively. Methods that perform absolute navigation, such as <xref:System.Windows.Data.CollectionView.MoveCurrentToPosition%2A>, do nothing if the <xref:System.Windows.Data.CollectionView.NewItemPlaceholder%2A> would be the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OKToChangeCurrent">
+      <MemberSignature Language="C#" Value="protected bool OKToChangeCurrent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool OKToChangeCurrent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OKToChangeCurrent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the view can change which item is the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</summary>
+        <returns>
+          <see langword="false" /> if a listener cancels the change; otherwise, <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAllowsCrossThreadChangesChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnAllowsCrossThreadChangesChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAllowsCrossThreadChangesChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnAllowsCrossThreadChangesChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Data.CollectionView.AllowsCrossThreadChanges" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginChangeLogging">
+      <MemberSignature Language="C#" Value="protected virtual void OnBeginChangeLogging (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeginChangeLogging(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnBeginChangeLogging(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Replaced by OnAllowsCrossThreadChangesChanged")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object that is added to the change log.</param>
+        <summary>Called by the base class to notify the derived class that an <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event has been posted to the message queue.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="args" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to pass to the event handler.</param>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Take any sorting, filtering, or grouping criteria into consideration before calling this method to raise the <xref:System.Windows.Data.CollectionView.CollectionChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollectionChanged">
+      <MemberSignature Language="C#" Value="protected void OnCollectionChanged (object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(object sender, class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The sender of the event.</param>
+        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to pass to the event handler.</param>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Windows.Data.CollectionView.ProcessCollectionChanged%2A> if it is on the correct [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread dispatcher and has never been updated from a different thread, or posts the change to the dispatcher to process it on the correct thread.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCurrentChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCurrentChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnCurrentChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CurrentChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanging">
+      <MemberSignature Language="C#" Value="protected void OnCurrentChanging ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCurrentChanging() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnCurrentChanging" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises a <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event that is not cancelable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets <xref:System.Windows.Data.CollectionView.CurrentPosition%2A> to –1. This method is called by collection changes that affect the <xref:System.Windows.Data.CollectionView.CurrentItem%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanging">
+      <MemberSignature Language="C#" Value="protected virtual void OnCurrentChanging (System.ComponentModel.CurrentChangingEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCurrentChanging(class System.ComponentModel.CurrentChangingEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnCurrentChanging(System.ComponentModel.CurrentChangingEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.ComponentModel.CurrentChangingEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">Information about the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Data.CollectionView.CurrentChanging" /> event with the specified arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Arguments of the event being raised.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event using the specified arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassesFilter">
+      <MemberSignature Language="C#" Value="public virtual bool PassesFilter (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PassesFilter(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.PassesFilter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to check.</param>
+        <summary>Returns a value that indicates whether the specified item in the underlying collection belongs to the view.</summary>
+        <returns>
+          <see langword="true" /> if the specified item belongs to the view or if there is not filter set on the collection view; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the <xref:System.Windows.Data.CollectionView.Contains%2A> method, this method assumes that the specified item belongs to the underlying collection. This method takes filters into account. Typically, you use this method during collection-changed notifications to determine if the added or removed item requires processing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCollectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessCollectionChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessCollectionChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.ProcessCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs" /> object to process.</param>
+        <summary>When overridden in a derived class, processes a single change on the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method must be overridden in a derived class to process a single change on the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] thread.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessPendingChanges">
+      <MemberSignature Language="C#" Value="protected void ProcessPendingChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProcessPendingChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.ProcessPendingChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that all pending changes to the collection have been committed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Data.CollectionView.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property value has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public virtual void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Re-creates the view.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set  the <xref:System.Windows.Data.CollectionView.Filter%2A>, <xref:System.Windows.Data.CollectionView.SortDescriptions%2A>, or <xref:System.Windows.Data.CollectionView.GroupDescriptions%2A> property; a refresh occurs.  You do not have to call the <xref:System.Windows.Data.CollectionView.Refresh%2A> method immediately after you set one of those properties. For information about how to delay automatic refresh, see <xref:System.Windows.Data.CollectionView.DeferRefresh%2A>.  
+  
+ Derived classes use the protected <xref:System.Windows.Data.CollectionView.RefreshOverride%2A> method to override the behavior of this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshOrDefer">
+      <MemberSignature Language="C#" Value="protected void RefreshOrDefer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RefreshOrDefer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.RefreshOrDefer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes the view or specifies that the view needs to be refreshed when the defer cycle completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshOverride">
+      <MemberSignature Language="C#" Value="protected virtual void RefreshOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RefreshOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.RefreshOverride" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Re-creates the view.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Derived classes should override this method to change the behavior of the <see cref="M:System.Windows.Data.CollectionView.Refresh" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrent">
+      <MemberSignature Language="C#" Value="protected void SetCurrent (object newItem, int newPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetCurrent(object newItem, int32 newPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.SetCurrent(System.Object,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newItem" Type="System.Object" />
+        <Parameter Name="newPosition" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">The item to set as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</param>
+        <param name="newPosition">The value to set as the <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" /> property value.</param>
+        <summary>Sets the specified item and index as the values of the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> and <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" /> properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrent">
+      <MemberSignature Language="C#" Value="protected void SetCurrent (object newItem, int newPosition, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetCurrent(object newItem, int32 newPosition, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.SetCurrent(System.Object,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newItem" Type="System.Object" />
+        <Parameter Name="newPosition" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">The item to set as the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" />.</param>
+        <param name="newPosition">The value to set as the <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" /> property value.</param>
+        <param name="count">The number of items in the <see cref="T:System.Windows.Data.CollectionView" />.</param>
+        <summary>Sets the specified item and index as the values of the <see cref="P:System.Windows.Data.CollectionView.CurrentItem" /> and <see cref="P:System.Windows.Data.CollectionView.CurrentPosition" /> properties. This method can be called from a constructor of a derived class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this overload from constructor of a derived class.  Do not pass the <xref:System.Windows.Data.CollectionView.Count%2A> property, which is a virtual property, as `count`. Instead, pass the count of the internal <xref:System.Collections.IList> that represents the collection.  
+  
+ <xref:System.Windows.Data.CollectionView.SetCurrent%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortDescriptions">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.SortDescriptionCollection SortDescriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.SortDescriptionCollection SortDescriptions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.SortDescriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.SortDescriptionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ComponentModel.SortDescription" /> structures that describes how the items in the collection are sorted in the view.</summary>
+        <value>An empty <see cref="T:System.ComponentModel.SortDescriptionCollection" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot add a <xref:System.ComponentModel.SortDescription> to the returned (empty) collection because the base class <xref:System.Windows.Data.CollectionView> does not support sorting. Instead, use the derived classes <xref:System.Windows.Data.ListCollectionView> and <xref:System.Windows.Data.BindingListCollectionView> that do support sorting. Also, check the <xref:System.Windows.Data.CollectionView.CanSort%2A> property before adding or removing <xref:System.ComponentModel.SortDescription> objects to avoid an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceCollection">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerable SourceCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable SourceCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.SourceCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the underlying unfiltered collection.</summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> object that is the underlying collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.CollectionView.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that you can use to enumerate the items in the view.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedOutsideDispatcher">
+      <MemberSignature Language="C#" Value="protected bool UpdatedOutsideDispatcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpdatedOutsideDispatcher" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionView.UpdatedOutsideDispatcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether it has been necessary to update the change log because a <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> notification has been received on a different thread without first entering the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher.</summary>
+        <value>
+          <see langword="true" /> if it has been necessary to update the change log because a <see cref="E:System.Windows.Data.CollectionView.CollectionChanged" /> notification has been received on a different thread without first entering the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread dispatcher; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

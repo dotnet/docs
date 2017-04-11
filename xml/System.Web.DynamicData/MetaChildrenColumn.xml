@@ -1,0 +1,245 @@
+<Type Name="MetaChildrenColumn" FullName="System.Web.DynamicData.MetaChildrenColumn">
+  <TypeSignature Language="C#" Value="public class MetaChildrenColumn : System.Web.DynamicData.MetaColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaChildrenColumn extends System.Web.DynamicData.MetaColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaChildrenColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.DynamicData.MetaColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a database field that indicates a one-to-many relationship.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In ASP.NET Dynamic Data applications, the <xref:System.Web.DynamicData.MetaChildrenColumn> class represents a database field that indicates a one-to-many relationship or a parent-child relationship.  
+  
+ The <xref:System.Web.DynamicData.MetaChildrenColumn> class represents the field in the parent table of the one-to-many relationship. However, you can access the child table object by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property. You can also retrieve the foreign-key field in the child table by using the <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetaChildrenColumn (System.Web.DynamicData.MetaTable table, System.Web.DynamicData.ModelProviders.ColumnProvider entityMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaTable table, class System.Web.DynamicData.ModelProviders.ColumnProvider entityMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.#ctor(System.Web.DynamicData.MetaTable,System.Web.DynamicData.ModelProviders.ColumnProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
+        <Parameter Name="entityMember" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+      </Parameters>
+      <Docs>
+        <param name="table">The meta table.</param>
+        <param name="entityMember">The column provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaChildrenColumn" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildTable">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable ChildTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable ChildTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.ChildTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that represents the child table of the one-to-many relationship.</summary>
+        <value>An object that represents the child table of the one-to-many relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.MetaChildrenColumn.ChildTable%2A> property to get an object that represents the child table of the one-to-many relationship. You can access the parent table by using the <xref:System.Web.DynamicData.MetaColumn.Table%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnInOtherTable">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn ColumnInOtherTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn ColumnInOtherTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that represents the foreign-key field in the child table.</summary>
+        <value>An object that represents the foreign-key field in the child table.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaChildrenColumn.ColumnInOtherTable%2A> property enables you to get a reference to the field in the child table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenListPath">
+      <MemberSignature Language="C#" Value="public string GetChildrenListPath (object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetChildrenListPath(object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <summary>Gets the path of the list-action page for the child table.</summary>
+        <returns>The path of the list-action page for the child table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method when you want to retrieve the list-action page for the child table using the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+  
+ Using the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenListPath%2A> method is the same as invoking the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method and passing the <xref:System.Web.DynamicData.PageAction.List%2A> action as the first parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenPath">
+      <MemberSignature Language="C#" Value="public string GetChildrenPath (string action, object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetChildrenPath(string action, object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="action">The target action.</param>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <summary>Gets the path of the specified action page of the child table.</summary>
+        <returns>The path of the specified action page of the child table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%29> method returns the path of the specified action page for the child table. The path returned is based on the routes that are defined for the ASP.NET Dynamic Data application and has the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+  
+ If `row` is `null`, his method returns an empty string.  
+  
+ You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenPath">
+      <MemberSignature Language="C#" Value="public string GetChildrenPath (string action, object row, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetChildrenPath(string action, object row, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath(System.String,System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="row" Type="System.Object" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="action">The target action.</param>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <param name="path">The target page.</param>
+        <summary>Gets the path for the specified action page of the child table.</summary>
+        <returns>The path of the specified action page of the child table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path of the specified action page for the child table. The path is based on the specified path with the specified row as a parent. The path is obtained by appending a query-string value to the URL that contains the foreign-key field value specified in the `row` parameter.  
+  
+ If `row` is `null`, this method returns an empty string. If `path` is `null`, the <xref:System.Web.DynamicData.MetaChildrenColumn.GetChildrenPath%28System.String%2CSystem.Object%2CSystem.String%29> method returns the path based on the routes defined for the ASP.NET Dynamic Data application.  
+  
+ You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected override void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaChildrenColumn.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes data that might not be available when the constructor is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method cannot be called directly. To customize initialization, you can derive from this class and override the `Initialize` method. If you override this method, call the base control's `Initialize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManyToMany">
+      <MemberSignature Language="C#" Value="public bool IsManyToMany { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsManyToMany" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaChildrenColumn.IsManyToMany" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the many-to-many relationship status of the column.</summary>
+        <value>
+          <see langword="true" /> if the column relationship is many-to-many; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

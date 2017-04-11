@@ -1,0 +1,2486 @@
+<Type Name="SpeechSynthesizer" FullName="System.Speech.Synthesis.SpeechSynthesizer">
+  <TypeSignature Language="C#" Value="public sealed class SpeechSynthesizer : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SpeechSynthesizer extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeechSynthesizer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to the functionality of an installed speech synthesis engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a new <xref:System.Speech.Synthesis.SpeechSynthesizer> object, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+  
+ This class also provides control over the following aspects of speech synthesis:  
+  
+-   To configure the output for the <xref:System.Speech.Synthesis.SpeechSynthesizer> object, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
+  
+-   To generate speech, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can produce speech from text, a <xref:System.Speech.Synthesis.Prompt> or <xref:System.Speech.Synthesis.PromptBuilder> object, or from [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763).  
+  
+-   To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
+  
+-   To add or remove lexicons, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon%2A> methods. The <xref:System.Speech.Synthesis.SpeechSynthesizer> can use one or more lexicons to guide its pronunciation of words.  
+  
+-   To modify the delivery of speech output, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Rate%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Volume%2A> properties.  
+  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises events when it encounters certain features in prompts: (<xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>, <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>). It also raises events that report on the start (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>) and end (<xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>) of speak operations and on the change of the speaking voice (<xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>).  
+  
+> [!NOTE]
+>  Always call <xref:System.Speech.Synthesis.SpeechSynthesizer.Dispose%2A> before you release your last reference to the <xref:System.Speech.Synthesis.SpeechSynthesizer>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Speech.Synthesis.SpeechSynthesizer> object's <xref:System.Object.Finalize%2A> method.  
+  
+   
+  
+## Examples  
+ The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and speaks a string.  
+  
+```csharp  
+  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Speak a string.  
+      synth.Speak("This example demonstrates a basic use of Speech Synthesizer");  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SpeechSynthesizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer> instance, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> to use one of the installed speech synthesis (text-to-speech) voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLexicon">
+      <MemberSignature Language="C#" Value="public void AddLexicon (Uri uri, string mediaType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLexicon(class System.Uri uri, string mediaType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon(System.Uri,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="mediaType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The location of the lexicon information.</param>
+        <param name="mediaType">The media type of the lexicon. Media type values are not case sensitive.</param>
+        <summary>Adds a lexicon to the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use a lexicon to specify custom pronunciations for specialized vocabulary in your application.  
+  
+ Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts created with any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/en-us/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+  
+ You can add multiple lexicons to a <xref:System.Speech.Synthesis.SpeechSynthesizer> object.Two values are currently supported for the `mediaType` parameter:  
+  
+-   The value `application/pls+xml` indicates that the lexicon conforms to the [Pronunciation Lexicon Specification (PLS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201766). This is the preferred format to use.  
+  
+-   The value `application/vdn.ms-sapi-lex` indicates that the lexicon format is Uncompressed Lexicon, which is a Microsoft-proprietary format. This is a legacy format and we recommend that you use the PLS format described above.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of adding and removing a lexicon that contains a custom pronunciation for the word "blue". The lexicon defines the pronunciation of "blue" to sound like "bleep". While the lexicon is loaded, the speech synthesizer uses the pronunciation defined in the lexicon.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Speak the prompt.  
+        synth.Speak("My favorite color is blue.");  
+  
+        // Add a lexicon that changes the pronunciation of "blue".  
+        synth.AddLexicon(new Uri("C:\\test\\Blue.pls"), "application/pls+xml");  
+  
+        // Speak the prompt.  
+        synth.Speak("My favorite color is blue.");  
+  
+        // Remove the lexicon.  
+        synth.RemoveLexicon(new Uri("C:\\test\\Blue.pls"));  
+  
+        // Speak the prompt.  
+        synth.Speak("My favorite color is blue.");  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ Following are the contents of the lexicon file Blue.pls:  
+  
+```xml  
+<?xml version="1.0" encoding="UTF-8"?>  
+  
+<lexicon version="1.0"   
+      xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"  
+      alphabet="x-microsoft-ups" xml:lang="en-US">  
+  
+  <lexeme>  
+    <grapheme> blue </grapheme>  
+    <phoneme> B L I P </phoneme>  
+  </lexeme>  
+  
+</lexicon>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BookmarkReached">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.BookmarkReachedEventArgs&gt; BookmarkReached;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.BookmarkReachedEventArgs&gt; BookmarkReached" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.BookmarkReachedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> encounters a bookmark in a prompt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For information about data associated with the event, see <xref:System.Speech.Synthesis.BookmarkReachedEventArgs>.  
+  
+ You can add bookmarks using the <xref:System.Speech.Synthesis.PromptBuilder.AppendBookmark%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates a prompt that includes two bookmarks and sends the output to a WAV file for playback. The handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached> event writes the name of the bookmark and its position in the audio stream when the event was raised to the console.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\test\weather.wav");  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =  
+          new System.Media.SoundPlayer(@"C:\test\weather.wav");  
+  
+        // Build a prompt and append bookmarks.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendText(  
+          "The weather forecast for today is partly cloudy with some sun breaks.");  
+        builder.AppendBookmark("Daytime forecast");  
+        builder.AppendText(  
+          "Tonight's weather will be cloudy with a 30% chance of showers.");  
+        builder.AppendBookmark("Nightime forecast");  
+  
+        // Add a handler for the BookmarkReached event.  
+        synth.BookmarkReached +=  
+          new EventHandler<BookmarkReachedEventArgs>(synth_BookmarkReached);  
+  
+        // Speak the prompt and play back the output file.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Write the name and position of the bookmark to the console.  
+    static void synth_BookmarkReached(object sender, BookmarkReachedEventArgs e)  
+    {  
+      Console.WriteLine("Bookmark ({0}) reached at: {1} ",  
+        e.Bookmark, e.AudioPosition);  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object and releases resources used during the session.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~SpeechSynthesizer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Acts as a safeguard to clean up resources in the event that the <see cref="M:System.Speech.Synthesis.SpeechSynthesizer.Dispose" /> method is not called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentlySpokenPrompt">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.Prompt GetCurrentlySpokenPrompt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Synthesis.Prompt GetCurrentlySpokenPrompt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetCurrentlySpokenPrompt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the prompt that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is speaking.</summary>
+        <returns>Returns the prompt object that is currently being spoken.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+```csharp  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstalledVoices">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt; GetInstalledVoices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Speech.Synthesis.InstalledVoice&gt; GetInstalledVoices() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns all of the installed speech synthesis (text-to-speech) voices.</summary>
+        <returns>Returns a read-only collection of the voices currently installed on the system.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A voice is an engine for speech synthesis (text-to-speech or TTS) that is installed on the system.  
+  
+   
+  
+## Examples  
+ The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices (engines for speech synthesis) and demonstrates the information that is available for each voice.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+using System.Speech.AudioFormat;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Output information about all of the installed voices.   
+        Console.WriteLine("Installed voices -");  
+        foreach (InstalledVoice voice in synth.GetInstalledVoices())  
+        {  
+          VoiceInfo info = voice.VoiceInfo;  
+          string AudioFormats = "";  
+          foreach (SpeechAudioFormatInfo fmt in info.SupportedAudioFormats)  
+          {  
+            AudioFormats += String.Format("{0}\n",  
+            fmt.EncodingFormat.ToString());  
+          }  
+  
+          Console.WriteLine(" Name:          " + info.Name);  
+          Console.WriteLine(" Culture:       " + info.Culture);  
+          Console.WriteLine(" Age:           " + info.Age);  
+          Console.WriteLine(" Gender:        " + info.Gender);  
+          Console.WriteLine(" Description:   " + info.Description);  
+          Console.WriteLine(" ID:            " + info.Id);  
+          Console.WriteLine(" Enabled:       " + voice.Enabled);  
+          if (info.SupportedAudioFormats.Count != 0)  
+          {  
+            Console.WriteLine( " Audio formats: " + AudioFormats);  
+          }  
+          else  
+          {  
+            Console.WriteLine(" No supported audio formats found");  
+          }  
+  
+          string AdditionalInfo = "";  
+          foreach (string key in info.AdditionalInfo.Keys)  
+          {  
+            AdditionalInfo += String.Format("  {0}: {1}\n", key, info.AdditionalInfo[key]);  
+          }  
+  
+          Console.WriteLine(" Additional Info - " + AdditionalInfo);  
+          Console.WriteLine();  
+        }  
+      }  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstalledVoices">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt; GetInstalledVoices (System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Speech.Synthesis.InstalledVoice&gt; GetInstalledVoices(class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Speech.Synthesis.InstalledVoice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The locale that the voice must support.</param>
+        <summary>Returns all of the installed speech synthesis  (text-to-speech) voices that support a specific locale.</summary>
+        <returns>Returns a read-only collection of the voices currently installed on the system that support the specified locale.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If none of the installed voices support the specified locale, this method returns an empty collection.  
+  
+ Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the Culture property, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
+  
+-   en-US. English (United States)  
+  
+-   zh-CN. Chinese (China)  
+  
+-   zh-TW. Chinese (Taiwan)  
+  
+ Two-letter language codes such as "en" are also permitted.  
+  
+   
+  
+## Examples  
+ The following example is part of a console application that initializes a <xref:System.Speech.Synthesis.SpeechSynthesizer> object and outputs to the console a list of the installed voices that support the en-US locale.  
+  
+```csharp  
+using System;  
+using System.Globalization;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the speech synthesizer.  
+      using (SpeechSynthesizer synthesizer = new SpeechSynthesizer())  
+      {  
+  
+        // Output information about all of the installed voices that  
+        // support the en-US locacale.   
+        Console.WriteLine("Installed voices for the en-US locale:");  
+        foreach (InstalledVoice voice in  
+          synthesizer.GetInstalledVoices(new CultureInfo("en-US")))  
+        {  
+          VoiceInfo info = voice.VoiceInfo;  
+          OutputVoiceInfo(info);  
+        }  
+  
+        // Output information about the current voice.  
+        Console.WriteLine();  
+        Console.WriteLine("Current voice:");  
+        OutputVoiceInfo(synthesizer.Voice);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Display information about a synthesizer voice.  
+    private static void OutputVoiceInfo(VoiceInfo info)  
+    {  
+      Console.WriteLine("  Name: {0}, culture: {1}, gender: {2}, age: {3}.",  
+        info.Name, info.Culture, info.Gender, info.Age);  
+      Console.WriteLine("    Description: {0}", info.Description);  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="public void Pause ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Pause" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Pauses the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhonemeReached">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.PhonemeReachedEventArgs&gt; PhonemeReached;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.PhonemeReachedEventArgs&gt; PhonemeReached" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.PhonemeReachedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when a phoneme is reached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A phoneme is a basic component of written language, typically a letter of an alphabet (or the combination of two letters) that represents one or more distinct sounds. For example, the letter “c” is a phoneme that may sound like “s” in “cinder”, or like “k” in “catch”. A written word is an assemblage of phonemes. Changing a phoneme in a word will alter its spelling.  
+  
+ A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance generates a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event for each portion of a word that constitutes a phoneme. For example, for the word “theme” would generate three <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> events; one for the “th” sound, one for the “e” sound, and one for the “m” sound (me).  
+  
+ For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.PhonemeReachedEventArgs>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rate">
+      <MemberSignature Language="C#" Value="public int Rate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rate" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Rate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the speaking rate of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <value>Returns the speaking rate of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object, from -10 through 10.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example speaks a string with the speaking rate set to -2.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Set a value for the speaking rate.  
+      synth.Rate = -2;  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Speak a text string synchronously.  
+      synth.Speak("This example speaks a string with the speaking rate set to -2.");  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }     
+  }    
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveLexicon">
+      <MemberSignature Language="C#" Value="public void RemoveLexicon (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveLexicon(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.RemoveLexicon(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The location of the lexicon document.</param>
+        <summary>Removes a lexicon from the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Speech.Synthesis.SpeechSynthesizer.AddLexicon%2A> for an example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Resume" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resumes the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object after it has been paused.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectVoice">
+      <MemberSignature Language="C#" Value="public void SelectVoice (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectVoice(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the voice to select.</param>
+        <summary>Selects a specific voice by name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. To select a voice, pass the entire contents of the <xref:System.Speech.Synthesis.VoiceInfo.Name%2A> property as the argument for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that contains `name` in the voice's <xref:System.Speech.Synthesis.VoiceInfo.Name%2A?displayProperty=fullName> property. The <xref:System.Speech.Synthesis.SpeechSynthesizer> performs a case-sensitive, substring comparison to determine if the voice matches the `name`.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice by gender, age, or locale, use one of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectVoiceByHints">
+      <MemberSignature Language="C#" Value="public void SelectVoiceByHints (System.Speech.Synthesis.VoiceGender gender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectVoiceByHints(valuetype System.Speech.Synthesis.VoiceGender gender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gender" Type="System.Speech.Synthesis.VoiceGender" />
+      </Parameters>
+      <Docs>
+        <param name="gender">The gender of the voice to select.</param>
+        <summary>Selects a voice with a specific gender.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> property matches the `gender` parameter.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+  
+ To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectVoiceByHints">
+      <MemberSignature Language="C#" Value="public void SelectVoiceByHints (System.Speech.Synthesis.VoiceGender gender, System.Speech.Synthesis.VoiceAge age);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectVoiceByHints(valuetype System.Speech.Synthesis.VoiceGender gender, valuetype System.Speech.Synthesis.VoiceAge age) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gender" Type="System.Speech.Synthesis.VoiceGender" />
+        <Parameter Name="age" Type="System.Speech.Synthesis.VoiceAge" />
+      </Parameters>
+      <Docs>
+        <param name="gender">The gender of the voice to select.</param>
+        <param name="age">The age of the voice to select.</param>
+        <summary>Selects a voice with a specific gender and age.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+  
+ To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectVoiceByHints">
+      <MemberSignature Language="C#" Value="public void SelectVoiceByHints (System.Speech.Synthesis.VoiceGender gender, System.Speech.Synthesis.VoiceAge age, int voiceAlternate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectVoiceByHints(valuetype System.Speech.Synthesis.VoiceGender gender, valuetype System.Speech.Synthesis.VoiceAge age, int32 voiceAlternate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gender" Type="System.Speech.Synthesis.VoiceGender" />
+        <Parameter Name="age" Type="System.Speech.Synthesis.VoiceAge" />
+        <Parameter Name="voiceAlternate" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="gender">The gender of the voice to select.</param>
+        <param name="age">The age of the voice to select.</param>
+        <param name="voiceAlternate">The position of the voice to select.</param>
+        <summary>Selects a voice with a specific gender and age, based on the position in which the voices are ordered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds installed voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A> and <xref:System.Speech.Synthesis.VoiceInfo.Age%2A> properties match the `gender` and `age` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
+  
+ To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectVoiceByHints">
+      <MemberSignature Language="C#" Value="public void SelectVoiceByHints (System.Speech.Synthesis.VoiceGender gender, System.Speech.Synthesis.VoiceAge age, int voiceAlternate, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectVoiceByHints(valuetype System.Speech.Synthesis.VoiceGender gender, valuetype System.Speech.Synthesis.VoiceAge age, int32 voiceAlternate, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints(System.Speech.Synthesis.VoiceGender,System.Speech.Synthesis.VoiceAge,System.Int32,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gender" Type="System.Speech.Synthesis.VoiceGender" />
+        <Parameter Name="age" Type="System.Speech.Synthesis.VoiceAge" />
+        <Parameter Name="voiceAlternate" Type="System.Int32" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="gender">The gender of the voice to select.</param>
+        <param name="age">The age of the voice to select.</param>
+        <param name="voiceAlternate">The position of the voice to select.</param>
+        <param name="culture">The locale of the voice to select.</param>
+        <summary>Selects a voice with a specific gender, age, and locale, based on the position in which the voices are ordered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> object finds voices whose <xref:System.Speech.Synthesis.VoiceInfo.Gender%2A>, <xref:System.Speech.Synthesis.VoiceInfo.Age%2A>, and <xref:System.Speech.Synthesis.VoiceInfo.Culture%2A> properties match the `gender`, `age`, and `culture` parameters. The <xref:System.Speech.Synthesis.SpeechSynthesizer> counts the matches it finds, and returns the voice when the count equals the `voiceAlternate` parameter.  
+  
+ Microsoft Windows and the System.Speech API accept all valid language-country codes. To perform text-to-speech using the language specified in the `culture` parameter, a speech synthesis engine that supports that language-country code must be installed. The speech synthesis engines that shipped with Microsoft Windows 7 work with the following language-country codes:  
+  
+-   en-US. English (United States)  
+  
+-   zh-CN. Chinese (China)  
+  
+-   zh-TW. Chinese (Taiwan)  
+  
+ Two-letter language codes such as "en" are also permitted.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice based on other characteristics, see the other <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> overloads.  
+  
+ To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToAudioStream">
+      <MemberSignature Language="C#" Value="public void SetOutputToAudioStream (System.IO.Stream audioDestination, System.Speech.AudioFormat.SpeechAudioFormatInfo formatInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToAudioStream(class System.IO.Stream audioDestination, class System.Speech.AudioFormat.SpeechAudioFormatInfo formatInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream(System.IO.Stream,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioDestination" Type="System.IO.Stream" />
+        <Parameter Name="formatInfo" Type="System.Speech.AudioFormat.SpeechAudioFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="audioDestination">The stream to which to append synthesis output.</param>
+        <param name="formatInfo">The format to use for the synthesis output.</param>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to an audio stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A> to release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the stream.  
+  
+ For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToDefaultAudioDevice">
+      <MemberSignature Language="C#" Value="public void SetOutputToDefaultAudioDevice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToDefaultAudioDevice() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to send output to the default audio device.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the  **Sound** window in the Windows **Control Panel** to configure the default audio device for the computer.  
+  
+ For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example uses the synthesizer to speak a phrase to the default audio output.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the speech synthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the synthesizer to send output to the default audio device.  
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Speak a phrase.  
+        synth.Speak("This is sample text-to-speech output.");  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToNull">
+      <MemberSignature Language="C#" Value="public void SetOutputToNull ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToNull() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to not send output from synthesis operations to a device, file, or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to release the <xref:System.Speech.Synthesis.SpeechSynthesizer> ‘s reference to a file or stream. See <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> for an example.  
+  
+ For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToWaveFile">
+      <MemberSignature Language="C#" Value="public void SetOutputToWaveFile (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToWaveFile(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the file.</param>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a file that contains Waveform format audio.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To configure the output and specify the audio format, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
+  
+   
+  
+## Examples  
+ The following example uses an instance of <xref:System.Media.SoundPlayer> to play a prompt that has been output to a .wav file. Because the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> call is asynchronous, the <xref:System.Media.SoundPlayer> instance is created (and the <xref:System.Media.SoundPlayer.Play%2A> method invoked) in the handler for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToWaveFile(@"C:\Test\Sample.wav");  
+  
+      // Register for the SpeakCompleted event.  
+      synth.SpeakCompleted += new EventHandler<SpeakCompletedEventArgs>(synth_SpeakCompleted);  
+  
+      // Build a prompt.  
+      PromptBuilder builder = new PromptBuilder();  
+      builder.AppendText("This sample asynchronously speaks a prompt to a WAVE file.");  
+  
+      // Speak the string asynchronously.  
+      synth.SpeakAsync(builder);  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the SpeakCompleted event.  
+    static void synth_SpeakCompleted(object sender, SpeakCompletedEventArgs e)  
+    {  
+  
+      // Create a SoundPlayer instance to play the output audio file.  
+      System.Media.SoundPlayer m_SoundPlayer =  
+        new System.Media.SoundPlayer(@"C:\Test\Sample.wav");  
+  
+      //  Play the output file.  
+      m_SoundPlayer.Play();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToWaveFile">
+      <MemberSignature Language="C#" Value="public void SetOutputToWaveFile (string path, System.Speech.AudioFormat.SpeechAudioFormatInfo formatInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToWaveFile(string path, class System.Speech.AudioFormat.SpeechAudioFormatInfo formatInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile(System.String,System.Speech.AudioFormat.SpeechAudioFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="formatInfo" Type="System.Speech.AudioFormat.SpeechAudioFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path to the file.</param>
+        <param name="formatInfo">The audio format information.</param>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a Waveform audio format file in a specified format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example specifies the format of the output of speech synthesis and sends it to a WAV file.  
+  
+```csharp  
+using System;  
+using System.IO;  
+using System.Speech.Synthesis;  
+using System.Speech.AudioFormat;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\temp\test.wav",   
+          new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Mono));  
+  
+        // Create a SoundPlayer instance to play output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =   
+          new System.Media.SoundPlayer(@"C:\temp\test.wav");  
+  
+        // Build a prompt.  
+        PromptBuilder builder = new PromptBuilder();  
+        builder.AppendText("This is sample output to a WAVE file.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputToWaveStream">
+      <MemberSignature Language="C#" Value="public void SetOutputToWaveStream (System.IO.Stream audioDestination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputToWaveStream(class System.IO.Stream audioDestination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioDestination" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="audioDestination">The stream to which to append synthesis output.</param>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a stream that contains Waveform format audio.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s reference to the stream, reconfigure the synthesizer's output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+  
+ For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example outputs a phrase to a WAV stream.  
+  
+```csharp  
+using System;  
+using System.IO;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the speech synthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      using (MemoryStream stream = new MemoryStream())  
+      {  
+  
+        // Create a SoundPlayer instance to play the output audio file.  
+        MemoryStream streamAudio = new MemoryStream();  
+        System.Media.SoundPlayer m_SoundPlayer = new System.Media.SoundPlayer();  
+  
+        // Configure the synthesizer to output to an audio stream.  
+        synth.SetOutputToWaveStream(streamAudio);  
+  
+        // Speak a phrase.  
+        synth.Speak("This is sample text-to-speech output.");  
+        streamAudio.Position = 0;  
+        m_SoundPlayer.Stream = streamAudio;  
+        m_SoundPlayer.Play();  
+  
+        // Set the synthesizer output to null to release the stream.   
+        synth.SetOutputToNull();  
+  
+        // Insert code to persist or process the stream contents here.  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (System.Speech.Synthesis.Prompt prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Speak(class System.Speech.Synthesis.Prompt prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.Speech.Synthesis.Prompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="System.Speech.Synthesis.Prompt" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">The content to speak.</param>
+        <summary>Synchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To asynchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a prompt from a string.  
+        Prompt color = new Prompt("What is your favorite color?");  
+  
+        // Speak the contents of the prompt synchronously.  
+        synth.Speak(color);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (System.Speech.Synthesis.PromptBuilder promptBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Speak(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.Speech.Synthesis.PromptBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="promptBuilder" Type="System.Speech.Synthesis.PromptBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="promptBuilder">The content to speak.</param>
+        <summary>Synchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To asynchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Create a PromptBuilder object and append a text string.  
+        PromptBuilder song = new PromptBuilder();  
+        song.AppendText("Say the name of the song you want to hear");  
+  
+        // Speak the contents of the prompt synchronously.  
+        synth.Speak(song);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (string textToSpeak);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Speak(string textToSpeak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.Speak(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToSpeak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToSpeak">The text to speak.</param>
+        <summary>Synchronously speaks the contents of a string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. To asynchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+  
+   
+  
+## Examples  
+ As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method provides the simplest means to generate speech output synchronously.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Speak a string synchronously.  
+        synth.Speak("What is your favorite color?");  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakAsync">
+      <MemberSignature Language="C#" Value="public void SpeakAsync (System.Speech.Synthesis.Prompt prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakAsync(class System.Speech.Synthesis.Prompt prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.Speech.Synthesis.Prompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="System.Speech.Synthesis.Prompt" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">The content to speak.</param>
+        <summary>Asynchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+  
+ To synchronously speak the contents of a <xref:System.Speech.Synthesis.Prompt> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Speech.Synthesis.Prompt> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Create a prompt from a string.  
+      Prompt color = new Prompt("What is your favorite color?");  
+  
+      // Speak the contents of the prompt asynchronously.  
+      synth.SpeakAsync(color);  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakAsync">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.Prompt SpeakAsync (System.Speech.Synthesis.PromptBuilder promptBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Synthesis.Prompt SpeakAsync(class System.Speech.Synthesis.PromptBuilder promptBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.Speech.Synthesis.PromptBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="promptBuilder" Type="System.Speech.Synthesis.PromptBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="promptBuilder">The content to speak.</param>
+        <summary>Asynchronously speaks the contents of a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+        <returns>Returns the object that contains the content to speak.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To synchronously speak the contents of a <xref:System.Speech.Synthesis.PromptBuilder> object, use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Speech.Synthesis.PromptBuilder> object from a string and passes the object as an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Create a PromptBuilder object and append a text string.  
+      PromptBuilder song = new PromptBuilder();  
+      song.AppendText("Say the name of the song you want to hear");  
+  
+      // Speak the contents of the prompt asynchronously.  
+      synth.SpeakAsync(song);  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakAsync">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.Prompt SpeakAsync (string textToSpeak);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Synthesis.Prompt SpeakAsync(string textToSpeak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToSpeak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToSpeak">The text to speak.</param>
+        <summary>Asynchronously speaks the contents of a string.</summary>
+        <returns>Returns the object that contains the content to speak.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. To synchronously speak the contents of a string, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method. You can cancel the asynchronous speaking of a prompt with the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> method.  
+  
+   
+  
+## Examples  
+ As shown in the following example, the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> method provides the simplest means to generate speech output asynchronously.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Speak a string asynchronously.  
+      synth.SpeakAsync("What is your favorite color?");  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakAsyncCancel">
+      <MemberSignature Language="C#" Value="public void SpeakAsyncCancel (System.Speech.Synthesis.Prompt prompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakAsyncCancel(class System.Speech.Synthesis.Prompt prompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel(System.Speech.Synthesis.Prompt)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prompt" Type="System.Speech.Synthesis.Prompt" />
+      </Parameters>
+      <Docs>
+        <param name="prompt">The content for which to cancel a speak operation.</param>
+        <summary>Cancels the asynchronous synthesis operation for a queued prompt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also use this method to cancel an asynchronous speak operation for the following:  
+  
+-   The contents of a <xref:System.String> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
+  
+-   The contents of a <xref:System.Speech.Synthesis.PromptBuilder> specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName> method.  
+  
+-   The contents of a <xref:System.String> containing SSML specified by a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method.  
+  
+ When you call <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A?displayProperty=fullName>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A>, System.Speech creates a <xref:System.Speech.Synthesis.Prompt> object and populates it with the contents of the method's parameter, and returns the <xref:System.Speech.Synthesis.Prompt> object. If you retain a copy of the returned <xref:System.Speech.Synthesis.Prompt>, you can pass it into <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancel%2A> to cancel speaking content specified in a <xref:System.String> or a <xref:System.Speech.Synthesis.PromptBuilder> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakAsyncCancelAll">
+      <MemberSignature Language="C#" Value="public void SpeakAsyncCancelAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakAsyncCancelAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels all queued, asynchronous, speech synthesis operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example show a use of <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsyncCancelAll%2A> to cancel the asynchronous speaking of a prompt, so that a new prompt can be spoken. Note that the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event fires when a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> operation is cancelled.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+using System.Threading;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Subscribe to the StateChanged event.  
+      synth.StateChanged += new EventHandler<StateChangedEventArgs>(synth_StateChanged);  
+  
+      // Subscribe to the SpeakProgress event.  
+      synth.SpeakProgress += new EventHandler<SpeakProgressEventArgs>(synth_SpeakProgress);  
+  
+      // Subscribe to the SpeakCompleted event.  
+      synth.SpeakCompleted += new EventHandler<SpeakCompletedEventArgs>(synth_SpeakCompleted);  
+  
+      // Begin speaking a text string asynchronously.  
+      synth.SpeakAsync("Speech is an effective and natural way for people to interact with applications, " +  
+        "complementing or even replacing the use of mice, keyboards, controllers, and gestures.");  
+  
+      // Speak for four seconds.  
+      Thread.Sleep(4000);  
+  
+      // Cancel the SpeakAsync operation and wait one second.  
+      synth.SpeakAsyncCancelAll();  
+      Thread.Sleep(1000);  
+  
+      // Speak a new text string.  
+      synth.Speak("An urgent email message has arrived. Do you want to hear it?");  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Write to the console when the SpeakAsync operation has been cancelled.  
+    static void synth_SpeakCompleted(object sender, SpeakCompletedEventArgs e)  
+    {  
+      Console.WriteLine("\nThe SpeakAsync operation was cancelled!!");  
+    }  
+  
+    // When it changes, write the state of the SpeechSynthesizer to the console.  
+    static void synth_StateChanged(object sender, StateChangedEventArgs e)  
+    {  
+      Console.WriteLine("\nSynthesizer State: {0}    Previous State: {1}\n", e.State, e.PreviousState);  
+    }  
+  
+    // Write the text being spoken by the SpeechSynthesizer to the console.  
+    static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
+    {  
+      Console.WriteLine(e.Text);  
+    }      
+  }    
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.SpeakCompletedEventArgs&gt; SpeakCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.SpeakCompletedEventArgs&gt; SpeakCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.SpeakCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> completes the speaking of a prompt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event at the completion of any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> or  <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
+  
+ The <xref:System.Speech.Synthesis.SpeakCompletedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakProgress">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.SpeakProgressEventArgs&gt; SpeakProgress;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.SpeakProgressEventArgs&gt; SpeakProgress" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.SpeakProgressEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised after the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> speaks each individual word of a prompt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event for each new word that it speaks in a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.SpeakProgressEventArgs>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakSsml">
+      <MemberSignature Language="C#" Value="public void SpeakSsml (string textToSpeak);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpeakSsml(string textToSpeak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToSpeak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToSpeak">The SSML string to speak.</param>
+        <summary>Synchronously speaks a <see cref="T:System.String" /> that contains SSML markup.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+  
+ To asynchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> to initiate the synchronous speaking of a string that does not contain SSML markup.  
+  
+ During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
+  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method.  
+  
+   
+  
+## Examples  
+ The following example renders the date 1/29/2009 as a date, in month, day, year order.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Build an SSML prompt in a string.  
+      string str = "<speak version=\"1.0\"";  
+      str += " xmlns=\"http://www.w3.org/2001/10/synthesis\"";  
+      str += " xml:lang=\"en-US\">";  
+      str += "<say-as type=\"date:mdy\"> 1/29/2009 </say-as>";  
+      str += "</speak>";  
+  
+      // Speak the contents of the prompt asynchronously.  
+      synth.SpeakSsml(str);  
+  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakSsmlAsync">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.Prompt SpeakSsmlAsync (string textToSpeak);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Synthesis.Prompt SpeakSsmlAsync(string textToSpeak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.Prompt</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textToSpeak" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textToSpeak">The SMML markup to speak.</param>
+        <summary>Asynchronously speaks a <see cref="T:System.String" /> that contains SSML markup.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the `textToSpeak` parameter must include a `speak` element and must conform to the [Speech Synthesis Markup Language (SSML) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201763). For more information, see [Speech Synthesis Markup Language Reference](http://msdn.microsoft.com/en-us/0c51279e-84d2-4f73-a924-8832039abf94).  
+  
+ To synchronously speak a string that contains SSML markup, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method. You can use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> to initiate the asynchronous speaking of a string that does not contain SSML markup.  
+  
+ During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>. Raised when the synthesizer finishes processing a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> operation.  
+  
+ If your application dos not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
+  
+   
+  
+## Examples  
+  
+```  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer();  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Build an SSML prompt in a string.  
+      string str = "<speak version=\"1.0\"";  
+      str += " xmlns=\"http://www.w3.org/2001/10/synthesis\"";  
+      str += " xml:lang=\"en-US\">";  
+      str += "<say-as type=\"date:mdy\"> 1/29/2009 </say-as>";  
+      str += "</speak>";  
+  
+      // Speak the contents of the prompt asynchronously.  
+      synth.SpeakSsmlAsync(str);  
+  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakStarted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.SpeakStartedEventArgs&gt; SpeakStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.SpeakStartedEventArgs&gt; SpeakStarted" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.SpeakStartedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> begins the speaking of a prompt.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when it begins processing a prompt using any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A>, or <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> methods.  
+  
+ The <xref:System.Speech.Synthesis.SpeakStartedEventArgs> class has no properties, and does not return data from the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event. It is provided to enable application authors to write event handlers for the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerState State" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current speaking state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <value>Returns the current speaking state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the new state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> after it changes, use the <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> property of the <xref:System.Speech.Synthesis.StateChangedEventArgs> class.  
+  
+   
+  
+## Examples  
+ The following example illustrates the state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> before, during, and after speaking a prompt.  
+  
+```csharp  
+using System;  
+using System.Threading;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      SpeechSynthesizer synth = new SpeechSynthesizer() ;  
+  
+      // Configure the audio output.   
+      synth.SetOutputToDefaultAudioDevice();  
+  
+      // Subscribe to the SpeakProgress event.         
+      synth.SpeakProgress += new EventHandler<SpeakProgressEventArgs>(synth_SpeakProgress);  
+  
+      // Write the state of the SpeechSynthesizer to the console.  
+      Console.WriteLine("Current Synthesizer state: " + synth.State + "\n");  
+  
+      // Speak a string asynchronously.  
+      synth.SpeakAsync("What is your favorite color?");  
+  
+      // Write the state of the SpeechSynthesizer to the console while it is speaking.  
+      Thread.Sleep(1000);  
+      Console.WriteLine("\n - Current Synthesizer state: " + synth.State + " - \n");  
+  
+      // Write the state of the SpeechSynthesizer to the console after it is done speaking.  
+      Thread.Sleep(2000);  
+      Console.WriteLine("\nCurrent Synthesizer state: " + synth.State);  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    static void synth_SpeakProgress(object sender, SpeakProgressEventArgs e)  
+    {  
+      Console.WriteLine(e.Text);  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.StateChangedEventArgs&gt; StateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.StateChangedEventArgs&gt; StateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.StateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.StateChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> raises this event when its speaking <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> changes. For an example and more information about data associated with the event, see <xref:System.Speech.Synthesis.StateChangedEventArgs>.  
+  
+ To pause and resume speech synthesis, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Pause%2A> and <xref:System.Speech.Synthesis.SpeechSynthesizer.Resume%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisemeReached">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.VisemeReachedEventArgs&gt; VisemeReached;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.VisemeReachedEventArgs&gt; VisemeReached" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.VisemeReachedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when a viseme is reached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A viseme is the basic position of the mouth and face when pronouncing a phoneme. Visemes are visual representations of phonemes.  
+  
+ System.Speech supports 21 visemes for US English, each of which corresponds to one or more phonemes.  <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> events are raised when a new phoneme reached has a different corresponding viseme than the previous phoneme reached. Since some visemes represent more than one phoneme, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not generated if the next phoneme reached corresponds to the same viseme as the previous phoneme. For example, for the spoken words “this zone”, a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised for the “s” in “this” and the “z” in “zone”. However, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not raised for the “z” in “zone” because it corresponds to the same viseme as the “s” in “this”.  
+  
+ The following is a list of the 21 SAPI phonemes and phoneme groups that correspond to a viseme in US English.  
+  
+|Viseme|Phoneme(s)|  
+|------------|------------------|  
+|0|silence|  
+|1|ae, ax, ah|  
+|2|aa|  
+|3|ao|  
+|4|ey, eh, uh|  
+|5|er|  
+|6|y, iy, ih, ix|  
+|7|w, uw|  
+|8|ow|  
+|9|aw|  
+|10|oy|  
+|11|ay|  
+|12|h|  
+|13|r|  
+|14|l|  
+|15|s, z|  
+|16|sh, ch, jh, zh|  
+|17|th, dh|  
+|18|f, v|  
+|19|d, t, n|  
+|20|k, g, ng|  
+|21|p, b, m|  
+  
+ For information about data associated with the `VisemeReached` event, see <xref:System.Speech.Synthesis.VisemeReachedEventArgs>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Voice">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.VoiceInfo Voice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Synthesis.VoiceInfo Voice" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Voice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.VoiceInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the current voice of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <value>Returns information about the current voice of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you initialize a new <xref:System.Speech.Synthesis.SpeechSynthesizer>, it uses the default system voice. To configure the <xref:System.Speech.Synthesis.SpeechSynthesizer> object to use one of the installed speech synthesis voices, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> method. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and the <xref:System.Speech.Synthesis.VoiceInfo> class.  
+  
+   
+  
+## Examples  
+ The following example initializes an instance of <xref:System.Speech.Synthesis.SpeechSynthesizer>and gets information about the current voice.  
+  
+```csharp  
+using System;  
+using System.IO;  
+using System.Speech.Synthesis;  
+using System.Speech.AudioFormat;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Get information about supported audio formats.  
+        string AudioFormats = "";  
+        foreach (SpeechAudioFormatInfo fmt in synth.Voice.SupportedAudioFormats)  
+        {  
+          AudioFormats += String.Format("{0}\n",  
+          fmt.EncodingFormat.ToString());  
+        }  
+  
+        // Write information about the voice to the console.  
+        Console.WriteLine(" Name:          " + synth.Voice.Name);  
+        Console.WriteLine(" Culture:       " + synth.Voice.Culture);  
+        Console.WriteLine(" Age:           " + synth.Voice.Age);  
+        Console.WriteLine(" Gender:        " + synth.Voice.Gender);  
+        Console.WriteLine(" Description:   " + synth.Voice.Description);  
+        Console.WriteLine(" ID:            " + synth.Voice.Id);  
+        if (synth.Voice.SupportedAudioFormats.Count != 0)  
+        {  
+          Console.WriteLine(" Audio formats: " + AudioFormats);  
+        }  
+        else  
+        {  
+          Console.WriteLine(" No supported audio formats found");  
+        }  
+  
+        // Get additional information about the voice.  
+        string AdditionalInfo = "";  
+        foreach (string key in synth.Voice.AdditionalInfo.Keys)  
+        {  
+          AdditionalInfo += String.Format("  {0}: {1}\n",  
+            key, synth.Voice.AdditionalInfo[key]);  
+        }  
+  
+        Console.WriteLine(" Additional Info - " + AdditionalInfo);  
+        Console.WriteLine();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VoiceChange">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Speech.Synthesis.VoiceChangeEventArgs&gt; VoiceChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Speech.Synthesis.VoiceChangeEventArgs&gt; VoiceChange" />
+      <MemberSignature Language="DocId" Value="E:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Speech.Synthesis.VoiceChangeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised when the voice of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.VoiceChangeEventArgs>.  
+  
+ You can change the voice that the <xref:System.Speech.Synthesis.SpeechSynthesizer> uses with any of the <xref:System.Speech.Synthesis.PromptBuilder>'s <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Volume">
+      <MemberSignature Language="C#" Value="public int Volume { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Volume" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.SpeechSynthesizer.Volume" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the output volume of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object.</summary>
+        <value>Returns the volume of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />, from 0 through 100.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the volume of the <xref:System.Speech.Synthesis.SpeechSynthesizer>'s audio output for the synthesized voice and the WAV file.  
+  
+```csharp  
+using System;  
+using System.Speech.Synthesis;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToDefaultAudioDevice();  
+  
+        // Set the volume of the SpeechSynthesizer's ouput.  
+        synth.Volume = 60;  
+  
+        // Build a prompt containing recorded audio and synthesized speech.  
+        PromptBuilder builder = new PromptBuilder(  
+          new System.Globalization.CultureInfo("en-US"));  
+        builder.AppendAudio("C:\\Test\\WelcomeToContosoRadio.wav");  
+        builder.AppendText(  
+          "The weather forecast for today is partly cloudy with some sun breaks.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Speak">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates speech output synchronously from a string, a <see cref="T:System.Speech.Synthesis.Prompt" /> object, or a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods generate speech synchronously. The methods do not return until the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> instance has been completely spoken. This is the simplest way to generate speech. However, if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsmlAsync%2A> method to generate speech asynchronously.  
+  
+ During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
+  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer>does not raise the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted> event while processing any of the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetInstalledVoices">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of speech synthesis (text-to-speech) voices that are currently installed on the system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices (engines for text-to-speech) it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SpeakAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates speech output asynchronously from a string, a <see cref="T:System.Speech.Synthesis.Prompt" /> object, or a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> methods generate speech asynchronously. The methods return immediately without waiting for the content of the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> object to finish speaking. Use <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> if your application needs to perform tasks while speaking, for example highlight text, paint animation, monitor controls, or other tasks.  
+  
+ During a call to this method, the <xref:System.Speech.Synthesis.SpeechSynthesizer> can raise the following events:  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged>. Raised when the speaking state of the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakStarted>. Raised when the synthesizer begins generating speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached>. Raised each time the synthesizer reaches a letter or combination of letters that constitute a discreet sound of speech in a language.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress>. Raised each time the synthesizer completes speaking a word.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached>. Raised each time spoken output requires a change in the position of the mouth or the facial muscles used to produce speech.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.BookmarkReached>. Raised when the synthesizer encounters a bookmark in a prompt.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.VoiceChange>. Raised when the speaking voice for the synthesizer changes.  
+  
+-   <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakCompleted>. Raised when the synthesizer finishes a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakAsync%2A> operation.  
+  
+ If your application does not need to perform tasks while speaking, you can use the <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> methods or the <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakSsml%2A> method to generate speech synchronously.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SetOutputToWaveFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Configures the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> object to append output to a Waveform audio format file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To release the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s  reference to the file, reconfigure the <xref:System.Speech.Synthesis.SpeechSynthesizer>’s output, for example, by calling <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>.  
+  
+ For other output configuration options, see the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToAudioStream%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToDefaultAudioDevice%2A>, <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToNull%2A>, and <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveStream%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="SelectVoiceByHints">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a voice with specific characteristics.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names of installed text-to-speech (TTS) voices that you can select. The <xref:System.Speech.Synthesis.SpeechSynthesizer> object selects the first installed voice that matches the specified characteristics.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot select a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ To select a voice by name, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> method  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

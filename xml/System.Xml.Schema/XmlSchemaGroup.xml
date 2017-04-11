@@ -1,0 +1,156 @@
+<Type Name="XmlSchemaGroup" FullName="System.Xml.Schema.XmlSchemaGroup">
+  <TypeSignature Language="C#" Value="public class XmlSchemaGroup : System.Xml.Schema.XmlSchemaAnnotated" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaGroup extends System.Xml.Schema.XmlSchemaAnnotated" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaAnnotated</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="group" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class defines groups at the <see langword="schema" /> level that are referenced from the complex types. It groups a set of element declarations so that they can be incorporated as a group into complex type definitions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `XmlSchemaGroup` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaGroup Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaGroup Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaGroup Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroup.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the schema group.</summary>
+        <value>The name of the schema group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name must be a no-colon name (NCName), as defined in the World Wide Web Consortium (W3C) XML Namespaces specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Particle">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaGroupBase Particle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaGroupBase Particle" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroup.Particle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("choice", typeof(System.Xml.Schema.XmlSchemaChoice))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("all", typeof(System.Xml.Schema.XmlSchemaAll))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("sequence", typeof(System.Xml.Schema.XmlSchemaSequence))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaGroupBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets one of the <see cref="T:System.Xml.Schema.XmlSchemaChoice" />, <see cref="T:System.Xml.Schema.XmlSchemaAll" />, or <see cref="T:System.Xml.Schema.XmlSchemaSequence" /> classes.</summary>
+        <value>One of the <see cref="T:System.Xml.Schema.XmlSchemaChoice" />, <see cref="T:System.Xml.Schema.XmlSchemaAll" />, or <see cref="T:System.Xml.Schema.XmlSchemaSequence" /> classes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QualifiedName">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName QualifiedName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName QualifiedName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaGroup.QualifiedName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the qualified name of the schema group.</summary>
+        <value>An <see cref="T:System.Xml.XmlQualifiedName" /> object representing the qualified name of the schema group.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

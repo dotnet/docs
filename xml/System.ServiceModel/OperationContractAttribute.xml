@@ -1,0 +1,609 @@
+<Type Name="OperationContractAttribute" FullName="System.ServiceModel.OperationContractAttribute">
+  <TypeSignature Language="C#" Value="public sealed class OperationContractAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationContractAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationContractAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a method defines an operation that is part of a service contract in a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.ServiceModel.OperationContractAttribute> to a method to indicate that the method implements a service operation as part of a service contract (specified by a <xref:System.ServiceModel.ServiceContractAttribute> attribute).  
+  
+ Use the <xref:System.ServiceModel.OperationContractAttribute> properties to control the structure of the operation and the values expressed in metadata:  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property specifies the action that uniquely identifies this operation. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] dispatches request messages to methods based on their action.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property indicates that the operation is implemented or can be called asynchronously using a Begin/End method pair.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel%2A> property indicates whether the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property has been explicitly set.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property indicates that the operation only consists of a single input message. The operation has no associated output message.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property specifies whether this operation can be the initial operation in a session.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property specifies whether [!INCLUDE[indigo2](~/includes/indigo2-md.md)] attempts to terminate the current session after the operation completes.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property specifies the message-level security that an operation requires at run time.  
+  
+-   The <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> property specifies the action of the reply message for the operation.  
+  
+ The <xref:System.ServiceModel.OperationContractAttribute> attribute declares that a method is an operation in a service contract. Only methods attributed with the <xref:System.ServiceModel.OperationContractAttribute> are exposed as service operations. A service contract without any methods marked with the <xref:System.ServiceModel.OperationContractAttribute> exposes no operations.  
+  
+ The <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property indicates that a pair of `Begin`\<*methodName*> and `End`\<*methodName*> methods form a single operation implemented asynchronously (whether on the client or the service). The ability of a service to implement operations asynchronously is a service implementation detail and is not exposed in metadata (such as Web Services Description Language (WSDL)).  
+  
+ Similarly, clients can choose to invoke operations asynchronously independent of how the service method is implemented. Calling service operations asynchronously in the client is recommended when a service method takes some time but must return information directly to the client. For details, see <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>.  
+  
+ The <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property indicates that a method does not return any value at all, including an empty underlying response message. This type of method is useful for notifications or event-style communication. Methods of this kind cannot return a reply message so the method's declaration must return `void`.  
+  
+> [!IMPORTANT]
+>  When programmatically retrieving the information store in this attribute, use the <xref:System.ServiceModel.Description.ContractDescription> class instead of reflection.  
+  
+> [!NOTE]
+>  If the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is set to `false`, (the default), even methods that return `void` are two-way methods at the underlying message level. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned. Using this approach enables the application and the infrastructure to send error information (such as a SOAP fault) back to the client. Setting <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` is the only way to prevent the creation and dispatch of a reply message. For more information, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md).  
+  
+ The <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties can be used not only to modify the default action of SOAP messages but also to create handlers for unrecognized messages or to disable adding actions for direct message programming. Use the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to prevent clients from calling a particular service operation prior to other operations. Use the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property to have [!INCLUDE[indigo2](~/includes/indigo2-md.md)] close the channel after clients call a particular service operation. For more information, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
+  
+ The <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property enables you to specify on the operation contract whether the operation messages are signed, encrypted, or signed and encrypted. If a binding cannot provide the security level required by the contract, an exception is thrown at run time. For more information, see <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> and [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
+  
+   
+  
+## Examples  
+ The following code example shows a simple service contract with one operation.  
+  
+ [!code-csharp[OperationContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontractattribute/cs/services.cs#1)]
+ [!code-vb[OperationContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontractattribute/vb/services.vb#1)]  
+  
+ The following example is a service that implements an implicit service contract that specifies three operations. Two of the operations are two-way operations, which return underlying response messages to the caller no matter what the return value is. The third operation receives a call, an underlying inbound message, but returns no underlying response message.  
+  
+```csharp  
+[ServiceContractAttribute]  
+public class OneAndTwoWay  
+{  
+  // The client waits until a response message appears.  
+  [OperationContractAttribute]  
+  public int MethodOne (int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  // The client waits until an empty response message appears.  
+  [OperationContractAttribute]  
+  public void MethodTwo (int x)  
+  {  
+    return;  
+  }  
+  
+  // The client returns as soon as an outbound message  
+  // is dispatched to the service; no response  
+  // message is generated or sent from the service.  
+  [OperationContractAttribute(IsOneWay=true)]  
+  public void MethodThree (int x)  
+  {  
+    return;  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OperationContractAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContractAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OperationContractAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the WS-Addressing action of the request message.</summary>
+        <value>The action to use in generating the WS-Addressing Action header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.Action%2A>property to control the action of the method's input message. Because [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses this action to dispatch an incoming message to the appropriate method, messages used within a contract operation must have unique actions. The default action value is a combination of the contract namespace (the default value is "http://tempuri.org/"), the contract name (interface name or the class name, if no explicit service interface is used), the operation name, and an additional string ("Response") if the message is a correlated response. You can override this default with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property.  
+  
+ To indicate that a service operation handles all messages that the service receives but cannot be directed to a service operation, specify the value "*" (an asterisk). This type of operation, called an unmatched message handler, must have one of following method signatures, or a <xref:System.InvalidOperationException> is thrown:  
+  
+-   The service operation can take only a <xref:System.ServiceModel.Channels.Message> object and return a <xref:System.ServiceModel.Channels.Message> object.  
+  
+-   The service operation can take only a <xref:System.ServiceModel.Channels.Message> object and return nothing (that is, return `void`).  
+  
+> [!NOTE]
+>  A service contract can have only one service operation with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "*". Any group of service contracts hosted at the same listenUri that a service class implements can have many service operations with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" when the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property is set to `false`. However, only one of those service operations can have the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" and the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property set to true. For more details, see <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>.  
+  
+   
+  
+## Examples  
+ The following example is a service that uses the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties to explicitly control the SOAP actions of both the input and output (or reply) messages, and the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to control the name of the operation in metadata. Finally, the application also uses an <xref:System.ServiceModel.OperationContractAttribute.Action%2A> value of "*" to indicate a method that handles unrecognized messages.  
+  
+ [!code-csharp[OperationContractAttribute_Properties#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontractattribute_properties/cs/services.cs#1)]
+ [!code-vb[OperationContractAttribute_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontractattribute_properties/vb/services.vb#1)]  
+  
+ A service that implements this contract sends messages that look like the following example:  
+  
+ [!code-csharp[OperationContractAttribute_Properties#2](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontractattribute_properties/cs/services.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncPattern">
+      <MemberSignature Language="C#" Value="public bool AsyncPattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AsyncPattern" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.AsyncPattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that an operation is implemented asynchronously using a <see langword="Begin" />&lt;*methodName*&gt; and <see langword="End" />&lt;*methodName*&gt; method pair in a service contract.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="Begin" />&lt;*methodName*&gt;method is matched by an <see langword="End" />&lt;*methodName*&gt; method and can be treated by the infrastructure as an operation that is implemented as an asynchronous method pair on the service interface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to build service operations that can be called asynchronously on the server, the client, or both. The <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property informs the runtime that a `Begin` method has a matched `End` method that conforms to the .NET Framework asynchronous method design pattern. Building server asynchronous methods that implement a service operation increases server scalability and performance without affecting the clients of the service, and is recommended when a service operation must return something to the client after performing a lengthy operation that can be performed asynchronously.  
+  
+ Clients remain unaffected because the asynchronous method pair on the server is an implementation detail that does not affect the underlying Web Services Description Language (WSDL) description of the operation. Such methods appear to clients as a single operation with `<input>` and correlated `<output>` messages. [!INCLUDE[indigo2](~/includes/indigo2-md.md)] automatically routes inbound messages to the `Begin`\<*methodName*> method and routes the results of the `End`\<*methodName*> call to the outbound message. Client channels, therefore, can represent the method pair as either a single synchronous operation or as an asynchronous operation pair. In no case does the client representation affect the asynchronous implementation on the server in any way.  
+  
+ Client contracts can use the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property to indicate an asynchronous method pair that the client can use to invoke the operation asynchronously. Typically, client applications use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool and the `/async` option to generate a `Begin`\<*methodName*> and `End`\<*methodName*> method pair that the client can use to invoke the operation asynchronously.  
+  
+> [!NOTE]
+>  If a service operation has both an asynchronous and a synchronous version, the default behavior on the service is to invoke the synchronous version.  
+  
+   
+  
+## Examples  
+ The following code example shows a client channel to a service contract that includes both a synchronous version of `Add` and an asynchronous version. If the contract interface is used on the client, both the `BeginAdd` and the `Add` operation invoke a method on the server that may or may not be synchronous. If the contract is used to implement the service, the default is that incoming requests are dispatched to the synchronous method.  
+  
+```csharp  
+[ServiceContract]  
+public interface IAddTwoNumbers  
+{  
+    // If the asynchronous method pair  
+    // appears on the client channel, the client can call   
+    // them asynchronously to prevent blocking.  
+    [OperationContract (AsyncPattern=true)]  
+    IAsyncResult BeginAdd(int a, int b, AsyncCallback cb, AsyncState s);  
+  
+    [OperationContract]  
+    int EndAdd(IAsyncResult r);  
+  
+    // This is a synchronous version of the BeginAdd/EndAdd pair.  
+    // It appears in the client channel code by default.   
+    [OperationContract]  
+    int Add(int a, int b);  
+   }  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasProtectionLevel">
+      <MemberSignature Language="C#" Value="public bool HasProtectionLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.HasProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the messages for this operation must be encrypted, signed, or both.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.OperationContractAttribute.ProtectionLevel" /> property is set to a value other than <see cref="F:System.Net.Security.ProtectionLevel.None" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.HasProtectionLevel%2A> property to determine whether a specific protection level is required by the messages of this operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitiating">
+      <MemberSignature Language="C#" Value="public bool IsInitiating { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitiating" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsInitiating" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the method implements an operation that can initiate a session on the server (if such a session exists).</summary>
+        <value>
+          <see langword="true" /> if the operation is permitted to initiate a session on the server, otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property controls whether an operation can be the first operation called when a session is created.  
+  
+> [!NOTE]
+>  The value of <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> must be either <xref:System.ServiceModel.SessionMode> or <xref:System.ServiceModel.SessionMode> and the binding used must require or allow sessions for the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property to work properly.  
+  
+ The default is `true`, which means that an operation can be the first one called on a channel. Subsequent calls to the initiating method have no effect, other than to call the method. No other sessions are created. If the contract does not make use of a session, setting <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `false` is ignored.  
+  
+ Typically, you set <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `false` to force clients to call another method on the service before they can invoke this one. For example, if your service has a series of operations that depend on an order ID number, you can set <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> to `true` for a `GetOrderId` service operation and set all remaining service operations to `false`. This ensures that each new client obtains an order ID prior to using the other methods exposed by the service.  
+  
+> [!NOTE]
+>  There is an interaction between <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> and the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property. A service contract can have only one service operation with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "*". Any group of service contracts hosted at the same listen URI that a service class implements can have many service operations with the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" when the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property is set to `false`. However, only one of those service methods can have the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> property set to "\*" and the <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A> property set to `true`.  
+  
+ If a service receives a message for a non-initiating operation, the service returns an ActionNotSupported SOAP fault. The client experiences this as an <xref:System.ServiceModel.FaultException>. If a client calls a non-initiating operation first, the client runtime throws an <xref:System.InvalidOperationException?displayProperty=fullName>.  
+  
+ For more information, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
+  
+   
+  
+## Examples  
+ The following example is a service that implements a service contract that specifies three methods. The service requires a session. If a caller's first call is to any operation other than `MethodOne`, the channel is refused and an exception is thrown. When a caller initiates a session by calling `MethodOne`, that caller can terminate the communication session at any time by calling `MethodThree`. `MethodTwo` can be called any number of times during a session.  
+  
+```csharp  
+[ServiceContract(SessionMode=SessionMode.Required)]  
+public class InitializeAndTerminateService  
+{  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=true,  
+    IsTerminating=false  
+  )]  
+  public void MethodOne()  
+  {  
+    return;  
+  }  
+  
+  [OperationContract(  
+    IsInitiating=false,  
+    IsTerminating=false  
+  )]  
+  public int MethodTwo(int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=false,  
+    IsTerminating=true  
+  )]  
+  public void MethodThree()  
+  {  
+    return;  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOneWay">
+      <MemberSignature Language="C#" Value="public bool IsOneWay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOneWay" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsOneWay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an operation returns a reply message.</summary>
+        <value>
+          <see langword="true" /> if this method receives a request message and returns no reply message; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to indicate that an operation does not return a reply message. This type of operation is useful for notifications or event-style communication, especially in two-way communication. Without waiting for an underlying response message, callers of one-way operations have no direct way to detect a failure in processing the request message. (Service applications that use reliable channels and one-way operations can detect a message delivery failure at the channel level. For details, see [Reliable Sessions Overview](~/docs/framework/wcf/feature-details/reliable-sessions-overview.md).)  
+  
+ In duplex (or two-way) service-oriented applications in which the client and server communicate with each other independently, a client channel can use the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property on its methods to indicate that the service can make one-way calls to the client that the client can treat as events. No return call or message is generated because the service does not expect any response message.  
+  
+ If the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property is set to `false` (the default), even methods that return `void` result in a reply message. In this case, the infrastructure creates and sends an empty message to indicate to the caller that the method has returned. (Using this approach enables the infrastructure to send SOAP faults back to the client.) Setting <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> to `true` is the only way to cancel the creation and dispatch of a response message.  
+  
+ One-way methods must not return a value or have `ref` or `out` parameters; otherwise a <xref:System.InvalidOperationException?displayProperty=fullName> exception is thrown.  
+  
+ Specifying that an operation is a one-way operation means only that there is no response message. It is possible to block if a connection cannot be made, or the outbound message is very large, or if the service cannot read inbound information fast enough. If a client requires a non-blocking call, generate <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> operations. For more information, see [One-Way Services](~/docs/framework/wcf/feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](~/docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+  
+   
+  
+## Examples  
+ The following example is a service that implements a service contract that specifies three operations. Two of the methods implement two-way operations, which return underlying response messages to the caller no matter what the return value is. The third method implements an operation that receives a call (an underlying inbound message) but returns no underlying response message.  
+  
+```csharp  
+[ServiceContract]  
+public class OneAndTwoWay  
+{  
+  // The client waits until a response message appears.  
+  [OperationContract]  
+  public int MethodOne (int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  // The client waits until an empty response message appears.  
+  [OperationContract]  
+  public void MethodTwo (int x)  
+  {  
+    return;  
+  }  
+  
+  // The client returns as soon as an outbound message  
+  // is queued for dispatch to the service; no response  
+  // message is generated or sent.  
+  [OperationContract(IsOneWay=true)]  
+  public void MethodThree (int x)  
+  {  
+    return;  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTerminating">
+      <MemberSignature Language="C#" Value="public bool IsTerminating { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTerminating" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.IsTerminating" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the service operation causes the server to close the session after the reply message, if any, is sent.</summary>
+        <value>
+          <see langword="true" /> if the operation causes the server to close the session, otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> property to indicate that calling a service operation terminates the communication session.  
+  
+ In a client application, a value of <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A> set to `true` instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to close the channel after the reply arrives.  
+  
+ In a service, a timer is set and the channel aborts if the client does not close the channel within that period.  
+  
+ For more information about using this property with sessions, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
+  
+> [!NOTE]
+>  If a caller is listening for the <xref:System.ServiceModel.OperationContext.OperationCompleted?displayProperty=fullName> event for an <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A?displayProperty=fullName> operation, it is possible to block when the response is received. The proper way to handle this is to schedule work on another thread when <xref:System.ServiceModel.OperationContext.OperationCompleted> is raised and then immediately return from that event handler.  
+  
+   
+  
+## Examples  
+ The following example is a service that implements a service contract that specifies three operations. The service requires a stateful connection. If a caller's first call is to any operation other than `MethodOne`, the channel is refused and an exception is thrown. When a caller initiates a session by calling `MethodOne`, that caller can terminate the communication session at any time by calling `MethodThree`. `MethodTwo` can be called any number of times during a session.  
+  
+```csharp  
+[ServiceContractAttribute(SessionMode=SessionMode.Required)]  
+public class InitializeAndTerminateService  
+{  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=true,  
+    IsTerminating=false  
+  )]  
+  public void MethodOne()  
+  {  
+    return;  
+  }  
+  
+  [OperationContract(  
+    IsInitiating=false,  
+    IsTerminating=false  
+  )]  
+  public int MethodTwo(int x, out int y)  
+  {  
+    y = 34;  
+    return 0;  
+  }  
+  
+  [OperationContract(  
+    IsOneWay=true,  
+    IsInitiating=false  
+    IsTerminating=true  
+  )]  
+  public void MethodThree()  
+  {  
+    return;  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the operation.</summary>
+        <value>The name of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to override the <`operation`> element name in WSDL. The default operation name is the name of the implementing method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to declare the name of the operation as exposed in metadata.  
+  
+ [!code-csharp[OperationContractAttribute_Properties#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontractattribute_properties/cs/services.cs#1)]
+ [!code-vb[OperationContractAttribute_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontractattribute_properties/vb/services.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.ServiceModel.OperationContractAttribute.Name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the messages of an operation must be encrypted, signed, or both.</summary>
+        <value>One of the <see cref="T:System.Net.Security.ProtectionLevel" /> values. The default is <see cref="F:System.Net.Security.ProtectionLevel.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> property to control whether the messages of an operation must be encrypted, signed, or both. The value set here is the default value for all messages specified for this operation unless a narrower scope overrides this value.  
+  
+ It is important to remember that the protection behavior at runtime is the combination of the protection-level values set on the following properties. These properties have a hierarchical structure. Setting the outermost value establishes the default setting for all narrower scopes unless a different value for a narrower scope is explicitly set. In this case, the outer value remains the default for all narrower scopes with the exception of that specifically set.  
+  
+ For example, if <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName> is set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> and no other narrower scopes have protection level settings, all messages in an operation contract are encrypted and signed. If, however, one of those operations has the <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A> set to <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>, then the messages for that operation are signed but all other messages in the contract are encrypted and signed.  
+  
+ For details about protection levels and their assumptions and scopes, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
+  
+ The scopes at which these values are set are:  
+  
+ <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+  
+ <xref:System.ServiceModel.OperationContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+  
+ <xref:System.ServiceModel.FaultContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+  
+ <xref:System.ServiceModel.MessageContractAttribute.ProtectionLevel%2A?displayProperty=fullName>  
+  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageHeaderAttribute?displayProperty=fullName>.  
+  
+ The <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on <xref:System.ServiceModel.MessageBodyMemberAttribute?displayProperty=fullName>.  
+  
+ When there is no protection level explicitly specified on the contract and the underlying binding supports security (whether at the transport or message level), the effective protection level for the whole contract is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>. If the binding does not support security (such as <xref:System.ServiceModel.BasicHttpBinding>), the effective <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> is <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> for the whole contract. The result is that depending upon the endpoint binding, clients can require different message or transport level security protection even when the contract specifies <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.Net.Security.ProtectionLevel" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyAction">
+      <MemberSignature Language="C#" Value="public string ReplyAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReplyAction" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContractAttribute.ReplyAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the SOAP action for the reply message of the operation.</summary>
+        <value>The value of the SOAP action for the reply message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to specifying a particular value for the action header of the reply message, you can also specify the string "*" (an asterisk). Specifying an asterisk in the service instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] not to add a reply action to the message, which is useful if you are programming against messages directly. Specifying an asterisk in a client application instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] not to validate the reply action.  
+  
+   
+  
+## Examples  
+ The following example is a service that uses the <xref:System.ServiceModel.OperationContractAttribute.Action%2A> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> properties to explicitly control the SOAP actions of both the input and output (or reply) messages. It also uses the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> property to declare the name of the operation as exposed in metadata.  
+  
+ [!code-csharp[OperationContractAttribute_Properties#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationcontractattribute_properties/cs/services.cs#1)]
+ [!code-vb[OperationContractAttribute_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationcontractattribute_properties/vb/services.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.ServiceModel.OperationContractAttribute.ReplyAction" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

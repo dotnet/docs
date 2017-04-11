@@ -49,7 +49,7 @@ The `@` special character serves as a verbatim identifier. It can be used in the
 
 1. To enable the compiler to distinguish between attributes in cases of a naming conflict. An attribute is a type that derives from @System.Attribute. Its type name typically includes the suffix **Attribute**, although the compiler does not enforce this convention. The attribute can then be referenced in code either by its full type name (for example, `[InfoAttribute]` or its shortened name (for example, `[Info]`). However, a naming conflict occurs if two shortened attribute type names are identical, and one type name includes the **Attribute** suffix but the other does not. For example, the following code fails to compile because the compiler cannot determine whether the `Info` or `InfoAttribute` attribute is applied to the `Main` method.
 
-   ```cs
+   ```csharp
    using System;
 
    [AttributeUsage(AttributeTargets.Class)]

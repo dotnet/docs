@@ -1,0 +1,56 @@
+<Type Name="PrePrepareMethodAttribute" FullName="System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute">
+  <TypeSignature Language="C#" Value="public sealed class PrePrepareMethodAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrePrepareMethodAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Constructor | System.AttributeTargets.Method, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Instructs the native image generation service to prepare a method for inclusion in a constrained execution region (CER).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply the <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute> attribute to a method or constructor to tell the native image generation service that the method (and its statically determinable call graph) is to be prepared for use in a CER. This attribute is useful if the method to which it is applied will be prepared explicitly at run time, and the author of the method knows this and wants to avoid the overhead of run-time preparation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrePrepareMethodAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

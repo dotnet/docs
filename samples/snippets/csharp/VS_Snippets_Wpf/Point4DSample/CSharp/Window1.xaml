@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- To show this window, do this: Window w=new Window1; w.Show(); -->
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="FourDPointSample.Window1"
+    Title="Point4D Sample"
+    Height = "600"
+    Width = "800">
+		
+    
+    <!--Main Grid Panel-->
+    <Grid Name="mainGridPanel" Margin="10">
+      <Grid.ColumnDefinitions>	
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="20" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="20" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+        <!-- Top Border -->
+        <Rectangle Grid.Row="0" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="3"
+            Fill="#99CCCCCC" />
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="10,10,0,10"><Bold>Point4D Sample</Bold></TextBlock>
+        
+        <!--Begin: List of operations-->
+        <Rectangle Grid.Row="2" Grid.Column="0"
+            Fill="#99CCCCFF" RadiusX="10" RadiusY="10"/>
+		
+        <DockPanel Grid.Row="2" Grid.Column="0" >
+         <TextBlock Margin ="10,20,0,0" DockPanel.Dock ="Top">
+             <Bold>Point4D Operations</Bold>
+         </TextBlock>
+  
+          <!-- A list of radio buttons used to select which operation to perform -->
+         <!--<ScrollViewer Width="400" Height="400" DockPanel.Dock="Left" Margin ="10">-->
+
+          <StackPanel>
+				<RadioButton Name="rb1" GroupName="buttonlist" Checked="PerformOperation">Add Point4d1 to Point4d2 using overloaded + operator</RadioButton>
+				<RadioButton Name="rb2" GroupName="buttonlist" Checked="PerformOperation">Add Point4d1 to Point4d2 using the static Add method</RadioButton>
+				<RadioButton Name="rb3" GroupName="buttonlist" Checked="PerformOperation">Subtract Point4d1 from Point4d2 using overloaded - operator</RadioButton>
+				<RadioButton Name="rb4" GroupName="buttonlist" Checked="PerformOperation">Subtract Point4d1 from Point4d2 using the static Subtract method</RadioButton>	
+				<RadioButton Name="rb5" GroupName="buttonlist" Checked="PerformOperation">Offset Point4d1 by (20,30,40,50)</RadioButton>
+				<RadioButton Name="rb6" GroupName="buttonlist" Checked="PerformOperation">Multiply Point4d1 by Matrix3d1 using overloaded * operator</RadioButton>
+				<RadioButton Name="rb7" GroupName="buttonlist" Checked="PerformOperation">Multiply Point4d1 by Matrix3d1 using static Multiply method</RadioButton>
+				<RadioButton Name="rb8" GroupName="buttonlist" Checked="PerformOperation">Check Point4d1 and Point4d2 for equality using the overloaded == operator</RadioButton>
+				<RadioButton Name="rb9" GroupName="buttonlist" Checked="PerformOperation">Check Point4d1 and Point4d2 for equality using the static Equals method</RadioButton>
+				<RadioButton Name="rb10" GroupName="buttonlist" Checked="PerformOperation">Check object and Point4d2 for equality using the non-static Equals method</RadioButton>	
+				<RadioButton Name="rb11" GroupName="buttonlist" Checked="PerformOperation">Converts a string representation of a 4D point into a Point4D structure using static Parse method</RadioButton>		   
+				<RadioButton Name="rb12" GroupName="buttonlist" Checked="PerformOperation">Check Point4d1 and Point4d2 for inequality using the overloaded != operator</RadioButton>	
+				<RadioButton Name="rb13" GroupName="buttonlist" Checked="PerformOperation">Get the ToString of Point4d1</RadioButton>		   
+				<RadioButton Name="rb14" GroupName="buttonlist" Checked="PerformOperation">Get the hashcode of Point4d1</RadioButton>
+          </StackPanel>
+          <!--</ScrollViewer>-->
+        
+        </DockPanel>
+        <!--End: List of operations-->        
+        
+        <!-- Begin: The Variable and Result Tables -->         
+        <Rectangle Grid.Row="2" Grid.Column="2"
+            Fill="#99CCCCCC" RadiusX="10" RadiusY="10"/>
+        <DockPanel Grid.Row="2" Grid.Column="2" Margin ="0,10,0,30">
+         
+
+            <!-- Displays the variables used in the operations -->
+
+            <Grid DockPanel.Dock="Top"  Margin="20,30,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0">
+                    <Bold>Variables</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0">
+                    <Bold>Point 1:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Name="txtPoint1">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0">
+                    <Bold>Point 2:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Name="txtPoint2">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0">
+                    <Bold>Matrix 1:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="1" Name="txtMatrix1">
+                    <Bold></Bold>
+                </TextBlock>
+            </Grid>
+
+            <!-- Displays the result information of the operations -->
+            <Grid DockPanel.Dock="Top"
+                  Margin="20,110,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0">
+                    <Bold>Results</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="0">
+                    <Bold>Operation:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" Name="txtOperation">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0">
+                    <Bold>Syntax:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="1" Name="txtSyntax">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="0">
+                    <Bold>Result:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="3" Grid.Column="1" Name="txtResultValue">
+                    <Bold></Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0">
+                    <Bold>Result Type:</Bold>
+                </TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="1" Name="txtResultType">
+                    <Bold></Bold>
+                </TextBlock>
+            </Grid>
+
+        </DockPanel>
+        <!-- End: The Variable and Result Tables -->
+       
+    </Grid> <!--End Main Grid Panel-->    
+    
+    
+</Window>

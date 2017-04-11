@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Read Me: Claims Based Authorization Sample</title>
+    <link href="./Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a href="./">Windows Identity Foundation .NET 4.5 Beta Sample</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <section class="featured">
+            <div id="summary" class="content-wrapper">
+                <hgroup class="title">
+                    <h1>Claims Based Authorization.</h1>
+                    <h2>Demonstrates the use of claims for authorization.</h2>
+                </hgroup>
+                <p>
+                    This sample shows the use of claims for authorization within an ASP.NET Web Application
+                </p>
+            </div>
+        </section>
+        <section class="content-wrapper main-content clear-fix">
+            <section id="Overview">
+                <h3>Overview</h3>
+                <p>
+                    This sample will show you how to use the Claims Authorization Module provided by
+                    WIF for enabling claims based authorization. You will see how to create a class
+                    for use with the Claims Authorization Manager to specify policy in config for controlling
+                    access to pages in an ASP.NET Web Application.
+                </p>
+                <p>
+                    In addition this sample shows the basics of how claims have been integrated into
+                    the .NET framework. You will learn how a web application is enabled to use WIF.
+                    You will see how they are useful from within existing properties and functions,
+                    and how you can take the next step to using them directly using the ClaimsPrincipal
+                    class in System.Security.Claims. You also will also learn how to work with the local
+                    STS that is part of the Identity and Access tool for Visual Studio 11.
+                </p>
+                <h3>Prerequisites</h3>
+                <p>
+                    You must have the <a href="http://go.microsoft.com/fwlink/?LinkID=245849">Identity and
+                        Access Tool for Visual Studio 11</a>installed. You can find this via the Extension
+                    Manager or download it directly from Visual Studio Gallery.
+                </p>
+                <h3>How To Run</h3>
+                <p>
+                    To run this sample, start Visual Studio 11 as administrator, open the project, and
+                    run the project by hitting F5. If you are on this page via F5 here is a link to
+                    <a href="./">run the sample</a>. This page allows anonymous access, the other pages
+                    in this web application require authentication and specific claim types for access.
+                    By default this application is configured to use the Local STS that will issue claims
+                    to you as soon as authentication in the application is required. By default you
+                    should be able to access the <a href="Developers.aspx">Developers page</a>. You
+                    should not initially be able to access the <a href="Administrators.aspx">Administrators
+                        page</a>, if you try you will get a 401 unauthorized error. You can see the
+                    claims associated with your user <a href="Claims.aspx">here</a>.
+                </p>
+                <h3>Claims Authorization Details</h3>
+                <p>
+                    Access to the pages is controlled via web.config settings for specific claim values
+                    using an implementation of the <a href="http://msdn.microsoft.com/en-us/library/system.security.claims.claimsauthorizationmanager(VS.110).aspx"
+                        target="_blank">ClaimsAuthorizationManager class</a>that is part of WIF. You
+                    can change the claims issued to you via the Identity and Access extension or directly
+                    in the Local STS config. For this project there are commented claim values for you
+                    to uncomment to allow access to the <a href="Administrators.aspx">Administrators page
+                    </a>.
+                </p>
+                <p>
+                    The Claims Authorization Module is enabled in the web.config. One enabled you can
+                    then specify the policies and class to process the claims authorization decisions
+                    in system.identityModel\identityConfiguration\claimsAuthorizationManager. There
+                    you can see that the type has been set to ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager
+                    that is defined in the ClaimsAuthorizationLibrary project in the solution. The specific
+                    policies of which claims are required for access to a page are specified within
+                    the policy subelement.
+                </p>
+                <h3>Claims Usage Details</h3>
+                <p>
+                    This sample has already been configured to use WIF via the Identity and Access tool
+                    which added the required sections to the web.config. Take a look at the configuration
+                    tab in the tool by choosing Identity and Access option from the project context
+                    menu, or look at the system.identitymodel and system.identitymodel.services sections
+                    in the web.config.
+                </p>
+                <p>
+                    In the body of the page the name is displayed using the Page.User.Identity.Name
+                    property. In the header the name is displayed using the LoginName control. The value
+                    itself is from a claim that the Windows Identity Foundation processed from a security
+                    token and integrated into the current user principal. Other claims can also be sent
+                    in a security token. These claims can be accessed directly, for example the email
+                    address displayed in the body is another claim in the security token. That is accessed
+                    in the code behind of default.aspx page by creating a ClaimsPrincipal from the current
+                    user. You can see all of the claims returned in the security token below in the
+                    GridView where we have used the ClaimsPrincipal as the data source in the code behind.
+                </p>
+                <p>
+                    So where is the user in this sample from? Where are they being authenticated? This
+                    sample is configured to use the Local STS that is part of the Identity and Access
+                    Tool for Visual Studio 11. The Local STS is an Identity Provider for testing purposes
+                    so you can build your application without needing to configure or connect to an
+                    Identity Provider. As this is used only for testing it does not actually authenticate
+                    a user. It simply issues a security token with the claims it is configured with
+                    whenever an application asks. You can configure the Local STS from the Identity
+                    and Access context menu to add other claims, set a different port or an alternate
+                    token type.
+                </p>
+            </section>
+            <section id="Troubleshooting">
+                <h3>Troubleshooting</h3>
+                <ul>
+                    <li>
+                        <p><em>I get an error from the Local STS when I hit F5</em></p>
+                        <p>
+                            You need to run VS in admin mode to use the Local STS as it needs to be able to
+                            open ports to function.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>When examining the web.config intellisense is flagging sections of system.identitymodel
+                                and system.identitymodel.services as invalid.</em>
+                        </p>
+                        <p>
+                            This is a product bug in the Beta release where the intellisense does not match
+                            the actual config. This is being fixed in the next release. You can find the proper
+                            <a href="http://msdn.microsoft.com/en-us/library/system.identitymodel.configuration(VS.110).aspx"
+                                target="_blank">documentation for the config sections online here</a>.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="Security">
+                <h3>Security Considerations</h3>
+                <p>
+                    For illustrative purposes this sample application shows all the parameters of claims
+                    (i.e. claim types and claim values), which are issued by a security token service
+                    (STS). In production code, security implications of echoing the properties of claims
+                    should be carefully considered. For example, some of the security considerations
+                    are: (i) accepting only claim types that are expected by the applications; (ii)
+                    sanitizing the claim parameters before using them; and (iii) filtering out claims
+                    that may contain sensitive personal information. DO NOT use this sample code ‘as
+                    is’ in production code.
+                </p>
+            </section>
+            <section id="References">
+                <h3>References</h3>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=245850" target="_blank">Windows
+                        Identity Foundation .NET 4.5 Reference documentation </a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=245849" target="_blank">Identity
+                        and Access Tool for Visual Studio 11 </a></li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+            </div>
+            <div class="float-right">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

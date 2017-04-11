@@ -1,0 +1,139 @@
+<Type Name="EntityTransaction" FullName="System.Data.EntityClient.EntityTransaction">
+  <TypeSignature Language="C#" Value="public sealed class EntityTransaction : System.Data.Common.DbTransaction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityTransaction extends System.Data.Common.DbTransaction" />
+  <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityTransaction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbTransaction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the transaction for an <see cref="P:System.Data.EntityClient.EntityCommand" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.EntityClient.EntityTransaction> is obtained from the <xref:System.Data.EntityClient.EntityConnection> and specifies one or more <xref:System.Data.EntityClient.EntityCommand> objects. The <xref:System.Data.EntityClient.EntityTransaction> wraps the transaction of the underlying data provider's transaction object.  
+  
+ For code examples, see [Managing Connections and Transactions](http://msdn.microsoft.com/en-us/6d694aa9-b290-4738-ba8e-3ed4e5b148f9).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public override void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits the underlying transaction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public System.Data.EntityClient.EntityConnection Connection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.EntityClient.EntityConnection Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.EntityClient.EntityConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets <see cref="T:System.Data.EntityClient.EntityConnection" /> for this <see cref="T:System.Data.EntityClient.EntityTransaction" />.</summary>
+        <value>An <see cref="T:System.Data.EntityClient.EntityConnection" /> to the underlying data source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbConnection">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.DbConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsolationLevel">
+      <MemberSignature Language="C#" Value="public override System.Data.IsolationLevel IsolationLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.IsolationLevel IsolationLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityTransaction.IsolationLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the isolation level of this <see cref="T:System.Data.EntityClient.EntityTransaction" />.</summary>
+        <value>An <see cref="T:System.Data.IsolationLevel" /> enumeration value that represents the isolation level of the underlying transaction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="public override void Rollback ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Rollback() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityTransaction.Rollback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Rolls back the underlying transaction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

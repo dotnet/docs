@@ -1,0 +1,81 @@
+<Type Name="WorkflowCommitWorkBatchService" FullName="System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService">
+  <TypeSignature Language="C#" Value="public abstract class WorkflowCommitWorkBatchService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowCommitWorkBatchService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Hosting.WorkflowRuntimeService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows custom logic for the commitment of work batches.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ When a work batch is committed the runtime calls into the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService> and gives it a delegate to call to do the actual committing of the work batch. The runtime still has the primary responsibility of committing the work batch but allows the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService> to insert itself in the process for customization around the commit process.  
+  
+ This process allows custom error handling logic. If the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService> owns the transaction, which is the case when the <xref:System.Transactions.Transaction.Current%2A?displayProperty=fullName> property returns `null` therefore necessitating the need to create a new ambient transaction, it is allowed to call the delegate more than once, creating a new transaction for each call. The most common case for this for example is to handle intermittent network problems or SQL cluster failovers. If the call to the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback> throws an exception <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService> can catch this exception, start a new transaction and call the delegate again. This gives a level of resilience to workflow instance execution that otherwise would cause workflows to terminate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a class that inherits from <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService>.  
+  
+ [!code-csharp[WF_Samples#0](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#0)]
+ [!code-vb[WF_Samples#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowCommitWorkBatchService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitWorkBatch">
+      <MemberSignature Language="C#" Value="protected virtual void CommitWorkBatch (System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback commitWorkBatchCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CommitWorkBatch(class System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService/CommitWorkBatchCallback commitWorkBatchCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatch(System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commitWorkBatchCallback" Type="System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService+CommitWorkBatchCallback" />
+      </Parameters>
+      <Docs>
+        <param name="commitWorkBatchCallback">The <see cref="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback" /> delegate to call to commit the work batch.</param>
+        <summary>Called to commit the work batch.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

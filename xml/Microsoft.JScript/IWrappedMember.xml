@@ -1,0 +1,49 @@
+<Type Name="IWrappedMember" FullName="Microsoft.JScript.IWrappedMember">
+  <TypeSignature Language="C#" Value="public interface IWrappedMember" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWrappedMember" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IWrappedMember" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods for accessing the object that a member is defined on.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetWrappedObject">
+      <MemberSignature Language="C#" Value="public object GetWrappedObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetWrappedObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IWrappedMember.GetWrappedObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, returns the object that a member is defined on.</summary>
+        <returns>The object that a member is defined on.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each wrapped object contains the information for one member (field, property, or method), together with a copy of the instantiated object that the member is defined on. This enables other objects that do not contain the member to store it and then return its value as if it were their own.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

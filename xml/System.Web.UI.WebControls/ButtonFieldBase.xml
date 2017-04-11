@@ -1,0 +1,273 @@
+<Type Name="ButtonFieldBase" FullName="System.Web.UI.WebControls.ButtonFieldBase">
+  <TypeSignature Language="C#" Value="public abstract class ButtonFieldBase : System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ButtonFieldBase extends System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonFieldBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataControlField</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the abstract base class for button fields, such as the <see cref="T:System.Web.UI.WebControls.ButtonField" /> or <see cref="T:System.Web.UI.WebControls.CommandField" /> class. The <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class provides the methods and properties that are common to all button fields.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase> class is the abstract base class for button fields and contains the methods and properties that are common to all button fields. Because this class is abstract, you cannot create an instance of it directly. Instead, you must create an instance of a non-abstract class that inherits from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class, such as the <xref:System.Web.UI.WebControls.ButtonField> or <xref:System.Web.UI.WebControls.CommandField> class.  
+  
+ An object that is derived from the  <xref:System.Web.UI.WebControls.ButtonFieldBase> is used by data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView> controls) to display one or more buttons for each record that is displayed. A button field is displayed differently depending on the data-bound control in which it is used. For example, the <xref:System.Web.UI.WebControls.GridView> control displays a button field as a column, whereas the <xref:System.Web.UI.WebControls.DetailsView> control displays it as a row.  
+  
+ Clicking a button in a button field raises the command event of the parent data-bound control. You can provide a custom routine to perform when a button is clicked by providing an event handler for the command event.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.RowCommand> event, whereas the <xref:System.Web.UI.WebControls.DetailsView> control raises the <xref:System.Web.UI.WebControls.DetailsView.ItemCommand> event.  
+  
+ To specify the type of button to display, use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property. To show or hide the header section of a <xref:System.Web.UI.WebControls.ButtonFieldBase> object, set the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property.  
+  
+> [!NOTE]
+>  Some data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> control) can show or hide only the entire header section of the control. These data-bound controls do not support the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property for an individual button field. To show or hide the entire header section of a data-bound control (if available), use the `ShowHeader` property for the control.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class, you must override the following member: <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ButtonFieldBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonFieldBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.ButtonFieldBase> class is an abstract class, you cannot create a <xref:System.Web.UI.WebControls.ButtonFieldBase> object directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType ButtonType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType ButtonType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button type to display in the button field.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see langword="ButtonType.Link" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to specify which type of button is displayed in a button field. The following table lists the available button types.  
+  
+|Button type value|Displays as|  
+|-----------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A button control.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A button with an image.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A link.|  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property to specify that buttons are displayed in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseButtonType/CS/buttonfieldbasebuttontypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseButtonType/VB/buttonfieldbasebuttontypevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether validation is performed when a button in a <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> object is clicked.</summary>
+        <value>
+          <see langword="true" /> to perform validation when a button in a <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> is clicked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently of other validation groups on the page. Use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ButtonFieldBase> object causes validation when it posts back to the server.  
+  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property has an effect only when the value of the <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.ButtonFieldBase> posts back to the server. If you do not specify a value for the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property and the <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the <xref:System.Web.UI.WebControls.ButtonFieldBase> posts back to the server.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property to perform validation when the button is clicked in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyProperties">
+      <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newField" Type="System.Web.UI.WebControls.DataControlField" />
+      </Parameters>
+      <Docs>
+        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataControlField" /> to which to copy the properties of the current <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" />.</param>
+        <summary>Copies the properties of the current object that is derived from the <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> class to the specified <see cref="T:System.Web.UI.WebControls.DataControlField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current object that is derived from the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to the <xref:System.Web.UI.WebControls.DataControlField> object that is passed in the `newField` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Control developers should override the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method to copy any properties that are added to the custom control. When overriding the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" /> method for the base class so that the base class properties are copied.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHeader">
+      <MemberSignature Language="C#" Value="public override bool ShowHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the header section is displayed in a <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> object.</summary>
+        <value>
+          <see langword="true" /> to show the header section; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property to show or hide the header section of a <xref:System.Web.UI.WebControls.ButtonFieldBase> object. To show the header section, set the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property to `true`.  
+  
+> [!NOTE]
+>  Some data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> control) can show or hide only the entire header section of the control. These data-bound controls do not support the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property for an individual button field. To show or hide the entire header section of a data-bound control (if available), use the `ShowHeader` property for the control.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader%2A> property to display the header section of a <xref:System.Web.UI.WebControls.ButtonField> object in a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseShowHeader#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/CS/buttonfieldbaseshowheadercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseShowHeader#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseShowHeader/VB/buttonfieldbaseshowheadervb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the group of validation controls to validate when a button in a <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> object is clicked.</summary>
+        <value>The name of the validation group to validate when a button in a <see cref="T:System.Web.UI.WebControls.ButtonFieldBase" /> is clicked. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to specify the validation group to validate when a button in a <xref:System.Web.UI.WebControls.ButtonFieldBase> object is clicked. Only the validation controls in the specified validation group are validated.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation%2A> property must be set to `true` for the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to have an effect.  
+  
+ For more information on validation groups, see <xref:System.Web.UI.WebControls.BaseValidator.ValidationGroup%2A?displayProperty=fullName>.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup%2A> property to specify that only a certain group of validation controls are validated when a button is clicked in the <xref:System.Web.UI.WebControls.ButtonField> object of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonFieldBaseCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/CS/buttonfieldbasecausesvalidationcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonFieldBaseCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonFieldBaseCausesValidation/VB/buttonfieldbasecausesvalidationvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

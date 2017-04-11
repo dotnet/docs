@@ -1,0 +1,18 @@
+<Type Name="PrincipalException" FullName="System.DirectoryServices.AccountManagement.PrincipalException">
+  <TypeSignature Language="C#" Value="public abstract class PrincipalException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit PrincipalException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalException" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The base class of exceptions thrown by <see cref="N:System.DirectoryServices.AccountManagement" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

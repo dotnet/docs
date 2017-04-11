@@ -1,0 +1,150 @@
+<Type Name="CodeDomLocalizationProvider" FullName="System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider">
+  <TypeSignature Language="C#" Value="public sealed class CodeDomLocalizationProvider : IDisposable, System.ComponentModel.Design.Serialization.IDesignerSerializationProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeDomLocalizationProvider extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationProvider, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.Serialization.IDesignerSerializationProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides CodeDOM resource serialization services. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> class is a serialization provider that provides a localization feature. It supports serializing to resources through <xref:System.ComponentModel.Design.IResourceService>, and it adds two properties to the root component: `Language` and `Localizable`. If `Localizable` is set to `true`, this provider changes the way that component properties are generated and routes their values to a resource file. Two localization models are supported.  
+  
+ You can control the cultures that are offered and the style of localization with constructor parameters.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDomLocalizationProvider (IServiceProvider provider, System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider, valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="model" Type="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An <see cref="T:System.IServiceProvider" /> used by the localization provider to add its extender properties.</param>
+        <param name="model">A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" /> value indicating the localization model to be used by the CodeDOM resource adapter</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.%23ctor%2A> constructor creates a new adapter and attaches it to the serialization manager. This adds itself as a serializer for resources into the serialization manager, and, if not already added, adds itself as an extender provider to the root component.  
+  
+ If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDomLocalizationProvider (IServiceProvider provider, System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model, System.Globalization.CultureInfo[] supportedCultures);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider, valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model, class System.Globalization.CultureInfo[] supportedCultures) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel,System.Globalization.CultureInfo[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="model" Type="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
+        <Parameter Name="supportedCultures" Type="System.Globalization.CultureInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An <see cref="T:System.IServiceProvider" /> used by the localization provider to add its extender properties.</param>
+        <param name="model">A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" /> value indicating the localization model to be used by the CodeDOM resource adapter</param>
+        <param name="supportedCultures">An array of cultures that this resource adapter should support.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.%23ctor%2A> constructor creates a new adapter and attaches it to the serialization manager. This adds itself as a serializer for resources into the serialization manager, and, if not already added, adds itself as an extender provider to the root component.  
+  
+ If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
+  
+ If `supportedCultures` is not provided, the default is all cultures that are currently installed on the computer. If an array of cultures is provided, and it includes cultures that are not installed on the computer, those cultures are not available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer">
+      <MemberSignature Language="C#" Value="object IDesignerSerializationProvider.GetSerializer (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object currentSerializer, Type objectType, Type serializerType);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object currentSerializer, class System.Type objectType, class System.Type serializerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.System#ComponentModel#Design#Serialization#IDesignerSerializationProvider#GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="currentSerializer" Type="System.Object" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="serializerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="manager">The serialization manager requesting the serializer.</param>
+        <param name="currentSerializer">An instance of the current serializer of the specified type. This can be <see langword="null" /> if no serializer of the specified type exists.</param>
+        <param name="objectType">The data type of the object to serialize.</param>
+        <param name="serializerType">The data type of the serializer to create.</param>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Type,System.Type)" />.</summary>
+        <returns>An instance of a serializer of the type requested, or <see langword="null" /> if the request cannot be satisfied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> instance is cast to an <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

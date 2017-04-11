@@ -1,0 +1,108 @@
+<Type Name="HtmlTable+HtmlTableRowControlCollection" FullName="System.Web.UI.HtmlControls.HtmlTable+HtmlTableRowControlCollection">
+  <TypeSignature Language="C#" Value="protected class HtmlTable.HtmlTableRowControlCollection : System.Web.UI.ControlCollection" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit HtmlTable/HtmlTableRowControlCollection extends System.Web.UI.ControlCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> objects that are the rows of an <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> class represents a collection of <xref:System.Web.UI.HtmlControls.HtmlTableRow> objects for an <xref:System.Web.UI.HtmlControls.HtmlTable> control. Controls can be added at the end of the collection with the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method, or at a specified index location in the collection with the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt%2A> method. Only controls of type <xref:System.Web.UI.HtmlControls.HtmlTableRow> can be added to the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> that overrides the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method so that when rows are added to a table, they are always added at the beginning of the table's row collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollection.cs#2)]
+ [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollection.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control; otherwise, an <xref:System.ArgumentException> exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection> collection that overrides the <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method so that when rows are added to a table, they are always added at the beginning of the table's row collection. Notice how the custom <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.Add%2A> method calls the base class's <xref:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt%2A> method with the `index` parameter equal to 0.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollectionvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/CS/custom_htmltable_htmltablerowcontrolcollection.cs#2)]
+ [!code-vb[CustomHtmlTable.HtmlTableRowControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTable.HtmlTableRowControlCollection/VB/custom_htmltable_htmltablerowcontrolcollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.HtmlTableRowControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="index">The location in the array at which to add the child control.</param>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the collection. The new control is added to the array at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added control can only be an <xref:System.Web.UI.HtmlControls.HtmlTableRow> control; otherwise, an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The added control must be of type <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

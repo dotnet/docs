@@ -1,0 +1,107 @@
+<Type Name="ProcessWindowStyle" FullName="System.Diagnostics.ProcessWindowStyle">
+  <TypeSignature Language="C#" Value="public enum ProcessWindowStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessWindowStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessWindowStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specified how a new window should appear when the system starts a process.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessWindowStyle Hidden = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ProcessWindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hidden window style. A window can be either visible or hidden. The system displays a hidden window by not drawing it. If a window is hidden, it is effectively disabled. A hidden window can process messages from the system or from other windows, but it cannot process input from the user or display output. Frequently, an application may keep a new window hidden while it customizes the window's appearance, and then make the window style <see langword="Normal" />. To use <see cref="F:System.Diagnostics.ProcessWindowStyle.Hidden" />, the <see cref="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" /> property must be <see langword="false" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximized">
+      <MemberSignature Language="C#" Value="Maximized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessWindowStyle Maximized = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Maximized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ProcessWindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The maximized window style. By default, the system enlarges a maximized window so that it fills the screen or, in the case of a child window, the parent window's client area. If the window has a title bar, the system automatically moves it to the top of the screen or to the top of the parent window's client area. Also, the system disables the window's sizing border and the window-positioning capability of the title bar so that the user cannot move the window by dragging the title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimized">
+      <MemberSignature Language="C#" Value="Minimized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessWindowStyle Minimized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Minimized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ProcessWindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The minimized window style. By default, the system reduces a minimized window to the size of its taskbar button and moves the minimized window to the taskbar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.ProcessWindowStyle Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.ProcessWindowStyle.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.ProcessWindowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The normal, visible window style. The system displays a window with <see langword="Normal" /> style on the screen, in a default location. If a window is visible, the user can supply input to the window and view the window's output. Frequently, an application may initialize a new window to the <see langword="Hidden" /> style while it customizes the window's appearance, and then make the window style <see langword="Normal" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

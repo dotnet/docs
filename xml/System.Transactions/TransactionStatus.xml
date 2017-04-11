@@ -1,0 +1,114 @@
+<Type Name="TransactionStatus" FullName="System.Transactions.TransactionStatus">
+  <TypeSignature Language="C#" Value="public enum TransactionStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactionStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the current status of a distributed transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of this enumeration are used to indicate the current status of a transaction.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionStatus Aborted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction has been rolled back.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionStatus Active = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The status of the transaction is unknown, because some participants must still be polled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Committed">
+      <MemberSignature Language="C#" Value="Committed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionStatus Committed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.Committed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transaction has been committed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InDoubt">
+      <MemberSignature Language="C#" Value="InDoubt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionStatus InDoubt = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionStatus.InDoubt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The status of the transaction is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

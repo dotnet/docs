@@ -1,0 +1,522 @@
+<Type Name="TextFormatFlags" FullName="System.Windows.Forms.TextFormatFlags">
+  <TypeSignature Language="C#" Value="public enum TextFormatFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextFormatFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextFormatFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the display and layout information for text strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TextFormatFlags> enumeration is used by the <xref:System.Windows.Forms.TextRenderer> when drawing and measuring text. The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the ExpandTabs flag.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TextFormatFlags> enumeration. To run this example, paste the following code into a Windows Form. Call `RenderText6` from the form's <xref:System.Windows.Forms.Control.Paint> event handler, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/CS/Form1.cs#7)]
+ [!code-vb[System.Windows.Forms.TextRendererExamples#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TextRendererExamples/VB/Form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Bottom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aligns the text on the bottom of the bounding rectangle. Applied only when the text is a single line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies the default formatting, which is left-aligned.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEllipsis">
+      <MemberSignature Language="C#" Value="EndEllipsis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags EndEllipsis = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Removes the end of trimmed lines, and replaces them with an ellipsis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandTabs">
+      <MemberSignature Language="C#" Value="ExpandTabs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ExpandTabs = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Expands tab characters. The default number of characters per tab is eight. The <see cref="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />, <see cref="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />, and <see cref="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" /> values cannot be used with <see cref="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalLeading">
+      <MemberSignature Language="C#" Value="ExternalLeading" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ExternalLeading = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExternalLeading" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Includes the font external leading in line height. Typically, external leading is not included in the height of a line of text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphOverhangPadding">
+      <MemberSignature Language="C#" Value="GlyphOverhangPadding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags GlyphOverhangPadding = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.GlyphOverhangPadding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds padding to the bounding rectangle to accommodate overhanging glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HidePrefix">
+      <MemberSignature Language="C#" Value="HidePrefix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags HidePrefix = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HidePrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Windows 2000 and Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Ignores the ampersand (&) prefix character in the text. The letter that follows will not be underlined, but other mnemonic-prefix characters are still processed. For example, an input string of "A&bc&&d" with HidePrefix applied would result in output of "Abc&d".  
+  
+ Compare with NoPrefix and PrefixOnly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalCenter">
+      <MemberSignature Language="C#" Value="HorizontalCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags HorizontalCenter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HorizontalCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Centers the text horizontally within the bounding rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Internal">
+      <MemberSignature Language="C#" Value="Internal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Internal = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Internal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Uses the system font to calculate text metrics.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Left = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aligns the text on the left side of the clipping area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftAndRightPadding">
+      <MemberSignature Language="C#" Value="LeftAndRightPadding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags LeftAndRightPadding = int32(536870912)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.LeftAndRightPadding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds padding to both sides of the bounding rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyString">
+      <MemberSignature Language="C#" Value="ModifyString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ModifyString = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ModifyString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Has no effect on the drawn text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoClipping">
+      <MemberSignature Language="C#" Value="NoClipping" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoClipping = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoClipping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allows the overhanging parts of glyphs and unwrapped text reaching outside the formatting rectangle to show.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFullWidthCharacterBreak">
+      <MemberSignature Language="C#" Value="NoFullWidthCharacterBreak" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoFullWidthCharacterBreak = int32(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoFullWidthCharacterBreak" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Windows 98, Windows Me, Windows 2000, or Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Prevents a line break at a double-wide character string, so that the line-breaking rule is equivalent to single-wide character strings. For example, NoFullWidthCharacterBreak increases the readability of icon labels in Korean windows. This value has no effect unless WordBreak is also specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPadding">
+      <MemberSignature Language="C#" Value="NoPadding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoPadding = int32(268435456)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPadding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Does not add padding to the bounding rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPrefix">
+      <MemberSignature Language="C#" Value="NoPrefix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoPrefix = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Turns off processing of prefix characters. Typically, the ampersand (&amp;) mnemonic-prefix character is interpreted as a directive to underscore the character that follows, and the double-ampersand (&amp;&amp;) mnemonic-prefix characters as a directive to print a single ampersand. By specifying <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />, this processing is turned off. For example, an input string of "A&amp;bc&amp;&amp;d" with <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" /> applied would result in output of "A&amp;bc&amp;&amp;d".</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compare with HidePrefix and PrefixOnly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathEllipsis">
+      <MemberSignature Language="C#" Value="PathEllipsis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PathEllipsis = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Removes the center of trimmed lines and replaces it with an ellipsis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrefixOnly">
+      <MemberSignature Language="C#" Value="PrefixOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PrefixOnly = int32(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PrefixOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Windows 2000 or Windows XP only:</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Draws only an underline at the position of the character following the ampersand (&) prefix character. Does not draw any other characters in the string. For example, an input string of "A&bc&&d" would result in output of " _   ".  
+  
+ Compare with HidePrefix and NoPrefix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveGraphicsClipping">
+      <MemberSignature Language="C#" Value="PreserveGraphicsClipping" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PreserveGraphicsClipping = int32(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsClipping" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Preserves the clipping specified by a <see cref="T:System.Drawing.Graphics" /> object. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveGraphicsTranslateTransform">
+      <MemberSignature Language="C#" Value="PreserveGraphicsTranslateTransform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PreserveGraphicsTranslateTransform = int32(33554432)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsTranslateTransform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Preserves the transformation specified by a <see cref="T:System.Drawing.Graphics" />. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Right = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aligns the text on the right side of the clipping area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="RightToLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags RightToLeft = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.RightToLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays the text from right to left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleLine">
+      <MemberSignature Language="C#" Value="SingleLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags SingleLine = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.SingleLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays the text in a single line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBoxControl">
+      <MemberSignature Language="C#" Value="TextBoxControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags TextBoxControl = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.TextBoxControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the text should be formatted for display on a <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Top = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aligns the text on the top of the bounding rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalCenter">
+      <MemberSignature Language="C#" Value="VerticalCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags VerticalCenter = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.VerticalCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Centers the text vertically, within the bounding rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WordBreak">
+      <MemberSignature Language="C#" Value="WordBreak" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags WordBreak = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordBreak" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Breaks the text at the end of a word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WordEllipsis">
+      <MemberSignature Language="C#" Value="WordEllipsis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags WordEllipsis = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Trims the line to the nearest word and an ellipsis is placed at the end of a trimmed line.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

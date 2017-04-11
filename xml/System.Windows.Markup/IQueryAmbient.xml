@@ -1,0 +1,65 @@
+<Type Name="IQueryAmbient" FullName="System.Windows.Markup.IQueryAmbient">
+  <TypeSignature Language="C#" Value="public interface IQueryAmbient" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IQueryAmbient" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IQueryAmbient" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Queries for whether a specified property should be treated as ambient in the current scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of an ambient property mechanism is to improve parsing time by informing a XAML object writer to avoid instantiating certain objects, in cases where it is known that the objects are for values that are temporary and not useful for a typical run time application. Normally, XAML lookups or XAML processing of a property get accessor would need to instantiate such objects to fill the object graph representation with ready-to-use values.  
+  
+ <xref:System.Windows.Markup.IQueryAmbient> has one member: <xref:System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable%2A>.  
+  
+ <xref:System.Windows.Markup.IQueryAmbient> is a parallel mechanism to <xref:System.Windows.Markup.AmbientAttribute>. <xref:System.Windows.Markup.IQueryAmbient> is the specialized mechanism that avoids using reflection to determine information, and can also act situationally (a given object could choose to report `true` or `false` for <xref:System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable%2A>), whereas the attribute is essentially static analysis). <xref:System.Windows.Markup.AmbientAttribute> is the general mechanism that can be used by XAML object writers and that typically correlates to the dedicated XAML type system properties <xref:System.Xaml.XamlMember.IsAmbient%2A> and <xref:System.Xaml.XamlType.IsAmbient%2A>.  
+  
+## WPF Implementations of IQueryAmbient  
+ In WPF, <xref:System.Windows.Markup.IQueryAmbient> is used for the resource dictionary lookup process. The lookup process gets successive `Resources` values throughout the WPF logical tree, working towards the root of the resource scope until either a key is found or the key is determined to not exist in scope. Normally, doing so would require instantiating a <xref:System.Windows.ResourceDictionary> each time to receive the results. Declaring the contents of `Resources` as ambient so long as `Resources` exists optimizes this lookup process. In WPF, this interface is implemented in the following cases:  
+  
+-   <xref:System.Windows.FrameworkElement> implements <xref:System.Windows.FrameworkElement.System%23Windows%23Markup%23IQueryAmbient%23IsAmbientPropertyAvailable%2A> to return `true` for all property names if it contains an existing <xref:System.Windows.ResourceDictionary> for <xref:System.Windows.FrameworkElement.Resources%2A>, and so long as the query is not for the <xref:System.Windows.FrameworkElement.Resources%2A> property itself.  
+  
+-   <xref:System.Windows.Style> implements the same pattern for its <xref:System.Windows.Style.Resources%2A>.  
+  
+-   <xref:System.Windows.Application> implements the same pattern for its <xref:System.Windows.Application.Resources%2A>.  
+  
+-   <xref:System.Windows.FrameworkContentElement> implements the same pattern for its <xref:System.Windows.FrameworkContentElement.Resources%2A>.  
+  
+-   <xref:System.Windows.FrameworkTemplate> implements the same pattern for its <xref:System.Windows.FrameworkTemplate.Resources%2A>. It also reports <xref:System.Windows.FrameworkTemplate.Template%2A> content as ambient but returns `false` if querying for <xref:System.Windows.FrameworkTemplate.Template%2A> itself.  
+  
+-   In each of these cases, the relevant `Resources` property (and <xref:System.Windows.FrameworkTemplate.Template%2A>) are attributed as <xref:System.Windows.Markup.AmbientAttribute>. The typical usage is to query for the properties that are NOT the <xref:System.Windows.Markup.AmbientAttribute> attributed properties of the object that defines the interface. In other words, so long as a resource dictionary exists in order to provide the potential run time value when the object graph is created, any other property besides the resource dictionary's property container can be treated as ambient.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsAmbientPropertyAvailable">
+      <MemberSignature Language="C#" Value="public bool IsAmbientPropertyAvailable (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAmbientPropertyAvailable(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to check for ambience state.</param>
+        <summary>Queries for whether a specified named property can be considered ambient in the current scope.</summary>
+        <returns>
+          <see langword="true" /> if the requested property can be considered ambient; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

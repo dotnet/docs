@@ -1,0 +1,449 @@
+<Type Name="CustomLineCap" FullName="System.Drawing.Drawing2D.CustomLineCap">
+  <TypeSignature Language="C#" Value="public class CustomLineCap : MarshalByRefObject, ICloneable, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomLineCap extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CustomLineCap" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Encapsulates a custom user-defined line cap.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line caps are used at the beginnings and ends of lines or curves drawn by GDI+ <xref:System.Drawing.Pen> objects. GDI+ supports several predefined cap styles, and also allows users to define their own cap styles. This class is used to create custom cap styles.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap> class. To run this example paste, the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fillPath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="strokePath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+      </Parameters>
+      <Docs>
+        <param name="fillPath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the fill for the custom cap.</param>
+        <param name="strokePath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the outline of the custom cap.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class with the specified outline and fill.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+  
+ The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.%23ctor%2A> constructor. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath, System.Drawing.Drawing2D.LineCap baseCap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath, valuetype System.Drawing.Drawing2D.LineCap baseCap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fillPath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="strokePath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="baseCap" Type="System.Drawing.Drawing2D.LineCap" />
+      </Parameters>
+      <Docs>
+        <param name="fillPath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the fill for the custom cap.</param>
+        <param name="strokePath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the outline of the custom cap.</param>
+        <param name="baseCap">The line cap from which to create the custom cap.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class from the specified existing <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration with the specified outline and fill.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+  
+ The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath, System.Drawing.Drawing2D.LineCap baseCap, float baseInset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath, valuetype System.Drawing.Drawing2D.LineCap baseCap, float32 baseInset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fillPath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="strokePath" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="baseCap" Type="System.Drawing.Drawing2D.LineCap" />
+        <Parameter Name="baseInset" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="fillPath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the fill for the custom cap.</param>
+        <param name="strokePath">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object that defines the outline of the custom cap.</param>
+        <param name="baseCap">The line cap from which to create the custom cap.</param>
+        <param name="baseInset">The distance between the cap and the line.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class from the specified existing <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration with the specified outline, fill, and inset.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Drawing2D.CustomLineCap> uses a fill mode of "winding" regardless of the fill mode specified for the operation.  
+  
+ The `fillPath` and `strokePath` parameters cannot be used at the same time. One parameter must be passed a null value. If neither parameter is passed a null value, `fillPath` will be ignored. If `strokePath` is `null`, `fillPath` should intercept the negative y-axis.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseCap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap BaseCap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap BaseCap" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.BaseCap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration on which this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> is based.</summary>
+        <value>The <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration on which this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> is based.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseInset">
+      <MemberSignature Language="C#" Value="public float BaseInset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BaseInset" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.BaseInset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the distance between the cap and the line.</summary>
+        <value>The distance between the beginning of the cap and the end of the line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" />.</summary>
+        <returns>The <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> this method creates, cast as an object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.Paint> event object. The code performs the following actions:  
+  
+-   Creates a custom line cap by using the <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.CustomLineCap> object, `firstCap`,using the <xref:System.Drawing.Drawing2D.GraphicsPath> object just created.  
+  
+-   Creates a clone of `firstCap` by using the <xref:System.Drawing.Drawing2D.CustomLineCap.Clone%2A> method.  
+  
+-   Sets up the <xref:System.Drawing.Pen.CustomStartCap%2A> and <xref:System.Drawing.Pen.CustomEndCap%2A> properties of the <xref:System.Drawing.Pen> object, and uses that pen to draw a line and the custom caps to the screen.  
+  
+```vb  
+Public Sub CloneExample(e As PaintEventArgs)  
+ Dim points As Point() = New Point(- 5, - 5) New Point(0, 0) _  
+ New Point(5, - 5)  
+ Dim capPath As New GraphicsPath()  
+ ' Create a Path and add two lines to it,  
+ ' forming a custom line cap.  
+ capPath.AddLines(points)  
+ ' Create a CustomLineCap object.  
+ Dim firstCap As New CustomLineCap(Nothing, capPath)  
+ ' Create a copy of firstCap.  
+ Dim secondCap As CustomLineCap = CType(firstCap.Clone(), _  
+ CustomLineCap)  
+ ' Create a Pen object.  
+ Dim pen As New Pen(Color.Black, 3F)  
+ 'Set up the line.  
+ Dim point1 As New Point(20, 20)  
+ Dim point2 As New Point(100, 100)  
+ ' Set up the caps.  
+ pen.CustomStartCap = firstCap  
+ pen.CustomEndCap = secondCap  
+ ' Draw the line and caps to the screen.  
+ e.Graphics.DrawLine(pen, point1, point2)  
+ End Sub  
+```  
+  
+```csharp  
+private void CloneExample(PaintEventArgs e)  
+ {  
+ // Create a Path and add two lines to it,  
+ // forming a custom line cap.  
+ Point[] points =  
+ {  
+ new Point(-5, -5),  
+ new Point(0, 0),  
+ new Point(5, -5)  
+ };  
+ GraphicsPath capPath = new GraphicsPath();  
+ capPath.AddLines(points);  
+ // Create a CustomLineCap object.  
+ CustomLineCap firstCap = new CustomLineCap(null, capPath);  
+ // Create a copy of firstCap.  
+ CustomLineCap secondCap = (CustomLineCap)firstCap.Clone();  
+ // Create a Pen object.  
+ Pen pen = new Pen(Color.Black, 3.0f);  
+ // Set up the line.  
+ Point point1 = new Point(20, 20);  
+ Point point2 = new Point(100, 100);  
+ // Set up the caps.  
+ pen.CustomStartCap = firstCap;  
+ pen.CustomEndCap = secondCap;  
+ // Draw the line and caps to the screen.  
+ e.Graphics.DrawLine(pen, point1, point2);  
+ }  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.IDisposable.Dispose%2A> allows the resources used by this <xref:System.Drawing.Drawing2D.CustomLineCap> object to be reallocated for other purposes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~CustomLineCap ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> to attempt to free resources and perform other cleanup operations before the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStrokeCaps">
+      <MemberSignature Language="C#" Value="public void GetStrokeCaps (out System.Drawing.Drawing2D.LineCap startCap, out System.Drawing.Drawing2D.LineCap endCap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetStrokeCaps(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startCap" Type="System.Drawing.Drawing2D.LineCap&amp;" RefType="out" />
+        <Parameter Name="endCap" Type="System.Drawing.Drawing2D.LineCap&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="startCap">The <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration used at the beginning of a line within this cap.</param>
+        <param name="endCap">The <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration used at the end of a line within this cap.</param>
+        <summary>Gets the caps used to start and end lines that make up this custom cap.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStrokeCaps">
+      <MemberSignature Language="C#" Value="public void SetStrokeCaps (System.Drawing.Drawing2D.LineCap startCap, System.Drawing.Drawing2D.LineCap endCap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStrokeCaps(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startCap" Type="System.Drawing.Drawing2D.LineCap" />
+        <Parameter Name="endCap" Type="System.Drawing.Drawing2D.LineCap" />
+      </Parameters>
+      <Docs>
+        <param name="startCap">The <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration used at the beginning of a line within this cap.</param>
+        <param name="endCap">The <see cref="T:System.Drawing.Drawing2D.LineCap" /> enumeration used at the end of a line within this cap.</param>
+        <summary>Sets the caps used to start and end lines that make up this custom cap.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps%2A> method. To run this example, paste the code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `DrawCaps` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.Misc3#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokeJoin">
+      <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineJoin StrokeJoin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineJoin StrokeJoin" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.StrokeJoin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Drawing.Drawing2D.LineJoin" /> enumeration that determines how lines that compose this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> object are joined.</summary>
+        <value>The <see cref="T:System.Drawing.Drawing2D.LineJoin" /> enumeration this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> object uses to join lines.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies a <xref:System.Drawing.Drawing2D.LineJoin> enumeration that is used to join lines and curves that make up the stroked path of this <xref:System.Drawing.Drawing2D.CustomLineCap> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthScale">
+      <MemberSignature Language="C#" Value="public float WidthScale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 WidthScale" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.WidthScale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount by which to scale this <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> Class object with respect to the width of the <see cref="T:System.Drawing.Pen" /> object.</summary>
+        <value>The amount by which to scale the cap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the multiple of the pen width by which to multiply the size of the custom cap. For example, if this property equals 1, the custom cap width is 10, the custom cap height is 5, and a line is drawn with a pen with a width of 3, then the cap is drawn 30 units wide and 15 units high. Setting this property to 3 causes the cap to be drawn 90 units wide and 45 units high.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

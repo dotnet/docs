@@ -1,0 +1,82 @@
+<Type Name="PeerScope" FullName="System.Net.PeerToPeer.Collaboration.PeerScope">
+  <TypeSignature Language="C#" Value="public enum PeerScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the current network scope of a peer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerScope All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies sign-in to the 'NearMe' scope and 'Internet' scope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Internet">
+      <MemberSignature Language="C#" Value="Internet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerScope Internet = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.Internet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies sign-in to the 'Internet' scope. This scope facilitates connections with all contacts in the Contact Manager.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NearMe">
+      <MemberSignature Language="C#" Value="NearMe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerScope NearMe = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.NearMe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies sign-in to the 'NearMe' scope. This scope facilitates connections to all peers on the same subnet via Peer Collaboration Methods.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.PeerScope None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.PeerScope.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a peer not sign-in to a Peer Collaboration scope. Passing this value to the <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn(System.Net.PeerToPeer.Collaboration.PeerScope)" /> method generates no result.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

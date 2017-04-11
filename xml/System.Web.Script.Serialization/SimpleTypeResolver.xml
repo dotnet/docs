@@ -1,0 +1,106 @@
+<Type Name="SimpleTypeResolver" FullName="System.Web.Script.Serialization.SimpleTypeResolver">
+  <TypeSignature Language="C#" Value="public class SimpleTypeResolver : System.Web.Script.Serialization.JavaScriptTypeResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleTypeResolver extends System.Web.Script.Serialization.JavaScriptTypeResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.SimpleTypeResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Script.Serialization.JavaScriptTypeResolver</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type resolver for managed types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type resolver can be used with the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class to include in the serialized JavaScript Object Notation (JSON) string the assembly-qualified name of any managed type that requires custom type metadata.  
+  
+ The <xref:System.Web.Script.Serialization.SimpleTypeResolver> class enables you to serialize managed types as JSON while retaining the managed type definition for custom types.  
+  
+ To create an instance of the <xref:System.Web.Script.Serialization.JavaScriptSerializer> class that uses a type resolver, you must use the <xref:System.Web.Script.Serialization.JavaScriptSerializer.%23ctor%28System.Web.Script.Serialization.JavaScriptTypeResolver%29> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.Script.Serialization.SimpleTypeResolver> class and shows the resulting serialized strings by using different type resolvers.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Script.Serialization.TypeResolver#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization.TypeResolver/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Script.Serialization.TypeResolver#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization.TypeResolver/VB/Default.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SimpleTypeResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.SimpleTypeResolver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.SimpleTypeResolver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveType">
+      <MemberSignature Language="C#" Value="public override Type ResolveType (string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type ResolveType(string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.SimpleTypeResolver.ResolveType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The assembly-qualified name of the managed type.</param>
+        <summary>Returns the <see cref="T:System.Type" /> of the specified name.</summary>
+        <returns>A <see cref="T:System.Type" /> object that has the specified name, if found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Script.Serialization.SimpleTypeResolver.ResolveType%2A> method calls the <xref:System.Type.GetType%2A?displayProperty=fullName> method to resolve the type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveTypeId">
+      <MemberSignature Language="C#" Value="public override string ResolveTypeId (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ResolveTypeId(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.SimpleTypeResolver.ResolveTypeId(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to be resolved.</param>
+        <summary>Returns the assembly-qualified name of the specified <see cref="T:System.Type" />.</summary>
+        <returns>A string that contains the assembly-qualified name of the specified type.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

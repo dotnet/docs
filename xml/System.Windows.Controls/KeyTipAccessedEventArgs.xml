@@ -1,0 +1,82 @@
+<Type Name="KeyTipAccessedEventArgs" FullName="System.Windows.Controls.KeyTipAccessedEventArgs">
+  <TypeSignature Language="C#" Value="public class KeyTipAccessedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyTipAccessedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipAccessedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.KeyTipService.KeyTipAccessed" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyTipAccessedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipAccessedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.KeyTipAccessedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.KeyTipAccessedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The event handler to invoke.</param>
+        <param name="genericTarget">The target on which the handler is invoked.</param>
+        <summary>Invokes the specified event handler on the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler to a <xref:System.Windows.Controls.KeyTipAccessedEventHandler> instance and invokes it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetKeyTipScope">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject TargetKeyTipScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject TargetKeyTipScope" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.KeyTipAccessedEventArgs.TargetKeyTipScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the next KeyTip scope after routing this event.</summary>
+        <value>The next KeyTip scope after routing this event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

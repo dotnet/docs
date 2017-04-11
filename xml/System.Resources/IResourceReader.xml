@@ -1,0 +1,101 @@
+<Type Name="IResourceReader" FullName="System.Resources.IResourceReader">
+  <TypeSignature Language="C#" Value="public interface IResourceReader : IDisposable, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceReader implements class System.Collections.IEnumerable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Resources.IResourceReader" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the base functionality for reading data from resource files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Resource readers are used to read a stream of data from resource files in a particular format. Implement this interface when you want to control the way in which a resource file is read (for example, if the resource file was written by using a customized <xref:System.Resources.ResourceWriter>) or if you are using a non-standard format or file type for storing resources. Otherwise, use the default <xref:System.Resources.ResourceReader> class, which reads resource information from binary .resources files, or the <xref:System.Resources.ResXResourceReader> class, which reads resource information from XML resource (.resx) files.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.IResourceReader.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the resource reader after releasing any resources associated with it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to close a network connection or a file, if necessary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.IResourceReader.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a dictionary enumerator of the resources for this reader.</summary>
+        <returns>A dictionary enumerator for the resources for this reader.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Resources.IResourceReader> inherits the <xref:System.Collections.IEnumerable> interface, it must also provide an implementation of the <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=fullName> method, which returns an <xref:System.Collections.IEnumerator> object that can be used to enumerate a collection. Typically, <xref:System.Collections.IEnumerable.GetEnumerator%2A?displayProperty=fullName> is implemented as an explicit interface implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

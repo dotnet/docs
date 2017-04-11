@@ -1,0 +1,162 @@
+<Type Name="GeneratedSequenceBase&lt;T&gt;" FullName="Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class GeneratedSequenceBase&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IEnumerator&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit GeneratedSequenceBase`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IEnumerator`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Collections.IEnumerator" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerator&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneratedSequenceBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckClose">
+      <MemberSignature Language="C#" Value="public abstract bool CheckClose { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckClose" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.CheckClose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public abstract void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateNext">
+      <MemberSignature Language="C#" Value="public abstract int GenerateNext (ref System.Collections.Generic.IEnumerable&lt;T&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GenerateNext(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.GenerateNext(System.Collections.Generic.IEnumerable{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.Collections.Generic.IEnumerable&lt;T&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFreshEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;T&gt; GetFreshEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetFreshEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.GetFreshEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastGenerated">
+      <MemberSignature Language="C#" Value="public abstract T LastGenerated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T LastGenerated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.LastGenerated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

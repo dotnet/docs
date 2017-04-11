@@ -1,0 +1,217 @@
+<Type Name="LoggerException" FullName="Microsoft.Build.Framework.LoggerException">
+  <TypeSignature Language="C#" Value="public class LoggerException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LoggerException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.LoggerException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Allows a logger to force the build to stop in an explicit way.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be used by a logger to indicate to a host that it has received invalid parameters, or can no longer continue logging for some reason, and wants to stop in a controlled way.  
+  
+   
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoggerException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoggerException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class with the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected LoggerException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class with the values specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoggerException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current excpetion. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class with the values specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoggerException (string message, Exception innerException, string errorCode, string helpKeyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, string errorCode, string helpKeyword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.#ctor(System.String,System.Exception,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+        <Parameter Name="errorCode" Type="System.String" />
+        <Parameter Name="helpKeyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current excpetion. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <param name="errorCode">The error code associated with the exception's message.</param>
+        <param name="helpKeyword">The Help keyword for the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class with the values specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorCode">
+      <MemberSignature Language="C#" Value="public string ErrorCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.LoggerException.ErrorCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the error code associated with this exception's message.</summary>
+        <value>The error code associated with this exception's message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.LoggerException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with information about the exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpKeyword">
+      <MemberSignature Language="C#" Value="public string HelpKeyword { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.LoggerException.HelpKeyword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the F1-help keyword associated with this error.</summary>
+        <value>The F1-help keyword for the error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.LoggerException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

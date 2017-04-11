@@ -1,0 +1,221 @@
+<Type Name="TemplateBuilder" FullName="System.Web.UI.TemplateBuilder">
+  <TypeSignature Language="C#" Value="public class TemplateBuilder : System.Web.UI.ControlBuilder, System.Web.UI.ITemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateBuilder extends System.Web.UI.ControlBuilder implements class System.Web.UI.ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Supports the page parser in building a template and the child controls it contains.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use a custom <xref:System.Web.UI.TemplateBuilder> class for a control, create a custom <xref:System.Web.UI.ControlBuilder> for the control, and then return the custom <xref:System.Web.UI.TemplateBuilder> control from the <xref:System.Web.UI.ControlBuilder.GetChildControlType%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildObject">
+      <MemberSignature Language="C#" Value="public override object BuildObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object BuildObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.BuildObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Used during design time to build the template and its child controls.</summary>
+        <returns>A reference to the instance of the <see cref="T:System.Web.UI.TemplateBuilder" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseControl">
+      <MemberSignature Language="C#" Value="public override void CloseControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CloseControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.CloseControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called by the parser to inform the builder that the parsing of the control's opening and closing tags is complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public override void Init (System.Web.UI.TemplateParser parser, System.Web.UI.ControlBuilder parentBuilder, Type type, string tagName, string ID, System.Collections.IDictionary attribs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string ID, class System.Collections.IDictionary attribs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parser" Type="System.Web.UI.TemplateParser" />
+        <Parameter Name="parentBuilder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="tagName" Type="System.String" />
+        <Parameter Name="ID" Type="System.String" />
+        <Parameter Name="attribs" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="parser">The <see cref="T:System.Web.UI.TemplateParser" /> responsible for parsing the control.</param>
+        <param name="parentBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> responsible for building the control.</param>
+        <param name="type">The <see cref="T:System.Type" /> assigned to the control that the builder will create.</param>
+        <param name="tagName">The name of the tag to build. This allows the builder to support multiple tag types.</param>
+        <param name="ID">The <see cref="P:System.Web.UI.ControlBuilder.ID" /> assigned to the control.</param>
+        <param name="attribs">The <see cref="T:System.Collections.IDictionary" /> that holds all the specified tag attributes.</param>
+        <summary>Initializes the template builder when a Web request is made.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstantiateIn">
+      <MemberSignature Language="C#" Value="public virtual void InstantiateIn (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstantiateIn(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> to contain the instances of controls from the inline template.</param>
+        <summary>Defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to in design time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is required when implementing the <xref:System.Web.UI.ITemplate> interface. The <xref:System.Web.UI.TemplateBuilder.InstantiateIn%2A> method is used only in design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedsTagInnerText">
+      <MemberSignature Language="C#" Value="public override bool NeedsTagInnerText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NeedsTagInnerText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.NeedsTagInnerText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines if the control builder needs to get its inner text.</summary>
+        <returns>
+          <see langword="true" /> if the control builder needs to get its inner text. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method needs to be called when we are in design time. The <xref:System.Web.UI.TemplateBuilder.NeedsTagInnerText%2A> method returns the value of the <xref:System.Web.UI.ControlBuilder.InDesigner%2A> property of the base <xref:System.Web.UI.ControlBuilder> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTagInnerText">
+      <MemberSignature Language="C#" Value="public override void SetTagInnerText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetTagInnerText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.SetTagInnerText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The inner text of the template.</param>
+        <summary>Saves the inner text of the template tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.SetTagInnerText%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.SetTagInnerText%2A?displayProperty=fullName> method and sets the value of the <xref:System.Web.UI.TemplateBuilder.Text%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateBuilder.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text between the opening and closing tags of the template.</summary>
+        <value>The text that appears between the opening and closing tags of the template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateBuilder.Text%2A> property is used by the designer to specify or determine the text that appears between the opening and closing tags of the template.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

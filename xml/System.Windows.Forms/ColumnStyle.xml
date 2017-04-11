@@ -1,0 +1,146 @@
+<Type Name="ColumnStyle" FullName="System.Windows.Forms.ColumnStyle">
+  <TypeSignature Language="C#" Value="public class ColumnStyle : System.Windows.Forms.TableLayoutStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnStyle extends System.Windows.Forms.TableLayoutStyle" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.TableLayoutStyle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the look and feel of a column in a table layout.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnStyle> class represents the user interface (UI) characteristics of column in a <xref:System.Windows.Forms.TableLayoutPanel>. The styles for all the columns in such a table are collected in the <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A?displayProperty=fullName> property.  
+  
+ This simple class offers the <xref:System.Windows.Forms.ColumnStyle.Width%2A> and <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> properties for a column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to extract a <xref:System.Windows.Forms.ColumnStyle> from a <xref:System.Windows.Forms.TableLayoutColumnStyleCollection>.  
+  
+ This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> class.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#8)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes and instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class to its default state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property to <xref:System.Windows.Forms.SizeType> and the <xref:System.Windows.Forms.ColumnStyle.Width%2A> property to 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnStyle (System.Windows.Forms.SizeType sizeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sizeType" Type="System.Windows.Forms.SizeType" />
+      </Parameters>
+      <Docs>
+        <param name="sizeType">A <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> indicating how the column should be should be sized relative to its containing table.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class using the supplied <see cref="T:System.Windows.Forms.SizeType" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Windows.Forms.ColumnStyle.Width%2A> property to 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColumnStyle (System.Windows.Forms.SizeType sizeType, float width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.SizeType sizeType, float32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnStyle.#ctor(System.Windows.Forms.SizeType,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sizeType" Type="System.Windows.Forms.SizeType" />
+        <Parameter Name="width" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="sizeType">A <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> indicating how the column should be should be sized relative to its containing table.</param>
+        <param name="width">The preferred width, in pixels or percentage, depending on the <c>sizeType</c> parameter.</param>
+        <summary>Initializes and instance of the <see cref="T:System.Windows.Forms.ColumnStyle" /> class using the supplied <see cref="T:System.Windows.Forms.SizeType" /> and width values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exact meaning of the `width` parameter will vary depending on the `sizeType` parameter. For more information, see the <xref:System.Windows.Forms.ColumnStyle.Width%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="width" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnStyle.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width value for a column.</summary>
+        <value>The preferred width, in pixels or percentage, depending on the <see cref="P:System.Windows.Forms.TableLayoutStyle.SizeType" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `width` parameter will take on different meanings depending on the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A> property.  
+  
+|`sizeType` value|`width` interpretation|  
+|----------------------|----------------------------|  
+|<xref:System.Windows.Forms.SizeType>|The preferred column width in pixels (fractional portion ignored).|  
+|<xref:System.Windows.Forms.SizeType>|Not applicable—the width parameter is ignored.|  
+|<xref:System.Windows.Forms.SizeType>|The preferred column width as a percentage of the containing table.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than 0 when setting this property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,246 @@
+<Type Name="DataSourceViewSchemaConverter" FullName="System.Web.UI.Design.DataSourceViewSchemaConverter">
+  <TypeSignature Language="C#" Value="public class DataSourceViewSchemaConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSourceViewSchemaConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSourceViewSchemaConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type converter for a property representing a field in a data source schema.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> class to convert object types before assignment to a control property. In general, the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> supports converting string object types and supplies a list of standard values available for assignment to the associated control property. The standard values collection is the list of fields in the data source schema for the current control.  
+  
+ To support converting additional object types, derive a class from <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> and override the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom%2A> and <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom%2A> methods for the additional object types. To support a custom list of standard assignable values, override the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method.  
+  
+ Apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to specify the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> class as the type converter for a control property. For example, the <xref:System.Web.UI.WebControls.DataControlField.SortExpression%2A> property of the <xref:System.Web.UI.WebControls.DataControlField> class and the <xref:System.Web.UI.WebControls.BoundField.DataField%2A> property of the <xref:System.Web.UI.WebControls.BoundField> class use the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> as the property type converter.  
+  
+> [!NOTE]
+>  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported%2A> method indicates that the converter supports returning a list of available values through the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method. The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive%2A> method indicates that the list is not an exclusive list of possible values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataSourceViewSchemaConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataSourceViewSchemaConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  You should never access a type converter directly. Instead, call the appropriate converter by using a <xref:System.ComponentModel.TypeDescriptor> object. For more information, see the examples in <xref:System.ComponentModel.TypeConverter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <param name="sourceType">The type to convert from.</param>
+        <summary>Indicates whether the specified source type can be converted to the type of the associated control property.</summary>
+        <returns>
+          <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom%2A> method to determine whether the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom%2A> method supports converting the source type.  
+  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom%2A> method can convert only from a string, so the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom%2A> method returns `true` when `sourceType` is a string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> object that can be used to support localization features.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to the type of the associated control property.</summary>
+        <returns>An <see cref="T:System.Object" /> instance that represents the converted object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `value` is a string, then the string representation of `value` is returned. If `value` is `null`, an empty string ("") is returned. For all other specified values, a <xref:System.NotSupportedException> exception is thrown.  
+  
+ Call the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom%2A> method to determine whether the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom%2A> method supports converting the source type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Returns a list of available values that can be assigned to the associated control property.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing available values for assignment to the associated control property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method uses the <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A> property of the specified `context` object to obtain an <xref:System.Web.UI.IDataSourceViewSchemaAccessor> implementation. If the <xref:System.Web.UI.IDataSourceViewSchemaAccessor> implementation is available, it is used to access the data source schema for the associated control at design time and retrieve the list of available fields from the associated data source schema view.  
+  
+ The collection of available values is built from the fields in the data source schema for the associated control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context, Type typeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context, class System.Type typeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="typeFilter" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <param name="typeFilter">A type used to filter fields to include in the standard values list.</param>
+        <summary>Returns a list of available values that can be assigned to the associated control property.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing available values for assignment to the associated control property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesExclusive">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Indicates whether this converter returns a list containing all possible values that can be assigned to the associated control property.</summary>
+        <returns>
+          <see langword="true" /> if this converter returns a list containing all possible values that can be assigned to the associated control property; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive%2A> method for a <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> returns `false`, indicating that the list returned by the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method is not an exclusive list of all possible assignable values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesSupported">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> implementation that can be used to gain additional context information.</param>
+        <summary>Indicates whether this converter returns a set of available values for assignment to a control property within the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter returns a standard set of available values for assignment to the associated control property; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported%2A> method indicates whether the converter supports returning a list of available values through the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method.  
+  
+ The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported%2A> method for the <xref:System.Web.UI.Design.DataSourceViewSchemaConverter> object returns `true` if the specified `context` object supplies an <xref:System.Web.UI.IDataSourceViewSchemaAccessor> implementation in its <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A> property. The <xref:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues%2A> method uses the <xref:System.Web.UI.IDataSourceViewSchemaAccessor> implementation to retrieve the list of available fields from the associated data source schema.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

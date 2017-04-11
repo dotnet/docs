@@ -1,0 +1,56 @@
+<Type Name="CodeStatementBuilder" FullName="System.Web.UI.CodeStatementBuilder">
+  <TypeSignature Language="C#" Value="public abstract class CodeStatementBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CodeStatementBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeStatementBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Generates Code DOM statements.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CodeStatementBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CodeStatementBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the CodeStatementBuilder class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildStatement">
+      <MemberSignature Language="C#" Value="public abstract System.CodeDom.CodeStatement BuildStatement (System.CodeDom.CodeArgumentReferenceExpression writerReferenceExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeStatement BuildStatement(class System.CodeDom.CodeArgumentReferenceExpression writerReferenceExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.CodeStatementBuilder.BuildStatement(System.CodeDom.CodeArgumentReferenceExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writerReferenceExpression" Type="System.CodeDom.CodeArgumentReferenceExpression" />
+      </Parameters>
+      <Docs>
+        <param name="writerReferenceExpression">Represents a reference to the value of an argument.</param>
+        <summary>Builds a <see cref="T:System.CodeDom.CodeStatement" /> object for a generated Render method.</summary>
+        <returns>An object that represents a code statement.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

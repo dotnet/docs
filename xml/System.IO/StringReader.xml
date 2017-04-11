@@ -1,0 +1,737 @@
+<Type Name="StringReader" FullName="System.IO.StringReader">
+  <TypeSignature Language="C#" Value="public class StringReader : System.IO.TextReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StringReader extends System.IO.TextReader" />
+  <TypeSignature Language="DocId" Value="T:System.IO.StringReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IO.TextReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements a <see cref="T:System.IO.TextReader" /> that reads from a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.StringReader> enables you to read a string synchronously or asynchronously. You can read a character at a time with the <xref:System.IO.StringReader.Read%2A> or the [ReadAsync(Char\<xref:System.IO.StringReader.ReadAsync%2A> method, a line at a time using the <xref:System.IO.StringReader.ReadLine%2A> or the <xref:System.IO.StringReader.ReadLineAsync%2A> method and an entire string using the <xref:System.IO.StringReader.ReadToEnd%2A> or the <xref:System.IO.StringReader.ReadToEndAsync%2A> method.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+   
+  
+## Examples  
+ The following example shows how to read an entire string asynchronously.  
+  
+ [!code-csharp[System.IO.StringReader#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringreader/cs/example2.cs#2)]
+ [!code-vb[System.IO.StringReader#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringreader/vb/example2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringReader (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The string to which the <see cref="T:System.IO.StringReader" /> should be initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.StringReader" /> class that reads from the specified string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+   
+  
+## Examples  
+ This code example is part of a larger example provided for the <xref:System.IO.StringReader> class.  
+  
+ [!code-cpp[System.IO.StringReaderWriter#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#2)]
+ [!code-csharp[System.IO.StringReaderWriter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#2)]
+ [!code-vb[System.IO.StringReaderWriter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="s" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the <see cref="T:System.IO.StringReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
+  
+ This method overrides the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
+  
+ This implementation of `Close` calls the <xref:System.IO.StringReader.Dispose%2A> method passing a `true` value.  
+  
+ Flushing the stream will not flush its underlying encoder unless you explicitly call `Close`. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
+  
+ Following a call to `Close`, other methods might throw an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.IO.StringReader" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.IO.StringReader> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see cref="M:System.IO.StringReader.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.StringReader.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see cref="M:System.IO.StringReader.Dispose(System.Boolean)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Peek">
+      <MemberSignature Language="C#" Value="public override int Peek ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Peek() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Peek" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the next available character but does not consume it.</summary>
+        <returns>An integer representing the next character to be read, or -1 if no more characters are available or the stream does not support seeking.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.StringReader.Peek%2A> method returns an integer value in order to determine whether the end of the file, or another error has occurred. This allows a user to first check if the returned value is -1 before casting it to a <xref:System.Char> type.  
+  
+ This method overrides the <xref:System.IO.TextReader.Peek%2A?displayProperty=fullName> method.  
+  
+ The current position of the `StringReader` is not changed by this operation.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The current reader is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override int Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads the next character from the input string and advances the character position by one character.</summary>
+        <returns>The next character from the underlying string, or -1 if no more characters are available.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.IO.TextReader.Read%2A?displayProperty=fullName> method.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+   
+  
+## Examples  
+ This code example is part of a larger example provided for the <xref:System.IO.StringReader> class.  
+  
+ [!code-cpp[System.IO.StringReaderWriter#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#3)]
+ [!code-csharp[System.IO.StringReaderWriter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#3)]
+ [!code-vb[System.IO.StringReaderWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The current reader is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override int Read (char[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index</c> + <c>count</c> - 1) replaced by the characters read from the current source.</param>
+        <param name="index">The starting index in the buffer.</param>
+        <param name="count">The number of characters to read.</param>
+        <summary>Reads a block of characters from the input string and advances the character position by <paramref name="count" />.</summary>
+        <returns>The total number of characters read into the buffer. This can be less than the number of characters requested if that many characters are not currently available, or zero if the end of the underlying string has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.IO.TextReader.Read%2A?displayProperty=fullName>.  
+  
+ The method will read up to `count` characters from the <xref:System.IO.StringReader> into the `buffer` character array starting at position `index`. Returns the actual number of characters read, or zero if the end of the string has been reached and no characters are read.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current reader is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (char[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index</c> + <c>count</c> - 1) replaced by the characters read from the current source.</param>
+        <param name="index">The position in <c>buffer</c> at which to begin writing.</param>
+        <param name="count">The maximum number of characters to read. If the end of the string is reached before the specified number of characters is written into the buffer, the method returns.</param>
+        <summary>Reads a specified maximum number of characters from the current string asynchronously and writes the data to a buffer, beginning at the specified index.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the string has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The task completes after either the number of characters specified by the `count` parameter are read or the end of the string is reached.  
+  
+   
+  
+## Examples  
+ The following example shows how to read the first 23 characters of a string asynchronously.  
+  
+ [!code-csharp[System.IO.StringReader#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringreader/cs/example1.cs#1)]
+ [!code-vb[System.IO.StringReader#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringreader/vb/example1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.ObjectDisposedException">The string reader has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadBlockAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadBlockAsync (char[] buffer, int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadBlockAsync(char[] buffer, int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">When this method returns, contains the specified character array with the values between <c>index</c> and (<c>index</c> + <c>count</c> - 1) replaced by the characters read from the current source.</param>
+        <param name="index">The position in <c>buffer</c> at which to begin writing.</param>
+        <param name="count">The maximum number of characters to read. If the end of the string is reached before the specified number of characters is written into the buffer, the method returns.</param>
+        <summary>Reads a specified maximum number of characters from the current string asynchronously and writes the data to a buffer, beginning at the specified index.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the string has been reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The task does not complete until either the number of characters specified by the `count` parameter are read, or the end of the string has been reached.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
+        <exception cref="T:System.ArgumentException">The sum of <paramref name="index" /> and <paramref name="count" /> is larger than the buffer length.</exception>
+        <exception cref="T:System.ObjectDisposedException">The string reader has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLine">
+      <MemberSignature Language="C#" Value="public override string ReadLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ReadLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadLine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads a line of characters from the current string and returns the data as a string.</summary>
+        <returns>The next line from the current string, or <see langword="null" /> if the end of the string is reached.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.IO.TextReader.ReadLine%2A?displayProperty=fullName> method.  
+  
+ A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), or a carriage return immediately followed by a line feed ("\r\n"). The string that is returned does not contain the terminating carriage return or line feed. The returned value is `null` if the end of the string has been reached.  
+  
+ If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying string is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StringReader.ReadLine%2A> buffer are discarded. Because the position of the reader in the string cannot be changed, the characters already read are unrecoverable, and can be accessed only by reinitializing the <xref:System.IO.StringReader>. To avoid such a situation, use the <xref:System.IO.StringReader.Read%2A> method and store the read characters in a preallocated buffer.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+   
+  
+## Examples  
+ This code example is part of a larger example provided for the <xref:System.IO.StringReader> class.  
+  
+ [!code-cpp[System.IO.StringReaderWriter#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CPP/stringrw.cpp#2)]
+ [!code-csharp[System.IO.StringReaderWriter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StringReaderWriter/CS/stringrw.cs#2)]
+ [!code-vb[System.IO.StringReaderWriter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StringReaderWriter/VB/stringrw.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The current reader is closed.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLineAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;string&gt; ReadLineAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; ReadLineAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadLineAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads a line of characters asynchronously from the current string and returns the data as a string.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains the next line from the string reader, or is <see langword="null" /> if all the characters have been read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to read one line at a time from a string asynchronously.  
+  
+ [!code-csharp[System.IO.StringReader#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringreader/cs/example3.cs#3)]
+ [!code-vb[System.IO.StringReader#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringreader/vb/example3.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of characters in the next line is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The string reader has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadToEnd">
+      <MemberSignature Language="C#" Value="public override string ReadToEnd ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ReadToEnd() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadToEnd" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads all characters from the current position to the end of the string and returns them as a single string.</summary>
+        <returns>The content from the current position to the end of the underlying string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.IO.TextReader.ReadToEnd%2A?displayProperty=fullName> method.  
+  
+ If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying string is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StringReader.ReadToEnd%2A> buffer are discarded. Because the position of the reader in the string cannot be changed, the characters already read are unrecoverable, and can be accessed only by reinitializing the <xref:System.IO.StringReader>. To avoid such a situation, use the <xref:System.IO.StringReader.Read%2A> method and store the read characters in a preallocated buffer.  
+  
+ The following table lists examples of other typical or related I/O tasks.  
+  
+|To do this...|See the example in this topic...|  
+|-------------------|--------------------------------------|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
+|Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
+|Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
+|Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+  
+   
+  
+## Examples  
+ This code example is part of a larger example provided for the <xref:System.IO.TextReader> class.  
+  
+ [!code-cpp[System.IO.TextReaderWriter#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.TextReaderWriter/CPP/textrw.cpp#5)]
+ [!code-csharp[System.IO.TextReaderWriter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.TextReaderWriter/CS/textrw.cs#5)]
+ [!code-vb[System.IO.TextReaderWriter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.TextReaderWriter/VB/textrw.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
+        <exception cref="T:System.ObjectDisposedException">The current reader is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadToEndAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;string&gt; ReadToEndAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; ReadToEndAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StringReader.ReadToEndAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads all characters from the current position to the end of the string asynchronously and returns them as a single string.</summary>
+        <returns>A task that represents the asynchronous read operation. The value of the <paramref name="TResult" /> parameter contains a string with the characters from the current position to the end of the string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to read an entire string asynchronously.  
+  
+ [!code-csharp[System.IO.StringReader#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.stringreader/cs/example2.cs#2)]
+ [!code-vb[System.IO.StringReader#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.stringreader/vb/example2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of characters is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The string reader has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

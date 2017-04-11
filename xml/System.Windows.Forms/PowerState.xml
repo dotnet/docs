@@ -1,0 +1,57 @@
+<Type Name="PowerState" FullName="System.Windows.Forms.PowerState">
+  <TypeSignature Language="C#" Value="public enum PowerState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PowerState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PowerState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that indicate a suspended system power activity mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.Application.SetSuspendState%2A> method of the <xref:System.Windows.Forms.Application> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Hibernate">
+      <MemberSignature Language="C#" Value="Hibernate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PowerState Hibernate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PowerState.Hibernate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PowerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a system hibernation power mode. When a system enters hibernation, the contents of its memory are saved to disk before the computer is turned off. When the system is restarted, the desktop and previously active programs are restored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="Suspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PowerState Suspend = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PowerState.Suspend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PowerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a system suspended power mode. When a system is suspended, the computer switches to a low-power state called standby. When a computer is in standby mode, some devices are turned off and the computer uses less power. The system can restore itself more quickly than returning from hibernation. Because standby does not save the memory state to disk, a power failure while in standby can cause loss of information.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

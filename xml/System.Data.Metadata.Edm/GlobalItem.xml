@@ -1,0 +1,133 @@
+<Type Name="GlobalItem" FullName="System.Data.Metadata.Edm.GlobalItem">
+  <TypeSignature Language="C#" Value="public abstract class GlobalItem : System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GlobalItem extends System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.GlobalItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.MetadataItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base item class for all the  conceptual model types and entity containers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Metadata Type Hierarchy Overview](http://msdn.microsoft.com/en-us/d2b18fe0-60a5-4a5c-940d-21d07e5165d4).  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to browse the metadata type hierarchy. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
+  
+ The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the conceptual model. The code sample uses the connection string that is provided in the application config file. For an example of the application config file, see [Adventure Works Object Model in Applications (EDM)](http://msdn.microsoft.com/en-us/84c01270-90ba-467b-ad24-df10c1ca8f45).  
+  
+```csharp  
+using System;  
+using System.Data;  
+using System.Data.EntityClient;  
+using System.Data.Metadata.Edm;  
+using System.Collections.ObjectModel;  
+  
+class BrowseTypes  
+{  
+  static void Main()  
+  {  
+    try  
+    {  
+      // Establish a connection to the underlying data provider by  
+      // using the connection string specified in the config file.  
+      using (EntityConnection connection =  
+             new EntityConnection("Name=AdventureworksContext"))  
+      {  
+         // Access the metadata workspace.  
+         MetadataWorkspace workspace =   
+              connection.GetMetadataWorkspace();  
+         // Browse the metadata type hierarchy.  
+         BrowseTypesExample(workspace);  
+      }  
+    }  
+    catch (MetadataException exceptionMetadata)  
+    {  
+       Console.WriteLine("MetadataException: {0}",  
+                         exceptionMetadata.Message);  
+     }  
+     catch (System.Data.MappingException exceptionMapping)  
+     {  
+        Console.WriteLine("MappingException: {0}",  
+                          exceptionMapping.Message);  
+     }  
+  }  
+  
+  private static void BrowseTypesExample(MetadataWorkspace workspace)  
+  {  
+    // Get a collection of the GlobalItems.   
+    // An GlobalItem class is the base class for   
+    // the conceptual model types and entity containers.  
+    ReadOnlyCollection<GlobalItem> items =   
+         workspace.GetItems<GlobalItem>(DataSpace.CSpace);  
+  
+    // Iterate through the collection to get each item.  
+    foreach (GlobalItem item in items)  
+    {  
+       Console.WriteLine(  
+           "Item BuiltInTypeKind: {0}, Type: {1} ",   
+           item.BuiltInTypeKind, item.GetType().FullName);  
+  
+       EntityContainer entityContainer = item as EntityContainer;  
+       if (entityContainer != null)  
+       {  
+          Console.WriteLine(  
+               "EntityContainer Name: {0}",  
+               entityContainer.Name);  
+          continue;  
+       }  
+  
+       EntityType entityType = item as EntityType;  
+       if (entityType != null)  
+       {  
+         Console.WriteLine(  
+             "EntityType Name: {0}, Namespace: {1}",  
+             entityType.Name, entityType.NamespaceName);  
+        continue;  
+       }  
+  
+       AssociationType associationType = item as AssociationType;  
+       if (associationType != null)  
+       {  
+          Console.WriteLine(  
+             "AssociationType Name: {0}, Namespace: {1}",  
+             associationType.Name, associationType.NamespaceName);  
+          continue;  
+       }  
+  
+       PrimitiveType primType = item as PrimitiveType;  
+       if (primType != null)  
+       {  
+         Console.WriteLine(  
+             "PrimitiveType Name: {0}, Namespace: {1}",   
+             primType.Name, primType.NamespaceName);  
+         continue;  
+       }  
+  
+       EdmFunction function = item as EdmFunction;  
+       if (function != null)  
+       {  
+         Console.WriteLine(  
+           "EdmFunction Name: {0}, Namespace: {1}",  
+           function.Name, function.NamespaceName);  
+         continue;  
+       }  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

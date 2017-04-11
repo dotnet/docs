@@ -1,0 +1,63 @@
+<Type Name="IExpandedResult" FullName="System.Data.Services.IExpandedResult">
+  <TypeSignature Language="C#" Value="public interface IExpandedResult" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpandedResult" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.IExpandedResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Declares the members required to support enumerators for results and associated segments on an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] <c>$expand</c> query option.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Expand providers can generate enumerations that implement this interface to reshape expanded properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExpandedElement">
+      <MemberSignature Language="C#" Value="public object ExpandedElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExpandedElement" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IExpandedResult.ExpandedElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element with expanded properties.</summary>
+        <value>The object in a property expanded by <see cref="T:System.Data.Services.IExpandedResult" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpandedPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetExpandedPropertyValue (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetExpandedPropertyValue(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IExpandedResult.GetExpandedPropertyValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property for which to get enumerable results.</param>
+        <summary>Gets the value for a named property of the result.</summary>
+        <returns>The value of the property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

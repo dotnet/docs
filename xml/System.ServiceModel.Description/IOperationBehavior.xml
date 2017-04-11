@@ -1,0 +1,220 @@
+<Type Name="IOperationBehavior" FullName="System.ServiceModel.Description.IOperationBehavior">
+  <TypeSignature Language="C#" Value="public interface IOperationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOperationBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IOperationBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Implements methods that can be used to extend run-time behavior for an operation in either a service or client application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior> interface to modify, examine, or extend some aspect of operation-wide execution at the application level for either client or service applications.  
+  
+-   Use the <xref:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters%2A> method to pass custom data at runtime to enable bindings to support custom behavior.  
+  
+-   Use the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior%2A> method to modify, examine, or insert extensions to a client dispatcher in a client application.  
+  
+-   Use the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method to modify, examine, or insert extensions to operation-wide execution in a service application.  
+  
+-   Use the <xref:System.ServiceModel.Description.IOperationBehavior.Validate%2A> method to confirm that a <xref:System.ServiceModel.Description.OperationDescription> meets specific requirements. This can be used to ensure that an operation has a certain configuration setting enabled, supports a particular feature and other requirements.  
+  
+ <xref:System.ServiceModel.Description.IOperationBehavior> objects can make use of any of these methods, but often only one is important; in such cases, the unused methods can return, performing no action.  
+  
+> [!NOTE]
+>  All of the <xref:System.ServiceModel.Description.IOperationBehavior> methods pass an <xref:System.ServiceModel.Description.OperationDescription> object as a parameter. This parameter is for examination only; if you modify the <xref:System.ServiceModel.Description.OperationDescription> object the execution behavior is undefined.  
+  
+ <xref:System.ServiceModel.Description.IOperationBehavior> objects are typically used to access the various properties of the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> object in a service application and the <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> object in a client application.  
+  
+ Typically, the developer first reviews the extensibility points to determine which customization option suits the application scenario and then implements the customization at the appropriate scope. For example, <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=fullName> objects can insert customizations for all messages in an entire service and <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> objects can insert customizations for all messages across a specific contract, and so on. For a description of the various properties and customizations available, see [Extending ServiceHost and the Service Model Layer](~/docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+  
+ Once a customization has been decided upon (and the customization interface implemented if necessary) and the <xref:System.ServiceModel.Description.IOperationBehavior> is the appropriate scope of customization, the customization must be inserted into the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime by implementing <xref:System.ServiceModel.Description.IOperationBehavior> and adding the operation behavior to the runtime.  
+  
+ There are two ways to add the <xref:System.ServiceModel.Description.IOperationBehavior> to the runtime:  
+  
+-   Programmatically add the custom operation behavior to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property prior to the opening of the service host (in a service application) or the channel factory (in a client application).  
+  
+-   Add the behavior using a custom attribute.  
+  
+ To perform the service customization task for which it is intended, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property prior to the construction of the service runtime, which occurs when <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on <xref:System.ServiceModel.ServiceHost?displayProperty=fullName>. To perform a client customization task, the <xref:System.ServiceModel.Description.IOperationBehavior> object must be added to the <xref:System.ServiceModel.Description.OperationDescription.Behaviors%2A?displayProperty=fullName> property before calling the <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=fullName> method or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method on <xref:System.ServiceModel.ChannelFactory%601>.  
+  
+ Although the operation behavior is designed for easy access to the runtime at the scope of an individual operation, you can access the runtime at a larger scope by accessing the parent runtime object.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+  
+ [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+ [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+  
+ The following code example shows how the operation behavior attaches the parameter inspector to the runtime.  
+  
+ [!code-csharp[Interceptors#6](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#6)]
+ [!code-vb[Interceptors#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation being examined. Use for examination only. If the operation description is modified, the results are undefined.</param>
+        <param name="bindingParameters">The collection of objects that binding elements require to support the behavior.</param>
+        <summary>Implement to pass data at runtime to bindings to support custom behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters%2A> method to provide binding elements with the extra objects they require to support the operation behavior. When binding parameters are added here, the binding can locate and process these objects when the channel listener or channel factory is created. Typically, you implement the <xref:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters%2A> method to pass information about the operation to a custom binding element so that it can build a supporting channel correctly. Return no value if no modifications are required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyClientBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyClientBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.ClientOperation clientOperation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.ClientOperation clientOperation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="clientOperation" Type="System.ServiceModel.Dispatcher.ClientOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation being examined. Use for examination only. If the operation description is modified, the results are undefined.</param>
+        <param name="clientOperation">The run-time object that exposes customization properties for the operation described by <c>operationDescription</c>.</param>
+        <summary>Implements a modification or extension of the client across an operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior%2A> method to view, modify, or add a custom extension to the client runtime across all messages used with a specific operation. For details about what customizations you can do with a client run-time object, see <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation>.  
+  
+ It is recommended that the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior%2A> method throw a <xref:System.NotImplementedException> if the behavior is only intended for use in a service application.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+  
+ [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+ [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+  
+ The following code example shows how the operation behavior attaches the parameter inspector to the runtime.  
+  
+ [!code-csharp[Interceptors#6](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#6)]
+ [!code-vb[Interceptors#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.OperationDescription operationDescription, System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription operationDescription, class System.ServiceModel.Dispatcher.DispatchOperation dispatchOperation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="dispatchOperation" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation being examined. Use for examination only. If the operation description is modified, the results are undefined.</param>
+        <param name="dispatchOperation">The run-time object that exposes customization properties for the operation described by <c>operationDescription</c>.</param>
+        <summary>Implements a modification or extension of the service across an operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method to view, modify, or extend the service runtime across all messages or for a specific operation. For details about what customizations you can do in a service application, see <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> and <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName>.  
+  
+ It is recommended that the <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> method throw a <xref:System.NotImplementedException> exception if the behavior is only intended for use in a client application.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=fullName> that writes to the console when the inspector is invoked on an operation. This customization can only be attached to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> or <xref:System.ServiceModel.Dispatcher.ClientOperation?displayProperty=fullName> and is therefore usually inserted by an operation behavior.  
+  
+ [!code-csharp[Interceptors#4](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/interceptors.cs#4)]
+ [!code-vb[Interceptors#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/interceptors.vb#4)]  
+  
+ The following code example shows how the operation behavior attaches the parameter inspector to the runtime.  
+  
+ [!code-csharp[Interceptors#6](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#6)]
+ [!code-vb[Interceptors#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.OperationDescription operationDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.OperationDescription operationDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+      </Parameters>
+      <Docs>
+        <param name="operationDescription">The operation being examined. Use for examination only. If the operation description is modified, the results are undefined.</param>
+        <summary>Implement to confirm that the operation meets some intended criteria.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IOperationBehavior.Validate%2A> method to examine the structure to confirm any set of criteria. It is not necessary to perform any customizations in <xref:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior%2A> or <xref:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior%2A> to make use of this method. If the operation passes validation, return; otherwise, throw an exception.  
+  
+ For example, the <xref:System.ServiceModel.Description.IOperationBehavior.Validate%2A> method can be use to ensure that an operation is authorized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

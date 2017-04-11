@@ -1,0 +1,138 @@
+<Type Name="CodeAttributeArgument" FullName="System.CodeDom.CodeAttributeArgument">
+  <TypeSignature Language="C#" Value="public class CodeAttributeArgument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeAttributeArgument extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeArgument" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an argument used in a metadata attribute declaration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeAttributeArgument> can be used to represent either the value for a single argument of an attribute constructor, or a value with which to initialize a property of the attribute.  
+  
+ The <xref:System.CodeDom.CodeAttributeArgument.Value%2A> property indicates the value of the argument. The <xref:System.CodeDom.CodeAttributeArgument.Name%2A> property, when used, indicates the name of a property of the attribute to which to assign the value.  
+  
+ Attribute declarations are frequently initialized with a number of arguments that are passed into the constructor of the attribute at run time. To provide arguments to the constructor for an attribute, add a <xref:System.CodeDom.CodeAttributeArgument> for each argument to the <xref:System.CodeDom.CodeAttributeDeclaration.Arguments%2A> collection of a <xref:System.CodeDom.CodeAttributeDeclaration>. Only the <xref:System.CodeDom.CodeAttributeArgument.Value%2A> property of each <xref:System.CodeDom.CodeAttributeArgument> needs to be initialized. The order of arguments within the collection must correspond to the order of arguments in the method signature of the constructor for the attribute.  
+  
+ You can also set properties of the attribute that are not available through the constructor by providing a <xref:System.CodeDom.CodeAttributeArgument> that indicates the name of the property to set, along with the value to set.  
+  
+   
+  
+## Examples  
+ The following code creates a class, and adds code attributes to declare that the class is serializable and obsolete.  
+  
+ [!code-cpp[System.CodeDom.CodeAttributeArgument#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codeattributeargument/cpp/source.cpp#1)]
+ [!code-csharp[System.CodeDom.CodeAttributeArgument#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codeattributeargument/cs/source.cs#1)]
+ [!code-vb[System.CodeDom.CodeAttributeArgument#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codeattributeargument/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAttributeArgument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAttributeArgument (System.CodeDom.CodeExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeExpression" /> that represents the value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class using the specified value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeAttributeArgument (string name, System.CodeDom.CodeExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.CodeDom.CodeExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute property the argument applies to.</param>
+        <param name="value">A <see cref="T:System.CodeDom.CodeExpression" /> that represents the value of the argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class using the specified name and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the attribute.</summary>
+        <value>The name of the attribute property the argument is for.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Value" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the attribute argument.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the value for the attribute argument.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

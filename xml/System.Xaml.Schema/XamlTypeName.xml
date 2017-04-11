@@ -1,0 +1,402 @@
+<Type Name="XamlTypeName" FullName="System.Xaml.Schema.XamlTypeName">
+  <TypeSignature Language="C#" Value="public class XamlTypeName" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlTypeName extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlTypeName" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{{{Namespace}}}{Name}{TypeArgStringForDebugger}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a means to specify a XAML type in terms of name and namespace.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.XamlType> is the type information class in the XAML type system, whereas <xref:System.Xaml.Schema.XamlTypeName> is more of a data structure that provides different ways of specifying that type. <xref:System.Xaml.Schema.XamlTypeName> also provides static helper methods for generating a <xref:System.Xaml.Schema.XamlTypeName> by resolving an existing type identifier in a XAML namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeName (System.Xaml.XamlType xamlType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlType xamlType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xamlType" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="xamlType">An existing <see cref="T:System.Xaml.XamlType" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class, based on an existing <see cref="T:System.Xaml.XamlType" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeName (string xamlNamespace, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xamlNamespace, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xamlNamespace" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xamlNamespace">The XAML namespace that contains name.</param>
+        <param name="name">The name of the type to create a <see cref="T:System.Xaml.Schema.XamlTypeName" /> for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class, based on name and namespace strings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeName (string xamlNamespace, string name, System.Collections.Generic.IEnumerable&lt;System.Xaml.Schema.XamlTypeName&gt; typeArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xamlNamespace, string name, class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.Schema.XamlTypeName&gt; typeArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Xaml.Schema.XamlTypeName})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xamlNamespace" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="typeArguments" Type="System.Collections.Generic.IEnumerable&lt;System.Xaml.Schema.XamlTypeName&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="xamlNamespace">The XAML namespace that contains <c>name</c>.</param>
+        <param name="name">The name of the type to create a <see cref="T:System.Xaml.Schema.XamlTypeName" /> for.</param>
+        <param name="typeArguments">An array of type arguments, each of which must be a <see cref="T:System.Xaml.Schema.XamlTypeName" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlTypeName" /> class, based on name and namespace strings as well as an array of type arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the signature to use if you are specifying a generic type and type arguments for that type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name used to construct this <see cref="T:System.Xaml.Schema.XamlTypeName" />.</summary>
+        <value>The name of the type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Xaml.XamlType> was used to construct this <xref:System.Xaml.Schema.XamlTypeName>, the value of <xref:System.Xaml.Schema.XamlTypeName.Name%2A> is <xref:System.Xaml.XamlType.Name%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML namespace identifier used to construct this <see cref="T:System.Xaml.Schema.XamlTypeName" />.</summary>
+        <value>The XAML namespace identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Xaml.XamlType> was used to construct this <xref:System.Xaml.Schema.XamlTypeName>, the value of <xref:System.Xaml.Schema.XamlTypeName.Namespace%2A> is `xamlType.GetXamlNamespaces()[0]`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Xaml.Schema.XamlTypeName Parse (string typeName, System.Xaml.IXamlNamespaceResolver namespaceResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xaml.Schema.XamlTypeName Parse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.Parse(System.String,System.Xaml.IXamlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlTypeName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="namespaceResolver" Type="System.Xaml.IXamlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The type name to create a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value for.</param>
+        <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
+        <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a type name and an object that can resolve a markup prefix into a namespace.</summary>
+        <returns>The created <see cref="T:System.Xaml.Schema.XamlTypeName" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> or <paramref name="namespaceResolver" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">String cannot be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseList">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; ParseList (string typeNameList, System.Xaml.IXamlNamespaceResolver namespaceResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; ParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ParseList(System.String,System.Xaml.IXamlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeNameList" Type="System.String" />
+        <Parameter Name="namespaceResolver" Type="System.Xaml.IXamlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="typeNameList">A string that contains multiple types. See Remarks.</param>
+        <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
+        <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a string that can specify multiple type names, and an object that can resolve a markup prefix into a namespace.</summary>
+        <returns>The created <see cref="T:System.Xaml.Schema.XamlTypeName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following is quasi-BNF for the nested type name or multiple type name parsing enabled by this method:  
+  
+```  
+NestedTypeName = Name | Name '+' NestedTypeName  
+TypeName = NestedTypeName | NestedTypeName ‘[]’  
+XamlTypeName = Prefix ‘:’ TypeName TypeArgs  | TypeName TypeArgs  
+TypeArgs = empty | ‘(‘ XamlTypeNameList ‘)’  
+XamlTypeNameList = XamlTypeName XamlTypeNameList1  
+XamlTypeNameList1 = empty | ‘,’ XamlTypeNameList  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeNameList" /> or <paramref name="namespaceResolver" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">String cannot be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation.</summary>
+        <returns>The equivalent string representation of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> .</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This signature is equivalent to calling <xref:System.Xaml.Schema.XamlTypeName.ToString%28System.Xaml.INamespacePrefixLookup%29>, passing `null` for `prefixLookup`. s  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (System.Xaml.INamespacePrefixLookup prefixLookup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.Xaml.INamespacePrefixLookup prefixLookup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString(System.Xaml.INamespacePrefixLookup)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefixLookup" Type="System.Xaml.INamespacePrefixLookup" />
+      </Parameters>
+      <Docs>
+        <param name="prefixLookup">A service reference for prefix lookup.</param>
+        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation, which can be used in markup syntax for an object element usage of a type.</summary>
+        <returns>A prefixed usage string.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Xaml.Schema.XamlTypeName.Namespace" /> for this <see cref="T:System.Xaml.Schema.XamlTypeName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <see cref="P:System.Xaml.Schema.XamlTypeName.Name" /> is not valid.  
+  
+ -or-  
+  
+ Could not look up the prefix.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; typeNameList, System.Xaml.INamespacePrefixLookup prefixLookup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; typeNameList, class System.Xaml.INamespacePrefixLookup prefixLookup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.ToString(System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName},System.Xaml.INamespacePrefixLookup)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeNameList" Type="System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt;" />
+        <Parameter Name="prefixLookup" Type="System.Xaml.INamespacePrefixLookup" />
+      </Parameters>
+      <Docs>
+        <param name="typeNameList">A list of types.</param>
+        <param name="prefixLookup">A service reference for prefix lookup.</param>
+        <summary>Converts the value of this <see cref="T:System.Xaml.Schema.XamlTypeName" /> to its equivalent string representation, which can be used in markup syntax for an object element usage of multiple types.</summary>
+        <returns>A concatenated string of all type results.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="prefixLookup" /> or <paramref name="typeNameList" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string typeName, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Xaml.Schema.XamlTypeName result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string typeName, class System.Xaml.IXamlNamespaceResolver namespaceResolver, class System.Xaml.Schema.XamlTypeName result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParse(System.String,System.Xaml.IXamlNamespaceResolver,System.Xaml.Schema.XamlTypeName@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="namespaceResolver" Type="System.Xaml.IXamlNamespaceResolver" />
+        <Parameter Name="result" Type="System.Xaml.Schema.XamlTypeName&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The type name to create a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value for.</param>
+        <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
+        <param name="result">Out parameter that contains the created <see cref="T:System.Xaml.Schema.XamlTypeName" /> if the return value is <see langword="true" />.</param>
+        <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a type name and an object that can resolve a markup prefix into a namespace.</summary>
+        <returns>
+          <see langword="true" /> if the parse was successful and <paramref name="result" /> contains a useful value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> or <paramref name="namespaceResolver" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseList">
+      <MemberSignature Language="C#" Value="public static bool TryParseList (string typeNameList, System.Xaml.IXamlNamespaceResolver namespaceResolver, out System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParseList(string typeNameList, class System.Xaml.IXamlNamespaceResolver namespaceResolver, class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlTypeName.TryParseList(System.String,System.Xaml.IXamlNamespaceResolver,System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeNameList" Type="System.String" />
+        <Parameter Name="namespaceResolver" Type="System.Xaml.IXamlNamespaceResolver" />
+        <Parameter Name="result" Type="System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="typeNameList">A string that contains multiple types. See Remarks.</param>
+        <param name="namespaceResolver">An object or service provider that implements <see cref="T:System.Xaml.IXamlNamespaceResolver" />.</param>
+        <param name="result">Out parameter that contains the created <see cref="T:System.Xaml.Schema.XamlTypeName" /> if the return value is <see langword="true" />.</param>
+        <summary>Provides a <see cref="T:System.Xaml.Schema.XamlTypeName" /> value based on a string that can specify multiple type names, and an object that can resolve a markup prefix into a namespace.</summary>
+        <returns>
+          <see langword="true" /> if the parse was successful and <paramref name="result" /> contains a useful value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeNameList" /> or <paramref name="namespaceResolver" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeArguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt; TypeArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.Schema.XamlTypeName&gt; TypeArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlTypeName.TypeArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.Schema.XamlTypeName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type arguments used to construct this <see cref="T:System.Xaml.Schema.XamlTypeName" />.</summary>
+        <value>The type arguments, if any. May be null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Xaml.XamlType> was used to construct this <xref:System.Xaml.Schema.XamlTypeName>, the value of <xref:System.Xaml.Schema.XamlTypeName.TypeArguments%2A> is formed from <xref:System.Xaml.XamlType.TypeArguments%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

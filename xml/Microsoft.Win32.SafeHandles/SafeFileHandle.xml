@@ -1,0 +1,150 @@
+<Type Name="SafeFileHandle" FullName="Microsoft.Win32.SafeHandles.SafeFileHandle">
+  <TypeSignature Language="C#" Value="public sealed class SafeFileHandle : Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SafeFileHandle extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeFileHandle" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.InteropServices.SafeHandle</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a wrapper class for a file handle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is derived from <xref:Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid>. A value of 0 or -1 is an invalid file handle.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to open a file using the <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> class and the unmanaged `CreateFile` function.  
+  
+ [!code-csharp[Microsoft.Win32.SafeHandles.SafeFileHandle#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeFileHandle/cs/sample.cs#1)]
+ [!code-vb[Microsoft.Win32.SafeHandles.SafeFileHandle#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeFileHandle/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SafeFileHandle (IntPtr preexistingHandle, bool ownsHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int preexistingHandle, bool ownsHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="preexistingHandle" Type="System.IntPtr" />
+        <Parameter Name="ownsHandle" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preexistingHandle">An <see cref="T:System.IntPtr" /> object that represents the pre-existing handle to use.</param>
+        <param name="ownsHandle">
+          <see langword="true" /> to reliably release the handle during the finalization phase; <see langword="false" /> to prevent reliable release (not recommended).</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SafeHandles.SafeFileHandle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to open a file by using the <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> class and the unmanaged `CreateFile` function.  
+  
+ [!code-csharp[Microsoft.Win32.SafeHandles.SafeFileHandle.ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeFileHandle.ctor/cs/sample.cs#1)]
+ [!code-vb[Microsoft.Win32.SafeHandles.SafeFileHandle.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.SafeHandles.SafeFileHandle.ctor/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvalid">
+      <MemberSignature Language="C#" Value="public override bool IsInvalid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeFileHandle.IsInvalid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseHandle">
+      <MemberSignature Language="C#" Value="protected override bool ReleaseHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ReleaseHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeFileHandle.ReleaseHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

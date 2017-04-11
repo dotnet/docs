@@ -1,0 +1,243 @@
+<Type Name="CodeVariableDeclarationStatement" FullName="System.CodeDom.CodeVariableDeclarationStatement">
+  <TypeSignature Language="C#" Value="public class CodeVariableDeclarationStatement : System.CodeDom.CodeStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeVariableDeclarationStatement extends System.CodeDom.CodeStatement" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeVariableDeclarationStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a variable declaration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeVariableDeclarationStatement> can be used to represent code that declares a variable.  
+  
+ The <xref:System.CodeDom.CodeVariableDeclarationStatement.Type%2A> property specifies the type of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.Name%2A> property specifies the name of the variable to declare. The <xref:System.CodeDom.CodeVariableDeclarationStatement.InitExpression%2A> property is optional, and specifies an initialization expression to assign to the variable after it is created.  
+  
+> [!NOTE]
+>  Some languages can implement the optional variable initialization expression by making a separate assignment statement after the variable declaration.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeVariableDeclarationStatement> to declare a variable.  
+  
+ [!code-cpp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CPP/codevariabledeclarationstatementexample.cpp#2)]
+ [!code-csharp[CodeVariableDeclarationStatementExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/CS/codevariabledeclarationstatementexample.cs#2)]
+ [!code-vb[CodeVariableDeclarationStatementExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeVariableDeclarationStatementExample/VB/codevariabledeclarationstatementexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (System.CodeDom.CodeTypeReference type, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.CodeDom.CodeTypeReference" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified type and name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (string type, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The name of the data type of the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type name and variable name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (Type type, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The data type for the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type and variable name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (System.CodeDom.CodeTypeReference type, string name, System.CodeDom.CodeExpression initExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.CodeDom.CodeTypeReference" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type of the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (string type, string name, System.CodeDom.CodeExpression initExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.String,System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="type">The name of the data type of the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeVariableDeclarationStatement (Type type, string name, System.CodeDom.CodeExpression initExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string name, class System.CodeDom.CodeExpression initExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.Type,System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="initExpression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="type">The data type of the variable.</param>
+        <param name="name">The name of the variable.</param>
+        <param name="initExpression">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeVariableDeclarationStatement" /> class using the specified data type, variable name, and initialization expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitExpression">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression InitExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression InitExpression" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.InitExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initialization expression for the variable.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the initialization expression for the variable.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the variable.</summary>
+        <value>The name of the variable.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeVariableDeclarationStatement.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type of the variable.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the variable.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

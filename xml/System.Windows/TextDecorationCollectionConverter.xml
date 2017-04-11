@@ -1,0 +1,184 @@
+<Type Name="TextDecorationCollectionConverter" FullName="System.Windows.TextDecorationCollectionConverter">
+  <TypeSignature Language="C#" Value="public sealed class TextDecorationCollectionConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextDecorationCollectionConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationCollectionConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts instances of <see cref="T:System.Windows.TextDecorationCollection" /> from other data types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_TextDecorationCollectionConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextDecorationCollectionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TextDecorationCollectionConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="sourceType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Returns a value that indicates whether this converter can convert an object of the given type to an instance of <see cref="T:System.Windows.TextDecorationCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the converter can convert the provided type to an instance of <see cref="T:System.Windows.TextDecorationCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="destinationType">The type of the source that is being evaluated for conversion.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.TextDecorationCollection" /> can be converted to a different type.</summary>
+        <returns>
+          <see langword="false" /> is always returned because the <see cref="T:System.Windows.TextDecorationCollection" /> cannot be converted to another type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="input" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="input">The object being converted.</param>
+        <summary>Attempts to convert a specified object to an instance of <see cref="T:System.Windows.TextDecorationCollection" />.</summary>
+        <returns>The instance of <see cref="T:System.Windows.FontWeight" /> created from the converted <paramref name="input" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Occurs if <paramref name="input" /> is <see langword="null" /> or is not a valid type for conversion.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFromString">
+      <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection ConvertFromString (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.TextDecorationCollection ConvertFromString(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.ConvertFromString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The <see cref="T:System.String" /> to be converted into the <see cref="T:System.Windows.TextDecorationCollection" /> object.</param>
+        <summary>Attempts to convert a specified string to an instance of <see cref="T:System.Windows.TextDecorationCollection" />.</summary>
+        <returns>The instance of <see cref="T:System.Windows.TextDecorationCollection" /> created from the converted <paramref name="text" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string value of the `text` parameter can either be "None", or a combination of the predefined <xref:System.Windows.TextDecoration> names delimited by commas, such as "Underline, Strikethrough". The names are case-insensitive values.  
+  
+ One or more blanks spaces can precede or follow each text decoration name or comma. In addition, duplicate text decoration names are not allowed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TextDecorationCollectionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Describes the context information of a type.</param>
+        <param name="culture">Describes the <see cref="T:System.Globalization.CultureInfo" /> of the type being converted.</param>
+        <param name="value">The instance of <see cref="T:System.Windows.TextDecorationCollection" /> to convert.</param>
+        <param name="destinationType">The type this instance of <see cref="T:System.Windows.TextDecorationCollection" /> is converted to.</param>
+        <summary>Attempts to convert an instance of <see cref="T:System.Windows.TextDecorationCollection" /> to a specified type.</summary>
+        <returns>
+          <see langword="null" /> is always returned because <see cref="T:System.Windows.TextDecorationCollection" /> cannot be converted to any other type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

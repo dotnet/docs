@@ -1,0 +1,214 @@
+<Type Name="RegistryValueKind" FullName="Microsoft.Win32.RegistryValueKind">
+  <TypeSignature Language="C#" Value="public enum RegistryValueKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryValueKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryValueKind" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the data types to use when storing values in the registry, or identifies the data type of a value in the registry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Win32.RegistryValueKind> enumeration defines the set of supported registry data types and the value that is used for unsupported types (Unknown). Starting in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can specify not to use a data type with the None value.  
+  
+ Use the <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=fullName> method to determine the data type of a registry key value before retrieving the value. When you set a registry key value, use the <xref:Microsoft.Win32.RegistryKey.SetValue%2A> method to specify the registry data type explicitly.  
+  
+   
+  
+## Examples  
+ The following code example creates a registry key and sets several values for that key, using <xref:Microsoft.Win32.RegistryValueKind> to specify the registry data types. The example then uses <xref:Microsoft.Win32.RegistryKey.GetValueKind%2A?displayProperty=fullName> to check the registry data types, in order to retrieve the values and display them.  
+  
+ [!code-cpp[Microsoft.Win32.RegistryValueKind#1](~/samples/snippets/cpp/VS_Snippets_CLR/Microsoft.Win32.RegistryValueKind/CPP/source.cpp#1)]
+ [!code-csharp[Microsoft.Win32.RegistryValueKind#1](~/samples/snippets/csharp/VS_Snippets_CLR/Microsoft.Win32.RegistryValueKind/CS/source.cs#1)]
+ [!code-vb[Microsoft.Win32.RegistryValueKind#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Microsoft.Win32.RegistryValueKind/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind Binary = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Binary data in any form. This value is equivalent to the Win32 API registry data type REG_BINARY.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DWord">
+      <MemberSignature Language="C#" Value="DWord" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind DWord = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.DWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 32-bit binary number. This value is equivalent to the Win32 API registry data type REG_DWORD.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandString">
+      <MemberSignature Language="C#" Value="ExpandString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind ExpandString = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.ExpandString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A null-terminated string that contains unexpanded references to environment variables, such as %PATH%, that are expanded when the value is retrieved. This value is equivalent to the Win32 API registry data type REG_EXPAND_SZ.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiString">
+      <MemberSignature Language="C#" Value="MultiString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind MultiString = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.MultiString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An array of null-terminated strings, terminated by two null characters. This value is equivalent to the Win32 API registry data type REG_MULTI_SZ.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind None = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QWord">
+      <MemberSignature Language="C#" Value="QWord" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind QWord = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.QWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A 64-bit binary number. This value is equivalent to the Win32 API registry data type REG_QWORD.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind String = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A null-terminated string. This value is equivalent to the Win32 API registry data type REG_SZ.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryValueKind Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryValueKind.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryValueKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unsupported registry data type. For example, the Microsoft Win32 API registry data type REG_RESOURCE_LIST is unsupported. Use this value to specify that the <see cref="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" /> method should determine the appropriate registry data type when storing a name/value pair.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

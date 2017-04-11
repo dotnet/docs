@@ -1,0 +1,119 @@
+<Type Name="HitTestFilterBehavior" FullName="System.Windows.Media.HitTestFilterBehavior">
+  <TypeSignature Language="C#" Value="public enum HitTestFilterBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestFilterBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the return behavior of a hit test in a hit test filter callback method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of the hit test filter callback is a <xref:System.Windows.Media.HitTestFilterBehavior>, which determines what type of action should be taken when processing the visual tree for hit testing. For example, if your hit test filter callback return the value, ContinueSkipSelfAndChildren, you can remove the current visual object and its descendants from the hit test results evaluation.  
+  
+> [!NOTE]
+>  Pruning the visual tree of objects decreases the amount of processing that is required during the hit test results evaluation pass.  
+  
+ ![Pruning a visual tree using a hit test filter](~/add/media/filteredvisualtree-01.png "Pruning a visual tree using a hit test filter")  
+Pruning a visual tree  
+  
+   
+  
+## Examples  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestFilterBehavior> value from a hit test filter callback method. In this case, the filter skips labels and their descendants and hit tests everything else.  
+  
+ [!code-csharp[HitTestingOverview#106](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#106)]
+ [!code-vb[HitTestingOverview#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#106)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior Continue = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" /> and its descendants.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueSkipChildren">
+      <MemberSignature Language="C#" Value="ContinueSkipChildren" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipChildren = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipChildren" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" />, but not its descendants.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueSkipSelf">
+      <MemberSignature Language="C#" Value="ContinueSkipSelf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipSelf = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" />, but hit test against its descendants.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueSkipSelfAndChildren">
+      <MemberSignature Language="C#" Value="ContinueSkipSelfAndChildren" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipSelfAndChildren = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" /> or its descendants.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior Stop = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stop hit testing at the current <see cref="T:System.Windows.Media.Visual" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

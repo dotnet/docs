@@ -1,0 +1,673 @@
+<Type Name="ControlBindingsCollection" FullName="System.Windows.Forms.ControlBindingsCollection">
+  <TypeSignature Language="C#" Value="public class ControlBindingsCollection : System.Windows.Forms.BindingsCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlBindingsCollection extends System.Windows.Forms.BindingsCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlBindingsCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.BindingsCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("CollectionChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Forms.Design.ControlBindingsConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the collection of data bindings for a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Simple data binding is accomplished by adding <xref:System.Windows.Forms.Binding> objects to a <xref:System.Windows.Forms.ControlBindingsCollection>. Any object that inherits from the <xref:System.Windows.Forms.Control> class can access the <xref:System.Windows.Forms.ControlBindingsCollection> through the <xref:System.Windows.Forms.Control.DataBindings%2A> property. For a list of Windows controls that support data binding, see the <xref:System.Windows.Forms.Binding> class.  
+  
+ The <xref:System.Windows.Forms.ControlBindingsCollection> contains standard collection methods such as <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>, <xref:System.Windows.Forms.ControlBindingsCollection.Clear%2A>, and <xref:System.Windows.Forms.ControlBindingsCollection.Remove%2A>.  
+  
+ To get the control that the <xref:System.Windows.Forms.ControlBindingsCollection> belongs to, use the <xref:System.Windows.Forms.ControlBindingsCollection.Control%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example adds <xref:System.Windows.Forms.Binding> objects to a <xref:System.Windows.Forms.ControlBindingsCollection> of five controls: four <xref:System.Windows.Forms.TextBox> controls and a <xref:System.Windows.Forms.DateTimePicker> control. The <xref:System.Windows.Forms.ControlBindingsCollection> is accessed through the <xref:System.Windows.Forms.Control.DataBindings%2A> property of the <xref:System.Windows.Forms.Control> class.  
+  
+ [!code-cpp[Classic ControlBindingsCollection Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlBindingsCollection (System.Windows.Forms.IBindableComponent control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.IBindableComponent control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.#ctor(System.Windows.Forms.IBindableComponent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.IBindableComponent" />
+      </Parameters>
+      <Docs>
+        <param name="control">The <see cref="T:System.Windows.Forms.IBindableComponent" /> the binding collection belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ControlBindingsCollection" /> class with the specified bindable control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Forms.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Forms.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.Windows.Forms.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.Windows.Forms.Binding" /> to add.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Forms.Binding" /> to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Binding.DataSourceUpdateMode%2A> property of the <xref:System.Windows.Forms.Binding> created by this overload of the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method is set to the value of the <xref:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode%2A> property.  
+  
+ The <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event occurs when the change is complete.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.Binding> instance, and uses the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method to add the instance to the <xref:System.Windows.Forms.ControlBindingsCollection> of a <xref:System.Windows.Forms.TextBox> control.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Forms.Binding" /> does not specify a valid column of the <see cref="P:System.Windows.Forms.Binding.DataSource" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> that represents the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <summary>Creates a <see cref="T:System.Windows.Forms.Binding" /> using the specified control property name, data source, and data member, and adds it to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Binding.DataSourceUpdateMode%2A> property of the <xref:System.Windows.Forms.Binding> created by this overload of the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method is set to the value of the <xref:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode%2A> property.  
+  
+ Adding a <xref:System.Windows.Forms.Binding> causes the <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event to occur.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method to add three <xref:System.Windows.Forms.Binding> objects to the <xref:System.Windows.Forms.ControlBindingsCollection> of a <xref:System.Windows.Forms.TextBox> control. The <xref:System.Windows.Forms.ControlBindingsCollection> is accessed through the <xref:System.Windows.Forms.Control.DataBindings%2A> property of the <xref:System.Windows.Forms.Control> class.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.Add1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.Add1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add1 Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.Add1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.Add1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Exception">The <paramref name="dataMember" /> doesn't specify a valid member of the <paramref name="dataSource" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+        <Parameter Name="formattingEnabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> representing the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <param name="formattingEnabled">
+          <see langword="true" /> to format the displayed data; otherwise, <see langword="false" /></param>
+        <summary>Creates a binding with the specified control property name, data source, data member, and information about whether formatting is enabled, and adds the binding to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control.  
+  
+ -or-  
+  
+ The property given is a read-only property.</exception>
+        <exception cref="T:System.Exception">If formatting is disabled and the <paramref name="propertyName" /> is neither a valid property of a control nor an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+        <Parameter Name="formattingEnabled" Type="System.Boolean" />
+        <Parameter Name="updateMode" Type="System.Windows.Forms.DataSourceUpdateMode" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> representing the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <param name="formattingEnabled">
+          <see langword="true" /> to format the displayed data; otherwise, <see langword="false" />.</param>
+        <param name="updateMode">One of the <see cref="T:System.Windows.Forms.DataSourceUpdateMode" /> values.</param>
+        <summary>Creates a binding that binds the specified control property to the specified data member of the specified data source, optionally enabling formatting, propagating values to the data source based on the specified update setting, and adding the binding to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method raises the <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control or is read-only.  
+  
+ -or-  
+  
+ The specified data member does not exist on the data source.  
+  
+ -or-  
+  
+ The data source, data member, or control property specified are associated with another binding in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+        <Parameter Name="formattingEnabled" Type="System.Boolean" />
+        <Parameter Name="updateMode" Type="System.Windows.Forms.DataSourceUpdateMode" />
+        <Parameter Name="nullValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> representing the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <param name="formattingEnabled">
+          <see langword="true" /> to format the displayed data; otherwise, <see langword="false" />.</param>
+        <param name="updateMode">One of the <see cref="T:System.Windows.Forms.DataSourceUpdateMode" /> values.</param>
+        <param name="nullValue">When the data source has this value, the bound property is set to <see cref="T:System.DBNull" />.</param>
+        <summary>Creates a binding that binds the specified control property to the specified data member of the specified data source, optionally enabling formatting, propagating values to the data source based on the specified update setting, setting the property to the specified value when <see cref="T:System.DBNull" /> is returned from the data source, and adding the binding to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method raises the <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control or is read-only.  
+  
+ -or-  
+  
+ The specified data member does not exist on the data source.  
+  
+ -or-  
+  
+ The data source, data member, or control property specified are associated with another binding in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+        <Parameter Name="formattingEnabled" Type="System.Boolean" />
+        <Parameter Name="updateMode" Type="System.Windows.Forms.DataSourceUpdateMode" />
+        <Parameter Name="nullValue" Type="System.Object" />
+        <Parameter Name="formatString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> representing the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <param name="formattingEnabled">
+          <see langword="true" /> to format the displayed data; otherwise, <see langword="false" />.</param>
+        <param name="updateMode">One of the <see cref="T:System.Windows.Forms.DataSourceUpdateMode" /> values.</param>
+        <param name="nullValue">When the data source has this value, the bound property is set to <see cref="T:System.DBNull" />.</param>
+        <param name="formatString">One or more format specifier characters that indicate how a value is to be displayed.</param>
+        <summary>Creates a binding that binds the specified control property to the specified data member of the specified data source, optionally enabling formatting with the specified format string, propagating values to the data source based on the specified update setting, setting the property to the specified value when <see cref="T:System.DBNull" /> is returned from the data source, and adding the binding to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method raises the <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control or is read-only.  
+  
+ -or-  
+  
+ The specified data member does not exist on the data source.  
+  
+ -or-  
+  
+ The data source, data member, or control property specified are associated with another binding in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding Add (string propertyName, object dataSource, string dataMember, bool formattingEnabled, System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString, IFormatProvider formatInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Binding Add(string propertyName, object dataSource, string dataMember, bool formattingEnabled, valuetype System.Windows.Forms.DataSourceUpdateMode updateMode, object nullValue, string formatString, class System.IFormatProvider formatInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Add(System.String,System.Object,System.String,System.Boolean,System.Windows.Forms.DataSourceUpdateMode,System.Object,System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+        <Parameter Name="formattingEnabled" Type="System.Boolean" />
+        <Parameter Name="updateMode" Type="System.Windows.Forms.DataSourceUpdateMode" />
+        <Parameter Name="nullValue" Type="System.Object" />
+        <Parameter Name="formatString" Type="System.String" />
+        <Parameter Name="formatInfo" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the control property to bind.</param>
+        <param name="dataSource">An <see cref="T:System.Object" /> representing the data source.</param>
+        <param name="dataMember">The property or list to bind to.</param>
+        <param name="formattingEnabled">
+          <see langword="true" /> to format the displayed data; otherwise, <see langword="false" />.</param>
+        <param name="updateMode">One of the <see cref="T:System.Windows.Forms.DataSourceUpdateMode" /> values.</param>
+        <param name="nullValue">When the data source has this value, the bound property is set to <see cref="T:System.DBNull" />.</param>
+        <param name="formatString">One or more format specifier characters that indicate how a value is to be displayed</param>
+        <param name="formatInfo">An implementation of <see cref="T:System.IFormatProvider" /> to override default formatting behavior.</param>
+        <summary>Creates a binding that binds the specified control property to the specified data member of the specified data source, optionally enabling formatting with the specified format string, propagating values to the data source based on the specified update setting, setting the property to the specified value when <see cref="T:System.DBNull" /> is returned from the data source, setting the specified format provider, and adding the binding to the collection.</summary>
+        <returns>The newly created <see cref="T:System.Windows.Forms.Binding" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method raises the <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property given by <paramref name="propertyName" /> does not exist on the control or is read-only.  
+  
+ -or-  
+  
+ The specified data member does not exist on the data source.  
+  
+ -or-  
+  
+ The data source, data member, or control property specified are associated with another binding in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCore">
+      <MemberSignature Language="C#" Value="protected override void AddCore (System.Windows.Forms.Binding dataBinding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.AddCore(System.Windows.Forms.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataBinding" Type="System.Windows.Forms.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="dataBinding">The <see cref="T:System.Windows.Forms.Binding" /> to add.</param>
+        <summary>Adds a binding to the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindableComponent">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.IBindableComponent BindableComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IBindableComponent BindableComponent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.BindableComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IBindableComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.IBindableComponent" /> the binding collection belongs to.</summary>
+        <value>The <see cref="T:System.Windows.Forms.IBindableComponent" /> the binding collection belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ControlBindingsCollection.BindableComponent%2A> property returns the same object as the <xref:System.Windows.Forms.ControlBindingsCollection.Control%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection of any bindings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event occurs when the collection is cleared.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ControlBindingsCollection.Clear%2A> method to clear the <xref:System.Windows.Forms.ControlBindingsCollection> for each control on a form.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.Clear Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Clear Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Clear Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.Clear Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearCore">
+      <MemberSignature Language="C#" Value="protected override void ClearCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.ClearCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the bindings in the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control Control" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control that the collection belongs to.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Control" /> that the collection belongs to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example prints information about the control that a <xref:System.Windows.Forms.ControlBindingsCollection> belongs to.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.Control Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Control Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.Control Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Control Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.Control Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.Control Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDataSourceUpdateMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataSourceUpdateMode DefaultDataSourceUpdateMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataSourceUpdateMode DefaultDataSourceUpdateMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default <see cref="P:System.Windows.Forms.Binding.DataSourceUpdateMode" /> for a <see cref="T:System.Windows.Forms.Binding" /> in the collection.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataSourceUpdateMode" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode%2A> property is used in cases where a <xref:System.Windows.Forms.Binding> without a <xref:System.Windows.Forms.Binding.DataSourceUpdateMode%2A> specified is added to the collection. The default value for Windows Forms controls is <xref:System.Windows.Forms.DataSourceUpdateMode>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Binding this[string propertyName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Binding Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ControlBindingsCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Binding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property on the data-bound control.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.Binding" /> specified by the control's property name.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Binding" /> that binds the specified control property to a data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified property does not match a binding in the collection, <xref:System.Windows.Forms.ControlBindingsCollection.Item%2A> returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example returns a single <xref:System.Windows.Forms.Binding> from a <xref:System.Windows.Forms.ControlBindingsCollection>.  
+  
+ [!code-cpp[BindingsCollectionItem Property#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingsCollectionItem Property/CPP/bindingscollectionthis.cpp#1)]
+ [!code-csharp[BindingsCollectionItem Property#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingsCollectionItem Property/CS/bindingscollectionthis.cs#1)]
+ [!code-vb[BindingsCollectionItem Property#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingsCollectionItem Property/VB/bindingscollectionthis.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Windows.Forms.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Forms.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.Remove(System.Windows.Forms.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.Windows.Forms.Binding" /> to remove.</param>
+        <summary>Deletes the specified <see cref="T:System.Windows.Forms.Binding" /> from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example removes a specific <xref:System.Windows.Forms.Binding> from a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.ControlBindingsCollection>. The example gets the required <xref:System.Windows.Forms.Binding> by using the <xref:System.Windows.Forms.ControlBindingsCollection.Item%2A> property, and removes the <xref:System.Windows.Forms.Binding> with the <xref:System.Windows.Forms.ControlBindingsCollection.Remove%2A> method.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.Remove Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Remove Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.Remove Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.Remove Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">The <paramref name="binding" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Deletes the <see cref="T:System.Windows.Forms.Binding" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingsCollection.CollectionChanged> event occurs if the removal succeeds.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.BaseCollection.Count%2A> property to determine whether the index is within the range of the collection. If so, the third <xref:System.Windows.Forms.Binding> is removed.  
+  
+ [!code-cpp[Classic ControlBindingsCollection.RemoveAt Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ControlBindingsCollection.RemoveAt Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ControlBindingsCollection.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ControlBindingsCollection.RemoveAt Example/CS/source.cs#1)]
+ [!code-vb[Classic ControlBindingsCollection.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ControlBindingsCollection.RemoveAt Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> value is less than 0, or it is greater than the number of bindings in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCore">
+      <MemberSignature Language="C#" Value="protected override void RemoveCore (System.Windows.Forms.Binding dataBinding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveCore(class System.Windows.Forms.Binding dataBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ControlBindingsCollection.RemoveCore(System.Windows.Forms.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataBinding" Type="System.Windows.Forms.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="dataBinding">The <see cref="T:System.Windows.Forms.Binding" /> to remove from the collection.</param>
+        <summary>Removes the specified binding from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The binding belongs to another <see cref="T:System.Windows.Forms.ControlBindingsCollection" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

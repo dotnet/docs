@@ -1,0 +1,42 @@
+<Type Name="AssemblyLoadEventHandler" FullName="System.AssemblyLoadEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void AssemblyLoadEventHandler(object sender, AssemblyLoadEventArgs args);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AssemblyLoadEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.AssemblyLoadEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="args" Type="System.AssemblyLoadEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="args">An <see cref="T:System.AssemblyLoadEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.AppDomain.AssemblyLoad" /> event of an <see cref="T:System.AppDomain" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.AssemblyLoadEventHandler> is used to specify the methods that are invoked in response to an <xref:System.AppDomain.AssemblyLoad> event. To associate an instance of <xref:System.AssemblyLoadEventHandler> with an event, add the instance to the event. The methods referenced by the <xref:System.AssemblyLoadEventHandler> are invoked whenever an assembly is loaded, until the <xref:System.AssemblyLoadEventHandler> is removed from the event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

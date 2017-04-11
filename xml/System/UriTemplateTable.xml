@@ -1,0 +1,430 @@
+<Type Name="UriTemplateTable" FullName="System.UriTemplateTable">
+  <TypeSignature Language="C#" Value="public class UriTemplateTable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriTemplateTable extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.UriTemplateTable" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A class that represents an associative set of <see cref="T:System.UriTemplate" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.UriTemplateTable> is an associative set of <xref:System.UriTemplate> objects bound to an object of the developer's choosing. It allows you to match candidate Uniform Resource Identifiers (URIs) against the templates in the set and retrieve the data associated with the matching templates. The contents of <xref:System.UriTemplateTable> can be changed until the <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> method is called, at which time one of following types of validation occurs:  
+  
+-   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `false`, the <xref:System.UriTemplateTable> checks to make sure the table contains no multiple structurally-equivalent templates. If it finds such templates, it throws an exception. This type of validation is used in conjunction with <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> when you want to ensure only one template matches an incoming URI.  
+  
+-   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `true`, multiple structurally-equivalent templates can be contained within a <xref:System.UriTemplateTable>. However, any query strings in the templates must not be ambiguous; identical query strings are allowed. [!INCLUDE[crabout](~/includes/crabout-md.md)] ambiguous query strings, see [UriTemplate and UriTemplateTable](~/docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md).  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.UriTemplateTable>, populate it, and use it to match against a candidate <xref:System.Uri>.  
+  
+ [!code-csharp[UriTemplateTable#0](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/program.cs#0)]
+ [!code-vb[UriTemplateTable#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/program1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UriTemplateTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateTable" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to instantiate the <xref:System.UriTemplateTable> class.  
+  
+ [!code-csharp[UriTemplateTable#1](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/program.cs#1)]
+ [!code-vb[UriTemplateTable#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/program1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UriTemplateTable (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate,object&gt;&gt; keyValuePairs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.UriTemplate, object&gt;&gt; keyValuePairs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.UriTemplate,System.Object}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyValuePairs" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UriTemplate,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="keyValuePairs">A collection of key/value pairs that consist of URI templates and associated data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateTable" /> class with the specified collection of key/value pairs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to instantiate the <xref:System.UriTemplateTable> class.  
+  
+ [!code-csharp[UriTemplateTable#2](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#2)]
+ [!code-vb[UriTemplateTable#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UriTemplateTable (Uri baseAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseAddress" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="baseAddress">A <see cref="T:System.Uri" /> instance that contains the base address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateTable" /> class with the specified base address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[UriTemplateTable#3](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/program.cs#3)]
+ [!code-vb[UriTemplateTable#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/program1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UriTemplateTable (Uri baseAddress, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate,object&gt;&gt; keyValuePairs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseAddress, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.UriTemplate, object&gt;&gt; keyValuePairs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.#ctor(System.Uri,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.UriTemplate,System.Object}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseAddress" Type="System.Uri" />
+        <Parameter Name="keyValuePairs" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.UriTemplate,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="baseAddress">A <see cref="T:System.Uri" /> instance that contains the base address.</param>
+        <param name="keyValuePairs">A collection of key/value pairs that consist of URI templates and associated data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.UriTemplateTable" /> class with the specified base address and collection of key/value pairs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call this constructor.  
+  
+ [!code-csharp[UriTemplateTable#4](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#4)]
+ [!code-vb[UriTemplateTable#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAddress">
+      <MemberSignature Language="C#" Value="public Uri BaseAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseAddress" />
+      <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.BaseAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the base address for the <see cref="T:System.UriTemplateTable" /> instance.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the base address.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.UriTemplateTable.BaseAddress%2A> property can only be set prior to calling <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> or <xref:System.UriTemplateTable.Match%28System.Uri%29> or <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> otherwise an <xref:System.InvalidOperationException> is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the <xref:System.UriTemplateTable.BaseAddress%2A> property.  
+  
+ [!code-csharp[UriTemplateTable#5](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#5)]
+ [!code-vb[UriTemplateTable#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.UriTemplateTable" /> is read only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.UriTemplateTable" /> property is read only; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.UriTemplateTable> is read only after the <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> method is called.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the <xref:System.UriTemplateTable.IsReadOnly%2A> property.  
+  
+ [!code-csharp[UriTemplateTable#6](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#6)]
+ [!code-vb[UriTemplateTable#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyValuePairs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;UriTemplate,object&gt;&gt; KeyValuePairs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.UriTemplate, object&gt;&gt; KeyValuePairs" />
+      <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.KeyValuePairs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Collections.Generic.KeyValuePair&lt;System.UriTemplate,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of key/value pairs that consist of <see cref="T:System.UriTemplate" /> objects and their associated data.</summary>
+        <value>A collection of key/value pairs that consist of <see cref="T:System.UriTemplate" /> objects and their associated data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.UriTemplate> instance in the table has data associated with it. The <xref:System.UriTemplateTable.KeyValuePairs%2A> property contains a collection of key value pairs where the key is a <xref:System.UriTemplate> instance and the value is the data associated with the <xref:System.UriTemplate>. Values can only be added to <xref:System.UriTemplateTable.KeyValuePairs%2A> property prior to calling <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> or <xref:System.UriTemplateTable.Match%28System.Uri%29> or <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> otherwise a <xref:System.NotSupportedException> is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the <xref:System.UriTemplateTable.KeyValuePairs%2A> property.  
+  
+ [!code-csharp[UriTemplateTable#7](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#7)]
+ [!code-vb[UriTemplateTable#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="public void MakeReadOnly (bool allowDuplicateEquivalentUriTemplates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly(bool allowDuplicateEquivalentUriTemplates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.MakeReadOnly(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowDuplicateEquivalentUriTemplates" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="allowDuplicateEquivalentUriTemplates">Specifies whether to allow duplicate equivalent <see cref="T:System.UriTemplate" /> instances in the <see cref="T:System.UriTemplateTable" />.</param>
+        <summary>Makes the <see cref="T:System.UriTemplateTable" /> read only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> method is called, one of the following types of validation occurs:  
+  
+-   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `false`, the <xref:System.UriTemplateTable> checks to make sure the table contains no multiple structurally-equivalent templates. If it finds such templates, an exception is thrown. This type of validation is used in conjunction with <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> when you want to ensure only one template matches an incoming URI.  
+  
+-   When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `true`, multiple structurally-equivalent templates can be contained within a <xref:System.UriTemplateTable>. However, any query strings in the templates must not be ambiguous; identical query strings are allowed. This type of validation is used in conjunction with <xref:System.UriTemplateTable.Match%28System.Uri%29> when multiple template matches are allowed on the candidate URI.  
+  
+ Only the first call to <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is honored, subsequent calls are ignored without any exception being thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;UriTemplateMatch&gt; Match (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.UriTemplateMatch&gt; Match(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.Match(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.UriTemplateMatch&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The candidate URI.</param>
+        <summary>Attempts to match a candidate <see cref="T:System.Uri" /> to the <see cref="T:System.UriTemplateTable" />.</summary>
+        <returns>A collection of <see cref="T:System.UriTemplateMatch" /> instances.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may return multiple matches.  
+  
+   
+  
+## Examples  
+ The following example shows how to call the <xref:System.UriTemplateTable.Match%28System.Uri%29> method.  
+  
+ [!code-csharp[UriTemplateTable#9](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#9)]
+ [!code-vb[UriTemplateTable#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchSingle">
+      <MemberSignature Language="C#" Value="public UriTemplateMatch MatchSingle (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.UriTemplateMatch MatchSingle(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.UriTemplateTable.MatchSingle(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriTemplateMatch</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The candidate URI.</param>
+        <summary>Attempts to match a candidate <see cref="T:System.Uri" /> to the <see cref="T:System.UriTemplateTable" />.</summary>
+        <returns>A single <see cref="T:System.UriTemplateMatch" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns, at most, one match. If more than one match is found, a <xref:System.UriTemplateMatchException> is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to call the <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> method.  
+  
+ [!code-csharp[UriTemplateTable#10](~/samples/snippets/csharp/VS_Snippets_CFX/uritemplatetable/cs/snippets.cs#10)]
+ [!code-vb[UriTemplateTable#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/uritemplatetable/vb/snippets.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalBaseAddress">
+      <MemberSignature Language="C#" Value="public Uri OriginalBaseAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri OriginalBaseAddress" />
+      <MemberSignature Language="DocId" Value="P:System.UriTemplateTable.OriginalBaseAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the original base address.</summary>
+        <value>The original base address.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

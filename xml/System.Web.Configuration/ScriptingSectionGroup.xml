@@ -1,0 +1,94 @@
+<Type Name="ScriptingSectionGroup" FullName="System.Web.Configuration.ScriptingSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class ScriptingSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the configuration section for scripting settings. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Configuration.ScriptingSectionGroup> class to programmatically set and retrieve the values of the `scripting` section of the configuration file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptingSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ScriptingSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptResourceHandler">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingScriptResourceHandlerSection ScriptResourceHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingScriptResourceHandlerSection ScriptResourceHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingSectionGroup.ScriptResourceHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("scriptResourceHandler")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingScriptResourceHandlerSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" /> object that is derived from the current system configuration.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingScriptResourceHandlerSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `ScriptingScriptResourceHandler` configuration section to set whether script files that are embedded as resources are compressed and cached. You can enable or disable compression and caching by using the <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCompression%2A> and <xref:System.Web.Configuration.ScriptingScriptResourceHandlerSection.EnableCaching%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebServices">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingWebServicesSectionGroup WebServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingWebServicesSectionGroup WebServices" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingSectionGroup.WebServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("webServices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingWebServicesSectionGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> object that is derived from the current system configuration.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

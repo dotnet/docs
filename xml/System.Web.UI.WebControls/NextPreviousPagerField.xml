@@ -1,0 +1,1012 @@
+<Type Name="NextPreviousPagerField" FullName="System.Web.UI.WebControls.NextPreviousPagerField">
+  <TypeSignature Language="C#" Value="public class NextPreviousPagerField : System.Web.UI.WebControls.DataPagerField" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NextPreviousPagerField extends System.Web.UI.WebControls.DataPagerField" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NextPreviousPagerField" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataPagerField</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a field that displays navigation controls in a <see cref="T:System.Web.UI.WebControls.DataPager" /> control enable users to page through data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField> class represents a field that displays navigation controls in a <xref:System.Web.UI.WebControls.DataPager> control. These navigation controls can be used to page through data that are displayed by a control that implements the <xref:System.Web.UI.WebControls.IPageableItemContainer> interface, such as the <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField> class provides buttons that enable users to navigate through the pages of data one page at a time, or to jump to the first or last page of data.  
+  
+ You can customize the appearance of the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object by using the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property to set the style of the buttons. You can also use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property to choose the type of button that is displayed. The following table lists the available button types.  
+  
+|Button type|Description|  
+|-----------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+  
+ You can hide a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object in a <xref:System.Web.UI.WebControls.DataPager> control by setting the <xref:System.Web.UI.WebControls.DataPagerField.Visible%2A> property to `false`. You can also hide the individual buttons (the first-page, previous-page, next-page, and last-page buttons) by setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A>, and <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> properties to `false`.  
+  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField> control enables you to specify custom text for each button by using the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText%2A>, and <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText%2A> properties.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, you must provide the URL to an image that will be displayed for the button. You can set images individually for each button by setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A>, and <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A> properties.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, the corresponding text property acts as the alternate text for the image. For example, the text that is specified by the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText%2A> property is displayed as the alternate text for the first-page image button. In browsers that support tooltips, this text is also displayed as a tooltip.  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to page through data that is displayed in a <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NextPreviousPagerField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.%23ctor%2A> constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.NextPreviousPagerField> class. This constructor is typically used when you are adding fields to a dynamically created <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ To add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object dynamically to a <xref:System.Web.UI.WebControls.DataPager> control, create a new <xref:System.Web.UI.WebControls.NextPreviousPagerField> object, set its properties, and then add it to the field collection for the <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonCssClass">
+      <MemberSignature Language="C#" Value="public string ButtonCssClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ButtonCssClass" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.CssClassProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cascading style sheet (CSS) class that is used to render the buttons of the pager field on the browser.</summary>
+        <value>The CSS class used to render the buttons of the pager field on the client. The default is an empty string, which indicates that the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property to specify the CSS class to render on the browser for the buttons of the pager field. This property will always be rendered as the class attribute, regardless of the browser.  
+  
+> [!NOTE]
+>  On browsers that do not support CSS, setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property has no effect.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property to specify a CSS class for buttons in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ButtonType ButtonType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType ButtonType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button type to display in the pager field.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values. The default is <see langword="ButtonType.Link" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property to specify which type of button is displayed in a button field. The following table lists the available button types.  
+  
+|Button type value|Description|  
+|-----------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+  
+ When <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> is set to `ButtonType.Image`, you must set the image to display for the buttons by using the properties shown in the following table.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A>|The URL to an image to display for the first-page button.|  
+|<xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A>|The URL to an image to display for the previous-page button.|  
+|<xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A>|The URL to an image to display for the next-page button.|  
+|<xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A>|The URL to an image to display for the last-page button.|  
+  
+ The value of the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property to specify that image buttons are displayed in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value for the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType" /> property is not one of the <see cref="T:System.Web.UI.WebControls.ButtonType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyProperties">
+      <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataPagerField newField);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataPagerField newField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newField" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataPagerField" /> to copy the properties of the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> to.</param>
+        <summary>Copies the properties of the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object to the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties%2A> method is a helper method. It is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to the <xref:System.Web.UI.WebControls.DataPagerField> object that is passed in the `newField` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method to copy the new properties that were created in the derived class. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" /> method so that the properties of the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class are also copied.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDataPagers">
+      <MemberSignature Language="C#" Value="public override void CreateDataPagers (System.Web.UI.WebControls.DataPagerFieldItem container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateDataPagers(class System.Web.UI.WebControls.DataPagerFieldItem container, int32 startRowIndex, int32 maximumRows, int32 totalRowCount, int32 fieldIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.WebControls.DataPagerFieldItem" />
+        <Parameter Name="startRowIndex" Type="System.Int32" />
+        <Parameter Name="maximumRows" Type="System.Int32" />
+        <Parameter Name="totalRowCount" Type="System.Int32" />
+        <Parameter Name="fieldIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="container">The container that is used to store the controls.</param>
+        <param name="startRowIndex">The index of the first record on the page.</param>
+        <param name="maximumRows">The maximum number of items on a single page.</param>
+        <param name="totalRowCount">The total number of items.</param>
+        <param name="fieldIndex">The index of the data pager field in the <see cref="P:System.Web.UI.WebControls.DataPager.Fields" /> collection.</param>
+        <summary>Creates the user interface (UI) controls for the pager field object and adds them to the specified container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CreateDataPagers%2A> method is used by the <xref:System.Web.UI.WebControls.DataPager.CreatePagerFields%2A?displayProperty=fullName> method to create the UI controls for the pager field, such as the Previous and Next buttons.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataPagerField CreateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataPagerField CreateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a new instance of the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class.</summary>
+        <returns>A new instance of the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.CreateField%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPagerField.CloneField%2A> method of the base class to create an empty <xref:System.Web.UI.WebControls.NextPreviousPagerField> object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" /> method to return a new instance of the derived class. Do not call the <see cref="M:System.Web.UI.WebControls.NextPreviousPagerField.CreateField" /> method of the base class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare with the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> instance.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.Equals%2A> method to determine whether the current <xref:System.Web.UI.WebControls.NextPreviousPagerField> object is equal to the object that is specified by the `o` parameter. <xref:System.Web.UI.WebControls.NextPreviousPagerField.Equals%2A> returns `true` if the two objects contain exactly the same values for all public properties of the <xref:System.Web.UI.WebControls.NextPreviousPagerField> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstPageImageUrl">
+      <MemberSignature Language="C#" Value="public string FirstPageImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FirstPageImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.ImageUrlEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that is displayed for the first-page button.</summary>
+        <value>The URL to an image that is displayed for the first-page button. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image` and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A> property to specify the URL to an image that is displayed for the first-page button. This image can be in any file format (.jpg, .gif, .bmp, and so on) that is supported in the browser.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to a value other than `ButtonType.Image`, setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageImageUrl%2A> property to display an image for the first-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstPageText">
+      <MemberSignature Language="C#" Value="public string FirstPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FirstPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed for the first-page button.</summary>
+        <value>The text that is displayed for the first-page button. The default is "First".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText%2A> property to specify the text to display for the first-page button.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, the image is displayed and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.FirstPageText%2A> property acts as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip.  
+  
+ The value of this property is stored in viewstate, and it can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property to customize the text for the first-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> class.</summary>
+        <returns>A hash code for the current <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleEvent">
+      <MemberSignature Language="C#" Value="public override void HandleEvent (System.Web.UI.WebControls.CommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void HandleEvent(class System.Web.UI.WebControls.CommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Handles events that occur in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> control and performs the appropriate action.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent%2A> method is a helper method that is used by the <xref:System.Web.UI.WebControls.DataPager.OnBubbleEvent%2A?displayProperty=fullName> method. It is called to handle events that occur in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object when one of the buttons inside the control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.NextPreviousPagerField.HandleEvent%2A> method examines the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object that is contained in the `e` parameter, and then performs the appropriate action.  
+  
+ The following table lists the buttons that are provided by the <xref:System.Web.UI.WebControls.NextPreviousPagerField> control and the action that is performed when the button is clicked.  
+  
+|Button|CommandName value|Action|  
+|------------|-----------------------|------------|  
+|First page|<xref:System.Web.UI.WebControls.DataControlCommands.FirstPageCommandArgument?displayProperty=fullName>|Navigates to the first page of data.|  
+|Previous page|<xref:System.Web.UI.WebControls.DataControlCommands.PreviousPageCommandArgument?displayProperty=fullName>|Navigates to the previous page of data.|  
+|Next page|<xref:System.Web.UI.WebControls.DataControlCommands.NextPageCommandArgument?displayProperty=fullName>|Navigates to the next page of data.|  
+|Last page|<xref:System.Web.UI.WebControls.DataControlCommands.LastPageCommandArgument?displayProperty=fullName>|Navigates to the last page of data.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPageImageUrl">
+      <MemberSignature Language="C#" Value="public string LastPageImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastPageImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.ImageUrlEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that is displayed for the last-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>The URL to an image that is displayed for the last-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image` and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A> property to specify the URL to an image that is displayed for the last-page button. This image can be in any file format (.jpg, .gif, .bmp, and so on) that is supported in the browser.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to a value other than `ButtonType.Image`, setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageImageUrl%2A> property to display an image for the last-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPageText">
+      <MemberSignature Language="C#" Value="public string LastPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LastPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed for the last-page button.</summary>
+        <value>The text that is displayed for the last-page button. The default is "Last".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText%2A> property to specify the text to display for the last-page button.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, the image is displayed and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.LastPageText%2A> property acts as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip.  
+  
+ The value of this property is stored in viewstate, and it can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property to customize the text for the last-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageImageUrl">
+      <MemberSignature Language="C#" Value="public string NextPageImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextPageImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that is displayed for the next-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>The URL to an image that is displayed for the next-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image` and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A> property to specify the URL to an image that is displayed for the next-page button. This image can be in any file format (.jpg, .gif, .bmp, and so on) that is supported in the browser.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to a value other than `ButtonType.Image`, setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageImageUrl%2A> property to display an image for the next-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageText">
+      <MemberSignature Language="C#" Value="public string NextPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed for the next-page button.</summary>
+        <value>The text that is displayed for the next-page button. The default is "Next".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText%2A> property to specify the text to display for the next-page button.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, the image is displayed and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.NextPageText%2A> property acts as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip.  
+  
+ The value of this property is stored in viewstate, and it can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property to customize the text for the next-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousPageImageUrl">
+      <MemberSignature Language="C#" Value="public string PreviousPageImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreviousPageImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Web.UI.Design.ImageUrlEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that is displayed for the previous-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>The URL to an image that is displayed for the previous-page button in the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object. The default is an empty string (""), which indicates that the <see cref="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl" /> property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image` and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A> property to specify the URL to an image that is displayed for the previous-page button. This image can be in any file format (.jpg, .gif, .bmp, and so on) that is supported in the browser.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to a value other than `ButtonType.Image`, setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A> property has no effect.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageImageUrl%2A> property to display an image for the previous-page button in the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object of a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/CS/NextPreviousPagerUrlCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldUrl/VB/NextPreviousPagerUrlVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousPageText">
+      <MemberSignature Language="C#" Value="public string PreviousPageText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PreviousPageText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is displayed for the previous-page button.</summary>
+        <value>The text that is displayed for the previous-page button. The default is "Previous".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A> property is set to `true`, use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText%2A> property to specify the text to display for the previous-page button.  
+  
+ When the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property is set to `ButtonType.Image`, the image is displayed and the <xref:System.Web.UI.WebControls.NextPreviousPagerField.PreviousPageText%2A> property acts as the alternate text for the image. On browsers that support tooltips, this text is also displayed as a tooltip.  
+  
+ The value of this property is stored in viewstate, and it can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property to customize the text for the previous-page button of the pager field in a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/CS/NextPreviousPagerTextCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldText/VB/NextPreviousPagerTextVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderDisabledButtonsAsLabels">
+      <MemberSignature Language="C#" Value="public bool RenderDisabledButtonsAsLabels { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderDisabledButtonsAsLabels" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.RenderDisabledButtonsAsLabels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether disabled buttons are rendered as <see cref="T:System.Web.UI.WebControls.Label" /> controls by the <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>
+          <see langword="true" /> if disabled buttons are rendered as <see cref="T:System.Web.UI.WebControls.Label" /> controls; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.RenderDisabledButtonsAsLabels%2A> property to specify whether disabled buttons are rendered as <xref:System.Web.UI.WebControls.Label> controls by the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object. The buttons are disabled by the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object when the function associated with the button cannot be performed. For example, when you are in the first page of data, the first-page and previous-page buttons are disabled.  
+  
+ By default, the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object renders the disabled buttons by using the control type specified by the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> property. It also sets the <xref:System.Web.UI.WebControls.WebControl.Enabled%2A> property of the control to `false`.  
+  
+ When <xref:System.Web.UI.WebControls.NextPreviousPagerField.RenderDisabledButtonsAsLabels%2A> is set to `true`, the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object uses the <xref:System.Web.UI.WebControls.Label> control to render the disabled buttons. The value of the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonCssClass%2A> property is used to set the <xref:System.Web.UI.WebControls.WebControl.CssClass%2A> property of the <xref:System.Web.UI.WebControls.Label> control.  
+  
+ The value of this property is stored in viewstate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderNonBreakingSpacesBetweenControls">
+      <MemberSignature Language="C#" Value="public bool RenderNonBreakingSpacesBetweenControls { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderNonBreakingSpacesBetweenControls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.RenderNonBreakingSpacesBetweenControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether non-breaking spaces are rendered between controls.</summary>
+        <value>
+          <see langword="true" /> if non-breaking spaces are rendered between controls; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.RenderNonBreakingSpacesBetweenControls%2A> property to specify whether non-breaking spaces (the HTML `&nbsp;` character) are rendered between the navigation controls of the <xref:System.Web.UI.WebControls.NextPreviousPagerField> object. You can set <xref:System.Web.UI.WebControls.NextPreviousPagerField.RenderNonBreakingSpacesBetweenControls%2A> to `false` if you need more control over the layout that you are creating with cascading style sheet (CSS) classes.  
+  
+ The value of this property is stored in viewstate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowFirstPageButton">
+      <MemberSignature Language="C#" Value="public bool ShowFirstPageButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowFirstPageButton" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the first-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>
+          <see langword="true" /> if the first-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property to show or hide the first-page button of a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object. To show the first-page button, set the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property to `true`.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A> property to specify that the first-page button should be displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowLastPageButton">
+      <MemberSignature Language="C#" Value="public bool ShowLastPageButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowLastPageButton" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the last-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>
+          <see langword="true" /> if the last-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property to show or hide the last-page button of a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object. To show the last-page button, set the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property to `true`.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> property to specify that the last-page button should be displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/CS/NextPreviousPagerFieldCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField/VB/NextPreviousPagerFieldVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowNextPageButton">
+      <MemberSignature Language="C#" Value="public bool ShowNextPageButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowNextPageButton" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the next-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>
+          <see langword="true" /> if the next-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A> property to show or hide the next-page button of a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A> property to specify that the next-page button should not be displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPreviousPageButton">
+      <MemberSignature Language="C#" Value="public bool ShowPreviousPageButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowPreviousPageButton" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the previous-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object.</summary>
+        <value>
+          <see langword="true" /> if the previous-page button is displayed in a <see cref="T:System.Web.UI.WebControls.NextPreviousPagerField" /> object; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A> property to show or hide the previous-page button of a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object.  
+  
+ The value of this property is stored in viewstate.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A> property to specify that the previous-page button should not be displayed.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/CS/NextPreviousPagerShowPageCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.NextPreviousPagerFieldShowPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerFieldShowPage/VB/NextPreviousPagerShowPageVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

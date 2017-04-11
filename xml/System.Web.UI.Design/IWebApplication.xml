@@ -1,0 +1,88 @@
+<Type Name="IWebApplication" FullName="System.Web.UI.Design.IWebApplication">
+  <TypeSignature Language="C#" Value="public interface IWebApplication : IServiceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebApplication implements class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IWebApplication" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("cff39fa8-5607-4b6d-86f3-cc80b3cfe2dd")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface for accessing a Web application in a design host, such as [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], at design time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProjectItemFromUrl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem GetProjectItemFromUrl (string appRelativeUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IProjectItem GetProjectItemFromUrl(string appRelativeUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.GetProjectItemFromUrl(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IProjectItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appRelativeUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appRelativeUrl">The relative path to the project item to retrieve.</param>
+        <summary>Returns a project item from a design host based on its URL.</summary>
+        <returns>A project item from a design host based on its URL.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenWebConfiguration">
+      <MemberSignature Language="C#" Value="public System.Configuration.Configuration OpenWebConfiguration (bool isReadOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.Configuration OpenWebConfiguration(bool isReadOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IWebApplication.OpenWebConfiguration(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Configuration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isReadOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isReadOnly">
+          <see langword="true" /> to indicate the returned <see cref="T:System.Configuration.Configuration" /> is editable; otherwise, <see langword="false" />.</param>
+        <summary>Returns a <see cref="T:System.Configuration.Configuration" /> object representing the current Web application in the design host.</summary>
+        <returns>An object representing the current Web application in the design host.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootProjectItem">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem RootProjectItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IProjectItem RootProjectItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IWebApplication.RootProjectItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IProjectItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root project item from the design host.</summary>
+        <value>The root project item from the design host.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

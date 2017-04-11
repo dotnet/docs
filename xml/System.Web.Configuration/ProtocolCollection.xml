@@ -1,0 +1,366 @@
+<Type Name="ProtocolCollection" FullName="System.Web.Configuration.ProtocolCollection">
+  <TypeSignature Language="C#" Value="public sealed class ProtocolCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProtocolCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProtocolCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Configuration.ProtocolElement))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a configuration element that contains a collection of protocols.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProtocolCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProtocolCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.ProtocolElement protocolElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.ProtocolElement protocolElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.Add(System.Web.Configuration.ProtocolElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protocolElement" Type="System.Web.Configuration.ProtocolElement" />
+      </Parameters>
+      <Docs>
+        <param name="protocolElement">The element to add.</param>
+        <summary>Adds a configuration element to the <see cref="T:System.Web.Configuration.ProtocolCollection" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Add%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllKeys">
+      <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolCollection.AllKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all the keys of the <see cref="T:System.Web.Configuration.ProtocolCollection" /> instance.</summary>
+        <value>The array that contains the collection keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.AllKeys%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all configuration element objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Clear%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProtocolElement this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProtocolElement Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProtocolElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.Configuration.ProtocolElement" /> object in the <see cref="T:System.Web.Configuration.ProtocolCollection" /> instance.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.ProtocolElement" /> object at the specified index of the collection.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ProtocolElement" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProtocolElement this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProtocolElement Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProtocolElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The key of the entry to get.</param>
+        <summary>Gets the value of the first entry with the specified key.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ProtocolElement" /> object that represents the value of the first entry with the specified key, if found; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProtocolCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The key of the <see cref="T:System.Web.Configuration.ProtocolElement" /> object to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.Configuration.ProtocolElement" /> object that has the specified key from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Configuration.ProtocolElement protocolElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.ProtocolElement protocolElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.Remove(System.Web.Configuration.ProtocolElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protocolElement" Type="System.Web.Configuration.ProtocolElement" />
+      </Parameters>
+      <Docs>
+        <param name="protocolElement">The element to remove.</param>
+        <summary>Removes the specified <see cref="T:System.Web.Configuration.ProtocolElement" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProtocolCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index location of the element to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.Configuration.ProtocolElement" /> object at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.RemoveAt%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.ProtocolElement" /> collection item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Item%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Web.Configuration.ProtocolElement" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Configuration.ProtocolCollection.Remove%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

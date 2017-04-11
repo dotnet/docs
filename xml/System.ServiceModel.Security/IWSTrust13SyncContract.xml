@@ -1,0 +1,237 @@
+<Type Name="IWSTrust13SyncContract" FullName="System.ServiceModel.Security.IWSTrust13SyncContract">
+  <TypeSignature Language="C#" Value="public interface IWSTrust13SyncContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrust13SyncContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrust13SyncContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(Name="IWSTrust13Sync", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the service contract for the WS-Trust 1.3 protocol.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProcessTrust13Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Cancel (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Cancel", Name="Trust13Cancel", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/CancelFinal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RST/Cancel method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13CancelResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13CancelResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Cancel", Name="Trust13CancelResponse", ReplyAction="*")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Cancel method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Issue (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Issue(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Issue(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue", Name="Trust13Issue", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTRC/IssueFinal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message that contains the RST.</param>
+        <summary>Defines the RST/Issue method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13IssueResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13IssueResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Issue", Name="Trust13IssueResponse", ReplyAction="*")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Issue method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Renew (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Renew(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Renew(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Renew", Name="Trust13Renew", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/RenewFinal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RST/Renew method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13RenewResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13RenewResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Renew", Name="Trust13RenewResponse", ReplyAction="*")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Renew method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Validate (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Validate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13Validate(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Validate", Name="Trust13Validate", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/ValidateFinal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RST/Validate method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13ValidateResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrust13SyncContract.ProcessTrust13ValidateResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Validate", Name="Trust13ValidateResponse", ReplyAction="*")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Validate method for the WS-Trust 1.3 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

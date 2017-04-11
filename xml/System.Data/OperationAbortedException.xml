@@ -1,0 +1,26 @@
+<Type Name="OperationAbortedException" FullName="System.Data.OperationAbortedException">
+  <TypeSignature Language="C#" Value="public sealed class OperationAbortedException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OperationAbortedException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OperationAbortedException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This exception is thrown when an ongoing operation is aborted by the user.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception indicates that an operation has been aborted by the consumer of an API. For example, if the event handler of the <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied> event sets the **Abort** property to `true` in the <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs> object passed to the handler, the <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> method stops sending rows to the server and throws an <xref:System.Data.OperationAbortedException>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

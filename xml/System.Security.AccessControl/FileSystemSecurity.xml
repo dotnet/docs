@@ -1,0 +1,696 @@
+<Type Name="FileSystemSecurity" FullName="System.Security.AccessControl.FileSystemSecurity">
+  <TypeSignature Language="C#" Value="public abstract class FileSystemSecurity : System.Security.AccessControl.NativeObjectSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileSystemSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSystemSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.NativeObjectSecurity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the access control and audit security for a file or directory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity> class is the base class for the <xref:System.Security.AccessControl.FileSecurity> and <xref:System.Security.AccessControl.DirectorySecurity> classes.  These classes represent all of the access rights for a system file or directory and define how access attempts are audited.  
+  
+ The <xref:System.Security.AccessControl.FileSystemSecurity> class represents access and audit rights as a set of rules. Each access rule is represented by a <xref:System.Security.AccessControl.FileSystemAccessRule> object, while each audit rule is represented by a <xref:System.Security.AccessControl.FileSystemAuditRule> object.  
+  
+ The <xref:System.Security.AccessControl.FileSystemSecurity> class is an abstraction of the underlying Microsoft Windows file security system. In this system, each file or directory has a discretionary access control list (DACL), which controls access to the file or directory, and a system access control list (SACL), which specifies the access control attempts that are audited.  The <xref:System.Security.AccessControl.FileSystemAccessRule> and <xref:System.Security.AccessControl.FileSystemAuditRule> classes are abstractions of access control entries (ACEs) that comprise DACLs and SACLs.  
+  
+ The <xref:System.Security.AccessControl.FileSystemSecurity> class hides many of details of DACLs and SACLs; you do not have to worry about ACE ordering or null DACLS.  
+  
+ To persist new or changed access control list (ACL) information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+ [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+ [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccessRightType">
+      <MemberSignature Language="C#" Value="public override Type AccessRightType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AccessRightType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the enumeration that the <see cref="T:System.Security.AccessControl.FileSystemSecurity" /> class uses to represent access rights.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.FileSystemRights" /> enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.FileSystemSecurity> class override the <xref:System.Security.AccessControl.FileSystemSecurity.AccessRightType%2A> property and return the type they use to represent access rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct enumeration type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRuleFactory">
+      <MemberSignature Language="C#" Value="public override sealed System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AccessRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identityReference" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="accessMask" Type="System.Int32" />
+        <Parameter Name="isInherited" Type="System.Boolean" />
+        <Parameter Name="inheritanceFlags" Type="System.Security.AccessControl.InheritanceFlags" />
+        <Parameter Name="propagationFlags" Type="System.Security.AccessControl.PropagationFlags" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+      </Parameters>
+      <Docs>
+        <param name="identityReference">An <see cref="T:System.Security.Principal.IdentityReference" /> object that represents a user account.</param>
+        <param name="accessMask">An integer that specifies an access type.</param>
+        <param name="isInherited">
+          <see langword="true" /> if the access rule is inherited; otherwise, <see langword="false" />.</param>
+        <param name="inheritanceFlags">One of the <see cref="T:System.Security.AccessControl.InheritanceFlags" /> values that specifies how to propagate access masks to child objects.</param>
+        <param name="propagationFlags">One of the <see cref="T:System.Security.AccessControl.PropagationFlags" /> values that specifies how to propagate Access Control Entries (ACEs) to child objects.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> values that specifies whether access is allowed or denied.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class that represents a new access control rule for the specified user, with the specified access rights, access control, and flags.</summary>
+        <returns>A new <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that represents a new access control rule for the specified user, with the specified access rights, access control, and flags.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recommended way to create access control rules is to use the constructors of the <xref:System.Security.AccessControl.FileSystemAccessRule> class.  
+  
+ The return type of the <xref:System.Security.AccessControl.FileSystemSecurity.AccessRuleFactory%2A> method is the base class, <xref:System.Security.AccessControl.AccessRule>, but the return value can be cast safely to the derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="accessMask" />, <paramref name="inheritanceFlags" />, <paramref name="propagationFlags" />, or <paramref name="type" /> parameters specify an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="identityReference" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="accessMask" /> parameter is zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="identityReference" /> parameter is neither of type <see cref="T:System.Security.Principal.SecurityIdentifier" />, nor of a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessRuleType">
+      <MemberSignature Language="C#" Value="public override Type AccessRuleType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AccessRuleType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the enumeration that the <see cref="T:System.Security.AccessControl.FileSystemSecurity" /> class uses to represent access rules.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.FileSystemSecurity> class override the <xref:System.Security.AccessControl.FileSystemSecurity.AccessRuleType%2A> property and return the type they use to represent access rules. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct access rule type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAccessRule">
+      <MemberSignature Language="C#" Value="public void AddAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AddAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that represents an access control list (ACL) permission to add to a file or directory.</param>
+        <summary>Adds the specified access control list (ACL) permission to the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method adds a new rule to the list of rules contained within a <xref:System.Security.AccessControl.FileSystemSecurity> object.  
+  
+ If an access control list (ACL) already exists for the specified rule, the <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> enumeration value supersedes an object created using the <xref:System.Security.AccessControl.AccessControlType> enumeration value.  
+  
+ To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+ [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+ [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAuditRule">
+      <MemberSignature Language="C#" Value="public void AddAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AddAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object that represents an audit rule to add to a file or directory.</param>
+        <summary>Adds the specified audit rule to the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A> method adds a new audit rule to the list of rules contained within a <xref:System.Security.AccessControl.FileSystemSecurity> object.  
+  
+ If an audit rule already exists for the specified rule, the <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A> method will still add the rule.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A> method to add an audit rule to a file and uses the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method to remove the audit rule from the file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
+ [!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditRuleFactory">
+      <MemberSignature Language="C#" Value="public override sealed System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.AuditRule</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identityReference" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="accessMask" Type="System.Int32" />
+        <Parameter Name="isInherited" Type="System.Boolean" />
+        <Parameter Name="inheritanceFlags" Type="System.Security.AccessControl.InheritanceFlags" />
+        <Parameter Name="propagationFlags" Type="System.Security.AccessControl.PropagationFlags" />
+        <Parameter Name="flags" Type="System.Security.AccessControl.AuditFlags" />
+      </Parameters>
+      <Docs>
+        <param name="identityReference">An <see cref="T:System.Security.Principal.IdentityReference" /> object that represents a user account.</param>
+        <param name="accessMask">An integer that specifies an access type.</param>
+        <param name="isInherited">
+          <see langword="true" /> if the access rule is inherited; otherwise, <see langword="false" />.</param>
+        <param name="inheritanceFlags">One of the <see cref="T:System.Security.AccessControl.InheritanceFlags" /> values that specifies how to propagate access masks to child objects.</param>
+        <param name="propagationFlags">One of the <see cref="T:System.Security.AccessControl.PropagationFlags" /> values that specifies how to propagate Access Control Entries (ACEs) to child objects.</param>
+        <param name="flags">One of the <see cref="T:System.Security.AccessControl.AuditFlags" /> values that specifies the type of auditing to perform.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class representing the specified audit rule for the specified user.</summary>
+        <returns>A new <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object representing the specified audit rule for the specified user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recommended way to create audit rules is to use the constructors of the <xref:System.Security.AccessControl.FileSystemAuditRule> class.  
+  
+ The return type of the <xref:System.Security.AccessControl.FileSystemSecurity.AuditRuleFactory%2A> method is the base class, <xref:System.Security.AccessControl.AuditRule>, but the return value can be cast safely to the derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="accessMask" />, <paramref name="inheritanceFlags" />, <paramref name="propagationFlags" />, or <paramref name="flags" /> properties specify an invalid value.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="identityReference" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="accessMask" /> property is zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="identityReference" /> property is neither of type <see cref="T:System.Security.Principal.SecurityIdentifier" />, nor of a type such as <see cref="T:System.Security.Principal.NTAccount" /> that can be converted to type <see cref="T:System.Security.Principal.SecurityIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditRuleType">
+      <MemberSignature Language="C#" Value="public override Type AuditRuleType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AuditRuleType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that the <see cref="T:System.Security.AccessControl.FileSystemSecurity" /> class uses to represent audit rules.</summary>
+        <value>A <see cref="T:System.Type" /> object representing the <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from the <xref:System.Security.AccessControl.FileSystemSecurity> class override the <xref:System.Security.AccessControl.FileSystemSecurity.AuditRuleType%2A> property and return the type they use to represent audit rights. When you work with arrays or collections that contain multiple types of security objects, use this property to determine the correct audit rule type to use with each security object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRule">
+      <MemberSignature Language="C#" Value="public bool RemoveAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that represents an access control list (ACL) permission to remove from a file or directory.</param>
+        <summary>Removes all matching allow or deny access control list (ACL) permissions from the current file or directory.</summary>
+        <returns>
+          <see langword="true" /> if the access rule was removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.FileSystemRights> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights> value or the <xref:System.Security.AccessControl.FileSystemRights> value.  
+  
+ To persist new or changed access control list (ACL) information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+ [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+ [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRuleAll">
+      <MemberSignature Language="C#" Value="public void RemoveAccessRuleAll (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleAll(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that specifies a user whose access control list (ACL) permissions should be removed from a file or directory.</param>
+        <summary>Removes all access control list (ACL) permissions for the specified user from the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleAll%2A> method removes all access control list (ACL) permissions for the specified user.  The method ignores all values in the <xref:System.Security.AccessControl.FileSystemAccessRule> object except the user account.  
+  
+ To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAccessRuleSpecific">
+      <MemberSignature Language="C#" Value="public void RemoveAccessRuleSpecific (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that specifies a user whose access control list (ACL) permissions should be removed from a file or directory.</param>
+        <summary>Removes a single matching allow or deny access control list (ACL) permission from the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes the specified <xref:System.Security.AccessControl.AccessControlType> access rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> access rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> access rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.FileSystemRights> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes only the deny rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights> value.  
+  
+ To persist new or changed access control list (ACL) information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRule">
+      <MemberSignature Language="C#" Value="public bool RemoveAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object that represents an audit rule to remove from a file or directory.</param>
+        <summary>Removes all matching allow or deny audit rules from the current file or directory.</summary>
+        <returns>
+          <see langword="true" /> if the audit rule was removed; otherwise, <see langword="false" /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType> audit rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value or the <xref:System.Security.AccessControl.AuditFlags> value.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSystemSecurity.AddAuditRule%2A> method to add an audit rule to a file and uses the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method to remove the audit rule from the file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-csharp[AccessControl.FileSystemAuditRule#1](~/samples/snippets/csharp/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/cs/sample.cs#1)]
+ [!code-vb[AccessControl.FileSystemAuditRule#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AccessControl.FileSystemAuditRule/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRuleAll">
+      <MemberSignature Language="C#" Value="public void RemoveAuditRuleAll (System.Security.AccessControl.FileSystemAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleAll(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object that specifies a user whose audit rules should be removed from a file or directory.</param>
+        <summary>Removes all audit rules for the specified user from the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleAll%2A> method removes all audit rules for the specified user.  It ignores all values in the <xref:System.Security.AccessControl.FileSystemAuditRule> object except the user account.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAuditRuleSpecific">
+      <MemberSignature Language="C#" Value="public void RemoveAuditRuleSpecific (System.Security.AccessControl.FileSystemAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object that represents an audit rule to remove from a file or directory.</param>
+        <summary>Removes a single matching allow or deny audit rule from the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetAccessRule">
+      <MemberSignature Language="C#" Value="public void ResetAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that represents an access control list (ACL) permission to add to a file or directory.</param>
+        <summary>Adds the specified access control list (ACL) permission to the current file or directory and removes all matching ACL permissions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will also be overwritten.  
+  
+ To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessRule">
+      <MemberSignature Language="C#" Value="public void SetAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.SetAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAccessRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAccessRule" /> object that represents an access control list (ACL) permission to set for a file or directory.</param>
+        <summary>Sets the specified access control list (ACL) permission for the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will not be overwritten.  
+  
+ To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
+  
+ To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuditRule">
+      <MemberSignature Language="C#" Value="public void SetAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.SetAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Security.AccessControl.FileSystemAuditRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">A <see cref="T:System.Security.AccessControl.FileSystemAuditRule" /> object that represents an audit rule to set for a file or directory.</param>
+        <summary>Sets the specified audit rule for the current file or directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will not be overwritten.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="rule" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

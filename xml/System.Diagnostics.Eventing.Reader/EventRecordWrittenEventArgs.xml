@@ -1,0 +1,62 @@
+<Type Name="EventRecordWrittenEventArgs" FullName="System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class EventRecordWrittenEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventRecordWrittenEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>When the <see cref="E:System.Diagnostics.Eventing.Reader.EventLogWatcher.EventRecordWritten" /> event is raised, an instance of this object is passed to the delegate method that handles the event. This object contains the event that was published to the event log or the exception that occurred when the event subscription failed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How to: Subscribe to Events in an Event Log](http://msdn.microsoft.com/en-us/62e006d3-9fab-4fdf-a8f8-e23d05498cd4).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EventException">
+      <MemberSignature Language="C#" Value="public Exception EventException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception EventException" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that occurred when the event subscription failed. The exception has a description of why the subscription failed.</summary>
+        <value>Returns an <see cref="T:System.Exception" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventRecord">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventRecord EventRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.Eventing.Reader.EventRecord EventRecord" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.EventRecord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventRecord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the event record that is published to the event log. This event matches the criteria from the query specified in the event subscription.</summary>
+        <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventRecord" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

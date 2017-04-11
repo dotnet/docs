@@ -1,0 +1,87 @@
+<Type Name="FontFraction" FullName="System.Windows.FontFraction">
+  <TypeSignature Language="C#" Value="public enum FontFraction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontFraction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontFraction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the fraction style for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support styles for fractions, including slashed and stacked. The following text displays fraction styles for the Palatino Linotype font.  
+  
+ ![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
+Example of slashed and stacked fraction styles  
+  
+> [!NOTE]
+>  Most OpenType fonts expose only a subset of the total OpenType features available. If a specified font does not support a particular feature, the default glyphs are used instead.  
+  
+   
+  
+## Examples  
+ The following code example shows how to define fraction styles for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#10)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#10](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#10)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontFraction Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontFraction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default style is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Slashed">
+      <MemberSignature Language="C#" Value="Slashed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontFraction Slashed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Slashed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontFraction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Slashed fraction style is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stacked">
+      <MemberSignature Language="C#" Value="Stacked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontFraction Stacked = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontFraction.Stacked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontFraction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stacked fraction style is used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

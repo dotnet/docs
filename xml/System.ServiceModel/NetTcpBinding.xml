@@ -1,0 +1,885 @@
+<Type Name="NetTcpBinding" FullName="System.ServiceModel.NetTcpBinding">
+  <TypeSignature Language="C#" Value="public class NetTcpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetTcpBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.Binding</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IBindingRuntimePreferences</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A secure, reliable binding suitable for cross-machine communication.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.NetTcpBinding> generates a run-time communication stack by default, which uses transport security, TCP for message delivery, and a binary message encoding. This binding is an appropriate [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system-provided choice for communicating over an Intranet.  
+  
+ The default configuration for the <xref:System.ServiceModel.NetTcpBinding> is faster than the configuration provided by the <xref:System.ServiceModel.WSHttpBinding>, but it is intended only for [!INCLUDE[indigo2](~/includes/indigo2-md.md)]-to-[!INCLUDE[indigo2](~/includes/indigo2-md.md)] communication. The security behavior is configurable using the optional `securityMode` parameter in the constructor. The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` parameter. But reliable messaging is off by default. More generally, the HTTP system-provided bindings such as <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding> are configured to turn things on by default, whereas the <xref:System.ServiceModel.NetTcpBinding> binding turns things off by default so that you have to opt-in to get support, for example, for one of the WS-* specifications. This means that the default configuration for TCP is faster at exchanging messages between endpoints than that configured for the HTTP bindings by default.  
+  
+> [!WARNING]
+>  The <xref:System.ServiceModel.NetTcpBinding> uses TCP connection pooling based on the service’s host DNS name and the port number the service is listening on. This works well when a client makes calls to different services on different ports, or services are hosted in a single process and share a port. If a single client calls multiple services sharing a port that are hosted in different processes, or are WAS/IIS hosted, the client side pooling may lead to problems where a connection to Service A is reused for Service B, resulting in an exception being thrown, the connection aborted, and a new channel created. To avoid this problem, use a CustomBinding and specify a different ConnectionPoolSettings.GroupName for each service the client communicates with.  
+  
+   
+  
+## Examples  
+ This example shows how to create a <xref:System.ServiceModel.NetTcpBinding>, setting the security mode and transport credential type.  
+  
+ [!code-csharp[S_UENetTcpBinding#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetTcpBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetTcpBinding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, transport security is used to secure communication (that is, the value of <xref:System.ServiceModel.SecurityMode> is set to <xref:System.ServiceModel.SecurityMode>) and reliable sessions are disabled (that is <xref:System.ServiceModel.OptionalReliableSession.Enabled%2A> is `false`).  
+  
+   
+  
+## Examples  
+ This example shows how to create a <xref:System.ServiceModel.NetTcpBinding>, setting the security mode and transport credential type.  
+  
+ [!code-csharp[S_UENETTCPBINDING#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetTcpBinding (System.ServiceModel.SecurityMode securityMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.ServiceModel.SecurityMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
+      </Parameters>
+      <Docs>
+        <param name="securityMode">The <see cref="T:System.ServiceModel.SecurityMode" /> value that specifies the type of security used with the binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetTcpBinding" /> class with the type of security used specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to configure the security. If you want to configure security and enable reliable sessions, use <xref:System.ServiceModel.NetTcpBinding.%23ctor%28System.ServiceModel.SecurityMode%2CSystem.Boolean%29?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ This example shows how to create a <xref:System.ServiceModel.NetTcpBinding> using the security mode parameter.  
+  
+ [!code-csharp[S_UENETTCPBINDING#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetTcpBinding (string configurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="configurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configurationName">The binding configuration name for the <see cref="T:System.ServiceModel.NetTcpBinding" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetTcpBinding" /> class with a specified configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to initialize the binding settings from configuration.  
+  
+   
+  
+## Examples  
+ This example shows how to create a <xref:System.ServiceModel.NetTcpBinding> using the `configurationName` parameter.  
+  
+ [!code-csharp[S_UENETTCPBINDING#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetTcpBinding (System.ServiceModel.SecurityMode securityMode, bool reliableSessionEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.SecurityMode securityMode, bool reliableSessionEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securityMode" Type="System.ServiceModel.SecurityMode" />
+        <Parameter Name="reliableSessionEnabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="securityMode">The <see cref="T:System.ServiceModel.SecurityMode" /> value that specifies the type of security used with the binding.</param>
+        <param name="reliableSessionEnabled">
+          <see langword="true" /> if reliable sessions are enabled; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetTcpBinding" /> class with the type of security used specified and with a value that indicates whether reliable sessions are explicitly enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to configure the security and enable reliable sessions.  
+  
+   
+  
+## Examples  
+ This example shows how to create a <xref:System.ServiceModel.NetTcpBinding> using the `securityMode` and `reliableSessionEnabled` parameters.  
+  
+ [!code-csharp[S_UENETTCPBINDING#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElements">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.CreateBindingElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a collection with the binding elements for the binding.</summary>
+        <returns>The <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> that makes up the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.ServiceModel.NetTcpBinding.CreateBindingElements%2A> method to create a collection with the binding elements for the binding.  
+  
+ [!code-csharp[S_UENetTcpBinding#20](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvelopeVersion">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.EnvelopeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of SOAP that is used for messages processed by this binding.</summary>
+        <value>The value of the <see cref="T:System.ServiceModel.EnvelopeVersion" /> that is used with this binding. The value is SOAP 1.2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property always returns SOAP 1.2. This value cannot be changed.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.EnvelopeVersion%2A> value.  
+  
+ [!code-csharp[S_UENETTCPBINDING#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostNameComparisonMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.HostNameComparisonMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
+        <value>One of the <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> values that indicates whether the hostname is used to reach the service when matching the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.HostNameComparisonMode%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenBacklog">
+      <MemberSignature Language="C#" Value="public int ListenBacklog { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListenBacklog" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ListenBacklog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of queued connection requests that can be pending.</summary>
+        <value>Returns the maximum number of pending queued connection requests. The default is 10.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Channels.TcpTransportBindingElement.ListenBacklog%2A> is a socket-level property that describes the number of "pending accept" requests to be queued. If the listen backlog queue fills up, new socket requests will be rejected.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.ListenBacklog%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value cannot be less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferPoolSize">
+      <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxBufferPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, allowed for a buffer pool that stores TCP messages processed by the binding.</summary>
+        <value>The maximum size allowed for a buffer pool that stores TCP messages processed by the binding. The default value is 524,288 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.MaxBufferPoolSize%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferSize">
+      <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the maximum size, in bytes, of the buffer used to store messages in memory.</summary>
+        <value>The maximum size, in bytes, of the buffer used to store messages in memory. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you receive more data than you can buffer, the data that exceeds the buffer size remains on the underlying socket until your buffer has room for the rest of the data.  
+  
+   
+  
+## Examples  
+ This example shows how to get the value of the <xref:System.ServiceModel.NetTcpBinding.MaxBufferSize%2A>.  
+  
+ [!code-csharp[S_UENetTcpBinding#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConnections">
+      <MemberSignature Language="C#" Value="public int MaxConnections { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnections" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that controls the maximum number of connections to be pooled for subsequent reuse on the client and the maximum number of connections allowed to be pending dispatch on the server.</summary>
+        <value>On the client, the maximum number of connections to be pooled for subsequent reuse; on the server, the maximum number of connections allowed to be pending dispatch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 10.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.MaxConnections%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxReceivedMessageSize">
+      <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, for a received message that is processed by the binding.</summary>
+        <value>The maximum size (in bytes) for a received message that is processed by the binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortSharingEnabled">
+      <MemberSignature Language="C#" Value="public bool PortSharingEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PortSharingEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.PortSharingEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether TCP port sharing is enabled for the connection configured with this binding.</summary>
+        <value>
+          <see langword="true" /> if TCP port sharing is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using this setting requires enabling the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] TCP Port Sharing Service by changing its startup type to Manual or Automatic.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] the TCP Listener and how to start it, see<xref:System.Net.Sockets.TcpListener>.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints on soap messages exchanged. The default values for these constraints are provided in the following Remarks section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The complexity constraints protect against a class of denial of service (DOS) attacks that attempt to use message complexity to tie up endpoint processing resources. The properties that express these constraints and their default values are as follows:  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxDepth%2A> = 32  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A> = 8192  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength%2A> = 16384  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead%2A> = 4096  
+  
+-   <xref:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount%2A> = 16384  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.ServiceModel.NetTcpBinding.ReaderQuotas%2A> object.  
+  
+ [!code-csharp[S_UENetTcpBinding#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReliableSession">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.OptionalReliableSession ReliableSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.OptionalReliableSession ReliableSession" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.ReliableSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OptionalReliableSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that indicates whether a reliable session is established between channel endpoints.</summary>
+        <value>An <see cref="T:System.ServiceModel.OptionalReliableSession" /> that indicates whether a WS-RM reliable session is established between channel endpoints. The default value for <see cref="P:System.ServiceModel.OptionalReliableSession.Enabled" /> is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.ReliableSession%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the URI scheme for the transport.</summary>
+        <value>The URI scheme for the transport, which is "net.tcp".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property is provided to validate bindings against base addresses.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.Scheme%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Security">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.NetTcpSecurity Security { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.NetTcpSecurity Security" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.Security" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.NetTcpSecurity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that specifies the type of security used with services configured with this binding.</summary>
+        <value>The <see cref="T:System.ServiceModel.NetTcpSecurity" /> that contains the types of security used with this binding. The default mode of security for the <see langword="NetTCPBinding" /> is <see cref="F:System.ServiceModel.SecurityMode.Transport" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.NetTcpSecurity> provides the types of security and settings available to the <xref:System.ServiceModel.NetTcpBinding>.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.Security%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#17](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeListenBacklog">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeListenBacklog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeListenBacklog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeListenBacklog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.ListenBacklog" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.ListenBacklog" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeMaxConnections">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeMaxConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMaxConnections() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeMaxConnections" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.MaxConnections" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.MaxConnections" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReaderQuotas">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeReaderQuotas" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.ReaderQuotas" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.ReaderQuotas" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReliableSession">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeReliableSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReliableSession() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeReliableSession" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.ReliableSession" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.ReliableSession" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeSecurity">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSecurity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeSecurity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.Security" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.Security" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeTransactionProtocol">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeTransactionProtocol ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransactionProtocol() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetTcpBinding.ShouldSerializeTransactionProtocol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.NetTcpBinding.TransactionProtocol" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.NetTcpBinding.TransactionProtocol" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously">
+      <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
+        <value>
+          <see langword="true" /> if incoming requests are handled synchronously; <see langword="false" /> if incoming requests are handled asynchronously. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This run-time behavior for receiving messages in either a service or client application can be changed using [\&lt;synchronousReceive\&gt;](~/docs/framework/configure-apps/file-schema/wcf/synchronousreceive-element.md).  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.TransferMode%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#21](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionFlow">
+      <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransactionFlow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether transaction flow is enabled.</summary>
+        <value>
+          <see langword="true" /> if transaction flow is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.TransactionFlow%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#18](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionProtocol">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.TransactionProtocol TransactionProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.TransactionProtocol TransactionProtocol" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransactionProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransactionProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the transactions protocol used by the service to flow transactions.</summary>
+        <value>The <see cref="T:System.ServiceModel.TransactionProtocol" /> used by the service to flow transactions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.TransactionProtocol%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#19](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetTcpBinding.TransferMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TransferMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the service configured with the binding uses streamed or buffered (or both) modes of message transfer.</summary>
+        <value>The <see cref="T:System.ServiceModel.TransferMode" /> value that indicates whether the service configured with the binding uses streamed or buffered (or both) modes of message transfer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.NetTcpBinding.TransferMode%2A> value.  
+  
+ [!code-csharp[S_UENetTcpBinding#22](~/samples/snippets/csharp/VS_Snippets_CFX/s_uenettcpbinding/cs/source.cs#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetTcpBinding" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The security behavior is configurable using the optional `securityMode` parameter in the constructor. The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

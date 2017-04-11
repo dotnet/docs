@@ -1,0 +1,265 @@
+<Type Name="XmlReflectionMember" FullName="System.Xml.Serialization.XmlReflectionMember">
+  <TypeSignature Language="C#" Value="public class XmlReflectionMember" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlReflectionMember extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlReflectionMember" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides mappings between code entities in .NET Framework Web service methods and the content of Web Services Description Language (WSDL) messages that are defined for SOAP Web services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlReflectionMember> class is not used directly. Instead, it is used:  
+  
+-   To initialize <xref:System.Xml.Serialization.XmlSerializer> objects while the .NET Framework is initializing a SOAP Web service or client.  
+  
+-   By the <xref:System.Web.Services.Description.ServiceDescriptionReflector> class while <xref:System.Web.Services.Description.ServiceDescriptionReflector> creates <xref:System.Web.Services.Description.ServiceDescription> objects from classes that are identified as SOAP Web services.  
+  
+ During reflection of a SOAP Web service method, arrays of <xref:System.Xml.Serialization.XmlReflectionMember> objects are produced that represent the contents of WSDL message definitions. An array is produced for each of the following items that belong to a SOAP Web service method:  
+  
+-   Input parameters.  
+  
+-   Output parameters and return values.  
+  
+-   Request SOAP headers via attributes.  
+  
+-   Response SOAP headers via attributes.  
+  
+ The <xref:System.Xml.Serialization.SoapReflectionImporter> and <xref:System.Xml.Serialization.XmlReflectionImporter> classes translate an <xref:System.Xml.Serialization.XmlReflectionMember> array into an <xref:System.Xml.Serialization.XmlMembersMapping> that contains an <xref:System.Xml.Serialization.XmlMemberMapping> collection, for further processing.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlReflectionMember ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionMember.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReturnValue">
+      <MemberSignature Language="C#" Value="public bool IsReturnValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReturnValue" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.IsReturnValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.Serialization.XmlReflectionMember" /> represents a Web service method return value, as opposed to an output parameter.</summary>
+        <value>
+          <see langword="true" />, if the member represents a Web service return value; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberName">
+      <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.MemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the Web service method member for this mapping.</summary>
+        <value>The name of the Web service method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web service method member may be an input parameter, an output parameter, a return type, an input header, or an output header.  
+  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a `<part>` element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle> enumeration member), the method parameters and return value do not appear in the WSDL document.  
+  
+ When a Web service method is being reflected, the return type's <xref:System.Xml.Serialization.XmlReflectionMember.MemberName%2A> property becomes the method name (made unique from other member names, if necessary) with "Result" appended.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberType">
+      <MemberSignature Language="C#" Value="public Type MemberType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type MemberType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.MemberType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the Web service method member code entity that is represented by this mapping.</summary>
+        <value>The <see cref="T:System.Type" /> of the Web service method member code entity that is represented by this mapping.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web service method member's code entity may be an input parameter, an output parameter, a return type, or a SOAP header attribute.  
+  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the cases when a member corresponds to a part element defined in a Web Services Description Language (WSDL) document. Note, however, that with a wrapped binding between a WSDL operation and a .NET Framework method (indicated by the <xref:System.Web.Services.Protocols.SoapParameterStyle> enumeration member), the method parameters and return value do not appear in the WSDL document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideIsNullable">
+      <MemberSignature Language="C#" Value="public bool OverrideIsNullable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OverrideIsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.OverrideIsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates that the value of the corresponding XML element definition's <c>isNullable</c> attribute is <see langword="false" />.</summary>
+        <value>
+          <see langword="True" /> to override the <see cref="P:System.Xml.Serialization.XmlElementAttribute.IsNullable" /> property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting overrides the <xref:System.Xml.Serialization.XmlElementAttribute.IsNullable%2A> property of the <xref:System.Xml.Serialization.XmlElementAttribute> attribute. It is set to `true` only when a SOAP header's type is neither <xref:System.Web.Services.Protocols.SoapHeader> nor <xref:System.Web.Services.Protocols.SoapUnknownHeader>.  
+  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapAttributes">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.SoapAttributes SoapAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.SoapAttributes SoapAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.SoapAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.SoapAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Xml.Serialization.SoapAttributes" /> with the collection of SOAP-related attributes that have been applied to the member code entity.</summary>
+        <value>A <see cref="T:System.Xml.Serialization.SoapAttributes" /> that contains the objects that represent SOAP attributes applied to the member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web service method member's code entity may be an input parameter, an output parameter, a return type, an input SOAP header attribute, or an output SOAP header attribute.  
+  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlAttributes">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlAttributes XmlAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlAttributes XmlAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlReflectionMember.XmlAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Xml.Serialization.XmlAttributes" /> with the collection of <see cref="T:System.Xml.Serialization.XmlSerializer" />-related attributes that have been applied to the member code entity.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlAttributes" /> that represents XML attributes that have been applied to the member code.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web service method member's code entity may be an input parameter, an output parameter, a return type, an input SOAP header attribute, or an output SOAP header attribute.  
+  
+ You do not need to use the <xref:System.Xml.Serialization.XmlReflectionMember> class and its properties directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

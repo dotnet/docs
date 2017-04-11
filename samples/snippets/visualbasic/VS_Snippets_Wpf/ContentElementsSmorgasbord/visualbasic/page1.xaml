@@ -1,0 +1,103 @@
+<Page x:Class="Foo.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page1"
+    Loaded="FocusOnParagraph" 
+    >
+  <Page.Resources>
+    <LinearGradientBrush x:Key="RainbowBrush">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Offset="0" Color="Red" />
+        <GradientStop Offset="0.14" Color="Orange" />
+        <GradientStop Offset="0.28" Color="Yellow" />
+        <GradientStop Offset="0.57" Color="Green" />
+        <GradientStop Offset="0.71" Color="Blue" />
+        <GradientStop Offset="0.85" Color="Indigo" />
+        <GradientStop Offset="1" Color="Violet" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <Style x:Key="DateShower" TargetType="{x:Type Paragraph}">
+      <Setter Property="FrameworkContentElement.ToolTip" Value=""/>
+    </Style>
+    <LinearGradientBrush x:Key="BlueGreenBrush" 
+      StartPoint="0,0.5"  EndPoint="1,0.5">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="Blue" Offset="0" />
+        <GradientStop Color="Green" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <Style x:Key="FocusableParagraph" TargetType="{x:Type Paragraph}">
+      <Setter Property="Focusable" Value="true"/>
+      <Style.Triggers>
+        <Trigger Property="IsFocused" Value="True">
+          <Setter Property = "Background" Value="{StaticResource BlueGreenBrush}"/>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="SpecialHLink" TargetType="{x:Type Hyperlink}">
+      <Setter Property="TextDecorations">
+        <Setter.Value>
+          <TextDecorationCollection>
+            <TextDecoration  
+              PenThicknessUnit="FontRecommended">
+              <TextDecoration.Pen>
+                <Pen Thickness="1.5" Brush="{StaticResource BlueGreenBrush}">
+                  <Pen.DashStyle>
+                    <DashStyle Dashes="2"/>
+                  </Pen.DashStyle>
+                </Pen>
+              </TextDecoration.Pen>
+            </TextDecoration>
+          </TextDecorationCollection>
+
+        </Setter.Value>
+      </Setter>
+
+      <Style.Triggers>
+        <Trigger Property="Hyperlink.IsEnabled" Value="false">
+          <Setter Property="Foreground" Value="Gray"/>
+        </Trigger>
+        <Trigger Property="Hyperlink.IsMouseOver" Value="true">
+          <Setter Property = "Foreground" Value="{StaticResource BlueGreenBrush}"/>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Page.Resources>
+  <StackPanel>
+    <FlowDocumentReader>
+      <FlowDocument Name="myflowdocument">
+        <Paragraph Name="focusableP" Style="{StaticResource FocusableParagraph}"  AllowDrop="True" Drop="dropHandler">
+          Drop something here...
+          <Hyperlink Name="h1" Click="MakeSpecialLink">Follow me!</Hyperlink>
+        </Paragraph>
+        <Paragraph>Lorem ipsum etc.
+          <Paragraph.ContextMenu>
+            <ContextMenu Name="cm">
+              <MenuItem Header="Edit"/>
+              <MenuItem Header="Print"/>
+            </ContextMenu>
+          </Paragraph.ContextMenu>
+        </Paragraph>
+        <Paragraph Name="CursorForced" ForceCursor="True" Cursor="Hand">
+          Lorem ipsum etc.
+        </Paragraph>
+        <Paragraph Name="CursorNotForced">
+          Lorem ipsum ipsum lorem etc.
+        </Paragraph>
+        <Paragraph Name="introParagraph" Style="{StaticResource DateShower}">Intro para</Paragraph>
+        <Paragraph Focusable="True" Name="focusme" GotFocus="SetBGByResource">Number one</Paragraph>
+        <Paragraph Focusable="True" Name="focusme2" GotFocus="SetBGByResourceTry">Number two</Paragraph>
+      </FlowDocument>
+    </FlowDocumentReader>
+    <TextBlock Name="text1"/>
+    <Button Click="FindIntro">Find</Button>
+    
+  </StackPanel>
+
+
+
+
+
+
+</Page>

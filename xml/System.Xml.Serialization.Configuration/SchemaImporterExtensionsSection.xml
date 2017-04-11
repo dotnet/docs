@@ -1,0 +1,108 @@
+<Type Name="SchemaImporterExtensionsSection" FullName="System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection">
+  <TypeSignature Language="C#" Value="public sealed class SchemaImporterExtensionsSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SchemaImporterExtensionsSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Handles the configuration for the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the serialization infrastructure to handle the configuration elements and cannot be used directly.  
+  
+ Instead, to configure the <xref:System.Xml.Serialization.XmlSchemaImporter>, create an application configuration file and use the following XML elements to specify types used by the class when mapping XSD types to .Net Framework types:  
+  
+-   [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md)  
+  
+-   [\&lt;schemaImporterExtensions\&gt; Element](~/docs/framework/serialization/schemaimporterextensions-element.md)  
+  
+-   [\&lt;add\&gt; Element for \&lt;xmlSchemaImporterExtensions\&gt;](~/docs/framework/serialization/add-element-for-xmlschemaimporterextensions.md)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SchemaImporterExtensionsSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeDefault">
+      <MemberSignature Language="C#" Value="protected override void InitializeDefault ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeDefault() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.InitializeDefault" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaImporterExtensions">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection SchemaImporterExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection SchemaImporterExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection.SchemaImporterExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", IsDefaultCollection=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the collection of extensions.</summary>
+        <value>A <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionElementCollection" /> that contains the objects that represent configuration elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

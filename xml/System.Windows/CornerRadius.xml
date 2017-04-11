@@ -1,0 +1,360 @@
+<Type Name="CornerRadius" FullName="System.Windows.CornerRadius">
+  <TypeSignature Language="C#" Value="public struct CornerRadius : IEquatable&lt;System.Windows.CornerRadius&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CornerRadius extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.CornerRadius&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.CornerRadius" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.CornerRadius&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.CornerRadiusConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the radii of a rectangle's corners.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has four properties, <xref:System.Windows.CornerRadius.TopLeft%2A>, <xref:System.Windows.CornerRadius.TopRight%2A>, <xref:System.Windows.CornerRadius.BottomLeft%2A>, and <xref:System.Windows.CornerRadius.BottomRight%2A>, corresponding to the individual corners of the rectangle.  Each is a <xref:System.Double> structure that can be set independently of the others.  
+  
+ The radii cannot be negative.  
+  
+<a name="xamlAttributeUsage_Duration"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="TopLeft,TopRight,BottomRight,BottomLeft "/>  
+- or -  
+<object property="AllCorners"/>  
+```  
+  
+<a name="xamlValues_Thickness"></a>   
+## XAML Values  
+ *TopLeft*  
+ <xref:System.Double> value that specifies the radius of the top left corner.  
+  
+ *TopRight*  
+ <xref:System.Double> value that specifies the top right corner.  
+  
+ *BottomRight*  
+ <xref:System.Double> value that specifies the bottom right corner.  
+  
+ *BottomLeft*  
+ <xref:System.Double> value that specifies the bottom left corner.  
+  
+ *AllCorners*  
+ If only a single <xref:System.Double> value is specified, that measure is applied to ALL of the *TopLeft*, *TopRight*, *BottomRight*, and *BottomLeft* corners of the <xref:System.Windows.CornerRadius>.  
+  
+> [!NOTE]
+>  Values need not include the decimal point explicitly when specified as a string. The string "1" provided in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] evaluates to a value of 1.0 when referenced in code.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the value of the <xref:System.Windows.Controls.Border.CornerRadius%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-csharp[ThicknessStruct#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ThicknessStruct/CSharp/ThicknessSamp.cs#1)]
+ [!code-vb[ThicknessStruct#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessStruct/VisualBasic/ThicknessSampVB.vb#1)]
+ [!code-xml[ThicknessStruct#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ThicknessStruct/XAML/default.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CornerRadius (double uniformRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 uniformRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uniformRadius" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="uniformRadius">The radius value applied to every corner of the rectangle.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadius" /> class with a specified uniform radius value for every corner or the rectangle.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CornerRadius (double topLeft, double topRight, double bottomRight, double bottomLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 topLeft, float64 topRight, float64 bottomRight, float64 bottomLeft) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="topLeft" Type="System.Double" />
+        <Parameter Name="topRight" Type="System.Double" />
+        <Parameter Name="bottomRight" Type="System.Double" />
+        <Parameter Name="bottomLeft" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="topLeft">The radius of the top-left corner.</param>
+        <param name="topRight">The radius of the top-right corner.</param>
+        <param name="bottomRight">The radius of the bottom-right corner.</param>
+        <param name="bottomLeft">The radius of the bottom-left corner.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.CornerRadius" /> class with the specified radius values for each corner of the rectangle.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="public double BottomLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BottomLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.BottomLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the radius of the bottom-left corner.</summary>
+        <value>The radius of the bottom-left corner. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The radius of the bottom-left corner can be set independently of the other corners of the rectangle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="public double BottomRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BottomRight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.BottomRight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the radius of the bottom-right corner.</summary>
+        <value>The radius of the bottom-right corner. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The radius of the bottom-right corner can be set independently of the other corners of the rectangle.  
+  
+   
+  
+## Examples  
+ <xref:System.Windows.CornerRadius.TopRight%2A>  
+  
+ <xref:System.Windows.CornerRadius.BottomLeft%2A>  
+  
+ <xref:System.Windows.CornerRadius.TopLeft%2A>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Object" /> is a <see cref="T:System.Windows.CornerRadius" /> and whether it contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Windows.CornerRadius" /> and contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.CornerRadius cornerRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.CornerRadius cornerRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.Equals(System.Windows.CornerRadius)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cornerRadius" Type="System.Windows.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cornerRadius">The <see cref="T:System.Windows.CornerRadius" /> to compare to this <see cref="T:System.Windows.CornerRadius" />.</param>
+        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="cornerRadius" /> contains the same corner radius values as this <see cref="T:System.Windows.CornerRadius" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this <see cref="T:System.Windows.CornerRadius" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Windows.CornerRadius" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.CornerRadius cr1, valuetype System.Windows.CornerRadius cr2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Equality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr1" Type="System.Windows.CornerRadius" />
+        <Parameter Name="cr2" Type="System.Windows.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cr1">The first <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
+        <param name="cr2">The second <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have equal values for all corners (same values for <see cref="P:System.Windows.CornerRadius.TopLeft" />, <see cref="P:System.Windows.CornerRadius.TopRight" />, <see cref="P:System.Windows.CornerRadius.BottomLeft" />, <see cref="P:System.Windows.CornerRadius.BottomRight" />); <see langword="false" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have different values for one or more corners.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.CornerRadius cr1, System.Windows.CornerRadius cr2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.CornerRadius cr1, valuetype System.Windows.CornerRadius cr2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.op_Inequality(System.Windows.CornerRadius,System.Windows.CornerRadius)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr1" Type="System.Windows.CornerRadius" />
+        <Parameter Name="cr2" Type="System.Windows.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cr1">The first <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
+        <param name="cr2">The second <see cref="T:System.Windows.CornerRadius" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.CornerRadius" /> structures for inequality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have different values for one or more corners (different values for <see cref="P:System.Windows.CornerRadius.TopLeft" />, <see cref="P:System.Windows.CornerRadius.TopRight" />, <see cref="P:System.Windows.CornerRadius.BottomLeft" />, <see cref="P:System.Windows.CornerRadius.BottomRight" />); <see langword="false" /> if <paramref name="cr1" /> and <paramref name="cr2" /> have identical corners.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="public double TopLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TopLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.TopLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the radius of the top-left corner.</summary>
+        <value>The radius of the top-left corner. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The radius of the top-left corner can be set independently of the other corners of the rectangle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="public double TopRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TopRight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.CornerRadius.TopRight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the radius of the top-right corner.</summary>
+        <value>The radius of the top-right corner. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The radius of the top-right corner can be set independently of the other corners of the rectangle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.CornerRadius.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of the <see cref="T:System.Windows.CornerRadius" />.</summary>
+        <returns>A string representation of the <see cref="T:System.Windows.CornerRadius" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

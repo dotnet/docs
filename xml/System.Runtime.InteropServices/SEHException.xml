@@ -1,0 +1,296 @@
+<Type Name="SEHException" FullName="System.Runtime.InteropServices.SEHException">
+  <TypeSignature Language="C#" Value="public class SEHException : System.Runtime.InteropServices.ExternalException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SEHException extends System.Runtime.InteropServices.ExternalException" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SEHException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.Runtime.InteropServices.ExternalException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents structured exception handling (SEH) errors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.InteropServices.SEHException> class handles SEH errors that are thrown from unmanaged code, but that have not been mapped to another .NET Framework exception. The <xref:System.Runtime.InteropServices.SEHException> class also corresponds to the `HRESULT``E_FAIL` (0x80004005).  
+  
+ The .NET Framework often encounters unmanaged SEH exceptions that are automatically mapped to managed equivalents. There are two common unmanaged SEH exceptions:  
+  
+-   `STATUS_NO_MEMORY` exceptions are automatically mapped to the <xref:System.OutOfMemoryException> class.  
+  
+-   `STATUS_ACCESS_VIOLATION` exceptions are automatically mapped as follows:  
+  
+    -   If `legacyNullReferencePolicy` is applied, all access violations are mapped to the <xref:System.NullReferenceException> class.  
+  
+    -   If the address at which the read/write was attempted is not in JIT-compiled code, the exception is mapped to the <xref:System.AccessViolationException> class.  
+  
+    -   If the address at which the read/write was attempted is in JIT-compiled code, but it is not in the OS Null partition area, the exception is mapped to the <xref:System.AccessViolationException> class.  
+  
+    -   If there is no `legacyNullReferencePolicy`, and the address at which the read/write was attempted is in JIT-compiled code and in the OS Null partition area, the exception is mapped to the <xref:System.NullReferenceException> class.  
+  
+ Any SEH exception that is not automatically mapped to a specific exception is mapped to the <xref:System.Runtime.InteropServices.SEHException> class by default.  
+  
+ For more information, search on "unmanaged exceptions" and "Structured Exception Handling" in the MSDN Library.  
+  
+ Note that the <xref:System.Runtime.InteropServices.SEHException> class does not cause unmanaged C++ exception destructors to be called. To ensure that unmanaged C++ exception destructors are called, use the following syntax in the `catch` block.  
+  
+ [Visual Basic]  
+  
+```  
+Catch   
+     ' Handle catch here.  
+End Try  
+```  
+  
+ [C#]  
+  
+```  
+catch  
+{  
+     // Handle catch here.  
+}  
+```  
+  
+ [C++]  
+  
+```  
+catch(…)  
+{  
+     // Handle catch here.  
+}   
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SEHException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.SEHException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.InteropServices.SEHException> class inherits from the <xref:System.Runtime.InteropServices.ExternalException> class. This constructor sets the properties of the <xref:System.Exception> object to the values in the following table.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|A localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SEHException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that indicates the reason for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.SEHException" /> class with a specified message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Runtime.InteropServices.SEHException> inherits from <xref:System.Runtime.InteropServices.ExternalException>. This constructor sets the properties of the <xref:System.Exception> object as shown in the following table.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|`message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SEHException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.SEHException" /> class from serialization data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see the <xref:System.Runtime.Serialization> namespace.  
+  
+ <xref:System.Runtime.InteropServices.SEHException> inherits from <xref:System.Runtime.InteropServices.ExternalException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SEHException (string message, Exception inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="inner" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="inner">The exception that is the cause of the current exception. If the <c>inner</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.SEHException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or `null` if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Runtime.InteropServices.SEHException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanResume">
+      <MemberSignature Language="C#" Value="public virtual bool CanResume ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanResume() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SEHException.CanResume" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the exception can be recovered from, and whether the code can continue from the point at which the exception was thrown.</summary>
+        <returns>Always <see langword="false" />, because resumable exceptions are not implemented.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Runtime.InteropServices.SEHException.CanResume%2A> returns `true`, then a filtered exception handler can correct the problem that caused the exception, and the code will continue from the point at which the exception was thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,219 @@
+<Type Name="TaiwanLunisolarCalendar" FullName="System.Globalization.TaiwanLunisolarCalendar">
+  <TypeSignature Language="C#" Value="public class TaiwanLunisolarCalendar : System.Globalization.EastAsianLunisolarCalendar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TaiwanLunisolarCalendar extends System.Globalization.EastAsianLunisolarCalendar" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.TaiwanLunisolarCalendar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization.Calendars</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Globalization.EastAsianLunisolarCalendar</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the Taiwan lunisolar calendar. As for the Taiwan calendar, years are calculated using the Gregorian calendar, while days and months are calculated using the lunisolar calendar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Taiwan lunisolar calendar works exactly like the Gregorian calendar, except that the year and era are different. The <xref:System.Globalization.TaiwanLunisolarCalendar> class calculates years using the Gregorian calendar, days and months using the <xref:System.Globalization.EastAsianLunisolarCalendar> class, and recognizes only the current era.  
+  
+> [!NOTE]
+>  For information about using the <xref:System.Globalization.TaiwanLunisolarCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+  
+ The <xref:System.Globalization.TaiwanLunisolarCalendar> class is derived from the <xref:System.Globalization.EastAsianLunisolarCalendar> class, which represents the lunisolar calendar. The <xref:System.Globalization.EastAsianLunisolarCalendar> class supports the sexagenary year cycle (which repeats every 60 years) in addition to solar years and lunar months. Each solar year in the calendar is associated with a Sexagenary Year, a Celestial Stem, and a Terrestrial Branch, and these calendars can have leap months after any month of the year.  
+  
+ A leap month can occur after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29?displayProperty=fullName> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+  
+ Currently, the <xref:System.Globalization.TaiwanLunisolarCalendar> is not used by any of the cultures supported by the <xref:System.Globalization.CultureInfo> class. Therefore, this class can be used only to calculate dates in the Taiwan lunisolar calendar.  
+  
+ Each <xref:System.Globalization.CultureInfo> object supports a set of calendars. The <xref:System.Globalization.CultureInfo.Calendar%2A> property returns the default calendar for the culture, and the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property returns an array containing all the calendars supported by the culture. To change the calendar used by a <xref:System.Globalization.CultureInfo>, the application should set the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> to a new <xref:System.Globalization.Calendar>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TaiwanLunisolarCalendar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.TaiwanLunisolarCalendar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaysInYearBeforeMinSupportedYear">
+      <MemberSignature Language="C#" Value="protected override int DaysInYearBeforeMinSupportedYear { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TaiwanLunisolarCalendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of days in the year that precedes the year specified by the <see cref="P:System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime" /> property.</summary>
+        <value>The number of days in the year that precedes the year specified by <see cref="P:System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a constant value of 384.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Eras">
+      <MemberSignature Language="C#" Value="public override int[] Eras { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] Eras" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TaiwanLunisolarCalendar.Eras" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the eras that are relevant to the current <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> object.</summary>
+        <value>An array that consists of a single element having a value that is always the current era.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the array returned by this property are numbers that range from 1 to the largest era number. The largest era number is returned in the first array element and the smallest era number is returned in the last element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEra">
+      <MemberSignature Language="C#" Value="public override int GetEra (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetEra(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.TaiwanLunisolarCalendar.GetEra(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>Retrieves the era that corresponds to the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer that represents the era specified in the <paramref name="time" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxSupportedDateTime">
+      <MemberSignature Language="C#" Value="public override DateTime MaxSupportedDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxSupportedDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TaiwanLunisolarCalendar.MaxSupportedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum date and time supported by the <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> class.</summary>
+        <value>The latest date and time supported by the <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> class, which is equivalent to the last moment of February 10, 2051 C.E. in the Gregorian calendar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSupportedDateTime">
+      <MemberSignature Language="C#" Value="public override DateTime MinSupportedDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinSupportedDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TaiwanLunisolarCalendar.MinSupportedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum date and time supported by the <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> class.</summary>
+        <value>The earliest date and time supported by the <see cref="T:System.Globalization.TaiwanLunisolarCalendar" /> class, which is equivalent to the first moment of February 18, 1912 C.E. in the Gregorian calendar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,201 @@
+<Type Name="MediaPermissionAttribute" FullName="System.Security.Permissions.MediaPermissionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class MediaPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MediaPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows security actions for <see cref="T:System.Security.Permissions.MediaPermission" /> to be applied to code using declarative security.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Permissions.MediaPermissionAttribute> controls the ability for audio, image, and video media to work in a partial-trust Windows Presentation Foundation (WPF) application. The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used.  
+  
+ The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class, <xref:System.Security.Permissions.MediaPermission>.  
+  
+   
+  
+## Examples  
+ The following example shows how to demand that the calling code has unrestricted <xref:System.Security.Permissions.MediaPermissionAudio> at link time. Demands are typically made in managed libraries (DLLs) to help protect methods or classes from potentially harmful code.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute1](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute1)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MediaPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Security.Permissions.MediaPermissionAttribute" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default media values are <xref:System.Security.Permissions.MediaPermissionAudio>, <xref:System.Security.Permissions.MediaPermissionImage>, and <xref:System.Security.Permissions.MediaPermissionVideo>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a <xref:System.Security.Permissions.MediaPermissionAttribute>.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute13](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute13)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionAudio Audio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionAudio Audio" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermissionAttribute.Audio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionAudio</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the audio permission level for the <see cref="T:System.Security.Permissions.MediaPermissionAttribute" />.</summary>
+        <value>The state of the <see cref="T:System.Security.Permissions.MediaPermissionAudio" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is <xref:System.Security.Permissions.MediaPermissionAudio>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Audio%2A> property.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute4](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute4)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.MediaPermissionAttribute.CreatePermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a new <see cref="T:System.Security.Permissions.MediaPermission" />.</summary>
+        <returns>A <see cref="T:System.Security.Permissions.MediaPermission" /> that corresponds to this attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should only be called by the security system, never by application code.  
+  
+ At compile time, attributes convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission that this method returns that corresponds to this attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionImage Image { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionImage Image" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermissionAttribute.Image" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image permission level for the <see cref="T:System.Security.Permissions.MediaPermissionAttribute" />.</summary>
+        <value>The state of the <see cref="T:System.Security.Permissions.MediaPermissionImage" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is <xref:System.Security.Permissions.MediaPermissionImage>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Image%2A> property.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute5)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Video">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.MediaPermissionVideo Video { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.MediaPermissionVideo Video" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.MediaPermissionAttribute.Video" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the video permission level for the <see cref="T:System.Security.Permissions.MediaPermissionAttribute" />.</summary>
+        <value>The state of the <see cref="T:System.Security.Permissions.MediaPermissionVideo" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default is <xref:System.Security.Permissions.MediaPermissionVideo>.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Permissions.MediaPermissionAttribute.Video%2A> property.  
+  
+ [!code-csharp[SecurityPermissionsSnippets#MediaPermissionAttribute10](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityPermissionsSnippets/CSharp/Window1.xaml.cs#mediapermissionattribute10)]
+ [!code-vb[SecurityPermissionsSnippets#MediaPermissionAttribute10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SecurityPermissionsSnippets/visualbasic/window1.xaml.vb#mediapermissionattribute10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

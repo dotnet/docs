@@ -1,0 +1,106 @@
+<Type Name="ObjectDataSourceDisposingEventArgs" FullName="System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectDataSourceDisposingEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSourceDisposingEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing" /> event of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> class is used in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> method to provide access to the business object instance after any data operations that are using the <xref:System.Web.UI.WebControls.ObjectDataSource> control and business object are performed, but before the business object is destroyed. The business object is accessed using the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.ObjectInstance%2A> property. By adding a delegate to handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event, you can access any publicly exposed members of the business object to perform any final work or clean up.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectDisposing%2A> method is not called by the <xref:System.Web.UI.WebControls.ObjectDataSource> control, if the method that performs data operations is a `static` method. No business object instance is created when the method is static.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource> control exposes many events that you can handle to work with the underlying business object at various times in its lifecycle. The following table lists the events and the associated <xref:System.EventArgs> classes and event handler delegates.  
+  
+|Event|EventArgs|EventHandler|  
+|-----------|---------------|------------------|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating>.<br /><br /> Occurs immediately before the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated>.<br /><br /> Occurs immediately after the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selecting>.<br /><br /> Occurs before the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserting>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updating>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting>.<br /><br /> Occur before an insert, update, or delete operation is performed.|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selected><br /><br /> Occurs after the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserted>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updated>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted>.<br /><br /> Occur after the insert, update, or delete operation is completed.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing>.<br /><br /> Occurs before a business object is destroyed.|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler>|  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. The second code example provides the example middle-tier business object that the first code example uses.  
+  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. You might work with a business object that is very expensive (in terms of time or resources) to create for every data operation that your Web page performs. One way to work with an expensive object might be to create an instance of it once, and then cache it for subsequent operations instead of creating and destroying it for every data operation. This example demonstrates this pattern. You can handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to check the cache for an object first, and then create an instance, only if one is not already cached. Then, handle the  <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event to cache the business object for future use, instead of destroying it. In this example, the <xref:System.ComponentModel.CancelEventArgs.Cancel?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> object is set to `true`, to direct the <xref:System.Web.UI.WebControls.ObjectDataSource> to not call the <xref:System.IDisposable.Dispose%2A> method on the instance.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  -->  
+  
+ The following code example provides an example middle-tier business object that the preceding code example uses. The code example consists of a basic business object, defined by the `EmployeeLogic` class, which is a class that maintains state and encapsulates business logic. For a complete working example, you must compile this code as a library, and then use these classes from an ASP page.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/northwindemployee16.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/northwindemployee16.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDataSourceDisposingEventArgs (object objectInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object objectInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectInstance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="objectInstance">The business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> interacts to perform data operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs" /> class using the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInstance">
+      <MemberSignature Language="C#" Value="public object ObjectInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ObjectInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.ObjectInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that represents the business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control performs data operations.</summary>
+        <value>The business object the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> uses to data operations; otherwise, <see langword="null" />, if <see langword="null" /> is passed to the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data operation methods (<xref:System.Web.UI.WebControls.ObjectDataSource.SelectMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A>, <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A>, and <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A>) are instance methods, an instance of the business object is created before the method is executed. You can prevent the business object from being created for each call by saving the object in the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs.ObjectInstance%2A> property in the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event handler. In subsequent <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> events, you can retrieve the business object from the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to display information. You might work with a business object that is very expensive (in terms of time or resources) to create for every data operation that your Web page performs. One way to work with an expensive object might be to create an instance of it once, and then cache it for subsequent operations instead of creating and destroying it for every data operation. This example demonstrates this pattern. You can handle the <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating> event to check the cache for an object first, and then create an instance, only if one is not already cached. Then, handle the  <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing> event to cache the business object for future use, instead of destroying it. In this example, the <xref:System.ComponentModel.CancelEventArgs.Cancel?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs> class is set to `true`, to direct the <xref:System.Web.UI.WebControls.ObjectDataSource> to not call <xref:System.IDisposable.Dispose%2A> on the instance.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/CS/objds16cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_16#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_16/VB/objds16vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

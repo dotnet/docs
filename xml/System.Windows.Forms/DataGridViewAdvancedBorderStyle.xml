@@ -1,0 +1,316 @@
+<Type Name="DataGridViewAdvancedBorderStyle" FullName="System.Windows.Forms.DataGridViewAdvancedBorderStyle">
+  <TypeSignature Language="C#" Value="public sealed class DataGridViewAdvancedBorderStyle : ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataGridViewAdvancedBorderStyle extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains border styles for the cells in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView> control allows you to fully customize its appearance, including the borders of the cells and headers. The <xref:System.Windows.Forms.DataGridView> has <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridView.RowHeadersBorderStyle%2A> properties that allow you to set the appearance of the cell border. However, if you need to further customize the borders, the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class allows you to set the style of the border on the individual sides of the cells. The <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top%2A>, and <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom%2A> properties of <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> represent the left, right, top, and bottom border of a cell, respectively. You can set these properties on the <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.AdvancedColumnHeadersBorderStyle%2A>, <xref:System.Windows.Forms.DataGridView.AdvancedRowHeadersBorderStyle%2A> properties of the <xref:System.Windows.Forms.DataGridView> to produce various appearances for the borders between the cells.  
+  
+   
+  
+## Examples  
+ The following code example adjusts the cell borders of a <xref:System.Windows.Forms.DataGridView> so that a double border separates the interior cells and the top left header cell from the row and column headers. This sample demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustColumnHeaderBorderStyle%2A>, <xref:System.Windows.Forms.DataGridViewRow.AdjustRowHeaderBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridViewCell.AdjustCellBorderStyle%2A> methods, and the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A> property. These members use <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> objects to modify individual cell borders.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#0)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewAdvancedBorderStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this constructor. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAdvancedCellBorderStyle All { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle All" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style for all of the borders of a cell.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top%2A>, and <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom%2A> properties are not set to the same <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle> value, the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.All%2A> property value is <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</exception>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />.  
+  
+ -or-  
+  
+ The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" />, <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial" />, or <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" /> and this <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> instance was retrieved through the <see cref="P:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Bottom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Bottom" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style for the bottom border of a cell.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</exception>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">An <see cref="T:System.Object" /> to be compared.</param>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> is a <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> and the values for the <see cref="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top" />, <see cref="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom" />, <see cref="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left" />, and <see cref="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right" /> properties are equal to their counterpart in the current <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Left" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style for the left border of a cell.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />.  
+  
+ -or-  
+  
+ The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" /> or <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" /> and this <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> instance has an associated <see cref="T:System.Windows.Forms.DataGridView" /> control with a <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property value of <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Right { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Right" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style for the right border of a cell.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />.  
+  
+ -or-  
+  
+ The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" /> or <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" /> and this <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" /> instance has an associated <see cref="T:System.Windows.Forms.DataGridView" /> control with a <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property value of <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.System#ICloneable#Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A copy of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> instance is cast to an <xref:System.ICloneable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Top" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style for the top border of a cell.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value when setting this property is not a valid <see cref="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is <see cref="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewAdvancedBorderStyle.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />.</summary>
+        <returns>A string that represents the <see cref="T:System.Windows.Forms.DataGridViewAdvancedBorderStyle" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.ToString%2A> method returns a string that includes the values for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.All%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Top%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Bottom%2A>, <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Left%2A>, and <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle.Right%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

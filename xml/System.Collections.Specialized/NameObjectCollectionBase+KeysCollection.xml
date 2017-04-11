@@ -1,0 +1,355 @@
+<Type Name="NameObjectCollectionBase+KeysCollection" FullName="System.Collections.Specialized.NameObjectCollectionBase+KeysCollection">
+  <TypeSignature Language="C#" Value="public class NameObjectCollectionBase.KeysCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit NameObjectCollectionBase/KeysCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Specialized</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of the <see cref="T:System.String" /> keys of a collection.</summary>
+    <remarks>To be added.</remarks>
+    <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
+  
+ This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> using the <see cref="P:System.Collections.ICollection.SyncRoot" /> property.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of keys in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</summary>
+        <value>The number of keys in the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual string Get (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Get(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Get(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the key to get from the collection.</param>
+        <summary>Gets the key at the specified index of the collection.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the key at the specified index of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumerator returns the keys of the collection as strings.  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the entry to locate in the collection.</param>
+        <summary>Gets the entry at the specified index of the collection.</summary>
+        <value>The <see cref="T:System.String" /> key of the entry at the specified index of the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]` (In Visual Basic, `myCollection(index)`).  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified array must be of a compatible type.  
+  
+ This method uses <xref:System.Array.Copy%2A?displayProperty=fullName> to copy the elements.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
+ [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> of the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>, not directly on the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection> object.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cpp/source.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/cs/source.cs#1)]
+ [!code-vb[System.Collections.Specialized.NameObjectCollectionBase.KeysCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.specialized.nameobjectcollectionbase.keyscollection/vb/source.vb#1)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

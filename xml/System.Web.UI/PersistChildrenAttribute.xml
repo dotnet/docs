@@ -1,0 +1,312 @@
+<Type Name="PersistChildrenAttribute" FullName="System.Web.UI.PersistChildrenAttribute">
+  <TypeSignature Language="C#" Value="public sealed class PersistChildrenAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistChildrenAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistChildrenAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an attribute that is used by ASP.NET server controls to indicate at design time whether nested content that is contained within a server control corresponds to controls or to properties of the server control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PersistChildrenAttribute> is used in combination with the <xref:System.Web.UI.ParseChildrenAttribute> to determine how nested content of a control is interpreted. If <xref:System.Web.UI.PersistChildrenAttribute> is `true` and <xref:System.Web.UI.ParseChildrenAttribute> is `false`, the nested content contained within an ASP.NET server control is persisted as controls. If <xref:System.Web.UI.PersistChildrenAttribute> is `false` and <xref:System.Web.UI.ParseChildrenAttribute> is `true`, the nested content is persisted as properties of the server control. For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The code example in this section contains two parts. The first code example demonstrates how to set the metadata of a custom control so that at design time, its nested content is persisted as properties of the control. The second code example demonstrates how to use classes in an ASP.NET page.  
+  
+ The following code example demonstrates how to apply the <xref:System.Web.UI.PersistChildrenAttribute> attribute so that none of a custom server control's nested controls are persisted as nested controls. The custom server control named `CollectionPropertyControl` has the <xref:System.Web.UI.PersistChildrenAttribute> attribute set to `false` so that the `Employee` objects that are added are persisted as nested elements.  
+  
+ [!code-csharp[PersistChildrenAttribute_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren_1.cs#1)]
+ [!code-vb[PersistChildrenAttribute_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren_1.vb#1)]  
+  
+ The following code example demonstrates how to use the `CollectionPropertyControl` and `Employee` classes in an ASP.NET page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PersistChildrenAttribute_Sample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PersistChildrenAttribute_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren.aspx#3)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistChildrenAttribute (bool persist);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool persist) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="persist" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="persist">
+          <see langword="true" /> to persist the nested content as nested controls; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class using a Boolean value indicating whether to persist nested content as nested controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Web.UI.PersistChildrenAttribute> attribute for a custom server control named `CollectionPropertyControl`.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
+  
+ [!code-csharp[PersistChildrenAttribute_Sample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren_1.cs#2)]
+ [!code-vb[PersistChildrenAttribute_Sample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren_1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersistChildrenAttribute (bool persist, bool usesCustomPersistence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool persist, bool usesCustomPersistence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.#ctor(System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="persist" Type="System.Boolean" />
+        <Parameter Name="usesCustomPersistence" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="persist">
+          <see langword="true" /> to persist nested content as nested controls; otherwise, <see langword="false" />.</param>
+        <param name="usesCustomPersistence">
+          <see langword="true" /> to use customized persistence; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class using two Boolean values. One indicating whether to persist nested content as nested controls and the other indicating whether to use a custom persistence method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistChildrenAttribute Default;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistChildrenAttribute Default" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the default attribute state. The <see cref="F:System.Web.UI.PersistChildrenAttribute.Default" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the <xref:System.Web.UI.PersistChildrenAttribute.Default> field is `Yes`, indicating that nested content is persisted at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current object.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class.</summary>
+        <returns>A hash code for the <see cref="T:System.Web.UI.PersistChildrenAttribute" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistChildrenAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the value of the current instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> class is the default value of the derived clss.</summary>
+        <returns>
+          <see langword="true" /> if the value of the current instance of the <see cref="T:System.Web.UI.PersistChildrenAttribute" /> is the default instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.PersistChildrenAttribute.IsDefaultAttribute%2A> method to determine if the current instance of the <xref:System.Web.UI.PersistChildrenAttribute> class is the same as the default instance.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PersistChildrenAttribute_Sample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PersistChildrenAttribute_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistChildrenAttribute No;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistChildrenAttribute No" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that nested content should not persist as nested controls at design time. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.PersistChildrenAttribute.No> field is called, the inner content of a server control is persisted as properties, not as server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Persist">
+      <MemberSignature Language="C#" Value="public bool Persist { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Persist" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PersistChildrenAttribute.Persist" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the nested content is persisted as nested controls at design time.</summary>
+        <value>
+          <see langword="true" /> to persist nested content as nested controls; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to get the value of the <xref:System.Web.UI.PersistChildrenAttribute.Persist%2A> property.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PersistChildrenAttribute_Sample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PersistChildrenAttribute_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesCustomPersistence">
+      <MemberSignature Language="C#" Value="public bool UsesCustomPersistence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesCustomPersistence" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PersistChildrenAttribute.UsesCustomPersistence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the server control provides custom persistence of nested controls at design time.</summary>
+        <value>
+          <see langword="true" /> to provide custom persistence of nested content; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To configure nested content for custom persistence, use the <xref:System.Web.UI.PersistChildrenAttribute> overload that takes a `usesCustomPersistence` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to get the value of the <xref:System.Web.UI.PersistChildrenAttribute.UsesCustomPersistence%2A> property.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.PersistChildrenAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PersistChildrenAttribute_Sample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/CS/persistchildren.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PersistChildrenAttribute_Sample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PersistChildrenAttribute_Sample/VB/persistchildren.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistChildrenAttribute Yes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistChildrenAttribute Yes" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistChildrenAttribute.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PersistChildrenAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that nested content should persist as controls at design time. The <see cref="F:System.Web.UI.PersistChildrenAttribute.Yes" /> field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.PersistChildrenAttribute.Yes> field is called, nested content is persisted as controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

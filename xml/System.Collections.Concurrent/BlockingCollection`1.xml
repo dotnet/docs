@@ -1,0 +1,1942 @@
+<Type Name="BlockingCollection&lt;T&gt;" FullName="System.Collections.Concurrent.BlockingCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class BlockingCollection&lt;T&gt; : IDisposable, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockingCollection`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.BlockingCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Concurrent</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}, Type = {m_collection}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Concurrent.SystemThreadingCollections_BlockingCollectionDebugView`1))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of elements in the collection.</typeparam>
+    <summary>Provides blocking and bounding capabilities for thread-safe collections that implement <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Concurrent.BlockingCollection%601> is a thread-safe collection class that provides the following:  
+  
+-   An implementation of the producer/consumer pattern; <xref:System.Collections.Concurrent.BlockingCollection%601> is a wrapper for the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface.  
+  
+-   Concurrent addition and removal of items from multiple threads with the <xref:System.Collections.Concurrent.BlockingCollection%601.Add%2A> and  <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> methods.  
+  
+-   A bounded collection that blocks <xref:System.Collections.Concurrent.BlockingCollection%601.Add%2A> and <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> operations when the collection is full or empty.  
+  
+-   Cancellation of <xref:System.Collections.Concurrent.BlockingCollection%601.Add%2A> or <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> operations by using a <xref:System.Threading.CancellationToken> object in the  <xref:System.Collections.Concurrent.BlockingCollection%601.TryAdd%2A> or <xref:System.Collections.Concurrent.BlockingCollection%601.TryTake%2A> method.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic. Also, note that the <xref:System.Collections.Concurrent.BlockingCollection%601.Dispose> method is not thread-safe. All other public and protected members of <xref:System.Collections.Concurrent.BlockingCollection%601> are thread-safe and may be used concurrently from multiple threads.  
+  
+ <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> represents a collection that allows for thread-safe adding and removal of data. <xref:System.Collections.Concurrent.BlockingCollection%601> is used as a wrapper for an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> instance, and allows removal attempts from the collection to block until data is available to be removed. Similarly, you can create a <xref:System.Collections.Concurrent.BlockingCollection%601> to enforce an upper bound on the number of data elements allowed in the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>; addition attempts to the collection may then block until space is available to store the added items. In this manner, <xref:System.Collections.Concurrent.BlockingCollection%601> is similar to a traditional blocking queue data structure, except that the underlying data storage mechanism is abstracted away as an <xref:System.Collections.Concurrent.IProducerConsumerCollection%601>.  
+  
+ <xref:System.Collections.Concurrent.BlockingCollection%601> supports bounding and blocking. Bounding means that you can set the maximum capacity of the collection. Bounding is important in certain scenarios because it enables you to control the maximum size of the collection in memory, and it prevents the producing threads from moving too far ahead of the consuming threads.Multiple threads or tasks can add items to the collection concurrently, and if the collection reaches its specified maximum capacity, the producing threads will block until an item is removed. Multiple consumers can remove items concurrently, and if the collection becomes empty, the consuming threads will block until a producer adds an item. A producing thread can call the <xref:System.Collections.Concurrent.BlockingCollection%601.CompleteAdding%2A> method to indicate that no more items will be added. Consumers monitor the <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> property to know when the collection is empty and no more items will be added.  
+  
+ <xref:System.Collections.Concurrent.BlockingCollection%601.Add%2A> and <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> operations are typically performed in a loop. You can cancel a loop by passing in a <xref:System.Threading.CancellationToken> object to the <xref:System.Collections.Concurrent.BlockingCollection%601.TryAdd%2A> or <xref:System.Collections.Concurrent.BlockingCollection%601.TryTake%2A> method, and then checking the value of the token's <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property on each iteration. If the value is `true`, it is up to you to respond the cancellation request by cleaning up any resources and exiting the loop.  
+  
+ When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify not only the bounded capacity but also the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ Do not modify the underlying collection directly. Use <xref:System.Collections.Concurrent.BlockingCollection%601> methods to add or remove elements. The <xref:System.Collections.Concurrent.BlockingCollection%601> object can become corrupted if you change the underlying collection directly.  
+  
+   
+  
+## Examples  
+ The following example shows how to add and take items concurrently from a blocking collection:  
+  
+ [!code-csharp[System.Collections.Concurrent.BlockingCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/cs/blockingcoll.cs#1)]
+ [!code-vb[System.Collections.Concurrent.BlockingCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/vb/blockingcoll.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>The Dispose method is not thread-safe. All other public and protected members of <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockingCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class without an upper-bound.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default underlying collection is a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object, which provides first in, first out (FIFO) behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockingCollection (System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Concurrent.IProducerConsumerCollection`1&lt;!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.#ctor(System.Collections.Concurrent.IProducerConsumerCollection{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection to use as the underlying data store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class without an upper-bound and using the provided <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" /> as its underlying data store.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collection" /> argument is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockingCollection (int boundedCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 boundedCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="boundedCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="boundedCapacity">The bounded size of the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class with the specified upper-bound.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default underlying collection is a <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="boundedCapacity" /> is not a positive value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockingCollection (System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt; collection, int boundedCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Concurrent.IProducerConsumerCollection`1&lt;!T&gt; collection, int32 boundedCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.#ctor(System.Collections.Concurrent.IProducerConsumerCollection{`0},System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Concurrent.IProducerConsumerCollection&lt;T&gt;" />
+        <Parameter Name="boundedCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection to use as the underlying data store.</param>
+        <param name="boundedCapacity">The bounded size of the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class with the specified upper-bound and using the provided <see cref="T:System.Collections.Concurrent.IProducerConsumerCollection`1" /> as its underlying data store.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collection" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="boundedCapacity" /> is not a positive value.</exception>
+        <exception cref="T:System.ArgumentException">The supplied <paramref name="collection" /> contains more values than is permitted by <paramref name="boundedCapacity" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Add(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection. The value can be a null reference.</param>
+        <summary>Adds the item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a bounded capacity was specified when this instance of <xref:System.Collections.Concurrent.BlockingCollection%601> was initialized, a call to Add may block until space is available to store the provided item.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (T item, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(!T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Add(`0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection. The value can be a null reference.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Adds the item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a bounded capacity was specified when this instance of <xref:System.Collections.Concurrent.BlockingCollection%601> was initialized, a call to <xref:System.Collections.Concurrent.BlockingCollection%601.Add%2A> may block until space is available to store the provided item.  
+  
+ This method can return early with an <xref:System.OperationCanceledException> if the `cancellationToken` is canceled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that owns <paramref name="cancellationToken" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToAny">
+      <MemberSignature Language="C#" Value="public static int AddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 AddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.AddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <summary>Adds the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a bounded capacity was specified when all of the <xref:System.Collections.Concurrent.BlockingCollection%601> instances were initialized, a call to AddToAny may block until space is available in one of the collections to store the provided item.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToAny">
+      <MemberSignature Language="C#" Value="public static int AddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 AddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.AddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Adds the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a bounded capacity was specified when all of the <xref:System.Collections.Concurrent.BlockingCollection%601> instances were initialized, a call to AddToAny may block until space is available in one of the collections to store the provided item. This method may return before the item is added to any collection if the `cancellationToken` is canceled before space is available.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed, or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundedCapacity">
+      <MemberSignature Language="C#" Value="public int BoundedCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BoundedCapacity" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.BoundedCapacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounded capacity of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</summary>
+        <value>The bounded capacity of this collection, or int.MaxValue if no bound was supplied.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteAdding">
+      <MemberSignature Language="C#" Value="public void CompleteAdding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompleteAdding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.CompleteAdding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Marks the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances as not accepting any more additions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After a collection has been marked as complete for adding, adding to the collection is not permitted and attempts to remove from the collection will not wait when the collection is empty.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies all of the items in the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ CopyTo represents a snapshot of the collection at a precise point in time. If other threads are adding or removing items while CopyTo is executing, then the elements returned by CopyTo might not represent the state of the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> argument is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="index" /> argument is equal to or greater than the length of the <paramref name="array" />.  
+  
+ The destination array is too small to hold all of the BlockingCcollection elements.  
+  
+ The array rank doesn't match.  
+  
+ The array type is incompatible with the type of the BlockingCollection elements.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items contained in the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <value>The number of items contained in the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any method in BlockingCollection is executing while the Count property is being accessd, the return value is approximate. Count may reflect a number that is either greater than or less than the actual number of items in the BlockingCollection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Dispose` method is not thread-safe.  
+  
+ Call `Dispose` when you are finished using the <xref:System.Collections.Concurrent.BlockingCollection%601>. The `Dispose` method leaves the <xref:System.Collections.Concurrent.BlockingCollection%601> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Collections.Concurrent.BlockingCollection%601> so the garbage collector can reclaim the memory that the <xref:System.Collections.Concurrent.BlockingCollection%601> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Collections.Concurrent.BlockingCollection%601>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Collections.Concurrent.BlockingCollection%601> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">Whether being disposed explicitly (true) or due to a finalizer (false).</param>
+        <summary>Releases resources used by the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConsumingEnumerable">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; GetConsumingEnumerable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!T&gt; GetConsumingEnumerable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a consuming <see cref="T:System.Collections.Generic.IEnumerator`1" /> for items in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that removes and returns items from the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A> method:  
+  
+ [!code-csharp[System.Collections.Concurrent.BlockingCollection#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/cs/blockingcoll.cs#4)]
+ [!code-vb[System.Collections.Concurrent.BlockingCollection#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/vb/blockingcoll.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConsumingEnumerable">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; GetConsumingEnumerable (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!T&gt; GetConsumingEnumerable(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Provides a consuming <see cref="T:System.Collections.Generic.IEnumerable`1" /> for items in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that removes and returns items from the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables client code to remove items from the collection by using a foreach loop (For Each in Visual Basic), or <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> or a PLINQ query. The enumerator will continue to provide items (if any exist) until <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> returns true, and if <xref:System.Collections.Concurrent.BlockingCollection%601.IsCompleted%2A> is false the loop blocks until an item becomes available or until the <xref:System.Threading.CancellationToken> is cancelled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAddingCompleted">
+      <MemberSignature Language="C#" Value="public bool IsAddingCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAddingCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.IsAddingCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete for adding.</summary>
+        <value>Whether this collection has been marked as complete for adding.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.IsCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete for adding and is empty.</summary>
+        <value>Whether this collection has been marked as complete for adding and is empty.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for items in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the items in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.Collections.Concurrent.BlockingCollection%601.GetConsumingEnumerable%2A>, <xref:System.Collections.Concurrent.BlockingCollection%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%2A?displayProperty=fullName> returns a standard enumerator that does not modify the underlying collection. If other threads are adding or removing elements concurrently when GetEnumerator is called, then the elements returned by the enumerator might not represent the current state of the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies all of the items in the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance to a compatible one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> argument is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="index" /> argument is equal to or greater than the length of the <paramref name="array" />, the array is multidimensional, or the type parameter for the collection cannot be cast automatically to the type of the destination array.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized.</summary>
+        <value>always returns false.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.BlockingCollection`1.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />. This property is not supported.</summary>
+        <value>returns null.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The SyncRoot property is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an <see cref="T:System.Collections.IEnumerator" /> for items in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the items in the collection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Take">
+      <MemberSignature Language="C#" Value="public T Take ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Take() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Take" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes  an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <returns>The item removed from the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> may block until an item is available to be removed.  
+  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance, or the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> is empty and the collection has been marked as complete for adding.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Take">
+      <MemberSignature Language="C#" Value="public T Take (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Take(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.Take(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">Object that can be used to cancel the take operation.</param>
+        <summary>Removes an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <returns>The item removed from the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to <xref:System.Collections.Concurrent.BlockingCollection%601.Take%2A> may block until an item is available to be removed or the token is canceled.  
+  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the <see cref="T:System.Threading.CancellationTokenSource" /> that created the token was canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance or the BlockingCollection is marked as complete for adding, or the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <summary>Takes an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TakeFromAny may block until an item is available to be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element or <see cref="M:System.Collections.Concurrent.BlockingCollection`1.CompleteAdding" /> has been called on the collection.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Takes an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances while observing the specified cancellation token.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TakeFromAny may block until an item is available to be removed. The method will return early with an OperationCanceledException if the token is canceled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or <see cref="M:System.Collections.Concurrent.BlockingCollection`1.CompleteAdding" /> has been called on the collection.</exception>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public T[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.ToArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the items from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance into a new array.</summary>
+        <returns>An array containing copies of the elements of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The copied elements are not removed from the collection.  
+  
+ If any method in BlockingCollection is executing while the ToArray method executes, the return value is approximate. ToArray  may include items that have already been removed, or exclude items that have already been inserted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdd">
+      <MemberSignature Language="C#" Value="public bool TryAdd (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdd(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAdd(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection.</param>
+        <summary>Tries to add the specified item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <returns>true if <paramref name="item" /> could be added; otherwise false. If the item is a duplicate, and the underlying collection does not accept duplicate items, then an <see cref="T:System.InvalidOperationException" /> is thrown.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is a bounded collection, and is full, this method immediately returns false without adding the item.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdd">
+      <MemberSignature Language="C#" Value="public bool TryAdd (T item, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdd(!T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAdd(`0,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <summary>Tries to add the specified item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> within the specified time period.</summary>
+        <returns>true if the <paramref name="item" /> could be added to the collection within the specified time; otherwise, false. If the item is a duplicate, and the underlying collection does not accept duplicate items, then an <see cref="T:System.InvalidOperationException" /> is thrown.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdd">
+      <MemberSignature Language="C#" Value="public bool TryAdd (T item, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdd(!T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAdd(`0,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Tries to add the specified item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <returns>true if the <paramref name="item" /> could be added to the collection within the specified time span; otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdd">
+      <MemberSignature Language="C#" Value="public bool TryAdd (T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryAdd(!T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAdd(`0,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be added to the collection.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Tries to add the specified item to the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> within the specified time period, while observing a cancellation token.</summary>
+        <returns>true if the <paramref name="item" /> could be added to the collection within the specified time; otherwise, false. If the item is a duplicate, and the underlying collection does not accept duplicate items, then an <see cref="T:System.InvalidOperationException" /> is thrown.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the underlying <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been marked as complete with regards to additions.  
+  
+ -or-  
+  
+ The underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAddToAny">
+      <MemberSignature Language="C#" Value="public static int TryAddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryAddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <summary>Tries to add the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added, or -1 if the item could not be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAddToAny">
+      <MemberSignature Language="C#" Value="public static int TryAddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryAddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <summary>Tries to add the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added, or -1 if the item could not be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAddToAny">
+      <MemberSignature Language="C#" Value="public static int TryAddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryAddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Tries to add the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances while observing the specified cancellation token.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added, or -1 if the item could not be added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can return early if the cancellationToken is cancelled before space was available for the Add operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances or the <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAddToAny">
+      <MemberSignature Language="C#" Value="public static int TryAddToAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryAddToAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryAddToAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item to be added to one of the collections.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Tries to add the specified item to any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array to which the item was added, or -1 if the item could not be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one underlying collection didn't accept the item.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element, or at least one of collections has been marked as complete for adding.</exception>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTake">
+      <MemberSignature Language="C#" Value="public bool TryTake (out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be removed from the collection.</param>
+        <summary>Tries to remove an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <returns>
+          <see langword="true" /> if an item could be removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the collection is empty, this method immediately returns false.  
+  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTake">
+      <MemberSignature Language="C#" Value="public bool TryTake (out T item, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be removed from the collection.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <summary>Tries to remove an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> in the specified time period.</summary>
+        <returns>
+          <see langword="true" /> if an item could be removed from the collection within the specified  time; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601>, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTake">
+      <MemberSignature Language="C#" Value="public bool TryTake (out T item, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be removed from the collection.</param>
+        <param name="timeout">An object that represents the number of milliseconds to wait, or an object that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Tries to remove an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> in the specified time period.</summary>
+        <returns>
+          <see langword="true" /> if an item could be removed from the collection within the specified  time; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out.  
+  
+ -or-  
+  
+ <paramref name="timeout" /> is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside of this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTake">
+      <MemberSignature Language="C#" Value="public bool TryTake (out T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryTake(!T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to be removed from the collection.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Tries to remove an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> in the specified time period while observing a cancellation token.</summary>
+        <returns>
+          <see langword="true" /> if an item could be removed from the collection within the specified  time; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order in which an item is removed depends on the type of collection used to create the <xref:System.Collections.Concurrent.BlockingCollection%601> instance. When you create a <xref:System.Collections.Concurrent.BlockingCollection%601> object, you can specify the type of collection to use. For example, you could specify a <xref:System.Collections.Concurrent.ConcurrentQueue%601> object for first in, first out (FIFO) behavior, or a <xref:System.Collections.Concurrent.ConcurrentStack%601> object for last in, first out (LIFO) behavior. You can use any collection class that implements the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601> interface. The default collection type for <xref:System.Collections.Concurrent.BlockingCollection%601> is <xref:System.Collections.Concurrent.ConcurrentQueue%601>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> has been canceled.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> has been disposed or the underlying <see cref="T:System.Threading.CancellationTokenSource" /> has been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <exception cref="T:System.InvalidOperationException">The underlying collection was modified outside this <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <summary>Tries to remove an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed, or -1 if an item could not be removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TryTakeFromAny may block until an item is available to be removed.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the [TryTakeFromAny Method (BlockingCollection(T)\<xref:System.Collections.Concurrent.BlockingCollection%601.TryTakeFromAny%2A?displayProperty=fullName> method:  
+  
+ [!code-csharp[System.Collections.Concurrent.BlockingCollection#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/cs/blockingcoll.cs#3)]
+ [!code-vb[System.Collections.Concurrent.BlockingCollection#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/vb/blockingcoll.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <summary>Tries to remove an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed, or -1 if an item could not be removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TryTakeFromAny may block until an item is available to be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> that represents the number of milliseconds to wait, or a <see cref="T:System.TimeSpan" /> that represents -1 milliseconds to wait indefinitely.</param>
+        <summary>Tries to remove an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed, or -1 if an item could not be removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TryTakeFromAny may block until an item is available to be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryTakeFromAny">
+      <MemberSignature Language="C#" Value="public static int TryTakeFromAny (System.Collections.Concurrent.BlockingCollection&lt;T&gt;[] collections, out T item, int millisecondsTimeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 TryTakeFromAny(class System.Collections.Concurrent.BlockingCollection`1&lt;!T&gt;[] collections, !T item, int32 millisecondsTimeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny(System.Collections.Concurrent.BlockingCollection{`0}[],`0@,System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collections" Type="System.Collections.Concurrent.BlockingCollection&lt;T&gt;[]" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="collections">The array of collections.</param>
+        <param name="item">The item removed from one of the collections.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait, or <see cref="F:System.Threading.Timeout.Infinite" /> (-1) to wait indefinitely.</param>
+        <param name="cancellationToken">A cancellation token to observe.</param>
+        <summary>Tries to remove an item from any one of the specified <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances.</summary>
+        <returns>The index of the collection in the <paramref name="collections" /> array from which the item was removed, or -1 if an item could not be removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to TryTakeFromAny may block until an item is available to be removed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationCanceledException">If the <see cref="T:System.Threading.CancellationToken" /> is canceled.</exception>
+        <exception cref="T:System.InvalidOperationException">At least one of the underlying collections was modified outside of its <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instance.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="collections" /> argument is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.  
+  
+ -or-  
+  
+ The count of <paramref name="collections" /> is greater than the maximum size of 62 for STA and 63 for MTA.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="collections" /> argument is a 0-length array or contains a null element.</exception>
+        <exception cref="T:System.ObjectDisposedException">At least one of the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" /> instances has been disposed.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="TryTake">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Concurrent</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to remove an item from the <see cref="T:System.Collections.Concurrent.BlockingCollection`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Collections.Concurrent.BlockingCollection%601.TryTake%2A> method.  
+  
+ [!code-csharp[System.Collections.Concurrent.BlockingCollection#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/cs/blockingcoll.cs#2)]
+ [!code-vb[System.Collections.Concurrent.BlockingCollection#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.concurrent.blockingcollection/vb/blockingcoll.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

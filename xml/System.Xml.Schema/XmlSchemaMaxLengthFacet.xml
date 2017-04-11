@@ -1,0 +1,59 @@
+<Type Name="XmlSchemaMaxLengthFacet" FullName="System.Xml.Schema.XmlSchemaMaxLengthFacet">
+  <TypeSignature Language="C#" Value="public class XmlSchemaMaxLengthFacet : System.Xml.Schema.XmlSchemaNumericFacet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaMaxLengthFacet extends System.Xml.Schema.XmlSchemaNumericFacet" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaMaxLengthFacet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaNumericFacet</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="maxLength" /> element from XML Schema as specified by the World Wide Web Consortium (W3C). This class can be used to specify a restriction on the maximum length of the data value of a <see langword="simpleType" /> element. The length must be less than the value of the <see langword="maxLength" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `XmlSchemaMaxLengthFacet` class.  
+  
+ [!code-cpp[Classic WebData XmlSchemaMaxLengthFacet Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaMaxLengthFacet Example/CPP/maxlengthfacet.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaMaxLengthFacet Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaMaxLengthFacet Example/CS/maxlengthfacet.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaMaxLengthFacet Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaMaxLengthFacet Example/VB/maxlengthfacet.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaMaxLengthFacet Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaMaxLengthFacet Example/XML/example.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaMaxLengthFacet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaMaxLengthFacet.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaMaxLengthFacet" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

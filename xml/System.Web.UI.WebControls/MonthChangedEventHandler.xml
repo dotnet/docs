@@ -1,0 +1,45 @@
+<Type Name="MonthChangedEventHandler" FullName="System.Web.UI.WebControls.MonthChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void MonthChangedEventHandler(object sender, MonthChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MonthChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MonthChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.MonthChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.MonthChangedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" /> event of a <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the navigation controls for the <xref:System.Web.UI.WebControls.Calendar> control to display the next or previous month.  
+  
+ When you create a <xref:System.Web.UI.WebControls.MonthChangedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event that displays in a <xref:System.Web.UI.WebControls.Label> control whether the <xref:System.Web.UI.WebControls.Calendar> control has moved forward or backward one month.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/CS/calendarvisiblemonthchanged2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/VB/calendarvisiblemonthchanged2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

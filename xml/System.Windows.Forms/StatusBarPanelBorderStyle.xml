@@ -1,0 +1,84 @@
+<Type Name="StatusBarPanelBorderStyle" FullName="System.Windows.Forms.StatusBarPanelBorderStyle">
+  <TypeSignature Language="C#" Value="public enum StatusBarPanelBorderStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelBorderStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelBorderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the appearance of the border for a <see cref="T:System.Windows.Forms.StatusBarPanel" /> on a <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A> property of the <xref:System.Windows.Forms.StatusBarPanel> class. The <xref:System.Windows.Forms.StatusBarPanel.BorderStyle%2A> property enables you to specify the style of border to display on a <xref:System.Windows.Forms.StatusBarPanel> within a <xref:System.Windows.Forms.StatusBar>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.StatusBarPanelBorderStyle> enumeration and how to handle the <xref:System.Windows.Forms.StatusBar.PanelClick> event.  
+  
+ To run the example, paste the following code in a form. Call the `InitializeStatusBarPanels` method in the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.StatusBarPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.StatusBarPanelExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No border is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raised">
+      <MemberSignature Language="C#" Value="Raised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle Raised = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Raised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is displayed with a three-dimensional raised border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunken">
+      <MemberSignature Language="C#" Value="Sunken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelBorderStyle Sunken = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelBorderStyle.Sunken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is displayed with a three-dimensional sunken border.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

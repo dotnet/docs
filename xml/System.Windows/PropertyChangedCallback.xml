@@ -1,0 +1,38 @@
+<Type Name="PropertyChangedCallback" FullName="System.Windows.PropertyChangedCallback">
+  <TypeSignature Language="C#" Value="public delegate void PropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyChangedCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.PropertyChangedCallback" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="d" Type="System.Windows.DependencyObject" />
+    <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="d">The <see cref="T:System.Windows.DependencyObject" /> on which the property has changed value.</param>
+    <param name="e">Event data that is issued by any event that tracks changes to the effective value of this property.</param>
+    <summary>Represents the callback that is invoked when the effective property value of a dependency property changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example registers a new dependency property, using the signature that specifies a <xref:System.Windows.PropertyChangedCallback>. The <xref:System.Windows.PropertyChangedCallback> is used to create a callback that changes an internal property whenever the public property changes.  
+  
+ [!code-csharp[WPFAquariumSln#RegisterAG](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerag)]
+ [!code-vb[WPFAquariumSln#RegisterAG](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerag)]  
+  
+ [!code-csharp[WPFAquariumSln#AGPropertyChangedCallback](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#agpropertychangedcallback)]
+ [!code-vb[WPFAquariumSln#AGPropertyChangedCallback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agpropertychangedcallback)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

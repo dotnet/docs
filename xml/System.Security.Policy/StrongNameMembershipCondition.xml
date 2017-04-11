@@ -1,0 +1,370 @@
+<Type Name="StrongNameMembershipCondition" FullName="System.Security.Policy.StrongNameMembershipCondition">
+  <TypeSignature Language="C#" Value="public sealed class StrongNameMembershipCondition : System.Security.Policy.IMembershipCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit StrongNameMembershipCondition extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable, class System.Security.Policy.IMembershipCondition" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.StrongNameMembershipCondition" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Policy.IMembershipCondition</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Determines whether an assembly belongs to a code group by testing its strong name. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StrongNameMembershipCondition (System.Security.Permissions.StrongNamePublicKeyBlob blob, string name, Version version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Permissions.StrongNamePublicKeyBlob blob, string name, class System.Version version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.#ctor(System.Security.Permissions.StrongNamePublicKeyBlob,System.String,System.Version)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="blob" Type="System.Security.Permissions.StrongNamePublicKeyBlob" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="version" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="blob">The strong name public key blob of the software publisher.</param>
+        <param name="name">The simple name section of the strong name.</param>
+        <param name="version">The version number of the strong name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> class with the strong name public key blob, name, and version number that determine membership.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Strong names are well suited to specifying code assemblies to which you give a rich set of powerful permissions. Since strong names are cryptographically verified, attackers cannot impersonate rightful assemblies and use their permissions.  
+  
+ The `name` and `version` parameters are optional. For example, you can create a <xref:System.Security.Policy.StrongNameMembershipCondition> that checks for <xref:System.Security.Policy.StrongNameMembershipCondition.PublicKey%2A> and <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> (but not <xref:System.Security.Policy.StrongNameMembershipCondition.Version%2A>) by passing `null` into the `version` parameter. If `name` is an empty string (""), an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="blob" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="name" /> parameter is an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Check">
+      <MemberSignature Language="C#" Value="public bool Check (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Check(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The <see cref="T:System.Security.Policy.Evidence" /> against which to make the test.</param>
+        <summary>Determines whether the specified evidence satisfies the membership condition.</summary>
+        <returns>
+          <see langword="true" /> if the specified evidence satisfies the membership condition; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This membership condition tests only the <xref:System.Security.Policy.StrongName> evidence object.  
+  
+ The membership condition is satisfied if the specified evidence contains a <xref:System.Security.Policy.StrongName> with the same <xref:System.Security.Policy.StrongName> (public key, name, and version) as specified by the <xref:System.Security.Policy.StrongNameMembershipCondition>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.Security.Policy.IMembershipCondition Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.IMembershipCondition Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.IMembershipCondition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an equivalent copy of the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</summary>
+        <returns>A new, identical copy of the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare to the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</param>
+        <summary>Determines whether the <see cref="T:System.Security.Policy.StrongName" /> from the specified object is equivalent to the <see cref="T:System.Security.Policy.StrongName" /> contained in the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Security.Policy.StrongName" /> from the specified object is equivalent to the <see cref="T:System.Security.Policy.StrongName" /> contained in the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For two <xref:System.Security.Policy.StrongName> classes to be equal, their name, version, and public key blob must match exactly.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" /> property of the current object or the specified object is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e, System.Security.Policy.PolicyLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement e, class System.Security.Policy.PolicyLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Security.SecurityElement" />
+        <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
+      </Parameters>
+      <Docs>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context, used to resolve <see cref="T:System.Security.NamedPermissionSet" /> references.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="e" /> parameter is not a valid membership condition element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</summary>
+        <returns>The hash code for the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the simple name of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</summary>
+        <value>The simple name of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to set the <xref:System.Security.Policy.StrongNameMembershipCondition.Name%2A> property to an empty string (""), an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value is <see langword="null" />.  
+  
+ -or-  
+  
+ The value is an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKey">
+      <MemberSignature Language="C#" Value="public System.Security.Permissions.StrongNamePublicKeyBlob PublicKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Permissions.StrongNamePublicKeyBlob PublicKey" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.StrongNamePublicKeyBlob</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" /> of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</summary>
+        <value>The <see cref="T:System.Security.Permissions.StrongNamePublicKeyBlob" /> of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A blob is cryptographic information that uniquely specifies the public key of the software publisher.  
+  
+ Blobs differ from certificates in that the blob only has information about the public key; the certificate also includes information that associates a name of the holder with the key, as well as information to verify the certificate.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set the <see cref="P:System.Security.Policy.StrongNameMembershipCondition.PublicKey" /> to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a string representation of the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</summary>
+        <returns>A representation of the current <see cref="T:System.Security.Policy.StrongNameMembershipCondition" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml (System.Security.Policy.PolicyLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml(class System.Security.Policy.PolicyLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.StrongNameMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
+      </Parameters>
+      <Docs>
+        <param name="level">The <see cref="T:System.Security.Policy.PolicyLevel" /> context, which is used to resolve <see cref="T:System.Security.NamedPermissionSet" /> references.</param>
+        <summary>Creates an XML encoding of the security object and its current state with the specified <see cref="T:System.Security.Policy.PolicyLevel" />.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Version Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.StrongNameMembershipCondition.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Version" /> of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</summary>
+        <value>The <see cref="T:System.Version" /> of the <see cref="T:System.Security.Policy.StrongName" /> for which the membership condition tests.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

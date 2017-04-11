@@ -1,0 +1,250 @@
+<Type Name="LoadOptions" FullName="System.Xml.Linq.LoadOptions">
+  <TypeSignature Language="C#" Value="public enum LoadOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Linq.LoadOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XDocument</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies load options when parsing XML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you preserve white space when loading, all insignificant white space in the XML tree is materialized in the XML tree as is. If you do not preserve white space, then all insignificant white space is discarded.  
+  
+ There is a performance penalty if you set the SetBaseUri and the SetLineInfo flags.  
+  
+ The base URI and the line information are accurate immediately after loading the XML document. If you modify the XML tree after loading the document, the base URI and line information may become meaningless.  
+  
+ If the underlying <xref:System.Xml.XmlReader> does not have base URI or line information, setting the SetBaseUri and the SetLineInfo flags will have no effect.  
+  
+ This type allows you to control how LINQ to XML handles white space when loading or parsing. For more information, see [Preserving White Space while Loading or Parsing XML](http://msdn.microsoft.com/library/093a7169-a04e-4638-b08c-d1cb98aa650d) and [Preserving White Space While Serializing](http://msdn.microsoft.com/library/fb146217-0a49-4efc-ac84-7265b91d3939).  
+  
+   
+  
+## Examples  
+ This example loads a small XML tree from a file, setting the options to set base URI and retain line information. It then adds another element that does not have line information. It then prints the line information for each element in the tree.  
+  
+```csharp  
+  
+                string markup = @"<Root>  
+    <Child1 />  
+    <Child2 />  
+    <Child4 />  
+</Root>";  
+  
+File.WriteAllText("Test.xml", markup);  
+  
+XElement po = XElement.Load("Test.xml",  
+    LoadOptions.SetBaseUri | LoadOptions.SetLineInfo);  
+  
+// add a node to the tree.  
+// the newly added node will not have line information.  
+po.Element("Child2").AddAfterSelf(new XElement("Child3"));  
+  
+string[] splitUri = po.BaseUri.Split('/');  
+Console.WriteLine("BaseUri: {0}", splitUri[splitUri.Length - 1]);  
+Console.WriteLine();  
+Console.WriteLine("{0}{1}{2}",  
+    "Element Name".PadRight(20),  
+    "Line".PadRight(5),  
+    "Position");  
+Console.WriteLine("{0}{1}{2}",  
+    "------------".PadRight(20),  
+    "----".PadRight(5),  
+    "--------");  
+foreach (XElement e in po.DescendantsAndSelf())  
+    Console.WriteLine("{0}{1}{2}",  
+        ("".PadRight(e.Ancestors().Count() * 2) + e.Name).PadRight(20),  
+        ((IXmlLineInfo)e).HasLineInfo() ?  
+            ((IXmlLineInfo)e).LineNumber.ToString().PadRight(5) :  
+            "",  
+        ((IXmlLineInfo)e).HasLineInfo() ?  
+            ((IXmlLineInfo)e).LinePosition.ToString() :  
+            "No Line Information");  
+```  
+  
+```vb  
+  
+                Dim markup As String = _  
+    "<Root>" + Environment.NewLine & _  
+    "    <Child1 />" + Environment.NewLine & _  
+    "    <Child2 />" + Environment.NewLine & _  
+    "    <Child4 />" + Environment.NewLine & _  
+    "</Root>"  
+  
+File.WriteAllText("Test.xml", markup)  
+  
+Dim po As XElement = XElement.Load("Test.xml", LoadOptions.SetBaseUri Or LoadOptions.SetLineInfo)  
+  
+' add a node to the tree.  
+' the newly added node will not have line information.  
+po.Element("Child2").AddAfterSelf(New XElement("Child3"))  
+  
+Dim splitUri() As String = po.BaseUri.Split("/"c)  
+Console.WriteLine("BaseUri: {0}", splitUri(splitUri.Length - 1))  
+Console.WriteLine()  
+Console.WriteLine("{0}{1}{2}", _  
+    "Element Name".PadRight(20), _  
+    "Line".PadRight(5), _  
+    "Position")  
+Console.WriteLine("{0}{1}{2}", _  
+    "------------".PadRight(20), _  
+    "----".PadRight(5), _  
+    "--------")  
+For Each e As XElement In po.DescendantsAndSelf()  
+    Console.WriteLine("{0}{1}{2}", _  
+        ("".PadRight(e.Ancestors().Count() * 2) & e.Name.ToString).PadRight(20), _  
+        IIf(DirectCast(e, IXmlLineInfo).HasLineInfo(), _  
+            DirectCast(e, IXmlLineInfo).LineNumber.ToString().PadRight(5), _  
+            ""), _  
+        IIf(DirectCast(e, IXmlLineInfo).HasLineInfo(), _  
+            DirectCast(e, IXmlLineInfo).LinePosition.ToString(), _  
+            "No Line Information"))  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+BaseUri: Test.xml  
+  
+Element Name        Line Position  
+------------        ---- --------  
+Root                1    2  
+  Child1            2    6  
+  Child2            3    6  
+  Child3            No Line Information  
+  Child4            4    6  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.LoadOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.LoadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Does not preserve insignificant white space or load base URI and line information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveWhitespace">
+      <MemberSignature Language="C#" Value="PreserveWhitespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.LoadOptions PreserveWhitespace = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.PreserveWhitespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.LoadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Preserves insignificant white space while parsing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBaseUri">
+      <MemberSignature Language="C#" Value="SetBaseUri" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.LoadOptions SetBaseUri = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.SetBaseUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.LoadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests the base URI information from the <see cref="T:System.Xml.XmlReader" />, and makes it available via the <see cref="P:System.Xml.Linq.XObject.BaseUri" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLineInfo">
+      <MemberSignature Language="C#" Value="SetLineInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.LoadOptions SetLineInfo = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.LoadOptions.SetLineInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.LoadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests the line information from the <see cref="T:System.Xml.XmlReader" /> and makes it available via properties on <see cref="T:System.Xml.Linq.XObject" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

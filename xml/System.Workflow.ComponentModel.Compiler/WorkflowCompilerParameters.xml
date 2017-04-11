@@ -1,0 +1,249 @@
+<Type Name="WorkflowCompilerParameters" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowCompilerParameters : System.CodeDom.Compiler.CompilerParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WorkflowCompilerParameters extends System.CodeDom.Compiler.CompilerParameters" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.Compiler.CompilerParameters</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents parameters passed to <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompiler" /> during the compilation process.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> class, add <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LibraryPaths%2A> and set the value for the <xref:System.CodeDom.Compiler.CompilerParameters.OutputAssembly%2A?displayProperty=fullName> property. The code also creates a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> class and runs the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile%2A?displayProperty=fullName> method. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK Sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
+ [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompilerParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies used in compilation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class, with the names of the assemblies used in compilation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> class, add <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LibraryPaths%2A> and set the value for the <xref:System.CodeDom.Compiler.CompilerParameters.OutputAssembly%2A?displayProperty=fullName> property. The code also creates a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> class and runs the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile%2A?displayProperty=fullName> method. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK Sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
+ [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The instance of <see cref="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters)" /> used to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class from an existing instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames, string outputName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="outputName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies used in compilation.</param>
+        <param name="outputName">The name to apply to the output file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class, with the names of the assemblies used in compilation, and the name to apply to the output file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompilerParameters (string[] assemblyNames, string outputName, bool includeDebugInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, string outputName, bool includeDebugInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[],System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="outputName" Type="System.String" />
+        <Parameter Name="includeDebugInformation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The names of the assemblies used in compilation.</param>
+        <param name="outputName">The name to apply to the output file.</param>
+        <param name="includeDebugInformation">Indicates whether a PDB file should be generated for debugging.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" /> class, with the names of the assemblies used in compilation, and the name to apply to the output file, and the designator for inclusion of debug information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompilerOptions">
+      <MemberSignature Language="C#" Value="public string CompilerOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CompilerOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.CompilerOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that contains command-line options for this compilation.</summary>
+        <value>A string that contains command-line options for this compilation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCodeCompileUnitOnly">
+      <MemberSignature Language="C#" Value="public bool GenerateCodeCompileUnitOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateCodeCompileUnitOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.GenerateCodeCompileUnitOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value which indicates whether to generate only a <see cref="T:System.CodeDom.CodeCompileUnit" />, or to call the C# or Visual Basic compiler to generate the executable or DLL.</summary>
+        <value>A value which indicates whether to generate only a <see cref="T:System.CodeDom.CodeCompileUnit" /> , or to call the C# or Visual Basic compiler to generate the executable or DLL.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageToUse">
+      <MemberSignature Language="C#" Value="public string LanguageToUse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LanguageToUse" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LanguageToUse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string which contains the language to use in compilation of the <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
+        <value>A string which contains the language to use in compilation of the <see cref="T:System.CodeDom.CodeCompileUnit" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LibraryPaths">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection LibraryPaths { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection LibraryPaths" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LibraryPaths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the property that represents a collection of directory names under which compiler looks for referenced assemblies.</summary>
+        <value>The property that represents a collection of directory names under which compiler looks for referenced assemblies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The compiler adds standard library paths to the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> class, add <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.LibraryPaths%2A> and set the value for the <xref:System.CodeDom.Compiler.CompilerParameters.OutputAssembly%2A?displayProperty=fullName> property. The code also creates a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> class and runs the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile%2A?displayProperty=fullName> method. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK Sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
+ [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCodeCompileUnits">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.CodeDom.CodeCompileUnit&gt; UserCodeCompileUnits { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.CodeDom.CodeCompileUnit&gt; UserCodeCompileUnits" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.UserCodeCompileUnits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.CodeDom.CodeCompileUnit&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of code compile units which will be used in this invocation of the workflow compiler.</summary>
+        <value>The collection of code compile units which will be used in this invocation of the workflow compiler.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

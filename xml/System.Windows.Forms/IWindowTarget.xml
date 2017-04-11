@@ -1,0 +1,72 @@
+<Type Name="IWindowTarget" FullName="System.Windows.Forms.IWindowTarget">
+  <TypeSignature Language="C#" Value="public interface IWindowTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindowTarget" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IWindowTarget" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the communication layer between a control and the Win32 API.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Control> class implements this interface internally.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnHandleChange">
+      <MemberSignature Language="C#" Value="public void OnHandleChange (IntPtr newHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnHandleChange(native int newHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IWindowTarget.OnHandleChange(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newHandle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="newHandle">The new handle of the <see cref="T:System.Windows.Forms.IWindowTarget" />.</param>
+        <summary>Sets the handle of the <see cref="T:System.Windows.Forms.IWindowTarget" /> to the specified handle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.IWindowTarget.OnHandleChange%2A> method is called when the window handle of the control has changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMessage">
+      <MemberSignature Language="C#" Value="public void OnMessage (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IWindowTarget.OnMessage(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows message to process.</param>
+        <summary>Processes the Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

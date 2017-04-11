@@ -1,0 +1,206 @@
+<Type Name="RibbonGroupDataAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonGroupDataAutomationPeer : System.Windows.Automation.Peers.ItemAutomationPeer, System.Windows.Automation.Provider.IExpandCollapseProvider, System.Windows.Automation.Provider.IScrollItemProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonGroupDataAutomationPeer extends System.Windows.Automation.Peers.ItemAutomationPeer implements class System.Windows.Automation.Provider.IExpandCollapseProvider, class System.Windows.Automation.Provider.IScrollItemProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.ItemAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IExpandCollapseProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IScrollItemProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonGroupDataAutomationPeer (object item, System.Windows.Automation.Peers.RibbonTabAutomationPeer itemsControlPeer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Automation.Peers.RibbonTabAutomationPeer itemsControlPeer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.RibbonTabAutomationPeer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="itemsControlPeer" Type="System.Windows.Automation.Peers.RibbonTabAutomationPeer" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element associated with this automation peer.</param>
+        <param name="itemsControlPeer">The automation peer that is associated with the <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" /> that holds the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Group" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ScrollItem" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" /> value; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse">
+      <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Collapse ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hides all controls that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.Expand">
+      <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Expand ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Shows the controls that are in the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state, expanded or collapsed, of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />.</summary>
+        <value>The state of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IExpandCollapseProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView">
+      <MemberSignature Language="C#" Value="void IScrollItemProvider.ScrollIntoView ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer.System#Windows#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Scrolls the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> into the visible region of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonGroupDataAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IScrollItemProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

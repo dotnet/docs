@@ -1,0 +1,77 @@
+<Type Name="TextDecorationUnit" FullName="System.Windows.TextDecorationUnit">
+  <TypeSignature Language="C#" Value="public enum TextDecorationUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDecorationUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationUnit" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the unit type of either a <see cref="T:System.Windows.TextDecoration" /> <see cref="P:System.Windows.TextDecoration.PenOffset" /> or a <see cref="P:System.Windows.TextDecoration.Pen" /> thickness value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.TextDecoration.PenThicknessUnit%2A> property to Pixel.  
+  
+ [!code-csharp[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets7)]
+ [!code-vb[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets7)]
+ [!code-xml[TextDecorationSnippets#TextDecorationSnippets7](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FontRecommended">
+      <MemberSignature Language="C#" Value="FontRecommended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationUnit FontRecommended = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.FontRecommended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A unit value that is relative to the font used for the <see cref="T:System.Windows.TextDecoration" />. If the decoration spans multiple fonts, an average recommended value is calculated. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontRenderingEmSize">
+      <MemberSignature Language="C#" Value="FontRenderingEmSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationUnit FontRenderingEmSize = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.FontRenderingEmSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A unit value that is relative to the em size of the font. The value of the offset or thickness is equal to the offset or thickness value multiplied by the font em size.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pixel">
+      <MemberSignature Language="C#" Value="Pixel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationUnit Pixel = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationUnit.Pixel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDecorationUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A unit value that is expressed in pixels.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

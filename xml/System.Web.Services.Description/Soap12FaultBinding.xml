@@ -1,0 +1,50 @@
+<Type Name="Soap12FaultBinding" FullName="System.Web.Services.Description.Soap12FaultBinding">
+  <TypeSignature Language="C#" Value="public sealed class Soap12FaultBinding : System.Web.Services.Description.SoapFaultBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Soap12FaultBinding extends System.Web.Services.Description.SoapFaultBinding" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12FaultBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.SoapFaultBinding</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("fault", "http://schemas.xmlsoap.org/wsdl/soap12/", typeof(System.Web.Services.Description.FaultBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service description format extension applied to an <see cref="T:System.Web.Services.Description.FaultBinding" /> when an XML Web service supports the SOAP protocol version 1.2. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies the contents of any error message, which is contained within a SOAP fault.  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Soap12FaultBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12FaultBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Soap12FaultBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

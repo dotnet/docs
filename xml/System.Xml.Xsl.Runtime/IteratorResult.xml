@@ -1,0 +1,87 @@
+<Type Name="IteratorResult" FullName="System.Xml.Xsl.Runtime.IteratorResult">
+  <TypeSignature Language="C#" Value="public enum IteratorResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IteratorResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.IteratorResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Iterators that use containment to control a nested iterator return one of the values in this enumeration.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HaveCurrentNode">
+      <MemberSignature Language="C#" Value="HaveCurrentNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult HaveCurrentNode = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Iteration is complete; there are no more nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedInputNode">
+      <MemberSignature Language="C#" Value="NeedInputNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult NeedInputNode = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The next node must be fetched from the contained iterator before iteration can continue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMoreNodes">
+      <MemberSignature Language="C#" Value="NoMoreNodes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Xsl.Runtime.IteratorResult NoMoreNodes = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Xsl.Runtime.IteratorResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Iteration is complete; there are no more nodes</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

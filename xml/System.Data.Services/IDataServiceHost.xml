@@ -1,0 +1,480 @@
+<Type Name="IDataServiceHost" FullName="System.Data.Services.IDataServiceHost">
+  <TypeSignature Language="C#" Value="public interface IDataServiceHost" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceHost" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceHost" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Interface that specifies interactions between [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] and its hosting environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each component that hosts [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)], such as Windows Communication Foundation (WCF) must implement this interface. <xref:System.Data.Services.IDataServiceHost> is the contract between [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] and its hosting environment. This abstraction allows the [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] runtime to be agnostic to any particular hosting environment. The interface provides [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] with access to inbound HTTP requests. A new object implementing this interface is instantiated for each HTTP request and is then used to inspect properties of the HTTP request and configure the HTTP response.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbsoluteRequestUri">
+      <MemberSignature Language="C#" Value="public Uri AbsoluteRequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AbsoluteRequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.AbsoluteRequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an absolute URI that is the URI as sent by the client.</summary>
+        <value>A string that is the absolute URI of the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.IDataServiceHost.AbsoluteRequestUri%2A> property always returns the absolute URI from the client HTTP request. This enables consistent access to the request URI, even in cases where the host revises the URI.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsoluteServiceUri">
+      <MemberSignature Language="C#" Value="public Uri AbsoluteServiceUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AbsoluteServiceUri" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.AbsoluteServiceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an absolute URI that is the root URI of the data service.</summary>
+        <value>A string that is the absolute root URI of the data service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.IDataServiceHost.AbsoluteServiceUri%2A> property always returns the absolute root URI of the service request. This enables consistent access to the root data service URI, even in cases where the host revises the URI.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryStringItem">
+      <MemberSignature Language="C#" Value="public string GetQueryStringItem (string item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetQueryStringItem(string item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceHost.GetQueryStringItem(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="item">String value containing identity key of item requested.</param>
+        <summary>Gets a data item identified by the identity key contained by the parameter of the method.</summary>
+        <returns>The data item requested by the query serialized as a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The query string portion of an [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] URI is made up of key/value pairs, with the key and value separated by the ‘=’ character. `GetQueryStringItem` returns a data item for an identity key specified by the parameter of the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessException">
+      <MemberSignature Language="C#" Value="public void ProcessException (System.Data.Services.HandleExceptionArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessException(class System.Data.Services.HandleExceptionArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IDataServiceHost.ProcessException(System.Data.Services.HandleExceptionArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Data.Services.HandleExceptionArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">
+          <see cref="T:System.Data.Services.HandleExceptionArgs" /> that contains information on the exception object.</param>
+        <summary>Handles a data service exception using information in  the <paramref name="args" /> parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAccept">
+      <MemberSignature Language="C#" Value="public string RequestAccept { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestAccept" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestAccept" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The transport protocol specified by the request accept header.</summary>
+        <value>String that indicates the transport protocol required by the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAcceptCharSet">
+      <MemberSignature Language="C#" Value="public string RequestAcceptCharSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestAcceptCharSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestAcceptCharSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string representing the value of the <c>Accept-Charset</c> HTTP header.</summary>
+        <value>String representing the value of the <c>Accept-Charset</c> HTTP header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns null if no `Accept-Charset` header is present on the request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestContentType">
+      <MemberSignature Language="C#" Value="public string RequestContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transport protocol specified by the content type header.</summary>
+        <value>String value that indicates content type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Protocols currently supported by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] include JSON and AtomPub.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHttpMethod">
+      <MemberSignature Language="C#" Value="public string RequestHttpMethod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestHttpMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestHttpMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the request method of GET, PUT, POST, or DELETE.</summary>
+        <value>String value that indicates request method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestIfMatch">
+      <MemberSignature Language="C#" Value="public string RequestIfMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestIfMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestIfMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value for the If-Match header on the current request.</summary>
+        <value>String value for the If-Match header on the current request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestIfNoneMatch">
+      <MemberSignature Language="C#" Value="public string RequestIfNoneMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestIfNoneMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestIfNoneMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value for the If-None-Match header on the current request.</summary>
+        <value>String value for the If-None-Match header on the current request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestMaxVersion">
+      <MemberSignature Language="C#" Value="public string RequestMaxVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestMaxVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestMaxVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that identifies the highest version that the request client is able to process.</summary>
+        <value>A string that contains the highest version that the request client is able to process, possibly null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream RequestStream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream RequestStream" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the stream that contains the HTTP request body.</summary>
+        <value>
+          <see cref="T:System.IO.Stream" /> object that contains the request body.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestVersion">
+      <MemberSignature Language="C#" Value="public string RequestVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.RequestVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that identifies the version of the request that the client submitted, possibly null.</summary>
+        <value>A string that identifies the version of the request that the client submitted, possibly null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this value is null, the version is assumed to be 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseCacheControl">
+      <MemberSignature Language="C#" Value="public string ResponseCacheControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseCacheControl" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseCacheControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string value that represents cache control information.</summary>
+        <value>A string value that represents cache control information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseContentType">
+      <MemberSignature Language="C#" Value="public string ResponseContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transport protocol of the response.</summary>
+        <value>String value containing the content type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For more information about the properties supported by <xref:System.Data.Services.IDataServiceHost> and their use, see [WCF Data Services Client Library](~/docs/framework/data/wcf/wcf-data-services-client-library.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseETag">
+      <MemberSignature Language="C#" Value="public string ResponseETag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseETag" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an eTag value that represents the state of data in response.</summary>
+        <value>A string value that represents the eTag state value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseLocation">
+      <MemberSignature Language="C#" Value="public string ResponseLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the service location.</summary>
+        <value>String that contains the service location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property never returns null or `string.Empty`.  
+  
+   
+  
+## Examples  
+ The following URI contains the location of the service in the substring `http://myhost/myservice.svc`.  
+  
+```  
+http://myhost/myservice.svc/Customers, the response location would be http://myhost/myservice.svc  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseStatusCode">
+      <MemberSignature Language="C#" Value="public int ResponseStatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ResponseStatusCode" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseStatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the response code that indicates results of query.</summary>
+        <value>Integer value that contains the response code.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream ResponseStream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream ResponseStream" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the response stream to which the HTTP response body will be written.</summary>
+        <value>
+          <see cref="T:System.IO.Stream" /> object to which the response body will be written.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a null stream is returned or an exception occurs when writing to the stream, [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] aborts the request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseVersion">
+      <MemberSignature Language="C#" Value="public string ResponseVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost.ResponseVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version used by the host in the response.</summary>
+        <value>A string value that contains the host version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

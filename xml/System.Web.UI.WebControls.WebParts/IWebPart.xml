@@ -1,0 +1,341 @@
+<Type Name="IWebPart" FullName="System.Web.UI.WebControls.WebParts.IWebPart">
+  <TypeSignature Language="C#" Value="public interface IWebPart" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebPart" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebPart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines common user interface (UI) properties used by ASP.NET <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface provides several UI-oriented properties that enhance the user experience of working with <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. When you create controls that derive from the base <xref:System.Web.UI.WebControls.WebParts.WebPart> class, you get an implementation of all the properties in the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface, because the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class implements this interface.  
+  
+ You can use existing user controls, ASP.NET controls, or custom server controls that do not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class as part of a Web Parts application, and they can also use these UI-oriented properties declared by the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface. If you place existing server controls in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, at run time they are wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object. Because the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, it enables existing server controls to act as true <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and it adds to them the properties of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+ If you place server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in zones, they can use the <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties at run time, and you can also declare values for those properties on server controls in the markup of the page (in page persistence format). However, because these properties are only available to the server controls at run time, design-time coding features such as IntelliSense do not recognize <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties that are declared on server controls. Declared properties on these controls still work when you load the page, but Microsoft Visual Studio does not recognize the properties as valid at design time. If you want to add the <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties to existing server and user controls to enhance the design-time user experience, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface in a server control.  
+  
+ Perhaps the main reason to implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is for controls that do not support the use of expando (custom) properties. Expando properties are strings that can be added to a class dynamically as a property, by means of the <xref:System.Web.UI.IAttributeAccessor> interface. Controls that implement this interface, including the <xref:System.Web.UI.WebControls.WebControl> class and its children, can use expando properties. Therefore, all ASP.NET server controls, custom controls that derive from them, Web user controls, and <xref:System.Web.UI.WebControls.WebParts.WebPart> controls support the use of expando properties. But custom controls that inherit directly from the base <xref:System.Web.UI.Control> class do not support expando properties. Thus, if you declare these controls within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, you will not be able to declare the common <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties on the controls, properties such as <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> and <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A>. If you want to use these properties with such controls, you must implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface in a user control. This is a simple implementation that shows minimally how to implement the properties.  
+  
+ The first part of the code example shows the user control. The user control implements all the properties of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface, plus two additional public properties tied to controls in the user interface. The two custom properties each use the `Personalizable` attribute, which enables the values in those properties to be saved across browser sessions. Note that in the base <xref:System.Web.UI.WebControls.WebParts.WebPart> class implementation, all the properties of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface are implemented as personalizable as well, though they are not in this code example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#2)]  -->  
+  
+ The second part of the code example shows the Web page that hosts the user control. The page has a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, within which the user control is referenced. Notice that several of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface's property values are set declaratively in the markup for the user control, which enables it to both behave and appear similar to a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at design time and run time. If you load the page in a browser, you can use the UI on the page to demonstrate the ability to programmatically change the values of the implemented <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties at run time. When you change some of the property values, the changes are not evident on the page, but are visible in the page source (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property), or are stored in the application's state data (the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property).  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Normally you do not need to implement the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPart" /> interface, either on custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls or server controls, because the base <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> class already implements the interface. Custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls, and other server controls that are placed in <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zones, can use all the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPart" /> properties.  
+  
+ The main reason to implement the <see cref="T:System.Web.UI.WebControls.WebParts.IWebPart" /> interface yourself, whether in a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or another server control, is if you want to change the default implementation. For example, you might want to provide default values for some of the properties. Another reason to implement the interface in a user or server control is so that the design-time experience of working with these properties on the control will be enhanced.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="CatalogIconImageUrl">
+      <MemberSignature Language="C#" Value="public string CatalogIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that represents a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control in a catalog of controls.</summary>
+        <value>A string that represents the URL to an image used to represent the control in a catalog. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Web Parts applications often provide a catalog (or list) of controls that users can add to a page. The <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property on a control contains the URL to an image that represents the control when it appears in a catalog.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#8)]
+ [!code-vb[WebParts_IWebPart_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#8)]  
+  
+ The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
+ [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
+  
+ The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property is set declaratively on the control. Note that because there is no catalog of Web Parts controls provided with this example, you cannot see the actual effect of setting this property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a brief phrase that summarizes what a control does, for use in ToolTips and catalogs of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+        <value>A string that briefly summarizes the control's functionality. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property value is typically used as a descriptive string for a control in catalogs that provide lists of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and as a ToolTip in a control's title bar. The content of the property appears in a ToolTip when a user positions the mouse pointer over the title text in a control's title bar.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#3)]
+ [!code-vb[WebParts_IWebPart_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#3)]  
+  
+ The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
+ [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
+  
+ The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property is set declaratively on the control. Note that you can see the value of this property by positioning your mouse pointer over the title text in the control's title bar, after you have loaded the page in a browser. You can also experiment with changing the property value programmatically at run time by loading the Web page and using the provided user interface (UI) to change the property value.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public string Subtitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that is concatenated with the <see cref="P:System.Web.UI.WebControls.WebParts.IWebPart.Title" /> property value to form a complete title for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that serves as a subtitle for the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property is used to return a default subtitle string for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is appended to the control's title in the title bar.  
+  
+ If you provide a default value for the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property in a control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface, the Web Parts control set automatically appends it to the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property of the control at run time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property. Note that the property is read-only and is meant to be used to provide a default subtitle that is appended to the main title of a control.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#5)]
+ [!code-vb[WebParts_IWebPart_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#5)]  
+  
+ The second part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the writable properties from <xref:System.Web.UI.WebControls.WebParts.IWebPart> are set declaratively on the control. After you load the page in a browser, note that the default value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property, which was set in the user control's implementation code, is appended to the title in the control's title bar.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that contains the title of the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visible title text in a control's title bar is set by the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property.  
+  
+ If you do not supply a title for a control, the Web Parts control set automatically calculates a default string to use as a title. For more information, see <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A>. Also, it is possible to provide a default subtitle that is appended to the title string. For details, see <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#4)]
+ [!code-vb[WebParts_IWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#4)]  
+  
+ The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
+ [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
+  
+ The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property is set declaratively on the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleIconImageUrl">
+      <MemberSignature Language="C#" Value="public string TitleIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image used to represent a Web Parts control in the control's own title bar.</summary>
+        <value>A string that represents the URL to an image. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property provides a way to associate an icon with a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The icon appears in the control's own title bar. For thematic consistency, application developers might want to make this icon similar to the image that represents the control in a catalog of Web Parts controls (the image referenced in the <xref:System.Web.UI.WebControls.WebParts.IWebPart.CatalogIconImageUrl%2A> property).  
+  
+ As it is implemented in the Web Parts control set, the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property can be personalized by end users to change the image or icon that appears in a control's title bar.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#6)]
+ [!code-vb[WebParts_IWebPart_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#6)]  
+  
+ The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
+ [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
+  
+ The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleIconImageUrl%2A> property is set declaratively on the control. Note that if you do not provide the URL to a real image, a placeholder for the icon appears in the title bar.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleUrl">
+      <MemberSignature Language="C#" Value="public string TitleUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URL to supplemental information about a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that represents a URL to more information about a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you assign a URL to the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property, the title of the control becomes a link. The purpose of this property is to provide a convenient way for end users to access additional information about a control. The additional information could provide copyright data, contact data, details about the creator of the control, or a summary of the control's purpose.  
+  
+> [!NOTE]
+>  Normally, you would not use the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property to link to Help content. The best way to provide a link to Help for a control is to use the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebPart> class overview.  
+  
+ The first part of the code example shows how the user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property.  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#7)]
+ [!code-vb[WebParts_IWebPart_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#7)]  
+  
+ The second part of the code example demonstrates the method in the user control that programmatically sets the value of the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property when a user selects the appropriate property name from the radio buttons on the page, sets a new value in the text box, and then clicks the **Update** button.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_IWebPart_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountusercontrolcs.ascx#9)]
+ [!code-vb[WebParts_IWebPart_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountusercontrolvb.ascx#9)]  
+  
+ The third part of the code example shows how the user control that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, and how the <xref:System.Web.UI.WebControls.WebParts.IWebPart.TitleUrl%2A> property is set declaratively on the control. Note that if you do not provide a URL to a real page, and then a user clicks the link in the title bar, an error message appears.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPart_Overview/CS/accountuchostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPart_Overview/VB/accountuchostvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -54,7 +54,7 @@ It is equivalent to the following example that uses an `if`-`else` construct.
 
 The match expression provides the value to match against the patterns in `case` labels. Its syntax is:
 
-```cs
+```csharp
    switch (expr)
 ```
 
@@ -78,7 +78,7 @@ Starting with C# 7, the match expression can be any non-null expression.
 
  Only one switch section in a switch statement executes. C# does not allow execution to continue from one switch section to the next. Because of this, the following code generates a compiler error, CS0163: "Control cannot fall through from one case label (<case label>) to another."   
 
-```cs  
+```csharp  
 switch (caseSwitch)  
 {  
     // The following switch section causes an error.  
@@ -130,7 +130,7 @@ Each `case` statement defines a pattern that, if it matches the match expression
 
 The constant pattern tests whether the match expression equals a specified constant. Its syntax is:
 
-```cs
+```csharp
    case constant:
 ```
 
@@ -161,7 +161,7 @@ The following example uses the constant pattern to handle user input in a consol
 
 The type pattern enables concise type evaluation and conversion. When used with the `switch` statement to perform pattern matching, it tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. Its syntax is:
 
-```cs
+```csharp
    case type varname 
 ```
 where *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the match succeeds. 
@@ -180,7 +180,7 @@ If the case expression is true, *varname* is definitely assigned and has local s
 
 Note that `null` does not match a type. To match a `null`, you use the following `case` label:
 
-```cs
+```csharp
 case null:
 ```
  

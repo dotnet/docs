@@ -1,0 +1,630 @@
+<Type Name="ContentElementAutomationPeer" FullName="System.Windows.Automation.Peers.ContentElementAutomationPeer">
+  <TypeSignature Language="C#" Value="public class ContentElementAutomationPeer : System.Windows.Automation.Peers.AutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentElementAutomationPeer extends System.Windows.Automation.Peers.AutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.AutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.ContentElement" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentElementAutomationPeer (System.Windows.ContentElement owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.ContentElement owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.#ctor(System.Windows.ContentElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.ContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePeerForElement">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.Peers.AutomationPeer CreatePeerForElement (System.Windows.ContentElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.Peers.AutomationPeer CreatePeerForElement(class System.Windows.ContentElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.CreatePeerForElement(System.Windows.ContentElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.ContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> for the specified <see cref="T:System.Windows.ContentElement" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> for the specified <see cref="T:System.Windows.ContentElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> remains in memory until the associated <xref:System.Windows.ContentElement> is destroyed.  
+  
+ The same instance of the <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is returned from subsequent calls to this method and to calls to <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer.FromElement%2A>. The type of the peer is determined by the <xref:System.Windows.UIElement.OnCreateAutomationPeer%2A> virtual callback. If <xref:System.Windows.FrameworkContentElement> does not implement the callback, no <xref:System.Windows.Automation.Peers.ContentElementAutomationPeer> is created and this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromElement">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.Peers.AutomationPeer FromElement (System.Windows.ContentElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.Peers.AutomationPeer FromElement(class System.Windows.ContentElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.FromElement(System.Windows.ContentElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.ContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</param>
+        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> for the specified <see cref="T:System.Windows.ContentElement" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> for the specified <see cref="T:System.Windows.ContentElement" />, or <see langword="null" /> if the <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> has not been created by the <see cref="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.CreatePeerForElement(System.Windows.ContentElement)" /> method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAcceleratorKeyCore">
+      <MemberSignature Language="C#" Value="protected override string GetAcceleratorKeyCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAcceleratorKeyCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetAcceleratorKeyCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the accelerator key for the element associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAcceleratorKey" />.</summary>
+        <returns>An <see cref="F:System.String.Empty" /> string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessKeyCore">
+      <MemberSignature Language="C#" Value="protected override string GetAccessKeyCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAccessKeyCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetAccessKeyCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the access key for the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAccessKey" />.</summary>
+        <returns>The access key for this <see cref="T:System.Windows.ContentElement" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Custom" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationIdCore">
+      <MemberSignature Language="C#" Value="protected override string GetAutomationIdCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAutomationIdCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetAutomationIdCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the string that uniquely identifies the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationId" />.</summary>
+        <returns>A string containing the automation identifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the automation identifier is the <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property, and if that isn't set, it's the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoundingRectangleCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Rect GetBoundingRectangleCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Rect GetBoundingRectangleCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetBoundingRectangleCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Rect" /> representing the bounding rectangle of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetBoundingRectangle" />.</summary>
+        <returns>The bounding rectangle.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetChildrenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The collection of child elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>An <see cref="F:System.String.Empty" /> string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClickablePointCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Point GetClickablePointCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetClickablePointCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetClickablePointCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Point" /> that represents the clickable space that is on the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClickablePoint" />.</summary>
+        <returns>The point that represents the clickable space that is on the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, if the element is a <xref:System.Windows.Controls.Button>, the clickable point is any point that is within the visible client area of the <xref:System.Windows.Controls.Button> that would result in issuing the command that the button represents, when the user clicks the <xref:System.Windows.Controls.Button> by using the mouse.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHelpTextCore">
+      <MemberSignature Language="C#" Value="protected override string GetHelpTextCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetHelpTextCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetHelpTextCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetHelpText" />.</summary>
+        <returns>The string that describes the functionality of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string that is returned generally is the same text that is provided in the tooltip for the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemStatusCore">
+      <MemberSignature Language="C#" Value="protected override string GetItemStatusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetItemStatusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetItemStatusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a string that conveys the visual status of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemStatus" />.</summary>
+        <returns>A string containing the status.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, the status of a messenger contact could be "Busy" or "Online".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemTypeCore">
+      <MemberSignature Language="C#" Value="protected override string GetItemTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetItemTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetItemTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a human-readable string that contains the type of the item that the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> represents. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetItemType" />.</summary>
+        <returns>The string that contains the item type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples are "Mail Message", "Contact", and "Document".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLabeledByCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetLabeledByCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Label" /> that is targeted to the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy" />.</summary>
+        <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, if the element is a <xref:System.Windows.Controls.ComboBox> control, the <xref:System.Windows.Automation.Peers.AutomationPeer.GetLabeledBy%2A> method could get the <xref:System.Windows.Automation.Peers.AutomationPeer> for the <xref:System.Windows.Controls.Label> that is associated with the <xref:System.Windows.Controls.ComboBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the text label of the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetName" />.</summary>
+        <returns>The string that contains the label.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name property can be thought of as the string of text that a user would use to explain which control is being referred to. It is important to have a textual representation for all controls in the [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)] so that you can programmatically refer to the control in a localized manner.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrientationCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationOrientation GetOrientationCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationOrientation GetOrientationCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetOrientationCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is laid out in a specific direction. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetOrientation" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationOrientation.None" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">One of the enumeration values.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</summary>
+        <returns>An object that implements the <see cref="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" /> interface if <paramref name="patternInterface" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" />; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasKeyboardFocusCore">
+      <MemberSignature Language="C#" Value="protected override bool HasKeyboardFocusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasKeyboardFocusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.HasKeyboardFocusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> currently has keyboard input focus. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.HasKeyboardFocus" />.</summary>
+        <returns>
+          <see langword="true" /> if the element has keyboard input focus; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContentElementCore">
+      <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsContentElementCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is an element that contains data that is presented to the user. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsContentElement" />.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsControlElementCore">
+      <MemberSignature Language="C#" Value="protected override bool IsControlElementCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsControlElementCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsControlElementCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is something that the end user would understand as being interactive or as contributing to the logical structure of the control in the [!INCLUDE[TLA2#tla_gui](~/includes/tla2sharptla-gui-md.md)]. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsControlElement" />.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledCore">
+      <MemberSignature Language="C#" Value="protected override bool IsEnabledCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsEnabledCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsEnabledCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether this automation peer can receive and send events to the associated element. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsEnabled" />.</summary>
+        <returns>
+          <see langword="true" /> if the automation peer can receive and send events; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKeyboardFocusableCore">
+      <MemberSignature Language="C#" Value="protected override bool IsKeyboardFocusableCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsKeyboardFocusableCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsKeyboardFocusableCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> can accept keyboard focus. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsKeyboardFocusable" />.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffscreenCore">
+      <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsOffscreenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is off of the screen. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" />.</summary>
+        <returns>
+          <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not indicate whether the element is visible. In some circumstances, an element can be on the screen but still not be visible, for example if the element is obscured by other elements. In this case the method would return `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPasswordCore">
+      <MemberSignature Language="C#" Value="protected override bool IsPasswordCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsPasswordCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsPasswordCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> contains protected content. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsPassword" />.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequiredForFormCore">
+      <MemberSignature Language="C#" Value="protected override bool IsRequiredForFormCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsRequiredForFormCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.IsRequiredForFormCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" /> is required to be filled out on a form. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsRequiredForForm" />.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Windows.ContentElement Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ContentElement Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ContentElementAutomationPeer.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ContentElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</summary>
+        <value>The <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocusCore">
+      <MemberSignature Language="C#" Value="protected override void SetFocusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetFocusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ContentElementAutomationPeer.SetFocusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the keyboard input focus on the <see cref="T:System.Windows.ContentElement" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.ContentElementAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

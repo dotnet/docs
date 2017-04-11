@@ -27,14 +27,14 @@ The fact that you can define custom attributes and place them in your source cod
   
  An attribute specification such as:  
   
-```cs  
+```csharp  
 [Author("P. Ackerman", version = 1.1)]  
 class SampleClass  
 ```  
   
  is conceptually equivalent to this:  
   
-```cs  
+```csharp  
 Author anonymousAuthorObject = new Author("P. Ackerman");  
 anonymousAuthorObject.version = 1.1;  
 ```  
@@ -44,7 +44,7 @@ anonymousAuthorObject.version = 1.1;
 ## Example  
  Here is a complete example. A custom attribute is defined, applied to several entities, and retrieved via reflection.  
   
-```cs  
+```csharp  
 // Multiuse attribute.  
 [System.AttributeUsage(System.AttributeTargets.Class |  
                        System.AttributeTargets.Struct,  

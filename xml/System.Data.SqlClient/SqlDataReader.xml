@@ -1,0 +1,2875 @@
+<Type Name="SqlDataReader" FullName="System.Data.SqlClient.SqlDataReader">
+  <TypeSignature Language="C#" Value="public class SqlDataReader : System.Data.Common.DbDataReader, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataReader extends System.Data.Common.DbDataReader implements class System.Data.IDataReader, class System.Data.IDataRecord, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a way of reading a forward-only stream of rows from a SQL Server database. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a <xref:System.Data.SqlClient.SqlDataReader>, you must call the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> method of the <xref:System.Data.SqlClient.SqlCommand> object, instead of directly using a constructor.  
+  
+ While the <xref:System.Data.SqlClient.SqlDataReader> is being used, the associated <xref:System.Data.SqlClient.SqlConnection> is busy serving the <xref:System.Data.SqlClient.SqlDataReader>, and no other operations can be performed on the <xref:System.Data.SqlClient.SqlConnection> other than closing it. This is the case until the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method of the <xref:System.Data.SqlClient.SqlDataReader> is called. For example, you cannot retrieve output parameters until after you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+  
+ Changes made to a result set by another process or thread while data is being read may be visible to the user of the `SqlDataReader`. However, the precise behavior is timing dependent.  
+  
+ <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed. Although the <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property may be accessed while the <xref:System.Data.SqlClient.SqlDataReader> exists, always call <xref:System.Data.SqlClient.SqlDataReader.Close%2A> before returning the value of <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> to guarantee an accurate return value.  
+  
+ When using sequential access (<xref:System.Data.CommandBehavior?displayProperty=fullName>), an <xref:System.InvalidOperationException> will be raised if the <xref:System.Data.SqlClient.SqlDataReader> position is advanced and another read operation is attempted on the previous column.  
+  
+> [!NOTE]
+>  For optimal performance, <xref:System.Data.SqlClient.SqlDataReader> avoids creating unnecessary objects or making unnecessary copies of data. Therefore, multiple calls to methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> return a reference to the same object. Use caution if you are modifying the underlying value of the objects returned by methods such as <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+  
+ [!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the <see cref="T:System.Data.SqlClient.SqlDataReader" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must explicitly call the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method when you are through using the <xref:System.Data.SqlClient.SqlDataReader> to use the associated <xref:System.Data.SqlClient.SqlConnection> for any other purpose.  
+  
+ The `Close` method fills in the values for output parameters, return values and `RecordsAffected`, increasing the time that it takes to close a `SqlDataReader` that was used to process a large or complex query. When the return values and the number of records affected by a query are not significant, the time that it takes to close the `SqlDataReader` can be reduced by calling the <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> method of the associated <xref:System.Data.SqlClient.SqlCommand> object before calling the `Close` method.  
+  
+> [!CAUTION]
+>  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a `SqlCommand`, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+  
+ [!code-csharp[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="protected System.Data.SqlClient.SqlConnection Connection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlConnection Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
+        <value>The <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Depth">
+      <MemberSignature Language="C#" Value="public override int Depth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Depth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the depth of nesting for the current row.</summary>
+        <value>The depth of nesting for the current row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The outermost table has a depth of zero. The .NET Framework Data Provider for SQL Server does not support nesting and always returns zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldCount">
+      <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.FieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of columns in the current row.</summary>
+        <value>When not positioned in a valid recordset, 0; otherwise the number of columns in the current row. The default is -1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Executing a query that, by its nature, does not return rows (such as a DELETE query), sets <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> to 0. However. this should not be confused with a query that returns 0 rows (such as SELECT * FROM *table* WHERE 1 = 2) in which case <xref:System.Data.SqlClient.SqlDataReader.FieldCount%2A> returns the number of columns in the table, including hidden fields. Use <xref:System.Data.SqlClient.SqlDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public override bool GetBoolean (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetBoolean(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetBoolean(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a Boolean.</summary>
+        <returns>The value of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a Boolean, or an exception is generated.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public override byte GetByte (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8 GetByte(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a byte.</summary>
+        <returns>The value of the specified column as a byte.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a byte.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override long GetBytes (int i, long dataIndex, byte[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetBytes(int32 i, int64 dataIndex, unsigned int8[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <param name="dataIndex">The index within the field from which to begin the read operation.</param>
+        <param name="buffer">The buffer into which to read the stream of bytes.</param>
+        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="length">The maximum length to copy into the buffer.</param>
+        <summary>Reads a stream of bytes from the specified column offset into the buffer an array starting at the given buffer offset.</summary>
+        <returns>The actual number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+  
+ If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> returns the length of the entire field in bytes, not the remaining size based on the buffer offset parameter.  
+  
+ No conversions are performed; therefore, the data retrieved must already be a byte array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public override char GetChar (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetChar(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetChar(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a single character.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Not supported for <xref:System.Data.SqlClient>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override long GetChars (int i, long dataIndex, char[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetChars(int32 i, int64 dataIndex, char[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <param name="dataIndex">The index within the field from which to begin the read operation.</param>
+        <param name="buffer">The buffer into which to read the stream of bytes.</param>
+        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="length">The maximum length to copy into the buffer.</param>
+        <summary>Reads a stream of characters from the specified column offset into the buffer as an array starting at the given buffer offset.</summary>
+        <returns>The actual number of characters read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the number of available characters in the field. Frequently this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, if the <xref:System.Data.SqlClient.SqlDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+  
+ The actual number of characters read can be less than the requested length, if the end of the field is reached. If you pass a buffer that is `null`, <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> returns the length of the entire field in characters, not the remaining size based on the buffer offset parameter.  
+  
+ No conversions are performed; therefore. the data retrieved must already be a character array.  
+  
+> [!NOTE]
+>  The <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> method returns 0 when `dataIndex` is negative.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeName">
+      <MemberSignature Language="C#" Value="public override string GetDataTypeName (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDataTypeName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based ordinal position of the column to find.</param>
+        <summary>Gets a string representing the data type of the specified column.</summary>
+        <returns>The string representing the data type of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the name of the back-end data type.  
+  
+ `numeric` is a synonym in SQL Server for the `decimal` data type. `GetDataTypeName` will return "decimal" for a column defined as either decimal or numeric.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public override DateTime GetDateTime (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime GetDateTime(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDateTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTime> object.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTimeOffset">
+      <MemberSignature Language="C#" Value="public virtual DateTimeOffset GetDateTimeOffset (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTimeOffset GetDateTimeOffset(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDateTimeOffset(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Retrieves the value of the specified column as a <see cref="T:System.DateTimeOffset" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTimeOffset> object.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public override decimal GetDecimal (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Decimal GetDecimal(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDecimal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Decimal" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.Decimal> object.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public override double GetDouble (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetDouble(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDouble(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a double-precision floating point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed. Therefore, the data retrieved must already be a double-precision floating point number.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldType">
+      <MemberSignature Language="C#" Value="public override Type GetFieldType (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetFieldType(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the <see cref="T:System.Type" /> that is the data type of the object.</summary>
+        <returns>The <see cref="T:System.Type" /> that is the data type of the object. If the type does not exist on the client, in the case of a User-Defined Type (UDT) returned from the database, **GetFieldType** returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public override T GetFieldValue&lt;T&gt; (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetFieldValue&lt;T&gt;(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldValue``1(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <param name="i">The column to be retrieved.</param>
+        <summary>Synchronously gets the value of the specified column as a type. <see cref="M:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" /> is the asynchronous version of this method.</summary>
+        <returns>The returned type object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `T` can be one of the following types:  
+  
+|||||  
+|-|-|-|-|  
+|Boolean|Byte|Char|DateTime|  
+|DateTimeOffset|Decimal|Double|Float|  
+|Guid|Int16|Int32|Int64|  
+|SqlBoolean|SqlByte|SqlDateTime|SqlDecimal|  
+|SqlDouble|SqlGuid|SqlInt16|SqlInt32|  
+|SqlInt64|SqlMoney|SqlSingle|SqlString|  
+|String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the column was null (<see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" /> == <see langword="true" />), retrieving a non-SQL type.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="T" /> doesn’t match the type returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or cannot be cast.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (int i, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 i, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <param name="i">The column to be retrieved.</param>
+        <param name="cancellationToken">The cancellation instruction, which propagates a notification that operations should be canceled. This does not guarantee the cancellation. A setting of <see langword="CancellationToken.None" /> makes this method equivalent to <see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />. The returned task must be marked as cancelled.</param>
+        <summary>Asynchronously gets the value of the specified column as a type. <see cref="M:System.Data.SqlClient.SqlDataReader.GetFieldValue``1(System.Int32)" /> is the synchronous version of this method.</summary>
+        <returns>The returned type object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `T` can be one of the following types:  
+  
+|||||  
+|-|-|-|-|  
+|Boolean|Byte|Char|DateTime|  
+|DateTimeOffset|Decimal|Double|Float|  
+|Guid|Int16|Int32|Int64|  
+|SqlBoolean|SqlByte|SqlDateTime|SqlDecimal|  
+|SqlDouble|SqlGuid|SqlInt16|SqlInt32|  
+|SqlInt64|SqlMoney|SqlSingle|SqlString|  
+|String|UDT, which can be any CLR type marked with <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute>.|||  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.  
+  
+ <see langword="Context Connection=true" /> is specified in the connection string.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The value of the column was null (<see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" /> == <see langword="true" />), retrieving a non-SQL type.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="T" /> doesn’t match the type returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or cannot be cast.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public override float GetFloat (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float32 GetFloat(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFloat(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a single-precision floating point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed. Therefore, the data retrieved must already be a single-precision floating point number.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public override Guid GetGuid (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Guid GetGuid(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetGuid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a globally unique identifier (GUID).</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a GUID.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public override short GetInt16 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int16 GetInt16(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 16-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public override int GetInt32 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetInt32(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 32-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 32-bit signed integer.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public override long GetInt64 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetInt64(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 64-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public override string GetName (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetName(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the name of the specified column.</summary>
+        <returns>The name of the specified column.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrdinal">
+      <MemberSignature Language="C#" Value="public override int GetOrdinal (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetOrdinal(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetOrdinal(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the column.</param>
+        <summary>Gets the column ordinal, given the name of the column.</summary>
+        <returns>The zero-based column ordinal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `GetOrdinal` performs a case-sensitive lookup first. If it fails, a second, case-insensitive search occurs (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file". The method throws an `IndexOutOfRange` exception if the zero-based column ordinal is not found.  
+  
+ `GetOrdinal` is kana-width insensitive.  
+  
+ Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call `GetOrdinal` within a loop. Save time by calling `GetOrdinal` once and assigning the results to an integer variable for use within the loop.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Data.SqlClient.SqlDataReader.GetOrdinal%2A> method.  
+  
+ [!code-csharp[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.GetOrdinal/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificFieldType">
+      <MemberSignature Language="C#" Value="public override Type GetProviderSpecificFieldType (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetProviderSpecificFieldType(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">An <see cref="T:System.Int32" /> representing the column ordinal.</param>
+        <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider-specific field type.</summary>
+        <returns>Gets an <see cref="T:System.Object" /> that is a representation of the underlying provider-specific field type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificValue">
+      <MemberSignature Language="C#" Value="public override object GetProviderSpecificValue (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetProviderSpecificValue(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">An <see cref="T:System.Int32" /> representing the column ordinal.</param>
+        <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider specific value.</summary>
+        <returns>An <see cref="T:System.Object" /> that is a representation of the underlying provider specific value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificValues">
+      <MemberSignature Language="C#" Value="public override int GetProviderSpecificValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetProviderSpecificValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the column values.</param>
+        <summary>Gets an array of objects that are a representation of the underlying provider specific values.</summary>
+        <returns>The array of objects that are a representation of the underlying provider specific values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchemaTable">
+      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchemaTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSchemaTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataTable" /> that describes the column metadata of the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> method returns metadata about each column in the following order:  
+  
+|DataReader column|Description|  
+|-----------------------|-----------------|  
+|AllowDBNull|Set if the consumer can set the column to a null value or if the provider cannot determine whether the consumer can set the column to a null value. Otherwise, not set. A column may contain null values, even if it cannot be set to a null value.|  
+|BaseCatalogName|The name of the catalog in the data store that contains the column. NULL if the base catalog name cannot be determined. The default of this column is a null value.|  
+|BaseColumnName|The name of the column in the data store. This might be different than the column name returned in the ColumnName column if an alias was used. A null value if the base column name cannot be determined or if the rowset column is derived, but not identical to, a column in the data store. The default of this column is a null value.|  
+|BaseSchemaName|The name of the schema in the data store that contains the column. A null value if the base schema name cannot be determined. The default of this column is a null value.|  
+|BaseServerName|The name of the instance of Microsoft SQL Server used by the <xref:System.Data.SqlClient.SqlDataReader>.|  
+|BaseTableName|The name of the table or view in the data store that contains the column. A null value if the base table name cannot be determined. The default of this column is a null value.|  
+|ColumnName|The name of the column; this might not be unique. If this cannot be determined, a null value is returned. This name always reflects the most recent renaming of the column in the current view or command text.|  
+|ColumnOrdinal|The zero-based ordinal of the column. This column cannot contain a null value.|  
+|ColumnSize|The maximum possible length of a value in the column. For columns that use a fixed-length data type, this is the size of the data type. For `nvarchar(MAX)`, `varchar(MAX)`, and `varbinary(MAX)` columns stored in a SQL Server database, the maximum size is 2GB. If these columns are stored and accessed as files, the limit on maximum size is imposed by the file system. This value changes when using the `Type System Version` keyword in the connection string.  For new types they are represented as downlevel types. The MAX data types return the normal 4k for `nvarchar` and 8000 for `varchar`. For more information, see the Transact-SQL reference in SQL Server Books Online.|  
+|DataTypeName|Returns a string representing the data type of the specified column.|  
+|IsAliased|`true`: The column name is an alias.<br /><br /> `false`: The column name is not an alias.|  
+|IsAutoIncrement|`true`: The column assigns values to new rows in fixed increments.<br /><br /> `false`: The column does not assign values to new rows in fixed increments. The default of this column is `false`.|  
+|IsColumnSet|`true`: The column is a sparse column that is a member of a column set.|  
+|IsExpression|`true`: The column is an expression.<br /><br /> `false`: The column is not an expression.|  
+|IsHidden|`true`: The column is hidden.<br /><br /> `false`: The column is not hidden.|  
+|IsIdentity|`true`: The column is an identity column.<br /><br /> `false`: The column is not an identity column.|  
+|IsKey|`true`: The column is one of a set of columns in the rowset that, taken together, uniquely identify the row. The set of columns with `IsKey` set to `true` must uniquely identify a row in the rowset. There is no requirement that this set of columns is a minimal set of columns. This set of columns may be generated from a base table primary key, a unique constraint or a unique index.<br /><br /> `false`: The column is not required to uniquely identify the row.|  
+|IsLong|`true`: The column contains a Binary Long Object (BLOB) that contains very long data. The definition of very long data is provider-specific.<br /><br /> `false`: The column does not contain a Binary Long Object (BLOB) that contains very long data.|  
+|IsReadOnly|`true`: The column cannot be modified.<br /><br /> `false`: The column can be modified.|  
+|IsRowVersion|`true`: The column contains a persistent row identifier that cannot be written to, and has no meaningful value except to identity the row.<br /><br /> `false`: The column does not contain a persistent row identifier that cannot be written to, and has no meaningful value except to identity the row.|  
+|IsUnique|`true`: Column is of type `timestamp`.<br /><br /> `false`: Column is not of type `timestamp`.|  
+|NonVersionedProviderType|The type of the column irrespective of the current `Type System Version` specified in the connection string. The returned value is from the <xref:System.Data.SqlDbType> enumeration.|  
+|NumericPrecision|If `ProviderType` is a numeric data type, this is the maximum precision of the column. The precision depends on the definition of the column. If `ProviderType` is not a numeric data type, this is 255.|  
+|NumericScale|If `ProviderType` is DBTYPE_DECIMAL or DBTYPE_NUMERIC, the number of digits to the right of the decimal point. Otherwise, this is 255.|  
+|ProviderSpecificDataType|Returns the provider-specific data type of the column based on the `Type System Version` keyword in the connection string.|  
+|ProviderType|The indicator of the column's data type. If the data type of the column varies from row to row, this must be Object. This column cannot contain a null value.|  
+|UdtAssemblyQualifiedName|If the column is a user-defined type (UDT), this is the qualified name of the UDT's assembly as per <xref:System.Type.AssemblyQualifiedName%2A>. If the column is not a UDT, this is null.|  
+|XmlSchemaCollectionDatabase|The name of the database where the schema collection for this XML instance is located, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if the collection is defined within the current database. It is also null if there is no schema collection, in which case the `XmlSchemaCollectionName` and `XmlSchemaCollectionOwningSchema` columns are also null.|  
+|XmlSchemaCollectionName|The name of the schema collection for this XML instance, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if there is no associated schema collection. If the value is null, the `XmlSchemaCollectionDatabase` and `XmlSchemaCollectionOwningSchema` columns are also null.|  
+|XmlSchemaCollectionOwningSchema|The owning relational schema where the schema collection for this XML instance is located, if the row contains information about an XML column. This value is `null` (`Nothing` in Visual Basic) if the collection is defined within the current database. It is also null if there is no schema collection, in which case the `XmlSchemaCollectionDatabase` and `XmlSchemaCollectionName` columns are also null.|  
+  
+> [!NOTE]
+>  To make sure that metadata columns return the correct information, you must call <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> with the `behavior` parameter set to `KeyInfo`. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlBinary">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlBinary GetSqlBinary (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlBinary GetSqlBinary(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBinary(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlBinary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlBinary" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlBinary" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a binary structure or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlBoolean">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlBoolean GetSqlBoolean (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlBoolean GetSqlBoolean(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBoolean(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</summary>
+        <returns>The value of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a Boolean or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlByte">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlByte GetSqlByte (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlByte GetSqlByte(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlByte" />.</summary>
+        <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlByte" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a byte, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlBytes">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlBytes GetSqlBytes (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.SqlTypes.SqlBytes GetSqlBytes(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBytes(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlBytes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlBytes" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlBytes" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlChars">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlChars GetSqlChars (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.SqlTypes.SqlChars GetSqlChars(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlChars(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlChars</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlChars" />.</summary>
+        <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlChars" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDateTime">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlDateTime GetSqlDateTime (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlDateTime GetSqlDateTime(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDateTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</summary>
+        <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlDateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a date/time value, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDecimal">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlDecimal GetSqlDecimal (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlDecimal GetSqlDecimal(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDecimal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlDecimal" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlDouble">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlDouble GetSqlDouble (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlDouble GetSqlDouble(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDouble(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlDouble" />.</summary>
+        <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlDouble" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a double-precision floating-point number, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlGuid">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlGuid GetSqlGuid (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlGuid GetSqlGuid(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlGuid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlGuid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlGuid" />.</summary>
+        <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlGuid" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a GUID, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlInt16">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlInt16 GetSqlInt16 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlInt16 GetSqlInt16(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlInt16" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt16" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlInt32">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlInt32 GetSqlInt32 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlInt32 GetSqlInt32(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlInt32" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a 32-bit signed integer, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlInt64">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlInt64 GetSqlInt64 (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlInt64 GetSqlInt64(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlMoney">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlMoney GetSqlMoney (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlMoney GetSqlMoney(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlMoney(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlMoney</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlMoney" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlMoney" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a decimal value, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlSingle">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlSingle GetSqlSingle (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlSingle GetSqlSingle(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlSingle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlSingle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlSingle" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlSingle" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a single precision floating point number, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlString">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlString GetSqlString (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.SqlTypes.SqlString GetSqlString(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Data.SqlTypes.SqlString" />.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlString" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a string, or an exception is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlValue">
+      <MemberSignature Language="C#" Value="public virtual object GetSqlValue (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSqlValue(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Returns the data value in the specified column as a SQL Server type.</summary>
+        <returns>The value of the column expressed as a <see cref="T:System.Data.SqlDbType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A> returns data using the native SQL Server types. To retrieve data using the .NET Framework types, see <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlValues">
+      <MemberSignature Language="C#" Value="public virtual int GetSqlValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSqlValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the values. The column values are expressed as SQL Server types.</param>
+        <summary>Fills an array of <see cref="T:System.Object" /> that contains the values for all the columns in the record, expressed as SQL Server types.</summary>
+        <returns>An integer indicating the number of columns copied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the values for all the columns in the record in a single call, using the SQL type system instead of the CLR type system. The length of the <xref:System.Object> array does not need to match the number of columns in the record. You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the record. Only the amount of data the <xref:System.Object> array holds is copied to the array, starting at the column with ordinal 0. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row. Any remaining columns are untouched.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="values" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSqlXml">
+      <MemberSignature Language="C#" Value="public virtual System.Data.SqlTypes.SqlXml GetSqlXml (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.SqlTypes.SqlXml GetSqlXml(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlXml(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlTypes.SqlXml</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as an XML value.</summary>
+        <returns>A <see cref="T:System.Data.SqlTypes.SqlXml" /> value that contains the XML stored within the corresponding field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be an XML value.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to read or access columns in a closed <see cref="T:System.Data.SqlClient.SqlDataReader" />.</exception>
+        <exception cref="T:System.InvalidCastException">The retrieved data is not compatible with the <see cref="T:System.Data.SqlTypes.SqlXml" /> type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetStream (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetStream(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetStream(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Retrieves binary, image, varbinary, UDT, and variant data types as a <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A stream object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Stream.ReadTimeout%2A> defaults to the value of <xref:System.Data.SqlClient.SqlCommand.CommandTimeout%2A>; but you can modify <xref:System.IO.Stream.ReadTimeout%2A> via <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>.  
+  
+ Null values will be returned as an empty (zero bytes) <xref:System.IO.Stream>.  
+  
+ <xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+  
+ <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.Stream> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+  
+ The following <xref:System.IO.Stream> members are not available for objects returned by <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A>:  
+  
+-   BeginWrite  
+  
+-   EndWrite  
+  
+-   Length  
+  
+-   Position  
+  
+-   Seek  
+  
+-   SetLength  
+  
+-   Write  
+  
+-   WriteByte  
+  
+-   WriteTimeout  
+  
+ When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetStream%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
+  
+-   binary  
+  
+-   image  
+  
+-   varbinary  
+  
+-   udt</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public override string GetString (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a string.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a string.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextReader">
+      <MemberSignature Language="C#" Value="public override System.IO.TextReader GetTextReader (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.TextReader GetTextReader(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetTextReader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The column to be retrieved.</param>
+        <summary>Retrieves Char, NChar, NText, NVarChar, text, varChar, and Variant data types as a <see cref="T:System.IO.TextReader" />.</summary>
+        <returns>The returned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.IO.TextReader> are thrown as <xref:System.IO.IOException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+  
+ Null values will be returned as an empty (zero bytes) <xref:System.IO.TextReader>.  
+  
+ <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+  
+ When the connection property `ContextConnection=true`, <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> only supports synchronous data retrieval for both sequential (<xref:System.Data.CommandBehavior>) and non-sequential (<xref:System.Data.CommandBehavior>) access.  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
+  
+-   char  
+  
+-   nchar  
+  
+-   ntext  
+  
+-   nvarchar  
+  
+-   text  
+  
+-   varchar</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTimeSpan">
+      <MemberSignature Language="C#" Value="public virtual TimeSpan GetTimeSpan (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TimeSpan GetTimeSpan(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetTimeSpan(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Retrieves the value of the specified column as a <see cref="T:System.TimeSpan" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.TimeSpan> object.  
+  
+ Call <xref:System.Data.SqlClient.SqlDataReader.IsDBNull%2A> to check for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column in its native format.</summary>
+        <returns>This method returns <see cref="T:System.DBNull" /> for null database columns.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> returns data using the .NET Framework types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public override int GetValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
+        <summary>Populates an array of objects with the column values of the current row.</summary>
+        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most applications, this method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+  
+ You can pass an <xref:System.Object> array that contains fewer than the number of columns contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns contained in the resulting row.  
+  
+ This method returns <xref:System.DBNull> for null database columns.  
+  
+   
+  
+## Examples  
+ The following example demonstrates using a correctly sized  array  to read all values from the current row in the supplied <xref:System.Data.SqlClient.SqlDataReader>. In addition, the sample demonstrates using a fixed-sized array that could be either smaller or larger than the number of available columns.  
+  
+ [!code-csharp[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/CS/source.cs#2)]
+ [!code-vb[DataWorks DataTableReader.GetValueObject#2](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableReader.GetValueObject/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlReader">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlReader GetXmlReader (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlReader GetXmlReader(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetXmlReader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The value of the specified column.</param>
+        <summary>Retrieves data of type XML as an <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>The returned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlReader> object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> does not support asynchronous operations. If you require asynchronous operations on an <xref:System.Xml.XmlReader>, cast the XML column to an NVARCHAR(MAX) on the server and use <xref:System.Data.SqlClient.SqlDataReader.GetTextReader%2A> with <xref:System.Xml.XmlReader.Create%2A>.  
+  
+ <xref:System.Data.SqlClient.SqlException> exceptions raised from <xref:System.Xml.XmlReader> are thrown as <xref:System.Xml.XmlException> exceptions; check the inner exception for the <xref:System.Data.SqlClient.SqlException>.  
+  
+ <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A> will raise an <xref:System.InvalidOperationException> exception when used on an object returned by <xref:System.Data.SqlClient.SqlDataReader.GetXmlReader%2A> when <xref:System.Data.CommandBehavior> is in effect.  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Trying to read a previously read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not xml.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HasRows">
+      <MemberSignature Language="C#" Value="public override bool HasRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.HasRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Data.SqlClient.SqlDataReader" /> contains one or more rows.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClosed">
+      <MemberSignature Language="C#" Value="public override bool IsClosed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.IsClosed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves a Boolean value that indicates whether the specified <see cref="T:System.Data.SqlClient.SqlDataReader" /> instance has been closed.</summary>
+        <value>
+          <see langword="true" /> if the specified <see cref="T:System.Data.SqlClient.SqlDataReader" /> instance is closed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is not possible to read from a <xref:System.Data.SqlClient.SqlDataReader> instance that is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCommandBehavior">
+      <MemberSignature Language="C#" Value="protected bool IsCommandBehavior (System.Data.CommandBehavior condition);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsCommandBehavior(valuetype System.Data.CommandBehavior condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsCommandBehavior(System.Data.CommandBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="condition" Type="System.Data.CommandBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="condition">A <see cref="T:System.Data.CommandBehavior" /> enumeration.</param>
+        <summary>Determines whether the specified <see cref="T:System.Data.CommandBehavior" /> matches that of the <see cref="T:System.Data.SqlClient.SqlDataReader" /> .</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Data.CommandBehavior" /> is true, <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNull">
+      <MemberSignature Language="C#" Value="public override bool IsDBNull (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDBNull(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets a value that indicates whether the column contains non-existent or missing values.</summary>
+        <returns>
+          <see langword="true" /> if the specified column value is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.SqlClient.SqlDataReader.GetByte%2A>, <xref:System.Data.SqlClient.SqlDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+  
+ [!code-csharp[SqlDataReader_IsDbNull#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/sqldatareader_isdbnull/cs/source.cs#1)]
+ [!code-vb[SqlDataReader_IsDbNull#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/sqldatareader_isdbnull/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNullAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (int i, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 i, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsDBNullAsync(System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column to be retrieved.</param>
+        <param name="cancellationToken">The cancellation instruction, which propagates a notification that operations should be canceled. This does not guarantee the cancellation. A setting of <see langword="CancellationToken.None" /> makes this method equivalent to <see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />. The returned task must be marked as cancelled.</param>
+        <summary>An asynchronous version of <see cref="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />, which gets a value that indicates whether the column contains non-existent or missing values.  
+  
+ The cancellation token can be used to request that the operation be abandoned before the command timeout elapses. Exceptions will be reported via the returned Task object.</summary>
+        <returns>
+          <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Trying to read a previously read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.  
+  
+ <see langword="Context Connection=true" /> is specified in the connection string.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[int i] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column in its native format given the column ordinal.</summary>
+        <value>The value of the specified column in its native format.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The column name.</param>
+        <summary>Gets the value of the specified column in its native format given the column name.</summary>
+        <value>The value of the specified column in its native format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made (a case-insensitive comparison is done using the database collation). Unexpected results can occur when comparisons are affected by culture-specific casing rules. For example, in Turkish, the following example yields the wrong results because the file system in Turkish does not use linguistic casing rules for the letter 'i' in "file".  
+  
+ This method is kana-width insensitive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResult">
+      <MemberSignature Language="C#" Value="public override bool NextResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NextResult() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.NextResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the data reader to the next result, when reading the results of batch Transact-SQL statements.</summary>
+        <returns>
+          <see langword="true" /> if there are more result sets; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used to process multiple results, which can be generated by executing batch Transact-SQL statements.  
+  
+ By default, the data reader is positioned on the first result.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResultAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;bool&gt; NextResultAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation instruction.</param>
+        <summary>An asynchronous version of <see cref="M:System.Data.SqlClient.SqlDataReader.NextResult" />, which advances the data reader to the next result, when reading the results of batch [!INCLUDE[tsql](~/includes/tsql-md.md)] statements.  
+  
+ The cancellation token can be used to request that the operation be abandoned before the command timeout elapses.  Exceptions will be reported via the returned Task object.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
+  
+ <see langword="Context Connection=true" /> is specified in the connection string.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the <see cref="T:System.Data.SqlClient.SqlDataReader" /> to the next record.</summary>
+        <returns>
+          <see langword="true" /> if there are more rows; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default position of the <xref:System.Data.SqlClient.SqlDataReader> is before the first record. Therefore, you must call <xref:System.Data.SqlClient.SqlDataReader.Read%2A> to begin accessing any data.  
+  
+ Only one `SqlDataReader` per associated <xref:System.Data.SqlClient.SqlConnection> may be open at a time, and any attempt to open another will fail until the first one is closed. Similarly, while the `SqlDataReader` is being used, the associated `SqlConnection` is busy serving it until you call <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a <xref:System.Data.SqlClient.SqlCommand>, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
+  
+ [!code-csharp[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Read Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;bool&gt; ReadAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation instruction.</param>
+        <summary>An asynchronous version of <see cref="M:System.Data.SqlClient.SqlDataReader.Read" />, which advances the <see cref="T:System.Data.SqlClient.SqlDataReader" /> to the next record.  
+  
+ The cancellation token can be used to request that the operation be abandoned before the command timeout elapses. Exceptions will be reported via the returned Task object.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `behavior` parameter of <xref:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync%2A> is set to `Default`, <xref:System.Data.SqlClient.SqlDataReader.ReadAsync%2A> reads the entire row before returning the Task.  
+  
+ For more information, including code samples, about asynchronous programming in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] Data Provider for [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)], see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Calling <see cref="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" /> more than once for the same instance before task completion.  
+  
+ <see langword="Context Connection=true" /> is specified in the connection string.</exception>
+        <exception cref="T:System.Data.SqlClient.SqlException">[!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] returned an error while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordsAffected">
+      <MemberSignature Language="C#" Value="public override int RecordsAffected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.RecordsAffected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows changed, inserted, or deleted by execution of the Transact-SQL statement.</summary>
+        <value>The number of rows changed, inserted, or deleted; 0 if no rows were affected or the statement failed; and -1 for SELECT statements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.SqlClient.SqlDataReader>.  
+  
+ The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of `RecordsAffected` will be two.  
+  
+ <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.IDataRecord.GetData">
+      <MemberSignature Language="C#" Value="System.Data.IDataReader IDataRecord.GetData (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDataRecord.GetData(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#Data#IDataRecord#GetData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.IDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">A column ordinal.</param>
+        <summary>Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</summary>
+        <returns>The <see cref="T:System.Data.IDataReader" /> instance for the specified column ordinal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataReader> instance is cast to an <xref:System.IDataRecord> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleFieldCount">
+      <MemberSignature Language="C#" Value="public override int VisibleFieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleFieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.VisibleFieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of fields in the <see cref="T:System.Data.SqlClient.SqlDataReader" /> that are not hidden.</summary>
+        <value>The number of fields that are not hidden.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used to determine how many fields in the <xref:System.Data.SqlClient.SqlDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

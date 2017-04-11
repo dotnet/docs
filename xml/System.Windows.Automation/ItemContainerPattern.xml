@@ -1,0 +1,78 @@
+<Type Name="ItemContainerPattern" FullName="System.Windows.Automation.ItemContainerPattern">
+  <TypeSignature Language="C#" Value="public class ItemContainerPattern : System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemContainerPattern extends System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ItemContainerPattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.BasePattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an object that manages items and supports retrieving an item by property value.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindItemByProperty">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement FindItemByProperty (System.Windows.Automation.AutomationElement startAfter, System.Windows.Automation.AutomationProperty property, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement FindItemByProperty(class System.Windows.Automation.AutomationElement startAfter, class System.Windows.Automation.AutomationProperty property, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ItemContainerPattern.FindItemByProperty(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationProperty,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startAfter" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="startAfter">The item in the container after which to begin the search.</param>
+        <param name="property">The property that contains the value to retrieve.</param>
+        <param name="value">The value to retrieve.</param>
+        <summary>Retrieves an element by the specified property value.</summary>
+        <returns>The first item that matches the search criterion; otherwise, <see langword="null" /> if no items match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the `propertyId` parameter to `0` to retrieve the next item after `startAfter`, regardless of the value specified in `value`. Set `startAfter` to `null` to start the search with the first item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ItemContainerPattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.ItemContainerPattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.SynchronizedInputPatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods, such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>, to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

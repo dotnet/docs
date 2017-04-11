@@ -1,0 +1,365 @@
+<Type Name="MsmqTransportBindingElement" FullName="System.ServiceModel.Channels.MsmqTransportBindingElement">
+  <TypeSignature Language="C#" Value="public sealed class MsmqTransportBindingElement : System.ServiceModel.Channels.MsmqBindingElementBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqTransportBindingElement extends System.ServiceModel.Channels.MsmqBindingElementBase" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MsmqTransportBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.MsmqBindingElementBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the binding element used to specify the queuing communication properties for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service that uses the native Message Queuing (MSMQ) protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.MsmqTransportBindingElement> enables the user to set the properties of the queued communication channel. The queued communication channel uses Message Queuing for its transport.  
+  
+ This binding element is the default binding element used by the Message Queuing standard binding (<xref:System.ServiceModel.NetMsmqBinding>).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/service.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqTransportBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MsmqTransportBindingElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/service.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildChannelFactory&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">A <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> class.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel factory.</param>
+        <summary>Builds a channel factory using the context provided.</summary>
+        <returns>A Message Queuing (MSMQ) channel factory that can be used to create channels to send messages to existing Message Queuing applications.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A channel factory is created and initialized using the properties that have been set in the binding element. The initialized channel factory is then used to create output channels that can be used to send messages to a message queue.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The context value is null.</exception>
+        <exception cref="T:System.ArgumentException">The TChannel is not IOutputChannel or IOutputSessionChannel.</exception>
+        <exception cref="T:System.InvalidOperationException">MsmqTransportSecurity.MsmqProtectionLevel is EncryptAndSign and UseActiveDirectory is false.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IInputChannel" /> class.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel listener.</param>
+        <summary>Builds a channel listener using the context provided.</summary>
+        <returns>A Message Queuing (MSMQ) channel listener that can be used to create channels to receive messages from existing MSMQ applications.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The context value is null.</exception>
+        <exception cref="T:System.ArgumentException">The TChannel is not IInputChannel or IInputSessionChannel.</exception>
+        <exception cref="T:System.InvalidOperationException">MsmqTransportSecurity.MsmqAuthenticationMode is Certificate or WindowsDomain and MsmqTransportSecurity.MsmqProtectionLevel is None.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public override bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> class.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel factory.</param>
+        <summary>Returns a Boolean value that indicates whether you can build a channel factory with the context provided.</summary>
+        <returns>
+          <see langword="true" /> if you can build a channel factory with the context provided; otherwise, <see langword="false" />. The binding element returns <see langword="true" /> only when <paramref name="TChannel" /> is <see cref="T:System.ServiceModel.Channels.IOutputChannel" /> or <see cref="T:System.ServiceModel.Channels.IOutputSessionChannel" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
+      <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TChannel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TChannel">The channel type to be used to build the channel listener. Permitted channel types are <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" /> or a <see cref="T:System.ServiceModel.Channels.IInputChannel" /> class.</typeparam>
+        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> with which to build the channel listener.</param>
+        <summary>Returns a Boolean value that indicates whether you can build a channel listener with the context provided.</summary>
+        <returns>
+          <see langword="true" /> if you can build a channel listener with the context provided; otherwise, <see langword="false" />.  
+  
+ The binding returns <see langword="true" /> only when <paramref name="TChannel" /> is <see cref="T:System.ServiceModel.Channels.IInputChannel" /> or <see cref="T:System.ServiceModel.Channels.IInputSessionChannel" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MsmqTransportBindingElement.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a clone of the binding element.</summary>
+        <returns>A clone of the binding element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPoolSize">
+      <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.MaxPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an integer that specifies the maximum size of the pool that contains internal Message Queuing (MSMQ) message objects.</summary>
+        <value>An integer that specifies the maximum size of the pool that contains internal Message Queuing message objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The internal Message Queuing message object pool is used to avoid allocations of these objects when sending and receiving messages. The maximum pool size is a performance-tuning parameter. The default value is 8.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueTransferProtocol">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.QueueTransferProtocol QueueTransferProtocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.QueueTransferProtocol QueueTransferProtocol" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an enumeration value that indicates the queued communication channel transport that this binding uses.</summary>
+        <value>A <see cref="T:System.ServiceModel.QueueTransferProtocol" /> enumeration value that indicates the transport used for message delivery between queue managers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing (MSMQ) does not support Active Directory addressing when using SOAP Reliable Messaging Protocol (SRMP), so do not set <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.QueueTransferProtocol%2A> to <xref:System.ServiceModel.QueueTransferProtocol> or <xref:System.ServiceModel.QueueTransferProtocol> when <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> is set to `true`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not one of the <see cref="T:System.ServiceModel.QueueTransferProtocol" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> that contains the addressing scheme that is used by this transport binding element.</summary>
+        <value>A <see cref="T:System.String" /> that contains the addressing scheme that is used by this transport binding element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.Scheme%2A> property returns the string "net.msmq".  
+  
+ The Message Queuing (MSMQ) queued transport supports several addressing schemes, including net.msmq.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseActiveDirectory">
+      <MemberSignature Language="C#" Value="public bool UseActiveDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseActiveDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a Boolean value that indicates whether queue addresses should be converted using Active Directory.</summary>
+        <value>
+          <see langword="true" /> if queue addresses should be converted using Active Directory; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing (MSMQ) queue addresses can consist of path names or direct format names. With a direct format name, MSMQ resolves the queue name using DNS, NetBIOS, or IP. With a path name, MSMQ resolves the queue name using Active Directory.  
+  
+ By default, the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] queued transport converts the URI of a message queue to a direct format name. By setting the <xref:System.ServiceModel.Channels.MsmqTransportBindingElement.UseActiveDirectory%2A> property to `true`, an application can specify that the queued transport should resolve the computer name using Active Directory rather than DNS, NetBIOS, or IP.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ImperativeNetMsmq#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_imperativenetmsmq/cs/snippets.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

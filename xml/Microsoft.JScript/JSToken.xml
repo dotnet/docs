@@ -1,0 +1,2281 @@
+<Type Name="JSToken" FullName="Microsoft.JScript.JSToken">
+  <TypeSignature Language="C#" Value="public enum JSToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSToken extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSToken" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the individual units of code, or *tokens*, that make up the JScript language.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of this enumeration are used by the scanner and the parser to read source code. The members of this enumeration are also used by operator classes to identify the operation to perform. For more information, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abstract">
+      <MemberSignature Language="C#" Value="Abstract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Abstract = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Abstract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>abstract</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessField">
+      <MemberSignature Language="C#" Value="AccessField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken AccessField = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.AccessField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>.</c> field accessor symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Assert">
+      <MemberSignature Language="C#" Value="Assert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Assert = int32(104)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Assert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>assert</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Assign">
+      <MemberSignature Language="C#" Value="Assign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Assign = int32(69)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Assign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>=</c> assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseAnd">
+      <MemberSignature Language="C#" Value="BitwiseAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseAnd = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseAnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&amp;</c> bitwise AND operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseAndAssign">
+      <MemberSignature Language="C#" Value="BitwiseAndAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseAndAssign = int32(74)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseAndAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&amp;=</c> bitwise AND assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseNot">
+      <MemberSignature Language="C#" Value="BitwiseNot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseNot = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseNot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>~</c> bitwise NOT operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseOr">
+      <MemberSignature Language="C#" Value="BitwiseOr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseOr = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseOr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>|</c> bitwise OR operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseOrAssign">
+      <MemberSignature Language="C#" Value="BitwiseOrAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseOrAssign = int32(75)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseOrAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>|=</c> bitwise OR assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseXor">
+      <MemberSignature Language="C#" Value="BitwiseXor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseXor = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseXor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>^</c> bitwise XOR operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseXorAssign">
+      <MemberSignature Language="C#" Value="BitwiseXorAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken BitwiseXorAssign = int32(76)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.BitwiseXorAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>^=</c> bitwise XOR assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Boolean = int32(105)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>boolean</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Break">
+      <MemberSignature Language="C#" Value="Break" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Break = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Break" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>break</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Byte">
+      <MemberSignature Language="C#" Value="Byte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Byte = int32(106)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Byte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>byte</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Case">
+      <MemberSignature Language="C#" Value="Case" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Case = int32(84)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Case" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>case</c> keyword of a <c>switch</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Catch">
+      <MemberSignature Language="C#" Value="Catch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Catch = int32(85)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Catch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>catch</c> keyword of a <c>try</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Char">
+      <MemberSignature Language="C#" Value="Char" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Char = int32(107)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Char" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>char</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Class = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Class" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>class</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Colon">
+      <MemberSignature Language="C#" Value="Colon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Colon = int32(82)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Colon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>:</c> ternary operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Comma">
+      <MemberSignature Language="C#" Value="Comma" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Comma = int32(83)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Comma" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>,</c> comma operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="Comment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Comment = int32(102)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Comment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Comment text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalIf">
+      <MemberSignature Language="C#" Value="ConditionalIf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken ConditionalIf = int32(81)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ConditionalIf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>?</c> ternary operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Const">
+      <MemberSignature Language="C#" Value="Const" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Const = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Const" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>const</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Continue = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>continue</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Debugger">
+      <MemberSignature Language="C#" Value="Debugger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Debugger = int32(86)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Debugger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>debugger</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="Decimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Decimal = int32(108)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>decimal</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrement">
+      <MemberSignature Language="C#" Value="Decrement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Decrement = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Decrement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>--</c> decrement operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Default = int32(87)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>default</c> keyword of a <c>switch</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Delete = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>delete</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="Divide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Divide = int32(65)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Divide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>/</c> division operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DivideAssign">
+      <MemberSignature Language="C#" Value="DivideAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken DivideAssign = int32(73)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.DivideAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>/=</c> division assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Do">
+      <MemberSignature Language="C#" Value="Do" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Do = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Do" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>do</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Double = int32(109)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>double</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleColon">
+      <MemberSignature Language="C#" Value="DoubleColon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken DoubleColon = int32(110)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.DoubleColon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>::</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Else">
+      <MemberSignature Language="C#" Value="Else" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Else = int32(88)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Else" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>else</c> keyword of an <c>if</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfFile">
+      <MemberSignature Language="C#" Value="EndOfFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken EndOfFile = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.EndOfFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The end of the file being scanned or parsed. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfLine">
+      <MemberSignature Language="C#" Value="EndOfLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken EndOfLine = int32(132)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.EndOfLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The end of the line being parsed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ensure">
+      <MemberSignature Language="C#" Value="Ensure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Ensure = int32(112)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ensure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>ensure</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enum">
+      <MemberSignature Language="C#" Value="Enum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Enum = int32(111)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Enum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>enum</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Equal">
+      <MemberSignature Language="C#" Value="Equal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Equal = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Equal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>==</c> equality comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="Event" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Event = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>event</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="Export" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Export = int32(89)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Export" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>export</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Extends">
+      <MemberSignature Language="C#" Value="Extends" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Extends = int32(90)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Extends" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>extends</c> keyword of a <c>class</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken False = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>false</c> literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Final">
+      <MemberSignature Language="C#" Value="Final" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Final = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Final" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>final</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Finally">
+      <MemberSignature Language="C#" Value="Finally" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Finally = int32(91)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Finally" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>finally</c> keyword of a <c>try</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstBinaryOp">
+      <MemberSignature Language="C#" Value="FirstBinaryOp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken FirstBinaryOp = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.FirstBinaryOp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstOp">
+      <MemberSignature Language="C#" Value="FirstOp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken FirstOp = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.FirstOp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Float">
+      <MemberSignature Language="C#" Value="Float" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Float = int32(113)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Float" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>float</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="For">
+      <MemberSignature Language="C#" Value="For" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken For = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.For" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>for</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Function">
+      <MemberSignature Language="C#" Value="Function" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Function = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Function" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>function</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="Get" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Get = int32(92)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Get" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>get</c> keyword of a <c>function get</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Goto">
+      <MemberSignature Language="C#" Value="Goto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Goto = int32(114)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Goto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>goto</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="GreaterThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken GreaterThan = int32(57)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.GreaterThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;</c> relational comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanEqual">
+      <MemberSignature Language="C#" Value="GreaterThanEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken GreaterThanEqual = int32(60)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.GreaterThanEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;=</c> relational comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="Identifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Identifier = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Identifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An identifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="If">
+      <MemberSignature Language="C#" Value="If" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken If = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.If" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>if</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Implements">
+      <MemberSignature Language="C#" Value="Implements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Implements = int32(93)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Implements" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>implements</c> keyword of a <c>class</c> or <c>interface</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="Import" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Import = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Import" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>import</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="In">
+      <MemberSignature Language="C#" Value="In" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken In = int32(68)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.In" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>in</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="Increment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Increment = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Increment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>++</c> increment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Instanceof">
+      <MemberSignature Language="C#" Value="Instanceof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Instanceof = int32(67)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Instanceof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>instanceof</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int">
+      <MemberSignature Language="C#" Value="Int" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Int = int32(115)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Int" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>int</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegerLiteral">
+      <MemberSignature Language="C#" Value="IntegerLiteral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken IntegerLiteral = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.IntegerLiteral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Interface">
+      <MemberSignature Language="C#" Value="Interface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Interface = int32(94)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Interface" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>interface</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Internal">
+      <MemberSignature Language="C#" Value="Internal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Internal = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Internal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>internal</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invariant">
+      <MemberSignature Language="C#" Value="Invariant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Invariant = int32(116)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Invariant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>invariant</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastAssign">
+      <MemberSignature Language="C#" Value="LastAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LastAssign = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.Assign &lt;= token &amp;&amp; token &lt;= JSToken.LastAssign then...</c></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastBinaryOp">
+      <MemberSignature Language="C#" Value="LastBinaryOp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LastBinaryOp = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastBinaryOp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastBinaryOp then...</c></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOp">
+      <MemberSignature Language="C#" Value="LastOp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LastOp = int32(83)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastOp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastOp then...</c></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPPOperator">
+      <MemberSignature Language="C#" Value="LastPPOperator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LastPPOperator = int32(66)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LastPPOperator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that enables comparisons such as <c>if JSToken.FirstBinaryOp &lt;= token &amp;&amp; token &lt;= JSToken.LastPPOperator then...</c> PPOperators are operations that can be pre-processed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftBracket">
+      <MemberSignature Language="C#" Value="LeftBracket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LeftBracket = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftBracket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>[</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftCurly">
+      <MemberSignature Language="C#" Value="LeftCurly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LeftCurly = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftCurly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>{</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftParen">
+      <MemberSignature Language="C#" Value="LeftParen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LeftParen = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftParen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>(</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftShift">
+      <MemberSignature Language="C#" Value="LeftShift" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LeftShift = int32(61)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftShift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&lt;&lt;</c> bitwise left shift operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftShiftAssign">
+      <MemberSignature Language="C#" Value="LeftShiftAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LeftShiftAssign = int32(78)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LeftShiftAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&lt;&lt;=</c> left shift assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="LessThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LessThan = int32(58)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LessThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&lt;</c> relational comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanEqual">
+      <MemberSignature Language="C#" Value="LessThanEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LessThanEqual = int32(59)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LessThanEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&lt;=</c> relational comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalAnd">
+      <MemberSignature Language="C#" Value="LogicalAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LogicalAnd = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalAnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&amp;&amp;</c> logical AND operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalNot">
+      <MemberSignature Language="C#" Value="LogicalNot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LogicalNot = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalNot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>!</c> logical NOT operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalOr">
+      <MemberSignature Language="C#" Value="LogicalOr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken LogicalOr = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.LogicalOr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>||</c> logical OR operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Long">
+      <MemberSignature Language="C#" Value="Long" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Long = int32(117)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Long" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>long</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minus">
+      <MemberSignature Language="C#" Value="Minus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Minus = int32(47)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Minus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>-</c> subtraction operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinusAssign">
+      <MemberSignature Language="C#" Value="MinusAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken MinusAssign = int32(71)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.MinusAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>-=</c> subtraction assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modulo">
+      <MemberSignature Language="C#" Value="Modulo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Modulo = int32(66)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Modulo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>%</c> modulus operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuloAssign">
+      <MemberSignature Language="C#" Value="ModuloAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken ModuloAssign = int32(77)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ModuloAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>%=</c> modulus assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="Multiply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Multiply = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Multiply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>*</c> multiplication operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiplyAssign">
+      <MemberSignature Language="C#" Value="MultiplyAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken MultiplyAssign = int32(72)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.MultiplyAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>*=</c> multiplication assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="Namespace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Namespace = int32(118)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Namespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>namespace</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native">
+      <MemberSignature Language="C#" Value="Native" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Native = int32(119)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Native" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>native</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="New" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken New = int32(95)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.New" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>new</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken None = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No token. For example, before scanning any tokens, or in error situations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEqual">
+      <MemberSignature Language="C#" Value="NotEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken NotEqual = int32(54)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.NotEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>!=</c> inequality comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="Null" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Null = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>null</c> literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumericLiteral">
+      <MemberSignature Language="C#" Value="NumericLiteral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken NumericLiteral = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.NumericLiteral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A numeric literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Package">
+      <MemberSignature Language="C#" Value="Package" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Package = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Package" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>package</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamArray">
+      <MemberSignature Language="C#" Value="ParamArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken ParamArray = int32(126)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.ParamArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>...</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Plus">
+      <MemberSignature Language="C#" Value="Plus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Plus = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Plus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>+</c> addition operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PlusAssign">
+      <MemberSignature Language="C#" Value="PlusAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken PlusAssign = int32(70)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PlusAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>+=</c> addition assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreProcessDirective">
+      <MemberSignature Language="C#" Value="PreProcessDirective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken PreProcessDirective = int32(133)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PreProcessDirective" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A preprocessor directive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreProcessorConstant">
+      <MemberSignature Language="C#" Value="PreProcessorConstant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken PreProcessorConstant = int32(101)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.PreProcessorConstant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A preprocessor constant.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Private">
+      <MemberSignature Language="C#" Value="Private" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Private = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Private" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>private</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Protected">
+      <MemberSignature Language="C#" Value="Protected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Protected = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Protected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>protected</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Public">
+      <MemberSignature Language="C#" Value="Public" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Public = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Public" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>public</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Require">
+      <MemberSignature Language="C#" Value="Require" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Require = int32(120)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Require" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>require</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Return">
+      <MemberSignature Language="C#" Value="Return" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Return = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Return" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>return</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightBracket">
+      <MemberSignature Language="C#" Value="RightBracket" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken RightBracket = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightBracket" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>]</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightCurly">
+      <MemberSignature Language="C#" Value="RightCurly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken RightCurly = int32(99)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightCurly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>}</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightParen">
+      <MemberSignature Language="C#" Value="RightParen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken RightParen = int32(98)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightParen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>)</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightShift">
+      <MemberSignature Language="C#" Value="RightShift" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken RightShift = int32(62)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightShift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;&gt;</c> bitwise right shift operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightShiftAssign">
+      <MemberSignature Language="C#" Value="RightShiftAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken RightShiftAssign = int32(79)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.RightShiftAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;&gt;=</c> right shift assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sbyte">
+      <MemberSignature Language="C#" Value="Sbyte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Sbyte = int32(121)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Sbyte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>sbyte</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Semicolon">
+      <MemberSignature Language="C#" Value="Semicolon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Semicolon = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Semicolon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>;</c> symbol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="Set" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Set = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Set" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>set</c> keyword of a <c>function set</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Short">
+      <MemberSignature Language="C#" Value="Short" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Short = int32(122)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Short" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>short</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Static">
+      <MemberSignature Language="C#" Value="Static" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Static = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Static" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>static</c> modifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StrictEqual">
+      <MemberSignature Language="C#" Value="StrictEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken StrictEqual = int32(55)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StrictEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>===</c> identity comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StrictNotEqual">
+      <MemberSignature Language="C#" Value="StrictNotEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken StrictNotEqual = int32(56)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StrictNotEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>!==</c> identity comparison operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StringLiteral">
+      <MemberSignature Language="C#" Value="StringLiteral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken StringLiteral = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.StringLiteral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A numeric literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Super">
+      <MemberSignature Language="C#" Value="Super" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Super = int32(97)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Super" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>super</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="Switch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Switch = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Switch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>switch</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="Synchronized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Synchronized = int32(123)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Synchronized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>synchronized</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="This">
+      <MemberSignature Language="C#" Value="This" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken This = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.This" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>this</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Throw">
+      <MemberSignature Language="C#" Value="Throw" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Throw = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Throw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>throw</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Throws">
+      <MemberSignature Language="C#" Value="Throws" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Throws = int32(125)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Throws" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>throws</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transient">
+      <MemberSignature Language="C#" Value="Transient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Transient = int32(124)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Transient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>transient</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken True = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>true</c> literal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Try">
+      <MemberSignature Language="C#" Value="Try" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Try = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Try" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>try</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Typeof">
+      <MemberSignature Language="C#" Value="Typeof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Typeof = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Typeof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>typeof</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Uint">
+      <MemberSignature Language="C#" Value="Uint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Uint = int32(129)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Uint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>uint</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ulong">
+      <MemberSignature Language="C#" Value="Ulong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Ulong = int32(130)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ulong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>ulong</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedRightShift">
+      <MemberSignature Language="C#" Value="UnsignedRightShift" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken UnsignedRightShift = int32(63)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnsignedRightShift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;&gt;&gt;</c> unsigned right shift operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsignedRightShiftAssign">
+      <MemberSignature Language="C#" Value="UnsignedRightShiftAssign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken UnsignedRightShiftAssign = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnsignedRightShiftAssign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>&gt;&gt;&gt;=</c> unsigned right shift assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnterminatedComment">
+      <MemberSignature Language="C#" Value="UnterminatedComment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken UnterminatedComment = int32(103)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.UnterminatedComment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An un-terminated comment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="Use" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Use = int32(131)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Use" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>use</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ushort">
+      <MemberSignature Language="C#" Value="Ushort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Ushort = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Ushort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>ushort</c> data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Var">
+      <MemberSignature Language="C#" Value="Var" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Var = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Var" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>var</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Void">
+      <MemberSignature Language="C#" Value="Void" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Void = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Void" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>void</c> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Volatile">
+      <MemberSignature Language="C#" Value="Volatile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken Volatile = int32(127)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.Volatile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>volatile</c> reserved word.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="While">
+      <MemberSignature Language="C#" Value="While" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken While = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.While" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>while</c> statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="With">
+      <MemberSignature Language="C#" Value="With" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSToken With = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSToken.With" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <c>with</c> statement.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,973 @@
+<Type Name="WorkflowDesignerIcons+Activities" FullName="System.Activities.Presentation.WorkflowDesignerIcons+Activities">
+  <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons.Activities" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons/Activities extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons.Activities" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the designer icons for the activities in workflow.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToCollection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush AddToCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush AddToCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.AddToCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.AddToCollection`1" /> activity.</summary>
+        <value>An icon representing the <see langword="AddToCollection" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assign">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Assign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Assign" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Assign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Assign" /> activity.</summary>
+        <value>An icon representing the <see langword="Assign" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancellationScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CancellationScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CancellationScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.CancellationScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.CancellationScope" /> activity.</summary>
+        <value>An icon representing the <see langword="CancellationScope" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearCollection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ClearCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ClearCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ClearCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.ClearCollection`1" /> activity.</summary>
+        <value>An icon representing the <see langword="ClearCollection" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompensableActivity">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CompensableActivity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CompensableActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.CompensableActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.CompensableActivity" /> activity.</summary>
+        <value>An icon representing the <see langword="CompensableActivity" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compensate">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Compensate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Compensate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Compensate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Compensate" /> activity.</summary>
+        <value>An icon representing the <see langword="Compensate" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Confirm">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Confirm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Confirm" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Confirm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Confirm" /> activity.</summary>
+        <value>An icon representing the <see langword="Confirm" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CorrelationScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CorrelationScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.CorrelationScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.CorrelationScope" /> activity.</summary>
+        <value>An icon representing the <see langword="CorrelationScope" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCustomActivity">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DefaultCustomActivity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DefaultCustomActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.DefaultCustomActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="DefaultCustomActivity" /> activity.</summary>
+        <value>An icon representing the <see langword="DefaultCustomActivity" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Delay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Delay" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Delay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Delay" /> activity.</summary>
+        <value>An icon representing the <see langword="Delay" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoWhile">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DoWhile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DoWhile" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.DoWhile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.DoWhile" /> activity.</summary>
+        <value>An icon representing the <see langword="DoWhile" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExistsInCollection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ExistsInCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ExistsInCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ExistsInCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.ExistsInCollection`1" /> activity.</summary>
+        <value>An icon representing the <see langword="ExistsInCollection" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalState">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FinalState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FinalState" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.FinalState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Core.Presentation.FinalState" /> activity.</summary>
+        <value>An icon representing the <see langword="FinalState" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flowchart">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Flowchart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Flowchart" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Flowchart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the activity of the <see cref="T:System.Activities.Statements.Flowchart" />.</summary>
+        <value>An icon representing the activity of the <see langword="Flowchart" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDecision">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FlowDecision { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FlowDecision" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.FlowDecision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the activity of the <see cref="T:System.Activities.Statements.FlowDecision" />.</summary>
+        <value>An icon representing the activity of the <see langword="FlowDecision" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDecisionNode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FlowDecisionNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FlowDecisionNode" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.FlowDecisionNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the activity of the <see langword="FlowDecisionNode" />.</summary>
+        <value>An icon representing the activity of the <see langword="FlowDecisionNode" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowSwitch">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FlowSwitch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FlowSwitch" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.FlowSwitch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the activity of the <see cref="T:System.Activities.Statements.FlowSwitch`1" />.</summary>
+        <value>An icon representing the activity of the <see langword="FlowSwitch" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowSwitchNode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FlowSwitchNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FlowSwitchNode" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.FlowSwitchNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the activity of the <see langword="FlowSwitchNode" />.</summary>
+        <value>An icon representing the activity of the <see langword="FlowSwitchNode" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForEach">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ForEach { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ForEach" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ForEach" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.ForEach`1" /> activity.</summary>
+        <value>An icon representing the <see langword="ForEach" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="If">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush If { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush If" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.If" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.If" /> activity.</summary>
+        <value>An icon representing the <see langword="If" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCorrelation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush InitializeCorrelation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush InitializeCorrelation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.InitializeCorrelation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="InitializeCorrelation" /> activity.</summary>
+        <value>An icon representing the <see langword="InitializeCorrelation" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interop">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Interop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Interop" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Interop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Interop" /> activity.</summary>
+        <value>An icon representing the <see langword="Interop" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeDelegate">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush InvokeDelegate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush InvokeDelegate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.InvokeDelegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.InvokeDelegate" /> activity.</summary>
+        <value>An icon representing the <see langword="InvokeDelegate" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeMethod">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush InvokeMethod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush InvokeMethod" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.InvokeMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.InvokeMethod" /> activity.</summary>
+        <value>An icon representing the <see langword="InvokeMethod" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPersistScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush NoPersistScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush NoPersistScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.NoPersistScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.NoPersistScope" /> activity.</summary>
+        <value>An icon representing the <see langword="NoPersistScope" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parallel">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Parallel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Parallel" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Parallel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Parallel" /> activity.</summary>
+        <value>An icon representing the <see langword="Parallel" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParallelForEach">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ParallelForEach { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ParallelForEach" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ParallelForEach" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.ParallelForEach`1" /> activity.</summary>
+        <value>An icon representing the <see langword="ParallelForEach" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Persist">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Persist { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Persist" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Persist" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Persist" /> activity.</summary>
+        <value>An icon representing the <see langword="Persist" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pick">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Pick { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Pick" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Pick" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Pick" /> activity.</summary>
+        <value>An icon representing the <see langword="Pick" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickBranch">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush PickBranch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush PickBranch" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.PickBranch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.PickBranch" /> activity.</summary>
+        <value>An icon representing the <see langword="PickBranch" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Receive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Receive" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Receive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.Receive" /> activity.</summary>
+        <value>An icon representing the <see langword="Receive" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAndSendReply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ReceiveAndSendReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ReceiveAndSendReply" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ReceiveAndSendReply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="ReceiveAndSendReply" /> activity.</summary>
+        <value>An icon representing the <see langword="ReceiveAndSendReply" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveReply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ReceiveReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ReceiveReply" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.ReceiveReply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.ReceiveReply" /> activity.</summary>
+        <value>An icon representing the <see langword="ReceiveReply" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromCollection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush RemoveFromCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush RemoveFromCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.RemoveFromCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.RemoveFromCollection`1" /> activity.</summary>
+        <value>An icon representing the <see langword="RemoveFromCollection" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rethrow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Rethrow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Rethrow" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Rethrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Rethrow" /> activity.</summary>
+        <value>An icon representing the <see langword="Rethrow" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Send { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Send" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Send" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.Send" /> activity.</summary>
+        <value>An icon representing the <see langword="Send" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAndReceiveReply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush SendAndReceiveReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush SendAndReceiveReply" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.SendAndReceiveReply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="SendAndReceiveReply" /> activity.</summary>
+        <value>An icon representing the <see langword="SendAndReceiveReply" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendReply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush SendReply { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush SendReply" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.SendReply" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.SendReply" /> activity.</summary>
+        <value>An icon representing the <see langword="SendReply" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequence">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Sequence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Sequence" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Sequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Sequence" /> activity.</summary>
+        <value>An icon representing the <see langword="Sequence" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartNode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush StartNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush StartNode" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.StartNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="StartNode" /> activity.</summary>
+        <value>An icon representing the <see langword="StartNode" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush State" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.State" /> activity.</summary>
+        <value>An icon representing the <see langword="State" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateEntry">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush StateEntry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush StateEntry" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.StateEntry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="StateEntry" /> activity.</summary>
+        <value>An icon representing the <see langword="StateEntry" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateExit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush StateExit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush StateExit" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.StateExit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="StateExit" /> activity.</summary>
+        <value>An icon representing the <see langword="StateExit" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateMachine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush StateMachine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush StateMachine" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.StateMachine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.StateMachine" /> activity.</summary>
+        <value>An icon representing the <see langword="StateMachine" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateTransition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush StateTransition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush StateTransition" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.StateTransition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see langword="StateTransition" /> activity.</summary>
+        <value>An icon representing the <see langword="StateTransition" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Switch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Switch" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Switch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Switch`1" /> activity.</summary>
+        <value>An icon representing the <see langword="Switch" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateWorkflow">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TerminateWorkflow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TerminateWorkflow" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.TerminateWorkflow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.TerminateWorkflow" /> activity.</summary>
+        <value>An icon representing the <see langword="TerminateWorkflow" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Throw">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Throw { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Throw" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.Throw" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.Throw" /> activity.</summary>
+        <value>An icon representing the <see langword="Throw" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactedReceiveScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TransactedReceiveScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TransactedReceiveScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.TransactedReceiveScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.ServiceModel.Activities.TransactedReceiveScope" /> activity.</summary>
+        <value>An icon representing the <see langword="TransactedReceiveScope" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TransactionScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TransactionScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.TransactionScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.TransactionScope" /> activity.</summary>
+        <value>An icon representing the <see langword="TransactionScope" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCatch">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TryCatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TryCatch" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.TryCatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.TryCatch" /> activity.</summary>
+        <value>An icon representing the <see langword="TryCatch" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="While">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush While { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush While" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.While" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
+        <value>An icon representing the <see langword="While" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush WriteLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush WriteLine" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.Activities.WriteLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an icon representing the <see cref="T:System.Activities.Statements.WriteLine" /> activity.</summary>
+        <value>An icon representing the <see langword="WriteLine" /> activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

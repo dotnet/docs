@@ -1,0 +1,15 @@
+<Namespace Name="System.Windows.Xps">
+  <Docs>
+    <summary>Provides classes that write XPS documents to a data store or print queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.XpsDocumentWriter> class provides the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods that output [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] documents to a data store or print queue.  Separate groups of write methods are provided for different content types including <xref:System.Windows.Documents.DocumentPaginator>, <xref:System.Windows.Media.Visual>, <xref:System.Windows.Documents.FixedPage>, <xref:System.Windows.Documents.FixedDocument>, and <xref:System.Windows.Documents.FixedDocumentSequence>.  The <xref:System.Windows.Xps.XpsDocumentWriter> methods enable you to also include a <xref:System.Printing.PrintTicket> with the document, plus pass additional information to the handlers of the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCompleted>, <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged>, and <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> events.  
+  
+ For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the XML Paper Specification (XPS) available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

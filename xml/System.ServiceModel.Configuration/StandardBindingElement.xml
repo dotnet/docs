@@ -1,0 +1,338 @@
+<Type Name="StandardBindingElement" FullName="System.ServiceModel.Configuration.StandardBindingElement">
+  <TypeSignature Language="C#" Value="public abstract class StandardBindingElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement, System.ServiceModel.Configuration.IBindingConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StandardBindingElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement implements class System.ServiceModel.Configuration.IBindingConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.StandardBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.ServiceModelConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Configuration.IBindingConfigurationElement</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a base class for the configuration elements that specify predefined bindings provided by [!INCLUDE[indigo1](~/includes/indigo1-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class defines a binding configuration element that can be used to describe an aspect of how an endpoint communicates with others in the network.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected StandardBindingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected StandardBindingElement (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A name that uniquely identifies this configuration element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.StandardBindingElement" /> class with the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyConfiguration">
+      <MemberSignature Language="C#" Value="public void ApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">A binding.</param>
+        <summary>Applies the content of the specified binding to this binding configuration element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Name` of the standard binding specified in `binding` is ignored during this operation. This is because the `Name` attribute of a binding is used in conjunction with the `Namespace` attribute of the same binding to generate the correct WSDL for a binding. However, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property of this type is mainly used as a key to identify this binding element in the binding collection. Therefore, the <xref:System.ServiceModel.Configuration.StandardBindingElement.Name%2A> property is not modified during this operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The type of this binding element is different from the type specified by <paramref name="binding" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElementType">
+      <MemberSignature Language="C#" Value="protected abstract Type BindingElementType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.BindingElementType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Type" /> object that represents the custom binding element.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents the custom binding type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan CloseTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CloseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("closeTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval of time provided for a close operation to complete.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the close operation has to complete before timing out.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeFrom">
+      <MemberSignature Language="C#" Value="protected virtual void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">A binding.</param>
+        <summary>Initializes this binding configuration element with the content of the specified binding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The type of this binding element is different from the type specified by <paramref name="binding" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the binding.</summary>
+        <value>The name of the binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each instance of a binding has a name and namespace that together uniquely identify it in the metadata of the service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyConfiguration">
+      <MemberSignature Language="C#" Value="protected abstract void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">A binding.</param>
+        <summary>Called when the content of a specified binding element is applied to this binding configuration element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan OpenTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OpenTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.OpenTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("openTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval of time provided for an open operation to complete.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the open operation has to complete before timing out.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationPropertyCollection" /> instance that contains a collection of <see cref="T:System.Configuration.ConfigurationProperty" /> objects that can be attributes or <see cref="T:System.Configuration.ConfigurationElement" /> objects of this configuration element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan ReceiveTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReceiveTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("receiveTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval of time provided for a receive operation to complete.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the receive operation has to complete before timing out.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.StandardBindingElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">The parent node of this configuration element.</param>
+        <summary>Resets the internal state of this configuration element object, including the locks and the properties collections.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan SendTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SendTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.StandardBindingElement.SendTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TimeSpanOrInfiniteConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("sendTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval of time provided for a send operation to complete.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies how long the send operation has to complete before timing out.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

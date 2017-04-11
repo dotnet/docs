@@ -1,0 +1,125 @@
+<Type Name="ScrollBars" FullName="System.Web.UI.WebControls.ScrollBars">
+  <TypeSignature Language="C#" Value="public enum ScrollBars" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBars extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ScrollBars" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the visibility and position of scroll bars in a <see cref="T:System.Web.UI.WebControls.Panel" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ScrollBars> enumeration represents the visibility and position of the scroll bars in a <xref:System.Web.UI.WebControls.Panel> control. The <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property uses these enumeration values to specify the type of scroll bars to display in a <xref:System.Web.UI.WebControls.Panel> control. The default value for the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property is `None`, indicating that no scroll bars are shown.  
+  
+ If you specify `Auto` for the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property, scroll bars are automatically shown when the size of the content in a <xref:System.Web.UI.WebControls.Panel> control exceeds the size of the <xref:System.Web.UI.WebControls.Panel> control. For example, if a <xref:System.Web.UI.WebControls.Panel> control contains a table, and the panel is not wide enough to display all the rows in the table, a vertical scroll bar is shown. If the size of the table exceeds the height and width of the panel, both vertical and horizontal scroll bars are shown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.Panel.ScrollBars%2A> property to `Auto`. The panel contains a table, the entire contents of which exceed the size of the panel. This causes both vertical and horizontal scroll bars to be automatically displayed when the panel is rendered. The user can then scroll to view all the data in the table.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Panel.Scrollbars#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars/CS/panel.scrollbarscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Panel.Scrollbars#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars/VB/panel.scrollbarsvb.aspx#1)]  -->  
+  
+ The following code example demonstrates the <xref:System.Web.UI.WebControls.ScrollBars> enumeration values. A <xref:System.Web.UI.WebControls.ListBox> control is populated with the <xref:System.Web.UI.WebControls.ScrollBars> enumeration values. The scroll bars displayed in the panel change, based on the value the user selects from the list box.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Panel.Scrollbars2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Panel.Scrollbars2/CS/panel.scrollbars2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Panel.Scrollbars2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Panel.Scrollbars2/VB/panel.scrollbars2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ScrollBars Auto = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ScrollBars.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays, horizontal, vertical, or both scroll bars as necessary. Otherwise, no scroll bars are shown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ScrollBars Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ScrollBars.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays both a horizontal and a vertical scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ScrollBars Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ScrollBars.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays only a horizontal scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ScrollBars None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ScrollBars.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays no scroll bars.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ScrollBars Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ScrollBars.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays only a vertical scroll bar.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,217 @@
+<Type Name="HttpWebRequestElement" FullName="System.Net.Configuration.HttpWebRequestElement">
+  <TypeSignature Language="C#" Value="public sealed class HttpWebRequestElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpWebRequestElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpWebRequestElement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the maximum length for response headers. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to the `maximumResponseHeadersLength` attribute of the [\&lt;httpWebRequest\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md) configuration element.  
+  
+ The information in this class applies to responses to requests made with the <xref:System.Net.WebRequest> and <xref:System.Net.WebClient> classes.  
+  
+ This class provides programmatic access to information that can be stored in configuration files.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpWebRequestElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpWebRequestElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.HttpWebRequestElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor adds a <xref:System.Configuration.ConfigurationProperty> object that represents the <xref:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength%2A> to the <xref:System.Configuration.ConfigurationElement.Properties%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumErrorResponseLength">
+      <MemberSignature Language="C#" Value="public int MaximumErrorResponseLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumErrorResponseLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumErrorResponseLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maximumErrorResponseLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum allowed length of an error response.</summary>
+        <value>A 32-bit signed integer containing the maximum length in kilobytes (1024 bytes) of the error response. The default value is 64.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumResponseHeadersLength">
+      <MemberSignature Language="C#" Value="public int MaximumResponseHeadersLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumResponseHeadersLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumResponseHeadersLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maximumResponseHeadersLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum allowed length of the response headers.</summary>
+        <value>A 32-bit signed integer containing the maximum length in kilobytes (1024 bytes) of the response headers. The default value is 64.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length is measured in kilobytes (1024 bytes) and it includes the response status line and the response headers, as well as all extra control characters received as part of the HTTP protocol.  
+  
+ A value of -1 means no limit is imposed on the response headers; a value of 0 means that all requests will fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumUnauthorizedUploadLength">
+      <MemberSignature Language="C#" Value="public int MaximumUnauthorizedUploadLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumUnauthorizedUploadLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maximumUnauthorizedUploadLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum length of an upload in response to an unauthorized error code.</summary>
+        <value>A 32-bit signed integer containing the maximum length (in multiple of 1,024 byte units) of an upload in response to an unauthorized error code. A value of -1 indicates that no size limit will be imposed on the upload. Setting the <see cref="P:System.Net.Configuration.HttpWebRequestElement.MaximumUnauthorizedUploadLength" /> property to any other value will only send the request body if it is smaller than the number of bytes specified. So a value of 1 would indicate to only send the request body if it is smaller than 1,024 bytes.  
+  
+ The default value for this property is -1.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDeserialize">
+      <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpWebRequestElement.PostDeserialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseUnsafeHeaderParsing">
+      <MemberSignature Language="C#" Value="public bool UseUnsafeHeaderParsing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseUnsafeHeaderParsing" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpWebRequestElement.UseUnsafeHeaderParsing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("useUnsafeHeaderParsing", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Setting this property ignores validation errors that occur during HTTP parsing.</summary>
+        <value>Boolean that indicates whether this property has been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `false`, the following validations are performed during HTTP parsing:  
+  
+-   In end-of-line code, use CRLF; using CR or LF alone is not allowed.  
+  
+-   Headers names should not have spaces in them.  
+  
+-   If multiple status lines exist, all additional status lines are treated as malformed header name/value pairs.  
+  
+-   The status line must have a status description, in addition to a status code.  
+  
+-   Header names cannot have non-ASCII chars in them. This validation is performed whether this property is set to `true` or `false`.  
+  
+ When a protocol violation occurs, a <xref:System.Net.WebException> exception is thrown with the status set to <xref:System.Net.WebExceptionStatus>. If the `UseUnsafeHeaderParsing` property is set to `true`, validation errors are ignored.  
+  
+ Setting this property to `true` has security implications, so it should only be done if backward compatibility with a server is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

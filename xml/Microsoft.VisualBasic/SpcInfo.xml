@@ -1,0 +1,59 @@
+<Type Name="SpcInfo" FullName="Microsoft.VisualBasic.SpcInfo">
+  <TypeSignature Language="C#" Value="public struct SpcInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed SpcInfo extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.SpcInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Print" /> and <see langword="PrintLine" /> functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] `Print` and `PrintLine` functions. It is not intended to be used directly from your code.  
+  
+ For more information, see <xref:Microsoft.VisualBasic.FileSystem.Print%2A> and <xref:Microsoft.VisualBasic.FileSystem.PrintLine%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public short Count;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 Count" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.SpcInfo.Count" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This field supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Print" /> and <see langword="PrintLine" /> functions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] `Print` and `PrintLine` functions. It is not intended to be used directly from your code.  
+  
+ For more information, see <xref:Microsoft.VisualBasic.FileSystem.Print%2A> and <xref:Microsoft.VisualBasic.FileSystem.PrintLine%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

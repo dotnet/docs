@@ -1,0 +1,89 @@
+<Type Name="IDataBindingSchemaProvider" FullName="System.Web.UI.Design.IDataBindingSchemaProvider">
+  <TypeSignature Language="C#" Value="public interface IDataBindingSchemaProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBindingSchemaProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for design-time access to a schema provider in a design host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataBindingSchemaProvider> class is implemented by design hosts, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], that host the data-binding dialog box to show schema.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanRefreshSchema">
+      <MemberSignature Language="C#" Value="public bool CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the provider can refresh the schema.</summary>
+        <value>
+          <see langword="true" />, if the schema can be refreshed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public void RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">
+          <see langword="true" /> to disable data-binding events until after the schema has been refreshed; <see langword="false" /> to enable the events.</param>
+        <summary>Refreshes the schema for the data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema%2A> method is called by the design host only if the <xref:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceViewSchema Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema Schema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current schema object for the designer.</summary>
+        <value>The current schema object for the designer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,39 @@
+<Type Name="NotifyOfNewConnectionCallback" FullName="System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback">
+  <TypeSignature Language="C#" Value="public delegate bool NotifyOfNewConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, LdapConnection newConnection, NetworkCredential credential, long currentUserToken, int errorCodeFromBind);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyOfNewConnectionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="primaryConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="referralFromConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="newDistinguishedName" Type="System.String" />
+    <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.LdapDirectoryIdentifier" />
+    <Parameter Name="newConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+    <Parameter Name="currentUserToken" Type="System.Int64" />
+    <Parameter Name="errorCodeFromBind" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="primaryConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
+    <param name="referralFromConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection which provided the referral.</param>
+    <param name="newDistinguishedName">A <see cref="T:System.String" /> object that specifies the distinguished name of the desired entry in the referred server.</param>
+    <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.LdapDirectoryIdentifier" /> object that specifies the identifier the referred LDAP directory.</param>
+    <param name="newConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the new connection created in the course of chasing a referral.</param>
+    <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> object that specifies the credentials to pass to the referred server.</param>
+    <param name="currentUserToken">The LUID of the current user.</param>
+    <param name="errorCodeFromBind">A <see cref="T:System.Int32" /> object that specifies the error code from the bind operation.</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> delegate is called if a new connection was created while chasing a referral.</summary>
+    <returns>
+      <see langword="true" /> if the connection is to be cached.  <see langword="false " />if not required to cache the connection.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

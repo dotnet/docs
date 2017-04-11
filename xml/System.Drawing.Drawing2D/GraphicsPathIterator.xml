@@ -1,0 +1,562 @@
+<Type Name="GraphicsPathIterator" FullName="System.Drawing.Drawing2D.GraphicsPathIterator">
+  <TypeSignature Language="C#" Value="public sealed class GraphicsPathIterator : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GraphicsPathIterator extends System.MarshalByRefObject implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsPathIterator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the ability to iterate through subpaths in a <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> and test the types of shapes contained in each subpath. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GraphicsPathIterator (System.Drawing.Drawing2D.GraphicsPath path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.#ctor(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
+      </Parameters>
+      <Docs>
+        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object for which this helper class is to be initialized.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> class with the specified <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyData">
+      <MemberSignature Language="C#" Value="public int CopyData (ref System.Drawing.PointF[] points, ref byte[] types, int startIndex, int endIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CopyData(valuetype System.Drawing.PointF[] points, unsigned int8[] types, int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.CopyData(System.Drawing.PointF[]@,System.Byte[]@,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="endIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="points">Upon return, contains an array of <see cref="T:System.Drawing.PointF" /> structures that represents the points in the path.</param>
+        <param name="types">Upon return, contains an array of bytes that represents the types of points in the path.</param>
+        <param name="startIndex">Specifies the starting index of the arrays.</param>
+        <param name="endIndex">Specifies the ending index of the arrays.</param>
+        <summary>Copies the <see cref="P:System.Drawing.Drawing2D.GraphicsPath.PathPoints" /> property and <see cref="P:System.Drawing.Drawing2D.GraphicsPath.PathTypes" /> property arrays of the associated <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> into the two specified arrays.</summary>
+        <returns>The number of points copied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `startIndex` and `endIndex` parameters to copy a specified range of the path data.  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a graphics path.  
+  
+-   Populates it with several primitives and some markers.  
+  
+-   Lists the path data on the left side of the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> and rewinds it.  
+  
+-   Increments the path data index to the second marker.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.CopyData%2A> method to copy the path data contained between the start and end indexes to the points and types arrays.  
+  
+-   Lists this copied data on the right side of the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of points in the path.</summary>
+        <value>The number of points in the path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling `Dispose` allows the resources used by this <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object to be reallocated for other purposes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enumerate">
+      <MemberSignature Language="C#" Value="public int Enumerate (ref System.Drawing.PointF[] points, ref byte[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Enumerate(valuetype System.Drawing.PointF[] points, unsigned int8[] types) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Enumerate(System.Drawing.PointF[]@,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="points" Type="System.Drawing.PointF[]&amp;" RefType="ref" />
+        <Parameter Name="types" Type="System.Byte[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="points">Upon return, contains an array of <see cref="T:System.Drawing.PointF" /> structures that represents the points in the path.</param>
+        <param name="types">Upon return, contains an array of bytes that represents the types of points in the path.</param>
+        <summary>Copies the <see cref="P:System.Drawing.Drawing2D.GraphicsPath.PathPoints" /> property and <see cref="P:System.Drawing.Drawing2D.GraphicsPath.PathTypes" /> property arrays of the associated <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> into the two specified arrays.</summary>
+        <returns>The number of points copied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a graphics path.  
+  
+-   Populates it with several primitives and some markers.  
+  
+-   Lists the path data on the left side of the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> and rewinds it.  
+  
+-   Increments the path data index to the second marker.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.Enumerate%2A> method to copy the path data to the `points` and `types` arrays.  
+  
+-   Lists this copied data on the right side of the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~GraphicsPathIterator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasCurve">
+      <MemberSignature Language="C#" Value="public bool HasCurve ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasCurve() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the path associated with this <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> contains a curve.</summary>
+        <returns>This method returns <see langword="true" /> if the current subpath contains a curve; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All curves in a path are stored as sequences of Bézier splines. For example, when you add an ellipse to a path, you specify the upper-left corner, the width, and the height of the ellipse's bounding rectangle. Those numbers (upper-left corner, width, and height) are not stored in the path; instead; the ellipse is converted to a sequence of four Bézier splines. The path stores the endpoints and control points of those Bézier splines.  
+  
+ A path stores an array of data points, each of which belongs to a line or a Bézier spline. If some of the points in the array belong to Bézier splines, then <xref:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve%2A> returns `true`. If all points in the array belong to lines, then <xref:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve%2A> returns `false`.  
+  
+ Certain methods flatten a path, which means that all the curves in the path are converted to sequences of lines. After a path has been flattened, <xref:System.Drawing.Drawing2D.GraphicsPathIterator.HasCurve%2A> will always return `false`. Calling the <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A>, <xref:System.Drawing.Drawing2D.GraphicsPath.Widen%2A>, or <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%2A> method of the <xref:System.Drawing.Drawing2D.GraphicsPath> class will flatten a path.  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object, `myPath`.  
+  
+-   Adds three lines, a rectangle, and an ellipse.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object for `myPath`.  
+  
+-   Tests to see if the current path `myPath` contains a curve.  
+  
+-   Shows the result of the test in a message box.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextMarker">
+      <MemberSignature Language="C#" Value="public int NextMarker (System.Drawing.Drawing2D.GraphicsPath path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker(class System.Drawing.Drawing2D.GraphicsPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
+      </Parameters>
+      <Docs>
+        <param name="path">The <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object to which the points will be copied.</param>
+        <summary>This <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> object has a <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object associated with it. The <see cref="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Drawing.Drawing2D.GraphicsPath)" /> method increments the associated <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> to the next marker in its path and copies all the points contained between the current marker and the next marker (or end of path) to a second <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object passed in to the parameter.</summary>
+        <returns>The number of points between this marker and the next.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Drawing.Drawing2D.GraphicsPath.SetMarkers%2A> method to set markers in a path. Markers are used to create groups of subpaths. One or more subpaths can be between two markers.  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Adds three lines, a rectangle, an ellipse, and two markers.  
+  
+-   Lists the values of all the path's points to the left side of the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object, `myPathSection`, to receive copied points.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker%2A> method, which iterates to the first marker and copies all the points contained between that marker and the next to `myPathSection`.  
+  
+-   Returns the number of points copied to `markerPoints`.  
+  
+-   Lists the marker number (the first marker) and number of points it contains to the right side of the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextMarker">
+      <MemberSignature Language="C#" Value="public int NextMarker (out int startIndex, out int endIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextMarker(int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker(System.Int32@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">[out] The integer reference supplied to this parameter receives the index of the point that starts a subpath.</param>
+        <param name="endIndex">[out] The integer reference supplied to this parameter receives the index of the point that ends the subpath to which <c>startIndex</c> points.</param>
+        <summary>Increments the <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> to the next marker in the path and returns the start and stop indexes by way of the [out] parameters.</summary>
+        <returns>The number of points between this marker and the next.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Drawing.Drawing2D.GraphicsPath.SetMarkers%2A> method to set markers in a path. Markers are used to create groups of subpaths. One or more subpaths can be between two markers.  
+  
+   
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Adds three lines, a rectangle, and an ellipse ¾ with markers between each.  
+  
+-   Draws the values for the array of points to the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker%2A> method.  
+  
+-   Uses the values returned from the iterative calls to <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker%2A> to draw the start and stop points for each marker to the screen.  
+  
+-   Draws the value for the total number of points to the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPathType">
+      <MemberSignature Language="C#" Value="public int NextPathType (out byte pathType, out int startIndex, out int endIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextPathType(unsigned int8 pathType, int32 startIndex, int32 endIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType(System.Byte@,System.Int32@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathType" Type="System.Byte&amp;" RefType="out" />
+        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pathType">[out] Receives the point type shared by all points in the group. Possible types can be retrieved from the <see cref="T:System.Drawing.Drawing2D.PathPointType" /> enumeration.</param>
+        <param name="startIndex">[out] Receives the starting index of the group of points.</param>
+        <param name="endIndex">[out] Receives the ending index of the group of points.</param>
+        <summary>Gets the starting index and the ending index of the next group of data points that all have the same type.</summary>
+        <returns>This method returns the number of data points in the group. If there are no more groups in the path, this method returns 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Adds three lines, a rectangle, and an ellipse.  
+  
+-   Lists the values of all the points to the left side of the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> and rewinds it.  
+  
+-   In a `for` loop, iterates through the points using the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType%2A> and <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType%2A> methods.  
+  
+-   Uses the values returned from the iterative calls to list the subpath number, the number of points in it, and the type of the path points to the right side of the screen.  
+  
+-   Displays the value for the total number of points to the screen.  
+  
+ Note that `ListPathPoints` is a helper function that separates most (not all) of the display code from the graphics path code.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextSubpath">
+      <MemberSignature Language="C#" Value="public int NextSubpath (System.Drawing.Drawing2D.GraphicsPath path, out bool isClosed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(class System.Drawing.Drawing2D.GraphicsPath path, bool isClosed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Drawing.Drawing2D.GraphicsPath,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.Drawing.Drawing2D.GraphicsPath" />
+        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="path">A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that is to have its data points set to match the data points of the retrieved figure (subpath) for this iterator.</param>
+        <param name="isClosed">[out] Indicates whether the current subpath is closed. It is <see langword="true" /> if the if the figure is closed, otherwise it is <see langword="false" />.</param>
+        <summary>Gets the next figure (subpath) from the associated path of this <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" />.</summary>
+        <returns>The number of data points in the retrieved figure (subpath). If there are no more figures to retrieve, zero is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Adds three lines, a rectangle, an ellipse, and two markers.  
+  
+-   Lists the values of all the path's points to the left side of the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object, `myPathSection`, to receive copied points.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath%2A> method, which iterates to the third subpath (figure) and copies all the points contained in that subpath to the `myPathSection` path, and also returns the number of points copied to `subpathPoints`.  
+  
+-   Lists the subpath number and number of points it contains to the right side of the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextSubpath">
+      <MemberSignature Language="C#" Value="public int NextSubpath (out int startIndex, out int endIndex, out bool isClosed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NextSubpath(int32 startIndex, int32 endIndex, bool isClosed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath(System.Int32@,System.Int32@,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="endIndex" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="isClosed" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">[out] Receives the starting index of the next subpath.</param>
+        <param name="endIndex">[out] Receives the ending index of the next subpath.</param>
+        <param name="isClosed">[out] Indicates whether the subpath is closed.</param>
+        <summary>Moves the <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> to the next subpath in the path. The start index and end index of the next subpath are contained in the [out] parameters.</summary>
+        <returns>The number of subpaths in the <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Form.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPath> object.  
+  
+-   Adds three lines, a rectangle, and an ellipse.  
+  
+-   Draws the values for the array of points to the screen.  
+  
+-   Creates a <xref:System.Drawing.Drawing2D.GraphicsPathIterator> object.  
+  
+-   Calls the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath%2A> method.  
+  
+-   Uses the values returned from the iterative calls to <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath%2A> to draw the start and stop values for each subpath to the screen.  
+  
+-   Draws the value for the total number of subpaths to the screen.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CPP/form1.cpp#8)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/CS/form1.cs#8)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicGraphicsPathIterator#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathIterator/VB/form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rewind">
+      <MemberSignature Language="C#" Value="public void Rewind ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rewind() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.GraphicsPathIterator.Rewind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Rewinds this <see cref="T:System.Drawing.Drawing2D.GraphicsPathIterator" /> to the beginning of its associated path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first time you call the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath%2A> method of an iterator, it gets the first figure (subpath) of that iterator's associated path. The second time, it gets the second figure, and so on. When you call the <xref:System.Drawing.Drawing2D.GraphicsPathIterator.Rewind%2A> method, the sequence starts over; that is, after you call <xref:System.Drawing.Drawing2D.GraphicsPathIterator.Rewind%2A>, the next call to <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextSubpath%2A> gets the first figure in the path. The <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextMarker%2A> and <xref:System.Drawing.Drawing2D.GraphicsPathIterator.NextPathType%2A> methods behave similarly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubpathCount">
+      <MemberSignature Language="C#" Value="public int SubpathCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SubpathCount" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.GraphicsPathIterator.SubpathCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of subpaths in the path.</summary>
+        <value>The number of subpaths in the path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

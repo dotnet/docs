@@ -1,0 +1,928 @@
+<Type Name="IDeque&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IDeque&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IDeque`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IDeque`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">The type that is contained.</typeparam>
+    <summary>Defines the interface of an STL/CLR <c>deque</c> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ For more information, see [deque (STL/CLR)](http://msdn.microsoft.com/library/dd669da3-3c0e-45e9-8596-f6b483720941).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.assign(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The enumeration to insert into the container.</param>
+        <summary>Replaces all elements of the container with the elements in the given <see cref="T:System.Collections.IEnumerable" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::assign (STL/CLR)](http://msdn.microsoft.com/library/03fafdbb-6b10-4464-b3dc-0cc5cb8ac980).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.assign(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_First">The starting position of the range to insert into the container.</param>
+        <param name="_Last">The first position beyond the end of the range to insert into the container.</param>
+        <summary>Replaces all elements of the container with the elements specified by the given <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::assign (STL/CLR)](http://msdn.microsoft.com/library/03fafdbb-6b10-4464-b3dc-0cc5cb8ac980).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="assign">
+      <MemberSignature Language="C#" Value="public void assign (int _Count, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(int32 _Count, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.assign(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Count" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Count">The number of elements to insert into the container.</param>
+        <param name="_Val">The value of the element to insert into the container.</param>
+        <summary>Replaces all elements of the container with the given number of specified elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::assign (STL/CLR)](http://msdn.microsoft.com/library/03fafdbb-6b10-4464-b3dc-0cc5cb8ac980).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="at">
+      <MemberSignature Language="C#" Value="public TValue at (int _Pos);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue at(int32 _Pos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.at(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Pos" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Pos">Position of element to access.</param>
+        <summary>Accesses an element at a specified position in the container.</summary>
+        <returns>The element of the controlled sequence at position <paramref name="pos" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::at (STL/CLR)](http://msdn.microsoft.com/library/9af83d8a-c519-4b2a-a25f-d3dc8bbb87fb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="back">
+      <MemberSignature Language="C#" Value="public TValue back ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue back() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.back" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Accesses the last element of the container.</summary>
+        <returns>The last element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::back (STL/CLR)](http://msdn.microsoft.com/library/5608cdda-212d-42f6-866b-b04aec04ef8e).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="back_item">
+      <MemberSignature Language="C#" Value="public TValue back_item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue back_item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IDeque`1.back_item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Accesses the last element of a non-empty <c>deque</c> collection.</summary>
+        <value>The last element of the controlled sequence.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::back_item (STL/CLR)](http://msdn.microsoft.com/library/b112636a-2f18-4eb0-abd6-076acdabeff7).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="begin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.begin(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::begin (STL/CLR)](http://msdn.microsoft.com/library/e99d20d2-bb33-415f-9bd6-fe331d8c2ba2).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="begin_bias">
+      <MemberSignature Language="C#" Value="public int begin_bias ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 begin_bias() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.begin_bias" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the bias of the beginning of the current sequence. The bias is the offset of the current element zero.</summary>
+        <returns>The bias of the beginning of the current sequence.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="clear">
+      <MemberSignature Language="C#" Value="public void clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::clear (STL/CLR)](http://msdn.microsoft.com/library/1d9a3d11-b3fa-43a7-a508-7a05cbcd91bf).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="empty">
+      <MemberSignature Language="C#" Value="public bool empty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool empty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.empty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tests whether the container holds no elements.</summary>
+        <returns>
+          <see langword="true" /> if the container is empty; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::empty (STL/CLR)](http://msdn.microsoft.com/library/6ff3dd07-ebdf-47f9-b0d2-8a3229390d3b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="end">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.end(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::end (STL/CLR)](http://msdn.microsoft.com/library/3de3e816-3334-4b39-97ad-6f8771e9b4e9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="end_bias">
+      <MemberSignature Language="C#" Value="public int end_bias ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 end_bias() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.end_bias" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the bias of the end of the current sequence. The bias is the offset of the current element zero.</summary>
+        <returns>The bias of the end of the current sequence.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Last_iter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_First_iter">To be added.</param>
+        <param name="_Last_iter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="front">
+      <MemberSignature Language="C#" Value="public TValue front ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue front() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.front" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue@</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Accesses the first element of the container.</summary>
+        <returns>The first element of the controlled sequence, which must be non-empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::front (STL/CLR)](http://msdn.microsoft.com/library/eb8cb5f2-346d-4d7a-bb7b-cf67fe4318e8).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="front_item">
+      <MemberSignature Language="C#" Value="public TValue front_item { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue front_item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IDeque`1.front_item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Accesses the first element of a non-empty <c>deque</c> collection.</summary>
+        <value>The first element of the controlled sequence.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::front_item (STL/CLR)](http://msdn.microsoft.com/library/6243e52d-47fb-45d8-ade8-70debd97887d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where_iter, System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="_Where_iter">To be added.</param>
+        <param name="_Right">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_First">To be added.</param>
+        <param name="_Last">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, int _Count, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, int32 _Count, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Count" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Where">To be added.</param>
+        <param name="_Count">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public TValue this[int _Pos] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IDeque`1.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Pos" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Pos">The position of the element to get or set.</param>
+        <summary>Gets or sets the element at the indicated position in the container.</summary>
+        <value>The element at the indicated position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::operator(STL/CLR)](http://msdn.microsoft.com/library/d7653bb5-db48-4637-a25c-e7303e5d28da).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pop_back">
+      <MemberSignature Language="C#" Value="public void pop_back ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_back() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.pop_back" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the last element of a non-empty container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::pop_back (STL/CLR)](http://msdn.microsoft.com/library/528d2c89-104c-45f7-8f05-41fe217ee37c).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pop_front">
+      <MemberSignature Language="C#" Value="public void pop_front ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_front() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.pop_front" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the first element of a non-empty container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::pop_front (STL/CLR)](http://msdn.microsoft.com/library/5042df47-b226-4b16-982e-6a4543b8e00b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="push_back">
+      <MemberSignature Language="C#" Value="public void push_back (TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_back(!TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.push_back(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Val">The element to append to the end of the container.</param>
+        <summary>Adds an element to the end of a container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::push_back (STL/CLR)](http://msdn.microsoft.com/library/dafd5a4d-1fc7-434c-b129-a523099f8701).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="push_front">
+      <MemberSignature Language="C#" Value="public void push_front (TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_front(!TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.push_front(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Val">The element to add to the beginning of the container.</param>
+        <summary>Adds an element to the beginning of a container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::push_front (STL/CLR)](http://msdn.microsoft.com/library/a452c94e-abad-4e28-af41-c73ec805ec6f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rbegin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::rbegin (STL/CLR)](http://msdn.microsoft.com/library/5d399c1d-bd7e-4b2e-bde0-11a000e29679).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rend">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.rend(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::rend (STL/CLR)](http://msdn.microsoft.com/library/c2977998-3cf1-4c6f-9710-6cf6a3aae5e5).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="resize">
+      <MemberSignature Language="C#" Value="public void resize (int _Newsize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.resize(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Newsize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Newsize">The new size of the controlled sequence.</param>
+        <summary>Changes the number of elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::resize (STL/CLR)](http://msdn.microsoft.com/library/c83f3c57-38b3-4706-a124-59bafbf88484).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="resize">
+      <MemberSignature Language="C#" Value="public void resize (int _Newsize, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.resize(System.Int32,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Newsize" Type="System.Int32" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="_Newsize">The new size of the controlled sequence.</param>
+        <param name="_Val">The value of the padding element.</param>
+        <summary>Changes the number of elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::resize (STL/CLR)](http://msdn.microsoft.com/library/c83f3c57-38b3-4706-a124-59bafbf88484).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="size">
+      <MemberSignature Language="C#" Value="public int size ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 size() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Counts the number of elements.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::size (STL/CLR)](http://msdn.microsoft.com/library/81db82c1-7fe7-4eb4-8785-6d36197e4681).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="swap">
+      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt; A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IDeque`1&lt;!TValue&gt; A_0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IDeque`1.swap(Microsoft.VisualC.StlClr.IDeque{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="A_0" Type="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="A_0">Container to swap contents with.</param>
+        <summary>Swaps the contents of two containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::swap (STL/CLR)](http://msdn.microsoft.com/library/511e1aa8-3069-43f3-aa77-150f1de1e195).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="assign">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces all elements of the container with the given elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::assign (STL/CLR)](http://msdn.microsoft.com/library/03fafdbb-6b10-4464-b3dc-0cc5cb8ac980).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements at a specified position in the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::insert (STL/CLR)](http://msdn.microsoft.com/library/a3b86c46-e6a8-42d0-b642-5a8f05ddd68c).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements at specified positions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::erase (STL/CLR)](http://msdn.microsoft.com/library/831fbc2b-604f-446b-88bc-b37531304c33).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="resize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the number of elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [deque::resize (STL/CLR)](http://msdn.microsoft.com/library/c83f3c57-38b3-4706-a124-59bafbf88484).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

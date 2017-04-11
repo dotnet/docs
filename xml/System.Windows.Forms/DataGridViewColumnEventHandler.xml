@@ -1,0 +1,54 @@
+<Type Name="DataGridViewColumnEventHandler" FullName="System.Windows.Forms.DataGridViewColumnEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewColumnEventHandler(object sender, DataGridViewColumnEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewColumnEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewColumnEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewColumnEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle column-related events of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.DataGridViewColumnEventArgs> provides data for the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnContextMenuStripChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDataPropertyNameChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDefaultCellStyleChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDisplayIndexChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDividerWidthChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderCellChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnMinimumWidthChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnNameChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnSortModeChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnToolTipTextChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnWidthChanged>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

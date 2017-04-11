@@ -1,0 +1,141 @@
+<Type Name="IButtonControl" FullName="System.Windows.Forms.IButtonControl">
+  <TypeSignature Language="C#" Value="public interface IButtonControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IButtonControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IButtonControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Allows a control to act like a button on a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An example of where this interface might be implemented is default and cancel button processing. Default buttons are notified when an unprocessed ENTER key is entered for a form, just like a dialog box would be closed. Similarly, cancel buttons are notified whenever an unprocessed ESC key is entered on a form, much like a dialog box would be dismissed.  
+  
+   
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+  
+ [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+ [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+ [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implement this interface in classes that act as button controls. The members of this interface will provide basic button functionality, such as providing a <see cref="T:System.Windows.Forms.DialogResult" /> to the parent form or the ability to perform a <see cref="E:System.Windows.Forms.Control.Click" /> event, or acting as the default button of a form.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="DialogResult">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult DialogResult { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DialogResult DialogResult" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IButtonControl.DialogResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value returned to the parent form when the button is clicked.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a form is shown as a dialog box using the <xref:System.Windows.Forms.Form.ShowDialog%2A> method and one of its buttons is clicked, the button's <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> value is assigned to the form's <xref:System.Windows.Forms.Form.DialogResult%2A> property.  
+  
+   
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+  
+ [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+ [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+ [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyDefault">
+      <MemberSignature Language="C#" Value="public void NotifyDefault (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyDefault(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IButtonControl.NotifyDefault(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">
+          <see langword="true" /> if the control should behave as a default button; otherwise <see langword="false" />.</param>
+        <summary>Notifies a control that it is the default button so that its appearance and behavior is adjusted accordingly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by a parent form to make a control the default button. Default buttons are set to have an extra thick border.  
+  
+   
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+  
+ [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+ [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+ [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformClick">
+      <MemberSignature Language="C#" Value="public void PerformClick ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformClick() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IButtonControl.PerformClick" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called for the button that has focus, or for the default button (if no other button has focus) when the user presses the ENTER key. This method is also called when the user presses the ESC key if the button is set as the cancel button.  
+  
+   
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ButtonBase> class and implements the <xref:System.Windows.Forms.IButtonControl> interface. Implementation is added to the <xref:System.Windows.Forms.IButtonControl.DialogResult%2A> property and the <xref:System.Windows.Forms.IButtonControl.NotifyDefault%2A> and <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> methods.  
+  
+ [!code-cpp[IButtonControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IButtonControl Implementation/CPP/mybutton.cpp#1)]
+ [!code-csharp[IButtonControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IButtonControl Implementation/CS/mybutton.cs#1)]
+ [!code-vb[IButtonControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IButtonControl Implementation/VB/mybutton.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,310 @@
+<Type Name="RibbonAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonAutomationPeer : System.Windows.Automation.Peers.SelectorAutomationPeer, System.Windows.Automation.Provider.IExpandCollapseProvider, System.Windows.Automation.Provider.ISelectionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonAutomationPeer extends System.Windows.Automation.Peers.SelectorAutomationPeer implements class System.Windows.Automation.Provider.IExpandCollapseProvider, class System.Windows.Automation.Provider.ISelectionProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.SelectorAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IExpandCollapseProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.ISelectionProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonAutomationPeer (System.Windows.Controls.Ribbon.Ribbon owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.Ribbon owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.Ribbon)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.Ribbon" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public void Collapse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Collapse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.Collapse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Minimizes the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItemAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.ItemAutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">An object that is in the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</param>
+        <summary>Creates a <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> for the specified item.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.RibbonTabDataAutomationPeer" /> that is associated with the specified item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="public void Expand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Expand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.Expand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Restores the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the <xref:System.Windows.Controls.Ribbon.Ribbon.IsMinimized%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandCollapseState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ExpandCollapseState ExpandCollapseState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState ExpandCollapseState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.ExpandCollapseState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state, expanded or collapsed, of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</summary>
+        <value>The state of the control that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Tab" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetChildrenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The child elements of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Automation.Peers.RibbonAutomationPeer.GetChildrenCore%2A> method returns a collection of <xref:System.Windows.Automation.Peers.AutomationPeer> objects that represent the <xref:System.Windows.Controls.Ribbon.Ribbon.ApplicationMenu%2A>, <xref:System.Windows.Controls.Ribbon.Ribbon.QuickAccessToolBar%2A>, and <xref:System.Windows.Controls.Ribbon.RibbonTab> objects that belong to the <xref:System.Windows.Controls.Ribbon.Ribbon>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The type name of the associated <see cref="T:System.Windows.Controls.Ribbon.Ribbon" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" />.</summary>
+        <returns>If the <see cref="P:System.Windows.Controls.Ribbon.Ribbon.IsCollapsed" /> property of the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is <see langword="false" /> and <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Scroll" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Selection" /> value, this method returns an object that supports the control pattern; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffscreenCore">
+      <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.IsOffscreenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonAutomationPeer" /> is off the screen.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is collapsed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocusCore">
+      <MemberSignature Language="C#" Value="protected override void SetFocusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetFocusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonAutomationPeer.SetFocusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This API is not implemented.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple">
+      <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> allows more than one child element to be selected concurrently.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired">
+      <MemberSignature Language="C#" Value="bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonAutomationPeer.System#Windows#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> requires at least one child element to be selected.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.ISelectionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

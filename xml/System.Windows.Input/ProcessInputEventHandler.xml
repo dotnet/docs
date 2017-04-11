@@ -1,0 +1,46 @@
+<Type Name="ProcessInputEventHandler" FullName="System.Windows.Input.ProcessInputEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ProcessInputEventHandler(object sender, ProcessInputEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessInputEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ProcessInputEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.ProcessInputEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Input.InputManager.PostProcessInput" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ProcessInputEventHandler> is used with the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ Process input events enable access to the <xref:System.Windows.Input.InputManager> staging area, which processes input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+  
+ Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+  
+1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
+  
+2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
+  
+3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
+  
+4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
+  
+5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

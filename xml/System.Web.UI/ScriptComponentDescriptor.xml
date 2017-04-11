@@ -1,0 +1,280 @@
+<Type Name="ScriptComponentDescriptor" FullName="System.Web.UI.ScriptComponentDescriptor">
+  <TypeSignature Language="C#" Value="public class ScriptComponentDescriptor : System.Web.UI.ScriptDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptComponentDescriptor extends System.Web.UI.ScriptDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptComponentDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ScriptDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a wrapper for converting server components into client script.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class uses an internal dictionary to hold references to components, elements, properties, and events. To populate this dictionary, use the <xref:System.Web.UI.ScriptComponentDescriptor.AddComponentProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddElementProperty%2A>, <xref:System.Web.UI.ScriptComponentDescriptor.AddProperty%2A>, and <xref:System.Web.UI.ScriptComponentDescriptor.AddEvent%2A> methods. When you are finished, call the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method to generate the client script.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptComponentDescriptor (string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the target client component.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Web.UI.ScriptComponentDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddComponentProperty">
+      <MemberSignature Language="C#" Value="public void AddComponentProperty (string name, string componentID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddComponentProperty(string name, string componentID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.AddComponentProperty(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="componentID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="componentID">The ID of the target component.</param>
+        <summary>Adds the specified property, and associates that property with the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the specified property to the internal dictionary of properties that are used by the control and converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="componentID" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddElementProperty">
+      <MemberSignature Language="C#" Value="public void AddElementProperty (string name, string elementID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddElementProperty(string name, string elementID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.AddElementProperty(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="elementID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="elementID">The ID of the target element.</param>
+        <summary>Adds the specified property and associates that property with the specified component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the specified property to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="component" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public void AddEvent (string name, string handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEvent(string name, string handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.AddEvent(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="handler" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the event.</param>
+        <param name="handler">The name of the handler function for the specified event.</param>
+        <summary>Adds the specified event and handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the event and handler to the internal dictionary of events that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> or <paramref name="handler" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="public void AddProperty (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddProperty(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.AddProperty(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="value">The value of the property.</param>
+        <summary>Adds the specified property and value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the property and value to the internal dictionary of properties that are converted to client script by the <xref:System.Web.UI.ScriptComponentDescriptor.GetScript%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddScriptProperty">
+      <MemberSignature Language="C#" Value="public void AddScriptProperty (string name, string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddScriptProperty(string name, string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.AddScriptProperty(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <param name="script">The script that is rendered to the browser.</param>
+        <summary>Adds the specified property, and associates the property with the specified script.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.ScriptComponentDescriptor.AddScriptProperty%2A> method to render script that is not serialized to the browser.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="script" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientID">
+      <MemberSignature Language="C#" Value="public virtual string ClientID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptComponentDescriptor.ClientID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the identifier of the client component.</summary>
+        <value>The ID of the client component.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScript">
+      <MemberSignature Language="C#" Value="protected override string GetScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptComponentDescriptor.GetScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the client script that implements the target control on the page.</summary>
+        <returns>The client script that implements the target control on the page.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public virtual string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptComponentDescriptor.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of the current <see cref="T:System.Web.UI.ScriptComponentDescriptor" /> instance.</summary>
+        <value>The ID of the current <see cref="T:System.Web.UI.ScriptComponentDescriptor" /> instance, if set; otherwise, an empty string ("").</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptComponentDescriptor.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the target client component.</summary>
+        <value>The type of the target client component.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">An attempt was made to set the property to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

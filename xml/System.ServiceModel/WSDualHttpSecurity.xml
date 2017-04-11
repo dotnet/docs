@@ -1,0 +1,158 @@
+<Type Name="WSDualHttpSecurity" FullName="System.ServiceModel.WSDualHttpSecurity">
+  <TypeSignature Language="C#" Value="public sealed class WSDualHttpSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WSDualHttpSecurity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the security settings for the <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies the security settings for the `wsDualHttpBinding` binding.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSDualHttpSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpSecurity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSDualHttpSecurity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.MessageSecurityOverHttp Message { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageSecurityOverHttp Message" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpSecurity.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MessageSecurityOverHttp</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message-level security properties for the <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
+        <value>A <see cref="T:System.ServiceModel.MessageSecurityOverHttp" /> value. The default values include: <see cref="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" /> is <see cref="F:System.ServiceModel.MessageCredentialType.Windows" />, <see cref="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" /> is <see cref="P:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256" />, and <see cref="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" /> is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned specifies detailed message-level security properties for the `wsDualHttpBinding` binding.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite%2A> property by accessing this property.  
+  
+ [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
+ [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.WSDualHttpSecurityMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.WSDualHttpSecurityMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSDualHttpSecurity.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.WSDualHttpSecurityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security mode for the parent <see cref="T:System.ServiceModel.WSDualHttpBinding" />.</summary>
+        <value>A value from the <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" /> enumeration. The default is <see cref="F:System.ServiceModel.WSDualHttpSecurityMode.Message" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property determines whether message-level security is applied to the binding.  
+  
+   
+  
+## Examples  
+ The following code shows how to set this property.  
+  
+ [!code-csharp[S_UEWSDualHttpSecurity#30](~/samples/snippets/csharp/VS_Snippets_CFX/s_uewsdualhttpsecurity/cs/program.cs#30)]
+ [!code-vb[S_UEWSDualHttpSecurity#30](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdualhttpsecurity/vb/module1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is not a valid <see cref="T:System.ServiceModel.WSDualHttpSecurityMode" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeMessage">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpSecurity.ShouldSerializeMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Message" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Message" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeMode">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeMode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSDualHttpSecurity.ShouldSerializeMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Mode" /> property has changed from its default value and should be serialized. This is used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.WSDualHttpSecurity.Mode" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

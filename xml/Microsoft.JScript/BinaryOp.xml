@@ -1,0 +1,145 @@
+<Type Name="BinaryOp" FullName="Microsoft.JScript.BinaryOp">
+  <TypeSignature Language="C#" Value="public abstract class BinaryOp : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BinaryOp extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BinaryOp" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for classes that perform operations on two operands, such as <see cref="T:Microsoft.JScript.Plus" />, <see cref="T:Microsoft.JScript.Equality" />, and <see cref="T:Microsoft.JScript.Relational" />. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetOperator">
+      <MemberSignature Language="C#" Value="protected System.Reflection.MethodInfo GetOperator (System.Reflection.IReflect ir1, System.Reflection.IReflect ir2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Reflection.MethodInfo GetOperator(class System.Reflection.IReflect ir1, class System.Reflection.IReflect ir2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BinaryOp.GetOperator(System.Reflection.IReflect,System.Reflection.IReflect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ir1" Type="System.Reflection.IReflect" />
+        <Parameter Name="ir2" Type="System.Reflection.IReflect" />
+      </Parameters>
+      <Docs>
+        <param name="ir1">The data type of the first operand.</param>
+        <param name="ir2">The data type of the second operand.</param>
+        <summary>Determines the best method to call based on the operation that is requested and the data types of the operands.</summary>
+        <returns>The recommended method to call on the operands.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="operand1">
+      <MemberSignature Language="C#" Value="protected Microsoft.JScript.AST operand1;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.JScript.AST operand1" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.AST</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the first operand of the operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="operand2">
+      <MemberSignature Language="C#" Value="protected Microsoft.JScript.AST operand2;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.JScript.AST operand2" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operand2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.AST</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the second operand of the operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="operatorMeth">
+      <MemberSignature Language="C#" Value="protected System.Reflection.MethodInfo operatorMeth;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.MethodInfo operatorMeth" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorMeth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the operation that is actually performed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="operatorTok">
+      <MemberSignature Language="C#" Value="protected Microsoft.JScript.JSToken operatorTok;" />
+      <MemberSignature Language="ILAsm" Value=".field family valuetype Microsoft.JScript.JSToken operatorTok" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.operatorTok" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the operation that is requested. One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="type1">
+      <MemberSignature Language="C#" Value="protected Type type1;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Type type1" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the data type of the first operand of the operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="type2">
+      <MemberSignature Language="C#" Value="protected Type type2;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Type type2" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.BinaryOp.type2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the data type of the second operand of the operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

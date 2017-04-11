@@ -1,0 +1,117 @@
+<Type Name="PlatformCulture" FullName="Microsoft.Windows.Themes.PlatformCulture">
+  <TypeSignature Language="C#" Value="public static class PlatformCulture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PlatformCulture extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.PlatformCulture" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Aero</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Classic</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Luna</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Royale</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides culture-specific information used by the [!INCLUDE[TLA#tla_avalonwinfx](~/includes/tlasharptla-avalonwinfx-md.md)] system themes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_PlatformCulture"></a>   
+## XAML Attribute Usage  
+ `<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
+  
+<a name="xamlValues_PlatformCulture"></a>   
+## XAML Values  
+ *x:Static*  
+ The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+  
+ *theme*  
+ An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public static System.Windows.FlowDirection FlowDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.PlatformCulture.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.AeroLite</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Classic</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Royale</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the primary text advance direction shall be left-to-right, right-to-left, or top-to-bottom.</summary>
+        <value>One of the enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_FlowDirection"></a>   
+## XAML Attribute Usage  
+ `<` *object property* `="{x:Static theme:PlatformCulture.FlowDirection}"/>`  
+  
+<a name="xamlValues_FlowDirection"></a>   
+## XAML Values  
+ *x:Static*  
+ The [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
+  
+ *theme*  
+ An xmlns prefix mapping to the <xref:Microsoft.Windows.Themes> [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] namespace in a specific assembly.  
+  
+ <Grid  
+  
+ FlowDirection="{x:Static theme:PlatformCulture.FlowDirection}"  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,372 @@
+<Type Name="CryptoProvider" FullName="System.Security.RightsManagement.CryptoProvider">
+  <TypeSignature Language="C#" Value="public class CryptoProvider : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CryptoProvider extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.CryptoProvider" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides digital rights management services for encrypting and decrypting protected content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.CryptoProvider> is created as a result of the <xref:System.Security.RightsManagement.UseLicense.Bind%2A> method when binding a rights managed <xref:System.Security.RightsManagement.UseLicense> to a <xref:System.Security.RightsManagement.SecureEnvironment>.  
+  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.CryptoProvider> is only usable in full trust applications.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider> class to create an <xref:System.IO.Packaging.EncryptedPackageEnvelope>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlockSize">
+      <MemberSignature Language="C#" Value="public int BlockSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.CryptoProvider.BlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cipher block size, in bytes.</summary>
+        <value>The cipher block size, in bytes.  The default block size for [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] is 8.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `clearText` and `cipherText` buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> and <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> must be n*<xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length, where 'n' is an integer greater than or equal to 1.  
+  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is `false`, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> must be the same length as the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A>.  
+  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is `true`, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> can be a different length from the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> (all buffer sizes must still always be a multiple of <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length).  
+  
+ A <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> of 1 indicates that the cipher is a stream cipher; a <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> of 2 or greater indicates a block cipher.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> property in converting clear-text data to encrypted-text data.  
+  
+ [!code-csharp[RightsManagedContentPublish#RmContPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedContentPublish/CSharp/Window1.xaml.cs#rmcontpubencrypt)]
+ [!code-vb[RightsManagedContentPublish#RmContPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedContentPublish/visualbasic/window1.xaml.vb#rmcontpubencrypt)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundGrants">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.RightsManagement.ContentGrant&gt; BoundGrants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.RightsManagement.ContentGrant&gt; BoundGrants" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.CryptoProvider.BoundGrants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.RightsManagement.ContentGrant&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection listing the rights that passed verification and that are granted to the user.</summary>
+        <value>A collection enumerating the rights that passed verification and that are granted to the user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider.BoundGrants%2A> property to obtain a list rights granted through a <xref:System.Security.RightsManagement.UseLicense>.  
+  
+ [!code-csharp[RightsManagedContentViewer#RmContViewUseLicense](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedContentViewer/CSharp/Window1.xaml.cs#rmcontviewuselicense)]
+ [!code-vb[RightsManagedContentViewer#RmContViewUseLicense](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedContentViewer/visualbasic/window1.xaml.vb#rmcontviewuselicense)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDecrypt">
+      <MemberSignature Language="C#" Value="public bool CanDecrypt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDecrypt" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.CryptoProvider.CanDecrypt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the user has rights to decrypt.</summary>
+        <value>**true** if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to decrypt; otherwise, **false**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns **true** if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user read access rights such as View, Edit, Print, or Owner.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> property to determine if decryption is allowed.  
+  
+ [!code-csharp[RightsManagedContentViewer#RmContViewUseLicense](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedContentViewer/CSharp/Window1.xaml.cs#rmcontviewuselicense)]
+ [!code-vb[RightsManagedContentViewer#RmContViewUseLicense](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedContentViewer/visualbasic/window1.xaml.vb#rmcontviewuselicense)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanEncrypt">
+      <MemberSignature Language="C#" Value="public bool CanEncrypt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanEncrypt" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.CryptoProvider.CanEncrypt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the user has rights to encrypt.</summary>
+        <value>**true** if the <see cref="T:System.Security.RightsManagement.UseLicense" /> grants the user rights to encrypt; otherwise, **false**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.CryptoProvider.CanDecrypt%2A> returns **true** if the <xref:System.Security.RightsManagement.UseLicense> bound to this <xref:System.Security.RightsManagement.CryptoProvider> grants the user write access rights such as Edit or Owner.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanMergeBlocks">
+      <MemberSignature Language="C#" Value="public bool CanMergeBlocks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanMergeBlocks" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> can accept buffers that are different block sizes in length.</summary>
+        <value>**true** if the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> can be a different length from the buffer passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />; otherwise, **false** if the buffers passed to <see cref="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" /> and <see cref="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" /> must be the exact same length.  For [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] the default is **true**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `clearText` and `cipherText` buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> and <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> must be n*<xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length, where 'n' is an integer greater than or equal to 1.  
+  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is **false**, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> must be the same length as the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A>.  
+  
+ If <xref:System.Security.RightsManagement.CryptoProvider.CanMergeBlocks%2A> is **true**, buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> can be a different length from the buffers passed to <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> (all buffer sizes must still always be a multiple of <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> bytes in length).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public byte[] Decrypt (byte[] cryptoText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Decrypt(unsigned int8[] cryptoText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cryptoText" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="cryptoText">The cipher text to decrypt.</param>
+        <summary>Decrypts cipher text to clear text.</summary>
+        <returns>The decrypted clear text of <paramref name="cryptoText" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider.Decrypt%2A> method to convert encrypted data to unencrypted data.  
+  
+ [!code-csharp[RightsManagedContentViewer#RmContViewDecrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedContentViewer/CSharp/Window1.xaml.cs#rmcontviewdecrypt)]
+ [!code-vb[RightsManagedContentViewer#RmContViewDecrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedContentViewer/visualbasic/window1.xaml.vb#rmcontviewdecrypt)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cipherText" /> is null.</exception>
+        <exception cref="T:System.Security.RightsManagement.RightsManagementException">Decryption right not granted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.CryptoProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.RightsManagement.CryptoProvider" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(**true**).  
+  
+ Call <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> when you are finished using the <xref:System.Security.RightsManagement.CryptoProvider>. The <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> method leaves the <xref:System.Security.RightsManagement.CryptoProvider> in an unusable state. After calling <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>, you must release all references to the <xref:System.Security.RightsManagement.CryptoProvider> so the garbage collector can reclaim the memory that the <xref:System.Security.RightsManagement.CryptoProvider> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A> before you release your last reference to the <xref:System.Security.RightsManagement.CryptoProvider>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.RightsManagement.CryptoProvider> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.CryptoProvider.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.RightsManagement.CryptoProvider" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Security.RightsManagement.CryptoProvider> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public byte[] Encrypt (byte[] clearText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encrypt(unsigned int8[] clearText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clearText" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="clearText">The clear text content to encrypt.</param>
+        <summary>Encrypts clear text to cipher text.</summary>
+        <returns>Encrypted cipher text of the given <paramref name="clearText" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The byte length of the `clearText` buffer should be a multiple of the cipher <xref:System.Security.RightsManagement.CryptoProvider.BlockSize%2A> property.  
+  
+ The digital rights management system uses [!INCLUDE[TLA#tla_aes](~/includes/tlasharptla-aes-md.md)] block cipher.  With [!INCLUDE[TLA2#tla_aes](~/includes/tla2sharptla-aes-md.md)], blocks are encrypted independently such that two blocks of identical clear text produce identical cipher text results.  To minimize potential decryption threats from independent block encryption, applications should employ methods to modify content, such as compression, to avoid encrypting identical clear text blocks.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Security.RightsManagement.CryptoProvider.Encrypt%2A> method to convert clear-text data to encrypted-text data.  
+  
+ [!code-csharp[RightsManagedContentPublish#RmContPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedContentPublish/CSharp/Window1.xaml.cs#rmcontpubencrypt)]
+ [!code-vb[RightsManagedContentPublish#RmContPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedContentPublish/visualbasic/window1.xaml.vb#rmcontpubencrypt)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="clearText" /> is null.</exception>
+        <exception cref="T:System.Security.RightsManagement.RightsManagementException">Encryption is not permitted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~CryptoProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.CryptoProvider.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Frees resources and performs internal cleanup before the instance is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.CryptoProvider.Finalize%2A> performs <xref:System.Security.RightsManagement.CryptoProvider.Dispose%2A>(**false**).  
+  
+ This method overrides  <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,156 @@
+<Type Name="ExecutionScope" FullName="System.Runtime.CompilerServices.ExecutionScope">
+  <TypeSignature Language="C#" Value="public class ExecutionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExecutionScope extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ExecutionScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("do not use this type", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the runtime state of a dynamically generated method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.CompilerServices.ExecutionScope> type is used by the expression tree compiler, which is an internal component of the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] expression tree API, and by the dynamic methods that it generates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateDelegate">
+      <MemberSignature Language="C#" Value="public Delegate CreateDelegate (int indexLambda, object[] locals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Delegate CreateDelegate(int32 indexLambda, object[] locals) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateDelegate(System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indexLambda" Type="System.Int32" />
+        <Parameter Name="locals" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="indexLambda">The index of the object that stores information about associated lambda expression of the dynamic method.</param>
+        <param name="locals">An array that contains the hoisted local variables from the parent context.</param>
+        <summary>Creates a delegate that can be used to execute a dynamically generated method.</summary>
+        <returns>A <see cref="T:System.Delegate" /> that can execute a dynamically generated method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHoistedLocals">
+      <MemberSignature Language="C#" Value="public object[] CreateHoistedLocals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object[] CreateHoistedLocals() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.CreateHoistedLocals" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an array to store the hoisted local variables.</summary>
+        <returns>An array to store hoisted local variables.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Globals">
+      <MemberSignature Language="C#" Value="public object[] Globals;" />
+      <MemberSignature Language="ILAsm" Value=".field public object[] Globals" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Globals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the non-trivial constants and locally executable expressions that are referenced by a dynamically generated method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsolateExpression">
+      <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression IsolateExpression (System.Linq.Expressions.Expression expression, object[] locals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.Expression IsolateExpression(class System.Linq.Expressions.Expression expression, object[] locals) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ExecutionScope.IsolateExpression(System.Linq.Expressions.Expression,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Linq.Expressions.Expression" />
+        <Parameter Name="locals" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="expression">An expression tree to free of external parameter references.</param>
+        <param name="locals">An array that contains the hoisted local variables.</param>
+        <summary>Frees a specified expression tree of external parameter references by replacing the parameter with its current value.</summary>
+        <returns>An expression tree that does not contain external parameter references.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locals">
+      <MemberSignature Language="C#" Value="public object[] Locals;" />
+      <MemberSignature Language="ILAsm" Value=".field public object[] Locals" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Locals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the hoisted local variables from the parent context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ExecutionScope Parent;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Runtime.CompilerServices.ExecutionScope Parent" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.ExecutionScope.Parent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.ExecutionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the execution scope of the calling delegate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

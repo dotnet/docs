@@ -1,0 +1,123 @@
+<Type Name="DataGridViewEditingControlShowingEventArgs" FullName="System.Windows.Forms.DataGridViewEditingControlShowingEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewEditingControlShowingEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewEditingControlShowingEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.EditingControlShowing" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event to perform custom initialization of the editing control when a cell enters edit mode. To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A> property.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example illustrates how to handle this event to change the <xref:System.Windows.Forms.DataGridViewCellStyle.BackColor%2A> property of the current cell. To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.DataGridView> named `dataGridView1` and ensure that the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event is associated with the event handler.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#210](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#210)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#210](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#210)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewEditingControlShowingEventArgs (System.Windows.Forms.Control control, System.Windows.Forms.DataGridViewCellStyle cellStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Control control, class System.Windows.Forms.DataGridViewCellStyle cellStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.#ctor(System.Windows.Forms.Control,System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+        <Parameter Name="cellStyle" Type="System.Windows.Forms.DataGridViewCellStyle" />
+      </Parameters>
+      <Docs>
+        <param name="control">A <see cref="T:System.Windows.Forms.Control" /> in which the user will edit the selected cell's contents.</param>
+        <param name="cellStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> representing the style of the cell being edited.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewCellStyle CellStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle CellStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cell style of the edited cell.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> representing the style of the cell being edited.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example illustrates how to handle this event to change the <xref:System.Windows.Forms.DataGridViewCellStyle.BackColor%2A> property of the current cell. To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.DataGridView> named `dataGridView1` and ensure that the <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event is associated with the event handler.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#210](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#210)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#210](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#210)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The specified value when setting this property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control Control" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control shown to the user for editing the selected cell's value.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Control" /> that displays an area for the user to enter or change the selected cell's value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To customize the display characteristics of the control, set the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.CellStyle%2A> property rather than setting the properties of the control returned by the <xref:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs.Control%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this property. In the example, a <xref:System.Windows.Forms.DataGridView.EditingControlShowing?displayProperty=fullName> event handler adds a handler for a <xref:System.Windows.Forms.DataGridViewComboBoxEditingControl> event. The editing control is cast to a <xref:System.Windows.Forms.ComboBox> to handle the <xref:System.Windows.Forms.ComboBox.SelectedIndexChanged?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+<Window x:Class="ContentStringSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:ContentStringSnippets"
+        
+    Title="App - ContentStringSnippets">
+  <Window.Resources>
+    <src:ItemsForSale x:Key="MyData"/>
+  </Window.Resources>
+  <ScrollViewer>
+    <StackPanel>
+
+
+
+      <!--TabControl.ContentStringFormat
+           HeaderedContentControl.HeaderStringFormat-->
+      <Grid>
+        <Grid.Resources>
+          <src:Students x:Key="Students"/>
+
+          <Style TargetType="TabItem">
+            <Setter Property="HeaderStringFormat" Value="n"/>
+            <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
+            <Setter Property="Foreground" Value="Green"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+          </Style>
+        </Grid.Resources>
+
+        <TabControl ItemsSource="{StaticResource Students}"
+                    FontFamily="Lucida Console" Foreground="Navy"
+                    ContentStringFormat="cl"/>
+      </Grid>
+
+      <!--ContentControl-->
+      <StackPanel
+        xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+        <StackPanel.Resources>
+          <Style x:Key="DateLabel" TargetType="Label">
+            <Setter Property="ContentStringFormat" Value="dddd – d - MMMM"/>
+          </Style>
+        </StackPanel.Resources>
+
+        <!--The results when the default culture is en-US
+            is March 4, 2005.-->
+        <Label Style="{StaticResource DateLabel}">
+          <sys:DateTime>2004/3/4 13:6:55</sys:DateTime>
+        </Label>
+
+        <Label Style="{StaticResource DateLabel}">
+          <x:Static Member="sys:DateTime.Now"/>
+        </Label>
+
+      </StackPanel>
+
+      <!--ItemsControl.ItemStringFormat-->
+      <ListBox xmlns:sys="clr-namespace:System;assembly=mscorlib"
+               ItemStringFormat="MMMM d, yyyy">
+        <sys:DateTime>2004/3/4</sys:DateTime>
+        <sys:DateTime>2004/8/9</sys:DateTime>
+        <sys:DateTime>2005/10/14</sys:DateTime>
+        <sys:DateTime>2005/4/8</sys:DateTime>
+      </ListBox>
+        
+        <!--The results when the default culture is en-US:
+            March 4, 2004
+            August 9, 2004
+            October 14, 2005,
+            April 8, 2005-->
+      
+      <!--Binding.StringFormat (on a MultiBinding)-->
+      <ListBox ItemsSource="{StaticResource MyData}">
+
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+            <TextBlock>
+              <TextBlock.Text>
+                <MultiBinding  StringFormat="{}{0} -- Now only {1:C}!">
+                  <Binding Path="Description"/>
+                  <Binding Path="Price"/>
+                </MultiBinding>
+              </TextBlock.Text>
+            </TextBlock>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+
+      <!--Binding.StringFormat (on a Binding)-->
+      <ListView ItemsSource="{StaticResource MyData}">
+        <ListView.View>
+          <GridView>
+            <GridViewColumn DisplayMemberBinding="{Binding Path=Description}"/>
+            <GridViewColumn DisplayMemberBinding="{Binding Path=Price, StringFormat=Now {0:c}!}"/>
+          </GridView>
+        </ListView.View>
+      </ListView>
+
+      <StackPanel>
+        <StackPanel.Resources>
+
+            <src:ItemsForSale x:Key="MyData"/>
+            <src:GroupByPrice x:Key="GroupByPrice"/>
+        
+            <CollectionViewSource x:Key="PriceGroup" Source="{StaticResource MyData}">
+            
+              <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="Price"
+                                          Converter="{StaticResource GroupByPrice}"/>
+            </CollectionViewSource.GroupDescriptions>
+          </CollectionViewSource>
+        </StackPanel.Resources>
+        
+        <ListBox ItemsSource="{Binding Source={StaticResource PriceGroup}}"
+                 DisplayMemberPath="Description">
+          <ListBox.GroupStyle>
+            <GroupStyle HeaderStringFormat="Items under {0:c}"/>
+          </ListBox.GroupStyle>
+        </ListBox>
+      </StackPanel>
+    </StackPanel>
+  </ScrollViewer>
+</Window>
+
+    

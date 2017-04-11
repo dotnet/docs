@@ -1,0 +1,76 @@
+<Type Name="IClientOperationSelector" FullName="System.ServiceModel.Dispatcher.IClientOperationSelector">
+  <TypeSignature Language="C#" Value="public interface IClientOperationSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientOperationSelector" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IClientOperationSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract for an operation selector.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Dispatcher.IClientOperationSelector> interface to create a custom operation selector that can be attached to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.OperationSelector%2A> property to choose contract operations to invoke based upon the proxy method called.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AreParametersRequiredForSelection">
+      <MemberSignature Language="C#" Value="public bool AreParametersRequiredForSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AreParametersRequiredForSelection" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.IClientOperationSelector.AreParametersRequiredForSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether parameters are required to determine the selection.</summary>
+        <value>
+          <see langword="true" /> if parameters are required; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned is `false` unless the user has overloaded methods. If false is returned then the array of objects passed to <xref:System.ServiceModel.Dispatcher.IClientOperationSelector.SelectOperation%2A> is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectOperation">
+      <MemberSignature Language="C#" Value="public string SelectOperation (System.Reflection.MethodBase method, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectOperation(class System.Reflection.MethodBase method, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientOperationSelector.SelectOperation(System.Reflection.MethodBase,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Reflection.MethodBase" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="method">The method invoked.</param>
+        <param name="parameters">The parameters passed to the method.</param>
+        <summary>Returns the selected operation.</summary>
+        <returns>The operation selected by the custom operation selector.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

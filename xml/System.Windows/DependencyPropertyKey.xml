@@ -1,0 +1,125 @@
+<Type Name="DependencyPropertyKey" FullName="System.Windows.DependencyPropertyKey">
+  <TypeSignature Language="C#" Value="public sealed class DependencyPropertyKey" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DependencyPropertyKey extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyKey" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a dependency property identifier for limited write access to a read-only dependency property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.DependencyPropertyKey> instances are obtained as the return value of a dependency property registration call using the methods <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A> or <xref:System.Windows.DependencyProperty.RegisterAttachedReadOnly%2A>.  
+  
+ The types that register a dependency property can use the <xref:System.Windows.DependencyPropertyKey> in calls to <xref:System.Windows.DependencyObject.SetValue%2A> and <xref:System.Windows.DependencyObject.ClearValue%2A> that adjust the property's value as part of class logic. If permitted by the access level of the key, related classes can use the key and the dependency property also. For instance, you can declare the key as internal, and other types within the same assembly can also set that dependency property.  
+  
+ The <xref:System.Windows.DependencyPropertyKey> returned by read-only dependency property registration should not be made public, because exposing the key makes the property settable, thus defeating the point of registering it as a read-only dependency property. Also, exposing the key causes a mismatch between the available dependency property behaviors and its [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property wrapper implementations, which is bad class design.  
+  
+ Instead of exposing the key itself, you should instead expose the <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A> value of the <xref:System.Windows.DependencyPropertyKey> as a `public static readonly`<xref:System.Windows.DependencyProperty> on your class. This enables the property to return a valid dependency property identifier for certain property system operations such as enumerating locally set values. However, the identifier thus obtained does not have the full capabilities of a <xref:System.Windows.DependencyProperty> for many property system operations.  
+  
+   
+  
+## Examples  
+ The following example registers a read-only dependency property, and also uses the key for two purposes in other class members: implementing the get "wrapper", and as the identifier for a protected determination operation that sets the value based on calculations of other property values.  
+  
+ [!code-csharp[WPFAquariumSln#RODP](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#rodp)]
+ [!code-vb[WPFAquariumSln#RODP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#rodp)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DependencyProperty">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty DependencyProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty DependencyProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DependencyPropertyKey.DependencyProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dependency property identifier associated with this specialized read-only dependency property identifier.</summary>
+        <value>The relevant dependency property identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A> value enables a read-only property's identifier to participate in common property system operations using some of the same interfaces as used for read-write dependency properties.  
+  
+ In order to implement the get property accessor for a read-only dependency property, you should create and expose a <xref:System.Windows.DependencyProperty> identifier on your class. This serves two purposes:  
+  
+-   Your own class needs the <xref:System.Windows.DependencyProperty> identifier in order to implement the get accessor for the property wrapper. You use the <xref:System.Windows.DependencyProperty> as a parameter for the <xref:System.Windows.DependencyObject.GetValue%2A> call that implements the get accessor.  
+  
+-   <xref:System.Windows.DependencyProperty> identifiers expose your dependency property to the property system such that other methods that rely on metadata can access it in a standard form. For instance, if you called <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> on some <xref:System.Windows.DependencyObject> and obtained an enumeration of locally set properties (values and identifiers) the identifier returned for a read-only dependency property would be your <xref:System.Windows.DependencyProperty> value rather than the key. Not exposing a <xref:System.Windows.DependencyProperty> identifier does not increase the security of your read-only dependency property in any way, it just makes operations that involve your property more awkward both for subsequent derived classes and class instances.  
+  
+ To expose the  <xref:System.Windows.DependencyProperty> identifier on your class, you call <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A> directly on your key. Use this value to create a `public static readonly`<xref:System.Windows.DependencyProperty> identifier on the class, which parallels the <xref:System.Windows.DependencyPropertyKey>.  
+  
+   
+  
+## Examples  
+ The following example calls <xref:System.Windows.DependencyPropertyKey.DependencyProperty%2A> to expose the <xref:System.Windows.DependencyProperty> identifier (`AquariumGraphicProperty`) for the `AquariumGraphic` read-only dependency property on a class. The example also shows the <xref:System.Windows.DependencyPropertyKey> creation (as an internal member) and the get accessor for `AquariumGraphic`.  
+  
+ [!code-csharp[WPFAquariumSln#RODP](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#rodp)]
+ [!code-vb[WPFAquariumSln#RODP](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#rodp)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideMetadata">
+      <MemberSignature Language="C#" Value="public void OverrideMetadata (Type forType, System.Windows.PropertyMetadata typeMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OverrideMetadata(class System.Type forType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyKey.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="forType" Type="System.Type" />
+        <Parameter Name="typeMetadata" Type="System.Windows.PropertyMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="forType">The type on which this dependency property exists and metadata should be overridden.</param>
+        <param name="typeMetadata">Metadata supplied for this type.</param>
+        <summary>Overrides the metadata of a read-only dependency property that is represented by this dependency property identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overriding metadata on a read-only dependency property is done for similar reasons as overriding metadata on a read-write dependency property, and is restricted to access at the key level because behaviors specified in the metadata can change the set behavior (the default value, for instance).  
+  
+ As with read-write dependency properties, overriding metadata on a read-only dependency property should only be done prior to that property being placed in use by the property system (this equates to the time that specific instances of objects that register the property are instantiated). Calls to <xref:System.Windows.DependencyPropertyKey.OverrideMetadata%2A> should only be performed within the static constructors of the type that provides itself as the `forType` parameter of this method, or equivalent initialization for that class.  
+  
+ This method effectively forwards to the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method, passing the <xref:System.Windows.DependencyPropertyKey> instance as the key parameter.  
+  
+   
+  
+## Examples  
+ The following example overrides metadata for an existing read-only dependency property that a class inherits. In this case, the scenario goal was to add a coerce value callback that the base property metadata did not have. You could also override metadata for any of the other reasons that overriding metadata is typically appropriate (changing default value, adding <xref:System.Windows.FrameworkPropertyMetadataOptions> values, etc.)  
+  
+ [!code-csharp[WPFAquariumSln#RODPOverride](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#rodpoverride)]
+ [!code-vb[WPFAquariumSln#RODPOverride](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#rodpoverride)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempted metadata override on a read-write dependency property (cannot be done using this signature).</exception>
+        <exception cref="T:System.ArgumentException">Metadata was already established for the property as it exists on the provided type.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

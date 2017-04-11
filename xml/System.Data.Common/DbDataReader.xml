@@ -1,0 +1,2180 @@
+<Type Name="DbDataReader" FullName="System.Data.Common.DbDataReader">
+  <TypeSignature Language="C#" Value="public abstract class DbDataReader : MarshalByRefObject, IDisposable, System.Collections.IEnumerable, System.Data.IDataReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbDataReader extends System.MarshalByRefObject implements class System.Collections.IEnumerable, class System.Data.IDataReader, class System.Data.IDataRecord, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.IDataReader</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Reads a forward-only stream of rows from a data source.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DbDataReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Common.DbDataReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the <see cref="T:System.Data.Common.DbDataReader" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Depth">
+      <MemberSignature Language="C#" Value="public abstract int Depth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Depth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the depth of nesting for the current row.</summary>
+        <value>The depth of nesting for the current row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The outermost table has a depth of zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Data.Common.DbDataReader" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Data.Common.DbDataReader>. The `Dispose` method leaves the <xref:System.Data.Common.DbDataReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Data.Common.DbDataReader> so the garbage collector can reclaim the memory that the <xref:System.Data.Common.DbDataReader> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Data.Common.DbDataReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Data.Common.DbDataReader> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the managed resources used by the <see cref="T:System.Data.Common.DbDataReader" /> and optionally releases the unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Data.SqlClient.SqlDataReader.Close%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldCount">
+      <MemberSignature Language="C#" Value="public abstract int FieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.FieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of columns in the current row.</summary>
+        <value>The number of columns in the current row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Includes hidden fields. Use <xref:System.Data.Common.DbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public abstract bool GetBoolean (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetBoolean(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetBoolean(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a Boolean.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public abstract byte GetByte (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8 GetByte(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a byte.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public abstract long GetBytes (int ordinal, long dataOffset, byte[] buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetBytes(int32 ordinal, int64 dataOffset, unsigned int8[] buffer, int32 bufferOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataOffset" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <param name="dataOffset">The index within the row from which to begin the read operation.</param>
+        <param name="buffer">The buffer into which to copy the data.</param>
+        <param name="bufferOffset">The index with the buffer to which the data will be copied.</param>
+        <param name="length">The maximum number of characters to read.</param>
+        <summary>Reads a stream of bytes from the specified column, starting at location indicated by <paramref name="dataOffset" />, into the buffer, starting at the location indicated by <paramref name="bufferOffset" />.</summary>
+        <returns>The actual number of bytes read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public abstract char GetChar (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char GetChar(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetChar(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a single character.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public abstract long GetChars (int ordinal, long dataOffset, char[] buffer, int bufferOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetChars(int32 ordinal, int64 dataOffset, char[] buffer, int32 bufferOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataOffset" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="bufferOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <param name="dataOffset">The index within the row from which to begin the read operation.</param>
+        <param name="buffer">The buffer into which to copy the data.</param>
+        <param name="bufferOffset">The index with the buffer to which the data will be copied.</param>
+        <param name="length">The maximum number of characters to read.</param>
+        <summary>Reads a stream of characters from the specified column, starting at location indicated by <paramref name="dataOffset" />, into the buffer, starting at the location indicated by <paramref name="bufferOffset" />.</summary>
+        <returns>The actual number of characters read.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public System.Data.Common.DbDataReader GetData (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbDataReader GetData(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal.</summary>
+        <returns>A <see cref="T:System.Data.Common.DbDataReader" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeName">
+      <MemberSignature Language="C#" Value="public abstract string GetDataTypeName (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDataTypeName(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDataTypeName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets name of the data type of the specified column.</summary>
+        <returns>A string representing the name of the data type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+```  
+private static void GetDataTypes(String connectiongString) {       
+   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+      String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";  
+      using (DbCommand command = new SqlCommand(queryString, conn)) {  
+         conn.Open();               
+         using (DbDataReader reader = command.ExecuteReader()) {  
+            for (Int32 i = 0; i < reader.FieldCount; i++) {  
+               Console.WriteLine("ColumnName:{0,-15}DataType:{1,-15}",reader.GetName(i),reader.GetDataTypeName(i));  
+            }  
+         }  
+      }  
+   }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public abstract DateTime GetDateTime (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime GetDateTime(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDateTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDbDataReader">
+      <MemberSignature Language="C#" Value="protected virtual System.Data.Common.DbDataReader GetDbDataReader (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbDataReader GetDbDataReader(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDbDataReader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal that can be overridden with a provider-specific implementation.</summary>
+        <returns>A <see cref="T:System.Data.Common.DbDataReader" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public abstract decimal GetDecimal (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Decimal GetDecimal(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDecimal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Decimal" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public abstract double GetDouble (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetDouble(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDouble(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a double-precision floating point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can use this method to retrieve an explicit constructor, in languages that support an explicit **foreach** construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+  
+ If you implement this method, it should return a new instance of <xref:System.Data.Common.DbEnumerator> or ensure that your enumerator returns <xref:System.Data.IDataRecord> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldType">
+      <MemberSignature Language="C#" Value="public abstract Type GetFieldType (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetFieldType(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the data type of the specified column.</summary>
+        <returns>The data type of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual T GetFieldValue&lt;T&gt; (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetFieldValue&lt;T&gt;(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValue``1(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Synchronously gets the value of the specified column as a type.</typeparam>
+        <param name="ordinal">The column to be retrieved.</param>
+        <summary>Synchronously gets the value of the specified column as a type.</summary>
+        <returns>The column to be retrieved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="T" /> doesn’t match the type returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or cannot be cast.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValueAsync``1(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <param name="ordinal">The type of the value to be returned.</param>
+        <summary>Asynchronously gets the value of the specified column as a type.</summary>
+        <returns>The type of the value to be returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `T` can be one of the following types:  
+  
+|||||  
+|-|-|-|-|  
+|Boolean|Byte|Char|DateTime|  
+|DateTimeOffset|Decimal|Double|Float|  
+|Guid|Int16|Int32|Int64|  
+|String||||  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="T" /> doesn’t match the type returned by the data source  or cannot be cast.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldValueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (int ordinal, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 ordinal, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value to be returned. See the remarks section for more information.</typeparam>
+        <param name="ordinal">The type of the value to be returned.</param>
+        <param name="cancellationToken">The cancellation instruction, which propagates a notification that operations should be canceled. This does not guarantee the cancellation. A setting of <see langword="CancellationToken.None" /> makes this method equivalent to <see cref="M:System.Data.Common.DbDataReader.GetFieldValueAsync``1(System.Int32)" />. The returned task must be marked as cancelled.</param>
+        <summary>Asynchronously gets the value of the specified column as a type.</summary>
+        <returns>The type of the value to be returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `T` can be one of the following types:  
+  
+|||||  
+|-|-|-|-|  
+|Boolean|Byte|Char|DateTime|  
+|DateTimeOffset|Decimal|Double|Float|  
+|Guid|Int16|Int32|Int64|  
+|String||||  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="T" /> doesn’t match the type returned by the data source or cannot be cast.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public abstract float GetFloat (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 GetFloat(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFloat(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a single-precision floating point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public abstract Guid GetGuid (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetGuid(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetGuid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a globally-unique identifier (GUID).</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public abstract short GetInt16 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int16 GetInt16(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 16-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public abstract int GetInt32 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetInt32(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 32-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+```  
+private static void GetCredits(String connectiongString) {  
+   using (SqlConnection conn = new SqlConnection(connectiongString)) {  
+      String queryString = "Select [CourseID],[Title],[Credits] from [MySchool].[dbo].[Course]";   
+      using (DbCommand command = new SqlCommand(queryString, conn)) {  
+         conn.Open();   
+         using (DbDataReader reader = command.ExecuteReader()) {  
+            while (reader.Read()) {  
+               // Credits column is the integer column, and you can use the GetInt32 method                        
+               // to return a a 32-bit signed integer.                       
+               Console.WriteLine("Course:{0,-15} Credits:{1}",reader[1],reader.GetInt32(2));   
+            }  
+         }  
+      }  
+   }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public abstract long GetInt64 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetInt64(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 64-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public abstract string GetName (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the name of the column, given the zero-based column ordinal.</summary>
+        <returns>The name of the specified column.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrdinal">
+      <MemberSignature Language="C#" Value="public abstract int GetOrdinal (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetOrdinal(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetOrdinal(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the column.</param>
+        <summary>Gets the column ordinal given the name of the column.</summary>
+        <returns>The zero-based column ordinal.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificFieldType">
+      <MemberSignature Language="C#" Value="public virtual Type GetProviderSpecificFieldType (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetProviderSpecificFieldType(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificFieldType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Returns the provider-specific field type of the specified column.</summary>
+        <returns>The <see cref="T:System.Type" /> object that describes the data type of the specified column.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificValue">
+      <MemberSignature Language="C#" Value="public virtual object GetProviderSpecificValue (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProviderSpecificValue(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the specific type of the object returned, use <xref:System.Data.Common.DbDataReader.GetProviderSpecificFieldType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderSpecificValues">
+      <MemberSignature Language="C#" Value="public virtual int GetProviderSpecificValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetProviderSpecificValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
+        <summary>Gets all provider-specific attribute columns in the collection for the current row.</summary>
+        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchemaTable">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataTable GetSchemaTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetSchemaTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataTable" /> that describes the column metadata of the <see cref="T:System.Data.Common.DbDataReader" />.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetStream (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetStream(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetStream(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">Retrieves data as a <see cref="T:System.IO.Stream" />.</param>
+        <summary>Retrieves data as a <see cref="T:System.IO.Stream" />.</summary>
+        <returns>The returned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Common.DbDataReader.GetStream%2A> only supports the retrieval of values that can be converted to byte arrays.  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
+  
+-   binary  
+  
+-   image  
+  
+-   varbinary  
+  
+-   udt</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public abstract string GetString (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as an instance of <see cref="T:System.String" />.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextReader">
+      <MemberSignature Language="C#" Value="public virtual System.IO.TextReader GetTextReader (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.TextReader GetTextReader(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetTextReader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">Retrieves data as a <see cref="T:System.IO.TextReader" />.</param>
+        <summary>Retrieves data as a <see cref="T:System.IO.TextReader" />.</summary>
+        <returns>The returned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Common.DbDataReader.GetTextReader%2A> only supports the retrieval of values that can be converted to character arrays (strings).  
+  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Tried to read a previously-read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
+  
+-   char  
+  
+-   nchar  
+  
+-   ntext  
+  
+-   nvarchar  
+  
+-   text  
+  
+-   varchar</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public abstract object GetValue (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public abstract int GetValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
+        <summary>Populates an array of objects with the column values of the current row.</summary>
+        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasRows">
+      <MemberSignature Language="C#" Value="public abstract bool HasRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.HasRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Data.Common.DbDataReader" /> contains one or more rows.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Common.DbDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClosed">
+      <MemberSignature Language="C#" Value="public abstract bool IsClosed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.IsClosed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.Common.DbDataReader" /> is closed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Common.DbDataReader" /> is closed; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
+        <block subset="none" type="overrides">
+          <para>This property and <see cref="P:System.Data.Common.DbDataReader.RecordsAffected" /> should be implemented to return a value when the reader is closed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNull">
+      <MemberSignature Language="C#" Value="public abstract bool IsDBNull (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDBNull(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets a value that indicates whether the column contains nonexistent or missing values.</summary>
+        <returns>
+          <see langword="true" /> if the specified column is equivalent to <see cref="T:System.DBNull" />; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to check for null column values before calling the typed get methods (for example, <xref:System.Data.Common.DbDataReader.GetByte%2A>, <xref:System.Data.Common.DbDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNullAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNullAsync(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column to be retrieved.</param>
+        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />, which gets a value that indicates whether the column contains non-existent or missing values.</summary>
+        <returns>
+          <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Trying to read a previously read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNullAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (int ordinal, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 ordinal, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNullAsync(System.Int32,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column to be retrieved.</param>
+        <param name="cancellationToken">The cancellation instruction, which propagates a notification that operations should be canceled. This does not guarantee the cancellation. A setting of <see langword="CancellationToken.None" /> makes this method equivalent to <see cref="M:System.Data.Common.DbDataReader.IsDBNullAsync(System.Int32)" />. The returned task must be marked as cancelled.</param>
+        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />, which gets a value that indicates whether the column contains non-existent or missing values. Optionally, sends a notification that operations should be cancelled.</summary>
+        <returns>
+          <see langword="true" /> if the specified column value is equivalent to <see langword="DBNull" /> otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+  
+ The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
+  
+ There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
+  
+ Trying to read a previously read column in sequential mode.  
+  
+ There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract object this[int ordinal] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
+        <value>The value of the specified column.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract object this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the column.</param>
+        <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
+        <value>The value of the specified column.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResult">
+      <MemberSignature Language="C#" Value="public abstract bool NextResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NextResult() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the reader to the next result when reading the results of a batch of statements.</summary>
+        <returns>
+          <see langword="true" /> if there are more result sets; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows you to process multiple result sets returned when a batch is submitted to the data provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResultAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; NextResultAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResultAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.NextResult" />, which advances the reader to the next result when reading the results of a batch of statements.  
+  
+ Invokes <see cref="M:System.Data.Common.DbDataReader.NextResultAsync(System.Threading.CancellationToken)" /> with CancellationToken.None.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResultAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; NextResultAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResultAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation instruction.</param>
+        <summary>This is the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.NextResult" />. Providers should override with an appropriate implementation. The <paramref name="cancellationToken" /> may optionally be ignored.  
+  
+ The default implementation invokes the synchronous <see cref="M:System.Data.Common.DbDataReader.NextResult" /> method and returns a completed task, blocking the calling thread. The default implementation will return a cancelled task if passed an already cancelled <paramref name="cancellationToken" />. Exceptions thrown by <see cref="M:System.Data.Common.DbDataReader.NextResult" /> will be communicated via the returned Task Exception property.  
+  
+ Other methods and properties of the DbDataReader object should not be invoked while the returned Task is not yet completed.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public abstract bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the reader to the next record in a result set.</summary>
+        <returns>
+          <see langword="true" /> if there are more rows; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default position of a data reader is before the first record. Therefore, you must call <xref:System.Data.Common.DbDataReader.Read%2A> to begin accessing data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ReadAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.ReadAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.Read" />, which advances the reader to the next record in a result set. This method invokes <see cref="M:System.Data.Common.DbDataReader.ReadAsync(System.Threading.CancellationToken)" /> with CancellationToken.None.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; ReadAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.ReadAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The cancellation instruction.</param>
+        <summary>This is the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.Read" />.  Providers should override with an appropriate implementation. The cancellationToken may optionally be ignored.  
+  
+ The default implementation invokes the synchronous <see cref="M:System.Data.Common.DbDataReader.Read" /> method and returns a completed task, blocking the calling thread. The default implementation will return a cancelled task if passed an already cancelled cancellationToken.  Exceptions thrown by Read will be communicated via the returned Task Exception property.  
+  
+ Do not invoke other methods and properties of the <see langword="DbDataReader" /> object until the returned Task is complete.</summary>
+        <returns>A task representing the asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.Common.DbException">An error occurred while executing the command text.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordsAffected">
+      <MemberSignature Language="C#" Value="public abstract int RecordsAffected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.RecordsAffected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.</summary>
+        <value>The number of rows changed, inserted, or deleted. -1 for SELECT statements; 0 if no rows were affected or the statement failed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `RecordsAffected` property is not set until all rows are read and you close the `DataReader`.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This property and <see cref="P:System.Data.Common.DbDataReader.IsClosed" /> should be implemented to return a value when the reader is closed.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.IDataReader.Close">
+      <MemberSignature Language="C#" Value="void IDataReader.Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.IDataReader.Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataReader#Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.IDataReader.GetSchemaTable">
+      <MemberSignature Language="C#" Value="System.Data.DataTable IDataReader.GetSchemaTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.DataTable System.Data.IDataReader.GetSchemaTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataReader#GetSchemaTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Data.IDataRecord.GetData">
+      <MemberSignature Language="C#" Value="System.Data.IDataReader IDataRecord.GetData (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDataRecord.GetData(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataRecord#GetData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>For a description of this member, see <see cref="M:System.Data.IDataRecord.GetData(System.Int32)" />.</summary>
+        <returns>An instance of <see cref="T:System.Data.IDataReader" /> to be used when the field points to more remote structured data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.Common.DbDataReader> instance is cast to an <xref:System.Data.IDataRecord> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleFieldCount">
+      <MemberSignature Language="C#" Value="public virtual int VisibleFieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleFieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.VisibleFieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of fields in the <see cref="T:System.Data.Common.DbDataReader" /> that are not hidden.</summary>
+        <value>The number of fields that are not hidden.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used to determine how many fields in the <xref:System.Data.Common.DbDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetFieldValueAsync&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously gets the value of the specified column as a type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReadAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.Read" />, but returns a Task synchronously, blocking the calling thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="NextResultAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements the asynchronous version of <see cref="M:System.Data.Common.DbDataReader.NextResult" />, but returns a Task synchronously, blocking the calling thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,337 @@
+<Type Name="EdmRelationshipAttribute" FullName="System.Data.Objects.DataClasses.EdmRelationshipAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EdmRelationshipAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmRelationshipAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a relationship between two entity types based on an association in the conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is applied at the assembly level with one instance for each association. There can be multiple attributes of this type in an assembly.  
+  
+ The details for the role of an entity type in a particular association should match the association defined in the conceptual schema.  
+  
+ An association does not define any ordering for the roles. This means that properties that define the related ends of an association can be defined in any order.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmRelationshipAttribute (string relationshipNamespaceName, string relationshipName, string role1Name, System.Data.Metadata.Edm.RelationshipMultiplicity role1Multiplicity, Type role1Type, string role2Name, System.Data.Metadata.Edm.RelationshipMultiplicity role2Multiplicity, Type role2Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationshipNamespaceName, string relationshipName, string role1Name, valuetype System.Data.Metadata.Edm.RelationshipMultiplicity role1Multiplicity, class System.Type role1Type, string role2Name, valuetype System.Data.Metadata.Edm.RelationshipMultiplicity role2Multiplicity, class System.Type role2Type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationshipNamespaceName" Type="System.String" />
+        <Parameter Name="relationshipName" Type="System.String" />
+        <Parameter Name="role1Name" Type="System.String" />
+        <Parameter Name="role1Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
+        <Parameter Name="role1Type" Type="System.Type" />
+        <Parameter Name="role2Name" Type="System.String" />
+        <Parameter Name="role2Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
+        <Parameter Name="role2Type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipNamespaceName">The name of the namespace for the association in which this entity participates.</param>
+        <param name="relationshipName">The name of a relationship in which this entity participates.</param>
+        <param name="role1Name">Name of the role for the type at one end of the association.</param>
+        <param name="role1Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at one end of the association, such as one or many.</param>
+        <param name="role1Type">The type of the entity at one end of the association.</param>
+        <param name="role2Name">Name of the role for the type at the other end of the association.</param>
+        <param name="role2Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at the other end of the association, such as one or many.</param>
+        <param name="role2Type">The type of the entity at the other end of the association.</param>
+        <summary>Creates an instance of the <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeof` operator (`GetType` in Visual Basic) is used to return the <xref:System.Type> object for an object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmRelationshipAttribute (string relationshipNamespaceName, string relationshipName, string role1Name, System.Data.Metadata.Edm.RelationshipMultiplicity role1Multiplicity, Type role1Type, string role2Name, System.Data.Metadata.Edm.RelationshipMultiplicity role2Multiplicity, Type role2Type, bool isForeignKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationshipNamespaceName, string relationshipName, string role1Name, valuetype System.Data.Metadata.Edm.RelationshipMultiplicity role1Multiplicity, class System.Type role1Type, string role2Name, valuetype System.Data.Metadata.Edm.RelationshipMultiplicity role2Multiplicity, class System.Type role2Type, bool isForeignKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmRelationshipAttribute.#ctor(System.String,System.String,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.String,System.Data.Metadata.Edm.RelationshipMultiplicity,System.Type,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationshipNamespaceName" Type="System.String" />
+        <Parameter Name="relationshipName" Type="System.String" />
+        <Parameter Name="role1Name" Type="System.String" />
+        <Parameter Name="role1Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
+        <Parameter Name="role1Type" Type="System.Type" />
+        <Parameter Name="role2Name" Type="System.String" />
+        <Parameter Name="role2Multiplicity" Type="System.Data.Metadata.Edm.RelationshipMultiplicity" />
+        <Parameter Name="role2Type" Type="System.Type" />
+        <Parameter Name="isForeignKey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="relationshipNamespaceName">The name of the namespace for the association in which this entity participates.</param>
+        <param name="relationshipName">The name of a relationship in which this entity participates.</param>
+        <param name="role1Name">Name of the role for the type at one end of the association.</param>
+        <param name="role1Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at one end of the association, such as one or many.</param>
+        <param name="role1Type">The type of the entity at one end of the association.</param>
+        <param name="role2Name">Name of the role for the type at the other end of the association.</param>
+        <param name="role2Multiplicity">A value of <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> that indicates the multiplicity at the other end of the association, such as one or many.</param>
+        <param name="role2Type">The type of the entity at the other end of the association.</param>
+        <param name="isForeignKey">A value that indicates whether the relationship is based on the foreign key value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsForeignKey">
+      <MemberSignature Language="C#" Value="public bool IsForeignKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsForeignKey" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.IsForeignKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the relationship is based on the foreign key value.</summary>
+        <value>
+          <see langword="true" /> if the relationship is based on the foreign key value; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipName">
+      <MemberSignature Language="C#" Value="public string RelationshipName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Name of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of a relationship that is defined by this <see cref="T:System.Data.Objects.DataClasses.EdmRelationshipAttribute" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the relationship is specified by the `Name` attribute of the `Association` element that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipNamespaceName">
+      <MemberSignature Language="C#" Value="public string RelationshipNamespaceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipNamespaceName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.RelationshipNamespaceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The namespace for the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the namespace for the relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace of the relationship is specified by the `Namespace` attribute of the `Schema` element that contains association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role1Multiplicity">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipMultiplicity Role1Multiplicity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.RelationshipMultiplicity Role1Multiplicity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Multiplicity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiplicity at one end of the relationship.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role1Name">
+      <MemberSignature Language="C#" Value="public string Role1Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role1Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Name of the role at one end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of the role.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role1Type">
+      <MemberSignature Language="C#" Value="public Type Role1Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Role1Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role1Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type of the entity at one end of the relationship.</summary>
+        <value>A <see cref="T:System.Type" /> that is the type of the object at this end of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role2Multiplicity">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.RelationshipMultiplicity Role2Multiplicity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.RelationshipMultiplicity Role2Multiplicity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Multiplicity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiplicity at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> value that indicates the multiplicity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The multiplicity is specified by the `Multiplicity` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role2Name">
+      <MemberSignature Language="C#" Value="public string Role2Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Role2Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Name of the role at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.String" /> that is the name of the role.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The role name is specified by the `Role` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role2Type">
+      <MemberSignature Language="C#" Value="public Type Role2Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Role2Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipAttribute.Role2Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Type of the entity at the other end of the relationship.</summary>
+        <value>A <see cref="T:System.Type" /> that is the type of the object t the other end of the association.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Properties that define the related ends of an association can be defined in any order.  
+  
+ The type name is specified by the `Type` attribute of the `End` element in the association that defines this relationship in the conceptual model. For more information, see [CSDL, SSDL, and MSL Specifications](../Topic/CSDL,%20SSDL,%20and%20MSL%20Specifications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

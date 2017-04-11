@@ -1,0 +1,103 @@
+<Type Name="SaveChangesOptions" FullName="System.Data.Services.Client.SaveChangesOptions">
+  <TypeSignature Language="C#" Value="public enum SaveChangesOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SaveChangesOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.SaveChangesOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates change options when <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" /> is called.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the ContinueOnError option is set, subsequent operations are still tried even after an error occurs.  
+  
+ When batching is not used, the <xref:System.Data.Services.Client.DataServiceResponse.BatchHeaders%2A> property on the <xref:System.Data.Services.Client.DataServiceResponse> instance returns an empty collection and the <xref:System.Data.Services.Client.DataServiceResponse.BatchStatusCode%2A> property is zero.  
+  
+ You cannot set both Batch and ContinueOnError at the same time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Batch">
+      <MemberSignature Language="C#" Value="Batch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.SaveChangesOptions Batch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.Batch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.SaveChangesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All pending changes are saved in a single batch request.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueOnError">
+      <MemberSignature Language="C#" Value="ContinueOnError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.SaveChangesOptions ContinueOnError = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.ContinueOnError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.SaveChangesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pending changes are saved by using multiple requests to the server, and the operation continues after an error occurs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.SaveChangesOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.SaveChangesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pending changes are saved by using multiple requests to the server, but the operation stops on the first failure (default).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceOnUpdate">
+      <MemberSignature Language="C#" Value="ReplaceOnUpdate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.SaveChangesOptions ReplaceOnUpdate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.SaveChangesOptions.ReplaceOnUpdate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.SaveChangesOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pending updates are made by replacing all values of the entity in the data source with values from the updated entity (HTTP PUT) instead of just updating changed values (HTTP MERGE), which is the default behavior.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

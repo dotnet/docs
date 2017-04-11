@@ -1,0 +1,116 @@
+<Type Name="PartialTrustVisibleAssembly" FullName="System.Web.Configuration.PartialTrustVisibleAssembly">
+  <TypeSignature Language="C#" Value="public sealed class PartialTrustVisibleAssembly : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialTrustVisibleAssembly extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PartialTrustVisibleAssembly" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures a partial-trust assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PartialTrustVisibleAssembly> configures an assembly that is marked with the Partially Trusted Callers Attribute (APTCA) for use in a partial-trust ASP.NET application. For more information, see <xref:System.Security.AllowPartiallyTrustedCallersAttribute>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PartialTrustVisibleAssembly (string assemblyName, string publicKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName, string publicKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PartialTrustVisibleAssembly.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="publicKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The assembly name.</param>
+        <param name="publicKey">The hexadecimal string representation of the public key that is associated with the assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.PartialTrustVisibleAssembly" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyName">
+      <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.AssemblyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("assemblyName", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the assembly name.</summary>
+        <value>The assembly name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKey">
+      <MemberSignature Language="C#" Value="public string PublicKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublicKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PartialTrustVisibleAssembly.PublicKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("publicKey", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=false, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the assembly public key.</summary>
+        <value>The hexadecimal string representation of the public key that is associated with the assembly.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

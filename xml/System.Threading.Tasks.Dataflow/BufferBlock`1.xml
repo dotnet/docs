@@ -1,0 +1,357 @@
+<Type Name="BufferBlock&lt;T&gt;" FullName="System.Threading.Tasks.Dataflow.BufferBlock&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class BufferBlock&lt;T&gt; : System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;T,T&gt;, System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;T&gt;, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;, System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferBlock`1&lt;T&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.IPropagatorBlock`2&lt;!T, !T&gt;, class System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1&lt;!T&gt;, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!T&gt;, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.BufferBlock`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;T,T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IReceivableSourceBlock&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayContent,nq}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.Tasks.Dataflow.BufferBlock`1/DebugView))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BufferBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BufferBlock (System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Dataflow.DataflowBlockOptions dataflowBlockOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.#ctor(System.Threading.Tasks.Dataflow.DataflowBlockOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
+      </Parameters>
+      <Docs>
+        <param name="dataflowBlockOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public void Complete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Complete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.Complete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completion">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Completion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task Completion" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BufferBlock`1.Completion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.BufferBlock`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkTo">
+      <MemberSignature Language="C#" Value="public IDisposable LinkTo (System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt; target, System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable LinkTo(class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt; target, class System.Threading.Tasks.Dataflow.DataflowLinkOptions linkOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.LinkTo(System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Threading.Tasks.Dataflow.DataflowLinkOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
+        <Parameter Name="linkOptions" Type="System.Threading.Tasks.Dataflow.DataflowLinkOptions" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="linkOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Threading.Tasks.Dataflow.IDataflowBlock.Fault">
+      <MemberSignature Language="C#" Value="void IDataflowBlock.Fault (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#IDataflowBlock#Fault(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ConsumeMessage">
+      <MemberSignature Language="C#" Value="T ISourceBlock&lt;T&gt;.ConsumeMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt; target, out bool messageConsumed);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance !T System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ConsumeMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt; target, bool messageConsumed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
+        <Parameter Name="messageConsumed" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="messageConsumed">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ReleaseReservation">
+      <MemberSignature Language="C#" Value="void ISourceBlock&lt;T&gt;.ReleaseReservation (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt; target);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ReleaseReservation(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReleaseReservation(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ReserveMessage">
+      <MemberSignature Language="C#" Value="bool ISourceBlock&lt;T&gt;.ReserveMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt; target);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;.ReserveMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!T&gt; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ISourceBlock&lt;T&gt;#ReserveMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="target" Type="System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;.OfferMessage">
+      <MemberSignature Language="C#" Value="System.Threading.Tasks.Dataflow.DataflowMessageStatus ITargetBlock&lt;T&gt;.OfferMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, T messageValue, System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt; source, bool consumeToAccept);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus System.Threading.Tasks.Dataflow.ITargetBlock&lt;T&gt;.OfferMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, !T messageValue, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!T&gt; source, bool consumeToAccept) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;T&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="messageValue" Type="T" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Dataflow.ISourceBlock&lt;T&gt;" />
+        <Parameter Name="consumeToAccept" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">To be added.</param>
+        <param name="messageValue">To be added.</param>
+        <param name="source">To be added.</param>
+        <param name="consumeToAccept">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceive">
+      <MemberSignature Language="C#" Value="public bool TryReceive (Predicate&lt;T&gt; filter, out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceive(class System.Predicate`1&lt;!T&gt; filter, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.TryReceive(System.Predicate{`0},`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.Predicate&lt;T&gt;" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="filter">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceiveAll">
+      <MemberSignature Language="C#" Value="public bool TryReceiveAll (out System.Collections.Generic.IList&lt;T&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryReceiveAll(class System.Collections.Generic.IList`1&lt;!T&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.BufferBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IList&lt;T&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="items">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

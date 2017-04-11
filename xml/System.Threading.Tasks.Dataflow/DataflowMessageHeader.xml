@@ -1,0 +1,202 @@
+<Type Name="DataflowMessageHeader" FullName="System.Threading.Tasks.Dataflow.DataflowMessageHeader">
+  <TypeSignature Language="C#" Value="public struct DataflowMessageHeader : IEquatable&lt;System.Threading.Tasks.Dataflow.DataflowMessageHeader&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataflowMessageHeader extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Threading.Tasks.Dataflow.DataflowMessageHeader&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Id = {Id}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataflowMessageHeader (long id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.#ctor(System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Threading.Tasks.Dataflow.DataflowMessageHeader other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Equals(System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public long Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Id" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowMessageHeader.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.DataflowMessageHeader.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader left, valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Equality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="right" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Threading.Tasks.Dataflow.DataflowMessageHeader left, System.Threading.Tasks.Dataflow.DataflowMessageHeader right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader left, valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.DataflowMessageHeader.op_Inequality(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.DataflowMessageHeader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.6.0.0</AssemblyVersion>
+        <AssemblyVersion>4.6.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+        <Parameter Name="right" Type="System.Threading.Tasks.Dataflow.DataflowMessageHeader" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

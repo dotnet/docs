@@ -1,0 +1,86 @@
+<Type Name="IRemoteArgumentArrayContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract">
+  <TypeSignature Language="C#" Value="public interface IRemoteArgumentArrayContract : System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteArgumentArrayContract implements class System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract, class System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract, class System.AddIn.Contract.IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an array of <see cref="T:System.AddIn.Contract.RemoteArgument" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract> to pass an array of <xref:System.AddIn.Contract.RemoteArgument> objects between contracts by reference.  
+  
+ An <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract> does not dynamically resize itself. If you need to use a collection that dynamically resizes itself, use the <xref:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument GetItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument GetItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.GetItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to return.</param>
+        <summary>Returns the element at the specified index.</summary>
+        <returns>The element at the specified index.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (int index, System.AddIn.Contract.RemoteArgument value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(int32 index, valuetype System.AddIn.Contract.RemoteArgument value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.SetItem(System.Int32,System.AddIn.Contract.RemoteArgument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace.</param>
+        <param name="value">The new value for the element at the specified index.</param>
+        <summary>Replaces the element at the specified index with the specified <see cref="T:System.AddIn.Contract.RemoteArgument" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than the return value of <see cref="M:System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract.GetCount" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

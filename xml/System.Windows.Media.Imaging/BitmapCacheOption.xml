@@ -1,0 +1,92 @@
+<Type Name="BitmapCacheOption" FullName="System.Windows.Media.Imaging.BitmapCacheOption">
+  <TypeSignature Language="C#" Value="public enum BitmapCacheOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCacheOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCacheOption" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a bitmap image takes advantage of memory caching.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to load a <xref:System.Windows.Media.Imaging.BitmapImage> and specify the <xref:System.Windows.Media.Imaging.BitmapCacheOption>.  
+  
+ [!code-csharp[bitmapimageprops#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapImageProps/CSharp/BitmapImageProps.cs#1)]
+ [!code-vb[bitmapimageprops#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapImageProps/VB/BitmapImageProps.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Caches the entire image into memory. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption None = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not create a memory store. All requests for the image are filled directly by the image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDemand">
+      <MemberSignature Language="C#" Value="OnDemand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption OnDemand = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates a memory store for requested data only. The first request loads the image directly; subsequent requests are filled from the cache.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoad">
+      <MemberSignature Language="C#" Value="OnLoad" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption OnLoad = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Caches the entire image into memory at load time. All requests for image data are filled from the memory store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

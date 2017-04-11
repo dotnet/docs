@@ -1,0 +1,82 @@
+<Type Name="SyncFromAllServersEvent" FullName="System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent">
+  <TypeSignature Language="C#" Value="public enum SyncFromAllServersEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SyncFromAllServersEvent extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used in the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncUpdateCallback" /> delegate to specify the type of synchronization event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent Error = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An error occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Finished">
+      <MemberSignature Language="C#" Value="Finished" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent Finished = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.Finished" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entire replication process has completed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncCompleted">
+      <MemberSignature Language="C#" Value="SyncCompleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent SyncCompleted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncCompleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Synchronization of two servers has just completed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncStarted">
+      <MemberSignature Language="C#" Value="SyncStarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent SyncStarted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent.SyncStarted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Synchronization of two servers has started.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

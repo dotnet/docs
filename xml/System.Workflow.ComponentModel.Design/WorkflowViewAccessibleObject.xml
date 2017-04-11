@@ -1,0 +1,222 @@
+<Type Name="WorkflowViewAccessibleObject" FullName="System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject">
+  <TypeSignature Language="C#" Value="public class WorkflowViewAccessibleObject : System.Windows.Forms.Control.ControlAccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowViewAccessibleObject extends System.Windows.Forms.Control/ControlAccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Control+ControlAccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements an accessibility object that <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> classes use to adjust the designer user interface for users with disabilities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowViewAccessibleObject (System.Workflow.ComponentModel.Design.WorkflowView workflowView);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowView workflowView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.WorkflowView)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="workflowView" Type="System.Workflow.ComponentModel.Design.WorkflowView" />
+      </Parameters>
+      <Docs>
+        <param name="workflowView">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" /> to associate with the accessible object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> class by using the specified <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location and size of the accessible object.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAction">
+      <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.DefaultAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that describes the default action of the accessible object. Not all objects have a default action.</summary>
+        <value>A string that contains a description of the default action for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />, or a null reference (<see langword="Nothing" /> in Visual Basic) if the accessible object has no default action.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that describes the visual appearance of the specified accessible object. Not all accessible objects have a description.</summary>
+        <value>A description of the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> visual appearance to the user, or a null reference (<see langword="Nothing" /> in Visual Basic) if the object does not have a description.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChild">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.GetChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the accessible child object to retrieve.</param>
+        <summary>Returns the accessible child object associated with the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child object corresponding to the specified index.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCount">
+      <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.GetChildCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the number of children that belong to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</summary>
+        <returns>An integer that represents the number of child objects that belong to the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="public override string Help { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Help" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Help" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a description of what the accessible object does or how the accessible object is used.</summary>
+        <value>A string that contains the description of what the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> does or how it is used or a null reference (<see langword="Nothing" /> in Visual Basic) if no help is defined.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the accessible object name.</summary>
+        <value>A string that contains the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject" /> name, or a null reference (<see langword="Nothing" /> in Visual Basic) if the property has not been set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigate">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Navigate (System.Windows.Forms.AccessibleNavigation navdir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject Navigate(valuetype System.Windows.Forms.AccessibleNavigation navdir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="navdir" Type="System.Windows.Forms.AccessibleNavigation" />
+      </Parameters>
+      <Docs>
+        <param name="navdir">One of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</param>
+        <summary>Navigates to another accessible object.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents one of the <see cref="T:System.Windows.Forms.AccessibleNavigation" /> values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowViewAccessibleObject.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role of the accessible object.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values. <see cref="F:System.Windows.Forms.AccessibleRole.None" /> is returned if no role has been specified</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

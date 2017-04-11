@@ -1,0 +1,344 @@
+<Type Name="RoutedEventArgs" FullName="System.Windows.RoutedEventArgs">
+  <TypeSignature Language="C#" Value="public class RoutedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains state information and event data associated with a routed event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Different <xref:System.Windows.RoutedEventArgs> can be used with a single <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A>. This class is responsible for packaging the event data for a <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A>, providing extra event state information, and is used by the event system for invoking the handler associated with the routed event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this parameterless constructor, all public properties of the new <xref:System.Windows.RoutedEventArgs> instance assume the following default values:  
+  
+-   <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A> defaults to `null`.  
+  
+-   <xref:System.Windows.RoutedEventArgs.Handled%2A> defaults to `false`  
+  
+-   <xref:System.Windows.RoutedEventArgs.Source%2A> defaults to `null`.  
+  
+-   <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> defaults to `null`.  
+  
+ Null values for <xref:System.Windows.RoutedEventArgs.Source%2A> and <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> only mean that the <xref:System.Windows.RoutedEventArgs> data makes no attempt to specify the source. When this instance is used in a call to <xref:System.Windows.UIElement.RaiseEvent%2A>, the  <xref:System.Windows.RoutedEventArgs.Source%2A> and <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> values are populated based on the element that raised the event and are passed on to listeners through the routing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedEventArgs (System.Windows.RoutedEvent routedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventArgs.#ctor(System.Windows.RoutedEvent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+      </Parameters>
+      <Docs>
+        <param name="routedEvent">The routed event identifier for this instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class, using the supplied routed event identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this overloaded constructor, unspecified properties of the new <xref:System.Windows.RoutedEventArgs> instance assume the following default values:  
+  
+-   <xref:System.Windows.RoutedEventArgs.Handled%2A> defaults to `false`  
+  
+-   <xref:System.Windows.RoutedEventArgs.Source%2A> defaults to `null`.  
+  
+-   <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> defaults to `null`.  
+  
+ Null values for <xref:System.Windows.RoutedEventArgs.Source%2A> and <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> only mean that this <xref:System.Windows.RoutedEventArgs> makes no attempt to specify the source. When this instance is used in a call to <xref:System.Windows.UIElement.RaiseEvent%2A>, the  <xref:System.Windows.RoutedEventArgs.Source%2A> and <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> values are populated based on the element that raised the event and are passed on to listeners through the routing.  
+  
+   
+  
+## Examples  
+ The following example constructs a new <xref:System.Windows.RoutedEventArgs> for use in a call to <xref:System.Windows.UIElement.RaiseEvent%2A>.  
+  
+ [!code-csharp[RoutedEventCustom#RaiseEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventCustom/CSharp/SDKSampleLibrary/class1.cs#raiseevent)]
+ [!code-vb[RoutedEventCustom#RaiseEvent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventCustom/VB/SDKSampleLibrary/Class1.vb#raiseevent)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedEventArgs (System.Windows.RoutedEvent routedEvent, object source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent, object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventArgs.#ctor(System.Windows.RoutedEvent,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="routedEvent">The routed event identifier for this instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class.</param>
+        <param name="source">An alternate source that will be reported when the event is handled. This pre-populates the <see cref="P:System.Windows.RoutedEventArgs.Source" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedEventArgs" /> class, using the supplied routed event identifier, and providing the opportunity to declare a different source for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this overloaded constructor, unspecified properties of the new <xref:System.Windows.RoutedEventArgs> instance assume the following default values:  
+  
+-   <xref:System.Windows.RoutedEventArgs.Handled%2A> defaults to `false`  
+  
+-   <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> defaults to `null`.  
+  
+ Null values for <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> are populated based on the element that raised the event and passed on through the routing, but will read `null` prior to invocation.  
+  
+ Use this signature when passing <xref:System.Windows.RoutedEventArgs> to virtuals such as <xref:System.Windows.Controls.Primitives.TextBoxBase.OnSelectionChanged%2A>, where the arguments are used to call <xref:System.Windows.UIElement.RaiseEvent%2A> internally.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the present state of the event handling for a routed event as it travels the route.</summary>
+        <value>If setting, set to<see langword=" true" /> if the event is to be marked handled; otherwise <see langword="false" />. If reading this value,<see langword=" true" /> indicates that either a class handler, or some instance handler along the route, has already marked this event handled. <see langword="false" />.indicates that no such handler has marked the event handled.  
+  
+ The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Marking the event handled will limit the visibility of the routed event to listeners along the event route. The event does still travel the remainder of the route, but only handlers specifically added with `HandledEventsToo` `true` in the <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> method call will be invoked in response. Default handlers on instance listeners (such as those expressed in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]) will not be invoked. Handling events that are marked handled is not a common scenario.  
+  
+ If you are a control author defining your own events, the decisions you make regarding event handling at the class level will impact users of your control as well as any users of derived controls, and potentially other elements that are either contained by your control or that contain your control. For more information, see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md).  
+  
+ In very rare circumstances it is appropriate to handle events where  <xref:System.Windows.RoutedEventArgs.Handled%2A> is marked `true`, and modify the event arguments by changing <xref:System.Windows.RoutedEventArgs.Handled%2A> to `false`. This can be necessary in certain areas of input events of controls, such as key handling of <xref:System.Windows.UIElement.KeyDown> versus <xref:System.Windows.UIElement.TextInput> where low level and high level input events compete for the handling, and each is attempting to work with a different routing strategy.  
+  
+   
+  
+## Examples  
+ The following example implements an event handler that marks the event handled.  
+  
+ [!code-csharp[ClassHandling#OnStarClassHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/ClassHandling/CSharp/SDKSampleLibrary/class1.cs#onstarclasshandler)]
+ [!code-vb[ClassHandling#OnStarClassHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClassHandling/visualbasic/sdksamplelibrary/class1.vb#onstarclasshandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected virtual void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler / delegate implementation to be invoked.</param>
+        <param name="genericTarget">The target on which the provided handler should be invoked.</param>
+        <summary>When overridden in a derived class, provides a way to invoke event handlers in a type-specific way, which can increase efficiency over the base implementation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base implementation incorporates reflection to determine the right handler for any case where the handler is not literally <xref:System.Windows.RoutedEventHandler>, and this reflection step does have some performance consequences. Invocations can be made more efficient by not relying on reflection. This is the scenario that motivates this method being available for any routed event arguments class that choose to override it. Implementations should not call the base for this method, because your implementation should already be responsible for invoking the type safe handlers.  
+  
+   
+  
+## Examples  
+ The following is pseudocode that illustrates a basic pattern that can be used for implementation. Here, `MyRoutedEventHandler` is a subclass of <xref:System.Windows.RoutedEventHandler>.  
+  
+ [!code-csharp[CorePseudocode#RoutedEventArgs](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/corepseudocode.cs#routedeventargs)]
+ [!code-vb[CorePseudocode#RoutedEventArgs](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CorePseudocode/visualbasic/corepseudocode.vb#routedeventargs)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method is intended to be overridden by derived event data classes to provide more efficient invocation of their delegates. The implementation should cast the provided <paramref name="genericHandler" /> to the type-specific delegate, and then invoke that handler.  
+  
+ The default implementation will attempt to invoke the provided handler, attempting to cast it as <see cref="T:System.Windows.RoutedEventHandler" />. If either <paramref name="genericHandler" /> or <paramref name="genericTarget" /> is provided as <see langword="null" />, exceptions will be raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSetSource">
+      <MemberSignature Language="C#" Value="protected virtual void OnSetSource (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSetSource(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEventArgs.OnSetSource(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The new value that <see cref="P:System.Windows.RoutedEventArgs.Source" /> is being set to.</param>
+        <summary>When overridden in a derived class, provides a notification callback entry point whenever the value of the <see cref="P:System.Windows.RoutedEventArgs.Source" /> property of an instance changes.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Changing the reported source of an event programmatically can potentially require updating the type-specific data within the event. For this reason, the <see cref="M:System.Windows.RoutedEventArgs.OnSetSource(System.Object)" /> method is protected virtual and is intended to be overridden by subclasses of <see cref="T:System.Windows.RoutedEventArgs" />.  
+  
+ This method has no default implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalSource">
+      <MemberSignature Language="C#" Value="public object OriginalSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventArgs.OriginalSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the original reporting source as determined by pure hit testing, before any possible <see cref="P:System.Windows.RoutedEventArgs.Source" /> adjustment by a parent class.</summary>
+        <value>The original reporting source, before any possible <see cref="P:System.Windows.RoutedEventArgs.Source" /> adjustment made by class handling, which may have been done to flatten composited element trees.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property acquires its value once, before the class event handlers or any instance handlers are invoked, and is never adjusted past this point. The original source information is read-only to class handlers or class implementations, just as it is reported in the event data.  
+  
+ Common cases where the source may be adjusted include content elements inside a content model for a control (the contents of a list item, for instance, will report the list item element as the <xref:System.Windows.RoutedEventArgs.Source%2A> and the actual element within the list item will be the <xref:System.Windows.RoutedEventArgs.OriginalSource%2A>.  
+  
+ Source adjustment by various elements and content models varies from class to class. Each class that adjusts event sources attempts to anticipate which source is the most useful to report for most input scenarios and the scenarios for which the class is intended, and then sets that source as the <xref:System.Windows.RoutedEventArgs.Source%2A>. If this source is not the one that has relevance to your handling of the event, try checking <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> instead to see if it reports a different source that is more suitable. For more details on input events, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutedEvent">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutedEvent RoutedEvent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEvent RoutedEvent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventArgs.RoutedEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.RoutedEventArgs.RoutedEvent" /> associated with this <see cref="T:System.Windows.RoutedEventArgs" /> instance.</summary>
+        <value>The identifier for the event that has been invoked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot set this value on a <xref:System.Windows.RoutedEventArgs> that has already been routed (for instance, if you obtained the arguments through a handler). Attempting to do so will generate an exception. You can only set it on an instance that has not yet been used to generate an invocation of the event.  
+  
+ The value of <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A> cannot be `null` at any time.  
+  
+   
+  
+## Examples  
+ The following example creates new routed event data with an initial constructor and then sets the <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A> property as a subsequent operation. You must have <xref:System.Windows.RoutedEventArgs.RoutedEvent%2A> set prior to raising the routed event.  
+  
+ [!code-csharp[ColorPicker_v2#RoutedEventArgsRoutedEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/ColorPicker_v2/CSharp/ColorPicker.cs#routedeventargsroutedevent)]
+ [!code-vb[ColorPicker_v2#RoutedEventArgsRoutedEvent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColorPicker_v2/visualbasic/colorpicker.vb#routedeventargsroutedevent)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempted to change the <see cref="P:System.Windows.RoutedEventArgs.RoutedEvent" /> value while the event is being routed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public object Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Source" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEventArgs.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the object that raised the event.</summary>
+        <value>The object that raised the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For any bubbling routed event that has actually traveled the route beyond the element that raised it, and for any tunneling routed event that has not yet tunneled down to the element that raised it, the value of <xref:System.Windows.RoutedEventArgs.Source%2A> will be different than the value of the `sender` parameter of the event arguments class. Which of the two elements involved in the event is of the most importance in any given handler (<xref:System.Windows.RoutedEventArgs.Source%2A>, the element that raised it, or `sender`, the element that is currently handling it) is dependent on the application logic that your handler is addressing.  
+  
+ Setting this property is typically only done when overriding or implementing other [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] that adjust event sources, such as when class handling an event. Resetting apparent event sources from instance handlers is not recommended, particularly when the handler does not mark the event as handled.  
+  
+ If you do reset <xref:System.Windows.RoutedEventArgs.Source%2A> to report a different event source, <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> will continue to report the source as first raised by the originating <xref:System.Windows.UIElement.RaiseEvent%2A> call.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

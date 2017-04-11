@@ -1,0 +1,54 @@
+<Type Name="ITlsTokenBindingInfo" FullName="System.Web.ITlsTokenBindingInfo">
+  <TypeSignature Language="C#" Value="public interface ITlsTokenBindingInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITlsTokenBindingInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ITlsTokenBindingInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about transport layer security (TLS) token binding.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProvidedTokenBindingId">
+      <MemberSignature Language="C#" Value="public byte[] GetProvidedTokenBindingId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetProvidedTokenBindingId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ITlsTokenBindingInfo.GetProvidedTokenBindingId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the provided token binding ID.</summary>
+        <returns>The provided token binding ID.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferredTokenBindingId">
+      <MemberSignature Language="C#" Value="public byte[] GetReferredTokenBindingId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetReferredTokenBindingId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ITlsTokenBindingInfo.GetReferredTokenBindingId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the referred token binding ID.</summary>
+        <returns>The referred token binding ID.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

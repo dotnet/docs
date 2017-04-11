@@ -72,7 +72,7 @@ C# provides full support for object-oriented programming including encapsulation
   
  To define a class:  
   
-```cs  
+```csharp  
 class SampleClass  
 {  
 }  
@@ -82,7 +82,7 @@ class SampleClass
   
  To define a structure:  
   
-```cs  
+```csharp  
 struct SampleStruct  
 {  
 }  
@@ -102,7 +102,7 @@ struct SampleStruct
   
  To define a field:  
   
-```cs  
+```csharp  
 Class SampleClass  
 {  
     public string sampleField;  
@@ -115,7 +115,7 @@ Class SampleClass
   
  To define an auto-implemented property:  
   
-```cs  
+```csharp  
 class SampleClass  
 {  
     public int SampleProperty { get; set; }  
@@ -124,7 +124,7 @@ class SampleClass
   
  If you need to perform some additional operations for reading and writing the property value, define a field for storing the property value and provide the basic logic for storing and retrieving it:  
   
-```cs  
+```csharp  
 class SampleClass  
 {  
     private int _sample;  
@@ -151,7 +151,7 @@ class SampleClass
   
  To define a method of a class:  
   
-```cs  
+```csharp  
 class SampleClass  
 {  
     public int sampleMethod(string sampleParam)  
@@ -165,7 +165,7 @@ class SampleClass
   
  To overload a method:  
   
-```cs  
+```csharp  
 public int sampleMethod(string sampleParam) {};  
 public int sampleMethod(int sampleParam) {}  
 ```  
@@ -183,7 +183,7 @@ public int sampleMethod(int sampleParam) {}
   
  To define a constructor for a class:  
   
-```cs  
+```csharp  
 public class SampleClass  
 {  
     public SampleClass()  
@@ -200,7 +200,7 @@ public class SampleClass
 ####  <a name="Destructors"></a> Destructors  
  Destructors are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need destructors to clean up any unmanaged resources that your application creates. There can be only one destructor for a class.  
   
- For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbagecollection/index.md).  
+ For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 ####  <a name="Events"></a> Events  
  Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
@@ -214,7 +214,7 @@ public class SampleClass
 ####  <a name="NestedClasses"></a> Nested Classes  
  A class defined within another class is called *nested*. By default, the nested class is private.  
   
-```cs  
+```csharp  
 class Container  
 {  
     class Nested  
@@ -226,7 +226,7 @@ class Container
   
  To create an instance of the nested class, use the name of the container class followed by the dot and then followed by the name of the nested class:  
   
-```cs  
+```csharp  
 Container.Nested nestedInstance = new Container.Nested()  
 ```  
   
@@ -248,13 +248,13 @@ Container.Nested nestedInstance = new Container.Nested()
 ###  <a name="InstantiatingClasses"></a> Instantiating Classes  
  To create an object, you need to instantiate a class, or create a class instance.  
   
-```cs  
+```csharp  
 SampleClass sampleObject = new SampleClass();  
 ```  
   
  After instantiating a class, you can assign values to the instance's properties and fields and invoke class methods.  
   
-```cs  
+```csharp  
 // Set a property value.  
 sampleObject.sampleProperty = "Sample String";  
 // Call a method.  
@@ -263,7 +263,7 @@ sampleObject.sampleMethod();
   
  To assign values to properties during the class instantiation process, use object initializers:  
   
-```cs  
+```csharp  
 // Set a property value.  
 SampleClass sampleObject = new SampleClass   
     { FirstProperty = "A", SecondProperty = "B" };  
@@ -280,7 +280,7 @@ SampleClass sampleObject = new SampleClass
   
  To define a static member:  
   
-```cs  
+```csharp  
 static class SampleClass  
 {  
     public static string SampleString = "Sample String";  
@@ -289,7 +289,7 @@ static class SampleClass
   
  To access the static member, use the name of the class without creating an object of this class:  
   
-```cs  
+```csharp  
 Console.WriteLine(SampleClass.SampleString);  
 ```  
   
@@ -302,7 +302,7 @@ Console.WriteLine(SampleClass.SampleString);
   
  To create an instance of an anonymous type:  
   
-```cs  
+```csharp  
 // sampleObject is an instance of a simple anonymous type.  
 var sampleObject =   
     new { FirstProperty = "A", SecondProperty = "B" };  
@@ -314,11 +314,11 @@ var sampleObject =
  Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in C# implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.  
   
 > [!NOTE]
->  C# doesn't support multiple inheritance, i.e. you can specify only one base class for a derived class.  
+>  C# doesn't support multiple inheritance. That is, you can specify only one base class for a derived class.  
   
  To inherit from a base class:  
   
-```cs  
+```csharp  
 class DerivedClass:BaseClass{}  
 ```  
   
@@ -326,13 +326,13 @@ class DerivedClass:BaseClass{}
   
  To specify that a class cannot be used as a base class:  
   
-```cs  
+```csharp  
 public sealed class A { }  
 ```  
   
  To specify that a class can be used as a base class only and cannot be instantiated:  
   
-```cs  
+```csharp  
 public abstract class B { }  
 ```  
   
@@ -359,7 +359,7 @@ public abstract class B { }
   
  To define an interface:  
   
-```cs  
+```csharp  
 interface ISampleInterface  
 {  
     void doSomething();  
@@ -368,7 +368,7 @@ interface ISampleInterface
   
  To implement an interface in a class:  
   
-```cs  
+```csharp  
 class SampleClass : ISampleInterface  
 {  
     void ISampleInterface.doSomething()  
@@ -389,7 +389,7 @@ class SampleClass : ISampleInterface
   
  To define a generic class:  
   
-```cs  
+```csharp  
 Public class SampleGeneric<T>   
 {  
     public T Field;  
@@ -398,7 +398,7 @@ Public class SampleGeneric<T>
   
  To create an instance of a generic class:  
   
-```cs  
+```csharp  
 SampleGeneric<string> sampleObject = new SampleGeneric<string>();  
 sampleObject.Field = "Sample string";  
 ```  
@@ -417,13 +417,13 @@ sampleObject.Field = "Sample string";
   
  To create a delegate:  
   
-```cs  
+```csharp  
 public delegate void SampleDelegate(string str);  
 ```  
   
  To create a reference to a method that matches the signature specified by the delegate:  
   
-```cs  
+```csharp  
 class SampleClass  
 {  
     // Method that matches the SampleDelegate signature.  

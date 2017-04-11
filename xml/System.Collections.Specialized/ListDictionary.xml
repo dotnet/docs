@@ -1,0 +1,904 @@
+<Type Name="ListDictionary" FullName="System.Collections.Specialized.ListDictionary">
+  <TypeSignature Language="C#" Value="public class ListDictionary : System.Collections.IDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ListDictionary extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.ListDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Specialized</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IDictionary</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Implements <see langword="IDictionary" /> using a singly linked list. Recommended for collections that typically include fewer than 10 items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a simple implementation of <xref:System.Collections.IDictionary> using a singly linked list. It is smaller and faster than a <xref:System.Collections.Hashtable> if the number of elements is 10 or less. This should not be used if performance is important for large numbers of elements.  
+  
+ Items in a <xref:System.Collections.Specialized.ListDictionary> are not in any guaranteed order; code should not depend on the current order. The <xref:System.Collections.Specialized.ListDictionary> is implemented for fast keyed retrieval; the actual internal order of items is implementation-dependent and could change in future versions of the product.  
+  
+ Members, such as <xref:System.Collections.Specialized.ListDictionary.Item%2A>, <xref:System.Collections.Specialized.ListDictionary.Add%2A>, <xref:System.Collections.Specialized.ListDictionary.Remove%2A>, and <xref:System.Collections.Specialized.ListDictionary.Contains%2A> are O(`n`) operations, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+ A key cannot be `null`, but a value can.  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.Specialized.ListDictionary> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary2#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CPP/source2.cpp#3)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CS/source2.cs#3)]
+ [!code-vb[System.Collections.Specialized.ListDictionary2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/VB/source2.vb#3)]  
+  
+ The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several of the properties and methods of <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CPP/listdictionary.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CS/listdictionary.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/VB/listdictionary.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
+  
+ This implementation does not provide a synchronized (thread safe) wrapper for a <see cref="T:System.Collections.Specialized.ListDictionary" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.Specialized.ListDictionary" /> using the <see cref="P:System.Collections.Specialized.ListDictionary.SyncRoot" /> property.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListDictionary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an empty <see cref="T:System.Collections.Specialized.ListDictionary" /> using the default comparer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several of the properties and methods of <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CPP/listdictionary.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CS/listdictionary.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/VB/listdictionary.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListDictionary (System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.#ctor(System.Collections.IComparer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> to use to determine whether two keys are equal.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the default comparer, which is each key's implementation of <see cref="M:System.Object.Equals(System.Object)" />.</param>
+        <summary>Creates an empty <see cref="T:System.Collections.Specialized.ListDictionary" /> using the specified comparer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparer determines whether two keys are equal. Every key in a <xref:System.Collections.Specialized.ListDictionary> must be unique. The default comparer is the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+  
+ The custom comparer enables such scenarios as doing lookups with case-insensitive strings.  
+  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.Add(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the entry to add.</param>
+        <param name="value">The value of the entry to add. The value can be <see langword="null" />.</param>
+        <summary>Adds an entry with the specified key and value into the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object that has no correlation between its state and its hash code value should typically not be used as the key. For example, String objects are better than StringBuilder objects for use as keys.  
+  
+ You can also use the <xref:System.Collections.Specialized.ListDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.ListDictionary>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.Specialized.ListDictionary>, setting the <xref:System.Collections.Specialized.ListDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Specialized.ListDictionary.Add%2A> method does not modify existing elements.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example adds to and removes elements from a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CPP/listdictionary_addremove.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CS/listdictionary_addremove.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/VB/listdictionary_addremove.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An entry with the same key already exists in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all entries from the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.ListDictionary.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example adds to and removes elements from a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CPP/listdictionary_addremove.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CS/listdictionary_addremove.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/VB/listdictionary_addremove.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.Specialized.ListDictionary" /> contains a specific key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Specialized.ListDictionary" /> contains an entry with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `key` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example searches for an element in a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Contains#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Contains/CPP/listdictionary_contains.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Contains#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Contains/CS/listdictionary_contains.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Contains#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Contains/VB/listdictionary_contains.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from <see cref="T:System.Collections.Specialized.ListDictionary" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Collections.Specialized.ListDictionary" /> entries to a one-dimensional <see cref="T:System.Array" /> instance at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ To copy only the keys in the <xref:System.Collections.Specialized.ListDictionary>, use `ListDictionary.Keys.CopyTo`.  
+  
+ To copy only the values in the <xref:System.Collections.Specialized.ListDictionary>, use `ListDictionary.Values.CopyTo`.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example copies the elements of a <xref:System.Collections.Specialized.ListDictionary> to an array.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_CopyTo/CPP/listdictionary_copyto.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_CopyTo/CS/listdictionary_copyto.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_CopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_CopyTo/VB/listdictionary_copyto.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.Specialized.ListDictionary" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.Specialized.ListDictionary" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of key/value pairs contained in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <value>The number of key/value pairs contained in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> that iterates through the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.Specialized.ListDictionary" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Specialized.ListDictionary" /> has a fixed size.</summary>
+        <value>This property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsFixedSize%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+  
+ A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but it allows the modification of existing elements.  
+  
+ A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Specialized.ListDictionary" /> is read-only.</summary>
+        <value>This property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsReadOnly%2A> property because it is required by the <xref:System.Collections.IDictionary?displayProperty=fullName> interface.  
+  
+ A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Specialized.ListDictionary" /> is synchronized (thread safe).</summary>
+        <value>This property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.ListDictionary> implements the <xref:System.Collections.Specialized.ListDictionary.IsSynchronized%2A> property because it is required by the <xref:System.Collections.ICollection?displayProperty=fullName> interface.  
+  
+ Derived classes can provide a synchronized version of the <xref:System.Collections.Specialized.ListDictionary> using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> property.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CPP/source2.cpp#2)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CS/source2.cs#2)]
+ [!code-vb[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/VB/source2.vb#2)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key whose value to get or set.</param>
+        <summary>Gets or sets the value associated with the specified key.</summary>
+        <value>The value associated with the specified key. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new entry using the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+  
+ You can also use the <xref:System.Collections.Specialized.ListDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Specialized.ListDictionary>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.Specialized.ListDictionary>, setting the <xref:System.Collections.Specialized.ListDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Specialized.ListDictionary.Add%2A> method does not modify existing elements.  
+  
+ A key cannot be `null`, but a value can. To distinguish between `null` that is returned because the specified key is not found and `null` that is returned because the value of the specified key is `null`, use the <xref:System.Collections.Specialized.ListDictionary.Contains%2A> method to determine if the key exists in the list.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.ListDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.ListDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> containing the keys in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the keys in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the values in the <xref:System.Collections.ICollection> is unspecified, but it is the same order as the associated values in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.Specialized.ListDictionary.Values%2A> method.  
+  
+ The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the keys in the original <xref:System.Collections.Specialized.ListDictionary>. Therefore, changes to the <xref:System.Collections.Specialized.ListDictionary> continue to be reflected in the <xref:System.Collections.ICollection>.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the entry to remove.</param>
+        <summary>Removes the entry with the specified key from the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.Specialized.ListDictionary> does not contain an element with the specified key, the <xref:System.Collections.Specialized.ListDictionary> remains unchanged. No exception is thrown.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Specialized.ListDictionary.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example adds to and removes elements from a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CPP/listdictionary_addremove.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/CS/listdictionary_addremove.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_AddRemove#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_AddRemove/VB/listdictionary_addremove.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.Specialized.ListDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can provide their own synchronized version of the <xref:System.Collections.Specialized.ListDictionary> using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> of the <xref:System.Collections.Specialized.ListDictionary>, not directly on the <xref:System.Collections.Specialized.ListDictionary>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.Specialized.ListDictionary> object.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.Specialized.ListDictionary.SyncRoot%2A> during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CPP/source2.cpp#2)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/CS/source2.cs#2)]
+ [!code-vb[System.Collections.Specialized.ListDictionary2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary2/VB/source2.vb#2)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.ListDictionary.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.Specialized.ListDictionary" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.ListDictionary.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the values in the <see cref="T:System.Collections.Specialized.ListDictionary" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the values in the <xref:System.Collections.ICollection> is unspecified, but it is the same order as the associated keys in the <xref:System.Collections.ICollection> returned by the <xref:System.Collections.Specialized.ListDictionary.Keys%2A> method.  
+  
+ The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the values in the original <xref:System.Collections.Specialized.ListDictionary>. Therefore, changes to the <xref:System.Collections.Specialized.ListDictionary> continue to be reflected in the <xref:System.Collections.ICollection>.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example enumerates the elements of a <xref:System.Collections.Specialized.ListDictionary>.  
+  
+ [!code-cpp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CPP/listdictionary_enumerator.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/CS/listdictionary_enumerator.cs#1)]
+ [!code-vb[System.Collections.Specialized.ListDictionary_Enumerator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.ListDictionary_Enumerator/VB/listdictionary_enumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

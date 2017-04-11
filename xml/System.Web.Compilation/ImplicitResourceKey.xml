@@ -1,0 +1,186 @@
+<Type Name="ImplicitResourceKey" FullName="System.Web.Compilation.ImplicitResourceKey">
+  <TypeSignature Language="C#" Value="public sealed class ImplicitResourceKey" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImplicitResourceKey extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ImplicitResourceKey" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains fields that identify an implicit resource key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ImplicitResourceKey> class contains fields that identify an implicit resource key.  
+  
+ An implicit resource is assigned to a control in the following form:  
+  
+```  
+<asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
+    text="Welcome"   
+      ie:text="Welcome Internet Explorer User"    
+    forecolor="blue"/>    
+```  
+  
+ During page parsing, an implicit resource is converted into explicit keys in the form [*filter*:]*prefix*.*property*[.*subproperty*]. Any resource values with the specified prefix (in the preceding example, a prefix of `Welcome`) are assigned to the matching control properties. For example, suppose values exist in the resource file or source code for the following keys:  
+  
+ `Welcome.Text`  
+  
+ `Ie:Welcome.Text`  
+  
+ `Welcome.Forecolor`  
+  
+ These values are assigned to their respective control properties.  
+  
+ Implicit resource keys can reference only local resources.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImplicitResourceKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ImplicitResourceKey.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImplicitResourceKey (string filter, string keyPrefix, string property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filter, string keyPrefix, string property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ImplicitResourceKey.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="keyPrefix" Type="System.String" />
+        <Parameter Name="property" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter">The filter value of an implicit resource key.</param>
+        <param name="keyPrefix">The prefix for identifying a group of properties.</param>
+        <param name="property">A property and subproperty, if provided, for an implicit resource key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ImplicitResourceKey" /> class with the specified values for the <see cref="P:System.Web.Compilation.ImplicitResourceKey.Filter" />, <see cref="P:System.Web.Compilation.ImplicitResourceKey.KeyPrefix" /> and <see cref="P:System.Web.Compilation.ImplicitResourceKey.Property" /> properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the filter value of an implicit resource key.</summary>
+        <value>A <see cref="T:System.String" /> containing the filter value for the implicit resource expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ImplicitResourceKey.Filter%2A> property refers to the value before the colon (:) in an expression. For example, suppose you had an implicit resource in the following form:  
+  
+```  
+<asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
+```  
+  
+ This resource contains three keys that potentially have localized resource values to retrieve from the resource file or source code. One of these keys is `Ie:Welcome.Text`, in which "Ie" is the <xref:System.Web.Compilation.ImplicitResourceKey.Filter%2A> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPrefix">
+      <MemberSignature Language="C#" Value="public string KeyPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.KeyPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the prefix for identifying a group of properties.</summary>
+        <value>A <see cref="T:System.String" /> containing the prefix for an implicit resource expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ImplicitResourceKey.KeyPrefix%2A> property ties together a collection of properties that can be assigned to a control. The <xref:System.Web.Compilation.ImplicitResourceKey.KeyPrefix%2A> property refers to the value after the colon (:) in an expression, if present, and before the first period (.). For example, suppose you had an implicit resource in the following form:  
+  
+```  
+<asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
+```  
+  
+ This resource contains three keys, `Welcome.Text`, `Ie:Welcome.Text`, and `Welcome.Forecolor`, that potentially have localized resource values to retrieve from the resource file or source code. Each key has `"Welcome"` as the <xref:System.Web.Compilation.ImplicitResourceKey.KeyPrefix%2A> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public string Property { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Property" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ImplicitResourceKey.Property" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a property and subproperty, if provided, for an implicit resource key.</summary>
+        <value>A <see cref="T:System.String" /> containing the property and subproperty for an implicit resource expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ImplicitResourceKey.Property%2A> property specifies the control property to be localized. The <xref:System.Web.Compilation.ImplicitResourceKey.Property%2A> property refers to the value after the first period (.) in an expression. For example, suppose you had an implicit resource in the following form:  
+  
+```  
+<asp:label runat="server" id="label1" meta:resourcekey="Welcome"  
+        text="Welcome"   
+        ie:text="Welcome Internet Explorer User"    
+        forecolor="blue"/>    
+```  
+  
+ This resource contains three keys, `Welcome.Text`, `Ie:Welcome.Text`, and `Welcome.Forecolor`, that potentially have localized resource values to retrieve from the resource file or source code. Those keys have <xref:System.Web.Compilation.ImplicitResourceKey.Property%2A> values of `"Text"`, `"Text"`, and `"Forecolor"`, respectively.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="TableHeaderScope" FullName="System.Web.UI.WebControls.TableHeaderScope">
+  <TypeSignature Language="C#" Value="public enum TableHeaderScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableHeaderScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the HTML <see langword="scope" /> attribute for classes that represent header cells in a table.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableHeaderScope> enumeration is used by the <xref:System.Web.UI.WebControls.DataControlFieldHeaderCell> and <xref:System.Web.UI.WebControls.TableHeaderCell> classes to represent the scope of the header cell when it is rendered. The default `Scope` property for both of these classes is the NotSet value, in which case no HTML `scope` attribute is written for the header cell. The <xref:System.Web.UI.WebControls.TableHeaderCell.Scope%2A> property is used to make HTML tables more accessible by providing information about relationships between the cells and the headers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="Column" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope Column = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Column" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object that represents a header cell of a table is rendered with the <see langword="scope" /> attribute set to <c>"Column"</c>.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="scope" /> attribute is not rendered for the header cell.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="Row" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope Row = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Row" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object that represents a header cell of a table is rendered with the <see langword="scope" /> attribute set to <c>"Row"</c>.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

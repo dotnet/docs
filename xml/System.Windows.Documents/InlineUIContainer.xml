@@ -1,0 +1,163 @@
+<Type Name="InlineUIContainer" FullName="System.Windows.Documents.InlineUIContainer">
+  <TypeSignature Language="C#" Value="public class InlineUIContainer : System.Windows.Documents.Inline" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InlineUIContainer extends System.Windows.Documents.Inline" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.InlineUIContainer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.Inline</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Documents.TextElementEditingBehavior(IsMergeable=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Child")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An inline-level flow content element which enables <see cref="T:System.Windows.UIElement" /> elements (i.e. a <see cref="T:System.Windows.Controls.Button" />) to be embedded (hosted) in flow content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.UIElement> element (i.e. a <xref:System.Windows.Controls.Button>) may be embedded directly in flow content by enclosing it in a <xref:System.Windows.Documents.InlineUIContainer> (see example below).  
+  
+ An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+  
+ [!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InlineUIContainer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InlineUIContainer (System.Windows.UIElement childUIElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement childUIElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="childUIElement" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="childUIElement">An <see cref="T:System.Windows.UIElement" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates usage of this constructor.  
+  
+ [!code-csharp[SpanSnippets#_InlineUI_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const1)]
+ [!code-vb[SpanSnippets#_InlineUI_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InlineUIContainer (System.Windows.UIElement childUIElement, System.Windows.Documents.TextPointer insertionPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement childUIElement, class System.Windows.Documents.TextPointer insertionPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement,System.Windows.Documents.TextPointer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="childUIElement" Type="System.Windows.UIElement" />
+        <Parameter Name="insertionPosition" Type="System.Windows.Documents.TextPointer" />
+      </Parameters>
+      <Docs>
+        <param name="childUIElement">A <see cref="T:System.Windows.UIElement" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />.  This parameter may be <see langword="null" />, in which case no <see cref="T:System.Windows.UIElement" /> is inserted.</param>
+        <param name="insertionPosition">A <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position at which to insert the <see cref="T:System.Windows.Documents.InlineUIContainer" /> element after it is created, or <see langword="null" /> for no automatic insertion.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.InlineUIContainer" />, and a <see cref="T:System.Windows.Documents.TextPointer" /> specifying an insertion position for the new <see cref="T:System.Windows.Documents.InlineUIContainer" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates usage of this constructor.  
+  
+ [!code-csharp[SpanSnippets#_InlineUI_Const2](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_const2)]
+ [!code-vb[SpanSnippets#_InlineUI_Const2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_const2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement Child { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Child" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.InlineUIContainer.Child" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.InlineUIContainer" />.</summary>
+        <value>The <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.InlineUIContainer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Documents.InlineUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.InlineUIContainer> may host children of its own.  
+  
+ In [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)], wrapping a <xref:System.Windows.UIElement> in an <xref:System.Windows.Documents.InlineUIContainer> is equivalent to setting that <xref:System.Windows.UIElement> as the value of the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+  
+ [!code-xml[SpanSnippets#_InlineUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_inlineuixaml)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: UIElement elements embedded in flow](~/add/media/inlineuicontainer.png "Screenshot: UIElement elements embedded in flow")  
+  
+ The following example shows how to use the <xref:System.Windows.Documents.InlineUIContainer.Child%2A> property programmatically.  
+  
+ [!code-csharp[SpanSnippets#_InlineUI_Child](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_inlineui_child)]
+ [!code-vb[SpanSnippets#_InlineUI_Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_inlineui_child)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

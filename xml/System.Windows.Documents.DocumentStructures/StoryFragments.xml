@@ -1,0 +1,182 @@
+<Type Name="StoryFragments" FullName="System.Windows.Documents.DocumentStructures.StoryFragments">
+  <TypeSignature Language="C#" Value="public class StoryFragments : System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;, System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StoryFragments extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Documents.DocumentStructures.StoryFragment&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.StoryFragments" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("StoryFragmentList")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a set of one or more <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element defines the structure and content of a <xref:System.Windows.Documents.FixedPage>.  
+  
+ <xref:System.Windows.Documents.DocumentStructures.StoryFragments> is the root of one or more <xref:System.Windows.Documents.DocumentStructures.StoryFragment> elements.  
+  
+ For detailed information about the document structure of [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)], see Chapter 9 and Appendix E of the *XML Paper Specification (XPS)* that can be downloaded from the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+   
+  
+## Examples  
+ The following example shows how to use of the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.  
+  
+ [!code-xml[DocumentStructure#DocStructStoryFrags1](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Content/FixedPage1_structure.xaml#docstructstoryfrags1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StoryFragments ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Documents.DocumentStructures.StoryFragment storyFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Documents.DocumentStructures.StoryFragment storyFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.Add(System.Windows.Documents.DocumentStructures.StoryFragment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storyFragment" Type="System.Windows.Documents.DocumentStructures.StoryFragment" />
+      </Parameters>
+      <Docs>
+        <param name="storyFragment">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> to the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragment" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt; IEnumerable&lt;StoryFragment&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Documents.DocumentStructures.StoryFragment&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#StoryFragment&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Windows.Documents.DocumentStructures.StoryFragment&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This API is not implemented.</summary>
+        <returns>This API is not implemented.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This API is not implemented.</summary>
+        <returns>This API is not implemented.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
+      <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object to the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ Only a <xref:System.Windows.Documents.DocumentStructures.StoryFragment> can be a child of <xref:System.Windows.Documents.DocumentStructures.StoryFragments> and there must be at least one child.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddText">
+      <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.StoryFragments.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

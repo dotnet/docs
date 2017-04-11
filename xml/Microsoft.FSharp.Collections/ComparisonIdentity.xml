@@ -1,0 +1,103 @@
+<Type Name="ComparisonIdentity" FullName="Microsoft.FSharp.Collections.ComparisonIdentity">
+  <TypeSignature Language="C#" Value="public static class ComparisonIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ComparisonIdentity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.ComparisonIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromFunction&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IComparer&lt;T&gt; FromFunction&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt;&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IComparer`1&lt;!!T&gt; FromFunction&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt;&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ComparisonIdentity.FromFunction``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="comparer" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Int32&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="comparer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonStructural&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IComparer&lt;T&gt; NonStructural&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IComparer`1&lt;!!T&gt; NonStructural&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ComparisonIdentity.NonStructural``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Structural&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IComparer&lt;T&gt; Structural&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IComparer`1&lt;!!T&gt; Structural&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ComparisonIdentity.Structural``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

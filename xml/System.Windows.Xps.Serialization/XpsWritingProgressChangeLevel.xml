@@ -1,0 +1,89 @@
+<Type Name="XpsWritingProgressChangeLevel" FullName="System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel">
+  <TypeSignature Language="C#" Value="public enum XpsWritingProgressChangeLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsWritingProgressChangeLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the scope of a writing progress indicator for [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These values are primarily used for the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel%2A> property of the <xref:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FixedDocumentSequenceWritingProgress">
+      <MemberSignature Language="C#" Value="FixedDocumentSequenceWritingProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel FixedDocumentSequenceWritingProgress = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentSequenceWritingProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An entire sequence of one or more documents.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedDocumentWritingProgress">
+      <MemberSignature Language="C#" Value="FixedDocumentWritingProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel FixedDocumentWritingProgress = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedDocumentWritingProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedPageWritingProgress">
+      <MemberSignature Language="C#" Value="FixedPageWritingProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel FixedPageWritingProgress = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.FixedPageWritingProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>There is no interpretation for the progress value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,128 @@
+<Type Name="XmlMapping" FullName="System.Xml.Serialization.XmlMapping">
+  <TypeSignature Language="C#" Value="public abstract class XmlMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlMapping extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMapping" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Supports mappings between .NET Framework types and XML Schema data types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlMapping> class is the base class for the <xref:System.Xml.Serialization.XmlTypeMapping> and <xref:System.Xml.Serialization.XmlMembersMapping> classes. It supports built-in and custom XML schema data types, plus SOAP encoding (Section 5 of the SOAP 1.1 specification).  
+  
+ <xref:System.Xml.Serialization.XmlMapping> exposes no public or protected members. Use the <xref:System.Xml.Serialization.XmlMapping> class instead of deriving a class directly from <xref:System.Xml.Serialization.XmlMapping>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ElementName">
+      <MemberSignature Language="C#" Value="public string ElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMapping.ElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the name of the mapped element.</summary>
+        <value>The name of the mapped element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMapping.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace of the mapped element.</summary>
+        <value>The namespace of the mapped element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetKey">
+      <MemberSignature Language="C#" Value="public void SetKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlMapping.SetKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">A <see cref="T:System.String" /> that contains the lookup key.</param>
+        <summary>Sets the key used to look up the mapping.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XsdElementName">
+      <MemberSignature Language="C#" Value="public string XsdElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XsdElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlMapping.XsdElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the XSD element of the mapping.</summary>
+        <value>The XSD element name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

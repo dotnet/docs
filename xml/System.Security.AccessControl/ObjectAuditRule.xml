@@ -1,0 +1,135 @@
+<Type Name="ObjectAuditRule" FullName="System.Security.AccessControl.ObjectAuditRule">
+  <TypeSignature Language="C#" Value="public abstract class ObjectAuditRule : System.Security.AccessControl.AuditRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectAuditRule extends System.Security.AccessControl.AuditRule" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAuditRule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.AuditRule</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a combination of a user's identity, an access mask, and audit conditions. An <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> object also contains information about the type of object to which the rule applies, the type of child object that can inherit the rule, how the rule is inherited by child objects, and how that inheritance is propagated.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObjectAuditRule (System.Security.Principal.IdentityReference identity, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, Guid objectType, Guid inheritedObjectType, System.Security.AccessControl.AuditFlags auditFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType, valuetype System.Security.AccessControl.AuditFlags auditFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.ObjectAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="accessMask" Type="System.Int32" />
+        <Parameter Name="isInherited" Type="System.Boolean" />
+        <Parameter Name="inheritanceFlags" Type="System.Security.AccessControl.InheritanceFlags" />
+        <Parameter Name="propagationFlags" Type="System.Security.AccessControl.PropagationFlags" />
+        <Parameter Name="objectType" Type="System.Guid" />
+        <Parameter Name="inheritedObjectType" Type="System.Guid" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity to which the access rule applies.  It must be an object that can be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />.</param>
+        <param name="accessMask">The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</param>
+        <param name="isInherited">
+          <see langword="true" /> if this rule is inherited from a parent container.</param>
+        <param name="inheritanceFlags">Specifies the inheritance properties of the access rule.</param>
+        <param name="propagationFlags">Whether inherited access rules are automatically propagated. The propagation flags are ignored if <c>inheritanceFlags</c> is set to <see cref="F:System.Security.AccessControl.InheritanceFlags.None" />.</param>
+        <param name="objectType">The type of object to which the rule applies.</param>
+        <param name="inheritedObjectType">The type of child object that can inherit the rule.</param>
+        <param name="auditFlags">The audit conditions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value of the <paramref name="identity" /> parameter cannot be cast as a <see cref="T:System.Security.Principal.SecurityIdentifier" />, or the <paramref name="type" /> parameter contains an invalid value.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="accessMask" /> parameter is 0, or the <paramref name="inheritanceFlags" /> or <paramref name="propagationFlags" /> parameters contain unrecognized flag values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritedObjectType">
+      <MemberSignature Language="C#" Value="public Guid InheritedObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InheritedObjectType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAuditRule.InheritedObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of child object that can inherit the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> object.</summary>
+        <value>The type of child object that can inherit the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectFlags">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.ObjectAceFlags ObjectFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.ObjectAceFlags ObjectFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAuditRule.ObjectFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="P:System.Security.AccessControl.ObjectAuditRule.ObjectType" /> and <see cref="P:System.Security.AccessControl.ObjectAuditRule.InheritedObjectType" /> properties of the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> object contain valid values.</summary>
+        <value>
+          <see cref="F:System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" /> specifies that the <see cref="P:System.Security.AccessControl.ObjectAuditRule.ObjectType" /> property contains a valid value. <see cref="F:System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" /> specifies that the <see cref="P:System.Security.AccessControl.ObjectAuditRule.InheritedObjectType" /> property contains a valid value. These values can be combined with a logical OR.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Guid ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ObjectType" />
+      <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.ObjectAuditRule.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of object to which the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> applies.</summary>
+        <value>The type of object to which the <see cref="T:System.Security.AccessControl.ObjectAuditRule" /> applies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

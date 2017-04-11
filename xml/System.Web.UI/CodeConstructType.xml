@@ -1,0 +1,107 @@
+<Type Name="CodeConstructType" FullName="System.Web.UI.CodeConstructType">
+  <TypeSignature Language="C#" Value="public enum CodeConstructType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeConstructType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeConstructType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the code constructs that can be parsed in the <see cref="M:System.Web.UI.PageParserFilter.ProcessCodeConstruct(System.Web.UI.CodeConstructType,System.String)" /> method of the <see cref="T:System.Web.UI.PageParserFilter" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you process a code construct by using the <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> method of the <xref:System.Web.UI.PageParserFilter> class, return `true` if you do not want to process the code construct further.  
+  
+ For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CodeSnippet">
+      <MemberSignature Language="C#" Value="CodeSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType CodeSnippet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeConstructType.CodeSnippet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An expression in <see langword="&lt;% ..." /> <see langword="%&gt;" /> tags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindingSnippet">
+      <MemberSignature Language="C#" Value="DataBindingSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType DataBindingSnippet = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeConstructType.DataBindingSnippet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An expression in <see langword="&lt;%= ... %&gt;" /> tags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedExpressionSnippet">
+      <MemberSignature Language="C#" Value="EncodedExpressionSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType EncodedExpressionSnippet = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeConstructType.EncodedExpressionSnippet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An expression in <see langword="&lt;%: ... %&gt;" /> tags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionSnippet">
+      <MemberSignature Language="C#" Value="ExpressionSnippet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType ExpressionSnippet = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeConstructType.ExpressionSnippet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An expression in <see langword="&lt;%# ... %&gt;" /> tags.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptTag">
+      <MemberSignature Language="C#" Value="ScriptTag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeConstructType ScriptTag = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeConstructType.ScriptTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeConstructType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An expression in a <see langword="script" /> element that contains the <see langword="runat=&quot;server&quot;" /> attribute.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,27 @@
+<Type Name="XpsThumbnail" FullName="System.Windows.Xps.Packaging.XpsThumbnail">
+  <TypeSignature Language="C#" Value="public class XpsThumbnail : System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsThumbnail extends System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsThumbnail" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Packaging.XpsResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a thumbnail image of a document sequence, single document, or single page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.Packaging.XpsThumbnail> class has no public constructor.  A reference to an <xref:System.Windows.Xps.Packaging.XpsThumbnail> is provided through the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A?displayProperty=fullName>, <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentWriter.AddThumbnail%2A?displayProperty=fullName>, or <xref:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter.AddThumbnail%2A?displayProperty=fullName> methods.  
+  
+ It is recommended that if any page in an <xref:System.Windows.Xps.Packaging.XpsDocument> has a thumbnail, that all pages be specified with thumbnails.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

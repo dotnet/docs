@@ -1,0 +1,86 @@
+<Type Name="DesignerEventArgs" FullName="System.ComponentModel.Design.DesignerEventArgs">
+  <TypeSignature Language="C#" Value="public class DesignerEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IDesignerEventService.DesignerCreated" /> and <see cref="E:System.ComponentModel.Design.IDesignerEventService.DesignerDisposed" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> and <xref:System.ComponentModel.Design.IDesignerEventService.DesignerDisposed> events are raised when a document is created or disposed of.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating a <xref:System.ComponentModel.Design.DesignerEventArgs>.  
+  
+ [!code-cpp[DesignerEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerEventArgsExample/CPP/designereventargsexample.cpp#1)]
+ [!code-csharp[DesignerEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerEventArgsExample/CS/designereventargsexample.cs#1)]
+ [!code-vb[DesignerEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerEventArgsExample/VB/designereventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerEventArgs (System.ComponentModel.Design.IDesignerHost host);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesignerHost host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerEventArgs.#ctor(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
+      </Parameters>
+      <Docs>
+        <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> of the document.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Designer">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.IDesignerHost Designer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.IDesignerHost Designer" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerEventArgs.Designer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.IDesignerHost</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the host of the document.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> of the document.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,107 @@
+<Type Name="CreateProperty" FullName="Microsoft.Build.Tasks.CreateProperty">
+  <TypeSignature Language="C#" Value="public class CreateProperty : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateProperty extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CreateProperty" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>CreateProperty</c> task. Use the <c>CreateProperty</c> element in your project file to create and execute this task. For usage and parameter information, see [CreateProperty Task](http://msdn.microsoft.com/library/fbc31a88-62d4-43d2-b739-68ef3fac38f5).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CreateProperty.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>CreateProperty</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string[] Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value to copy to the new property.</summary>
+        <value>The value to copy to the new property</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueSetByTask">
+      <MemberSignature Language="C#" Value="public string[] ValueSetByTask { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ValueSetByTask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CreateProperty.ValueSetByTask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the same value as the <see cref="P:Microsoft.Build.Tasks.CreateProperty.Value" /> property.</summary>
+        <value>The same value as the <see cref="P:Microsoft.Build.Tasks.CreateProperty.Value" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property only when you want to avoid having the output property set by [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] when it skips the enclosing target because the outputs are up-to-date.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

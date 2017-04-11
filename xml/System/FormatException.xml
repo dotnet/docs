@@ -1,0 +1,295 @@
+<Type Name="FormatException" FullName="System.FormatException">
+  <TypeSignature Language="C#" Value="public class FormatException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FormatException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.FormatException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when the format of an argument is invalid, or when a [composite format string](~/docs/standard/base-types/composite-formatting.md) is not well formed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.FormatException> exception can be thrown for one of the following reasons:  
+  
+-   In a call to a method that converts a string to some other data type, the string doesn't conform to the required pattern. This typically occurs when calling some methods of the <xref:System.Convert> class and the `Parse` and `ParseExact` methods of some types.  
+  
+     In most cases, particularly if the string that you're converting is input by a user or read from a file, you should use a `try/catch` block and handle the <xref:System.FormatException> exception if the conversion is unsuccessful. You can also replace the call to the conversion method with a call to a `TryParse` or `TryParseExact` method, if one exists. However, a <xref:System.FormatException> exception that is thrown when you're trying to parse a predefined or hard-coded string indicates a program error. In this case, you should correct the error rather than handle the exception.  
+  
+     The conversion of a string to the following types in the <xref:System> namespace can throw a <xref:System.FormatException> exception:  
+  
+    -   <xref:System.Boolean>. The <xref:System.Boolean.Parse%28System.String%29?displayProperty=fullName> and <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=fullName> methods require the string to be converted to be "True", "true", "False", or "false". Any other value throws a <xref:System.FormatException> exception.  
+  
+    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
+  
+         For more information about parsing dates and times, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md) and the documentation for the method that threw the exception.  
+  
+    -   **GUIDs.** The string representation of a GUID must consist of 32 hexadecimal digits (0-F), and must be in one of the five formats output by the <xref:System.Guid.ToString%2A?displayProperty=fullName> method. For more information, see the <xref:System.Guid.Parse%2A?displayProperty=fullName> method.  
+  
+    -   **Numeric types, including all signed integers, unsigned integers, and floating-point types.** The string to be parsed must consist of the Latin digits 0-9. A positive or negative sign, decimal separator, group separators, and currency symbol may also be permitted. Trying to parse a string that contains any other character always throws a <xref:System.FormatException> exception.  
+  
+         All numeric strings are interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. As a result, a numeric string that is parsed by using the conventions of one culture might fail when using the conventions of another.  
+  
+         For more information about parsing numeric strings, see [Parsing Numeric Strings](~/docs/standard/base-types/parsing-numeric.md) and the documentation for the specific method that threw the exception.  
+  
+    -   **Time intervals.** The string to be parsed must be either in fixed culture-insensitive format or in a culture-sensitive format defined by the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. If the string isn't in an appropriate format, or if, at the minimum, the days, hours, and minutes components of the time interval aren't present, the parsing method throws a <xref:System.FormatException> exception. For more information, see the documentation for the <xref:System.TimeSpan> parsing method that threw the exception.  
+  
+-   A type implements the <xref:System.IFormattable> interface, which supports format strings that define how an object is converted to its string representation, and an invalid format string is used. This is most common in a formatting operation. In the following example, the "Q" standard format string is used in a composite format string to format a number. However, "Q" is not a valid [standard format string](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+     [!code-csharp[System.FormatException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable1.cs#7)]
+     [!code-vb[System.FormatException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable1.vb#7)]  
+  
+     This exception results from a coding error. To correct the error, either remove the format string or substitute a valid one. The following example corrects the error by replacing the invalid format string with the "C" (currency) format string.  
+  
+     [!code-csharp[System.FormatException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable2.cs#8)]
+     [!code-vb[System.FormatException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable2.vb#8)]  
+  
+     A <xref:System.FormatException> exception can also be thrown by parsing methods, such as <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> and <xref:System.Guid.ParseExact%2A?displayProperty=fullName>, that require the string to be parsed to conform exactly to the pattern specified by a format string. In the following example, the string representation of a GUID is expected to conform to the pattern specified by the "G" standard format string. However, the <xref:System.Guid> structure's implementation of <xref:System.IFormattable> does not support the "G" format string.  
+  
+     [!code-csharp[System.FormatException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable3.cs#9)]
+     [!code-vb[System.FormatException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable3.vb#9)]  
+  
+     This exception also results from a coding error. To correct it, call a parsing method that doesn’t require a precise format, such as <xref:System.DateTime.Parse%2A?displayProperty=fullName> or <xref:System.Guid.Parse%2A?displayProperty=fullName>, or substitute a valid format string. The following example corrects the error by calling the <xref:System.Guid.Parse%2A?displayProperty=fullName> method.  
+  
+     [!code-csharp[System.FormatException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable4.cs#10)]
+     [!code-vb[System.FormatException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable4.vb#10)]  
+  
+-   One or more of the indexes of the format items in a [composite format string](~/docs/standard/base-types/composite-formatting.md) is greater than the indexes of the items in the object list or parameter array. In the following example, the largest index of a format item in the format string is 3. Because the indexes of items in the object list are zero-based, this format string would require the object list to have four items. Instead, it has only three, `dat`, `temp`, and `scale`, so the code results in a <xref:System.FormatException> exception at run time:.  
+  
+     [!code-csharp[System.FormatException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example1.cs#1)]
+     [!code-vb[System.FormatException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example1.vb#1)]  
+  
+     In this case, the <xref:System.FormatException> exception is a result of developer error. It should be corrected rather than handled in a `try/catch` block by making sure that each item in the object list corresponds to the index of a format item. To correct this example, change the index of the second format item to refer to the `dat` variable, and decrement the index of each subsequent format item by one.  
+  
+     [!code-csharp[System.FormatException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example2.cs#2)]
+     [!code-vb[System.FormatException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example2.vb#2)]  
+  
+-   The composite format string isn't well-formed. When this happens, the <xref:System.FormatException> exception is always a result of developer error. It should be corrected rather than handled in a `try/catch` block.  
+  
+     Trying to include literal braces in a string, as the following example does, will throw the exception.  
+  
+     [!code-csharp[System.String.Format#23](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#23)]
+     [!code-vb[System.String.Format#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#23)]  
+  
+     The recommended technique for including literal braces in a composite format string is to include them in the object list and use format items to insert them into the result string. For example, you can modify the previous composite format string as shown here.  
+  
+     [!code-csharp[System.String.Format#24](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.String.Format/cs/qa3.cs#24)]
+     [!code-vb[System.String.Format#24](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.String.Format/vb/qa3.vb#24)]  
+  
+     The exception is also thrown if your format string contains a typo. The following call to the <xref:System.String.Format%2A?displayProperty=fullName> method omits a closing brace and pairs an opening brace with a closing bracket.  
+  
+     [!code-csharp[System.FormatException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example3.cs#3)]
+     [!code-vb[System.FormatException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example3.vb#3)]  
+  
+     To correct the error, ensure that all opening and closing braces correspond.  
+  
+     [!code-csharp[System.FormatException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example3.cs#4)]
+     [!code-vb[System.FormatException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example3.vb#4)]  
+  
+-   You've supplied the object list in a composite formatting method as a strongly typed parameter array, and the <xref:System.FormatException> exception indicates that the index of one or more format items exceeds the number of arguments in the object list. This occurs because no explicit conversion between array types exists, so instead the compiler treats the array as a single argument rather than as a parameter array. For example, the following call to the [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.FormatException> exception, although the highest index of the format items is 3, and the parameter array of type <xref:System.Int32> has four elements.  
+  
+     [!code-csharp[System.FormatException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/qa1.cs#5)]
+     [!code-vb[System.FormatException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/qa1.vb#5)]  
+  
+     Instead of handling this exception, you should eliminate its cause. Because neither Visual Basic nor C# can convert an integer array to an object array, you have to perform the conversion yourself before calling the composite formatting method. The following example provides one implementation.  
+  
+     [!code-csharp[System.FormatException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/qa2.cs#6)]
+     [!code-vb[System.FormatException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/qa2.vb#6)]  
+  
+ <xref:System.FormatException> uses the HRESULT COR_E_FORMAT, which has the value 0x80131537.  
+  
+ The <xref:System.FormatException> class derives from  <xref:System.Exception> and adds no unique members. For a list of initial property values for an instance of <xref:System.FormatException>, see the <xref:System.FormatException.%23ctor%2A> constructors.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormatException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.FormatException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "Invalid format." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.FormatException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormatException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.FormatException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.FormatException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FormatException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.FormatException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormatException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.FormatException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.FormatException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.FormatException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

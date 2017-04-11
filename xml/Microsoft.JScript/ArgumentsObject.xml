@@ -1,0 +1,70 @@
+<Type Name="ArgumentsObject" FullName="Microsoft.JScript.ArgumentsObject">
+  <TypeSignature Language="C#" Value="public sealed class ArgumentsObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArgumentsObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArgumentsObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the information that is used to call a function. This includes the function, the caller, the arguments, and information about the stack frame. This class belongs to the objects and functions category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="callee">
+      <MemberSignature Language="C#" Value="public object callee;" />
+      <MemberSignature Language="ILAsm" Value=".field public object callee" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ArgumentsObject.callee" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A closure function that represents the function that is being called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="caller">
+      <MemberSignature Language="C#" Value="public object caller;" />
+      <MemberSignature Language="ILAsm" Value=".field public object caller" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ArgumentsObject.caller" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The calling scope information from the stack frame.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="length">
+      <MemberSignature Language="C#" Value="public object length;" />
+      <MemberSignature Language="ILAsm" Value=".field public object length" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ArgumentsObject.length" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The number of arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,172 @@
+<Type Name="Context" FullName="Microsoft.JScript.Context">
+  <TypeSignature Language="C#" Value="public class Context" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Context extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Context" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents JScript source code. This class belongs to the compilation and run-time state category.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used mainly by the <xref:Microsoft.JScript.JSScanner> and the <xref:Microsoft.JScript.JSParser> to read source code. For more information, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndColumn">
+      <MemberSignature Language="C#" Value="public int EndColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column number in the line where this code ends. This includes whitespace at the start of the line.</summary>
+        <value>The column number where this code ends.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLine">
+      <MemberSignature Language="C#" Value="public int EndLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ending line number of this code.</summary>
+        <value>The ending line number of this code.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPosition">
+      <MemberSignature Language="C#" Value="public int EndPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position in the code string where this code ends, because all lines of code are stored in a single string.</summary>
+        <value>The position in the code string where this code ends.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCode">
+      <MemberSignature Language="C#" Value="public string GetCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Context.GetCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the code that the context contains, discarding any whitespace.</summary>
+        <returns>The code that the context contains.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.JSToken GetToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.JScript.JSToken GetToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Context.GetToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSToken</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an individual unit of code, or a *token*, that the context contains.</summary>
+        <returns>An individual unit of code, or a *token*, that the context contains.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartColumn">
+      <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column number in the line where this code starts. This includes whitespace at the start of the line.</summary>
+        <value>The column number where this code starts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartLine">
+      <MemberSignature Language="C#" Value="public int StartLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line number where this code starts.</summary>
+        <value>The line number where this code starts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPosition">
+      <MemberSignature Language="C#" Value="public int StartPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position in the code string where this code starts, because all lines of code are stored in a single string.</summary>
+        <value>The position in the code string where this code starts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

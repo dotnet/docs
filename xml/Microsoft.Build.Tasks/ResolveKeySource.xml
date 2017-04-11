@@ -1,0 +1,279 @@
+<Type Name="ResolveKeySource" FullName="Microsoft.Build.Tasks.ResolveKeySource">
+  <TypeSignature Language="C#" Value="public class ResolveKeySource : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveKeySource extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveKeySource" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>ResolveKeySource</c> task. Use the <c>ResolveKeySource</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveKeySource Task](http://msdn.microsoft.com/library/449f06c2-e9aa-4236-ab1e-c45c25452b2e).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResolveKeySource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveKeySource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveKeySource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoClosePasswordPromptShow">
+      <MemberSignature Language="C#" Value="public int AutoClosePasswordPromptShow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoClosePasswordPromptShow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptShow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in seconds, to display the count down message.</summary>
+        <value>The amount of time, in seconds, to display the count down message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 15 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoClosePasswordPromptTimeout">
+      <MemberSignature Language="C#" Value="public int AutoClosePasswordPromptTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoClosePasswordPromptTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.AutoClosePasswordPromptTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time, in seconds, to wait before closing the password prompt dialog.</summary>
+        <value>The amount of time, in seconds, to wait before closing the password prompt dialog.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 20 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateFile">
+      <MemberSignature Language="C#" Value="public string CertificateFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CertificateFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.CertificateFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the certificate file.</summary>
+        <value>The path of the certificate file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateThumbprint">
+      <MemberSignature Language="C#" Value="public string CertificateThumbprint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CertificateThumbprint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.CertificateThumbprint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the certificate thumbprint.</summary>
+        <value>The certificate thumbprint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveKeySource.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>ResolveKeySource</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFile">
+      <MemberSignature Language="C#" Value="public string KeyFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.KeyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the key file.</summary>
+        <value>The path of the key file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedKeyContainer">
+      <MemberSignature Language="C#" Value="public string ResolvedKeyContainer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResolvedKeyContainer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the resolved key container.</summary>
+        <value>The resolved key container.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedKeyFile">
+      <MemberSignature Language="C#" Value="public string ResolvedKeyFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResolvedKeyFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedKeyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the resolved key file.</summary>
+        <value>The resolved key file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedThumbprint">
+      <MemberSignature Language="C#" Value="public string ResolvedThumbprint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResolvedThumbprint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ResolvedThumbprint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the resolved certificate thumbprint.</summary>
+        <value>The resolved certificate thumbprint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowImportDialogDespitePreviousFailures">
+      <MemberSignature Language="C#" Value="public bool ShowImportDialogDespitePreviousFailures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowImportDialogDespitePreviousFailures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.ShowImportDialogDespitePreviousFailures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether to show the import dialog despite previous failures.</summary>
+        <value>
+          <see langword="true" /> if the task should show the import dialog despite previous failures; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressAutoClosePasswordPrompt">
+      <MemberSignature Language="C#" Value="public bool SuppressAutoClosePasswordPrompt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressAutoClosePasswordPrompt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveKeySource.SuppressAutoClosePasswordPrompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the password prompt dialog should not auto-close.</summary>
+        <value>
+          <see langword="true" /> the password prompt dialog should not auto-close; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

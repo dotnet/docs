@@ -1,0 +1,56 @@
+<Type Name="WhitespaceSignificantCollectionAttribute" FullName="System.Windows.Markup.WhitespaceSignificantCollectionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WhitespaceSignificantCollectionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WhitespaceSignificantCollectionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.WhitespaceSignificantCollectionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a collection type should be processed as being whitespace significant by a XAML processor.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `xml:space` is a related concept that influences XAML processing of white space but is orthogonal to the purpose of <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>. For more information, see [Whitespace Processing in XAML](~/docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ <xref:System.Windows.Documents.InlineCollection> is an example [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] class where this attribute is applied.  
+  
+<a name="xamlTextUsage_WhitespaceSignificantCollectionAttribute"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WhitespaceSignificantCollectionAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.WhitespaceSignificantCollectionAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.WhitespaceSignificantCollectionAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,25 @@
+<Type Name="InkCanvasStrokeErasingEventHandler" FullName="System.Windows.Controls.InkCanvasStrokeErasingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void InkCanvasStrokeErasingEventHandler(object sender, InkCanvasStrokeErasingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasStrokeErasingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeErasingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.InkCanvasStrokeErasingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Controls.InkCanvas.StrokeErasing" /> event for an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

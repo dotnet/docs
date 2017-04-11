@@ -1,0 +1,194 @@
+<Type Name="ChannelDispatcherBase" FullName="System.ServiceModel.Dispatcher.ChannelDispatcherBase">
+  <TypeSignature Language="C#" Value="public abstract class ChannelDispatcherBase : System.ServiceModel.Channels.CommunicationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelDispatcherBase extends System.ServiceModel.Channels.CommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ChannelDispatcherBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.CommunicationObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract base class for the channel dispatcher that accepts channels and associates them with a service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is used by developers who want to keep the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model but replace the system-provided runtime. Such applications will pull messages out of channels and handle them directly with user-defined dispatchers. To use <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> , create a class derived from it, extend <xref:System.ServiceModel.ServiceHost> and override <xref:System.ServiceModel.ServiceHostBase.InitializeRuntime%2A>, adding instances of your class derived from <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> to <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A>.  
+  
+ The <xref:System.ServiceModel.Channels.IChannelListener> and the <xref:System.ServiceModel.ServiceHost>, associated with the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> object are available for inspection or modification through the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Listener%2A> and <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host%2A> respectively.  
+  
+ <xref:System.ServiceModel.ServiceHost> calls the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Attach%28System.ServiceModel.ServiceHostBase%29> or <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Detach%28System.ServiceModel.ServiceHostBase%29> methods when adding or removing a <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> item from its <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection.  
+  
+ <xref:System.ServiceModel.ServiceHost> calls the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.CloseInput%2A> during shutdown before closing InstanceContexts. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses this call to close datagram channels and wait for all messages to get to an InstanceContext.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ChannelDispatcherBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcherBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attach">
+      <MemberSignature Language="C#" Value="protected virtual void Attach (System.ServiceModel.ServiceHostBase host);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Attach(class System.ServiceModel.ServiceHostBase host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Attach(System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="host">The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service.</param>
+        <summary>When overridden in a derived class, attaches the channel dispatcher to a specific host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+  
+ A <xref:System.ServiceModel.ServiceHost> calls this method when the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> is added to its <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection.  This gives the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> a chance to hook events and inspect the <xref:System.ServiceModel.ServiceHost>, and provides the value that should be returned from the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="host" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state or the host is already set.</exception>
+        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseInput">
+      <MemberSignature Language="C#" Value="public virtual void CloseInput ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseInput() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.CloseInput" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, removes the endpoint dispatchers associated with the channel dispatcher.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.ServiceHost> calls this method during shutdown to give the dispatcher a chance to drain messages. <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> uses this call to close datagram channels.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="protected virtual void Detach (System.ServiceModel.ServiceHostBase host);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Detach(class System.ServiceModel.ServiceHostBase host) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Detach(System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="host">The <see cref="T:System.ServiceModel.ServiceHostBase" />.</param>
+        <summary>When overridden in a derived class, detaches the channel dispatcher from a specific host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+  
+ Should set the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
+  
+ <xref:System.ServiceModel.ServiceHost> calls this method when the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> is removed from its <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection. This gives the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> a chance to unhook events and inspect the <xref:System.ServiceModel.ServiceHost>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="host" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The communication object is in an <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state or the host is already set.</exception>
+        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
+        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.ServiceHostBase Host { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceHostBase Host" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the service host associated with the channel dispatcher.</summary>
+        <value>The <see cref="T:System.ServiceModel.ServiceHostBase" /> for the service associated with the dispatcher.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.ServiceModel.ServiceHost> object can have many <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> objects, each associated with a different <xref:System.ServiceModel.Channels.IChannelListener> for that service. The host keeps a list of these <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> objects in the <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Listener">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.IChannelListener Listener { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IChannelListener Listener" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Listener" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IChannelListener</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the channel listener associated with the channel dispatcher.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.IChannelListener" /> associated with the channel dispatcher.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> associates an <xref:System.ServiceModel.Channels.IChannelListener> whose channels and messages this <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> is dispatching.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

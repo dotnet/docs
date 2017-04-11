@@ -1,0 +1,696 @@
+<Type Name="ExtraTopLevelOperators" FullName="Microsoft.FSharp.Core.ExtraTopLevelOperators">
+  <TypeSignature Language="C#" Value="public static class ExtraTopLevelOperators" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ExtraTopLevelOperators extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ExtraTopLevelOperators" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateArray2D&lt;?,T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] CreateArray2D&lt;?,T&gt; (System.Collections.Generic.IEnumerable&lt;?&gt; rows) where ? : System.Collections.Generic.IEnumerable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] CreateArray2D&lt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt;) ?, T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!?&gt; rows) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateArray2D``2(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("array2D")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="?">
+          <Constraints>
+            <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="rows" Type="System.Collections.Generic.IEnumerable&lt;?&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="?">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="rows">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDictionary&lt;TKey,TValue&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,TValue&gt; CreateDictionary&lt;TKey,TValue&gt; (System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,TValue&gt;&gt; keyValuePairs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt; CreateDictionary&lt;TKey, TValue&gt;(class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!TValue&gt;&gt; keyValuePairs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateDictionary``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("dict")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="keyValuePairs" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;TKey,TValue&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="keyValuePairs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSet&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; CreateSet&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; CreateSet&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateSet``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("set")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultAsyncBuilder">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsyncBuilder DefaultAsyncBuilder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Control.FSharpAsyncBuilder DefaultAsyncBuilder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.ExtraTopLevelOperators.DefaultAsyncBuilder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompiledName("DefaultAsyncBuilder")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsyncBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LazyPattern&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T LazyPattern&lt;T&gt; (Lazy&lt;T&gt; input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T LazyPattern&lt;T&gt;(class System.Lazy`1&lt;!!T&gt; input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.LazyPattern``1(System.Lazy{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Lazy|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="input" Type="System.Lazy&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormat&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormat&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormat&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormat``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("printf")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatLine&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatLine&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLine&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLine``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("printfn")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatLineToError&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatLineToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("eprintfn")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatLineToTextWriter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatLineToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("fprintfn")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="textWriter">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatToError&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("eprintf")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatToString&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatToString&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,string&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToString&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, string&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToString``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("sprintf")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatToStringThenFail&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatToStringThenFail&lt;T,TResult&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,TResult&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringThenFail&lt;T, TResult&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, !!TResult&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToStringThenFail``2(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("failwithf")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,System.String,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintFormatToTextWriter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PrintFormatToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("fprintf")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="format" Type="Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="textWriter">To be added.</param>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="query">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Linq.QueryBuilder query { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Linq.QueryBuilder query" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.ExtraTopLevelOperators.query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QueryBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpliceExpression&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SpliceExpression&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T SpliceExpression&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceExpression``1(Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("op_Splice")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpliceUntypedExpression&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SpliceUntypedExpression&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T SpliceUntypedExpression&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceUntypedExpression``1(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("op_SpliceUntyped")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="expression" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="expression">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToByte&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static byte ToByte&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToByte``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("uint8")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDouble&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static double ToDouble&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 ToDouble&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToDouble``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("double")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSByte&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static sbyte ToSByte&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSByte``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("int8")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSingle&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static float ToSingle&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float32 ToSingle&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSingle``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("single")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

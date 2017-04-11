@@ -1,0 +1,745 @@
+<Type Name="XmlObjectSerializer" FullName="System.Runtime.Serialization.XmlObjectSerializer">
+  <TypeSignature Language="C#" Value="public abstract class XmlObjectSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlObjectSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XmlObjectSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class used to serialize objects as XML streams or documents. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extend the <xref:System.Runtime.Serialization.XmlObjectSerializer> to create your own serializer to serialize and deserialize objects. Both the <xref:System.Runtime.Serialization.DataContractSerializer> class and the <xref:System.Runtime.Serialization.NetDataContractSerializer> class inherit from the <xref:System.Runtime.Serialization.XmlObjectSerializer> and are used to serialize and deserialize objects that conform to data contract rules (objects created using the <xref:System.Runtime.Serialization.DataContractAttribute> and the <xref:System.Runtime.Serialization.DataMemberAttribute>).  
+  
+   
+  
+## Examples  
+ The following example shows a method named `WriteObjectWithInstance` that includes an <xref:System.Runtime.Serialization.XmlObjectSerializer> as a parameter. The method serializes an object using either the <xref:System.Runtime.Serialization.DataContractSerializer> or <xref:System.Runtime.Serialization.NetDataContractSerializer> by calling the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+  
+ [!code-csharp[XmlObjectSerializer#1](~/samples/snippets/csharp/VS_Snippets_CFX/xmlobjectserializer/cs/source.cs#1)]
+ [!code-vb[XmlObjectSerializer#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/xmlobjectserializer/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+    <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" />, you must override the following members: <see cref="M:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />, <see cref="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />, <see cref="M:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />. Additionally, the <see cref="Overload:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject" /> and <see cref="Overload:System.Runtime.Serialization.XmlObjectSerializer.ReadObject" /> methods must be implemented for reading and deserializing.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XmlObjectSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is marked protected to allow derived classes to chain constructors.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public abstract bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsStartObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML stream or document.</param>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlDictionaryReader" /> is positioned over an XML element that can be read.</summary>
+        <returns>
+          <see langword="true" /> if the reader can read the data; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks if the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. The <xref:System.Runtime.Serialization.XmlObjectSerializer> implementation determines when to return `true`. Implementations may check that they are positioned on an element or look for an expected element name. One implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer>, the <xref:System.Runtime.Serialization.DataContractSerializer>, checks that it is positioned on an element and also checks that the element name is the top level expected name for the type currently being deserialized.  
+  
+ If needed, additional attributes in the XML stream can be read while positioned on the top level element before reading XML contents using the <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartObject">
+      <MemberSignature Language="C#" Value="public virtual bool IsStartObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsStartObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read the XML stream or document.</param>
+        <summary>Gets a value that specifies whether the <see cref="T:System.Xml.XmlReader" /> is positioned over an XML element that can be read.</summary>
+        <returns>
+          <see langword="true" /> if the reader is positioned over the starting element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
+  
+ With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public virtual object ReadObject (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> used to read the XML stream or document.</param>
+        <summary>Reads the XML stream or document with a <see cref="T:System.IO.Stream" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public virtual object ReadObject (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML document.</param>
+        <summary>Reads the XML document or stream with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a virtual method, and has a default implementation that creates a dictionary reader to read the underlying stream and deserialize it. The default implementation assumes the stream is text or XML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public virtual object ReadObject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read the XML stream or document.</param>
+        <summary>Reads the XML document or stream with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public abstract object ReadObject (System.Xml.XmlDictionaryReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> used to read the XML document.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the root name and root namespace; otherwise, <see langword="false" /> to skip the verification.</param>
+        <summary>Reads the XML stream or document with an <see cref="T:System.Xml.XmlDictionaryReader" /> and returns the deserialized object; it also enables you to specify whether the serializer can read the data before attempting to read it.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadObject">
+      <MemberSignature Language="C#" Value="public virtual object ReadObject (System.Xml.XmlReader reader, bool verifyObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.Xml.XmlReader reader, bool verifyObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlReader,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="verifyObjectName" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> used to read the XML document or stream.</param>
+        <param name="verifyObjectName">
+          <see langword="true" /> to check whether the enclosing XML element name and namespace correspond to the root name and root namespace; <see langword="false" /> to skip the verification.</param>
+        <summary>Reads the XML document or stream with an <see cref="T:System.Xml.XmlReader" /> and returns the deserialized object; it also enables you to specify whether the serializer can read the data before attempting to read it.</summary>
+        <returns>The deserialized object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `verifyObjectName` parameter uses the same code as the <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method to determine whether the element is the start of the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public abstract void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndObject(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document or stream.</param>
+        <summary>Writes the end of the object data as a closing XML element to the XML document or stream with an <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public virtual void WriteEndObject (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteEndObject(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <summary>Writes the end of the object data as a closing XML element to the XML document or stream with an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public virtual void WriteObject (System.IO.Stream stream, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObject(class System.IO.Stream stream, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> used to write the XML document or stream.</param>
+        <param name="graph">The object that contains the data to write to the stream.</param>
+        <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public virtual void WriteObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the content to the XML document or stream.</param>
+        <param name="graph">The object that contains the content to write.</param>
+        <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a virtual method and has a default implementation that calls the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods. Because of this, this method is intended to be the most commonly used method on a serializer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObject">
+      <MemberSignature Language="C#" Value="public virtual void WriteObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <param name="graph">The object that contains the content to write.</param>
+        <summary>Writes the complete content (start, content, and end) of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a virtual method, and has a default implementation that delegates writing to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%28System.Xml.XmlDictionaryWriter%2CSystem.Object%29?displayProperty=fullName> overload.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public abstract void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObjectContent(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document or stream.</param>
+        <param name="graph">The object that contains the content to write.</param>
+        <summary>Writes only the content of the object to the XML document or stream using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteObjectContent">
+      <MemberSignature Language="C#" Value="public virtual void WriteObjectContent (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObjectContent(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document or stream.</param>
+        <param name="graph">The object that contains the content to write.</param>
+        <summary>Writes only the content of the object to the XML document or stream with the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public abstract void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write the XML document.</param>
+        <param name="graph">The object to serialize.</param>
+        <summary>Writes the start of the object's data as an opening XML element using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public virtual void WriteStartObject (System.Xml.XmlWriter writer, object graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteStartObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="graph" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> used to write the XML document.</param>
+        <param name="graph">The object to serialize.</param>
+        <summary>Writes the start of the object's data as an opening XML element using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">the type being serialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">there is a problem with the instance being serialized.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of objects to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="IsStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that specifies whether the serializer can read the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks whether the reader is positioned on an element to read, and returns `true` if the element is the top-level element for the object found in the XML stream or document. To return `true`, the found element must have an expected name. The actual expected element name depends on the implementation of the serializer.  
+  
+ With the <xref:System.Runtime.Serialization.DataContractSerializer>, the starting element is specified in the constructor of the extension class.  For an example, see the constructors for the <xref:System.Runtime.Serialization.DataContractSerializer> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteEndObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing XML element to an XML stream or document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. Users can insert XML attributes during the writing of the object between the calls to <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A>. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes only the starting XML element to an XML document or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="WriteObjectContent">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes only the content of an object to an XML document or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods must be implemented. The three methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. If the implementation writes using XML elements, attributes can be inserted before writing the contents of the object. The three methods are also called by the virtual implementation of the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

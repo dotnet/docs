@@ -1,0 +1,104 @@
+<Type Name="ObjectConstructor" FullName="Microsoft.JScript.ObjectConstructor">
+  <TypeSignature Language="C#" Value="public sealed class ObjectConstructor : Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectConstructor extends Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ObjectConstructor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ScriptFunction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConstructObject">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.JSObject ConstructObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.JSObject ConstructObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.ConstructObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.JSObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the prototype-based object.</summary>
+        <returns>The instance of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public object CreateInstance (object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateInstance(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.CreateInstance(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>The instance of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public object Invoke (object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.Invoke(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="args">The arguments to pass to the method.</param>
+        <summary>Invokes a method of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>The result of the call to the method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

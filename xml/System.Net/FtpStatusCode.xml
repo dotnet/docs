@@ -1,0 +1,817 @@
+<Type Name="FtpStatusCode" FullName="System.Net.FtpStatusCode">
+  <TypeSignature Language="C#" Value="public enum FtpStatusCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FtpStatusCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.FtpStatusCode" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the status codes returned for a File Transfer Protocol (FTP) operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpStatusCode> enumeration defines the values returned in the <xref:System.Net.FtpWebResponse.StatusCode%2A> property.  
+  
+ For additional information about FTP server status codes, see RFC 959, "File Transfer Protocol," Section 4.2, "FTP Replies," available at [http://www.rfc-editor.org](http://www.ietf.org).  
+  
+   
+  
+## Examples  
+ The following code example sends an FTP request to make a new directory on an FTP server and checks the status code returned in the response.  
+  
+ [!code-cpp[NclFtpClient#22](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#22)]
+ [!code-csharp[NclFtpClient#22](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#22)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccountNeeded">
+      <MemberSignature Language="C#" Value="AccountNeeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode AccountNeeded = int32(532)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.AccountNeeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a user account on the server is required.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionAbortedLocalProcessingError">
+      <MemberSignature Language="C#" Value="ActionAbortedLocalProcessingError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionAbortedLocalProcessingError = int32(451)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionAbortedLocalProcessingError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that an error occurred that prevented the request action from completing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionAbortedUnknownPageType">
+      <MemberSignature Language="C#" Value="ActionAbortedUnknownPageType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionAbortedUnknownPageType = int32(551)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionAbortedUnknownPageType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be taken because the specified page type is unknown. Page types are described in RFC 959 Section 3.1.2.3</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionNotTakenFilenameNotAllowed">
+      <MemberSignature Language="C#" Value="ActionNotTakenFilenameNotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionNotTakenFilenameNotAllowed = int32(553)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionNotTakenFilenameNotAllowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be performed on the specified file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionNotTakenFileUnavailable">
+      <MemberSignature Language="C#" Value="ActionNotTakenFileUnavailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionNotTakenFileUnavailable = int32(550)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionNotTakenFileUnavailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be performed on the specified file because the file is not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionNotTakenFileUnavailableOrBusy">
+      <MemberSignature Language="C#" Value="ActionNotTakenFileUnavailableOrBusy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionNotTakenFileUnavailableOrBusy = int32(450)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionNotTakenFileUnavailableOrBusy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be performed on the specified file because the file is not available or is being used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionNotTakenInsufficientSpace">
+      <MemberSignature Language="C#" Value="ActionNotTakenInsufficientSpace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ActionNotTakenInsufficientSpace = int32(452)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ActionNotTakenInsufficientSpace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be performed because there is not enough space on the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgumentSyntaxError">
+      <MemberSignature Language="C#" Value="ArgumentSyntaxError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ArgumentSyntaxError = int32(501)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ArgumentSyntaxError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that one or more command arguments has a syntax error.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadCommandSequence">
+      <MemberSignature Language="C#" Value="BadCommandSequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode BadCommandSequence = int32(503)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.BadCommandSequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the sequence of commands is not in the correct order.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CantOpenData">
+      <MemberSignature Language="C#" Value="CantOpenData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode CantOpenData = int32(425)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.CantOpenData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the data connection cannot be opened.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosingControl">
+      <MemberSignature Language="C#" Value="ClosingControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ClosingControl = int32(221)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ClosingControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server is closing the control connection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClosingData">
+      <MemberSignature Language="C#" Value="ClosingData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ClosingData = int32(226)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ClosingData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server is closing the data connection and that the requested file action was successful.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandExtraneous">
+      <MemberSignature Language="C#" Value="CommandExtraneous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode CommandExtraneous = int32(202)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.CommandExtraneous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the command is not implemented by the server because it is not needed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandNotImplemented">
+      <MemberSignature Language="C#" Value="CommandNotImplemented" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode CommandNotImplemented = int32(502)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.CommandNotImplemented" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the command is not implemented by the FTP server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandOK">
+      <MemberSignature Language="C#" Value="CommandOK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode CommandOK = int32(200)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.CommandOK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the command completed successfully.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandSyntaxError">
+      <MemberSignature Language="C#" Value="CommandSyntaxError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode CommandSyntaxError = int32(500)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.CommandSyntaxError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the command has a syntax error or is not a command recognized by the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionClosed">
+      <MemberSignature Language="C#" Value="ConnectionClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ConnectionClosed = int32(426)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ConnectionClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the connection has been closed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataAlreadyOpen">
+      <MemberSignature Language="C#" Value="DataAlreadyOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode DataAlreadyOpen = int32(125)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.DataAlreadyOpen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the data connection is already open and the requested transfer is starting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectoryStatus">
+      <MemberSignature Language="C#" Value="DirectoryStatus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode DirectoryStatus = int32(212)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.DirectoryStatus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the status of a directory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnteringPassive">
+      <MemberSignature Language="C#" Value="EnteringPassive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode EnteringPassive = int32(227)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.EnteringPassive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server is entering passive mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileActionAborted">
+      <MemberSignature Language="C#" Value="FileActionAborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode FileActionAborted = int32(552)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.FileActionAborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested action cannot be performed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileActionOK">
+      <MemberSignature Language="C#" Value="FileActionOK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode FileActionOK = int32(250)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.FileActionOK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested file action completed successfully.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileCommandPending">
+      <MemberSignature Language="C#" Value="FileCommandPending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode FileCommandPending = int32(350)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.FileCommandPending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested file action requires additional information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileStatus">
+      <MemberSignature Language="C#" Value="FileStatus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode FileStatus = int32(213)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.FileStatus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the status of a file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoggedInProceed">
+      <MemberSignature Language="C#" Value="LoggedInProceed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode LoggedInProceed = int32(230)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.LoggedInProceed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the user is logged in and can send commands.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedLoginAccount">
+      <MemberSignature Language="C#" Value="NeedLoginAccount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode NeedLoginAccount = int32(332)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.NeedLoginAccount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server requires a login account to be supplied.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotLoggedIn">
+      <MemberSignature Language="C#" Value="NotLoggedIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode NotLoggedIn = int32(530)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.NotLoggedIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that login information must be sent to the server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpeningData">
+      <MemberSignature Language="C#" Value="OpeningData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode OpeningData = int32(150)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.OpeningData" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server is opening the data connection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PathnameCreated">
+      <MemberSignature Language="C#" Value="PathnameCreated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode PathnameCreated = int32(257)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.PathnameCreated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the requested path name was created.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartMarker">
+      <MemberSignature Language="C#" Value="RestartMarker" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode RestartMarker = int32(110)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.RestartMarker" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the response contains a restart marker reply. The text of the description that accompanies this status contains the user data stream marker and the server marker.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendPasswordCommand">
+      <MemberSignature Language="C#" Value="SendPasswordCommand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode SendPasswordCommand = int32(331)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.SendPasswordCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server expects a password to be supplied.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendUserCommand">
+      <MemberSignature Language="C#" Value="SendUserCommand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode SendUserCommand = int32(220)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.SendUserCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server is ready for a user login operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerWantsSecureSession">
+      <MemberSignature Language="C#" Value="ServerWantsSecureSession" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ServerWantsSecureSession = int32(234)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ServerWantsSecureSession" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the server accepts the authentication mechanism specified by the client, and the exchange of security data is complete.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceNotAvailable">
+      <MemberSignature Language="C#" Value="ServiceNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ServiceNotAvailable = int32(421)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ServiceNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the service is not available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceTemporarilyNotAvailable">
+      <MemberSignature Language="C#" Value="ServiceTemporarilyNotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode ServiceTemporarilyNotAvailable = int32(120)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.ServiceTemporarilyNotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the service is not available now; try your request later.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemType">
+      <MemberSignature Language="C#" Value="SystemType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode SystemType = int32(215)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.SystemType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the system type name using the system names published in the Assigned Numbers document published by the Internet Assigned Numbers Authority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Undefined">
+      <MemberSignature Language="C#" Value="Undefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.FtpStatusCode Undefined = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.FtpStatusCode.Undefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.FtpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Included for completeness, this value is never returned by servers.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

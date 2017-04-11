@@ -1,0 +1,54 @@
+<Type Name="IXamlTypeResolver" FullName="System.Windows.Markup.IXamlTypeResolver">
+  <TypeSignature Language="C#" Value="public interface IXamlTypeResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlTypeResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service that resolves from named elements in XAML markup to the appropriate CLR type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.IXamlTypeResolver> class is used primarily by <xref:System.ComponentModel.TypeConverter> and <xref:System.Windows.Markup.MarkupExtension> authors as a service to determine the XAML-to-CLR type mapping that is necessary for constructing a CLR object.  
+  
+ Type converters and markup extensions can query for <xref:System.Windows.Markup.IXamlTypeResolver> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IXamlTypeResolver> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public Type Resolve (string qualifiedTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type Resolve(string qualifiedTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifiedTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="qualifiedTypeName">The XAML type name to resolve. The type name is optionally qualified by the prefix for a XML namespace. Otherwise the current default XML namespace is assumed.</param>
+        <summary>Resolves a named XAML type to the corresponding CLR <see cref="T:System.Type" />.</summary>
+        <returns>The <see cref="T:System.Type" /> that <paramref name="qualifiedTypeName" /> resolves to</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

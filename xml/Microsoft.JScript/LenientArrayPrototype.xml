@@ -1,0 +1,240 @@
+<Type Name="LenientArrayPrototype" FullName="Microsoft.JScript.LenientArrayPrototype">
+  <TypeSignature Language="C#" Value="public sealed class LenientArrayPrototype : Microsoft.JScript.ArrayPrototype" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientArrayPrototype extends Microsoft.JScript.ArrayPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientArrayPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ArrayPrototype</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientArrayPrototype" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="concat">
+      <MemberSignature Language="C#" Value="public object concat;" />
+      <MemberSignature Language="ILAsm" Value=".field public object concat" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.concat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public object constructor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.constructor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="join">
+      <MemberSignature Language="C#" Value="public object join;" />
+      <MemberSignature Language="ILAsm" Value=".field public object join" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.join" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pop">
+      <MemberSignature Language="C#" Value="public object pop;" />
+      <MemberSignature Language="ILAsm" Value=".field public object pop" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.pop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="push">
+      <MemberSignature Language="C#" Value="public object push;" />
+      <MemberSignature Language="ILAsm" Value=".field public object push" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.push" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reverse">
+      <MemberSignature Language="C#" Value="public object reverse;" />
+      <MemberSignature Language="ILAsm" Value=".field public object reverse" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.reverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="shift">
+      <MemberSignature Language="C#" Value="public object shift;" />
+      <MemberSignature Language="ILAsm" Value=".field public object shift" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.shift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="slice">
+      <MemberSignature Language="C#" Value="public object slice;" />
+      <MemberSignature Language="ILAsm" Value=".field public object slice" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.slice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sort">
+      <MemberSignature Language="C#" Value="public object sort;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sort" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.sort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="splice">
+      <MemberSignature Language="C#" Value="public object splice;" />
+      <MemberSignature Language="ILAsm" Value=".field public object splice" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.splice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLocaleString">
+      <MemberSignature Language="C#" Value="public object toLocaleString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLocaleString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.toLocaleString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public object toString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.toString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="unshift">
+      <MemberSignature Language="C#" Value="public object unshift;" />
+      <MemberSignature Language="ILAsm" Value=".field public object unshift" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientArrayPrototype.unshift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

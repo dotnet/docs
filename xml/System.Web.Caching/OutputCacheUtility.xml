@@ -1,0 +1,153 @@
+<Type Name="OutputCacheUtility" FullName="System.Web.Caching.OutputCacheUtility">
+  <TypeSignature Language="C#" Value="public static class OutputCacheUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OutputCacheUtility extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheUtility" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides helper methods for configuring the output cache.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCacheDependency">
+      <MemberSignature Language="C#" Value="public static System.Web.Caching.CacheDependency CreateCacheDependency (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Caching.CacheDependency CreateCacheDependency(class System.Web.HttpResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.CreateCacheDependency(System.Web.HttpResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">The HTTP response.</param>
+        <summary>Creates a cache dependency for the response.</summary>
+        <returns>The dependency.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushKernelCache">
+      <MemberSignature Language="C#" Value="public static void FlushKernelCache (string cacheKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FlushKernelCache(string cacheKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.FlushKernelCache(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cacheKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cacheKey">A  string that contains the URI to flush.</param>
+        <summary>Flushes the kernel cache for a specific Uniform Resource Identifier (URI).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentBuffers">
+      <MemberSignature Language="C#" Value="public static System.Collections.ArrayList GetContentBuffers (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList GetContentBuffers(class System.Web.HttpResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.GetContentBuffers(System.Web.HttpResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">The response.</param>
+        <summary>Gets the response content buffers.</summary>
+        <returns>The buffers.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidationCallbacks">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Web.HttpCacheValidateHandler,object&gt;&gt; GetValidationCallbacks (System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Web.HttpCacheValidateHandler, object&gt;&gt; GetValidationCallbacks(class System.Web.HttpResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.GetValidationCallbacks(System.Web.HttpResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.Web.HttpCacheValidateHandler,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">The response.</param>
+        <summary>Gets the cache policy validation callback information.</summary>
+        <returns>The cache policy validation callback information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContentBuffers">
+      <MemberSignature Language="C#" Value="public static void SetContentBuffers (System.Web.HttpResponse response, System.Collections.ArrayList buffers);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContentBuffers(class System.Web.HttpResponse response, class System.Collections.ArrayList buffers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.SetContentBuffers(System.Web.HttpResponse,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+        <Parameter Name="buffers" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="response">The HTTP response.</param>
+        <param name="buffers">The buffers.</param>
+        <summary>Sets the content buffers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupKernelCaching">
+      <MemberSignature Language="C#" Value="public static string SetupKernelCaching (string originalCacheUrl, System.Web.HttpResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SetupKernelCaching(string originalCacheUrl, class System.Web.HttpResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheUtility.SetupKernelCaching(System.String,System.Web.HttpResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalCacheUrl" Type="System.String" />
+        <Parameter Name="response" Type="System.Web.HttpResponse" />
+      </Parameters>
+      <Docs>
+        <param name="originalCacheUrl">The original cache URL.</param>
+        <param name="response">The HTTP response.</param>
+        <summary>Gets the kernel cache key.</summary>
+        <returns>The kernel cache key If the response can be kernel cached;         otherwise <see langword="null" /> .</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

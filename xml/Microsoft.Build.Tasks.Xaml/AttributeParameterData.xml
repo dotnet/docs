@@ -1,0 +1,151 @@
+<Type Name="AttributeParameterData" FullName="Microsoft.Build.Tasks.Xaml.AttributeParameterData">
+  <TypeSignature Language="C#" Value="public sealed class AttributeParameterData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeParameterData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies attribute parameter data.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeParameterData (System.Xaml.XamlType type, System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt; arrayContents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlType type, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt; arrayContents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.Collections.Generic.IEnumerable{Microsoft.Build.Tasks.Xaml.AttributeParameterData})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Xaml.XamlType" />
+        <Parameter Name="arrayContents" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the data..</param>
+        <param name="arrayContents">The array contents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" /> class with specified type and array contents.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeParameterData (System.Xaml.XamlType type, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlType type, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Xaml.XamlType" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the data.</param>
+        <param name="value">The value of the data.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" /> class with specified type and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeParameterData (System.Xaml.XamlType type, string textValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlType type, string textValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.AttributeParameterData.#ctor(System.Xaml.XamlType,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Xaml.XamlType" />
+        <Parameter Name="textValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the data.</param>
+        <param name="textValue">The text value.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.AttributeParameterData" /> class with specified type and text value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayContents">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt; ArrayContents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt; ArrayContents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.ArrayContents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Build.Tasks.Xaml.AttributeParameterData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the array contents of the attribute parameter data.</summary>
+        <value>The array contents of the attribute parameter data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextValue">
+      <MemberSignature Language="C#" Value="public string TextValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.TextValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text value of the attribute parameter data.</summary>
+        <value>The text value of the attribute parameter data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XAML type of the attribute parameter data.</summary>
+        <value>The XAML type of the attribute parameter data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.AttributeParameterData.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the attribute parameter data.</summary>
+        <value>The value of the attribute parameter data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

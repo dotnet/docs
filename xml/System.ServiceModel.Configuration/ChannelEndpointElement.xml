@@ -1,0 +1,356 @@
+<Type Name="ChannelEndpointElement" FullName="System.ServiceModel.Configuration.ChannelEndpointElement">
+  <TypeSignature Language="C#" Value="public sealed class ChannelEndpointElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelEndpointElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ChannelEndpointElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides options for configuring contract, binding, and address properties of the channel endpoint, which are used by clients to connect to service endpoints on the server. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelEndpointElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelEndpointElement (System.ServiceModel.EndpointAddress address, string contractType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address, string contractType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.#ctor(System.ServiceModel.EndpointAddress,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="contractType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Specifies the address of the endpoint. The default is an empty string. The address must be an absolute URI.</param>
+        <param name="contractType">A string that indicates which contract this endpoint is exposing. The assembly must implement the contract type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ChannelEndpointElement" /> class with the specified endpoint address and contract type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public Uri Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Address" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("address", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the address of the endpoint.</summary>
+        <value>A URI that contains the address of the endpoint. The address must be an absolute URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorConfiguration">
+      <MemberSignature Language="C#" Value="public string BehaviorConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BehaviorConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BehaviorConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("behaviorConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the behavior name of the behavior to be used to instantiate the endpoint.</summary>
+        <value>The behavior name of the behavior to be used to instantiate the endpoint. The behavior name must be in scope at the point the service is defined. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public string Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Binding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("binding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of binding to use.</summary>
+        <value>The type of binding to use. The type must have a registered configuration section in order to be referenced. The type is the registered by section name, rather than by the type name of the binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingConfiguration">
+      <MemberSignature Language="C#" Value="public string BindingConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BindingConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.BindingConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("bindingConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding name of the binding to use when the endpoint is instantiated.</summary>
+        <value>The binding name of the binding to use when the endpoint is instantiated. The binding name must be in scope at the point the endpoint is defined. The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public string Contract { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Contract" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("contract", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contract that this endpoint is exposing.</summary>
+        <value>The contract this endpoint is exposing. The assembly must implement the contract type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointConfiguration">
+      <MemberSignature Language="C#" Value="public string EndpointConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EndpointConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.EndpointConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("endpointConfiguration", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the standard endpoint that is set by the <see cref="P:System.ServiceModel.Configuration.ChannelEndpointElement.Kind" /> property, which references to the additional configuration information of this standard endpoint. The same name must be defined in the <see cref="T:System.ServiceModel.Configuration.StandardEndpointsSection" />.</summary>
+        <value>A string that specifies the name of the standard endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("headers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.AddressHeaderCollectionElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of address headers.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.AddressHeaderCollectionElement" /> that contains a collection of address headers.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IdentityElement Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IdentityElement Identity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("identity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.IdentityElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an identity that enables the authentication of an endpoint by other endpoints that are exchanging messages with it.</summary>
+        <value>An <see cref="T:System.ServiceModel.Configuration.IdentityElement" /> that contains configuration settings for enabling the authentication of an endpoint by other endpoints exchanging messages with it.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public string Kind { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Kind" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("kind", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of standard endpoint applied. The type must be registered in the <see langword="&lt;extensions&gt;" /> section or in machine.config. If nothing is specified, a common channel endpoint is created.</summary>
+        <value>A string that denotes the type of standard endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a unique identifier of an endpoint for a given contract.</summary>
+        <value>An endpoint for a given contract. The default is an empty string. The service model allows the user to define multiple clients for a given contract type. Each definition must be differentiated by a unique configuration name. If this property is omitted, the corresponding endpoint is used as the default endpoint associated with the specified contract type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service model allows the user to define multiple clients for a given contract type. Each definition must be differentiated by a unique configuration name. If this property is omitted, the corresponding endpoint is used as the default endpoint associated with the specified contract type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ChannelEndpointElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ChannelEndpointElement.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,95 @@
+<Type Name="JScriptCodeProvider" FullName="Microsoft.JScript.JScriptCodeProvider">
+  <TypeSignature Language="C#" Value="public sealed class JScriptCodeProvider : System.CodeDom.Compiler.CodeDomProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JScriptCodeProvider extends System.CodeDom.Compiler.CodeDomProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JScriptCodeProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.Compiler.CodeDomProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("code")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides access to instances of the JScript code generator and code compiler.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JScriptCodeProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptCodeProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCompiler">
+      <MemberSignature Language="C#" Value="public override System.CodeDom.Compiler.ICodeCompiler CreateCompiler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.Compiler.ICodeCompiler CreateCompiler() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateCompiler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.ICodeCompiler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an instance of the JScript code compiler.</summary>
+        <returns>An instance of the JScript code compiler.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGenerator">
+      <MemberSignature Language="C#" Value="public override System.CodeDom.Compiler.ICodeGenerator CreateGenerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.Compiler.ICodeGenerator CreateGenerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateGenerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.ICodeGenerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an instance of the JScript code generator.</summary>
+        <returns>An instance of the JScript code generator.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileExtension">
+      <MemberSignature Language="C#" Value="public override string FileExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileExtension" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptCodeProvider.FileExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file name extension for JScript code files.</summary>
+        <value>The string literal "js".</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

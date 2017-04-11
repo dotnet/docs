@@ -1,0 +1,91 @@
+<Type Name="Duplex" FullName="System.Drawing.Printing.Duplex">
+  <TypeSignature Language="C#" Value="public enum Duplex" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Duplex extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.Duplex" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the printer's duplex setting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Drawing.Printing.PrinterSettings> class.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Default = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer's default duplex setting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Horizontal = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Double-sided, horizontal printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Simplex">
+      <MemberSignature Language="C#" Value="Simplex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Simplex = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Simplex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Single-sided printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Double-sided, vertical printing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,77 @@
+<Type Name="PartialResultProcessing" FullName="System.DirectoryServices.Protocols.PartialResultProcessing">
+  <TypeSignature Language="C#" Value="public enum PartialResultProcessing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialResultProcessing extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PartialResultProcessing" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.PartialResultProcessing" /> enumeration specifies the required type of partial results processing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application performing an asynchronous operation can use the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> method, <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest%2A> method, and (optionally) the <xref:System.AsyncCallback> delegate in the standard .NET style.  
+  
+ An application retrieving partial results can call the <xref:System.DirectoryServices.Protocols.LdapConnection.BeginSendRequest%2A> and pass either ReturnPartialResults or ReturnPartialResultsAndNotifyCallback as the `partialMode` parameter.  
+  
+ In most scenarios, use NoPartialResultSupport for better performance and scalability. The use of ReturnPartialResults or ReturnPartialResultsAndNotifyCallback is only recommended in the scenario where the retrieval of partial results is desired. For example, when performing a search with the <xref:System.DirectoryServices.Protocols.DirectoryNotificationControl> specified, the search results are returned only when changes are made to that object. The search never completes and partial results are returned.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoPartialResultSupport">
+      <MemberSignature Language="C#" Value="NoPartialResultSupport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.PartialResultProcessing NoPartialResultSupport = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.PartialResultProcessing.NoPartialResultSupport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application will not retrieve partial results. The value is equal to 0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnPartialResults">
+      <MemberSignature Language="C#" Value="ReturnPartialResults" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.PartialResultProcessing ReturnPartialResults = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.PartialResultProcessing.ReturnPartialResults" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application will retrieve partial results. The value is equal to 1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnPartialResultsAndNotifyCallback">
+      <MemberSignature Language="C#" Value="ReturnPartialResultsAndNotifyCallback" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.PartialResultProcessing ReturnPartialResultsAndNotifyCallback = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.PartialResultProcessing.ReturnPartialResultsAndNotifyCallback" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.PartialResultProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An application will retrieve partial results and use the callback mechanism. The value is equal to 2.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,32 @@
+<Type Name="OleDbInfoMessageEventHandler" FullName="System.Data.OleDb.OleDbInfoMessageEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void OleDbInfoMessageEventHandler(object sender, OleDbInfoMessageEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbInfoMessageEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbInfoMessageEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Data.OleDb.OleDbInfoMessageEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Data.OleDb.OleDbInfoMessageEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Data.OleDb.OleDbConnection.InfoMessage" /> event of an <see cref="T:System.Data.OleDb.OleDbConnection" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Data.OleDb.OleDbInfoMessageEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

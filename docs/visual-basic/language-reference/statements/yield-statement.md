@@ -114,9 +114,6 @@ Next
   
  For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
-## Requirements  
- [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)]  
-  
 ## See Also  
  [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
  [Statements](../../../visual-basic/language-reference/statements/index.md)

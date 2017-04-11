@@ -1,0 +1,91 @@
+<Type Name="IgnorePropertiesAttribute" FullName="System.Data.Services.IgnorePropertiesAttribute">
+  <TypeSignature Language="C#" Value="public sealed class IgnorePropertiesAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IgnorePropertiesAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.IgnorePropertiesAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Controls the visibility of a property or properties by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this attribute is placed on a type that represents an entity type in a data service, the property name specified by this attribute is not visible at the representational state transfer (REST) service level.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IgnorePropertiesAttribute (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IgnorePropertiesAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">A string value that contains the property or properties to be attributed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.IgnorePropertiesAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IgnorePropertiesAttribute (string[] propertyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] propertyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.IgnorePropertiesAttribute.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyNames" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyNames">A string value that contains the property or properties to be attributed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.IgnorePropertiesAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; PropertyNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; PropertyNames" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.IgnorePropertiesAttribute.PropertyNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property name or names to controlled by the <see cref="T:System.Data.Services.IgnorePropertiesAttribute" /> attribute.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

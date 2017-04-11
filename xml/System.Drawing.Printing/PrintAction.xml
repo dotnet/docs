@@ -1,0 +1,76 @@
+<Type Name="PrintAction" FullName="System.Drawing.Printing.PrintAction">
+  <TypeSignature Language="C#" Value="public enum PrintAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrintAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of print operation occurring.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PrintAction> is used by the <xref:System.Drawing.Printing.PrintEventArgs> type to indicate what type of <xref:System.Drawing.Printing.PrintDocument.Print%2A> event is occurring.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A?displayProperty=fullName> does not reliably indicate the type of print operation occurring, and returns PrintToFile in all cases.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PrintToFile">
+      <MemberSignature Language="C#" Value="PrintToFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintAction PrintToFile = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintAction.PrintToFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print operation is printing to a file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintToPreview">
+      <MemberSignature Language="C#" Value="PrintToPreview" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintAction PrintToPreview = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintAction.PrintToPreview" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print operation is a print preview.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintToPrinter">
+      <MemberSignature Language="C#" Value="PrintToPrinter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintAction PrintToPrinter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintAction.PrintToPrinter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print operation is printing to a printer.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

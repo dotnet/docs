@@ -1,0 +1,154 @@
+<Type Name="VSAITEMTYPE2" FullName="Microsoft.JScript.VSAITEMTYPE2">
+  <TypeSignature Language="C#" Value="public enum VSAITEMTYPE2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VSAITEMTYPE2 extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VSAITEMTYPE2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("581AD3D9-2BAA-3770-B92B-38607E1B463A")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Extends the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration. Provides extra functionality that is needed by an IActiveScript host.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EXPRESSION">
+      <MemberSignature Language="C#" Value="EXPRESSION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 EXPRESSION = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.EXPRESSION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an expression. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTOBJECT">
+      <MemberSignature Language="C#" Value="HOSTOBJECT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTOBJECT = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTOBJECT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a host object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTSCOPE">
+      <MemberSignature Language="C#" Value="HOSTSCOPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPE = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the scope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HOSTSCOPEANDOBJECT">
+      <MemberSignature Language="C#" Value="HOSTSCOPEANDOBJECT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPEANDOBJECT = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPEANDOBJECT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies both the scope and the object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies none. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SCRIPTBLOCK">
+      <MemberSignature Language="C#" Value="SCRIPTBLOCK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTBLOCK = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.SCRIPTBLOCK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a script block. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SCRIPTSCOPE">
+      <MemberSignature Language="C#" Value="SCRIPTSCOPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTSCOPE = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.SCRIPTSCOPE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the script scope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="STATEMENT">
+      <MemberSignature Language="C#" Value="STATEMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 STATEMENT = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.STATEMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a single statement. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

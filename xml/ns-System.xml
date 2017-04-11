@@ -1,0 +1,17 @@
+<Namespace Name="System">
+  <Docs>
+    <summary>The <see cref="N:System" /> namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Other classes provide services supporting data type conversion, method parameter manipulation, mathematics, remote and local program invocation, application environment management, and supervision of managed and unmanaged applications.  
+  
+ To access types in the <xref:System> namespace from C# code without having to provide fully qualified type names, include the `using System;` statement at the beginning of your source code file.  
+  
+ To access types in the <xref:System> namespace from C++/CLI code without having to provide fully qualified type names, include the `using namespace System;` statement at the beginning of your source code file. In addition, you must compile with the [/clr](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c) switch.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

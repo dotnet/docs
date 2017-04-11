@@ -1,0 +1,394 @@
+<Type Name="SettingsPropertyCollection" FullName="System.Configuration.SettingsPropertyCollection">
+  <TypeSignature Language="C#" Value="public class SettingsPropertyCollection : ICloneable, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingsPropertyCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsPropertyCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Configuration.SettingsProperty" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsPropertyCollection> collection contains a collection of <xref:System.Configuration.SettingsProperty> objects. A <xref:System.Configuration.SettingsProperty> object is used internally as the class that represents metadata about an individual configuration property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SettingsPropertyCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Configuration.SettingsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Configuration.SettingsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.Add(System.Configuration.SettingsProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Configuration.SettingsProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Adds a <see cref="T:System.Configuration.SettingsProperty" /> object to the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Configuration.SettingsProperty" /> objects from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the existing collection.</summary>
+        <returns>A <see cref="T:System.Configuration.SettingsPropertyCollection" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the object to.</param>
+        <param name="index">The index at which to begin copying.</param>
+        <summary>Copies this <see cref="T:System.Configuration.SettingsPropertyCollection" /> object to an array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsPropertyCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the number of <see cref="T:System.Configuration.SettingsProperty" /> objects in the collection.</summary>
+        <value>The number of <see cref="T:System.Configuration.SettingsProperty" /> objects in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Collections.IEnumerator" /> object as it applies to the collection.</summary>
+        <returns>The <see cref="T:System.Collections.IEnumerator" /> object as it applies to the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsPropertyCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Configuration.SettingsPropertyCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.SettingsProperty this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProperty Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsPropertyCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Gets the collection item with the specified name.</summary>
+        <value>The <see cref="T:System.Configuration.SettingsProperty" /> object with the specified <paramref name="name" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAdd">
+      <MemberSignature Language="C#" Value="protected virtual void OnAdd (System.Configuration.SettingsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAdd(class System.Configuration.SettingsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnAdd(System.Configuration.SettingsProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Configuration.SettingsProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Performs additional, custom processing when adding to the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAddComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnAddComplete (System.Configuration.SettingsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAddComplete(class System.Configuration.SettingsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnAddComplete(System.Configuration.SettingsProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Configuration.SettingsProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Performs additional, custom processing after adding to the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClear">
+      <MemberSignature Language="C#" Value="protected virtual void OnClear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnClear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional, custom processing when clearing the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClearComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnClearComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearComplete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnClearComplete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional, custom processing after clearing the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemove">
+      <MemberSignature Language="C#" Value="protected virtual void OnRemove (System.Configuration.SettingsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemove(class System.Configuration.SettingsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnRemove(System.Configuration.SettingsProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Configuration.SettingsProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Performs additional, custom processing when removing the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemoveComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnRemoveComplete (System.Configuration.SettingsProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemoveComplete(class System.Configuration.SettingsProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.OnRemoveComplete(System.Configuration.SettingsProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Configuration.SettingsProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Performs additional, custom processing after removing the contents of the <see cref="T:System.Configuration.SettingsPropertyCollection" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.SettingsProperty" /> object.</param>
+        <summary>Removes a <see cref="T:System.Configuration.SettingsProperty" /> object from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsPropertyCollection.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the collection to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the collection has been set to read-only, it can no longer be modified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsPropertyCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object to synchronize access to the collection.</summary>
+        <value>The object to synchronize access to the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,105 @@
+<Type Name="MessageLookupAction" FullName="System.Messaging.MessageLookupAction">
+  <TypeSignature Language="C#" Value="public enum MessageLookupAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageLookupAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.MessageLookupAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a message to peek at or receive from a message queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.MessageLookupAction> enumeration enables you to specify a message to peek at or receive from a message queue.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="Current" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageLookupAction Current = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageLookupAction.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read the current message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="First" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageLookupAction First = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageLookupAction.First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read the first message in the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="Last" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageLookupAction Last = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageLookupAction.Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read the last message in the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="Next" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageLookupAction Next = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageLookupAction.Next" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read the following message.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="Previous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageLookupAction Previous = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.MessageLookupAction.Previous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageLookupAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read the preceding message.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

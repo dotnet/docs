@@ -1,0 +1,48 @@
+<Type Name="MasterPageControlBuilder" FullName="System.Web.UI.MasterPageControlBuilder">
+  <TypeSignature Language="C#" Value="public class MasterPageControlBuilder : System.Web.UI.UserControlControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MasterPageControlBuilder extends System.Web.UI.UserControlControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MasterPageControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.UserControlControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Acts as a merging class and container for content pages that are composed only of <see cref="T:System.Web.UI.WebControls.Content" /> controls and their respective child controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MasterPageControlBuilder> class is used to create a master page that does not inherit from the <xref:System.Web.UI.UserControl> class. The classes that you derive from the <xref:System.Web.UI.MasterPageControlBuilder> class function as other master pages do, provided that you specify your new class in the `Inherits` attribute of the .master file that you create in your Web application.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MasterPageControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MasterPageControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MasterPageControlBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MasterPageControlBuilder.%23ctor%2A> constructor is used internally by the ASP.NET page framework and is not intended to be called from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

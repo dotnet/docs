@@ -1,0 +1,239 @@
+<Type Name="ChartColorPalette" FullName="System.Windows.Forms.DataVisualization.Charting.ChartColorPalette">
+  <TypeSignature Language="C#" Value="public enum ChartColorPalette" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartColorPalette extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a palette when setting a Palette property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette> enumeration represents the palettes to be used for the root <xref:System.Windows.Forms.DataVisualization.Charting.Chart> object and any <xref:System.Windows.Forms.DataVisualization.Charting.Series> objects.  
+  
+ If no colors are assigned to data points and their associated series, the default colors will be assigned to the data. For example:  
+  
+-   If <xref:System.Windows.Forms.DataVisualization.Charting.Chart.Palette%2A> is set to None, then the default palette is set to <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PaletteCustomColors%2A> or BrightPastel.  
+  
+ If.<xref:System.Windows.Forms.DataVisualization.Charting.Series.Palette%2A> is set to None, then the default palette for the chart is used (<xref:System.Windows.Forms.DataVisualization.Charting.Chart.Palette%2A>).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Berry">
+      <MemberSignature Language="C#" Value="Berry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Berry = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes blues and purples.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bright">
+      <MemberSignature Language="C#" Value="Bright" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Bright = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes bright colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrightPastel">
+      <MemberSignature Language="C#" Value="BrightPastel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette BrightPastel = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes bright pastel colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Chocolate">
+      <MemberSignature Language="C#" Value="Chocolate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Chocolate = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes shades of brown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EarthTones">
+      <MemberSignature Language="C#" Value="EarthTones" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette EarthTones = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes earth tone colors such as green and brown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Excel">
+      <MemberSignature Language="C#" Value="Excel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Excel = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes Excel-style colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fire">
+      <MemberSignature Language="C#" Value="Fire" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Fire = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes red, orange and yellow colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Grayscale">
+      <MemberSignature Language="C#" Value="Grayscale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Grayscale = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes grayscale colors, that is, shades of black and white.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="Light" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Light = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Light" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes <see cref="T:System.Web.UI.DataVisualization.Charting.LightStyle" /> style colors; very light colors..</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No palette is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pastel">
+      <MemberSignature Language="C#" Value="Pastel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette Pastel = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes pastel colors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaGreen">
+      <MemberSignature Language="C#" Value="SeaGreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette SeaGreen = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes colors that range from green to blue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SemiTransparent">
+      <MemberSignature Language="C#" Value="SemiTransparent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartColorPalette SemiTransparent = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartColorPalette</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Palette utilizes semi-transparent colors.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1436 @@
+<Type Name="StrokeCollection" FullName="System.Windows.Ink.StrokeCollection">
+  <TypeSignature Language="C#" Value="public class StrokeCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Ink.Stroke&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StrokeCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Ink.Stroke&gt; implements class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Windows.Ink.Stroke&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Ink.Stroke</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Specialized.INotifyCollectionChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.StrokeCollectionConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Windows.Ink.Stroke" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection> enables you to perform functions such as hit testing, clipping, and erasing strokes. The <xref:System.Windows.Controls.InkCanvas> control performs many of these functions, but if you need more control than the <xref:System.Windows.Controls.InkCanvas> provides, the <xref:System.Windows.Ink.StrokeCollection> offers more options.  
+  
+ The following table lists where to learn about managing digital ink on a custom control.  
+  
+|To do this…|See this article|  
+|-----------------|----------------------|  
+|Create a control that collects digital ink|[Creating an Ink Input Control](~/docs/framework/wpf/advanced/creating-an-ink-input-control.md)|  
+|Create a control that enables the user to select ink|[How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)|  
+|Create a control that enables the user to point-erase ink|[How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md)|  
+  
+<a name="xamlAttributeUsage_StrokeCollection"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object StrokeCollection="isfString"/>  
+```  
+  
+<a name="xamlObjectElementUsage_StrokeCollection"></a>   
+## XAML Object Element Usage  
+  
+```  
+<object>isfString</object>  
+```  
+  
+<a name="xamlValues_StrokeCollection"></a>   
+## XAML Values  
+  
+|Term|Definition|  
+|----------|----------------|  
+|`isfString`|A string that represents the stroke in base-64, encoded Ink Serialized Format (ISF).|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+  
+-   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2`.  
+  
+-   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
+  
+ [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+ [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StrokeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StrokeCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StrokeCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.Stroke&gt; strokes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Ink.Stroke&gt; strokes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Ink.Stroke})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="strokes" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.Stroke&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="strokes">The strokes to add to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StrokeCollection" /> class that contains the specified strokes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StrokeCollection (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A stream that contains ink data.</param>
+        <summary>Initializes a <see cref="T:System.Windows.Ink.StrokeCollection" /> from the specified <see cref="T:System.IO.Stream" /> of Ink Serialized Format (ISF).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to save and load a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+ [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+[!code-csharp[StrokeCollectionMethods#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#11)]
+[!code-vb[StrokeCollectionMethods#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Ink.StrokeCollection strokes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Ink.StrokeCollection strokes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Add(System.Windows.Ink.StrokeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strokes" Type="System.Windows.Ink.StrokeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="strokes">The <see cref="T:System.Windows.Ink.StrokeCollection" /> to add to the collection.</param>
+        <summary>Adds the specified strokes to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Add%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+  
+-   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2`.  
+  
+-   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
+  
+ [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+ [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A <see cref="T:System.Windows.Ink.Stroke" /> in <paramref name="strokes" /> is already a member of the <see cref="T:System.Windows.Ink.StrokeCollection" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="strokes" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPropertyData">
+      <MemberSignature Language="C#" Value="public void AddPropertyData (Guid propertyDataId, object propertyData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPropertyData(valuetype System.Guid propertyDataId, object propertyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.AddPropertyData(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+        <Parameter Name="propertyData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> to associate with the custom property.</param>
+        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />,<see cref="T:System.Int16" />,,<see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
+        <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method enables you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+ [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyDataId" /> is an empty <see cref="T:System.Guid" />.  
+  
+ -or-  
+  
+ <paramref name="propertyData" /> is not one of the allowed data types listed in the <see langword="Parameters" /> section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override sealed void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all strokes from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public void Clip (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; lassoPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clip(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; lassoPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clip(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lassoPoints" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lassoPoints">An array of type <see cref="T:System.Drawing.Point" /> that specifies the area to be clipped.</param>
+        <summary>Removes all strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" /> that are outside the bounds of the specified <see cref="T:System.Drawing.Point" /> array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection.Clip%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it clips.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to clip the strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#13](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#13)]
+ [!code-vb[StrokeCollectionMethods#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public void Clip (System.Windows.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clip(valuetype System.Windows.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clip(System.Windows.Rect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Windows.Rect" /> that specifies the area to be clipped.</param>
+        <summary>Replaces all strokes that are clipped by the specified rectangle with new strokes that do not extend beyond the specified rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All strokes that are entirely outside the specified rectangle are removed.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to erase the ink that is outside the bounds of a <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#35](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#35)]
+ [!code-vb[StrokeCollectionMethods#35](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#35)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Ink.StrokeCollection Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Ink.StrokeCollection Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>A copy of the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Clone%2A> method copies each <xref:System.Windows.Ink.Stroke> in the collection and the new <xref:System.Windows.Ink.StrokeCollection> references the new strokes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy the ink in one <xref:System.Windows.Controls.InkCanvas> onto another <xref:System.Windows.Controls.InkCanvas>. This example assumes:  
+  
+-   There are two <xref:System.Windows.Controls.InkCanvas> objects called `inkCanvas1` and `inkCanvas2.`  
+  
+-   The <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event has been connected to the event handler.  
+  
+ [!code-csharp[StrokeCollectionMethods#21](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#21)]
+ [!code-vb[StrokeCollectionMethods#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsPropertyData">
+      <MemberSignature Language="C#" Value="public bool ContainsPropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsPropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.ContainsPropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> to locate in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Returns whether the specified custom property identifier is in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified custom property identifier is in the <see cref="T:System.Windows.Ink.StrokeCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to check for custom property in a <xref:System.Windows.Ink.StrokeCollection>. If a custom property has been associated with `timestamp`, the example gets that custom property and shows when the <xref:System.Windows.Ink.StrokeCollection> was saved. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+ [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (System.Windows.Media.DrawingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Draw(class System.Windows.Media.DrawingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Draw(System.Windows.Media.DrawingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Windows.Media.DrawingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Windows.Media.DrawingContext" /> on which to draw the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Draws the strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a custom element that displays a thumbnail view of an <xref:System.Windows.Controls.InkCanvas>. The custom element keeps a reference to an <xref:System.Windows.Controls.InkCanvas> and redraws itself when the <xref:System.Windows.Controls.InkCanvas.StrokeCollected> event occurs.  
+  
+ [!code-csharp[StrokeCollectionMethods#33](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window3.xaml.cs#33)]
+ [!code-vb[StrokeCollectionMethods#33](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window3.xaml.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Erase">
+      <MemberSignature Language="C#" Value="public void Erase (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; lassoPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Erase(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; lassoPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lassoPoints" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="lassoPoints">An array of type <see cref="T:System.Drawing.Point" /> that specifies the area to be erased.</param>
+        <summary>Removes the ink that is within the bounds of the specified area.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method connects the first and last points in `lassoPoints` to create the lasso.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to erase strokes in a <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#2)]
+ [!code-vb[StrokeCollectionMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Erase">
+      <MemberSignature Language="C#" Value="public void Erase (System.Windows.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Erase(valuetype System.Windows.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Windows.Rect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Windows.Rect" /> that specifies the area to be erased.</param>
+        <summary>Replaces all strokes that are clipped by the specified rectangle with new strokes that do not enter the bounds of the specified rectangle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if the specified area is through the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  All strokes that are entirely inside the specified rectangle are removed.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to erase the ink within the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#34](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#34)]
+ [!code-vb[StrokeCollectionMethods#34](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Erase">
+      <MemberSignature Language="C#" Value="public void Erase (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; eraserPath, System.Windows.Ink.StylusShape eraserShape);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Erase(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; eraserPath, class System.Windows.Ink.StylusShape eraserShape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Erase(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eraserPath" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+        <Parameter Name="eraserShape" Type="System.Windows.Ink.StylusShape" />
+      </Parameters>
+      <Docs>
+        <param name="eraserPath">An array of type <see cref="T:System.Windows.Point" /> that specifies the path to be erased.</param>
+        <param name="eraserShape">A <see cref="T:System.Windows.Ink.StylusShape" /> that specifies the shape of the eraser.</param>
+        <summary>Replaces all strokes that are clipped by the region created by the specified <see cref="T:System.Windows.Ink.StylusShape" /> along the specified path with new Strokes that are not clipped by the region.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection> might contain new strokes after the <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method is called. For example, if `path` intersects the middle of a <xref:System.Windows.Ink.Stroke>, the erase method removes that <xref:System.Windows.Ink.Stroke> and creates two new strokes.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection.Erase%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it erases.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to erase ink along a specific path. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#14)]
+ [!code-vb[StrokeCollectionMethods#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect GetBounds ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect GetBounds() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetBounds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the bounds of the strokes in the collection.</summary>
+        <returns>A <see cref="T:System.Windows.Rect" /> that contains the bounds of the strokes in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.GetBounds%2A> method returns a <xref:System.Windows.Rect> that takes the appearance of the rendered <xref:System.Windows.Ink.Stroke>. For example, if <xref:System.Windows.Ink.Stroke> is 10 display independent pixels (DIP) wide, the <xref:System.Windows.Rect> includes the entire width of the <xref:System.Windows.Ink.Stroke>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get the bounds of the <xref:System.Windows.Ink.StrokeCollection> and draw them on the control. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#20](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#20)]
+ [!code-vb[StrokeCollectionMethods#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIncrementalLassoHitTester">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.IncrementalLassoHitTester GetIncrementalLassoHitTester (int percentageWithinLasso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.IncrementalLassoHitTester GetIncrementalLassoHitTester(int32 percentageWithinLasso) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.IncrementalLassoHitTester</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="percentageWithinLasso" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="percentageWithinLasso">The minimum percentage of each <see cref="T:System.Windows.Ink.Stroke" /> that must be contained within the lasso for it to be considered hit.</param>
+        <summary>Creates an <see cref="T:System.Windows.Ink.IncrementalLassoHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" /> with a lasso (freehand) path.</summary>
+        <returns>An <see cref="T:System.Windows.Ink.IncrementalLassoHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalLassoHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalLassoHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the lasso path surrounds it. This is useful for implementing features, such as the ability to select a stroke with a lasso tool. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalLassoHitTester> to implement the lasso selection tool.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalLassoHitTester> that enables a user to select strokes with a lasso tool. To create a control that enables a user to select ink, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+  
+ [!code-csharp[StrokeCollectionMethods#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#17)]
+ [!code-vb[StrokeCollectionMethods#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIncrementalStrokeHitTester">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.IncrementalStrokeHitTester GetIncrementalStrokeHitTester (System.Windows.Ink.StylusShape eraserShape);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.IncrementalStrokeHitTester GetIncrementalStrokeHitTester(class System.Windows.Ink.StylusShape eraserShape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester(System.Windows.Ink.StylusShape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.IncrementalStrokeHitTester</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eraserShape" Type="System.Windows.Ink.StylusShape" />
+      </Parameters>
+      <Docs>
+        <param name="eraserShape">A <see cref="T:System.Windows.Ink.StylusShape" /> that specifies the tip of the stylus.</param>
+        <summary>Creates an <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" /> with an erasing path.</summary>
+        <returns>An <see cref="T:System.Windows.Ink.IncrementalStrokeHitTester" /> that hit tests the <see cref="T:System.Windows.Ink.StrokeCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that can be used to erase part of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+ [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyData">
+      <MemberSignature Language="C#" Value="public object GetPropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetPropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> associated with the custom property to get.</param>
+        <summary>Returns the value of the custom property associated with the specified <see cref="T:System.Guid" />.</summary>
+        <returns>The value of the custom property associated with the specified <see cref="T:System.Guid" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> and <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> methods enable you to add custom properties to a <xref:System.Windows.Ink.StrokeCollection>. You can then include extra information with a <xref:System.Windows.Ink.StrokeCollection>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to add and get custom property data. The `AddTimeStamp_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.AddPropertyData%2A> method to add the current time to the <xref:System.Windows.Ink.StrokeCollection>. The `GetTimeStap_Click` method uses the <xref:System.Windows.Ink.StrokeCollection.GetPropertyData%2A> method to retrieve the timestamp from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#12)]
+ [!code-vb[StrokeCollectionMethods#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.StrokeCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyDataIds">
+      <MemberSignature Language="C#" Value="public Guid[] GetPropertyDataIds ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid[] GetPropertyDataIds() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.GetPropertyDataIds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the GUIDs of any custom properties associated with the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>An array of type <see cref="T:System.Guid" /> that represent the custom property identifiers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the custom property identifiers from the <xref:System.Windows.Ink.StrokeCollection>.  
+  
+ [!code-csharp[StrokeCollectionMethods#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#27)]
+ [!code-vb[StrokeCollectionMethods#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection HitTest (System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The point to hit test.</param>
+        <summary>Returns a collection of strokes that intersect the specified point.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects that intersect the specified point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
+ [!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection HitTest (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; lassoPoints, int percentageWithinLasso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; lassoPoints, int32 percentageWithinLasso) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lassoPoints" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+        <Parameter Name="percentageWithinLasso" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lassoPoints">An array of type <see cref="T:System.Windows.Point" /> that represents the bounds of the area to be hit tested.</param>
+        <param name="percentageWithinLasso">The acceptable length of the <see cref="T:System.Windows.Ink.Stroke" />, as a percentage, for <c>lassoPoints</c> to contain.</param>
+        <summary>Returns a collection of strokes that have at least the specified percentage of length within the specified area.</summary>
+        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that has strokes with at least the specified percentage within the <see cref="T:System.Windows.Point" /> array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+  
+ [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
+ [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lassoPoints" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="percentageWithinLasso" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="lassoPoints" /> contains an empty array.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="percentageWithinLasso" /> is less than 0 or greater than 100.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection HitTest (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; path, System.Windows.Ink.StylusShape stylusShape);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; path, class System.Windows.Ink.StylusShape stylusShape) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Collections.Generic.IEnumerable{System.Windows.Point},System.Windows.Ink.StylusShape)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+        <Parameter Name="stylusShape" Type="System.Windows.Ink.StylusShape" />
+      </Parameters>
+      <Docs>
+        <param name="path">An array to type <see cref="T:System.Windows.Point" /> that represents the path to be hit tested.</param>
+        <param name="stylusShape">The <see cref="T:System.Windows.Ink.StylusShape" /> that specifies the shape of <c>eraserPath</c>.</param>
+        <summary>Returns a collection of strokes that intersect with the specified path.</summary>
+        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> of strokes that intersect with <paramref name="path" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example changes the color of all the strokes that intersect the path that is created by the <xref:System.Windows.Point> array.  This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#37](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#37)]
+ [!code-vb[StrokeCollectionMethods#37](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#37)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection HitTest (System.Windows.Point point, double diameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(valuetype System.Windows.Point point, float64 diameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Point,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+        <Parameter Name="diameter" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="point">The <see cref="T:System.Windows.Point" /> to hit test.</param>
+        <param name="diameter">The size of the area around the <see cref="T:System.Windows.Point" /> to hit test.</param>
+        <summary>Returns a collection of strokes that intersect the specified area.</summary>
+        <returns>A collection of <see cref="T:System.Windows.Ink.Stroke" /> objects that intersect the specified point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the strokes that intersect the specified <xref:System.Windows.Point>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#15)]
+ [!code-vb[StrokeCollectionMethods#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection HitTest (System.Windows.Rect bounds, int percentageWithinBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection HitTest(valuetype System.Windows.Rect bounds, int32 percentageWithinBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.HitTest(System.Windows.Rect,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Windows.Rect" />
+        <Parameter Name="percentageWithinBounds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Windows.Rect" /> that specifies the bounds to be hit tested.</param>
+        <param name="percentageWithinBounds">The minimum required length of a Stroke that must exist within bounds for it to be considered hit.</param>
+        <summary>Returns a collection of strokes that have at least the specified percentage of length within the specified rectangle.</summary>
+        <returns>A <see cref="T:System.Windows.Ink.StrokeCollection" /> that has strokes with at least the specified percentage within the <see cref="T:System.Windows.Rect" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example erases the strokes that are at least 50% within the bounds of the <xref:System.Windows.Rect>. This example assumes that there is an <xref:System.Windows.Controls.InkPresenter> called `presenter`.  
+  
+ [!code-csharp[StrokeCollectionMethods#36](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#36)]
+ [!code-vb[StrokeCollectionMethods#36](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#36)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Ink.Stroke stroke);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Ink.Stroke stroke) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.IndexOf(System.Windows.Ink.Stroke)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stroke" Type="System.Windows.Ink.Stroke" />
+      </Parameters>
+      <Docs>
+        <param name="stroke">The stroke whose position is required.</param>
+        <summary>Returns the index of the specified <see cref="T:System.Windows.Ink.Stroke" /> in the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>The index of the stroke.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.IndexOf%2A> method returns -1 if `stroke` is not a member of the <xref:System.Windows.Ink.StrokeCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InkSerializedFormat">
+      <MemberSignature Language="C#" Value="public static readonly string InkSerializedFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string InkSerializedFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.StrokeCollection.InkSerializedFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the native persistence format for ink data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.StrokeCollection.InkSerializedFormat> field to specify the format of the <xref:System.Windows.Ink.StrokeCollection> when you transfer data, such as when you copy the <xref:System.Windows.Ink.StrokeCollection> to the Clipboard.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy a <xref:System.Windows.Ink.StrokeCollection> to the Clipboard. The example specifies that the <xref:System.Windows.Ink.StrokeCollection> is in Ink Serialized Format (ISF), so that other programs, such as Microsoft Office Word can accept the copied data.  
+  
+ [!code-csharp[StrokeCollectionMethods#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#5)]
+ [!code-vb[StrokeCollectionMethods#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override sealed void InsertItem (int index, System.Windows.Ink.Stroke stroke);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Windows.Ink.Stroke stroke) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.InsertItem(System.Int32,System.Windows.Ink.Stroke)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="stroke" Type="System.Windows.Ink.Stroke" />
+      </Parameters>
+      <Docs>
+        <param name="index">The specified index.</param>
+        <param name="stroke">The specified stroke</param>
+        <summary>Inserts a stroke into the <see cref="T:System.Windows.Ink.StrokeCollection" /> at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Event data.</param>
+        <summary>Occurs when any <see cref="T:System.Windows.Ink.StrokeCollection" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyDataChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyDataChanged (System.Windows.Ink.PropertyDataChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyDataChanged(class System.Windows.Ink.PropertyDataChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Ink.PropertyDataChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.StrokeCollection.PropertyDataChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStrokesChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnStrokesChanged (System.Windows.Ink.StrokeCollectionChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStrokesChanged(class System.Windows.Ink.StrokeCollectionChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.OnStrokesChanged(System.Windows.Ink.StrokeCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Ink.StrokeCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Ink.StrokeCollectionChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.StrokeCollection.StrokesChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate.  
+  
+ The <xref:System.Windows.Ink.StrokeCollection.OnStrokesChanged%2A> method also allows derived classes to handle the event without attaching a delegate, which is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Ink.StrokeCollection.OnStrokesChanged(System.Windows.Ink.StrokeCollectionChangedEventArgs)" /> in a derived class, be sure to call the <see cref="M:System.Windows.Ink.StrokeCollection.OnStrokesChanged(System.Windows.Ink.StrokeCollectionChangedEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyDataChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.PropertyDataChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.PropertyDataChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when custom property is added or removed from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to handle the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event. This example assumes that there is a <xref:System.Guid> called `dateTimeGuid` and the <xref:System.Windows.Ink.StrokeCollection.PropertyDataChanged> event is connected to the event handler defined in this example.  
+  
+ [!code-csharp[StrokeCollectionMethods#29](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#29)]
+ [!code-vb[StrokeCollectionMethods#29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Windows.Ink.StrokeCollection strokes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Ink.StrokeCollection strokes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Remove(System.Windows.Ink.StrokeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strokes" Type="System.Windows.Ink.StrokeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="strokes">The <see cref="T:System.Windows.Ink.StrokeCollection" /> to remove from the collection.</param>
+        <summary>Removes the specified strokes from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Remove%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it removes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+  
+ [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
+ [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override sealed void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The specified index.</param>
+        <summary>Removes the stroke at the specified index from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePropertyData">
+      <MemberSignature Language="C#" Value="public void RemovePropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.RemovePropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> associated with the custom property to remove.</param>
+        <summary>Removes the custom property associated with the specified <see cref="T:System.Guid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to remove a custom property from the <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and a <xref:System.Guid> called `timestamp`.  
+  
+ [!code-csharp[StrokeCollectionMethods#28](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#28)]
+ [!code-vb[StrokeCollectionMethods#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public void Replace (System.Windows.Ink.Stroke strokeToReplace, System.Windows.Ink.StrokeCollection strokesToReplaceWith);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Replace(class System.Windows.Ink.Stroke strokeToReplace, class System.Windows.Ink.StrokeCollection strokesToReplaceWith) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.Stroke,System.Windows.Ink.StrokeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strokeToReplace" Type="System.Windows.Ink.Stroke" />
+        <Parameter Name="strokesToReplaceWith" Type="System.Windows.Ink.StrokeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="strokeToReplace">The <see cref="T:System.Windows.Ink.Stroke" /> to replace.</param>
+        <param name="strokesToReplaceWith">The source <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Replaces the specified <see cref="T:System.Windows.Ink.Stroke" /> with the specified <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
+ [!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="strokesToReplace" /> is empty.  
+  
+ -or-  
+  
+ <paramref name="strokesToReplaceWith" /> is empty.  
+  
+ -or-  
+  
+ A <see cref="T:System.Windows.Ink.Stroke" /> in <paramref name="strokesToReplaceWith" /> is already in <paramref name="strokesToReplace" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public void Replace (System.Windows.Ink.StrokeCollection strokesToReplace, System.Windows.Ink.StrokeCollection strokesToReplaceWith);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Replace(class System.Windows.Ink.StrokeCollection strokesToReplace, class System.Windows.Ink.StrokeCollection strokesToReplaceWith) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Replace(System.Windows.Ink.StrokeCollection,System.Windows.Ink.StrokeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strokesToReplace" Type="System.Windows.Ink.StrokeCollection" />
+        <Parameter Name="strokesToReplaceWith" Type="System.Windows.Ink.StrokeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="strokesToReplace">The destination <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <param name="strokesToReplaceWith">The source <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Replaces the specified <see cref="T:System.Windows.Ink.StrokeCollection" /> with a new <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Replace%2A> method raises the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event for each <xref:System.Windows.Ink.Stroke> it replaces.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to replace the selected strokes on an <xref:System.Windows.Controls.InkCanvas> with another <xref:System.Windows.Ink.StrokeCollection>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#7)]
+ [!code-vb[StrokeCollectionMethods#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="strokesToReplace" /> is empty.  
+  
+ -or-  
+  
+ <paramref name="strokesToReplaceWith" /> is empty.  
+  
+ -or-  
+  
+ A <see cref="T:System.Windows.Ink.Stroke" /> in <paramref name="strokesToReplaceWith" /> is already in <paramref name="strokesToReplace." />  
+  
+ -or-  
+  
+ The strokes in <paramref name="strokesToReplaceWith" /> are not continuous.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Save(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to which to save the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <summary>Saves the <see cref="T:System.Windows.Ink.StrokeCollection" /> to the specified <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+ [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public virtual void Save (System.IO.Stream stream, bool compress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save(class System.IO.Stream stream, bool compress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Save(System.IO.Stream,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="compress" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to which to save the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <param name="compress">
+          <see langword="true" /> to compress the <see cref="T:System.Windows.Ink.StrokeCollection" />; otherwise, <see langword="false" />.</param>
+        <summary>Saves the <see cref="T:System.Windows.Ink.StrokeCollection" /> to the specified <see cref="T:System.IO.Stream" /> and compresses it, when specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.StrokeCollection.Save%2A> method saves the <xref:System.Windows.Ink.StrokeCollection> as Ink Serialized Format (ISF).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to save a <xref:System.Windows.Ink.StrokeCollection> to a file by using the <xref:System.Windows.Ink.StrokeCollection.Save%28System.IO.Stream%2CSystem.Boolean%29> method. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#10)]
+ [!code-vb[StrokeCollectionMethods#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override sealed void SetItem (int index, System.Windows.Ink.Stroke stroke);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Windows.Ink.Stroke stroke) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.SetItem(System.Int32,System.Windows.Ink.Stroke)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="stroke" Type="System.Windows.Ink.Stroke" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position at which to replace the stroke.</param>
+        <param name="stroke">The stroke to replace the current stroke.</param>
+        <summary>Replaces the stroke at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrokesChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.StrokeCollectionChangedEventHandler StrokesChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.StrokeCollectionChangedEventHandler StrokesChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.StrokesChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.Windows.Ink.Stroke" /> in the collection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds the current time as a custom property to each new stroke in the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event handler. The example assumes that the <xref:System.Windows.Ink.StrokeCollection.StrokesChanged> event is connected to the event handler defined in this example.  
+  
+ [!code-csharp[DrawingAttributes#4](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[DrawingAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public void Transform (System.Windows.Media.Matrix transformMatrix, bool applyToStylusTip);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Transform(valuetype System.Windows.Media.Matrix transformMatrix, bool applyToStylusTip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StrokeCollection.Transform(System.Windows.Media.Matrix,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformMatrix" Type="System.Windows.Media.Matrix" />
+        <Parameter Name="applyToStylusTip" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="transformMatrix">A <see cref="T:System.Windows.Media.Matrix" /> which specifies the transformation to perform on the <see cref="T:System.Windows.Ink.StrokeCollection" />.</param>
+        <param name="applyToStylusTip">
+          <see langword="true" /> to apply the transformation to the tip of the stylus; otherwise, <see langword="false" />.</param>
+        <summary>Modifies each of the <see cref="P:System.Windows.Ink.Stroke.StylusPoints" /> and optionally the <see cref="P:System.Windows.Ink.DrawingAttributes.StylusTipTransform" /> for each stroke in the <see cref="T:System.Windows.Ink.StrokeCollection" /> according to the specified <see cref="T:System.Windows.Media.Matrix" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `applyToStylusTip` is `true`, the <xref:System.Windows.Ink.StrokeCollection.Transform%2A> method affects the shape of the stylus tip, as well as the position of the strokes. For example, if you rotate a <xref:System.Windows.Ink.StrokeCollection> 90 degrees, the strokes move around an axis and the height and width of the strokes appear to be inverted.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to move all the strokes on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[StrokeCollectionMethods#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/Window2.xaml.cs#9)]
+ [!code-vb[StrokeCollectionMethods#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/Window2.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="FunctionDeclaration" FullName="Microsoft.JScript.FunctionDeclaration">
+  <TypeSignature Language="C#" Value="public sealed class FunctionDeclaration : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FunctionDeclaration extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FunctionDeclaration" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a function declaration. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JScriptFunctionDeclaration">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.Closure JScriptFunctionDeclaration (RuntimeTypeHandle handle, string name, string method_name, string[] formal_parameters, Microsoft.JScript.JSLocalField[] fields, bool must_save_stack_locals, bool hasArgumentsObject, string text, object declaringObject, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Closure JScriptFunctionDeclaration(valuetype System.RuntimeTypeHandle handle, string name, string method_name, string[] formal_parameters, class Microsoft.JScript.JSLocalField[] fields, bool must_save_stack_locals, bool hasArgumentsObject, string text, object declaringObject, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionDeclaration.JScriptFunctionDeclaration(System.RuntimeTypeHandle,System.String,System.String,System.String[],Microsoft.JScript.JSLocalField[],System.Boolean,System.Boolean,System.String,System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Closure</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.RuntimeTypeHandle" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="method_name" Type="System.String" />
+        <Parameter Name="formal_parameters" Type="System.String[]" />
+        <Parameter Name="fields" Type="Microsoft.JScript.JSLocalField[]" />
+        <Parameter Name="must_save_stack_locals" Type="System.Boolean" />
+        <Parameter Name="hasArgumentsObject" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="declaringObject" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A handle to the type of the function.</param>
+        <param name="name">The name of the function.</param>
+        <param name="method_name">The name of the function.</param>
+        <param name="formal_parameters">The parameters of the function.</param>
+        <param name="fields">The fields of the function.</param>
+        <param name="must_save_stack_locals">
+          <see langword="true" /> to save local stack variables. This is important for a nested function that accesses one of its local variables or for an <see langword="eval" /> statement.</param>
+        <param name="hasArgumentsObject">
+          <see langword="true" /> if the function has a parameter array.</param>
+        <param name="text">The text of the function declaration.</param>
+        <param name="declaringObject">Gets the type that declares this method.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Creates a new closure function, using the specified information.</summary>
+        <returns>A new closure function that represents the function declaration.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

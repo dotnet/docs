@@ -1,0 +1,134 @@
+<Type Name="BuildPropertyGroupCollection" FullName="Microsoft.Build.BuildEngine.BuildPropertyGroupCollection">
+  <TypeSignature Language="C#" Value="public class BuildPropertyGroupCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildPropertyGroupCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the number of <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> objects in the collection.</summary>
+        <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroup" /> objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> object in the collection represents a  element in the project.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that iterates through the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> objects in the <xref:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:Microsoft.Build.BuildEngine.BuildPropertyGroupCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

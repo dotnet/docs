@@ -1,0 +1,39 @@
+<Type Name="UnknownMessageReceivedEventArgs" FullName="System.ServiceModel.UnknownMessageReceivedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class UnknownMessageReceivedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnknownMessageReceivedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.UnknownMessageReceivedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the message received by a channel and cannot be associated with any callback operation or pending request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Message Message" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.UnknownMessageReceivedEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unknown message that caused the event.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.Message" /> that caused the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

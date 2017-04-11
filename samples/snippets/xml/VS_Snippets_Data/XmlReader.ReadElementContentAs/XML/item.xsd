@@ -1,0 +1,15 @@
+<!--<snippet12>-->
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="urn:items" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:items" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="price" type="xs:decimal" />
+        <xs:element name="supplierID" type="xs:unsignedShort" />
+      </xs:sequence>
+      <xs:attribute name="productID" type="xs:unsignedInt" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<!--</snippet12>-->

@@ -1,0 +1,740 @@
+<Type Name="ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;" FullName="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;">
+  <TypeSignature Language="C#" Value="public struct ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt; : IComparable, IComparable&lt;ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable where TRest : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValueTuple`8&lt;T1, T2, T3, T4, T5, T6, T7, struct .ctor (class System.ValueType) TRest&gt; extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple`8&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7, !TRest&gt;&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple`8&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7, !TRest&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ValueTuple`8" />
+  <AssemblyInfo>
+    <AssemblyName>System.ValueTuple</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="T6" />
+    <TypeParameter Name="T7" />
+    <TypeParameter Name="TRest">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralEquatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T1">The type of the value tuple's first element.</typeparam>
+    <typeparam name="T2">The type of the value tuple's second element.</typeparam>
+    <typeparam name="T3">The type of the value tuple's third element.</typeparam>
+    <typeparam name="T4">The type of the value tuple's fourth element.</typeparam>
+    <typeparam name="T5">The type of the value tuple's fifth element.</typeparam>
+    <typeparam name="T6">The type of the value tuple's sixth element.</typeparam>
+    <typeparam name="T7">The type of the value tuple's seventh element.</typeparam>
+    <typeparam name="TRest">Any generic value tuple instance that defines the types of the tuple's remaining elements.</typeparam>
+    <summary>Represents an *n*-value tuple, where *n* is 8 or greater.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value tuple is a data structure that has a specific number and sequence of values. The <xref:System.ValueTuple%608> structure represents a value tuple that has eight or more elements.  
+  
+ The value tuple types differ from the tuple types (such as <xref:System.Tuple%608>) as follows:  
+  
+-   They are structures (value types) rather than classes (reference types).  
+  
+-   Members such as <xref:System.ValueTuple%608.Item1> and   <xref:System.ValueTuple%608.Item2> are fields rather than properties.  
+  
+-   Their fields are mutable rather than read-only.  
+  
+ The value tuple types provide the runtime implementation that supports tuples in C# and struct tuples in F#.  In addition to creating a <xref:System.ValueTuple%608> instance by using language syntax, you can call the <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=fullName> factory method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValueTuple (T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7, TRest rest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T1 item1, !T2 item2, !T3 item3, !T4 item4, !T5 item5, !T6 item6, !T7 item7, !TRest rest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.#ctor(`0,`1,`2,`3,`4,`5,`6,`7)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+        <Parameter Name="item5" Type="T5" />
+        <Parameter Name="item6" Type="T6" />
+        <Parameter Name="item7" Type="T7" />
+        <Parameter Name="rest" Type="TRest" />
+      </Parameters>
+      <Docs>
+        <param name="item1">The value tuple's first element.</param>
+        <param name="item2">The value tuple's second element.</param>
+        <param name="item3">The value tuple's third element.</param>
+        <param name="item4">The value tuple's fourth element.</param>
+        <param name="item5">The value tuple's fifth element.</param>
+        <param name="item6">The value tuple's sixth element.</param>
+        <param name="item7">The value tuple's seventh element.</param>
+        <param name="rest">An instance of any value tuple type that contains the values of the value's tuple's remaining elements.</param>
+        <summary>Initializes a new <see cref="T:System.ValueTuple`8" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to using your language's build-in support for tuples, you can also create a value tuple by calling the static <xref:System.ValueTuple.Create%60%608%28%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%2C%60%605%2C%60%606%2C%60%607%29?displayProperty=fullName> method without having to explicitly specify the types of its elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="rest" /> is not a generic value tuple type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.ValueTuple`8&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7, !TRest&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.CompareTo(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6,`7})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The tuple to compare with this instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`8" /> instance to a specified <see cref="T:System.ValueTuple`8" /> instance</summary>
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+  
+ <list type="table">  
+<listheader>  
+<term> Vaue  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`8" /> instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `obj` argument is considered to be equal to the current instance under the following conditions:  
+  
+-   It is a <xref:System.ValueTuple%608> value type.  
+  
+-   Its components are of the same types as those of the current instance.  
+  
+-   Its components are equal to those of the current instance. Equality is determined by the default equality comparer for each component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.ValueTuple`8&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7, !TRest&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.Equals(System.ValueTuple{`0,`1,`2,`3,`4,`5,`6,`7})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">The value tuple to compare with this instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`8" /> instance is equal to a specified <see cref="T:System.ValueTuple`8" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified tuple; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `other` argument is considered to be equal to the current instance under the following conditions:  
+  
+-   Its components are of the same types as those of the current instance.  
+  
+-   Its components are equal to those of the current instance. Equality is determined by the default equality comparer for each component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calculates the hash code for the current <see cref="T:System.ValueTuple`8" /> instance.</summary>
+        <returns>The hash code for the current <see cref="T:System.ValueTuple`8" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item1">
+      <MemberSignature Language="C#" Value="public T1 Item1;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T1 Item1" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's first element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item2">
+      <MemberSignature Language="C#" Value="public T2 Item2;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T2 Item2" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's second element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item3">
+      <MemberSignature Language="C#" Value="public T3 Item3;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T3 Item3" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's third element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item4">
+      <MemberSignature Language="C#" Value="public T4 Item4;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T4 Item4" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T4</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's fourth element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item5">
+      <MemberSignature Language="C#" Value="public T5 Item5;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T5 Item5" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T5</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's fifth element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item6">
+      <MemberSignature Language="C#" Value="public T6 Item6;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T6 Item6" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T6</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's sixth element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item7">
+      <MemberSignature Language="C#" Value="public T7 Item7;" />
+      <MemberSignature Language="ILAsm" Value=".field public !T7 Item7" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Item7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T7</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current <see cref="T:System.ValueTuple`8" /> instance's seventh element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rest">
+      <MemberSignature Language="C#" Value="public TRest Rest;" />
+      <MemberSignature Language="ILAsm" Value=".field public !TRest Rest" />
+      <MemberSignature Language="DocId" Value="F:System.ValueTuple`8.Rest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TRest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.ValueTuple`8" /> instance's remaining elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ValueTuple%608.Rest> field returns a nested value tuple that allows access to the eighth though *n*th elements of the tuple. Depending on the total number of elements in the tuple, the values of the eighth through fourteenth components can be retrieved from the nested value tuple's `Item1` through `Item7` properties. You can then use the <xref:System.ValueTuple%608.Rest> property of a nested <xref:System.ValueTuple%608> object to retrieve the value tuple at the next level of nesting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IStructuralComparable.CompareTo (object other, System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with the current instance.</param>
+        <param name="comparer">An object that provides custom rules for comparison.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`8" /> instance to a specified object by using a specified comparer and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="other" /> in the sort order, as shown in the following able.  
+  
+ <list type="table">  
+<listheader>  
+<term> Vaue  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralComparable> interface.  
+  
+ This method lets you define customized comparisons of <xref:System.ValueTuple%608> objects. For example, you can use this method to order <xref:System.ValueTuple%608> objects based on the value of a specific component.  
+  
+ Although this method can be called directly, it is most commonly called by collection-sorting methods that include <xref:System.Collections.IComparer> parameters to order the members of a collection. For example, it is called by the <xref:System.Array.Sort%28System.Array%2CSystem.Collections.IComparer%29?displayProperty=fullName> method and the <xref:System.Collections.SortedList.Add%2A> method of a <xref:System.Collections.SortedList> object that is instantiated by using the <xref:System.Collections.SortedList.%23ctor%28System.Collections.IComparer%29?displayProperty=fullName> constructor.  
+  
+> [!CAUTION]
+>  The <xref:System.ValueTuple%608.System%23Collections%23IStructuralComparable%23CompareTo%2A> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.ValueTuple%608.System%23Collections%23IStructuralEquatable%23Equals%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple`8" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.Equals">
+      <MemberSignature Language="C#" Value="bool IStructuralEquatable.Equals (object other, System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with this instance.</param>
+        <param name="comparer">An object that defines the method to use to evaluate whether the two objects are equal.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`8" /> instance is equal to a specified object based on a specified comparison method.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified objects; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralEquatable> interface.  
+  
+ The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple%608> object that has the same total number of components (including those in nested tuple objects) of the same types as the current instance. The <xref:System.Collections.IStructuralEquatable.Equals%28System.Object%2CSystem.Collections.IEqualityComparer%29?displayProperty=fullName> method first passes the <xref:System.ValueTuple%608.Item1> values of the <xref:System.ValueTuple%608> objects to be compared to the <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation. If this method call returns `true`, the method is called again and passed the <xref:System.ValueTuple%608.Item2> values of the two <xref:System.ValueTuple%608> objects. This continues until the method call returns `false` when it compares a specific pair of values, or the two <xref:System.ValueTuple%608.Rest> values are passed to the method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.GetHashCode">
+      <MemberSignature Language="C#" Value="int IStructuralEquatable.GetHashCode (System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">An object whose <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method calculates the hash code of the current <see cref="T:System.ValueTuple`8" /> instance.</param>
+        <summary>Calculates the hash code for the current <see cref="T:System.ValueTuple`8" /> instance by using a specified computation method.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple%608> instance is cast to an  <xref:System.Collections.IStructuralEquatable> interface.  The method simply wraps a call to the `comparer` object's <xref:System.Collections.IEqualityComparer.GetHashCode%2A?displayProperty=fullName> implementation.  
+  
+ The algorithm used to compute the hash code should return the same hash code for two <xref:System.ValueTuple%608> objects that are considered to be equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IComparable.CompareTo (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.System#IComparable#CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with the current instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple`8" /> object to a specified object and returns an integer that indicates whether the current object is before, after, or in the same position as the specified object in the sort order.</summary>
+        <returns>A signed integer that indicates the relative position of this instance and <paramref name="obj" /> in the sort order, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> A negative integer  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance and <paramref name="other" /> have the same position in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> A positive integer  
+  
+ </term>  
+<description> This instance follows <paramref name="other" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.ValueTuple%608> instance is cast to an <xref:System.IComparable> interface.  
+  
+ This method provides the <xref:System.IComparable.CompareTo%2A?displayProperty=fullName> implementation for the <xref:System.ValueTuple%608> structure. Although the method can be called directly, it is most commonly called by the default overloads of collection-sorting methods, such as <xref:System.Array.Sort%28System.Array%29?displayProperty=fullName> and <xref:System.Collections.SortedList.Add%2A?displayProperty=fullName>, to order the members of a collection.  
+  
+> [!CAUTION]
+>  The <xref:System.ValueTuple%608.System%23IComparable%23CompareTo%2A?displayProperty=fullName> method is intended for use in sorting operations. It should not be used when the primary purpose of a comparison is to determine whether two objects are equal. To determine whether two objects are equal, call the <xref:System.ValueTuple%608.Equals%28System.Object%29?displayProperty=fullName> method.  
+  
+ This method uses the default object comparer to compare each component.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple`8" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple`8.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the value of this <see cref="T:System.ValueTuple`8" /> instance.</summary>
+        <returns>The string representation of this <see cref="T:System.ValueTuple`8" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this method takes the form (*Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, *Item7*, *Item8*…), where *Item1*, *Item2*, *Item3*, *Item4*, *Item5*, *Item6*, and *Item7* represent the values of the <xref:System.ValueTuple%608>, <xref:System.ValueTuple%608>, <xref:System.ValueTuple%608.Item3>, <xref:System.ValueTuple%608.Item4>, <xref:System.ValueTuple%608.Item5>, <xref:System.ValueTuple%608.Item6>, and <xref:System.ValueTuple%608.Item7> fields. *Item8* represents the value of the <xref:System.ValueTuple%608> instance's `Next.Item1` field. The value of any additional nested elements follows *Item8*. If any of the field values is `null`, it is represented as <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="EdmSchemaAttribute" FullName="System.Data.Objects.DataClasses.EdmSchemaAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EdmSchemaAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmSchemaAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmSchemaAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Attribute that indicates that the assembly contains classes that are mapped to entity types in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is applied to an assembly that contains entity types. It is only required to be applied once, but it may be applied multiple times. When it is applied multiple times to a single assembly in a Visual Basic project, the <xref:System.Data.Objects.DataClasses.EdmSchemaAttribute.%23ctor%2A> constructor must be used to supply a GUID string value that is unique for each conceptual model referenced by the assembly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmSchemaAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmSchemaAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmSchemaAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmSchemaAttribute (string assemblyGuid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyGuid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmSchemaAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyGuid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyGuid">A string that is a unique GUID value for the model in the assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmSchemaAttribute" /> class with a unique value for each model referenced by the assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to supply a GUID string value that is unique for each conceptual model referenced by the same assembly. Do this when <xref:System.Data.Objects.DataClasses.EdmSchemaAttribute> is applied multiple times to a single assembly in a Visual Basic project.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

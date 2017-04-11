@@ -1,0 +1,125 @@
+<Type Name="ModelValidatorProviderCollection" FullName="System.Web.ModelBinding.ModelValidatorProviderCollection">
+  <TypeSignature Language="C#" Value="public class ModelValidatorProviderCollection : System.Collections.ObjectModel.Collection&lt;System.Web.ModelBinding.ModelValidatorProvider&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelValidatorProviderCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.ModelBinding.ModelValidatorProvider&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.ModelBinding.ModelValidatorProvider&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Web.ModelBinding.ModelValidatorProvider</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for a collection of validation providers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelValidatorProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidatorProviderCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelValidatorProviderCollection (System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelValidatorProvider&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Web.ModelBinding.ModelValidatorProvider&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.ModelBinding.ModelValidatorProvider})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelValidatorProvider&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">The collection of validator providers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidatorProviderCollection" /> class using an existing collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidators">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt; GetValidators (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidator&gt; GetValidators(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.GetValidators(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The metadata.</param>
+        <param name="context">The execution context.</param>
+        <summary>Returns the collection of validators.</summary>
+        <returns>The validators.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.ModelBinding.ModelValidatorProvider item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.ModelBinding.ModelValidatorProvider item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.ModelValidatorProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.ModelBinding.ModelValidatorProvider" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which item should be inserted.</param>
+        <param name="item">The model-validator provider object to insert.</param>
+        <summary>Inserts a validator provider into the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.ModelBinding.ModelValidatorProvider item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.ModelBinding.ModelValidatorProvider item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidatorProviderCollection.SetItem(System.Int32,System.Web.ModelBinding.ModelValidatorProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.ModelBinding.ModelValidatorProvider" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the model-validator provider element to replace.</param>
+        <param name="item">The new value for the model-validator provider element.</param>
+        <summary>Replaces the model-validator provider element at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

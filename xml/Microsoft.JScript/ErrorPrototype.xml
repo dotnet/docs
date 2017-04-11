@@ -1,0 +1,81 @@
+<Type Name="ErrorPrototype" FullName="Microsoft.JScript.ErrorPrototype">
+  <TypeSignature Language="C#" Value="public class ErrorPrototype : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorPrototype extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.ErrorObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ErrorConstructor constructor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.JScript.ErrorConstructor constructor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ErrorPrototype.constructor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorConstructor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
+        <value>A reference to a prototype-based object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="name">
+      <MemberSignature Language="C#" Value="public readonly string name;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string name" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorPrototype.name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the name of the type of the error. Possible values include Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError, and URIError.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorPrototype.toString(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.Error_toString)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified object.</summary>
+        <returns>A string representation of <paramref name="thisob" /> that contains the name of the type of the error object, and an error message if there is one.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

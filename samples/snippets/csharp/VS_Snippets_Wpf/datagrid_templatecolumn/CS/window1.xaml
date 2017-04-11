@@ -1,0 +1,32 @@
+﻿<Window x:Class="DataGrid_TemplateColumn.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <!--<Snippet1>-->
+    <Grid>
+        <Grid.Resources>
+            <!--DataTemplate for Published Date column defined in Grid.Resources.  PublishDate is a property on the ItemsSource of type DateTime -->
+            <DataTemplate x:Key="DateTemplate" >
+                <StackPanel Width="20" Height="30">
+                    <Border Background="LightBlue" BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Text="{Binding PublishDate, StringFormat={}{0:MMM}}" FontSize="8" HorizontalAlignment="Center" />
+                    </Border>
+                    <Border Background="White" BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Text="{Binding PublishDate, StringFormat={}{0:yyyy}}" FontSize="8" FontWeight="Bold" HorizontalAlignment="Center" />
+                    </Border>
+                </StackPanel>
+            </DataTemplate>
+            <!--DataTemplate for the Published Date column when in edit mode. -->
+            <DataTemplate x:Key="EditingDateTemplate">
+                <DatePicker SelectedDate="{Binding PublishDate}"  />
+            </DataTemplate>
+        </Grid.Resources>
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <!--Custom column that shows the published date-->
+                <DataGridTemplateColumn Header="Publish Date" CellTemplate="{StaticResource DateTemplate}" CellEditingTemplate="{StaticResource EditingDateTemplate}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    <!--</Snippet1>-->
+</Window>

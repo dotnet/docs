@@ -1,0 +1,208 @@
+<Type Name="CounterData" FullName="System.Diagnostics.PerformanceData.CounterData">
+  <TypeSignature Language="C#" Value="public sealed class CounterData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CounterData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the raw data for a counter.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item%2A?displayProperty=fullName> property returns an instance of this class.  
+  
+ This class provides thread-safe methods for reading and writing counter data.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Decrement">
+      <MemberSignature Language="C#" Value="public void Decrement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.Decrement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Decrements the counter value by 1.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method safely decrements the counter value for multi-threaded applications.  
+  
+ To decrement the counter value by a specific value, call the <xref:System.Diagnostics.PerformanceData.CounterData.IncrementBy%2A> method and set the `value` parameter to a negative number.  
+  
+ To set the counter value, use the <xref:System.Diagnostics.PerformanceData.CounterData.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Increment">
+      <MemberSignature Language="C#" Value="public void Increment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Increment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.Increment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Increments the counter value by 1.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method safely increments the counter value for multi-threaded applications.  
+  
+ To set the counter value, use the <xref:System.Diagnostics.PerformanceData.CounterData.Value%2A> property.  
+  
+ To increment the counter value by a specific value, call the <xref:System.Diagnostics.PerformanceData.CounterData.IncrementBy%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementBy">
+      <MemberSignature Language="C#" Value="public void IncrementBy (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncrementBy(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.IncrementBy(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The amount by which to increment the counter value. The increment value can be positive or negative.</param>
+        <summary>Increments the counter value by the specified amount.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method safely increments the counter value for multi-threaded applications.  
+  
+ To set the counter value, use the <xref:System.Diagnostics.PerformanceData.CounterData.Value%2A> property.  
+  
+ To increment the counter value by 1, call the <xref:System.Diagnostics.PerformanceData.CounterData.Increment%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawValue">
+      <MemberSignature Language="C#" Value="public long RawValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 RawValue" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterData.RawValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets or gets the raw counter data.</summary>
+        <value>The raw counter data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not thread safe and is appropriate only for single-threaded access. For multi-threaded access to the counter data, use the <xref:System.Diagnostics.PerformanceData.CounterData.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public long Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterData.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets or gets the counter data.</summary>
+        <value>The counter data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides safe access to the counter data for multi-threaded applications. If performance is of primary concern, use the <xref:System.Diagnostics.PerformanceData.CounterData.RawValue%2A> property; however, the <xref:System.Diagnostics.PerformanceData.CounterData.RawValue%2A> property is not thread safe.  
+  
+ Note that the <xref:System.Diagnostics.PerformanceData.CounterData.Value%2A> property is not thread safe in .NET Framework 3.5.  
+  
+ To increment the counter value, consider using the <xref:System.Diagnostics.PerformanceData.CounterData.Increment%2A> or <xref:System.Diagnostics.PerformanceData.CounterData.IncrementBy%2A> method.  
+  
+   
+  
+## Examples  
+ For an example, see <xref:System.Diagnostics.PerformanceData>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

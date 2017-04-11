@@ -1,0 +1,375 @@
+<Type Name="ScriptReference" FullName="System.Web.UI.ScriptReference">
+  <TypeSignature Language="C#" Value="public class ScriptReference : System.Web.UI.ScriptReferenceBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptReference extends System.Web.UI.ScriptReferenceBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ScriptReferenceBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Path")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Registers an ECMAScript (JavaScript) file for use on an ASP.NET Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can include a JavaScript file on an ASP.NET Web page by registering it through a <xref:System.Web.UI.ScriptReference> object. You can register a script file that is located as a .js file (a static script file) on the Web site. You can also register a script file that is embedded as a resource in an assembly. After registering the script file, you can use its functions in client script on the Web page.  
+  
+ To register a static script file, set the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property of the <xref:System.Web.UI.ScriptReference> object to the relative location of the file.  
+  
+ To register a script file that is embedded as a resource in an assembly, set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property to the name of the assembly that contains the file. Then set the <xref:System.Web.UI.ScriptReference.Name%2A> property to the name of the .js file that is embedded in the assembly. In that case, the script file must be embedded, not linked.  
+  
+ You set the <xref:System.Web.UI.ScriptReferenceBase.ScriptMode%2A> property to indicate whether to use the debug or release version of the script.  
+  
+ The <xref:System.Web.UI.ScriptMode> value produces different results depending on whether it refers to a standalone script file or to a script file that is embedded as a resource in an assembly. A standalone script file is defined with the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property. An assembly reference must be accessed through the <xref:System.Web.UI.ScriptReference.Name%2A> and <xref:System.Web.UI.ScriptReference.Assembly%2A> properties. The results for the <xref:System.Web.UI.ScriptMode> value are as follows:  
+  
+-   When it is applied to a standalone script file where the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is specified, the <xref:System.Web.UI.ScriptMode> value is equivalent to <xref:System.Web.UI.ScriptMode>.  
+  
+-   When it is applied to a script reference in an assembly, <xref:System.Web.UI.ScriptMode> is equivalent to <xref:System.Web.UI.ScriptMode>. When only <xref:System.Web.UI.ScriptReference.Name%2A> is specified, it is used to reference the script. When <xref:System.Web.UI.ScriptReference.Name%2A> and the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property are both specified, the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property is used instead of <xref:System.Web.UI.ScriptReference.Name%2A>, but the <xref:System.Web.UI.ScriptMode> value is still equivalent to <xref:System.Web.UI.ScriptMode>.  
+  
+   
+  
+## Examples  
+ The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+  
+ To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+  
+ The following example shows a page that uses the custom control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+  
+ The following example shows the custom control class definition.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+ [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+  
+ The following example shows the supporting JavaScript file.  
+  
+ [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+  
+ The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+ [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReference" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptReference (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path of the client script file relative to the Web page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReference" /> class by using a specified path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptReference (string name, string assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="assembly" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the script file that is embedded in the assembly.</param>
+        <param name="assembly">The name of the assembly that contains the client script file as an embedded resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptReference" /> class by using a specified name and assembly.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="public string Assembly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Assembly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.Assembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the assembly that contains the client script file as an embedded resource.</summary>
+        <value>The fully qualified or partially qualified name of the assembly that contains a client script file as an embedded resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You set the <xref:System.Web.UI.ScriptReference.Assembly%2A> property when you reference a client script file that is included as an embedded resource in an assembly. Set <xref:System.Web.UI.ScriptReference.Assembly%2A> to the fully qualified or partially qualified assembly name. A fully qualified assembly name includes a name, culture, public key, and version number. A partially qualified assembly name includes only a name.  
+  
+ When you specify a value for <xref:System.Web.UI.ScriptReference.Assembly%2A>, you must also specify the name of the embedded resource in the <xref:System.Web.UI.ScriptReference.Name%2A> property. Otherwise, an <xref:System.InvalidOperationException> will be thrown.  
+  
+ The assembly being referenced must be located in either the Bin folder of the Web site or in the global assembly cache.  
+  
+   
+  
+## Examples  
+ The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+  
+ To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+  
+ The following example shows a page that uses the custom control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+  
+ The following example shows the custom control class definition.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+ [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+  
+ The following example shows the supporting JavaScript file.  
+  
+ [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+  
+ The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+ [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrl">
+      <MemberSignature Language="C#" Value="protected override string GetUrl (System.Web.UI.ScriptManager scriptManager, bool zip);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetUrl(class System.Web.UI.ScriptManager scriptManager, bool zip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.GetUrl(System.Web.UI.ScriptManager,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptManager" Type="System.Web.UI.ScriptManager" />
+        <Parameter Name="zip" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="scriptManager">The <see langword="ScriptManager" /> control on the target Web page.</param>
+        <param name="zip">
+          <see langword="true" /> if the script should be compressed; otherwise, <see langword="false" />.</param>
+        <summary>Retrieves the URL that is rendered as the value of the <see langword="src" /> attribute of the <see langword="script" /> element.</summary>
+        <returns>A string that contains the URL that is rendered as the value of the <see langword="src" /> attribute of the <see langword="script" /> element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreScriptPath">
+      <MemberSignature Language="C#" Value="public bool IgnoreScriptPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreScriptPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.IgnoreScriptPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property is obsolete. Instead of using ScriptManager.ScriptPath, set the Path property on each individual ScriptReference.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="P:System.Web.UI.ScriptManager.ScriptPath" /> property is included in the URL when you register a client script file from a resource.</summary>
+        <value>
+          <see langword="true" /> if the script path is not used when you register the client script; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You set <xref:System.Web.UI.ScriptReference.IgnoreScriptPath%2A> to `true` when you want to register a client script file without including the <xref:System.Web.UI.ScriptManager.ScriptPath%2A> value in the URL of the script file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAjaxFrameworkScript">
+      <MemberSignature Language="C#" Value="protected override bool IsAjaxFrameworkScript (System.Web.UI.ScriptManager scriptManager);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsAjaxFrameworkScript(class System.Web.UI.ScriptManager scriptManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.IsAjaxFrameworkScript(System.Web.UI.ScriptManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scriptManager" Type="System.Web.UI.ScriptManager" />
+      </Parameters>
+      <Docs>
+        <param name="scriptManager">A <see cref="T:System.Web.UI.ScriptManager" /> object.</param>
+        <summary>Determines whether the script reference is an AJAX script.</summary>
+        <returns>
+          <see langword="true" /> if the script reference is an AJAX script; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFromSystemWebExtensions">
+      <MemberSignature Language="C#" Value="protected override bool IsFromSystemWebExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsFromSystemWebExtensions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.IsFromSystemWebExtensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method is obsolete. Use IsAjaxFrameworkScript(ScriptManager) instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the composite script contains a reference to an ASP.NET AJAX framework script.</summary>
+        <returns>
+          <see langword="true" /> if the composite script contains a reference to an ASP.NET AJAX framework script; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptReference.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the embedded resource that contains the client script file.</summary>
+        <value>The name of the client script file that is embedded as a resource in an assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You set the <xref:System.Web.UI.ScriptReference.Name%2A> property to reference a client script file that is embedded as a resource in an assembly.  
+  
+ If you define values for both the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties in the same script reference, the <xref:System.Web.UI.ScriptReferenceBase.Path%2A> property takes precedence.  
+  
+   
+  
+## Examples  
+ The following example shows how to reference a custom control and a JavaScript file that is embedded in the control assembly. The assembly is assumed to be in the Bin folder of the Web site. The custom control animates <xref:System.Web.UI.UpdatePanel> controls. The JavaScript file is compiled as an embedded resource that is named SampleControl.UpdatePanelAnimation.js. You register the embedded JavaScript file by using the <xref:System.Web.UI.ScriptReference.Assembly%2A> and <xref:System.Web.UI.ScriptReference.Name%2A> properties.  
+  
+ To use this example, compile the JavaScript file that is shown in the example as an embedded resource with the custom control. Put the resulting assembly into the Bin folder of the Web site. For an example of how to embed a JavaScript file in an assembly, see [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).  
+  
+ The following example shows a page that uses the custom control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptReference#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptReference#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/Default.aspx#1)]  -->  
+  
+ The following example shows the custom control class definition.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#2](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/customcontrol.cs#2)]
+ [!code-vb[System.Web.UI.ScriptReference#2](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/customcontrol.vb#2)]  
+  
+ The following example shows the supporting JavaScript file.  
+  
+ [!code-javascript[System.Web.UI.ScriptReference#3](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/UpdatePanelAnimation.js#3)]  
+  
+ The following example shows code that you must add to the AssemblyInfo file of the project that contains the custom control and the JavaScript file.  
+  
+ [!code-csharp[System.Web.UI.ScriptReference#4](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptReference/CS/AssemblyInfo.cs#4)]
+ [!code-vb[System.Web.UI.ScriptReference#4](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptReference/vb/AssemblyInfo.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptReference.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the value of the <see cref="P:System.Web.UI.ScriptReference.Name" /> property, the <see cref="P:System.Web.UI.ScriptReferenceBase.Path" /> property, or the type name.</summary>
+        <returns>The value of the <see cref="P:System.Web.UI.ScriptReference.Name" /> property if it is defined, or the value of the <see cref="P:System.Web.UI.ScriptReferenceBase.Path" /> property if it is defined; otherwise, the value of the <see cref="P:System.Reflection.MemberInfo.Name" /> property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,298 @@
+<Type Name="TtsEngineAction" FullName="System.Speech.Synthesis.TtsEngine.TtsEngineAction">
+  <TypeSignature Language="C#" Value="public enum TtsEngineAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TtsEngineAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.TtsEngineAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the Speech Synthesis Markup Language (SSML) action to be taken in rendering a given <see langword="TextFragment" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> represents requests for servicing a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>. The actions correspond closely to elements in the SSML specification and are implemented on the text returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak%2A> property on a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>.  
+  
+ The <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value associated with a <xref:System.Speech.Synthesis.TtsEngine.TextFragment> is returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property.  
+  
+ Processing of the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> value returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property is handled by a speech synthesizes implementation of the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml.Speak%2A> method on a class derived from <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml>.  
+  
+   
+  
+## Examples  
+ The example below is part of a custom speech synthesis implementation inheriting from <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml>, and using the use of <xref:System.Speech.Synthesis.TtsEngine.TextFragment>, <xref:System.Speech.Synthesis.TtsEngine.FragmentState>, and <xref:System.Speech.Synthesis.TtsEngine.TtsEventId>  
+  
+ The implementation of <xref:System.Speech.Synthesis.TtsEngine.TtsEngineSsml.Speak%2A>  
+  
+1.  Receives an array of <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instances and creates a new array of <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instances to be passed to the `Speak` method on an underlying synthesis engine.  
+  
+2.  If the <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> enumeration value by found from the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Action%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property of each <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instance is Speak, the implementation  
+  
+    -   Translates Americanism to Britishisms in the text to be spoken.  
+  
+    -   If the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite.EventInterest%2A> property on the <xref:System.Speech.Synthesis.TtsEngine.ITtsEngineSite> interfaces provided to the implementation support the <xref:System.Speech.Synthesis.TtsEngine.TtsEventId> event type, an event to drive a synthesizer progress meter is created.  
+  
+3.  A speech rendering engine is then called with the modified <xref:System.Speech.Synthesis.TtsEngine.TextFragment> array.  
+  
+```  
+private const int WordBoundaryFlag = 1 << (int)TtsEventId.WordBoundary;  
+private readonly char[] spaces = new char[] { ' ', '\t', '\r', '\n' };  
+internal struct UsVsUk  
+{  
+  internal string UK;  
+  internal string US;  
+}  
+  
+override public void Speak (TextFragment [] frags, IntPtr wfx, ITtsEngineSite site)  
+{  
+  TextFragment [] newFrags=new TextFragment[frags.Length];  
+  
+  for (int i=0;i<frags.Length;i++){  
+    newFrags[i].State=frags[i].State;  
+    //truncate  
+    newFrags[i].TextToSpeak = frags[i].TextToSpeak.Substring(frags[i].TextOffset,  
+                               frags[i].TextLength);  
+    newFrags[i].TextLength = newFrags[i].TextToSpeak.Length;  
+    newFrags[i].TextOffset = 0;  
+    if (newFrags[i].State.Action == TtsEngineAction.Speak) {  
+      //Us to UK conversion  
+      foreach (UsVsUk term in TransList) {  
+      newFrags[i].TextToSpeak.Replace(term.US, term.UK);  
+      }  
+      //Generate progress meter events if supported  
+      if ((site.EventInterest & WordBoundaryFlag) != 0) {  
+      string[] subs = newFrags[i].TextToSpeak.Split(spaces);  
+  
+      foreach (string s in subs) {  
+        int offset = newFrags[i].TextOffset;  
+        SpeechEventInfo spEvent = new SpeechEventInfo((Int16)TtsEventId.WordBoundary,   
+                (Int16)EventParameterType.Undefined,   
+                 s.Length, new IntPtr(offset));  
+        offset += s.Length;  
+        if (s.Trim().Length > 0) {  
+          SpeechEventInfo[] events = new SpeechEventInfo[1];  
+          events[0] = spEvent;  
+          site.AddEvents(events, 1);  
+        }  
+      }  
+      }  
+    }  
+  }  
+  
+  _baseSynthesize.Speak(newFrags, wfx, site);  
+  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bookmark">
+      <MemberSignature Language="C#" Value="Bookmark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction Bookmark = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Bookmark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> is to be used as the contents of a bookmark.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<mark>` XML tag in the SSML specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseUnknownTag">
+      <MemberSignature Language="C#" Value="ParseUnknownTag" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction ParseUnknownTag = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.ParseUnknownTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no action has been determined from SSML input.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The associated <xref:System.Speech.Synthesis.TtsEngine.TextFragment> is an unknown XML tag not part of the SSML standard.  
+  
+ This input that may be interpreted or ignored by at the discretion of a synthesis engine.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pronounce">
+      <MemberSignature Language="C#" Value="Pronounce" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction Pronounce = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Pronounce" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests that input <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> text be interpreted as phonemes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Exact pronunciation is specified by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme%2A> member of the <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property on <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instances.  
+  
+ Corresponds to the `<Phoneme>` XML tag in the SSML specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Silence">
+      <MemberSignature Language="C#" Value="Silence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction Silence = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Silence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> contains no text to be rendered as speech.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Duration of the silence is specified by the <xref:System.Speech.Synthesis.TtsEngine.FragmentState.Duration%2A> member of the he <xref:System.Speech.Synthesis.TtsEngine.FragmentState> object returned by the <xref:System.Speech.Synthesis.TtsEngine.TextFragment.State%2A> property on <xref:System.Speech.Synthesis.TtsEngine.TextFragment> instances.  
+  
+ Corresponds to the `<Silence>` XML tag in the SSML specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="Speak" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction Speak = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.Speak" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests that the associated <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> should be processed and spoken.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default value of <xref:System.Speech.Synthesis.TtsEngine.TtsEngineAction> for a <xref:System.Speech.Synthesis.TtsEngine.TextFragment>,  
+  
+ Corresponds to the `<speak>` XML tag in the SSML specification  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpellOut">
+      <MemberSignature Language="C#" Value="SpellOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction SpellOut = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.SpellOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that text values provided by a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> through its <see cref="P:System.Speech.Synthesis.TtsEngine.TextFragment.TextToSpeak" /> property are to be synthesize as individual characters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This rendering includes punctuation, other than white space, as well as alphanumeric text.  
+  
+ For example thee associated text fragment "word!" should be synthsized into "w o r d exclamation point".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartParagraph">
+      <MemberSignature Language="C#" Value="StartParagraph" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction StartParagraph = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.StartParagraph" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates state of paragraph.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<p>` XML tag in the SSML specification  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartSentence">
+      <MemberSignature Language="C#" Value="StartSentence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction StartSentence = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.TtsEngineAction.StartSentence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.TtsEngineAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates start of sentence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the `<s>` XML tag in the SSML specification  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

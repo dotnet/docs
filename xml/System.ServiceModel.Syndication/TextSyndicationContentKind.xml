@@ -1,0 +1,82 @@
+<Type Name="TextSyndicationContentKind" FullName="System.ServiceModel.Syndication.TextSyndicationContentKind">
+  <TypeSignature Language="C#" Value="public enum TextSyndicationContentKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextSyndicationContentKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.TextSyndicationContentKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration that represents the supported types of text syndication content.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Html">
+      <MemberSignature Language="C#" Value="Html" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Syndication.TextSyndicationContentKind Html = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.Html" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>HTML (escaped markup)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Plaintext">
+      <MemberSignature Language="C#" Value="Plaintext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Syndication.TextSyndicationContentKind Plaintext = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.Plaintext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Plain text</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XHtml">
+      <MemberSignature Language="C#" Value="XHtml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Syndication.TextSyndicationContentKind XHtml = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Syndication.TextSyndicationContentKind.XHtml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML (not escaped)</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

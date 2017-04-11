@@ -1,0 +1,126 @@
+<Type Name="ErrorEventArgs" FullName="System.IO.ErrorEventArgs">
+  <TypeSignature Language="C#" Value="public class ErrorEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.IO.ErrorEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.IO.FileSystemWatcher.Error" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.ErrorEventArgs> contains the <xref:System.Exception> that caused the <xref:System.IO.FileSystemWatcher.Error?displayProperty=fullName> event. This class provides the <xref:System.IO.ErrorEventArgs.GetException%2A> method to retrieve the exception.  
+  
+   
+  
+## Examples  
+ The following example creates a new instance of <xref:System.IO.ErrorEventArgs> and initializes it with an <xref:System.Exception>. Then the example calls <xref:System.IO.ErrorEventArgs.GetException%2A> to retrieve the <xref:System.Exception> and display the error message. There is no form associated with this code.  
+  
+ [!code-cpp[Classic ErrorEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ErrorEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ErrorEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ErrorEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic ErrorEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ErrorEventArgs Example/VB/source.vb#1)]  
+  
+ The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+  
+ [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+ [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ErrorEventArgs (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.ErrorEventArgs.#ctor(System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">An <see cref="T:System.Exception" /> that represents the error that occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.ErrorEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new instance of <xref:System.IO.ErrorEventArgs> and initializes it with an <xref:System.Exception>. Then the example calls <xref:System.IO.ErrorEventArgs.GetException%2A> to retrieve the <xref:System.Exception> and display the error message. There is no form associated with this code.  
+  
+ [!code-cpp[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetException">
+      <MemberSignature Language="C#" Value="public virtual Exception GetException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Exception GetException() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.ErrorEventArgs.GetException" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Exception" /> that represents the error that occurred.</summary>
+        <returns>An <see cref="T:System.Exception" /> that represents the error that occurred.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new instance of <xref:System.IO.ErrorEventArgs> and initializes it with an <xref:System.Exception>. Then the example calls <xref:System.IO.ErrorEventArgs.GetException%2A> to retrieve the <xref:System.Exception> and display the error message. There is no form associated with this code.  
+  
+ [!code-cpp[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic ErrorEventArgs.ErrorEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ErrorEventArgs.ErrorEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+<Type Name="IFormatProvider" FullName="System.IFormatProvider">
+  <TypeSignature Language="C#" Value="public interface IFormatProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormatProvider" />
+  <TypeSignature Language="DocId" Value="T:System.IFormatProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a mechanism for retrieving an object to control formatting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IFormatProvider> interface supplies an object that provides formatting information for formatting and parsing operations. Formatting operations convert the value of a type to the string representation of that value. Typical formatting methods are the `ToString` methods of a type, as well as <xref:System.String.Format%2A>. Parsing operations convert the string representation of a value to a type with that value. Typical parsing methods are `Parse` and `TryParse`.  
+  
+ The <xref:System.IFormatProvider> interface consists of a single method, <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName>. <xref:System.IFormatProvider.GetFormat%2A> is a callback method: The parsing or formatting method calls it and passes it a <xref:System.Type> object that represents the type of object that the formatting or parsing method expects will provide formatting information. The <xref:System.IFormatProvider.GetFormat%2A> method is responsible for returning an object of that type.  
+  
+ <xref:System.IFormatProvider> implementations are often used implicitly by formatting and parsing methods. For example, the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method implicitly uses an <xref:System.IFormatProvider> implementation that represents the system's current culture. <xref:System.IFormatProvider> implementations can also be specified explicitly by methods that have a parameter of type <xref:System.IFormatProvider>, such as <xref:System.Int32.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> and [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+  
+ The .NET Framework includes the following three predefined <xref:System.IFormatProvider> implementations to provide culture-specific information that is used in formatting or parsing numeric and date and time values:  
+  
+-   The <xref:System.Globalization.NumberFormatInfo> class, which provides information that is used to format numbers, such as the currency, thousands separator, and decimal separator symbols for a particular culture. For information about the predefined format strings recognized by a <xref:System.Globalization.NumberFormatInfo> object and used in numeric formatting operations, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo> class, which provides information that is used to format dates and times, such as the date and time separator symbols for a particular culture or the order and format of a date's year, month, and day components. For information about the predefined format strings recognized by a <xref:System.Globalization.DateTimeFormatInfo> object and used in numeric formatting operations, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
+  
+-   The <xref:System.Globalization.CultureInfo> class, which represents a particular culture. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a culture-specific <xref:System.Globalization.NumberFormatInfo> or <xref:System.Globalization.DateTimeFormatInfo> object, depending on whether the <xref:System.Globalization.CultureInfo> object is used in a formatting or parsing operation that involves numbers or dates and times.  
+  
+ The .NET Framework also supports custom formatting. This typically involves the creation of a formatting class that implements both <xref:System.IFormatProvider> and <xref:System.ICustomFormatter>. An instance of this class is then passed as a parameter to a method that performs a custom formatting operation, such as [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> The example provides an illustration of such a custom implementation that formats a number as a 12-digit account number.  
+  
+   
+  
+## Examples  
+ The following example illustrates how an <xref:System.IFormatProvider> implementation can change the representation of a date and time value. In this case, a single date is displayed by using <xref:System.Globalization.CultureInfo> objects that represent four different cultures.  
+  
+ [!code-csharp[System.IFormatProvider.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IFormatProvider.Class/cs/provider2.cs#3)]
+ [!code-vb[System.IFormatProvider.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IFormatProvider.Class/vb/provider2.vb#3)]  
+  
+ The following example illustrates the use of a class that implements the <xref:System.IFormatProvider> interface and the <xref:System.IFormatProvider.GetFormat%2A> method. The `AcctNumberFormat` class converts an <xref:System.Int64> value that represents an account number to a formatted 12-digit account number. Its `GetFormat` method returns a reference to the current `AcctNumberFormat` instance if the `formatType` parameter refers to a class that implements <xref:System.ICustomFormatter>; otherwise, `GetFormat` returns `null`.  
+  
+ [!code-csharp[System.IFormatProvider.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IFormatProvider.Class/cs/Provider.cs#2)]
+ [!code-vb[System.IFormatProvider.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IFormatProvider.Class/vb/Provider.vb#2)]  
+  
+ The class that implements <xref:System.IFormatProvider> can then be used in a call to a formatting and parsing operation. For example, the following code calls the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method to generate a string that contains a formatted 12-digit account number.  
+  
+ [!code-csharp[System.IFormatProvider.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IFormatProvider.Class/cs/Provider.cs#1)]
+ [!code-vb[System.IFormatProvider.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IFormatProvider.Class/vb/Provider.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFormat">
+      <MemberSignature Language="C#" Value="public object GetFormat (Type formatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFormat(class System.Type formatType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IFormatProvider.GetFormat(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="formatType">An object that specifies the type of format object to return.</param>
+        <summary>Returns an object that provides formatting services for the specified type.</summary>
+        <returns>An instance of the object specified by <paramref name="formatType" />, if the <see cref="T:System.IFormatProvider" /> implementation can supply that type of object; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IFormatProvider.GetFormat%2A> is a callback method that formatting and parsing methods invoke to retrieve information about the format of the input string in parsing operations or the format of the output string in formatting operations. In the `formatType` parameter, the formatting or parsing method passes the type of object it requires to perform its operation. If the <xref:System.IFormatProvider> implementation can supply this formatting or parsing object, it returns that object. If not, it returns `null`.  
+  
+ For example, in the call to the <xref:System.Int32.ToString%28System.IFormatProvider%29?displayProperty=fullName> method, the method argument is an <xref:System.IFormatProvider> object that provides information about how the string representation of the current integer instance might be formatted. When the runtime executes the method, it calls the <xref:System.IFormatProvider> object's <xref:System.IFormatProvider.GetFormat%2A> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. If the <xref:System.IFormatProvider> object can supply a <xref:System.Globalization.NumberFormatInfo> object, it returns that object. If it cannot supply an object of that type, it returns `null`.  
+  
+ You can implement the <xref:System.IFormatProvider> interface and the <xref:System.IFormatProvider.GetFormat%2A> method in classes that provide custom formatting or parsing services. The <xref:System.IFormatProvider> implementation is then passed as an argument to any overload of a parsing or formatting method that has a parameter of type <xref:System.IFormatProvider>, such as [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, <xref:System.Int32.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>, or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of a class that implements the <xref:System.IFormatProvider> interface and the <xref:System.IFormatProvider.GetFormat%2A> method. The `AcctNumberFormat` class converts an <xref:System.Int64> value that represents an account number to a formatted 12-digit account number. Its `GetFormat` method returns a reference to itself if the `formatType` parameter refers to a class that implements <xref:System.ICustomFormatter>; otherwise, `GetFormat` returns `null`.  
+  
+ [!code-csharp[System.IFormatProvider.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IFormatProvider.Class/cs/Provider.cs#2)]
+ [!code-vb[System.IFormatProvider.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IFormatProvider.Class/vb/Provider.vb#2)]  
+  
+ An instance of the `AcctNumberFormat` class can then be passed as an argument to a method that provides formatting or parsing services. For example, the following code passes an `AcctNumberFormat` class to the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method to generate a formatted 12-digit account number.  
+  
+ [!code-csharp[System.IFormatProvider.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IFormatProvider.Class/cs/Provider.cs#1)]
+ [!code-vb[System.IFormatProvider.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IFormatProvider.Class/vb/Provider.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

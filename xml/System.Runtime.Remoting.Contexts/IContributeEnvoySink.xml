@@ -1,0 +1,61 @@
+<Type Name="IContributeEnvoySink" FullName="System.Runtime.Remoting.Contexts.IContributeEnvoySink">
+  <TypeSignature Language="C#" Value="public interface IContributeEnvoySink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContributeEnvoySink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Contexts.IContributeEnvoySink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contributes an envoy message sink on the client end.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Contexts.IContributeEnvoySink> interface is implemented by context properties in the server <xref:System.Runtime.Remoting.Contexts.Context> class that want to contribute an envoy message sink on the client end. The server envoy chain is composed from those context properties that implement <xref:System.Runtime.Remoting.Contexts.IContributeEnvoySink>. The envoy chain resides on the client end and acts as a representative of the corresponding message sinks from the server context properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEnvoySink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink GetEnvoySink (MarshalByRefObject obj, System.Runtime.Remoting.Messaging.IMessageSink nextSink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink GetEnvoySink(class System.MarshalByRefObject obj, class System.Runtime.Remoting.Messaging.IMessageSink nextSink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink(System.MarshalByRefObject,System.Runtime.Remoting.Messaging.IMessageSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessageSink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.MarshalByRefObject" />
+        <Parameter Name="nextSink" Type="System.Runtime.Remoting.Messaging.IMessageSink" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The server object for which the chain is being created.</param>
+        <param name="nextSink">The chain of sinks composed so far.</param>
+        <summary>Takes the first sink in the chain of sinks composed so far, and then chains its message sink in front of the chain already formed.</summary>
+        <returns>The composite sink chain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Contexts.IContributeEnvoySink.GetEnvoySink%2A> method is used as an optimization to create an envoy sink when the destination is a different context in the same application domain and is used by the Wrap operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

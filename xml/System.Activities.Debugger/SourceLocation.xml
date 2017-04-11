@@ -1,0 +1,219 @@
+<Type Name="SourceLocation" FullName="System.Activities.Debugger.SourceLocation">
+  <TypeSignature Language="C#" Value="public class SourceLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SourceLocation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies a specific location in a target source code file.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourceLocation (string fileName, int line);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 line) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="line" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">A source code file.</param>
+        <param name="line">The number of a line in the source code file.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class that specifies a source code file name and the number of a line in that file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourceLocation (string fileName, int startLine, int startColumn, int endLine, int endColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+        <Parameter Name="endLine" Type="System.Int32" />
+        <Parameter Name="endColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The name of a source code file.</param>
+        <param name="startLine">A number that designates the line in the source code file where reading begins.</param>
+        <param name="startColumn">A number that designates the column in the source code file where reading begins.</param>
+        <param name="endLine">A number that designates the line in the source code file where reading ends.</param>
+        <param name="endColumn">A number that designates the column in the source code file where reading ends.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class that specifies a source code file name and parameters for a range of data within that file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndColumn">
+      <MemberSignature Language="C#" Value="public int EndColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.EndColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the final column in a range of one or more columns in the source code file.</summary>
+        <value>An integer representing the final column in a range of columns.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLine">
+      <MemberSignature Language="C#" Value="public int EndLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.EndLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the final line in a range of one or more lines in the source code file.</summary>
+        <value>An integer representing the final line in a range of lines.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">A specified <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</param>
+        <summary>Returns a value that indicates whether the source code file line and column settings referenced by the <see cref="T:System.Activities.Debugger.SourceLocation" /> object are an exact match for the line and column settings in another, specified <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</summary>
+        <returns>A boolean that indicates the presence or absence of a match.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.FileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the target source code file.</summary>
+        <value>A string instance of the name of the target source code file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a unique value to represent the <see cref="T:System.Activities.Debugger.SourceLocation" /> object.</summary>
+        <returns>An integer representing a hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSingleWholeLine">
+      <MemberSignature Language="C#" Value="public bool IsSingleWholeLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleWholeLine" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.IsSingleWholeLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the line and column settings define a single, complete line, and not multiple lines, in the source code file.</summary>
+        <value>A boolean representing what the column settings define.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartColumn">
+      <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.StartColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first column in a range of one or more columns in the source code file.</summary>
+        <value>An integer representing a column in a range of columns.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartLine">
+      <MemberSignature Language="C#" Value="public int StartLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.StartLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first line in a range of one or more lines in the source code file.</summary>
+        <value>An integer representing a line a range of lines.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

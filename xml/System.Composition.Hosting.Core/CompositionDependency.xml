@@ -1,0 +1,188 @@
+<Type Name="CompositionDependency" FullName="System.Composition.Hosting.Core.CompositionDependency">
+  <TypeSignature Language="C#" Value="public class CompositionDependency" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositionDependency extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.CompositionDependency" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Hosting</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionContract Contract { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Composition.Hosting.Core.CompositionContract Contract" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrerequisite">
+      <MemberSignature Language="C#" Value="public bool IsPrerequisite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPrerequisite" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.IsPrerequisite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Missing">
+      <MemberSignature Language="C#" Value="public static System.Composition.Hosting.Core.CompositionDependency Missing (System.Composition.Hosting.Core.CompositionContract contract, object site);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Composition.Hosting.Core.CompositionDependency Missing(class System.Composition.Hosting.Core.CompositionContract contract, object site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Missing(System.Composition.Hosting.Core.CompositionContract,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="site" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Oversupplied">
+      <MemberSignature Language="C#" Value="public static System.Composition.Hosting.Core.CompositionDependency Oversupplied (System.Composition.Hosting.Core.CompositionContract contract, System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt; targets, object site);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Composition.Hosting.Core.CompositionDependency Oversupplied(class System.Composition.Hosting.Core.CompositionContract contract, class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.ExportDescriptorPromise&gt; targets, object site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Oversupplied(System.Composition.Hosting.Core.CompositionContract,System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.ExportDescriptorPromise},System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="targets" Type="System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.ExportDescriptorPromise&gt;" />
+        <Parameter Name="site" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="targets">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Satisfied">
+      <MemberSignature Language="C#" Value="public static System.Composition.Hosting.Core.CompositionDependency Satisfied (System.Composition.Hosting.Core.CompositionContract contract, System.Composition.Hosting.Core.ExportDescriptorPromise target, bool isPrerequisite, object site);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Composition.Hosting.Core.CompositionDependency Satisfied(class System.Composition.Hosting.Core.CompositionContract contract, class System.Composition.Hosting.Core.ExportDescriptorPromise target, bool isPrerequisite, object site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.Satisfied(System.Composition.Hosting.Core.CompositionContract,System.Composition.Hosting.Core.ExportDescriptorPromise,System.Boolean,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.CompositionDependency</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contract" Type="System.Composition.Hosting.Core.CompositionContract" />
+        <Parameter Name="target" Type="System.Composition.Hosting.Core.ExportDescriptorPromise" />
+        <Parameter Name="isPrerequisite" Type="System.Boolean" />
+        <Parameter Name="site" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="contract">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="isPrerequisite">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Site">
+      <MemberSignature Language="C#" Value="public object Site { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Site" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Site" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.ExportDescriptorPromise Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Composition.Hosting.Core.ExportDescriptorPromise Target" />
+      <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.CompositionDependency.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.Core.ExportDescriptorPromise</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.CompositionDependency.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Hosting</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

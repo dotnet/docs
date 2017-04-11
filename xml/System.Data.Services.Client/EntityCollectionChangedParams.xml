@@ -1,0 +1,194 @@
+<Type Name="EntityCollectionChangedParams" FullName="System.Data.Services.Client.EntityCollectionChangedParams">
+  <TypeSignature Language="C#" Value="public sealed class EntityCollectionChangedParams" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityCollectionChangedParams extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.EntityCollectionChangedParams" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the arguments of a <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> delegate.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code-behind page for the XAML file creates a <xref:System.Data.Services.Client.DataServiceCollection%601> with custom methods that are called when changes occur to data that is bound to the binding collection. When the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event occurs, the supplied method prevents an item that has been removed from the binding collection from being deleted from the data service. When the <xref:System.Collections.ObjectModel.ObservableCollection%601.PropertyChanged> event occurs, the `ShipDate` value is validated to ensure that changes are not made to orders that have already shipped.  
+  
+ [!code-csharp[Astoria Northwind Client#WpfDataBindingCustom](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderscustom.xaml.cs#wpfdatabindingcustom)]
+ [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml.vb#wpfdatabindingcustom)]
+ [!code-vb[Astoria Northwind Client#WpfDataBindingCustom](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom2.xaml.vb#wpfdatabindingcustom)]  
+  
+ The following XAML code defines the window for the previous example.  
+  
+ [!code-xml[Astoria Northwind Client#WpfDataBindingCustomXaml](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderscustom.xaml#wpfdatabindingcustomxaml)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.NotifyCollectionChangedAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Specialized.NotifyCollectionChangedAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Collections.Specialized.NotifyCollectionChangedAction" /> value that indicates how the collection was changed.</summary>
+        <value>A value that indicates how the collection was changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only the values <xref:System.Collections.Specialized.NotifyCollectionChangedAction> and <xref:System.Collections.Specialized.NotifyCollectionChangedAction> are supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Collection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Collection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.Collection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> that has changed.</summary>
+        <value>A reference to the collection that has changed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.DataServiceContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.DataServiceContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Data.Services.Client.DataServiceContext" /> associated with the <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> that has changed.</summary>
+        <value>The context associated with the collection that has changed</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The navigation property on the source object that references the collection that has changed.</summary>
+        <value>The navigation property name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceEntity">
+      <MemberSignature Language="C#" Value="public object SourceEntity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SourceEntity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.SourceEntity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The source object that references the target object in the collection by using a navigation property.</summary>
+        <value>The source object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceEntitySet">
+      <MemberSignature Language="C#" Value="public string SourceEntitySet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceEntitySet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.SourceEntitySet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity set of the source object.</summary>
+        <value>An entity set name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetEntity">
+      <MemberSignature Language="C#" Value="public object TargetEntity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetEntity" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.TargetEntity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity object in the collection that has changed.</summary>
+        <value>The changed entity object in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetEntitySet">
+      <MemberSignature Language="C#" Value="public string TargetEntitySet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetEntitySet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.EntityCollectionChangedParams.TargetEntitySet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity set name of the object in the collection.</summary>
+        <value>An entity set name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

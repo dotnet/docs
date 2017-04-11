@@ -1,0 +1,40 @@
+<Type Name="DataGridViewSortCompareEventHandler" FullName="System.Windows.Forms.DataGridViewSortCompareEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewSortCompareEventHandler(object sender, DataGridViewSortCompareEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewSortCompareEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSortCompareEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewSortCompareEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewSortCompareEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.SortCompare" /> event of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.DataGridViewSortCompareEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

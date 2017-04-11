@@ -1,0 +1,117 @@
+<Type Name="EditableAttribute" FullName="System.ComponentModel.DataAnnotations.EditableAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EditableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EditableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.EditableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether a data field is editable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The presence of the <xref:System.ComponentModel.DataAnnotations.EditableAttribute> attribute on a data field indicates whether the user should be able to change the field's value.  
+  
+ This class neither enforces nor guarantees that a field is editable. The underlying data store might allow the field to be changed regardless of the presence of this attribute.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditableAttribute (bool allowEdit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool allowEdit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.EditableAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allowEdit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="allowEdit">
+          <see langword="true" /> to specify that field is editable; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.EditableAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowEdit">
+      <MemberSignature Language="C#" Value="public bool AllowEdit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowEdit" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.EditableAttribute.AllowEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a field is editable.</summary>
+        <value>
+          <see langword="true" /> if the field is editable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowInitialValue">
+      <MemberSignature Language="C#" Value="public bool AllowInitialValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowInitialValue" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.EditableAttribute.AllowInitialValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an initial value is enabled.</summary>
+        <value>
+          <see langword="true " />if an initial value is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property defaults to the value that is specified in the <xref:System.ComponentModel.DataAnnotations.EditableAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

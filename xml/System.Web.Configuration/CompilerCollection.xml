@@ -1,0 +1,323 @@
+<Type Name="CompilerCollection" FullName="System.Web.Configuration.CompilerCollection">
+  <TypeSignature Language="C#" Value="public sealed class CompilerCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompilerCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CompilerCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Configuration.Compiler), AddItemName="compiler", CollectionType=System.Configuration.ConfigurationElementCollectionType.BasicMap)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.Configuration.Compiler" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.CompilerCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the <xref:System.Web.Configuration.Compiler> objects it contains.  
+  
+   
+  
+## Examples  
+ The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.CompilerCollection> class.  
+  
+```  
+<system.web>  
+  <compilation   
+    tempDirectory=""   
+    debug="False"   
+    strict="False"   
+    explicit="True"   
+    batch="True"   
+    batchTimeout="900"   
+    maxBatchSize="1000"   
+    maxBatchGeneratedFileSize="1000"   
+    numRecompilesBeforeAppRestart="15"   
+    defaultLanguage="vb"   
+    urlLinePragmas="False">  
+    <compilers>  
+      <compiler   
+        compilerOptions=""  
+        extension=".vbs"  
+        language="VB;VBScript"  
+        type="Microsoft.VisualBasic.VBCodeProvider,system,   
+          Version=1.0.5000.0, Culture=neutral,   
+          PublicKeyToken=b77a5c561934e089"  
+        warningLevel="1"/>  
+    </compilers>  
+  </compilation>  
+</system.web>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.CompilerCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllKeys">
+      <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.AllKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all the keys of the <see cref="T:System.Web.Configuration.CompilerCollection" />.</summary>
+        <value>The <see langword="string" /> array containing the collection keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this array to access the <xref:System.Web.Configuration.Compiler> objects contained in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionType">
+      <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.CollectionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the configuration collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> object of the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementName">
+      <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.ElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.Compiler Get (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.Compiler Get(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.Get(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.Compiler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An integer value specifying a <see cref="T:System.Web.Configuration.Compiler" /> within the <see cref="T:System.Web.Configuration.CompilerCollection" />.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.Compiler" /> collection element at the specified index.</summary>
+        <returns>A <see cref="T:System.Web.Configuration.Compiler" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.Compiler Get (string language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.Compiler Get(string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.Get(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.Compiler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">The language for the <see cref="T:System.Web.Configuration.Compiler" /> object within the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.Compiler" /> collection element for the specified language.</summary>
+        <returns>A <see cref="T:System.Web.Configuration.Compiler" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKey">
+      <MemberSignature Language="C#" Value="public string GetKey (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CompilerCollection.GetKey(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An integer value specifying a <see cref="T:System.Web.Configuration.Compiler" /> within the <see cref="T:System.Web.Configuration.CompilerCollection" />.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.CompilerCollection" /> key name at the specified index.</summary>
+        <returns>The key name at the specified index of the <see cref="T:System.Web.Configuration.CompilerCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.Compiler this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.Compiler Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.Compiler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An integer value specifying a <see cref="T:System.Web.Configuration.Compiler" /> within the <see cref="T:System.Web.Configuration.CompilerCollection" />.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.Compiler" /> at the specified index of the collection.</summary>
+        <value>A <see cref="T:System.Web.Configuration.Compiler" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the compiler object does not exist in the collection, an out-of-range exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.Compiler this[string language] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.Compiler Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.Compiler</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">The language for the <see cref="T:System.Web.Configuration.Compiler" /> object within the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.Compiler" /> collection element for the specified language.</summary>
+        <value>A <see cref="T:System.Web.Configuration.Compiler" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides a semicolon-separated list of language names supported by the language provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CompilerCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

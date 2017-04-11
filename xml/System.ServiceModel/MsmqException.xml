@@ -1,0 +1,156 @@
+<Type Name="MsmqException" FullName="System.ServiceModel.MsmqException">
+  <TypeSignature Language="C#" Value="public class MsmqException : System.Runtime.InteropServices.ExternalException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MsmqException extends System.Runtime.InteropServices.ExternalException" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqException" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.InteropServices.ExternalException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates errors returned by Message Queuing (MSMQ). This exception is thrown by the Message Queuing transport and the Message Queuing integration channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ The exception contains the Message Queuing error code. Typically, this exception is thrown when the framework cannot recover from the error automatically and requires some human intervention. For example, this exception will be thrown if Message Queuing is not installed and an attempt is made to open the Message Queuing transport listener.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message with which to initialize the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message provided.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MsmqException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized data associated with the <see cref="T:System.ServiceModel.MsmqException" />.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source and destination of the serialized stream associated with the <see cref="T:System.ServiceModel.MsmqException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with additional serialized information about the exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqException (string message, Exception inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="inner" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</param>
+        <param name="inner">The inner exception to be encapsulated by the new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message and inner exception provided.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing (MSMQ) channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqException (string message, int error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqException.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="error" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</param>
+        <param name="error">The error code, returned by the Message Queuing (MSMQ) infrastructure, with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqException" /> class with the message and error code provided.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This exception can be thrown when the Message Queuing channel interacts with a message queue, including opening a queue, querying a queue for information, sending messages, and receiving messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

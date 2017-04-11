@@ -1,0 +1,124 @@
+<Type Name="HotSpotMode" FullName="System.Web.UI.WebControls.HotSpotMode">
+  <TypeSignature Language="C#" Value="public enum HotSpotMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HotSpotMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpotMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the behaviors of a <see cref="T:System.Web.UI.WebControls.HotSpot" /> object in an <see cref="T:System.Web.UI.WebControls.ImageMap" /> control when the <see cref="T:System.Web.UI.WebControls.HotSpot" /> is clicked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HotSpotMode> enumeration represents the behaviors that you can apply to a <xref:System.Web.UI.WebControls.HotSpot> object within an <xref:System.Web.UI.WebControls.ImageMap> control. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> and the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> properties use these enumeration values to set the behavior of a <xref:System.Web.UI.WebControls.HotSpot> object when it is clicked. If both properties are set, the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property specified on each individual <xref:System.Web.UI.WebControls.HotSpot> object takes precedence over the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property on the control.  
+  
+ If you specify `HotSpotMode.NotSet` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property of an individual <xref:System.Web.UI.WebControls.HotSpot> object, the <xref:System.Web.UI.WebControls.HotSpot> gets its behavior from the containing <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property. In this scenario, if the <xref:System.Web.UI.WebControls.ImageMap> control's <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A> property is either `NotSet` or no value is specified, the default behavior is to navigate to a URL.  
+  
+> [!NOTE]
+>  If an <xref:System.Web.UI.WebControls.ImageMap> control's behavior is not specified using either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.HotSpot> objects it contains, by default the behavior is `HotSpotMode.Navigate`. In addition, if the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> properties on the <xref:System.Web.UI.WebControls.HotSpot> objects that an <xref:System.Web.UI.WebControls.ImageMap> control contains are set to `HotSpotMode.NotSet` and no value is specified for the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property, the default behavior is `HotSpotMode.Navigate`.  
+  
+ If you specify `HotSpotMode.Navigate` for either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the page navigates to a URL when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.MobileControls.Image.NavigateUrl%2A?displayProperty=fullName> or the <xref:System.Web.UI.WebControls.HotSpot.NavigateUrl%2A?displayProperty=fullName> property to specify the URL to navigate to.  
+  
+ If you specify `HotSpotMode.PostBack` for either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the page generates a postback to the server when the <xref:System.Web.UI.WebControls.HotSpot> is clicked. Use the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property to specify a name for the <xref:System.Web.UI.WebControls.HotSpot> object. This name will be passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when the postback event occurs. When a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, the <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised. To programmatically control the actions performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
+  
+ If you specify `HotSpotMode.Inactive` for the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property, the <xref:System.Web.UI.WebControls.HotSpot> object does not have any behavior when it is clicked. You can use this value to create an inactive hot spot within a larger active hot spot. This option is provided to allow you to create more complex hot spot zones within an <xref:System.Web.UI.WebControls.ImageMap> control.  
+  
+ To create an inactive area within an active hot spot, you must specify the inactive hot spot before the active one in the <xref:System.Web.UI.WebControls.ImageMap> control. For example, the following <xref:System.Web.UI.WebControls.ImageMap> defines an active ring by specifying an inactive circular hot spot within a larger active circular hot spot:  
+  
+```  
+<asp:ImageMap ID="SaturnImage"   
+       ImageUrl="~/saturn.PNG"   
+       runat="server" OnClick="SaturnImage_Click">  
+    <asp:CircleHotSpot AlternateText="planet" HotSpotMode=PostBack  
+          PostBackValue="planet" Radius=40 X=100 Y=100 />  
+  
+    <asp:CircleHotSpot HotSpotMode=Inactive   
+          Radius=60 X=100 Y=100 />  
+    <asp:CircleHotSpot AlternateText="rings" HotSpotMode=PostBack  
+          PostBackValue="rings" Radius=80 X=100 Y=100 />  
+</asp:ImageMap>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HotSpotMode> enumeration values to set the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property. The page contains an <xref:System.Web.UI.WebControls.ImageMap> control that contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the hot spot regions. The <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A> property is not set on either of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects because they get their behavior from the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMap.HotSpotMode1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMap.HotSpotMode1/CS/imagemap.hotspotmode1cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMap.HotSpotMode1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMap.HotSpotMode1/VB/imagemap.hotspotmode1vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode Inactive = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> does not have any behavior.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Navigate">
+      <MemberSignature Language="C#" Value="Navigate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode Navigate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.Navigate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> navigates to a URL.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> uses the behavior set by the <see cref="T:System.Web.UI.WebControls.ImageMap" /> control's <see cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" /> property. If the <see cref="T:System.Web.UI.WebControls.ImageMap" /> control does not define the behavior, the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object navigates to a URL.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PostBack">
+      <MemberSignature Language="C#" Value="PostBack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode PostBack = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.PostBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> generates a postback to the server.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

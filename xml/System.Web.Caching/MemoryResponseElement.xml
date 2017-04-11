@@ -1,0 +1,107 @@
+<Type Name="MemoryResponseElement" FullName="System.Web.Caching.MemoryResponseElement">
+  <TypeSignature Language="C#" Value="public class MemoryResponseElement : System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MemoryResponseElement extends System.Web.Caching.ResponseElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.MemoryResponseElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Caching.ResponseElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents part of an output-cache entry that is stored in memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The output-cache response in a <xref:System.Web.Caching.MemoryResponseElement> object is stored in memory as an array of bytes. The array can contain all or part of an output-cache response.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MemoryResponseElement (byte[] buffer, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] buffer, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.MemoryResponseElement.#ctor(System.Byte[],System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">An array of bytes that contains a part of an output-cache response.</param>
+        <param name="length">The size of the array in <c>buffer</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.MemoryResponseElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `buffer` must not be `null`, although it can be a zero-length array.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is less than zero or greater than the size of <paramref name="buffer" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public byte[] Buffer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Buffer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.MemoryResponseElement.Buffer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array that contains all or part of an output-cache response.</summary>
+        <value>An array of byte objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> property must not be `null`, although it can be a zero-length array. If <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A>property is `null`, the <xref:System.Web.Caching.MemoryResponseElement> constructor throws an <xref:System.ArgumentNullException>. If the <xref:System.Web.Caching.MemoryResponseElement.Length%2A> property is less than zero or greater than the size of the value of <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A>property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public long Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.MemoryResponseElement.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the array that is referenced by the <see cref="P:System.Web.Caching.MemoryResponseElement.Buffer" /> property.</summary>
+        <value>The size of the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Caching.MemoryResponseElement> object that is created by ASP.NET is a fixed-size memory buffer that is created from a pool of memory buffers. As a result, the contents of a <xref:System.Web.Caching.MemoryResponseElement> object often do not completely fill the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array. Typically only a part of the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array will contain response data. Therefore, providers that serialize the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array directly (instead of serializing the complete type that is being stored in the output cache) must use the <xref:System.Web.Caching.MemoryResponseElement.Length%2A> property to determine how much of the <xref:System.Web.Caching.MemoryResponseElement.Buffer%2A> array must be stored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

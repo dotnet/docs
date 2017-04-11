@@ -1,0 +1,91 @@
+<Type Name="InheritanceFlags" FullName="System.Security.AccessControl.InheritanceFlags">
+  <TypeSignature Language="C#" Value="public enum InheritanceFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InheritanceFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.InheritanceFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Inheritance flags specify the semantics of inheritance for access control entries (ACEs).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainerInherit">
+      <MemberSignature Language="C#" Value="ContainerInherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.InheritanceFlags ContainerInherit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.InheritanceFlags.ContainerInherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ACE is inherited by child container objects.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.InheritanceFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.InheritanceFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ACE is not inherited by child objects.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInherit">
+      <MemberSignature Language="C#" Value="ObjectInherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.InheritanceFlags ObjectInherit = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.InheritanceFlags.ObjectInherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.InheritanceFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ACE is inherited by child leaf objects.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,459 @@
+<Type Name="DataServiceProviderMethods" FullName="System.Data.Services.Providers.DataServiceProviderMethods">
+  <TypeSignature Language="C#" Value="public static class DataServiceProviderMethods" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataServiceProviderMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.DataServiceProviderMethods" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Performs late-bound operations on resource sets with a custom data service provider.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (bool left, bool right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(bool left, bool right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Boolean" />
+        <Parameter Name="right" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first parameter value.</param>
+        <param name="right">The second parameter value.</param>
+        <summary>Returns comparison information for Boolean parameters in an operation expression.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="left" /> is less than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> x equals y.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this comparison, `true` is greater than `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (Guid left, Guid right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype System.Guid left, valuetype System.Guid right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Guid,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Guid" />
+        <Parameter Name="right" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first parameter value.</param>
+        <param name="right">The second parameter value.</param>
+        <summary>Returns comparison information for GUID parameters in an operation expression.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="left" /> is less than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> x equals y.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparison is performed by byte order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (Nullable&lt;bool&gt; left, Nullable&lt;bool&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype System.Nullable`1&lt;bool&gt; left, valuetype System.Nullable`1&lt;bool&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="right" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first parameter value.</param>
+        <param name="right">The second parameter value.</param>
+        <summary>Returns comparison information for nullable Boolean parameters in an operation expression.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="left" /> is less than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> x equals y.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this comparison, `true` is greater than `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (Nullable&lt;Guid&gt; left, Nullable&lt;Guid&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; left, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.Nullable{System.Guid},System.Nullable{System.Guid})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Nullable&lt;System.Guid&gt;" />
+        <Parameter Name="right" Type="System.Nullable&lt;System.Guid&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first parameter value.</param>
+        <param name="right">The second parameter value.</param>
+        <summary>Returns comparison information for nullable GUID parameters in an operation expression.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="left" /> is less than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> x equals y.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparison is performed by byte order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (string left, string right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(string left, string right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Compare(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.String" />
+        <Parameter Name="right" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first parameter value.</param>
+        <param name="right">The second parameter value.</param>
+        <summary>Returns comparison information for string parameters in an operation expression.</summary>
+        <returns>
+          <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> -1  
+  
+ </term>  
+<description> <paramref name="left" /> is less than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> x equals y.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The comparison is performed by ordinal order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static object Convert (object value, System.Data.Services.Providers.ResourceType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Convert(object value, class System.Data.Services.Providers.ResourceType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.Convert(System.Object,System.Data.Services.Providers.ResourceType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Data.Services.Providers.ResourceType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to cast to the requested <see langword="type" />.</param>
+        <param name="type">Resource type for which to check.</param>
+        <summary>Casts a value to a specified type.</summary>
+        <returns>The <paramref name="value" /> cast to the requested <paramref name="type" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSequenceValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; GetSequenceValue&lt;T&gt; (object value, System.Data.Services.Providers.ResourceProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetSequenceValue&lt;T&gt;(object value, class System.Data.Services.Providers.ResourceProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.GetSequenceValue``1(System.Object,System.Data.Services.Providers.ResourceProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="property" Type="System.Data.Services.Providers.ResourceProperty" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of the resulting sequence.</typeparam>
+        <param name="value">Object that contains the value.</param>
+        <param name="property">
+          <see cref="T:System.Data.Services.Providers.ResourceProperty" /> that is the property the value of which must be returned.</param>
+        <summary>Gets a named value from the specified object as a sequence.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> instance that contains the requested value as a sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `null` value is returned when the named value cannot be found.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public static object GetValue (object value, System.Data.Services.Providers.ResourceProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetValue(object value, class System.Data.Services.Providers.ResourceProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.GetValue(System.Object,System.Data.Services.Providers.ResourceProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="property" Type="System.Data.Services.Providers.ResourceProperty" />
+      </Parameters>
+      <Docs>
+        <param name="value">Object that contains the value.</param>
+        <param name="property">
+          <see cref="T:System.Data.Services.Providers.ResourceProperty" /> that is the property the value of which must be returned.</param>
+        <summary>Gets a named value from the specified object.</summary>
+        <returns>An object that is the requested value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeIs">
+      <MemberSignature Language="C#" Value="public static bool TypeIs (object value, System.Data.Services.Providers.ResourceType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TypeIs(object value, class System.Data.Services.Providers.ResourceType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.DataServiceProviderMethods.TypeIs(System.Object,System.Data.Services.Providers.ResourceType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Data.Services.Providers.ResourceType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to check.</param>
+        <param name="type">
+          <see cref="T:System.Data.Services.Providers.ResourceType" /> to compare with.</param>
+        <summary>Determines if the value is of a specified type.</summary>
+        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the value is of the specified type; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

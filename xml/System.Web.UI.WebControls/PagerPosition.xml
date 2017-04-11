@@ -1,0 +1,81 @@
+<Type Name="PagerPosition" FullName="System.Web.UI.WebControls.PagerPosition">
+  <TypeSignature Language="C#" Value="public enum PagerPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagerPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerPosition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the position of the pager for accessing various pages within a paginated control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls that support pagination often provide a set of controls called the pager that allows the user to navigate the pages within the control. The <xref:System.Web.UI.WebControls.PagerPosition> enumeration represents the different locations where the pager can be displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.PagerPosition> enumeration to specify that the pager should be displayed at the bottom of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewAllowPaging#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewAllowPaging/CS/formviewallowpagingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewAllowPaging#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewAllowPaging/VB/formviewallowpagingvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition Bottom = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A pager positioned at the bottom of the control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition Top = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A pager positioned at the top of the control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopAndBottom">
+      <MemberSignature Language="C#" Value="TopAndBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerPosition TopAndBottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerPosition.TopAndBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pagers positioned at both the top and the bottom of the control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

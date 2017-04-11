@@ -1,0 +1,115 @@
+<Type Name="PointHitTestResult" FullName="System.Windows.Media.PointHitTestResult">
+  <TypeSignature Language="C#" Value="public class PointHitTestResult : System.Windows.Media.HitTestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PointHitTestResult extends System.Windows.Media.HitTestResult" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PointHitTestResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.HitTestResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the results of a hit test that uses a <see cref="T:System.Windows.Point" /> as a hit test parameter.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can also perform a hit test on a visual object by using a <xref:System.Windows.Media.Geometry> as a hit test parameter and returning the result as a <xref:System.Windows.Media.GeometryHitTestResult>. For more information, see [How to: Hit Test Using Geometry as a Parameter](~/docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-geometry-as-a-parameter.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the <xref:System.Windows.Media.PointHitTestResult> return value from the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method.  
+  
+ [!code-csharp[HitTestingOverview#100](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#100)]
+ [!code-vb[HitTestingOverview#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#100)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PointHitTestResult (System.Windows.Media.Visual visualHit, System.Windows.Point pointHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visualHit, valuetype System.Windows.Point pointHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PointHitTestResult.#ctor(System.Windows.Media.Visual,System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visualHit" Type="System.Windows.Media.Visual" />
+        <Parameter Name="pointHit" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="visualHit">The <see cref="T:System.Windows.Media.Visual" /> object that represents the hit test result.</param>
+        <param name="pointHit">The <see cref="T:System.Windows.Point" /> object that represents the hit test result.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.PointHitTestResult" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to override default hit test support in a user-defined visual object. In this case, a new <xref:System.Windows.Media.PointHitTestResult> is created and returned from the overridden method.  
+  
+ [!code-csharp[HitTestingOverview#107](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#107)]
+ [!code-vb[HitTestingOverview#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Point PointHit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point PointHit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PointHitTestResult.PointHit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the point value that is returned from a hit test result.</summary>
+        <value>A <see cref="T:System.Windows.Point" /> object that represents the hit test result.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Visual VisualHit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual VisualHit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PointHitTestResult.VisualHit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the visual object that is returned from a hit test result.</summary>
+        <value>A <see cref="T:System.Windows.Media.Visual" /> object that represents the hit test result.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.PointHitTestResult.VisualHit%2A> value could potentially represent multiple visual objects during a single hit test. The hit test callback method defines the actions you perform when a hit test is identified on a particular visual object in the visual tree. After you perform the actions, you return a <xref:System.Windows.Media.HitTestResultBehavior> value that determines whether to continue the enumeration of any other visual objects. The order of enumeration of returned visual objects is by z-order on the rendering plane.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the <xref:System.Windows.Media.PointHitTestResult.VisualHit%2A> property in a hit test results callback function.  
+  
+ [!code-csharp[HitTestingOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#102)]
+ [!code-vb[HitTestingOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

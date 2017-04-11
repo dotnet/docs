@@ -1,0 +1,744 @@
+<Type Name="ServicePoint" FullName="System.Net.ServicePoint">
+  <TypeSignature Language="C#" Value="public class ServicePoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServicePoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.ServicePoint" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides connection management for HTTP connections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.ServicePoint> class handles connections to an Internet resource based on the host information passed in the resource's Uniform Resource Identifier (URI). The initial connection to the resource determines the information that the <xref:System.Net.ServicePoint> object maintains, which is then shared by all subsequent requests to that resource.  
+  
+ <xref:System.Net.ServicePoint> objects are managed by the <xref:System.Net.ServicePointManager> class and are created, if necessary, by the <xref:System.Net.ServicePointManager.FindServicePoint%2A?displayProperty=fullName> method. <xref:System.Net.ServicePoint> objects are never created directly but are always created and managed by the <xref:System.Net.ServicePointManager> class. The maximum number of <xref:System.Net.ServicePoint> objects that can be created is set by the <xref:System.Net.ServicePointManager.MaxServicePoints%2A?displayProperty=fullName> property.  
+  
+ Each <xref:System.Net.ServicePoint> object maintains its connection to an Internet resource until it has been idle longer than the time specified in the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property. When a <xref:System.Net.ServicePoint> exceeds the <xref:System.Net.ServicePoint.MaxIdleTime%2A> value, it can be recycled to another connection. The default value of <xref:System.Net.ServicePoint.MaxIdleTime%2A> is set by the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=fullName> property.  
+  
+ When the <xref:System.Net.ServicePoint.ConnectionLeaseTimeout%2A> property is set to a value other than -1, and after the specified time elapses, an active <xref:System.Net.ServicePoint> connection is closed after it services the next request. This is useful for applications that do not require active connections that are opened indefinitely, as they are by default.  
+  
+> [!NOTE]
+>  In high load conditions, some applications may run out of free threads in the ThreadPool, which may lead to poor system performance (such as high and variable transaction times). See [http://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp](http://msdn.microsoft.com/library/default.asp?url=/library/dnpag/html/scalenetchapt17.asp) for a number of configuration changes you can make to fix this issue.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Net.ServicePoint> object that connects to the URI www.contoso.com.  
+  
+ [!code-cpp[System.Net.ServicePoint#1](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#1)]
+ [!code-csharp[System.Net.ServicePoint#1](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#1)]
+ [!code-vb[System.Net.ServicePoint#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public Uri Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Address" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Uniform Resource Identifier (URI) of the server that this <see cref="T:System.Net.ServicePoint" /> object connects to.</summary>
+        <value>An instance of the <see cref="T:System.Uri" /> class that contains the URI of the Internet server that this <see cref="T:System.Net.ServicePoint" /> object connects to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#2)]
+ [!code-csharp[System.Net.ServicePoint#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#2)]
+ [!code-vb[System.Net.ServicePoint#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Net.ServicePoint" /> is in host mode.</exception>
+        <permission cref="T:System.Net.WebPermission">For using <see cref="P:System.Net.ServicePoint.Address" /> if the <see cref="T:System.Net.ServicePoint" /> connects through a proxy server.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="BindIPEndPointDelegate">
+      <MemberSignature Language="C#" Value="public System.Net.BindIPEndPoint BindIPEndPointDelegate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.BindIPEndPoint BindIPEndPointDelegate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.BindIPEndPointDelegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.BindIPEndPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the delegate to associate a local <see cref="T:System.Net.IPEndPoint" /> with a <see cref="T:System.Net.ServicePoint" />.</summary>
+        <value>A delegate that forces a <see cref="T:System.Net.ServicePoint" /> to use a particular local Internet Protocol (IP) address and port number. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some load balancing techniques require a client to use a specific local IP address and port number, rather than <xref:System.Net.IPAddress.Any?displayProperty=fullName> (or <xref:System.Net.IPAddress.IPv6Any?displayProperty=fullName> for Internet Protocol Version 6) and an ephemeral port. Your <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A> can satisfy this requirement.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for binding to a local port. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Certificate">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate Certificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate Certificate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Certificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the certificate received for this <see cref="T:System.Net.ServicePoint" /> object.</summary>
+        <value>An instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> class that contains the security certificate received for this <see cref="T:System.Net.ServicePoint" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although a <xref:System.Net.ServicePoint> object can make multiple connections to an Internet resource, it can maintain only one certificate.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#5)]
+ [!code-csharp[System.Net.ServicePoint#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#5)]
+ [!code-vb[System.Net.ServicePoint#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificate">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate ClientCertificate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate ClientCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ClientCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last client certificate sent to the server.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate" /> object that contains the public values of the last client certificate sent to the server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#5)]
+ [!code-csharp[System.Net.ServicePoint#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#5)]
+ [!code-vb[System.Net.ServicePoint#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseConnectionGroup">
+      <MemberSignature Language="C#" Value="public bool CloseConnectionGroup (string connectionGroupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CloseConnectionGroup(string connectionGroupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.ServicePoint.CloseConnectionGroup(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionGroupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionGroupName">The name of the connection group that contains the connections to close and remove from this service point.</param>
+        <summary>Removes the specified connection group from this <see cref="T:System.Net.ServicePoint" /> object.</summary>
+        <returns>A <see cref="T:System.Boolean" /> value that indicates whether the connection group was closed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Connection groups associate a set of requests with a particular connection or set of connections. This method removes and closes all connections that belong to the specified connection group.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionLeaseTimeout">
+      <MemberSignature Language="C#" Value="public int ConnectionLeaseTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionLeaseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionLeaseTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of milliseconds after which an active <see cref="T:System.Net.ServicePoint" /> connection is closed.</summary>
+        <value>A <see cref="T:System.Int32" /> that specifies the number of milliseconds that an active <see cref="T:System.Net.ServicePoint" /> connection remains open. The default is -1, which allows an active <see cref="T:System.Net.ServicePoint" /> connection to stay connected indefinitely. Set this property to 0 to force <see cref="T:System.Net.ServicePoint" /> connections to close after servicing a request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to ensure that a <xref:System.Net.ServicePoint> object's active connections do not remain open indefinitely. This property is intended for scenarios where connections should be dropped and reestablished periodically, such as load balancing scenarios.  
+  
+ By default, when <xref:System.Net.FtpWebRequest.KeepAlive%2A> is `true` for a request, the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property sets the time-out for closing <xref:System.Net.ServicePoint> connections due to inactivity. If the <xref:System.Net.ServicePoint> has active connections, <xref:System.Net.ServicePoint.MaxIdleTime%2A> has no effect and the connections remain open indefinitely.  
+  
+ When the <xref:System.Net.ServicePoint.ConnectionLeaseTimeout%2A> property is set to a value other than -1, and after the specified time elapses, an active <xref:System.Net.ServicePoint> connection is closed after servicing a request by setting <xref:System.Net.FtpWebRequest.KeepAlive%2A> to `false` in that request.  
+  
+ Setting this value affects all connections managed by the <xref:System.Net.ServicePoint> object.  
+  
+   
+  
+## Examples  
+ The following code example sets the value of this property.  
+  
+ [!code-cpp[NCLServicePoint#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLServicePoint/CPP/nclservicepoint.cpp#1)]
+ [!code-csharp[NCLServicePoint#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLServicePoint/CS/nclservicepoint.cs#1)]
+ [!code-vb[NCLServicePoint#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLServicePoint/VB/nclservicepoint.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is a negative number less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionLimit">
+      <MemberSignature Language="C#" Value="public int ConnectionLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of connections allowed on this <see cref="T:System.Net.ServicePoint" /> object.</summary>
+        <value>The maximum number of connections allowed on this <see cref="T:System.Net.ServicePoint" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.ServicePoint.ConnectionLimit%2A> property sets the maximum number of connections that the <xref:System.Net.ServicePoint> object can make to an Internet resource. The value of the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property is set to the value of the <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A?displayProperty=fullName> property when the <xref:System.Net.ServicePoint> object is created; subsequent changes to <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> have no effect on existing <xref:System.Net.ServicePoint> objects.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property to check the maximum number of connections that the <xref:System.Net.ServicePoint> object can make to the specified Uniform Resource Identifier (URI).  
+  
+ [!code-cpp[System.Net.ServicePoint#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#4)]
+ [!code-csharp[System.Net.ServicePoint#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#4)]
+ [!code-vb[System.Net.ServicePoint#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The connection limit is equal to or less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionName">
+      <MemberSignature Language="C#" Value="public string ConnectionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionName" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ConnectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection name.</summary>
+        <value>A <see cref="T:System.String" /> that represents the connection name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Net.ServicePoint> object was constructed with a <xref:System.Uri> object (the <xref:System.Net.ServicePointManager.FindServicePoint%2A> or <xref:System.Net.ServicePointManager.FindServicePoint%2A> methods, for example), then the <xref:System.Net.ServicePoint.ConnectionName%2A> property represents the <xref:System.Uri.Scheme%2A> property of the <xref:System.Uri> object used.  
+  
+ If the <xref:System.Net.ServicePoint> object was constructed from a network host and port, the <xref:System.Net.ServicePoint.ConnectionName%2A> property contains a string that represents the host and the network port. If the <xref:System.Net.ServicePoint.ConnectionName%2A> property is set when constructed from a host and port, only <xref:System.Net.WebRequest> objects with the same <xref:System.Net.WebRequest.ConnectionGroupName%2A> value can use this <xref:System.Net.ServicePoint> object.  
+  
+   
+  
+## Examples  
+ [!code-cpp[System.Net.ServicePoint#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#4)]
+ [!code-csharp[System.Net.ServicePoint#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#4)]
+ [!code-vb[System.Net.ServicePoint#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentConnections">
+      <MemberSignature Language="C#" Value="public int CurrentConnections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentConnections" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.CurrentConnections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of open connections associated with this <see cref="T:System.Net.ServicePoint" /> object.</summary>
+        <value>The number of open connections associated with this <see cref="T:System.Net.ServicePoint" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.ServicePoint.CurrentConnections%2A> property contains the number of open Internet connections associated with this <xref:System.Net.ServicePoint> object. The value of <xref:System.Net.ServicePoint.CurrentConnections%2A> cannot exceed that of <xref:System.Net.ServicePoint.ConnectionLimit%2A>.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.ServicePoint.CurrentConnections%2A> property to determine the number of open Internet connections associated with this <xref:System.Net.ServicePoint> object.  
+  
+ [!code-cpp[System.Net.ServicePoint#2](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#2)]
+ [!code-csharp[System.Net.ServicePoint#2](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#2)]
+ [!code-vb[System.Net.ServicePoint#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expect100Continue">
+      <MemberSignature Language="C#" Value="public bool Expect100Continue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Expect100Continue" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.Expect100Continue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that determines whether 100-Continue behavior is used.</summary>
+        <value>
+          <see langword="true" /> to expect 100-Continue responses for <see langword="POST" /> requests; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, client requests that use the `POST` method expect to receive a 100-Continue response from the server to indicate that the client should send the data to be posted. This mechanism allows clients to avoid sending large amounts of data over the network when the server, based on the request headers, intends to reject the request.  
+  
+ For example, assume the <xref:System.Net.ServicePoint.Expect100Continue%2A> property is `false`. When the request is sent to the server, it includes the data. If, after reading the request headers, the server requires authentication and sends a 401 response, the client must resend the data with proper authentication headers.  
+  
+ If the <xref:System.Net.ServicePoint.Expect100Continue%2A> property is `true`, the request headers are sent to the server. If the server has not rejected the request, it sends a 100-Continue response signaling that the data can be transmitted. If, as in the preceding example, the server requires authentication, it sends the 401 response and the client has not unnecessarily transmitted the data.  
+  
+ Changing the value of this property does not affect existing connections. Only new connections created after the change are affected.  
+  
+ The Expect 100-Continue behavior is fully described in IETF RFC 2616 Section 10.1.1.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#9](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#9)]
+ [!code-csharp[System.Net.ServicePoint#9](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#9)]
+ [!code-vb[System.Net.ServicePoint#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleSince">
+      <MemberSignature Language="C#" Value="public DateTime IdleSince { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime IdleSince" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.IdleSince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and time that the <see cref="T:System.Net.ServicePoint" /> object was last connected to a host.</summary>
+        <value>A <see cref="T:System.DateTime" /> object that contains the date and time at which the <see cref="T:System.Net.ServicePoint" /> object was last connected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.ServicePoint.IdleSince%2A> property records the last date and time at which a service point was disconnected from a host. When the difference between the current time and <xref:System.Net.ServicePoint.IdleSince%2A> exceeds the value of <xref:System.Net.ServicePoint.MaxIdleTime%2A>, the <xref:System.Net.ServicePoint> object is available for recycling to another connection.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.ServicePoint.IdleSince%2A> property to set and retrieve the date and time that the <xref:System.Net.ServicePoint> object was last connected to a host.  
+  
+ [!code-cpp[System.Net.ServicePoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#3)]
+ [!code-csharp[System.Net.ServicePoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#3)]
+ [!code-vb[System.Net.ServicePoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxIdleTime">
+      <MemberSignature Language="C#" Value="public int MaxIdleTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxIdleTime" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.MaxIdleTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time a connection associated with the <see cref="T:System.Net.ServicePoint" /> object can remain idle before the connection is closed.</summary>
+        <value>The length of time, in milliseconds, that a connection associated with the <see cref="T:System.Net.ServicePoint" /> object can remain idle before it is closed and reused for another connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set <xref:System.Net.ServicePoint.MaxIdleTime%2A> to <xref:System.Threading.Timeout.Infinite?displayProperty=fullName> to indicate that a connection associated with the <xref:System.Net.ServicePoint> object should never time out.  
+  
+ The default value of the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property is the value of the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A?displayProperty=fullName> property when the <xref:System.Net.ServicePoint> object is created. Subsequent changes to the <xref:System.Net.ServicePointManager.MaxServicePointIdleTime%2A> property have no effect on existing <xref:System.Net.ServicePoint> objects.  
+  
+ When the <xref:System.Net.ServicePoint.MaxIdleTime%2A> for a connection associated with a <xref:System.Net.ServicePoint> is exceeded, the connection remains open until the application tries to use the connection. At that time, the Framework closes the connection and creates a new connection to the remote host.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.ServicePoint.MaxIdleTime%2A> property to set and retrieve the <xref:System.Net.ServicePoint> idle time.  
+  
+ [!code-cpp[System.Net.ServicePoint#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#3)]
+ [!code-csharp[System.Net.ServicePoint#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#3)]
+ [!code-vb[System.Net.ServicePoint#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see cref="P:System.Net.ServicePoint.MaxIdleTime" /> is set to less than <see cref="F:System.Threading.Timeout.Infinite" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolVersion">
+      <MemberSignature Language="C#" Value="public virtual Version ProtocolVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version ProtocolVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ProtocolVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the HTTP protocol that the <see cref="T:System.Net.ServicePoint" /> object uses.</summary>
+        <value>A <see cref="T:System.Version" /> object that contains the HTTP protocol version that the <see cref="T:System.Net.ServicePoint" /> object uses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The HTTP protocol versions are HTTP/1.0 and HTTP/1.1.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#5)]
+ [!code-csharp[System.Net.ServicePoint#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#5)]
+ [!code-vb[System.Net.ServicePoint#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveBufferSize">
+      <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.ReceiveBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the receiving buffer for the socket used by this <see cref="T:System.Net.ServicePoint" />.</summary>
+        <value>A <see cref="T:System.Int32" /> that contains the size, in bytes, of the receive buffer. The default is 8192.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information, see <xref:System.Net.Sockets.Socket.ReceiveBufferSize%2A>.  
+  
+   
+  
+## Examples  
+ The following code example sets the value of this property.  
+  
+ [!code-cpp[NCLServicePoint#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLServicePoint/CPP/nclservicepoint.cpp#1)]
+ [!code-csharp[NCLServicePoint#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLServicePoint/CS/nclservicepoint.cs#1)]
+ [!code-vb[NCLServicePoint#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLServicePoint/VB/nclservicepoint.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTcpKeepAlive">
+      <MemberSignature Language="C#" Value="public void SetTcpKeepAlive (bool enabled, int keepAliveTime, int keepAliveInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTcpKeepAlive(bool enabled, int32 keepAliveTime, int32 keepAliveInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.ServicePoint.SetTcpKeepAlive(System.Boolean,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enabled" Type="System.Boolean" />
+        <Parameter Name="keepAliveTime" Type="System.Int32" />
+        <Parameter Name="keepAliveInterval" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="enabled">If set to true, then the TCP keep-alive option on a TCP connection will be enabled using the specified <c>keepAliveTime</c> and <c>keepAliveInterval</c> values.  
+  
+ If set to false, then the TCP keep-alive option is disabled and the remaining parameters are ignored.  
+  
+ The default value is false.</param>
+        <param name="keepAliveTime">Specifies the timeout, in milliseconds, with no activity until the first keep-alive packet is sent.  
+  
+ The value must be greater than 0.  If a value of less than or equal to zero is passed an <see cref="T:System.ArgumentOutOfRangeException" /> is thrown.</param>
+        <param name="keepAliveInterval">Specifies the interval, in milliseconds, between when successive keep-alive packets are sent if no acknowledgement is received.  
+  
+ The value must be greater than 0.  If a value of less than or equal to zero is passed an <see cref="T:System.ArgumentOutOfRangeException" /> is thrown.</param>
+        <summary>Enables or disables the keep-alive option on a TCP connection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application can request that a TCP/IP provider enable the use of keep-alive packets on a TCP connection. The default is that the use of keep-alive packets on a TCP connection is disabled.  
+  
+ The default settings when a TCP socket is initialized sets the keep-alive timeout to 2 hours and the keep-alive interval to 1 second. The `keepAliveTime` parameter specifies the timeout, in milliseconds, with no activity until the first keep-alive packet is sent. The `keepAliveInterval` parameter specifies the interval, in milliseconds, between when successive keep-alive packets are sent if no acknowledgement is received. The number of keep-alive probes cannot be changed and is set to 10.  
+  
+ If a TCP connection is dropped as the result of keep-alives, a <xref:System.Net.Sockets.SocketError> of <xref:System.Net.Sockets.SocketError> is returned to any calls in progress on the socket, and any subsequent calls will fail with a <xref:System.Net.Sockets.SocketError> of <xref:System.Net.Sockets.SocketError>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for <paramref name="keepAliveTime" /> or <paramref name="keepAliveInterval" /> parameter is less than or equal to 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsPipelining">
+      <MemberSignature Language="C#" Value="public bool SupportsPipelining { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPipelining" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.SupportsPipelining" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.Net.ServicePoint" /> object supports pipelined connections.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Net.ServicePoint" /> object supports pipelined connections; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pipelining allows clients to send multiple requests across a persistent connection without waiting for each response from the server. The server sends the responses in the same order as the requests were received.  
+  
+ Pipelining is described in detail in IETF RFC 2616 section 8.1.2.2.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#5)]
+ [!code-csharp[System.Net.ServicePoint#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#5)]
+ [!code-vb[System.Net.ServicePoint#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseNagleAlgorithm">
+      <MemberSignature Language="C#" Value="public bool UseNagleAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseNagleAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Net.ServicePoint.UseNagleAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that determines whether the Nagle algorithm is used on connections managed by this <see cref="T:System.Net.ServicePoint" /> object.</summary>
+        <value>
+          <see langword="true" /> to use the Nagle algorithm; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Nagle algorithm is used to buffer small packets of data and transmit them as a single packet. This process, referred to as "nagling," is widely used because it reduces the number of packets transmitted and lowers the overhead per packet.  
+  
+ Changing the value of this property does not affect existing connections. Only new connections created after the change are affected.  
+  
+ The Nagle algorithm is fully described in IETF RFC 896.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[System.Net.ServicePoint#9](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.ServicePoint/CPP/servicepoint.cpp#9)]
+ [!code-csharp[System.Net.ServicePoint#9](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.ServicePoint/CS/servicepoint.cs#9)]
+ [!code-vb[System.Net.ServicePoint#9](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.ServicePoint/VB/servicepoint.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

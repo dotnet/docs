@@ -1,0 +1,56 @@
+<Type Name="RibbonControlAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonControlAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonControlAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonControlAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonControlAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.FrameworkElementAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonControlAutomationPeer (System.Windows.FrameworkElement owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.FrameworkElement owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlAutomationPeer.#ctor(System.Windows.FrameworkElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonControlAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClassNameCore">
+      <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlAutomationPeer.GetClassNameCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonControlAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
+        <returns>The class name of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControl" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonControlAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,921 @@
+<Type Name="X509Store" FullName="System.Security.Cryptography.X509Certificates.X509Store">
+  <TypeSignature Language="C#" Value="public sealed class X509Store : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509Store extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509Store" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an X.509 store, which is a physical store where certificates are persisted and managed. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to work with an X.509 store.  
+  
+> [!IMPORTANT]
+>  Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], this type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>   
+>  For apps that target the [!INCLUDE[net_v452](~/includes/net-v452-md.md)] and earlier versions, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class does not implement the <xref:System.IDisposable> interface and therefore does not have a `Dispose` method.  
+  
+   
+  
+## Examples  
+ This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+  
+ The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+  
+ **Example 1**  
+  
+ This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+  
+ [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+ [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+  
+ **Example 2**  
+  
+ This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the personal certificates of the current user store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using the personal X.509 certificate store for the current user.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (IntPtr storeHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int storeHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.IntPtr)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("Mono's stores are fully managed. All handles are invalid.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="storeHandle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="storeHandle">A handle to an <see langword="HCERTSTORE" /> store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using an Intptr handle to an <see langword="HCERTSTORE" /> store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="storeHandle" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="storeHandle" /> parameter points to an invalid context.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
+      </Parameters>
+      <Docs>
+        <param name="storeLocation">One of the enumeration values that specifies the location of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying the store location, which is either the location for the current user or the local computer.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreName storeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.Security.Cryptography.X509Certificates.StoreName" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">One of the enumeration values that specifies the name of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an X.509 store for the current user that corresponds to values enumerated by <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (string storeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">A string value that represents the store name. See <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> for more information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified store name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a particular X.509 store name for the current user. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (System.Security.Cryptography.X509Certificates.StoreName storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.X509Certificates.StoreName storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.Security.Cryptography.X509Certificates.StoreName" />
+        <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">One of the enumeration values that specifies the name of the X.509 certificate store.</param>
+        <param name="storeLocation">One of the enumeration values that specifies the location of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using the specified <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> and <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object, specifying both the store name and the store location.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="storeLocation" /> is not a valid location or <paramref name="storeName" /> is not a valid name.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509Store (string storeName, System.Security.Cryptography.X509Certificates.StoreLocation storeLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storeName, valuetype System.Security.Cryptography.X509Certificates.StoreLocation storeLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.#ctor(System.String,System.Security.Cryptography.X509Certificates.StoreLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeName" Type="System.String" />
+        <Parameter Name="storeLocation" Type="System.Security.Cryptography.X509Certificates.StoreLocation" />
+      </Parameters>
+      <Docs>
+        <param name="storeName">A string that represents a value from the <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> enumeration.</param>
+        <param name="storeLocation">One of the enumeration values that specifies the location of the X.509 certificate store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" /> class using a string that represents a value from the <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> enumeration and a value from the <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> enumeration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an <xref:System.Security.Cryptography.X509Certificates.X509Store> object using a store name and location. To create a new store, specify a name that does not exist. A new store will be created with that name.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="storeLocation" /> contains invalid values.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Add(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The certificate to add.</param>
+        <summary>Adds a certificate to an X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to add a single certificate to an X.509 store.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate could not be added to the store.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for adding certificates to an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.AddToStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.AddRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("Method isn't transactional (like documented)")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="certificates">The collection of certificates to add.</param>
+        <summary>Adds a collection of certificates to an X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds more than one certificate to an X.509 certificate store; if one certificate addition fails, the operation is reverted and no certificates are added.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificates" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for adding certificates to an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.AddToStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Certificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Certificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2Collection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a collection of certificates located in an X.509 certificate store.</summary>
+        <value>A collection of certificates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a snapshot of the X.509 certificate store. Note that subsequent <xref:System.Security.Cryptography.X509Certificates.X509Store.Add%2A> or <xref:System.Security.Cryptography.X509Certificates.X509Store.Remove%2A> operations performed on the store will not have any effect on the collection that is returned. This snapshot is recalculated each time the property is called, so the use of this property inside an iterative function is not recommended.  
+  
+   
+  
+## Examples  
+ This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+  
+ The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+  
+ **Example 1**  
+  
+ This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+  
+ [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+ [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+  
+ **Example 2**  
+  
+ This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.StorePermission">for enumerating certificates in an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes an X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method releases all resources associated with the store. You should always close an X.509 certificate store after use.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by this <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  <xref:System.Security.Cryptography.X509Certificates.X509Store> implements the <xref:System.IDisposable> interface starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)]; in previous versions of the .NET Framework, the <xref:System.Security.Cryptography.X509Certificates.X509Store> class does not implement this interface, and therefore the `Dispose` method does not exist.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation Location { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation Location" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the X.509 certificate store.</summary>
+        <value>The location of the certificate store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the X.509 certificate store location of either the store for the current user or the store for the local computer.  
+  
+   
+  
+## Examples  
+ This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+  
+ The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+  
+ **Example 1**  
+  
+ This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+  
+ [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+ [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+  
+ **Example 2**  
+  
+ This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the X.509 certificate store.</summary>
+        <value>The name of the certificate store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the X.509 certificate store name. This value can indicate the type of certificates stored, such as root certificates or certificates from trusted publishers.  
+  
+   
+  
+## Examples  
+ This section contains two examples. The first example demonstrates how you can open standard X.509 stores and list the number of certificates in each.  
+  
+ The second example demonstrates how you can add and remove single certificates and ranges of certificates.  
+  
+ **Example 1**  
+  
+ This example tries to open each standard store in each standard location on the current computer. It prints a summary that shows whether each store exists and, if so, the number of certificates it contains.  
+  
+ The example creates an <xref:System.Security.Cryptography.X509Certificates.X509Store> object for each combination of standard name and standard location. It calls the <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A> method with the <xref:System.Security.Cryptography.X509Certificates.OpenFlags?displayProperty=fullName> flag, which opens the physical store only if it already exists. If the physical store exists, the example uses the <xref:System.Security.Cryptography.X509Certificates.X509Store.Name%2A>, <xref:System.Security.Cryptography.X509Certificates.X509Store.Location%2A>, and <xref:System.Security.Cryptography.X509Certificates.X509Store.Certificates%2A> properties to display the number of certificates in the store.  
+  
+ [!code-csharp[x509store2#2](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/storenames1.cs#2)]
+ [!code-vb[x509store2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/storenames1.vb#2)]  
+  
+ **Example 2**  
+  
+ This example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (System.Security.Cryptography.X509Certificates.OpenFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open(valuetype System.Security.Cryptography.X509Certificates.OpenFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Open(System.Security.Cryptography.X509Certificates.OpenFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Security.Cryptography.X509Certificates.OpenFlags" />
+      </Parameters>
+      <Docs>
+        <param name="flags">A bitwise combination of enumeration values that specifies the way to open the X.509 certificate store.</param>
+        <summary>Opens an X.509 certificate store or creates a new store, depending on <see cref="T:System.Security.Cryptography.X509Certificates.OpenFlags" /> flag settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to open an existing X.509 store. Note that you must have additional permissions, specified by <xref:System.Security.Permissions.StorePermissionFlags>, to enumerate the certificates in the store. You can create a new store by passing a store name that does not exist to the class constructor, and then using any of the <xref:System.Security.Cryptography.X509Certificates.OpenFlags> flags except <xref:System.Security.Cryptography.X509Certificates.OpenFlags>.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The store is unreadable.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <exception cref="T:System.ArgumentException">The store contains invalid values.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for opening an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.OpenStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.CreateStore" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.Remove(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The certificate to remove.</param>
+        <summary>Removes a certificate from an X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to remove a single certificate from an X.509 store.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for removing certificates from an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.RemoveFromStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRange">
+      <MemberSignature Language="C#" Value="public void RemoveRange (System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection certificates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Store.RemoveRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("Method isn't transactional (like documented)")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificates" Type="System.Security.Cryptography.X509Certificates.X509Certificate2Collection" />
+      </Parameters>
+      <Docs>
+        <param name="certificates">A range of certificates to remove.</param>
+        <summary>Removes a range of certificates from an X.509 certificate store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ This method removes more than one certificate from an X.509 certificate store; if one certificate removal fails, the operation is reverted and no certificates are removed.  
+  
+   
+  
+## Examples  
+ The following code example opens an X.509 certificate store, adds and deletes certificates, and then closes the store. It assumes that you have three certificates to add to and remove from a local store.  
+  
+ [!code-cpp[x509store2#1](~/samples/snippets/cpp/VS_Snippets_CLR/x509store2/CPP/x509store2.cpp#1)]
+ [!code-csharp[x509store2#1](~/samples/snippets/csharp/VS_Snippets_CLR/x509store2/CS/x509store2.cs#1)]
+ [!code-vb[x509store2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/x509store2/vb/x509store2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificates" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.StorePermission">for removing certificates from an X.509 certificate store. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumerations: <see cref="F:System.Security.Permissions.StorePermissionFlags.RemoveFromStore" />, <see cref="F:System.Security.Permissions.StorePermissionFlags.EnumerateCertificates" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreHandle">
+      <MemberSignature Language="C#" Value="public IntPtr StoreHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int StoreHandle" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509Store.StoreHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("Mono's stores are fully managed. Always returns IntPtr.Zero.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.IntPtr" /> handle to an <see langword="HCERTSTORE" /> store.</summary>
+        <value>A handle to an <see langword="HCERTSTORE" /> store.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.X509Certificates.X509Store.StoreHandle%2A> property to provide compatibility with the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ For more information about the `HCERTSTORE` handle, see the unmanaged CAPI documentation in the Platform SDK section of the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The store is not open.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

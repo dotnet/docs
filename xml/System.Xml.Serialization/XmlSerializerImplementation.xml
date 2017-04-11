@@ -1,0 +1,221 @@
+<Type Name="XmlSerializerImplementation" FullName="System.Xml.Serialization.XmlSerializerImplementation">
+  <TypeSignature Language="C#" Value="public abstract class XmlSerializerImplementation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSerializerImplementation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerImplementation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the reader, writer, and methods for pre-generated, typed serializers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To improve the performance of XML serialization, you can generate assemblies before serialization using the [XML Serializer Generator Tool (Sgen.exe)](~/docs/framework/serialization/xml-serializer-generator-tool-sgen-exe.md). When such an assembly is loaded, the <xref:System.Xml.Serialization.XmlSerializer> uses the properties of the <xref:System.Xml.Serialization.XmlSerializerImplementation> interface to query the contained serializer or serializers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XmlSerializerImplementation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerImplementation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSerialize">
+      <MemberSignature Language="C#" Value="public virtual bool CanSerialize (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanSerialize(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.CanSerialize(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <summary>Gets a value that determines whether a type can be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the type can be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSerializer">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.Serialization.XmlSerializer GetSerializer (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.Serialization.XmlSerializer GetSerializer(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerImplementation.GetSerializer(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <summary>Returns a serializer for the specified type.</summary>
+        <returns>An instance of a type derived from the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reader">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.Serialization.XmlSerializationReader Reader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializationReader Reader" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.Reader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializationReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML reader object that is used by the serializer.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlSerializationReader" /> that is used to read an XML document or data stream.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMethods">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Hashtable ReadMethods { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable ReadMethods" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.ReadMethods" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of methods that is used to read a data stream.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypedSerializers">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Hashtable TypedSerializers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable TypedSerializers" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.TypedSerializers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of typed serializers that is found in the assembly.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the typed serializers.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMethods">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Hashtable WriteMethods { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable WriteMethods" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.WriteMethods" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the collection of methods that is used to write to a data stream.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Writer">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.Serialization.XmlSerializationWriter Writer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlSerializationWriter Writer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerImplementation.Writer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.XmlSerializationWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML writer object for the serializer.</summary>
+        <value>An <see cref="T:System.Xml.Serialization.XmlSerializationWriter" /> that is used to write to an XML data stream or document.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

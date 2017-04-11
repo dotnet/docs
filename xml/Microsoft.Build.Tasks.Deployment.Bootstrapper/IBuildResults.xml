@@ -1,0 +1,119 @@
+<Type Name="IBuildResults" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults">
+  <TypeSignature Language="C#" Value="public interface IBuildResults" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildResults" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("586B842C-D9C7-43b8-84E4-9CFC3AF9F13B")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the results of the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" /> build operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComponentFiles">
+      <MemberSignature Language="C#" Value="public string[] ComponentFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ComponentFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.ComponentFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file paths to the copied component installer files.</summary>
+        <value>Returns an array of strings containing the file paths to the copied component installer files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFile">
+      <MemberSignature Language="C#" Value="public string KeyFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.KeyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file path to the generated primary bootstrapper file.</summary>
+        <value>Returns a string representing the file path to the generated primary bootstrapper file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[] Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[] Messages" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the build messages generated from a bootstrapper build.</summary>
+        <value>Returns an array of <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage" /> objects representing the build messages generated from a bootstrapper build.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeeded">
+      <MemberSignature Language="C#" Value="public bool Succeeded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Succeeded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildResults.Succeeded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the bootstrapper build was successful.</summary>
+        <value>Returns a Boolean value indicating whether the bootstrapper build was successful. Returns <see langword="true" /> if the bootstrapper build was successful, <see langword="false" /> if not successful.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="SocketReceiveMessageFromResult" FullName="System.Net.Sockets.SocketReceiveMessageFromResult">
+  <TypeSignature Language="C#" Value="public struct SocketReceiveMessageFromResult" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SocketReceiveMessageFromResult extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketReceiveMessageFromResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PacketInformation">
+      <MemberSignature Language="C#" Value="public System.Net.Sockets.IPPacketInformation PacketInformation;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Net.Sockets.IPPacketInformation PacketInformation" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.PacketInformation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.IPPacketInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceivedBytes">
+      <MemberSignature Language="C#" Value="public int ReceivedBytes;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 ReceivedBytes" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.ReceivedBytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteEndPoint">
+      <MemberSignature Language="C#" Value="public System.Net.EndPoint RemoteEndPoint;" />
+      <MemberSignature Language="ILAsm" Value=".field public class System.Net.EndPoint RemoteEndPoint" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.RemoteEndPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.EndPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SocketFlags">
+      <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketFlags SocketFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Net.Sockets.SocketFlags SocketFlags" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.SocketFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,407 @@
+<Type Name="NetPeerTcpBinding" FullName="System.ServiceModel.NetPeerTcpBinding">
+  <TypeSignature Language="C#" Value="public class NetPeerTcpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetPeerTcpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetPeerTcpBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.Binding</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IBindingRuntimePreferences</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("PeerChannel feature is obsolete and will be removed in the future.", false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a secure binding for peer-to-peer network applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.NetPeerTcpBinding> binding provides support for the creation of peer networking applications that use a TCP-level peer-to-peer mesh infrastructure.  
+  
+ Each <xref:System.ServiceModel.PeerNode> instance can host multiple peer channels defined with this binding type. Channel factories produced using a configured instance of this type can be used to generate peer channels. A peer channel factory can produce peer channels that are input-only (implements <xref:System.ServiceModel.Channels.IInputChannel>), output-only (implements <xref:System.ServiceModel.Channels.IOutputChannel>), and duplex (implements <xref:System.ServiceModel.Channels.IDuplexChannel>).  
+  
+ This is one of the standard bindings provided by the Windows Communication Framework (WCF). It can be used in imperative code or specified in the corresponding XML configuration file for the application. The recommended procedure is to define the binding using configuration values and not to use a code-based approach, except in certain advanced scenarios where configuration values must be set as a service is initialized.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetPeerTcpBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new default instance of the <see cref="T:System.ServiceModel.NetPeerTcpBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetPeerTcpBinding (string configurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="configurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configurationName">The value of the <see langword="configurationName" /> attribute that identifies the binding element whose settings are used to initialize the binding.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.NetPeerTcpBinding" /> class with a specified configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new <xref:System.ServiceModel.NetPeerTcpBinding> with the supplied name. If a configuration for that name already exists, the settings in the configuration file that contains that name are used. If the name does not already exist, the default configuration settings are used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The configuration is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElements">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.CreateBindingElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a collection with the binding elements for the binding.</summary>
+        <returns>The <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.ServiceModel.Channels.BindingElement" /> that makes up the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvelopeVersion">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.EnvelopeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the SOAP version used with this binding.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.EnvelopeVersion" /> that specifies the version of SOAP to use with this binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPnrpAvailable">
+      <MemberSignature Language="C#" Value="public static bool IsPnrpAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsPnrpAvailable" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.IsPnrpAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the PNRP service is installed and available on the computer.</summary>
+        <value>true if PNRP is installed and configured; false if it is not.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenIPAddress">
+      <MemberSignature Language="C#" Value="public System.Net.IPAddress ListenIPAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress ListenIPAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.ListenIPAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.PeerTransportListenAddressConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.IPAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the IP address used for listening by the local peer node.</summary>
+        <value>A <see cref="T:System.String" /> value that contains the well-formed IPv4 or IPv6 address upon which the local peer node is listening.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, or is set to `null` or <xref:System.String>, the associated <xref:System.ServiceModel.PeerNode> listens on all global addresses (both IPv4 and IPv6) configured for the local machine.  
+  
+ If a valid unicast IP address is specified for this property, then the associated <xref:System.ServiceModel.PeerNode> object listens on that address. IPv4 and IPv6 wildcard addresses are not considered valid.  
+  
+ If a non-`null` IP address string is specified for this property in conjunction with <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>, then the IP address must be associated with a physical interface rather than a virtual one.  
+  
+ ListenIPAddress must be set for ad-hoc networks in order to register with the default peer resolver (PNRP). If this property is specified in conjunction with <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement> (the default peer resolver), then the IP address must belong to a physical network interface rather than a virtual one (such as a tunneling interface). This is because PNRP only publishes within PNRP clouds corresponding to physical interfaces. By setting this property to null, all global addresses are published in the global PNRP cloud.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provided address is invalid or incorrectly formed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferPoolSize">
+      <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(524288)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, of the memory pool used for the peer TCP buffer.</summary>
+        <value>A <see cref="T:System.Int32" /> value that specifies the maximum number of bytes that are used to buffer incoming messages in memory. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.ServiceModel.NetPeerTcpBinding.MaxBufferPoolSize%2A> cannot be less than <xref:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize%2A> whose default value is 65536 bytes (64 KB).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxReceivedMessageSize">
+      <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.MaxReceivedMessageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(65536)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, of TCP messages handled by peer channels created by this binding.</summary>
+        <value>
+          <see cref="T:System.Int32" /> that contains the maximum size in bytes of TCP messages sent over the peer channels created by this binding. The default value is 65,536 (64 KB).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public int Port { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the network port on which to bind.</summary>
+        <value>A <see cref="T:System.Int32" /> value that represents the network port on which this binding instance will process peer-specific TCP messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the port value is invalid, <xref:System.ArgumentException> is raised. The default value for this property is 0, which indicates that the listener port is randomly selected from all unreserved ports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.ReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that is associated with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that is associated with this binding.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The application attempted to set this property to null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolver">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.PeerResolvers.PeerResolverSettings Resolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.PeerResolvers.PeerResolverSettings Resolver" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Resolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerResolvers.PeerResolverSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.PeerResolver" /> used by this binding instance to resolve a peer mesh ID to the endpoint IP addresses of nodes within the peer mesh.</summary>
+        <value>A <see cref="T:System.ServiceModel.PeerResolver" /> used to resolve a peer mesh ID to a set of <see cref="T:System.ServiceModel.PeerNodeAddress" /> instances representing several nodes participating in the mesh.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI scheme used for the transport protocol associated with this binding.</summary>
+        <value>A <see cref="T:System.String" /> that specifies the URI scheme for the specific transport protocol used for this binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value must be "net.p2p".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Security">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.PeerSecuritySettings Security { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.PeerSecuritySettings Security" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.Security" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerSecuritySettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the security to set on peer channels created by this binding.</summary>
+        <value>
+          <see cref="T:System.ServiceModel.PeerSecuritySettings" /> enumeration value that indicates the security to set on peer channels created by this binding. Security can be either message- or transport-specific.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReaderQuotas">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.ShouldSerializeReaderQuotas" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that specifies whether reader quota data for the binding should be serialized.</summary>
+        <returns>Returns <see cref="T:System.Boolean" /> that specifies <see langword="true" /> if reader quota data should be serialized, and <see langword="false" /> if it should not be serialized.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeSecurity">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeSecurity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.NetPeerTcpBinding.ShouldSerializeSecurity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that specifies whether security information for the binding should be serialized.</summary>
+        <returns>Returns <see cref="T:System.Boolean" /> that specifies <see langword="true" /> if the security information for the binding should be serialized, and <see langword="false" /> if it should not be serialized..</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously">
+      <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.NetPeerTcpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether incoming requests over peer channels created by this binding are handled synchronously or asynchronously.</summary>
+        <value>If true, incoming requests are handled synchronously; if false, they are handled asynchronously. The default value is false, with requests handled asynchronously.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

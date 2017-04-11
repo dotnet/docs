@@ -1,0 +1,40 @@
+<Type Name="WebBrowserNavigatingEventHandler" FullName="System.Windows.Forms.WebBrowserNavigatingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WebBrowserNavigatingEventHandler(object sender, WebBrowserNavigatingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowserNavigatingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.WebBrowserNavigatingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.WebBrowser.Navigating" /> event of a <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.WebBrowserNavigatingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=fullName> event to cancel navigation when a Web page form has not been filled in. The <xref:System.Windows.Forms.WebBrowser.Document%2A?displayProperty=fullName> property is used to determine whether the form input field contains a value. This example requires that your form contains a <xref:System.Windows.Forms.WebBrowser> control called `webBrowser1`.  
+  
+ [!code-csharp[WebBrowserMisc#30](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#30)]
+ [!code-vb[WebBrowserMisc#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#30)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

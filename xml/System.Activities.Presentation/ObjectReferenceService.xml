@@ -1,0 +1,150 @@
+<Type Name="ObjectReferenceService" FullName="System.Activities.Presentation.ObjectReferenceService">
+  <TypeSignature Language="C#" Value="public sealed class ObjectReferenceService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectReferenceService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ObjectReferenceService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This interface is used by Visual Studio integration to acquire an AppDomain serialization friendly reference to an object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectReferenceService (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The EditingContext of the current WorkflowDesigner.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.ObjectReferenceService" /> class with a specified editing context</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireObjectReference">
+      <MemberSignature Language="C#" Value="public Guid AcquireObjectReference (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid AcquireObjectReference(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.AcquireObjectReference(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object which we need to acquire a reference for.</param>
+        <summary>Acquires a reference of an object by its actual reference.</summary>
+        <returns>A reference of an object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcquireObjectReference">
+      <MemberSignature Language="C#" Value="public Guid AcquireObjectReference (int startLine, int startColumn, int endLine, int endColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid AcquireObjectReference(int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.AcquireObjectReference(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+        <Parameter Name="endLine" Type="System.Int32" />
+        <Parameter Name="endColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startLine">The start line of the object.</param>
+        <param name="startColumn">The start column of the object.</param>
+        <param name="endLine">The end line of the object.</param>
+        <param name="endColumn">The end column of the object.</param>
+        <summary>Acquires a reference by the SourceLocation of the object and this method will automatically register the object to listen to SourceLocationUpdatedEvent, if available.</summary>
+        <returns>A reference by the SourceLocation of the object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseObjectReference">
+      <MemberSignature Language="C#" Value="public void ReleaseObjectReference (Guid objectReferenceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseObjectReference(valuetype System.Guid objectReferenceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.ReleaseObjectReference(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectReferenceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="objectReferenceId">The activity reference.</param>
+        <summary>Allows the designer infrastructure to release the actual reference to the activity and avoids memory leak.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceLocationUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; SourceLocationUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; SourceLocationUpdated" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.ObjectReferenceService.SourceLocationUpdated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the source location for the object changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetObject">
+      <MemberSignature Language="C#" Value="public bool TryGetObject (Guid objectReferenceId, out object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObject(valuetype System.Guid objectReferenceId, object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.TryGetObject(System.Guid,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectReferenceId" Type="System.Guid" />
+        <Parameter Name="obj" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="objectReferenceId">The activity reference.</param>
+        <param name="obj">The de-referenced activity, if the reference is available, or null otherwise.</param>
+        <summary>Obtains the actual reference to the object by its ObjectReference.</summary>
+        <returns>
+          <see langword="True" /> if the actual reference to the object is obtained by the object reference; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

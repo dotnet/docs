@@ -1,0 +1,219 @@
+<Type Name="ArrayListCollectionBase" FullName="System.Web.UI.MobileControls.ArrayListCollectionBase">
+  <TypeSignature Language="C#" Value="public class ArrayListCollectionBase : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayListCollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ArrayListCollectionBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements the functionality of the <see cref="T:System.Collections.ICollection" /> interface to inheriting classes by using a Web Forms <see cref="T:System.Collections.ArrayList" /> object for storage. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is intended for internal use only. You can call the programming elements of this collection from the programming elements of an inheriting class.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ArrayListCollectionBase.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The name of the array that you want to copy the collection.</param>
+        <param name="index">The point at which you want to start copying the collection.</param>
+        <summary>Copies the items in the collection to an array, starting at the given index. Intended for internal use only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ArrayListCollectionBase.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the number of elements in a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The number of elements in a collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ArrayListCollectionBase.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an enumerator for the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>The enumerator for the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ArrayListCollectionBase.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a collection is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ArrayListCollectionBase.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a collection is synchronized. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>
+          <see langword="true" /> if the collection is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="protected System.Collections.ArrayList Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Items" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ArrayListCollectionBase.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of items in an array list object. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The collection of items in an array list object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ArrayListCollectionBase.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the SyncRoot object for the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The SyncRoot object for the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally by the ASP.NET. Not intended for use by client applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

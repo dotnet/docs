@@ -1,0 +1,73 @@
+<Type Name="ITransformerConfigurationControl" FullName="System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl">
+  <TypeSignature Language="C#" Value="public interface ITransformerConfigurationControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransformerConfigurationControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract a control implements to act as a configuration control for a transformer in a Web Parts connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A configuration control can be displayed when a transformer requires a user to configure it. The configuration control provides a user interface (UI) that allows the user to select which values will be transformed. It is rendered in a connections zone. The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A?displayProperty=fullName> method returns a configuration control.  
+  
+ You can override the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A> method when your transformer requires a customized UI. The configuration control must implement the <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl> interface, which includes the <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Cancelled> and <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Succeeded> events. These events occur when a transformer control was either not configured or configured successfully, respectively.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancelled">
+      <MemberSignature Language="C#" Value="public event EventHandler Cancelled;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Cancelled" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Cancelled" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when transformer configuration is not completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web Parts control that implements <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl> raises this event when a transformer configuration is not completed, either because the user canceled the configuration or because the configuration could not be performed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Succeeded">
+      <MemberSignature Language="C#" Value="public event EventHandler Succeeded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Succeeded" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl.Succeeded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when transformer configuration is successfully completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web Parts control that implements <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl> raises this event when a transformer configuration is successfully completed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

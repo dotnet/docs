@@ -1,0 +1,130 @@
+<Type Name="MessageBoxButtons" FullName="System.Windows.Forms.MessageBoxButtons">
+  <TypeSignature Language="C#" Value="public enum MessageBoxButtons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxButtons extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxButtons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants defining which buttons to display on a <see cref="T:System.Windows.Forms.MessageBox" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use a <xref:System.Windows.Forms.MessageBox> to give the user an opportunity to prevent a form from closing. This example requires that the method is called from the <xref:System.Windows.Forms.Form.FormClosing> event of the form.  
+  
+ [!code-cpp[Classic MessageBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic MessageBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic MessageBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic MessageBox Example/CS/source.cs#1)]
+ [!code-vb[Classic MessageBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic MessageBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortRetryIgnore">
+      <MemberSignature Language="C#" Value="AbortRetryIgnore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons AbortRetryIgnore = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.AbortRetryIgnore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains Abort, Retry, and Ignore buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OK">
+      <MemberSignature Language="C#" Value="OK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons OK = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.OK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains an OK button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OKCancel">
+      <MemberSignature Language="C#" Value="OKCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons OKCancel = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.OKCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains OK and Cancel buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryCancel">
+      <MemberSignature Language="C#" Value="RetryCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons RetryCancel = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.RetryCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains Retry and Cancel buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YesNo">
+      <MemberSignature Language="C#" Value="YesNo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons YesNo = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.YesNo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains Yes and No buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="YesNoCancel">
+      <MemberSignature Language="C#" Value="YesNoCancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxButtons YesNoCancel = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxButtons.YesNoCancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MessageBoxButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains Yes, No, and Cancel buttons.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

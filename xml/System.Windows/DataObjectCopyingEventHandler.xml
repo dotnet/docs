@@ -1,0 +1,34 @@
+<Type Name="DataObjectCopyingEventHandler" FullName="System.Windows.DataObjectCopyingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataObjectCopyingEventHandler(object sender, DataObjectCopyingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectCopyingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectCopyingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.DataObjectCopyingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the <see cref="E:System.Windows.DataObject.Copying" /> attached event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject.Copying> attached event occurs when a copy operation has finished converting the selected content into all specified data formats, has stored all data formats in the associated data object, and is ready to put the data object on the system clipboard or to begin a drag operation.  
+  
+ A <xref:System.Windows.DataObject.Copying> attached event handler method typically inspects the contents of the data object passed in as an event argument, and performs custom operations on the data object, such as adding, removing, or modifying data formats. This handler method may also cancel the copying event by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,23 @@
+<Type Name="ColorSetter" FullName="Microsoft.Build.Logging.ColorSetter">
+  <TypeSignature Language="C#" Value="public delegate void ColorSetter(ConsoleColor color);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorSetter extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ColorSetter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="color" Type="System.ConsoleColor" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="color">Text color.</param>
+    <summary>Type of delegate used to set console color.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,122 @@
+<Type Name="SecurityRulesAttribute" FullName="System.Security.SecurityRulesAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SecurityRulesAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityRulesAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Security.SecurityRulesAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the set of security rules the common language runtime should enforce for an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class indicates which set of security rules the common language runtime should enforce for an assembly. For example, an assembly that is marked with `[SecurityRules(SecurityRuleSet.Level1)]` uses the .NET Framework version 2.0 transparency rules, where public security-critical types and members are treated as security-safe-critical outside the assembly. This requires security-critical types and members to perform a link demand for full trust to enforce security-critical behavior when they are accessed by external callers. Typically, level 1 rules should be used only for compatibility, such as for version 2.0 assemblies. For more information about level 1 behavior, see [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md). For information about level 2 behavior, see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityRulesAttribute (System.Security.SecurityRuleSet ruleSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.SecurityRuleSet ruleSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.SecurityRulesAttribute.#ctor(System.Security.SecurityRuleSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleSet" Type="System.Security.SecurityRuleSet" />
+      </Parameters>
+      <Docs>
+        <param name="ruleSet">One of the enumeration values that specifies the transparency rules set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.SecurityRulesAttribute" /> class using the specified rule set value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify the `ruleSet` parameter, use <xref:System.Security.SecurityRuleSet> for .NET Framework version 2.0 rules or <xref:System.Security.SecurityRuleSet> for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] rules. For more information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 1](../Topic/Security-Transparent%20Code,%20Level%201.md). For information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSet">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityRuleSet RuleSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.SecurityRuleSet RuleSet" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityRulesAttribute.RuleSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityRuleSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rule set to be applied.</summary>
+        <value>One of the enumeration values that specifies the transparency rules to be applied.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipVerificationInFullTrust">
+      <MemberSignature Language="C#" Value="public bool SkipVerificationInFullTrust { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipVerificationInFullTrust" />
+      <MemberSignature Language="DocId" Value="P:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether fully trusted transparent code should skip Microsoft intermediate language (MSIL) verification.</summary>
+        <value>
+          <see langword="true" /> if MSIL verification should be skipped; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should be used only for optimization, because security guarantees made for transparent code cannot be enforced if the code is unverifiable.  
+  
+ If you use this property to skip MSIL verification for an assembly, use the `transparent` option in the  to statically verify that the assembly's transparent code meets type safety requirements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,63 @@
+<Type Name="ModuleExtensions" FullName="System.Reflection.ModuleExtensions">
+  <TypeSignature Language="C#" Value="public static class ModuleExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModuleExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ModuleExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetModuleVersionId">
+      <MemberSignature Language="C#" Value="public static Guid GetModuleVersionId (this System.Reflection.Module module);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetModuleVersionId(class System.Reflection.Module module) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.ModuleExtensions.GetModuleVersionId(System.Reflection.Module)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="module" Type="System.Reflection.Module" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="module">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasModuleVersionId">
+      <MemberSignature Language="C#" Value="public static bool HasModuleVersionId (this System.Reflection.Module module);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasModuleVersionId(class System.Reflection.Module module) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.ModuleExtensions.HasModuleVersionId(System.Reflection.Module)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="module" Type="System.Reflection.Module" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="module">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

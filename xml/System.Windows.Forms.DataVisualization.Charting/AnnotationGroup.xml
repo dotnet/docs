@@ -1,0 +1,818 @@
+<Type Name="AnnotationGroup" FullName="System.Windows.Forms.DataVisualization.Charting.AnnotationGroup">
+  <TypeSignature Language="C#" Value="public class AnnotationGroup : System.Windows.Forms.DataVisualization.Charting.Annotation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationGroup extends System.Windows.Forms.DataVisualization.Charting.Annotation" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.Annotation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a group of annotations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup> class represents a collection of annotations. This class can be used to manipulate annotations relative to each other.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Alignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.ContentAlignment), "MiddleCenter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content alignment of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.ContentAlignment" /> value that represents the content alignment of an annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to align text for <xref:System.Windows.Forms.DataVisualization.Charting.TextAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.RectangleAnnotation>, <xref:System.Windows.Forms.DataVisualization.Charting.EllipseAnnotation> and <xref:System.Windows.Forms.DataVisualization.Charting.CalloutAnnotation> objects, and to align a nonscaled image inside an <xref:System.Windows.Forms.DataVisualization.Charting.ImageAnnotation> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowAnchorMoving">
+      <MemberSignature Language="C#" Value="public override bool AllowAnchorMoving { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowAnchorMoving" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowAnchorMoving" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether an annotation anchor may be moved with a mouse by the end user.</summary>
+        <value>
+          <see langword="True" /> if the annotation anchor may be moved, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowMoving">
+      <MemberSignature Language="C#" Value="public override bool AllowMoving { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowMoving" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowMoving" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether an annotation may be moved with a mouse by the end user.</summary>
+        <value>
+          <see langword="True" /> if the annotation may be moved, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPathEditing">
+      <MemberSignature Language="C#" Value="public override bool AllowPathEditing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPathEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowPathEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether the points of a polygon annotation may be moved with a mouse by the end user.</summary>
+        <value>
+          <see langword="True" /> if the points of the polygon annotation may be moved, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowResizing">
+      <MemberSignature Language="C#" Value="public override bool AllowResizing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowResizing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowResizing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether an annotation may be resized with a mouse by the end user.</summary>
+        <value>
+          <see langword="True" /> if the annotation may be resized, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowSelecting">
+      <MemberSignature Language="C#" Value="public override bool AllowSelecting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowSelecting" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowSelecting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether an annotation may be selected with a mouse by the end user.</summary>
+        <value>
+          <see langword="True" /> if the annotation may be selected, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowTextEditing">
+      <MemberSignature Language="C#" Value="public override bool AllowTextEditing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowTextEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AllowTextEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether an annotation's text may be edited when the end user double clicks the text.</summary>
+        <value>
+          <see langword="True" /> if the annotation text may be edited, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.AnnotationCollectionEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of annotations in the group.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AnnotationCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the coordinates of all annotations in the group are relative to the group annotation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnnotationType">
+      <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.AnnotationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the annotation type.</summary>
+        <value>The annotation type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to get the name of each annotation type, for example. Line, Rectangle, Ellipse, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used for the background of an annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackGradientStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackGradientStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.GradientEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.GradientStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background gradient style of an annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.GradientStyle" /> value used to draw the background of an annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the gradient, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackHatchStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackHatchStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.HatchStyleEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hatch style of an annotation background.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle" /> value used to draw the background of an annotation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two colors are used to draw the hatching, <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackSecondaryColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackSecondaryColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the secondary color for the background of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the background with hatching or gradient fill.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secondary color is used with <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackColor%2A> when <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackHatchStyle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.BackGradientStyle%2A> are used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipToChartArea">
+      <MemberSignature Language="C#" Value="public override string ClipToChartArea { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClipToChartArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.ClipToChartArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("NotSet")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.LegendAreaNameConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the chart area to which the annotation is clipped.</summary>
+        <value>A <see langword="string" /> that represents the name of an existing chart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a chart area name is specified, the annotation will only be drawn inside the plotting area of that chart area. All parts of the annotation outside of the plotting area will be clipped.  
+  
+ To disable chart area clipping, set this property to <xref:System.Double.NaN> or an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Font), "Microsoft Sans Serif, 8pt")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font to use for the text of an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object used for the text of an annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text color for an annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used for the text color of an annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public override bool IsSelected { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.IsSelected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines if an annotation is selected.</summary>
+        <value>
+          <see langword="True" /> if the annotation is selected, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSizeAlwaysRelative">
+      <MemberSignature Language="C#" Value="public override bool IsSizeAlwaysRelative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeAlwaysRelative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.IsSizeAlwaysRelative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that specifies whether the size of an annotation is always defined in relative chart coordinates.</summary>
+        <value>
+          <see langword="True" /> if the <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Width" /> and <see cref="P:System.Windows.Forms.DataVisualization.Charting.Annotation.Height" /> of an annotation are always in chart relative coordinates, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The height and width of an annotation may be set in relative chart or in axes coordinates. By default, relative chart coordinates are used.  
+  
+ To use axes coordinates, set the <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.IsSizeAlwaysRelative%2A> property to `false`. Then either anchor the annotation to a data point or set the <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisX%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.Annotation.AxisY%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color LineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.LineColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line color of the annotation.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw an annotation line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineDashStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartDashStyle LineDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle LineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.LineDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line style of the annotation.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> value used to draw an annotation line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public override int LineWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.LineWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line width, in pixels, of the annotation.</summary>
+        <value>An <see langword="integer" /> value defining the width, in pixels, of an annotation line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ShadowColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.ShadowColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "128,0,0,0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the annotation's shadow.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value used to draw the shadow of an annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowOffset">
+      <MemberSignature Language="C#" Value="public override int ShadowOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadowOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.ShadowOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the size of the annotation's shadow.</summary>
+        <value>An <see langword="integer" /> value that represents the offset between an annotation and its shadow.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextStyle">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.TextStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text style of an annotation.</summary>
+        <value>A <see cref="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.TextStyle" /> enumeration value used to draw the text of an annotation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ParenthesizePropertyName(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether the annotation is visible.</summary>
+        <value>
+          <see langword="True" /> if the annotation is visible, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

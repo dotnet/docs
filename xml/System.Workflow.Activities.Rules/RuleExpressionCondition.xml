@@ -1,0 +1,326 @@
+<Type Name="RuleExpressionCondition" FullName="System.Workflow.Activities.Rules.RuleExpressionCondition">
+  <TypeSignature Language="C#" Value="public sealed class RuleExpressionCondition : System.Workflow.Activities.Rules.RuleCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RuleExpressionCondition extends System.Workflow.Activities.Rules.RuleCondition" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleExpressionCondition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.Rules.RuleCondition</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the condition definition behind a <see cref="T:System.Workflow.Activities.Rules.RuleConditionReference" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.Rules.RuleExpressionCondition> class defines the base conditions evaluated when a <xref:System.Workflow.Activities.Rules.RuleSet> is executed.  
+  
+ This condition type is modeled with CodeDom types. For more information about CodeDom types, see [CodeDOM Types Supported by Windows Workflow Foundation](http://msdn.microsoft.com/en-us/0381740f-0a29-43ae-96e2-17e14e832083).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleExpressionCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleExpressionCondition (System.CodeDom.CodeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to initialize the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class by using a specified code expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleExpressionCondition (string conditionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conditionName">The name of the condition to evaluate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class by using a specified name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="conditionName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleExpressionCondition (string conditionName, System.CodeDom.CodeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionName, class System.CodeDom.CodeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.#ctor(System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditionName" Type="System.String" />
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="conditionName">The name of the condition to evaluate.</param>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to initialize the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> class by using a specified name and code expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Workflow.Activities.Rules.RuleCondition Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.Activities.Rules.RuleCondition Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a deep copy of the current <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> that is identical to this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current object.</param>
+        <summary>Determines whether two object instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the object instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public override bool Evaluate (System.Workflow.Activities.Rules.RuleExecution execution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Evaluate(class System.Workflow.Activities.Rules.RuleExecution execution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Evaluate(System.Workflow.Activities.Rules.RuleExecution)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="execution" Type="System.Workflow.Activities.Rules.RuleExecution" />
+      </Parameters>
+      <Docs>
+        <param name="execution">Instance of the runtime context that <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" /> is running in.</param>
+        <summary>Evaluates the expression.</summary>
+        <returns>
+          <see langword="true" /> if the expression evaluates to true; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionCondition.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression condition to evaluate.</summary>
+        <value>The expression condition to evaluate.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ReadOnlyException">The activity running the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is runtime initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDependencies">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.ICollection&lt;string&gt; GetDependencies (System.Workflow.Activities.Rules.RuleValidation validation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.ICollection`1&lt;string&gt; GetDependencies(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.GetDependencies(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
+      </Parameters>
+      <Docs>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <summary>Gets the dependencies for the <see cref="T:System.Workflow.Activities.Rules.RuleExpressionCondition" />.</summary>
+        <returns>A list of dependencies.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleExpressionCondition.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the condition to evaluate.</summary>
+        <value>The name of the condition to evaluate.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.ReadOnlyException">The activity running the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is runtime initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRuntimeInitialized">
+      <MemberSignature Language="C#" Value="public override void OnRuntimeInitialized ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnRuntimeInitialized() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.OnRuntimeInitialized" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when all properties have been given values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After this call, no properties can be modified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string value of the expression condition.</summary>
+        <returns>The string value of the expression condition. An empty string if the expression condition is <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override bool Validate (System.Workflow.Activities.Rules.RuleValidation validation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Validate(class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleExpressionCondition.Validate(System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
+      </Parameters>
+      <Docs>
+        <param name="validation">The <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> to manage the validation process.</param>
+        <summary>Verifies that the expression is configured correctly and has no errors.</summary>
+        <returns>
+          <see langword="true" /> if the expression has no errors; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Activities.Rules.RuleExpressionCondition> contains errors (the `Validate` method returns `false`), then <xref:System.Workflow.Activities.Rules.RuleValidation.Errors%2A?displayProperty=fullName> will contain the list of errors encountered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validator" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

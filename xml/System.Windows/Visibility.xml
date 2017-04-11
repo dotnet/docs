@@ -1,0 +1,73 @@
+<Type Name="Visibility" FullName="System.Windows.Visibility">
+  <TypeSignature Language="C#" Value="public enum Visibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Visibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Visibility" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the display state of an element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Elements that have a <xref:System.Windows.UIElement.Visibility%2A> value of Collapsed do not occupy any layout space. By default, elements are Visible.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collapsed">
+      <MemberSignature Language="C#" Value="Collapsed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Collapsed = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Collapsed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Visibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not display the element, and do not reserve space for it in layout.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Hidden = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Visibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not display the element, but reserve space for the element in layout.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="Visible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Visible = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Visible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Visibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display the element.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

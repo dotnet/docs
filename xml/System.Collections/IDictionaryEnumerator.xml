@@ -1,0 +1,199 @@
+<Type Name="IDictionaryEnumerator" FullName="System.Collections.IDictionaryEnumerator">
+  <TypeSignature Language="C#" Value="public interface IDictionaryEnumerator : System.Collections.IEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDictionaryEnumerator implements class System.Collections.IEnumerator" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.IDictionaryEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumerates the elements of a nongeneric dictionary.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Visual Basic, C#]  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position. At this position, calling the <xref:System.Collections.IEnumerator.Current%2A> property throws an exception. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ This code example shows how to define a dictionary enumerator that implements the <xref:System.Collections.IDictionaryEnumerator> interface.  
+  
+ [!code-cpp[Dictionary#1](~/samples/snippets/cpp/VS_Snippets_CLR/Dictionary/cpp/Dictionary.cpp#1)]
+ [!code-csharp[Dictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR/Dictionary/CS/Dictionary.cs#1)]
+ [!code-vb[Dictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Dictionary/VB/Dictionary.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Entry">
+      <MemberSignature Language="C#" Value="public System.Collections.DictionaryEntry Entry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry Entry" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Entry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.DictionaryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets both the key and the value of the current dictionary entry.</summary>
+        <value>A <see cref="T:System.Collections.DictionaryEntry" /> containing both the key and the value of the current dictionary entry.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Entry%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Entry%2A> is undefined.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Entry%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Entry%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Entry%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
+        <block subset="none" type="overrides">
+          <para>The <see cref="P:System.Collections.IEnumerator.Current" /> property that is inherited from <see cref="T:System.Collections.IEnumerator" /> returns an <see cref="T:System.Object" /> that is a boxed <see cref="T:System.Collections.DictionaryEntry" />, similar to the return value of the <see cref="P:System.Collections.IDictionaryEnumerator.Entry" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public object Key { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Key" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key of the current dictionary entry.</summary>
+        <value>The key of the current element of the enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Key%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Key%2A> is undefined.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Key%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Key%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Key%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current dictionary entry.</summary>
+        <value>The value of the current element of the enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after the <xref:System.Collections.IEnumerator.Reset%2A> method is called, the <xref:System.Collections.IEnumerator.MoveNext%2A> method must be called to advance the enumerator to the first element of the collection before reading the value of the <xref:System.Collections.IDictionaryEnumerator.Value%2A> property; otherwise, <xref:System.Collections.IDictionaryEnumerator.Value%2A> is undefined.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Value%2A> also throws an exception if the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+ <xref:System.Collections.IDictionaryEnumerator.Value%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Collections.IDictionaryEnumerator.Value%2A> return the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

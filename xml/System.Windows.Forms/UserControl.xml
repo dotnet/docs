@@ -1,0 +1,636 @@
+<Type Name="UserControl" FullName="System.Windows.Forms.UserControl">
+  <TypeSignature Language="C#" Value="public class UserControl : System.Windows.Forms.ContainerControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserControl extends System.Windows.Forms.ContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UserControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Load")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.UserControlDocumentDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("UserControl")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an empty control that can be used to create other controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By extending <xref:System.Windows.Forms.ContainerControl>, <xref:System.Windows.Forms.UserControl> inherits all the standard positioning and mnemonic-handling code that is necessary in a user control.  
+  
+ The <xref:System.Windows.Forms.UserControl> gives you the ability to create controls that can be used in multiple places within an application or organization. You can include all the code needed for validation of common data you ask the user to input; some examples of this are e-mail addresses (see Example section), telephone numbers, and postal codes. Another efficient use of the user control is to simply preload a <xref:System.Windows.Forms.ComboBox> or <xref:System.Windows.Forms.ListBox> with static items you commonly use in almost every application; some examples of this are countries/regions, cities, states, and office locations. For more information about authoring custom controls, see [Developing Custom Windows Forms Controls with the .NET Framework](~/docs/framework/winforms/controls/developing-custom-windows-forms-controls.md).  
+  
+> [!NOTE]
+>  You might consider creating a namespace that contains several classes of user controls and compiling it into one DLL. This DLL can be referenced and distributed with the application or all applications within an organization. This gives you the ability to reference the user control in many applications and save time laying out and coding the contained elements of the user control. A user control also gives you consistency within or across applications; for example, all address information input blocks will all have the same appearance and behavior. Consistency gives your application a more polished and professional appearance.  
+>   
+>  You can host Windows Forms <xref:System.Windows.Forms.UserControl> derived classes inside of a form, on another <xref:System.Windows.Forms.UserControl>, inside of Internet Explorer on a Web page, or inside a <xref:System.Windows.Forms.WebBrowser> control hosted on a form.  
+  
+> [!NOTE]
+>  When hosting a <xref:System.Windows.Forms.UserControl> inside of the <xref:System.Windows.Forms.WebBrowser> control, you cannot turn off Visual Styles using the `META` tag value `MSThemeCompatible`. For more information about Visual Styles, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+  
+ Note that for Smartphone applications, this control requires Windows Mobile Version 5.0 software for Smartphones.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.UserControl> that can be reused in multiple applications to get user information. This example adds several <xref:System.Windows.Forms.Label> controls, <xref:System.Windows.Forms.TextBox> controls and an <xref:System.Windows.Forms.ErrorProvider> to the <xref:System.Windows.Forms.UserControl> to gather the user's information. Additionally, the user's e-mail address is validated in the <xref:System.Windows.Forms.Control.Validating> event of the <xref:System.Windows.Forms.TextBox> and the <xref:System.Windows.Forms.ErrorProvider> object is used to give the user feedback if the data fails validation. The code is intended to be compiled into a DLL for reference in other applications.  
+  
+ [!code-cpp[Classic UserControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic UserControl Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic UserControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic UserControl Example/CS/source.cs#1)]
+ [!code-vb[Classic UserControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic UserControl Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.UserControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not typically create an instance of <xref:System.Windows.Forms.UserControl>. To create your own user control class, inherit from the <xref:System.Windows.Forms.UserControl> class.  
+  
+   
+  
+## Examples  
+ The following code example creates an instance of the <xref:System.Windows.Forms.UserControl> derived class, `MyCustomerInfoUserControl`, which was created in the example section of the <xref:System.Windows.Forms.UserControl> class overview. The user control is added to a <xref:System.Windows.Forms.Panel> control and has its <xref:System.Windows.Forms.Control.Dock%2A> property set to <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>. The <xref:System.Windows.Forms.Panel> is then added to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic UserControl.UserControl Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic UserControl.UserControl Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic UserControl.UserControl Example/CS/source.cs#1)]
+ [!code-vb[Classic UserControl.UserControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic UserControl.UserControl Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSizeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.AutoSizeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.UserControl.AutoSize" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoSizeMode AutoSizeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoSizeMode AutoSizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoSizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how the control will resize itself.</summary>
+        <value>A value from the <see cref="T:System.Windows.Forms.AutoSizeMode" /> enumeration. The default is <see cref="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls that do not recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will function as though <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> was set to <xref:System.Windows.Forms.AutoSizeMode>. All controls that recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will, by default, grow to fit available space, but will not shrink below the value specified by the <xref:System.Windows.Forms.Control.Size%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoValidate">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AutoValidate AutoValidate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoValidate AutoValidate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.AutoValidate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how the control performs validation when the user changes focus to another control.</summary>
+        <value>A member of the <see cref="T:System.Windows.Forms.AutoValidate" /> enumeration. The default value for <see cref="T:System.Windows.Forms.UserControl" /> is <see cref="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoValidateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler AutoValidateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoValidateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.AutoValidateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.UserControl.AutoValidate" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If your custom control performs any of its own validation, you will need to know when a developer using your control has changed the <xref:System.Windows.Forms.UserControl.AutoValidate%2A> property so that you can change your control's validation behavior accordingly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.UserControl.AutoValidateChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.UserControl> named `UserControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.UserControl.AutoValidateChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#641](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#641)]
+ [!code-vb[System.Windows.Forms.EventExamples#641](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#641)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border style of the user control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see cref="F:System.Windows.Forms.BorderStyle.Fixed3D" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.UserControl.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle>, the control has a sunken, three-dimensional appearance. To display a flat, thin border, set the <xref:System.Windows.Forms.BorderStyle> property to <xref:System.Windows.Forms.BorderStyle>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public event EventHandler Load;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Load" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.Load" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the control becomes visible for the first time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this event to perform tasks such as allocating resources used by the control.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.UserControl> is part of an MDI child form, the <xref:System.Windows.Forms.UserControl.Load> event will occur each time the child form is shown. In this case, you should put any one-time initialization code in the <xref:System.Windows.Forms.UserControl.%23ctor%2A> instead of a <xref:System.Windows.Forms.UserControl.Load> event handler.  
+  
+> [!CAUTION]
+>  The <xref:System.Windows.Forms.UserControl.Load> event occurs when the handle for the <xref:System.Windows.Forms.UserControl> is created. In some circumstances, this can cause the <xref:System.Windows.Forms.UserControl.Load> event to occur more than one time. For example, the <xref:System.Windows.Forms.UserControl.Load> event occurs when the <xref:System.Windows.Forms.UserControl> is loaded, and again if the handle is recreated. (One way that a handle is recreated is by calling the <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.) To account for the <xref:System.Windows.Forms.UserControl.Load> event occurring more than one time, you should put any one time initialization code in the <xref:System.Windows.Forms.UserControl.%23ctor%2A> constructor instead of a <xref:System.Windows.Forms.UserControl.Load> event handler. In addition, you should not add data bindings to the <xref:System.Windows.Forms.UserControl> in a <xref:System.Windows.Forms.UserControl.Load> event handler.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.UserControl.Load> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.UserControl> named `UserControl1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.UserControl.Load> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#642](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#642)]
+ [!code-vb[System.Windows.Forms.EventExamples#642](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#642)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateControl">
+      <MemberSignature Language="C#" Value="protected override void OnCreateControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnCreateControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raises the <see langword="CreateControl" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.UserControl.OnCreateControl%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.UserControl.OnCreateControl" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.UserControl.OnCreateControl" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnLoad (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoad(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.UserControl.Load" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.UserControl.Load> event occurs after the control is created, but before the control becomes visible for the first time.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.UserControl.OnLoad%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResize">
+      <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.OnResize(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UserControl.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text associated with this control.</summary>
+        <value>The text associated with this control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.UserControl.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateChildren">
+      <MemberSignature Language="C#" Value="public override bool ValidateChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.ValidateChildren" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <returns>
+          <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateChildren">
+      <MemberSignature Language="C#" Value="public override bool ValidateChildren (System.Windows.Forms.ValidationConstraints validationConstraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateChildren(valuetype System.Windows.Forms.ValidationConstraints validationConstraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" />
+      </Parameters>
+      <Docs>
+        <param name="validationConstraints">Places restrictions on which controls have their <see cref="E:System.Windows.Forms.Control.Validating" /> event raised.</param>
+        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <returns>
+          <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UserControl.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

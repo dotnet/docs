@@ -1,0 +1,63 @@
+<Type Name="PeerNearMeChangedEventArgs" FullName="System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class PeerNearMeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PeerNearMeChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerNearMe.PeerNearMeChanged" /> event occurs.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PeerChangeType">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of change to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object that has occurred.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerChangeType" /> object that specifies the type of change to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> instance that occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Change types include Peer Added, Peer Deleted, and Peer Updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerNearMe">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs.PeerNearMe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerNearMe</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> that has changed.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object that has changed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

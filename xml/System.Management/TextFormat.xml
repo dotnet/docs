@@ -1,0 +1,66 @@
+<Type Name="TextFormat" FullName="System.Management.TextFormat">
+  <TypeSignature Language="C#" Value="public enum TextFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Management.TextFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the possible text formats that can be used with <see cref="M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CimDtd20">
+      <MemberSignature Language="C#" Value="CimDtd20" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.TextFormat CimDtd20 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.CimDtd20" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.TextFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML DTD that corresponds to CIM DTD version 2.0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mof">
+      <MemberSignature Language="C#" Value="Mof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.TextFormat Mof = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.Mof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.TextFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>*Managed Object Format*</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WmiDtd20">
+      <MemberSignature Language="C#" Value="WmiDtd20" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.TextFormat WmiDtd20 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.TextFormat.WmiDtd20" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.TextFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML WMI DTD that corresponds to CIM DTD version 2.0. Using this value enables a few WMI-specific extensions, like embedded objects.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

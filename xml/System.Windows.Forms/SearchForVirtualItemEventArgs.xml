@@ -1,0 +1,349 @@
+<Type Name="SearchForVirtualItemEventArgs" FullName="System.Windows.Forms.SearchForVirtualItemEventArgs">
+  <TypeSignature Language="C#" Value="public class SearchForVirtualItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchForVirtualItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SearchForVirtualItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.SearchForVirtualItem" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.SearchForVirtualItemEventArgs> is constructed and passed to the <xref:System.Windows.Forms.ListView.SearchForVirtualItem> event when you call the <xref:System.Windows.Forms.ListView.FindItemWithText%2A> or <xref:System.Windows.Forms.ListView.FindNearestItem%2A> methods on a <xref:System.Windows.Forms.ListView> control in virtual mode.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SearchForVirtualItemEventArgs (bool isTextSearch, bool isPrefixSearch, bool includeSubItemsInSearch, string text, System.Drawing.Point startingPoint, System.Windows.Forms.SearchDirectionHint direction, int startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isTextSearch, bool isPrefixSearch, bool includeSubItemsInSearch, string text, valuetype System.Drawing.Point startingPoint, valuetype System.Windows.Forms.SearchDirectionHint direction, int32 startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SearchForVirtualItemEventArgs.#ctor(System.Boolean,System.Boolean,System.Boolean,System.String,System.Drawing.Point,System.Windows.Forms.SearchDirectionHint,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isTextSearch" Type="System.Boolean" />
+        <Parameter Name="isPrefixSearch" Type="System.Boolean" />
+        <Parameter Name="includeSubItemsInSearch" Type="System.Boolean" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="startingPoint" Type="System.Drawing.Point" />
+        <Parameter Name="direction" Type="System.Windows.Forms.SearchDirectionHint" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="isTextSearch">A value indicating whether the search is a text search.</param>
+        <param name="isPrefixSearch">A value indicating whether the search is a prefix search.</param>
+        <param name="includeSubItemsInSearch">A value indicating whether to include subitems of list items in the search.</param>
+        <param name="text">The text of the item to search for.</param>
+        <param name="startingPoint">The <see cref="T:System.Drawing.Point" /> at which to start the search.</param>
+        <param name="direction">One of the <see cref="T:System.Windows.Forms.SearchDirectionHint" /> values.</param>
+        <param name="startIndex">The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> at which to start the search.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SearchForVirtualItemEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.SearchDirectionHint Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SearchDirectionHint Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SearchDirectionHint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the direction from the current item that the search should take place.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.SearchDirectionHint" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Identifying the nearest item in a <xref:System.Windows.Forms.ListView> control can vary depending on the operating system the application is running on; therefore, the search direction is a hint, and not an absolute guarantee of results.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeSubItemsInSearch">
+      <MemberSignature Language="C#" Value="public bool IncludeSubItemsInSearch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeSubItemsInSearch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IncludeSubItemsInSearch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the search should include subitems of list items.</summary>
+        <value>
+          <see langword="true" /> if subitems should be included in the search; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Subitems are typically used when a <xref:System.Windows.Forms.ListView> is in <xref:System.Windows.Forms.View> view.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the <see cref="T:System.Windows.Forms.ListViewItem" /> found in the <see cref="T:System.Windows.Forms.ListView" /> .</summary>
+        <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> found in the <see cref="T:System.Windows.Forms.ListView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Forms.SearchForVirtualItemEventArgs.Index%2A> property to the index of the item matching the search criteria when handling the <xref:System.Windows.Forms.ListView.SearchForVirtualItem> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrefixSearch">
+      <MemberSignature Language="C#" Value="public bool IsPrefixSearch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPrefixSearch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IsPrefixSearch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the search should return an item if its text starts with the search text.</summary>
+        <value>
+          <see langword="true" /> if the search should match item text that starts with the search text; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.SearchForVirtualItemEventArgs.Text%2A> property can specify a substring of the desired text. The <xref:System.Windows.Forms.SearchForVirtualItemEventArgs.IsPrefixSearch%2A> property indicates whether the search should match items that start with the search text.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextSearch">
+      <MemberSignature Language="C#" Value="public bool IsTextSearch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTextSearch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.IsTextSearch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the search is a text search.</summary>
+        <value>
+          <see langword="true" /> if the search is a text search; <see langword="false" /> if the search is a location search.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can search a <xref:System.Windows.Forms.ListView> control by location by using the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> method, or you can perform a text search by using the <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartIndex">
+      <MemberSignature Language="C#" Value="public int StartIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.StartIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the <see cref="T:System.Windows.Forms.ListViewItem" /> where the search starts.</summary>
+        <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> indicating where the search starts</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used for a location search.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartingPoint">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point StartingPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point StartingPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.StartingPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting location of the search.</summary>
+        <value>The <see cref="T:System.Drawing.Point" /> that indicates the starting location of the search.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can search a <xref:System.Windows.Forms.ListView> control by location by using the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> method, or you can perform a text search by using the <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SearchForVirtualItemEventArgs.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text used to find an item in the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+        <value>The text used to find an item in the <see cref="T:System.Windows.Forms.ListView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can search a <xref:System.Windows.Forms.ListView> control by location by using the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> method, or you can perform a text search by using the <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.SearchForVirtualItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#480](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#480)]
+ [!code-vb[System.Windows.Forms.EventExamples#480](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#480)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

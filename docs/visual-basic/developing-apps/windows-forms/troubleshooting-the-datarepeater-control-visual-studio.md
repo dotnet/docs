@@ -52,7 +52,7 @@ This topic lists common issues that may occur when you are working with the <xre
 DataRepeater1.Top = ProductsBindingNavigator.Height  
 ```  
   
-```cs  
+```csharp  
 dataRepeater1.Top = productsBindingNavigator.Height;  
 ```  
   

@@ -1,0 +1,555 @@
+<Type Name="MessageBox" FullName="System.Windows.MessageBox">
+  <TypeSignature Language="C#" Value="public sealed class MessageBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageBox extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.MessageBox" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Displays a message box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message box is a prefabricated modal dialog box that displays a text message to a user. You show a message box by calling the static <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. The text message that is displayed is the string argument that you pass to <xref:System.Windows.MessageBox.Show%2A>. Several overloads of the <xref:System.Windows.MessageBox.Show%2A> method also enables you to provide a title bar caption.  
+  
+ To enable a user to close a message box, <xref:System.Windows.MessageBox.Show%2A> displays a message box that has an **OK** button and a **Close** button in the title bar.  
+  
+ You can also use a message box to ask a user a question. The user answers by clicking one of several buttons that you specify to display by using the <xref:System.Windows.MessageBoxButton> enumeration. You can pass this enumeration to several overloads of the <xref:System.Windows.MessageBox.Show%2A> method. The default value of the <xref:System.Windows.MessageBoxButton> enumeration is <xref:System.Windows.MessageBoxButton>.  
+  
+ You can determine which button a user clicks by examining the value that <xref:System.Windows.MessageBox.Show%2A> returns. The return value is a value of the <xref:System.Windows.MessageBoxResult> enumeration, where each value equates to one of the buttons that a message box can display. The default value for message box is <xref:System.Windows.MessageBoxResult> because **OK** is the default message box button. However, some overloads of the <xref:System.Windows.MessageBox.Show%2A> method enable you to provide a different <xref:System.Windows.MessageBoxResult> default value.  
+  
+ Message boxes can communicate information and can ask questions that have varying degrees of importance. Message boxes use icons to indicate importance. For example, icons can indicate whether the message is informational, is a warning, or is important. The <xref:System.Windows.MessageBoxImage> enumeration encapsulates the set of possible message box icons. By default, a message box does not display an icon. However, you can pass a <xref:System.Windows.MessageBoxImage> value to one of several <xref:System.Windows.MessageBox.Show%2A> method overloads in order to specify that the message box includes an icon.  
+  
+ Message boxes sometimes provide special functionality, such as right-to-left reading. You can customize the behavior of a message box by using one or more <xref:System.Windows.MessageBoxOptions> enumeration values that are accepted by some overloads of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ Message boxes always have an owner window. By default, the owner of a message box is the window that is currently active in an application at the time that a message box is opened. However, you can specify another owner for the <xref:System.Windows.Window> by using one of several <xref:System.Windows.MessageBox.Show%2A> overloads. For more information about owner windows, see <xref:System.Windows.Window.Owner%2A?displayProperty=fullName>.  
+  
+ For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <summary>Displays a message box that has a message and that returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show1Window.xaml.cs#messageboxshow1code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow1CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show1window.xaml.vb#messageboxshow1code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <summary>Displays a message box that has a message and title bar caption; and that returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show2Window.xaml.cs#messageboxshow2code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow2CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show2window.xaml.vb#messageboxshow2code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message and returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <summary>Displays a message box that has a message, title bar caption, and button; and that returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show3Window.xaml.cs#messageboxshow3code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow3CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show3window.xaml.vb#messageboxshow3code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message and title bar caption; and it returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <summary>Displays a message box that has a message, title bar caption, button, and icon; and that returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show4Window.xaml.cs#messageboxshow4code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow4CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show4window.xaml.vb#messageboxshow4code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message, title bar caption, and button; and it also returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <param name="defaultResult">A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies the default result of the message box.</param>
+        <summary>Displays a message box that has a message, title bar caption, button, and icon; and that accepts a default message box result and returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show5Window.xaml.cs#messageboxshow5code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow5CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show5window.xaml.vb#messageboxshow5code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message, title bar caption, button, and icon; and it also returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+        <Parameter Name="options" Type="System.Windows.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <param name="defaultResult">A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies the default result of the message box.</param>
+        <param name="options">A <see cref="T:System.Windows.MessageBoxOptions" /> value object that specifies the options.</param>
+        <summary>Displays a message box that has a message, title bar caption, button, and icon; and that accepts a default message box result, complies with the specified options, and returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this overload of the <xref:System.Windows.MessageBox.Show%2A> method.  
+  
+ [!code-csharp[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MessageBoxSnippets/CSharp/Show6Window.xaml.cs#messageboxshow6code)]
+ [!code-vb[MessageBoxSnippets#MessageBoxShow6CODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show6window.xaml.vb#messageboxshow6code)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <param name="defaultResult">A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies the default result of the message box.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message, title bar caption, button, and icon; and accepts a default message box result and returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Window" />
+        <Parameter Name="messageBoxText" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="button" Type="System.Windows.MessageBoxButton" />
+        <Parameter Name="icon" Type="System.Windows.MessageBoxImage" />
+        <Parameter Name="defaultResult" Type="System.Windows.MessageBoxResult" />
+        <Parameter Name="options" Type="System.Windows.MessageBoxOptions" />
+      </Parameters>
+      <Docs>
+        <param name="owner">A <see cref="T:System.Windows.Window" /> that represents the owner window of the message box.</param>
+        <param name="messageBoxText">A <see cref="T:System.String" /> that specifies the text to display.</param>
+        <param name="caption">A <see cref="T:System.String" /> that specifies the title bar caption to display.</param>
+        <param name="button">A <see cref="T:System.Windows.MessageBoxButton" /> value that specifies which button or buttons to display.</param>
+        <param name="icon">A <see cref="T:System.Windows.MessageBoxImage" /> value that specifies the icon to display.</param>
+        <param name="defaultResult">A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies the default result of the message box.</param>
+        <param name="options">A <see cref="T:System.Windows.MessageBoxOptions" /> value object that specifies the options.</param>
+        <summary>Displays a message box in front of the specified window. The message box displays a message, title bar caption, button, and icon; and accepts a default message box result, complies with the specified options, and returns a result.</summary>
+        <returns>A <see cref="T:System.Windows.MessageBoxResult" /> value that specifies which message box button is clicked by the user.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the message box appears in front of the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a message box.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an overload of the <xref:System.Windows.MessageBox.Show%2A> method, which enables you to specify an owner window. Otherwise, the message box is owned by the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

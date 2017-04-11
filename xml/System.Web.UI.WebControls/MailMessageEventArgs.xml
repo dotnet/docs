@@ -1,0 +1,92 @@
+<Type Name="MailMessageEventArgs" FullName="System.Web.UI.WebControls.MailMessageEventArgs">
+  <TypeSignature Language="C#" Value="public class MailMessageEventArgs : System.Web.UI.WebControls.LoginCancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailMessageEventArgs extends System.Web.UI.WebControls.LoginCancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailMessageEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.LoginCancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for e-mail–related events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MailMessageEventArgs> class provides access to the <xref:System.Web.Mail.MailMessage> object that contains the e-mail message. Because the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class is derived from the <xref:System.Web.UI.WebControls.LoginCancelEventArgs> class, you can cancel sending an e-mail message in your event handler by setting the <xref:System.Web.UI.WebControls.LoginCancelEventArgs.Cancel%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class in an e-mail message event handler to change the contents of the message before it is sent.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailMessageEventArgs (System.Net.Mail.MailMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Mail.MailMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MailMessageEventArgs.#ctor(System.Net.Mail.MailMessage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.Net.Mail.MailMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.Net.Mail.MailMessage" /> containing the message.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.MailMessageEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create a new instance of the <xref:System.Web.UI.WebControls.MailMessageEventArgs> class when you want to pass a <xref:System.Net.Mail.MailMessage> object to an event handler that might modify the message before sending it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailMessage Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailMessage Message" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MailMessageEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the e-mail message contents.</summary>
+        <value>A <see cref="T:System.Web.Mail.MailMessage" /> containing the message contents.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property returns the <xref:System.Web.Mail.MailMessage> object that contains the e-mail message data. The <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property is read-only; however, you can use the <xref:System.Web.Mail.MailMessage> object that it returns to modify the properties of the e-mail message.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MailMessageEventArgs.Message%2A> property in an e-mail message event handler to change the contents of the message before it is sent.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/CS/passwordrecoveryonbeforesendmailcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PasswordRecoveryOnBeforeSendMail#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PasswordRecoveryOnBeforeSendMail/VB/passwordrecoveryonbeforesendmailvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

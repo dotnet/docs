@@ -1,0 +1,151 @@
+<Type Name="RoutedUICommand" FullName="System.Windows.Input.RoutedUICommand">
+  <TypeSignature Language="C#" Value="public class RoutedUICommand : System.Windows.Input.RoutedCommand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedUICommand extends System.Windows.Input.RoutedCommand" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.RoutedUICommand" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.RoutedCommand</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Input.CommandConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an <see cref="T:System.Windows.Input.ICommand" /> that is routed through the element tree and contains a text property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between a <xref:System.Windows.Input.RoutedUICommand> and <xref:System.Windows.Input.RoutedCommand> is that <xref:System.Windows.Input.RoutedUICommand> includes a <xref:System.Windows.Input.RoutedUICommand.Text%2A> property.  
+  
+ The <xref:System.Windows.Input.RoutedCommand.Execute%2A> and <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> methods on a <xref:System.Windows.Input.RoutedCommand> do not contain the command logic for the command, as is the case with a typical <xref:System.Windows.Input.ICommand>.  These methods raise events that traverse the element tree looking for an object with a <xref:System.Windows.Input.CommandBinding>.  The event handlers attached to the <xref:System.Windows.Input.CommandBinding> contain the command logic.  
+  
+ The <xref:System.Windows.Input.RoutedCommand.Execute%2A> method raises the <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> events.  The <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method raises the <xref:System.Windows.Input.CommandManager.PreviewCanExecute> and <xref:System.Windows.Input.CommandManager.CanExecute> events.  
+  
+<a name="xamlAttributeUsage_RoutedUICommand"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="predefinedCommandName"/>  
+- or -  
+<object property="predefinedClassName.predefinedCommandName"/>  
+- or -  
+<object property="{x:Static customClassName.customCommandName}"/>  
+  
+```  
+  
+<a name="xamlValues_RoutedUICommand"></a>   
+## XAML Values  
+ *predefinedClassName*  
+ One of the predefined command classes.  
+  
+ *predefinedCommandName*  
+ One of the predefined commands.  
+  
+ *prefix*  
+ The `xlmns` prefix that maps *customClassName*.*customCommandName* to the [!INCLUDE[TLA2#tla_net](~/includes/tla2sharptla-net-md.md)] class.  For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ *customClassName*  
+ A custom class that contains the custom command.  
+  
+ *customCommandName*  
+ A custom command.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedUICommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedUICommand" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedUICommand (string text, string name, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string name, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor(System.String,System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="text">Descriptive text for the command.</param>
+        <param name="name">The declared name of the command for serialization.</param>
+        <param name="ownerType">The type that is registering the command.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedUICommand" /> class, using the specified descriptive text, declared name, and owner type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ownerType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedUICommand (string text, string name, Type ownerType, System.Windows.Input.InputGestureCollection inputGestures);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string name, class System.Type ownerType, class System.Windows.Input.InputGestureCollection inputGestures) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedUICommand.#ctor(System.String,System.String,System.Type,System.Windows.Input.InputGestureCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="inputGestures" Type="System.Windows.Input.InputGestureCollection" />
+      </Parameters>
+      <Docs>
+        <param name="text">Descriptive text for the command.</param>
+        <param name="name">The declared name of the command for serialization.</param>
+        <param name="ownerType">The type that is registering the command.</param>
+        <param name="inputGestures">A collection of gestures to associate with the command.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedUICommand" /> class, using the specified descriptive text, declared name, owner type, and input gestures.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ownerType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedUICommand.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that describes this command.</summary>
+        <value>The text that describes the command.  The default is an empty string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

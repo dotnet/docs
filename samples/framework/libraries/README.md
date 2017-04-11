@@ -4,7 +4,7 @@ These samples are buildable projects whose source is used for code snippets in [
 
 To build/use any of these (using `new-library` as an example):
 
-1. Open your favorite Command Line Interface (e.g. Cmd.exe or Terminal).
+1. Open your favorite Command Line Interface (for example, Cmd.exe or Terminal).
 
 2. Navigate to the top-level directory:
 

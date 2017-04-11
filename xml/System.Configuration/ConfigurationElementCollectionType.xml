@@ -1,0 +1,91 @@
+<Type Name="ConfigurationElementCollectionType" FullName="System.Configuration.ConfigurationElementCollectionType">
+  <TypeSignature Language="C#" Value="public enum ConfigurationElementCollectionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationElementCollectionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElementCollectionType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of a <see cref="T:System.Configuration.ConfigurationElementCollectionType" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration contains all the possible return values for the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> property. It is used by the configuration system during run time to correctly merge configuration settings. It is also used when creating a custom class that extends <xref:System.Configuration.ConfigurationElementCollection>.  
+  
+ By default, the type of a <xref:System.Configuration.ConfigurationElementCollection> object is AddRemoveClearMap. If a BasicMap is required, override the <xref:System.Configuration.ConfigurationElementCollectionType> property when extending <xref:System.Configuration.ConfigurationElementCollection>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddRemoveClearMap">
+      <MemberSignature Language="C#" Value="AddRemoveClearMap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType AddRemoveClearMap = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default type of <see cref="T:System.Configuration.ConfigurationElementCollection" />. Collections of this type contain elements that can be merged across a hierarchy of configuration files. At any particular level within such a hierarchy, <see langword="add" />, <see langword="remove" />, and <see langword="clear" /> directives are used to modify any inherited properties and specify new ones.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRemoveClearMapAlternate">
+      <MemberSignature Language="C#" Value="AddRemoveClearMapAlternate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType AddRemoveClearMapAlternate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Same as <see cref="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />, except that this type causes the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object to sort its contents such that inherited elements are listed last.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicMap">
+      <MemberSignature Language="C#" Value="BasicMap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType BasicMap = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collections of this type contain elements that apply to the level at which they are specified, and to all child levels. A child level cannot modify the properties specified by a parent element of this type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicMapAlternate">
+      <MemberSignature Language="C#" Value="BasicMapAlternate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType BasicMapAlternate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Same as <see cref="F:System.Configuration.ConfigurationElementCollectionType.BasicMap" />, except that this type causes the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object to sort its contents such that inherited elements are listed last.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

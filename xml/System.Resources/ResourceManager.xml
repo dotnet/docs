@@ -1,0 +1,1735 @@
+<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
+  <TypeSignature Language="C#" Value="public class ResourceManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Resources.ResourceManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a resource manager that provides convenient access to culture-specific resources at run time.  
+  
+ **Security Note**: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see [Untrusted Data Security Risks](https://docs.com/rick-anderson-1/8710/untrusted-data-security-risks).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager> class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in [satellite assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization.  
+  
+ For more information about creating and managing resources in desktop apps and [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, see the following sections:  
+  
+-   [Desktop Apps](#desktop)  
+  
+    -   [Creating Resources](#creating_resources)  
+  
+    -   [Instantiating a ResourceManager Object](#instantiating)  
+  
+    -   [ResourceManager and Culture-Specific Resources](#CultureSpecific)  
+  
+    -   [Retrieving Resources](#retrieving)  
+  
+    -   [Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions](#exception)  
+  
+    -   [Resource Versioning](#versioning)  
+  
+    -   [\<satelliteassemblies> Configuration File Node](#config)  
+  
+-   [Windows Store Apps](#ws)  
+  
+<a name="desktop"></a>   
+## Desktop Apps  
+ For desktop apps, the<xref:System.Resources.ResourceManager> class retrieves resources from binary resource (.resources) files. Typically, a language compiler or the  [Assembly Linker (AL.exe)](~/docs/framework/tools/al-exe-assembly-linker.md) embeds these resource files in an assembly. You can also use a <xref:System.Resources.ResourceManager> object to retrieve resources directly from a .resources file that is not embedded in an assembly, by calling the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method.  
+  
+> [!CAUTION]
+>  Using standalone .resources files in an ASP.NET app will break XCOPY deployment, because the resources remain locked until they are explicitly released by the <xref:System.Resources.ResourceManager.ReleaseAllResources%2A> method. If you want to deploy resources with your ASP.NET apps, you should compile your .resources files into satellite assemblies.  
+  
+ In a resource-based app, one .resources file contains the resources of the default culture whose resources are used if no culture-specific resources can be found. For example, if an app's default culture is English (en), the English language resources are used whenever localized resources cannot be found for a specific culture, such as English (United States) (en-US) or French (France) (fr-FR). Typically, the resources for the default culture are embedded in the main app assembly, and resources for other localized cultures are embedded in satellite assemblies. Satellite assemblies contain only resources. They have the same root file name as the main assembly and an extension of .resources.dll. For apps whose assemblies are not registered in the global assembly cache, satellite assemblies are stored in an app subdirectory whose name corresponds to the assembly's culture.  
+  
+<a name="creating_resources"></a>   
+### Creating Resources  
+ When you develop a resource-based app, you store resource information in text files (files that have a .txt or .restext extension) or XML files (files that have a .resx extension). You then compile the text or XML files with the  [Resource File Generator (Resgen.exe)](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to create a binary .resources file. You can then embed the resulting .resources file in an executable or library by using a compiler option such as `/resources` for the C# and Visual Basic compilers, or you can embed it in a satellite assembly by using the . If you include a .resx file in your Visual Studio project, Visual Studio handles the compilation and embedding of default and localized resources automatically as part of the build process.  
+  
+ Ideally, you should create resources for every language your app supports, or at least for a meaningful subset of each language. The binary .resources file names follow the naming convention *basename*.*cultureName*.resources, where *basename* is the name of the app or the name of a class, depending on the level of detail you want. The <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> property is used to determine *cultureName*. A resource for the app's default culture should be named *basename*.resources.  
+  
+ For example, suppose that an assembly has several resources in a resource file that has the base name MyResources. These resource files should have names such as MyResources.ja-JP.resources for the Japan (Japanese) culture, MyResources.de.resources for the German culture, MyResources.zh-CHS.resources for the simplified Chinese culture, and MyResources.fr-BE.resources for the French (Belgium) culture. The default resource file should be named MyResources.resources. The culture-specific resource files are commonly packaged in satellite assemblies for each culture. The default resource file should be embedded in the app's main assembly.  
+  
+ Note that  allows resources to be marked as private, but you should always mark them as public so they can be accessed by other assemblies. (Because a satellite assembly contains no code, resources that are marked as private are unavailable to your app through any mechanism.)  
+  
+ For more information about creating, packaging, and deploying resources, see the articles [Creating Resource Files](~/docs/framework/resources/creating-resource-files-for-desktop-apps.md), [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), and [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+  
+<a name="instantiating"></a>   
+### Instantiating a ResourceManager Object  
+ You instantiate a <xref:System.Resources.ResourceManager> object that retrieves resources from an embedded .resources file by calling one of its class constructor overloads. This tightly couples a <xref:System.Resources.ResourceManager> object with a particular .resources file and with any associated localized .resources files in satellite assemblies.  
+  
+ The two most commonly called constructors are:  
+  
+-   <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> looks up resources based on two pieces of information that you supply: the base name of the .resources file, and the assembly in which the default .resources file resides. The base name includes the namespace and root name of the .resources file, without its culture or extension. Note that .resources files that are compiled from the command line typically do not include a namespace name, whereas .resources files that are created in the Visual Studio environment do. For example, if a resource file is named MyCompany.StringResources.resources and the <xref:System.Resources.ResourceManager> constructor is called from a static method named `Example.Main`, the following code instantiates a <xref:System.Resources.ResourceManager> object that can retrieve resources from the .resources file:  
+  
+     [!code-csharp[Conceptual.Resources.Retrieving#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/ctor1.cs#1)]
+     [!code-vb[Conceptual.Resources.Retrieving#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/ctor1.vb#1)]  
+  
+-   <xref:System.Resources.ResourceManager.%23ctor%28System.Type%29> looks up resources in satellite assemblies based on information from a type object. The type's fully qualified name corresponds to the base name of the .resources file without its file name extension. In desktop apps that are created by using the Visual Studio Resource Designer, Visual Studio creates a wrapper class whose fully qualified name is the same as the root name of the .resources file. For example, if a resource file is named MyCompany.StringResources.resources and there is a wrapper class named `MyCompany.StringResources`, the following code instantiates a <xref:System.Resources.ResourceManager> object that can retrieve resources from the .resources file:  
+  
+     [!code-csharp[Conceptual.Resources.Retrieving#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/ctor1.cs#2)]
+     [!code-vb[Conceptual.Resources.Retrieving#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/ctor1.vb#2)]  
+  
+ If the appropriate resources cannot be found, the constructor call creates a valid <xref:System.Resources.ResourceManager> object. However, the attempt to retrieve a resource throws a <xref:System.Resources.MissingManifestResourceException> exception. For information about dealing with the exception, see the [Handling MissingManifestResourceException and MissingSatelliteAssembly Exceptions](#exception) section later in this article.  
+  
+ The following example shows how to instantiate a <xref:System.Resources.ResourceManager> object. It contains the source code for an executable named ShowTime.exe. It also includes the following text file named Strings.txt that contains a single string resource, `TimeHeader`:  
+  
+```  
+TimeHeader=The current time is  
+```  
+  
+ You can use a batch file to generate the resource file and embed it into the executable. Here's the batch file to generate an executable by using the C# compiler:  
+  
+```  
+  
+resgen strings.txt  
+csc ShowTime.cs /resource:strings.resources  
+  
+```  
+  
+ For the Visual Basic compiler, you can use the following batch file:  
+  
+```  
+  
+resgen strings.txt  
+vbc ShowTime.vb /resource:strings.resources  
+  
+```  
+  
+ [!code-csharp[System.Resources.ResourceManager.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/showtime.cs#1)]
+ [!code-vb[System.Resources.ResourceManager.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showtime.vb#1)]  
+  
+<a name="CultureSpecific"></a>   
+### ResourceManager and Culture-Specific Resources  
+ A localized app requires resources to be deployed, as discussed in the article [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). If the assemblies are properly configured, the resource manager determines which resources to retrieve based on the current thread's <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property. (That property also returns the current thread's UI culture.) For example, if an app is compiled with default English language resources in the main assembly and with French and Russian language resources in two satellite assemblies, and the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property is set to fr-FR, the resource manager retrieves the French resources.  
+  
+ You can set the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property explicitly or implicitly. The way you set it determines how the <xref:System.Resources.ResourceManager> object retrieves resources based on culture:  
+  
+-   If you explicitly set the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property to a specific culture, the resource manager always retrieves the resources for that culture, regardless of the user's browser or operating system language. Consider an app that is compiled with default English language resources and three satellite assemblies that contain resources for English (United States), French (France), and Russian (Russia). If the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property is set to fr-FR, the <xref:System.Resources.ResourceManager> object always retrieves the French (France) resources, even if the user's operating system language is not French. Make sure that this is the desired behavior before you set the property explicitly.  
+  
+     In ASP.NET apps, you must set the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property explicitly, because it is unlikely that the setting on the server will match incoming client requests. An ASP.NET app can set the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property explicitly to the user's browser accept language.  
+  
+     Explicitly setting the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property defines the current UI culture for that thread. It does not affect the current UI culture of any other threads in an app.  
+  
+-   You can set the UI culture of all threads in an app domain by assigning a <xref:System.Globalization.CultureInfo> object that represents that culture to the static <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=fullName> property.  
+  
+-   If you do not explicitly set the current UI culture and you do not define a default culture for the current app domain, the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property is set implicitly by the Windows `GetUserDefaultUILanguage` function. This function is provided by the Multilingual User Interface (MUI), which enables the user to set the default language. If the UI language is not set by the user, it defaults to the system-installed language, which is the language of operating system resources.  
+  
+ The following simple "Hello world" example sets the current UI culture explicitly. It contains resources for three cultures: English (United States) or en-US, French (France) or fr-FR, and Russian (Russia) or ru-RU. The en-US resources are contained in a text file named Greetings.txt:  
+  
+```  
+HelloString=Hello world!  
+```  
+  
+ The fr-FR resources are contained in a text file named Greetings.fr-FR.txt:  
+  
+```  
+HelloString=Salut tout le monde!  
+```  
+  
+ The ru-RU resources are contained in a text file named Greetings.ru-RU.txt:  
+  
+```  
+HelloString=Всем привет!  
+```  
+  
+ Here's the source code for the example (Example.vb for the Visual Basic version or Example.cs for the C# version):  
+  
+ [!code-csharp[Conceptual.Resources.CurrentCulture#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.currentculture/cs/example.cs#1)]
+ [!code-vb[Conceptual.Resources.CurrentCulture#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.currentculture/vb/example.vb#1)]  
+  
+ To compile this example, create a batch (.bat) file that contains the following commands and run it from the command prompt. If you're using C#, specify `csc` instead of `vbc` and `Example.cs` instead of `Example.vb`.  
+  
+```  
+resgen Greetings.txt   
+vbc Example.vb /resource:Greetings.resources  
+  
+resgen Greetings.fr-FR.txt  
+Md fr-FR  
+al /embed:Greetings.fr-FR.resources /culture:fr-FR /out:fr-FR\Example.resources.dll  
+  
+resgen Greetings.ru-RU.txt  
+Md ru-RU  
+al /embed:Greetings.ru-RU.resources /culture:ru-RU /out:ru-RU\Example.resources.dll  
+```  
+  
+<a name="retrieving"></a>   
+### Retrieving Resources  
+ You call the <xref:System.Resources.ResourceManager.GetObject%28System.String%29> and <xref:System.Resources.ResourceManager.GetString%28System.String%29> methods to access a specific resource. You can also call the <xref:System.Resources.ResourceManager.GetStream%28System.String%29> method to retrieve non-string resources as a byte array. By default, in an app that has localized resources, these methods return the resource for the culture determined by the current UI culture of the thread that made the call. See the previous section, [ResourceManager and Culture-Specific Resources](#CultureSpecific), for more information about how the current UI culture of a thread is defined. If the resource manager cannot find the resource for the current thread's UI culture, it uses a fallback process to retrieve the specified resource. If the resource manager cannot find any localized resources, it uses the resources of the default culture. For more information about resource fallback rules, see the "Resource Fallback Process" section of the article [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
+  
+> [!NOTE]
+>  If the .resources file specified in the <xref:System.Resources.ResourceManager> class constructor cannot be found, the attempt to retrieve a resource throws a <xref:System.Resources.MissingManifestResourceException> or <xref:System.Resources.MissingSatelliteAssemblyException> exception. For information about dealing with the exception, see the [Handling  MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions](#exception) section later in this topic.  
+  
+ The following example uses the <xref:System.Resources.ResourceManager.GetString%2A> method to retrieve culture-specific resources. It consists of resources compiled from .txt files for the English (en), French (France) (fr-FR), and Russian (Russia) (ru-RU) cultures. The example changes the current culture and current UI culture to English (United States), French (France), Russian (Russia), and Swedish (Sweden). It then calls the <xref:System.Resources.ResourceManager.GetString%2A> method to retrieve the localized string, which it displays along with the current day and month. Notice that the output displays the appropriate localized string except when the current UI culture is Swedish (Sweden). Because Swedish language resources are unavailable, the app instead uses the resources of the default culture, which is English.  
+  
+ The example requires the text-based resource files listed in following table. Each has a single string resource named `DateStart`.  
+  
+|Culture|File name|Resource name|Resource value|  
+|-------------|---------------|-------------------|--------------------|  
+|en-US|DateStrings.txt|`DateStart`|Today is|  
+|fr-FR|DateStrings.fr-FR.txt|`DateStart`|Aujourd'hui, c'est le|  
+|ru-RU|DateStrings.ru-RU.txt|`DateStart`|Сегодня|  
+  
+ Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version of the code).  
+  
+ [!code-csharp[System.Resources.ResourceManager.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/showdate.cs#2)]
+ [!code-vb[System.Resources.ResourceManager.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showdate.vb#2)]  
+  
+ To compile this example, create a batch file that contains the following commands and run it from the command prompt. If you're using C#, specify `csc` instead of `vbc` and `showdate.cs` instead of `showdate.vb`.  
+  
+```  
+  
+resgen DateStrings.txt  
+vbc showdate.vb /resource:DateStrings.resources  
+  
+md fr-FR  
+resgen DateStrings.fr-FR.txt  
+al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
+  
+md ru-RU  
+resgen DateStrings.ru-RU.txt  
+al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  
+  
+```  
+  
+ There are two ways to retrieve the resources of a specific culture other than the current UI culture:  
+  
+-   You can call the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>,  <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29>, or <xref:System.Resources.ResourceManager.GetStream%28System.String%2CSystem.Globalization.CultureInfo%29> method to retrieve a resource for a specific culture. If a localized resource cannot be found, the resource manager uses the resource fallback process to locate an appropriate resource.  
+  
+-   You can call the <xref:System.Resources.ResourceManager.GetResourceSet%2A> method to obtain a <xref:System.Resources.ResourceSet> object that represents the resources for a particular culture. In the method call, you can determine whether the resource manager probes for parent cultures if it is unable to find localized resources, or whether it simply falls back to the resources of the default culture. You can then use the <xref:System.Resources.ResourceSet> methods to access the resources (localized for that culture) by name, or to enumerate the resources in the set.  
+  
+<a name="exception"></a>   
+### Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions  
+ If you try to retrieve a specific resource, but the resource manager cannot find that resource and either no default culture has been defined or the resources of the default culture cannot be located, the resource manager throws a <xref:System.Resources.MissingManifestResourceException> exception if it expects to find the resources in the main assembly or a <xref:System.Resources.MissingSatelliteAssemblyException> if it expects to find the resources in a satellite assembly. Note that the exception is thrown when you call a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A> or <xref:System.Resources.ResourceManager.GetObject%2A>, and not when you instantiate a <xref:System.Resources.ResourceManager> object.  
+  
+ The exception is typically thrown under the following conditions:  
+  
+-   The appropriate resource file or satellite assembly does not exist. If the resource manager expects the app's default resources to be embedded in the main app assembly, they are absent. If the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute indicates that the app's default resources reside in a satellite assembly, that assembly cannot be found. When you compile your app, make sure that resources are embedded in the main assembly or that the necessary satellite assembly is generated and is named appropriately. Its name should take the form *appName*.resources.dll, and it should be located in a directory named after the culture whose resources it contains.  
+  
+-   Your app doesn't have a default or neutral culture defined. Add the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to a source code file or to the project information file (AssemblyInfo.vb for a Visual Basic app or AssemblyInfo.cs for a C# app) file.  
+  
+-   The `baseName` parameter in the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor does not specify the name of a .resources file. The name should include the resource file's fully qualified namespace but not its file name extension. Typically, resource files that are created in Visual Studio include namespace names, but resource files that are created and compiled at the command prompt do not. You can determine the names of embedded .resources files by compiling and running the following utility. This is a console app that accepts the name of a main assembly or satellite assembly as a command-line parameter. It displays the strings that should be provided as the `baseName` parameter so that the resource manager can correctly identify the resource.  
+  
+     [!code-csharp[System.Resources.ResourceManager.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/resourcenames.cs#4)]
+     [!code-vb[System.Resources.ResourceManager.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/resourcenames.vb#4)]  
+  
+ If you are changing the current culture of your application explicitly, you should also remember that the resource manager retrieves a resource set based on the value of the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property, and not the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property. Typically, if you change one value, you should also change the other.  
+  
+<a name="versioning"></a>   
+### Resource Versioning  
+ Because the main assembly that contains an app's default resources is separate from the app's satellite assemblies, you can release a new version of your main assembly without redeploying the satellite assemblies. You use the <xref:System.Resources.SatelliteContractVersionAttribute> attribute to use existing satellite assemblies and instruct the resource manager not to redeploy them with a new version of your main assembly,  
+  
+ For more information about versioning support for satellite assemblies, see the article [Retrieving Resources](~/docs/framework/resources/retrieving-resources-in-desktop-apps.md).  
+  
+<a name="config"></a>   
+### \<satelliteassemblies> Configuration File Node  
+ For executables that are deployed and run from a website (HREF .exe files), the <xref:System.Resources.ResourceManager> object may probe for satellite assemblies over the web, which can hurt your app's performance. To eliminate the performance problem, you can limit this probing to the satellite assemblies that you have deployed with your app. To do this, you create a `<satelliteassemblies>` node in your app's configuration file to specify that you have deployed a specific set of cultures for your app, and that the <xref:System.Resources.ResourceManager> object should not try to probe for any culture that is not listed in that node.  
+  
+> [!NOTE]
+>  The preferred alternative to creating a `<satelliteassemblies>` node is to use the [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b) feature.  
+  
+ In your app's configuration file, create a section similar to the following:  
+  
+```  
+<?xml version ="1.0"?>  
+<configuration>  
+    <satelliteassemblies>  
+        <assembly name="MainAssemblyName, Version=versionNumber, Culture=neutral, PublicKeyToken=null|yourPublicKeyToken">  
+            <culture>cultureName1</culture>  
+            <culture>cultureName2</culture>  
+            <culture>cultureName3</culture>  
+        </assembly>  
+    </satelliteassemblies>  
+</configuration>  
+```  
+  
+ Edit this configuration information as follows:  
+  
+-   Specify one or more `<assembly>` nodes for each main assembly that you deploy, where each node specifies a fully qualified assembly name. Specify the name of your main assembly in place of *MainAssemblyName*, and specify the `Version`, `PublicKeyToken`, and `Culture` attribute values that correspond to your main assembly.  
+  
+     For the `Version` attribute, specify the version number of your assembly. For example, the first release of your assembly might be version number 1.0.0.0.  
+  
+     For the `PublicKeyToken` attribute, specify the keyword `null` if you have not signed your assembly with a strong name, or specify your public key token if you have signed your assembly.  
+  
+     For the `Culture` attribute, specify the keyword `neutral` to designate the main assembly and cause the <xref:System.Resources.ResourceManager> class to probe only for the cultures listed in the `<culture>` nodes.  
+  
+     For more information about fully qualified assembly names, see the article [Assembly Names](~/docs/framework/app-domains/assembly-names.md). For more information about strong-named assemblies, see the article [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/create-and-use-strong-named-assemblies.md).  
+  
+-   Specify one or more `<culture>` nodes with a specific culture name, such as "fr-FR", or a neutral culture name, such as "fr".  
+  
+ If resources are needed for any assembly not listed under the `<satelliteassemblies>` node, the <xref:System.Resources.ResourceManager> class probes for cultures using standard probing rules.  
+  
+<a name="ws"></a>   
+## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
+  
+> [!IMPORTANT]
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+  
+ For [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the<xref:System.Resources.ResourceManager> class retrieves resources from package resource index (PRI) files. A single PRI file (the application package PRI file) contains the resources for both the default culture and any localized cultures. You use the MakePRI utility to create a PRI file from one or more resource files that are in XML resource (.resw) format. For resources that are included in a Visual Studio project, Visual Studio handles the process of creating and packaging the PRI file automatically. You can then use the .NET Framework <xref:System.Resources.ResourceManager> class to access the app's or library's resources.  
+  
+ You can instantiate a <xref:System.Resources.ResourceManager> object for a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app in the same way that you do for a desktop app.  
+  
+ You can then access the resources for a particular culture by passing the name of the resource to be retrieved to the <xref:System.Resources.ResourceManager.GetString%28System.String%29> method. By default, this method returns the resource for the culture determined by the current UI culture of the thread that made the call. You can also retrieve the resources for a specific culture by passing the name of the resource and a <xref:System.Globalization.CultureInfo> object that represents the culture whose resource is to be retrieved to the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method. If the resource for the current UI culture or the specified culture cannot be found, the resource manager uses a UI language fallback list to locate a suitable resource.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use an explicit culture and the implicit current UI culture to obtain string resources from a main assembly and a satellite assembly. For more information, see the "Directory Locations for Satellite Assemblies Not Installed in the Global Assembly Cache" section of the [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) topic.  
+  
+ To run this example:  
+  
+1.  In the app directory, create a file named rmc.txt that contains the following resource strings:  
+  
+    ```  
+  
+    day=Friday  
+    year=2006  
+    holiday="Cinco de Mayo"  
+  
+    ```  
+  
+2.  Use the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.resources resource file from the rmc.txt input file as follows:  
+  
+    ```  
+    resgen rmc.txt  
+    ```  
+  
+3.  Create a subdirectory of the app directory and name it "es-MX". This is the culture name of the satellite assembly that you will create in the next three steps.  
+  
+4.  Create a file named rmc.es-MX.txt in the es-MX directory that contains the following resource strings:  
+  
+    ```  
+  
+    day=Viernes  
+    year=2006  
+    holiday="Cinco de Mayo"  
+  
+    ```  
+  
+5.  Use the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.es-MX.resources resource file from the rmc.es-MX.txt input file as follows:  
+  
+    ```  
+    resgen rmc.es-MX.txt  
+    ```  
+  
+6.  Assume that the filename for this example is rmc.vb or rmc.cs. Copy the following source code into a file. Then compile it and embed the main assembly resource file, rmc.resources, in the executable assembly. If you are using the Visual Basic compiler, the syntax is:  
+  
+    ```  
+    vbc rmc.vb /resource:rmc.resources  
+    ```  
+  
+     The corresponding syntax for the C# compiler is:  
+  
+    ```  
+    csc /resource:rmc.resources rmc.cs  
+    ```  
+  
+7.  Use the  [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) to create a satellite assembly. If the base name of the app is rmc, the satellite assembly name must be rmc.resources.dll. The satellite assembly should be created in the es-MX directory. If es-MX is the current directory, use this command:  
+  
+    ```  
+    al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll   
+    ```  
+  
+8.  Run rmc.exe to obtain and display the embedded resource strings.  
+  
+ [!code-csharp[ResourceManager_Class#1](~/samples/snippets/csharp/VS_Snippets_CLR/ResourceManager_Class/cs/rmc.cs#1)]
+ [!code-vb[ResourceManager_Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ResourceManager_Class/vb/rmc.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ResourceManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is useful only if you write your own class that derives from  the <xref:System.Resources.ResourceManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceManager (Type resourceSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resourceSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceSource" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="resourceSource">A type from which the resource manager derives all information for finding .resources files.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class that looks up resources in satellite assemblies based on information from the specified type object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Desktop Apps  
+ In desktop apps, the resource manager uses the `resourceSource` parameter to load a particular resource file as follows:  
+  
+-   If the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute is not used to indicate that the resources of the default culture reside in a satellite assembly, the resource manager assumes that the resource file for the default culture is found in the same assembly as the type specified by the `resourceSource` parameter.  
+  
+-   The resource manager assumes that the default resource file has the same base name as the type specified by the `resourceSource` parameter.  
+  
+-   The resource manager uses the default <xref:System.Resources.ResourceSet> class to manipulate the resource file.  
+  
+ For example, given a type named MyCompany.MyProduct.MyType, the resource manager looks for a .resources file named MyCompany.MyProduct.MyType.resources in the assembly that defines MyType.  
+  
+ In Visual Studio, the Resource Designer automatically generates code that defines an `internal` (in C#) or `Friend` (in Visual Basic) class whose name is the same as the base name of the .resources file for the default culture. This makes it possible to instantiate a <xref:System.Resources.ResourceManager> object and couple it with a particular set of resources by getting a type object whose name corresponds to the name of the resource, because as long as the class is visible to the compiler, the resources must be as well. For example, if a .resources file is named Resource1, the following statement instantiates a <xref:System.Resources.ResourceManager> object to manage the .resources file named Resource1:  
+  
+ [!code-csharp[System.Resources.ResourceManager.ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/cs/ctor1.cs#2)]  
+  
+ If you're not using Visual Studio, you can create a class with no members whose namespace and name are the same as that of the default .resources file. The example provides an illustration.  
+  
+## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
+  
+> [!IMPORTANT]
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+  
+ In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, <xref:System.Resources.ResourceManager> uses the `resourceSource` parameter to infer the assembly, base name, and the namespace where the resource items can be located within the app's package resource index (PRI) file. For example, given a type named MyCompany.MyProduct.MyType that is defined in `MyAssembly`, the resource manager looks for a resource set identifier named MyAssembly and looks for a scope MyCompany.MyProduct.MyType within that resource set. The resource manager searches for resource items under the default context (current culture, current high contrast setting, and so on) within this scope.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.%23ctor%28System.Type%29> constructor to instantiate a <xref:System.Resources.ResourceManager> object. It consists of resources compiled from .txt files for the English (en), French (France) (fr-FR), and Russian (Russia) (ru-RU) cultures. The example changes the current culture and current UI culture to English (United States), French (France), Russian (Russia), and Swedish (Sweden). It then calls the <xref:System.Resources.ResourceManager.GetString%28System.String%29> method to retrieve the localized string, which displays a greeting that depends on the time of day.  
+  
+ The example requires three text-based resource files, as listed in the following table. Each file includes string resources named `Morning`, `Afternoon`, and `Evening`.  
+  
+|Culture|File name|Resource name|Resource value|  
+|-------------|---------------|-------------------|--------------------|  
+|en-US|GreetingResources.txt|`Morning`|Good morning|  
+|en-US|GreetingResources.txt|`Afternoon`|Good afternoon|  
+|en-US|GreetingResources.txt|`Evening`|Good evening|  
+|fr-FR|GreetingResources.fr-FR.txt|`Morning`|Bonjour|  
+|fr-FR|GreetingResources.fr-FR.txt|`Afternoon`|Bonjour|  
+|fr-FR|GreetingResources.fr-FR.txt|`Evening`|Bonsoir|  
+|ru-RU|GreetingResources.ru-RU.txt|`Morning`|Доброе утро|  
+|ru-RU|GreetingResources.ru-RU.txt|`Afternoon`|Добрый день|  
+|ru-RU|GreetingResources.ru-RU.txt|`Evening`|Добрый вечер|  
+  
+ You can use the following batch file to compile the Visual Basic example and create an executable named Greet.exe. To compile with C#, change the compiler name from `vbc` to `csc` and the file extension from `.vb` to `.cs`.  
+  
+```  
+  
+resgen GreetingResources.txt  
+vbc Greet.vb /resource: GreetingResources.resources  
+  
+md fr-FR  
+resgen GreetingResources.fr-FR.txt  
+al /out:fr-FR\Greet.resources.dll /culture:fr-FR /embed: GreetingResources.fr-FR.resources   
+  
+md ru-RU  
+resgen GreetingResources.ru-RU.txt  
+al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU.resources  
+  
+```  
+  
+ Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version of the code).  
+  
+ [!code-csharp[System.Resources.ResourceManager.Ctor#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/cs/greet.cs#3)]
+ [!code-vb[System.Resources.ResourceManager.Ctor#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/vb/greet.vb#3)]  
+  
+ In addition to defining an app class named `Example`, the source code defines an internal class whose name, `GreetingResources`, is the same as the base name of the resource files. This makes it possible to successfully instantiate a <xref:System.Resources.ResourceManager> object by calling the <xref:System.Resources.ResourceManager.%23ctor%28System.Type%29> constructor.  
+  
+ Notice that the output displays the appropriate localized string except when the current UI culture is Swedish (Sweden), in which case it uses English language resources. Because Swedish language resources are unavailable, the app uses the resources of the default culture, as defined by the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute, instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="resourceSource" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceManager (string baseName, System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">The root name of the resource file without its extension but including any fully qualified namespace name. For example, the root name for the resource file named MyApplication.MyResource.en-US.resources is MyApplication.MyResource.</param>
+        <param name="assembly">The main assembly for the resources.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class that looks up resources contained in files with the specified root name in the given assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Desktop Apps  
+ In desktop apps, the individual culture-specific resource files should be contained in satellite assemblies, and the default culture's resource file should be contained in the main assembly. A satellite assembly is assumed to contain resources for a single culture specified in that assembly's manifest, and is loaded as necessary.  
+  
+> [!NOTE]
+>  To retrieve resources from .resources files directly instead of retrieving them from assemblies, you must call the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method instead to instantiate a <xref:System.Resources.ResourceManager> object.  
+  
+ If the resource file identified by `baseName` cannot be found in `assembly`, the method instantiates a <xref:System.Resources.ResourceManager> object, but the attempt to retrieve a specific resource throws an exception, typically <xref:System.Resources.MissingManifestResourceException>. For information about diagnosing the cause of the exception, see the "Handling the MissingManifestResourceException Exception" section of the <xref:System.Resources.ResourceManager> class topic.  
+  
+## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
+  
+> [!IMPORTANT]
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+  
+ In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the resource manager uses the simple name of the `assembly` parameter to look up a matching resource set in the app's package resource index (PRI) file. The `baseName` parameter is used to look up a resource item within the resource set. For example, the root name for PortableLibrary1.Resource1.de-DE.resources is PortableLibrary1.Resource1.  
+  
+   
+  
+## Examples  
+ The following example uses a simple non-localized "Hello World" app to illustrate the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> constructor. The following shows the contents of a text file named ExampleResources.txt. When the app is compiled, the resource is embedded in the main app assembly.  
+  
+```  
+Greeting=Hello  
+```  
+  
+ The text file can be converted to a binary resource file by using the  at the command prompt as follows:  
+  
+```  
+resgen ExampleResources.txt  
+```  
+  
+ The following example provides the executable code that instantiates a <xref:System.Resources.ResourceManager> object, prompts the user to enter a name, and displays a greeting.  
+  
+ [!code-csharp[System.Resources.ResourceManager.ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/cs/example.cs#1)]
+ [!code-vb[System.Resources.ResourceManager.ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.ctor/vb/example.vb#1)]  
+  
+ It can be compiled by using the following command in Visual Basic:  
+  
+```  
+vbc Example.vb /resource:ExampleResources.resources  
+```  
+  
+ or by using the following command in C#:  
+  
+```  
+csc Example.cs /resource:ExampleResources.resources  
+```  
+  
+ Note that the example retrieves a reference to the assembly that contains the resource file by passing a type defined in that assembly to the `typeof` function (in C#) or the `GetType` function (in Visual Basic) and retrieving the value of its <xref:System.Type.Assembly%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="baseName" /> or <paramref name="assembly" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>This constructor uses the system-provided <see cref="T:System.Resources.ResourceSet" /> implementation. To use a custom resource file format, you should derive from the <see cref="T:System.Resources.ResourceSet" /> class, override the <see cref="M:System.Resources.ResourceSet.GetDefaultReader" /> and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" /> methods, and pass that type to the <see cref="M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly,System.Type)" /> constructor. Using a custom <see cref="T:System.Resources.ResourceSet" /> can be useful for controlling resource caching policy or supporting your own resource file format, but is generally not necessary.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceManager (string baseName, System.Reflection.Assembly assembly, Type usingResourceSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class System.Reflection.Assembly assembly, class System.Type usingResourceSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="usingResourceSet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">The root name of the resource file without its extension but including any fully qualified namespace name. For example, the root name for the resource file named MyApplication.MyResource.en-US.resources is MyApplication.MyResource.</param>
+        <param name="assembly">The main assembly for the resources.</param>
+        <param name="usingResourceSet">The type of the custom <see cref="T:System.Resources.ResourceSet" /> to use. If <see langword="null" />, the default runtime <see cref="T:System.Resources.ResourceSet" /> object is used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class that uses a specified <see cref="T:System.Resources.ResourceSet" /> class to look up resources contained in files with the specified root name in the given assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The individual culture-specific resource files should be contained in satellite assemblies, and the default culture's resource file should be contained in the main assembly. A satellite assembly is assumed to contain resources for a single culture specified in that assembly's manifest, and is loaded as necessary.  
+  
+> [!NOTE]
+>  To retrieve resources from .resources files directly instead of retrieving them from assemblies, you must call the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method instead to instantiate a <xref:System.Resources.ResourceManager> object.  
+  
+ If the resource file identified by `baseName` cannot be found in `assembly`, the method instantiates a <xref:System.Resources.ResourceManager> object, but the attempt to retrieve a specific resource throws an exception, typically <xref:System.Resources.MissingManifestResourceException>. For information about diagnosing the cause of the exception, see the "Handling the MissingManifestResourceException Exception" section of the <xref:System.Resources.ResourceManager> class topic.  
+  
+> [!NOTE]
+>  The `usingResourceSet` parameter is used to support your own resource format, and will commonly be `null`. This is different from the constructor that takes a <xref:System.Type> only.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="usingResourceset" /> is not a derived class of <see cref="T:System.Resources.ResourceSet" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="baseName" /> or <paramref name="assembly" /> parameter is <see langword="null" />.</exception>
+        <block subset="none" type="usage">
+          <para>This constructor lets you specify a <see cref="T:System.Resources.ResourceSet" /> implementation. If you do not want a specific <see cref="T:System.Resources.ResourceSet" /> implementation but would like to use a custom resource file format, you should derive from the <see cref="T:System.Resources.ResourceSet" /> class, override the <see cref="M:System.Resources.ResourceSet.GetDefaultReader" /> and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" /> methods, and pass that type to this constructor.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseName">
+      <MemberSignature Language="C#" Value="public virtual string BaseName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BaseName" />
+      <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.BaseName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root name of the resource files that the <see cref="T:System.Resources.ResourceManager" /> searches for resources.</summary>
+        <value>The root name of the resource files that the <see cref="T:System.Resources.ResourceManager" /> searches for resources.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.BaseName%2A> property reflects the fully qualified namespace name and the root resource name of a resource file, without its culture or file name extension. For example, if an app's default resource file is named `SampleApps.StringResources.resources`, the value of the <xref:System.Resources.ResourceManager.BaseName%2A> property  is "SampleApps.StringResources". If an app's default resource file is named `SampleApps.StringResources.en-US.resources` and is embedded in a satellite assembly, the value of the <xref:System.Resources.ResourceManager.BaseName%2A> property is still "SampleApps.StringResources".  
+  
+> [!IMPORTANT]
+>  The <xref:System.Resources.ResourceManager.BaseName%2A> property value of a resource file that is compiled and embedded from the command line does not include a namespace name unless you explicitly include one when compiling the file. On the other hand, the <xref:System.Resources.ResourceManager.BaseName%2A> property value of a resource file that is compiled and embedded within the Visual Studio environment typically does include the default namespace name.  
+  
+ The <xref:System.Resources.ResourceManager.BaseName%2A> property value is the same as the string passed to the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> or <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%2CSystem.Type%29> constructor when instantiating a <xref:System.Resources.ResourceManager> instance.  
+  
+   
+  
+## Examples  
+ You can determine the names of embedded .resources files by compiling and running the following utility. This is a console app that accepts the name of a main assembly or satellite assembly as a command-line parameter. It displays the strings that should be provided as the `baseName` parameter of the <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%29> or <xref:System.Resources.ResourceManager.%23ctor%28System.String%2CSystem.Reflection.Assembly%2CSystem.Type%29> constructor so that the resource manager can correctly identify the resource.  
+  
+ [!code-csharp[System.Resources.ResourceManager.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/resourcenames.cs#4)]
+ [!code-vb[System.Resources.ResourceManager.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/resourcenames.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseNameField">
+      <MemberSignature Language="C#" Value="protected string BaseNameField;" />
+      <MemberSignature Language="ILAsm" Value=".field family string BaseNameField" />
+      <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.BaseNameField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the root name of the resource files that the <see cref="T:System.Resources.ResourceManager" /> searches for resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.BaseNameField> field is useful only if you write your own class that derives from the <xref:System.Resources.ResourceManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFileBasedResourceManager">
+      <MemberSignature Language="C#" Value="public static System.Resources.ResourceManager CreateFileBasedResourceManager (string baseName, string resourceDir, Type usingResourceSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Resources.ResourceManager CreateFileBasedResourceManager(string baseName, string resourceDir, class System.Type usingResourceSet) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.CreateFileBasedResourceManager(System.String,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="resourceDir" Type="System.String" />
+        <Parameter Name="usingResourceSet" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">The root name of the resources. For example, the root name for the resource file named "MyResource.en-US.resources" is "MyResource".</param>
+        <param name="resourceDir">The name of the directory to search for the resources. <c>resourceDir</c> can be an absolute path or a relative path from the application directory.</param>
+        <param name="usingResourceSet">The type of the custom <see cref="T:System.Resources.ResourceSet" /> to use. If <see langword="null" />, the default runtime <see cref="T:System.Resources.ResourceSet" /> object is used.</param>
+        <summary>Returns a <see cref="T:System.Resources.ResourceManager" /> object that searches a specific directory instead of an assembly manifest for resources.</summary>
+        <returns>A new instance of a resource manager that searches the specified directory instead of an assembly manifest for resources.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a resource manager that retrieves resources from a .resources file that is not embedded in an assembly. You can use this <xref:System.Resources.ResourceManager> object to load resources for an ASP.NET page or to test a <xref:System.Resources.ResourceSet> implementation.  For an example that retrieves resources from a standalone .resources file, see the [Retrieving Resources](~/docs/framework/resources/retrieving-resources-in-desktop-apps.md) article.  
+  
+ This method lets you specify a <xref:System.Resources.ResourceSet> implementation. If you do not want a specific <xref:System.Resources.ResourceSet> implementation, but would like to use a custom resource file format, you should derive from the <xref:System.Resources.ResourceSet> class, override the <xref:System.Resources.ResourceSet.GetDefaultReader%2A> and <xref:System.Resources.ResourceSet.GetDefaultWriter%2A> methods, and pass that type to this constructor.  
+  
+> [!CAUTION]
+>  Using standalone .resources files in an ASP.NET app will break XCOPY deployment, because the resources remain locked until they are explicitly released by the <xref:System.Resources.ResourceManager.ReleaseAllResources%2A> method. If you want to deploy resources with your ASP.NET apps, compile your .resources files into satellite assemblies.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="baseName" /> or <paramref name="resourceDir" /> parameter is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackLocation">
+      <MemberSignature Language="C#" Value="protected System.Resources.UltimateResourceFallbackLocation FallbackLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Resources.UltimateResourceFallbackLocation FallbackLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.FallbackLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Resources.UltimateResourceFallbackLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location from which to retrieve default fallback resources.</summary>
+        <value>One of the enumeration values that specifies where the resource manager can look for fallback resources.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.FallbackLocation%2A> property is useful only if you write your own class that derives from the <xref:System.Resources.ResourceManager> class.  
+  
+ You can use the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to inform the resource manager where to find the default culture for an app: in the main assembly (default) or in a satellite assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNeutralResourcesLanguage">
+      <MemberSignature Language="C#" Value="protected static System.Globalization.CultureInfo GetNeutralResourcesLanguage (System.Reflection.Assembly a);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Globalization.CultureInfo GetNeutralResourcesLanguage(class System.Reflection.Assembly a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetNeutralResourcesLanguage(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="a">The assembly for which to return culture-specific information.</param>
+        <summary>Returns culture-specific information for the main assembly's default resources by retrieving the value of the <see cref="T:System.Resources.NeutralResourcesLanguageAttribute" /> attribute on a specified assembly.</summary>
+        <returns>The culture from the <see cref="T:System.Resources.NeutralResourcesLanguageAttribute" /> attribute, if found; otherwise, the invariant culture.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public virtual object GetObject (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetObject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource to get.</param>
+        <summary>Returns the value of the specified non-string resource.</summary>
+        <returns>The value of the resource localized for the caller's current culture settings. If an appropriate resource set exists but <paramref name="name" /> cannot be found, the method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.GetObject%2A> method is used to retrieve non-string resources. These include values that belong to primitive data types such as <xref:System.Int32> or <xref:System.Double>, bitmaps (such as a <xref:System.Drawing.Bitmap?displayProperty=fullName> object), or custom serialized objects. Typically, the returned object must be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.  
+  
+ The returned resource is localized for the UI culture of the current thread, which is defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the <xref:System.Resources.ResourceManager> falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+> [!CAUTION]
+>  This method can throw more exceptions than are listed. One reason this might occur is if a method that this method calls throws an exception.  For example, a <xref:System.IO.FileLoadException> exception might be thrown if an error was made deploying or installing a satellite assembly, or a <xref:System.Runtime.Serialization.SerializationException> exception might be thrown if a user-defined type throws a user-defined exception when the type is deserialized.  
+  
+## Performance Considerations  
+ If you call the <xref:System.Resources.ResourceManager.GetObject%2A> method multiple times with the same `name` parameter, do not depend on the method returning a reference to the same object with each call. This is because the <xref:System.Resources.ResourceManager.GetObject%2A> method can return a reference to an existing resource object in a cache, or it can reload the resource and return a reference to a new resource object.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.GetObject%28System.String%29> method to deserialize a custom object. The example includes a source code file named UIElements.cs (UIElements.vb if you're using Visual Basic) that defines the following structure named `PersonTable`. This structure is intended to be used by a general table display routine that displays the localized names of table columns. Note that the `PersonTable` structure is marked with the <xref:System.SerializableAttribute> attribute.  
+  
+ [!code-csharp[Conceptual.Resources.Retrieving#6](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/example.cs#6)]
+ [!code-vb[Conceptual.Resources.Retrieving#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example.vb#6)]  
+  
+ The following code from a file named CreateResources.cs (CreateResources.vb for Visual Basic) creates an XML resource file named UIResources.resx that stores a table title and a `PersonTable` object that contains information for an app that is localized for the English language.  
+  
+ [!code-csharp[Conceptual.Resources.Retrieving#7](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/example1.cs#7)]
+ [!code-vb[Conceptual.Resources.Retrieving#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example.vb#7)]  
+  
+ The following code in a source code file named GetObject.cs (GetObject.vb) then retrieves the resources and displays them to the console.  
+  
+ [!code-csharp[Conceptual.Resources.Retrieving#8](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/example2.cs#8)]
+ [!code-vb[Conceptual.Resources.Retrieving#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/example2.vb#8)]  
+  
+ You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.  
+  
+```  
+  
+vbc /t:library UIElements.vb  
+vbc CreateResources.vb /r:UIElements.dll  
+CreateResources  
+  
+resgen UIResources.resx  /r:UIElements.dll  
+vbc GetObject.vb /r:UIElements.dll /resource:UIResources.resources  
+  
+GetObject.exe  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of localized resources has been found, and there are no default culture resources. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public virtual object GetObject (string name, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource to get.</param>
+        <param name="culture">The culture for which the resource is localized. If the resource is not localized for this culture, the resource manager uses fallback rules to locate an appropriate resource.  
+  
+ If this value is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> object is obtained by using the <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" /> property.</param>
+        <summary>Gets the value of the specified non-string resource localized for the specified culture.</summary>
+        <returns>The value of the resource, localized for the specified culture. If an appropriate resource set exists but <paramref name="name" /> cannot be found, the method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29> method is used to retrieve non-string resources. These include values that belong to primitive data types such as <xref:System.Int32> or <xref:System.Double>, bitmaps (such as a <xref:System.Drawing.Bitmap?displayProperty=fullName> object), or custom serialized objects. Typically, the returned object must be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.  
+  
+ The returned resource is localized for the culture that is specified by `culture`, or for the culture that is specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property if `culture` is `null`. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+> [!CAUTION]
+>  This method can throw more exceptions than are listed. One reason this might occur is if a method that this method calls throws an exception.  For example, a <xref:System.IO.FileLoadException> exception might be thrown if an error was made deploying or installing a satellite assembly, or a <xref:System.Runtime.Serialization.SerializationException> exception might be thrown if a user-defined type throws a user-defined exception when the type is deserialized.  
+  
+## Performance Considerations  
+ If you call the <xref:System.Resources.ResourceManager.GetObject%2A> method multiple times with the same `name` parameter, do not depend on the method returning a reference to the same object with each call. This is because the <xref:System.Resources.ResourceManager.GetObject%2A> method can return a reference to an existing resource object in a cache, or it can reload the resource and return a reference to a new resource object.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29> method to deserialize a custom object. The example includes a source code file named NumberInfo.cs (NumberInfo.vb if you're using Visual Basic) that defines the following structure named `Numbers`. This structure is intended to be used by a simple educational app that teaches non-English speaking students to count to ten in English. Note that the `Numbers` class is marked with the <xref:System.SerializableAttribute> attribute.  
+  
+ [!code-csharp[System.Resources.ResourceManager.GetObject#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/cs/numberinfo.cs#1)]
+ [!code-vb[System.Resources.ResourceManager.GetObject#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/numberinfo.vb#1)]  
+  
+ The following source code from a file named CreateResources.cs (CreateResources.vb for Visual Basic) creates XML resource files for the default English language, as well as for the French, Portuguese, and Russian languages.  
+  
+ [!code-csharp[System.Resources.ResourceManager.GetObject#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/cs/createresources.cs#2)]
+ [!code-vb[System.Resources.ResourceManager.GetObject#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/createresources.vb#2)]  
+  
+ The resources are consumed by the following app, which sets the current UI culture to French (France), Portuguese (Brazil), or Russian (Russia). It calls the <xref:System.Resources.ResourceManager.GetObject%28System.String%29> method to get a `Numbers` object that contains localized numbers and the <xref:System.Resources.ResourceManager.GetObject%28System.String%2CSystem.Globalization.CultureInfo%29> method to get a `Numbers` object that contains English language numbers. It then displays odd numbers using the current UI culture and the English language. The source code file is named ShowNumbers.cs (ShowNumbers.vb).  
+  
+ [!code-csharp[System.Resources.ResourceManager.GetObject#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/cs/shownumbers.cs#3)]
+ [!code-vb[System.Resources.ResourceManager.GetObject#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getobject/vb/shownumbers.vb#3)]  
+  
+ You can use the following batch file to build and execute the Visual Basic version of the example. If you're using C#, replace `vbc` with `csc`, and replace the `.vb` extension with `.cs`.  
+  
+```  
+  
+vbc /t:library NumberInfo.vb  
+  
+vbc CreateResources.vb /r:NumberInfo.dll  
+CreateResources  
+  
+resgen NumberResources.resx /r:NumberInfo.dll  
+  
+resgen NumberResources.fr.resx /r:Numberinfo.dll  
+Md fr  
+al /embed:NumberResources.fr.resources /culture:fr /t:lib /out:fr\ShowNumbers.resources.dll  
+  
+resgen NumberResources.pt.resx  /r:Numberinfo.dll  
+Md pt  
+al /embed:NumberResources.pt.resources /culture:pt /t:lib /out:pt\ShowNumbers.resources.dll  
+  
+resgen NumberResources.ru.resx /r:Numberinfo.dll  
+Md ru  
+al /embed:NumberResources.ru.resources /culture:ru /t:lib /out:ru\ShowNumbers.resources.dll  
+  
+vbc ShowNumbers.vb /r:NumberInfo.dll /resource:NumberResources.resources  
+ShowNumbers.exe  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of resources have been found, and there are no default culture resources. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)" /> method is thread safe.</threadsafe>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceFileName">
+      <MemberSignature Language="C#" Value="protected virtual string GetResourceFileName (System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetResourceFileName(class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetResourceFileName(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The culture object for which a resource file name is constructed.</param>
+        <summary>Generates the name of the resource file for the given <see cref="T:System.Globalization.CultureInfo" /> object.</summary>
+        <returns>The name that can be used for a resource file for the given <see cref="T:System.Globalization.CultureInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.GetResourceFileName%2A> method is useful only if you write your own class that derives from the <xref:System.Resources.ResourceManager> class.  
+  
+ This method uses the <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> property as part of the file name for all cultures other than the invariant culture. This method does not look in an assembly's manifest or touch the disk, and is used only to construct a resource file name (suitable for passing to the <xref:System.Resources.ResourceReader> constructor) or a manifest resource blob name.  
+  
+ A derived class can override this method to look for a different extension, such as ".ResX", or a completely different scheme for naming resource files. Note that the method can be used to customize the name of a resource file within a satellite assembly, and not to customize the name of the satellite assembly itself.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResourceSet">
+      <MemberSignature Language="C#" Value="public virtual System.Resources.ResourceSet GetResourceSet (System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.ResourceSet GetResourceSet(class System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="createIfNotExists" Type="System.Boolean" />
+        <Parameter Name="tryParents" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The culture whose resources are to be retrieved.</param>
+        <param name="createIfNotExists">
+          <see langword="true" /> to load the resource set, if it has not been loaded yet; otherwise, <see langword="false" />.</param>
+        <param name="tryParents">
+          <see langword="true" /> to use resource fallback to load an appropriate resource if the resource set cannot be found; <see langword="false" /> to bypass the resource fallback process. (See the Remarks section.)</param>
+        <summary>Retrieves the resource set for a particular culture.</summary>
+        <returns>The resource set for the specified culture.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resource set that is returned represents the resources that are localized for the specified culture. If the resources have not been localized for that culture and `tryParents` is `true`, <xref:System.Resources.ResourceManager.GetResourceSet%2A> uses resource fallback rules to load an appropriate resource. If `tryParents` is `false` and a culture-specific resource set cannot be found, the method returns `null`. For more information about resource fallback, see "The Resource Fallback Process" section in the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) article.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Resources.ResourceManager.GetResourceSet%2A> method to retrieve culture-specific resources for the French (France) culture. It then enumerates all of the resources in the resource set. It contains the source code for an executable named ShowNumbers.exe. It also includes the following two text file that contain the names of numbers. The first, NumberResources.txt, contains the names of numbers from one to ten in the English language:  
+  
+```  
+  
+one=one  
+two=two  
+three=three  
+four=four  
+five=five  
+six=six  
+seven=seven  
+eight=eight  
+nine=nine  
+ten=ten  
+  
+```  
+  
+ The second, NumberResources.fr-FR.txt, contains the names of numbers from one to four in the French language:  
+  
+```  
+  
+one=un  
+two=deux  
+three=trois  
+four=quatre  
+  
+```  
+  
+ You can use a batch file to generate the resource files, embed the English language resource file into the executable, and create a satellite assembly for the French language resources. Here's the batch file to generate an executable by using the Visual Baisc compiler:  
+  
+```  
+  
+resgen NumberResources.txt  
+vbc shownumbers.vb /resource:NumberResources.resources  
+  
+md fr-FR  
+resgen NumberResources.fr-FR.txt  
+al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr-FR.resources  
+```  
+  
+ For the C# compiler, you can use the following batch file:  
+  
+```  
+  
+resgen NumberResources.txt  
+csc shownumbers.cs /resource:NumberResources.resources  
+  
+md fr-FR  
+resgen NumberResources.fr-FR.txt  
+al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr-FR.resources  
+  
+```  
+  
+ [!code-csharp[System.Resources.ResourceManager.GetResourceSet#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.getresourceset/cs/shownumbers.cs#1)]
+ [!code-vb[System.Resources.ResourceManager.GetResourceSet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.getresourceset/vb/shownumbers.vb#1)]  
+  
+ Note that if you change the value of the `createIfNotExists` argument to `false`, the method call returns `null`, since Resource Manager has not already loaded the French language resources.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="culture" /> parameter is <see langword="null" />.</exception>
+        <exception cref="  &#xA;            T:System.Resources.MissingManifestResourceException">
+          <paramref name="tryParents" /> is <see langword="true" />, no usable set of resources has been found, and there are no default culture resources.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSatelliteContractVersion">
+      <MemberSignature Language="C#" Value="protected static Version GetSatelliteContractVersion (System.Reflection.Assembly a);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Version GetSatelliteContractVersion(class System.Reflection.Assembly a) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetSatelliteContractVersion(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="a">The assembly to check for the <see cref="T:System.Resources.SatelliteContractVersionAttribute" /> attribute.</param>
+        <summary>Returns the version specified by the <see cref="T:System.Resources.SatelliteContractVersionAttribute" /> attribute in the given assembly.</summary>
+        <returns>The satellite contract version of the given assembly, or <see langword="null" /> if no version was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about satellite assembly versioning, see the <xref:System.Resources.SatelliteContractVersionAttribute> reference topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Version" /> found in the assembly <paramref name="a" /> is invalid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="a" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.UnmanagedMemoryStream GetStream (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.UnmanagedMemoryStream GetStream(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetStream(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.UnmanagedMemoryStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a resource.</param>
+        <summary>Returns an unmanaged memory stream object from the specified resource.</summary>
+        <returns>An unmanaged memory stream object that represents a resource .</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.GetStream%2A> method takes the name of a resource that is stored as a <xref:System.IO.MemoryStream> object, gets the value of the <xref:System.Object> resource, and returns an <xref:System.IO.UnmanagedMemoryStream> object. It requires that you work directly with a stream of bytes, which you then convert to an object. This method is useful primarily for performance reasons: Retrieving a resource as a byte stream instead of an explicit object can improve performance.  
+  
+ The returned resource is localized for the UI culture of the current thread, which is defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the <xref:System.Resources.ResourceManager> falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.GetStream%28System.String%29> method to retrieve a bitmap that is used in an app's opening splash window. The following source code from a file named CreateResources.cs (for C#) or CreateResources.vb (for Visual Basic) generates a .resx file named AppResources.resx that contains the serialized image. In this case, the image is loaded from a file named SplashScreen.jpg; you can modify the file name to substitute your own image.  
+  
+ [!code-csharp[Conceptual.Resources.Retrieving#4](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/createresources.cs#4)]
+ [!code-vb[Conceptual.Resources.Retrieving#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/createresources.vb#4)]  
+  
+ The following code from a file named GetStream.cs (for C#) or GetStream.vb (for Visual Basic) then retrieves the resource and displays the image in a <xref:System.Windows.Forms.PictureBox?displayProperty=fullName> control.  
+  
+ [!code-csharp[Conceptual.Resources.Retrieving#5](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.retrieving/cs/getstream.cs#5)]
+ [!code-vb[Conceptual.Resources.Retrieving#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.retrieving/vb/getstream.vb#5)]  
+  
+ You can use the following batch file to build the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`..  
+  
+```  
+  
+csc CreateResources.cs  
+CreateResources  
+  
+resgen AppResources.resx  
+  
+csc GetStream.cs /resource:AppResources.resources  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value of the specified resource is not a <see cref="T:System.IO.MemoryStream" /> object.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of resources is found, and there are no default resources. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.UnmanagedMemoryStream GetStream (string name, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.UnmanagedMemoryStream GetStream(string name, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetStream(System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.UnmanagedMemoryStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a resource.</param>
+        <param name="culture">An  object that specifies the culture to use for the resource lookup. If <c>culture</c> is <see langword="null" />, the culture for the current thread is used.</param>
+        <summary>Returns an unmanaged memory stream object from the specified resource, using the specified culture.</summary>
+        <returns>An unmanaged memory stream object that represents a resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.GetStream%2A> method takes the name of a resource that is stored as a <xref:System.IO.MemoryStream> object, gets the value of the <xref:System.Object> resource, and returns an <xref:System.IO.UnmanagedMemoryStream> object. It requires that you work directly with a stream of bytes, which you then convert to an object. This method is useful primarily for performance reasons: Retrieving a resource as a byte stream instead of an explicit object can improve performance.  
+  
+ The returned resource is localized for the culture that is specified by `culture`, or for the culture that is specified by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property if `culture` is `null`. If the resource is not localized for that culture, the resource manager uses fallback rules to load an appropriate resource. If no usable set of localized resources is found, the <xref:System.Resources.ResourceManager> falls back on the default culture's resources. If a resource set for the default culture is not found, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The value of the specified resource is not a <see cref="T:System.IO.MemoryStream" /> object.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of resources is found, and there are no default resources. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public virtual string GetString (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource to retrieve.</param>
+        <summary>Returns the value of the specified string resource.</summary>
+        <returns>The value of the resource localized for the caller's current UI culture, or <see langword="null" /> if <paramref name="name" /> cannot be found in a resource set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Desktop Apps  
+ In desktop apps, the resource that is returned is localized for the UI culture of the current thread, as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. If the resource has not been localized for that culture, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) article. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+> [!CAUTION]
+>  This method can throw more exceptions than are listed. One reason this might occur is if a method that this method calls throws an exception.  For example, a <xref:System.IO.FileLoadException> exception might be thrown if an error was made deploying or installing a satellite assembly, or a <xref:System.Runtime.Serialization.SerializationException> exception might be thrown if a user-defined type throws a user-defined exception when the type is deserialized.  
+  
+## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
+  
+> [!IMPORTANT]
+>  Although the <xref:System.Resources.ResourceManager> class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+  
+ In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the <xref:System.Resources.ResourceManager.GetString%28System.String%29> method returns the value of the `name` string resource, localized for the caller's current UI culture settings. The list of cultures is derived from the operating system's preferred UI language list. If the resource manager cannot match `name`, the method returns `null`.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.GetString%2A> method to retrieve culture-specific resources. It consists of resources compiled from .txt files for the English (en), French (France) (fr-FR), and Russian (Russia) (ru-RU) cultures. The example changes the current culture and current UI culture to English (United States), French (France), Russian (Russia), and Swedish (Sweden). It then calls the <xref:System.Resources.ResourceManager.GetString%2A> method to retrieve the localized string, which it displays along with the current day and month. Notice that the output displays the appropriate localized string except when the current UI culture is Swedish (Sweden). Because Swedish language resources are unavailable, the app instead uses the resources of the default culture, which is English. The example requires the text-based resource files listed in following table. Each has a single string resource named `DateStart`.  
+  
+|Culture|File name|Resource name|Resource value|  
+|-------------|---------------|-------------------|--------------------|  
+|en-US|DateStrings.txt|`DateStart`|Today is|  
+|fr-FR|DateStrings.fr-FR.txt|`DateStart`|Aujourd'hui, c'est le|  
+|ru-RU|DateStrings.ru-RU.txt|`DateStart`|Сегодня|  
+  
+ You can use the following batch file to compile the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`.  
+  
+```  
+resgen DateStrings.txt  
+csc showdate.cs /resource:DateStrings.resources  
+  
+md fr-FR  
+resgen DateStrings.fr-FR.txt  
+al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
+  
+md ru-RU  
+resgen DateStrings.ru-RU.txt  
+al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  
+```  
+  
+ Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version).  
+  
+ [!code-csharp[System.Resources.ResourceManager.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/showdate.cs#2)]
+ [!code-vb[System.Resources.ResourceManager.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showdate.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The value of the specified resource is not a string.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of resources has been found, and there are no resources for the default culture. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetString(System.String)" /> method is thread safe.</threadsafe>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public virtual string GetString (string name, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource to retrieve.</param>
+        <param name="culture">An object that represents the culture for which the resource is localized.</param>
+        <summary>Returns the value of the string resource localized for the specified culture.</summary>
+        <returns>The value of the resource localized for the specified culture, or <see langword="null" /> if <paramref name="name" /> cannot be found in a resource set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Desktop Apps  
+ In desktop apps, if `culture` is `null`, the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method uses the current UI culture obtained from the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
+  
+ The resource that is returned is localized for the culture specified by the `culture` parameter. If the resource has not been localized for `culture`, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) topic. If no usable set of resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+  
+ The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
+  
+> [!CAUTION]
+>  This method can throw more exceptions than are listed. One reason this might occur is if a method that this method calls throws an exception.  For example, a <xref:System.IO.FileLoadException> exception might be thrown if an error was made deploying or installing a satellite assembly, or a <xref:System.Runtime.Serialization.SerializationException> exception might be thrown if a user-defined type throws a user-defined exception when the type is deserialized.  
+  
+## [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] Apps  
+  
+> [!IMPORTANT]
+>  Although the <xref:System.Resources.ResourceManager>class is supported in [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, we do not recommend its use. Use this class only when you develop [!INCLUDE[net_portable](~/includes/net-portable-md.md)] projects that can be used with [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps. To retrieve resources from [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, use the [Windows.ApplicationModel.Resources.ResourceLoader](http://go.microsoft.com/fwlink/p/?LinkId=238182) class instead.  
+  
+ In [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method returns the value of the `name` string resource, localized for the culture specified by the `culture` parameter. If the resource is not localized for the `culture` culture, the lookup uses the entire [!INCLUDE[win8](~/includes/win8-md.md)] language fallback list, and stops after looking in the default culture. If the resource manager cannot match `name`, the method returns `null`.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method to retrieve culture-specific resources. The example's default culture is English (en), and it includes satellite assemblies for the French (France) (fr-FR) and Russian (Russia) (ru-RU) cultures. The example changes the current culture and current UI culture to Russian (Russia) before calling <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29>. It then calls the <xref:System.Resources.ResourceManager.GetString%2A> method and the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> method and passes <xref:System.Globalization.CultureInfo> objects that represent the French (France) and Swedish (Sweden) cultures to each method. In the output, the month and day of the month as well as the string that precedes them appear in French, because the <xref:System.Resources.ResourceManager.GetString%2A> method is able to retrieve the French language resource. However, when the Swedish (Sweden) culture is used, the month and day of the month appear in Swedish, although the string that precedes them is in English. This is because the resource manager cannot find localized Swedish language resources, so it returns a resource for the default English culture instead.  
+  
+ The example requires the text-based resource files listed in following table. Each has a single string resource named `DateStart`.  
+  
+|Culture|File name|Resource name|Resource value|  
+|-------------|---------------|-------------------|--------------------|  
+|en-US|DateStrings.txt|`DateStart`|Today is|  
+|fr-FR|DateStrings.fr-FR.txt|`DateStart`|Aujourd'hui, c'est le|  
+|ru-RU|DateStrings.ru-RU.txt|`DateStart`|Сегодня|  
+  
+ You can use the following batch file to compile the Visual Basic example. To compile in C#, change `vbc` to `csc`, and change the extension of the source code file from `.vb` to `.cs`.  
+  
+```  
+resgen DateStrings.txt  
+vbc showdate.vb /resource:DateStrings.resources  
+  
+md fr-FR  
+resgen DateStrings.fr-FR.txt  
+al /out:fr-FR\Showdate.resources.dll /culture:fr-FR /embed:DateStrings.fr-FR.resources   
+  
+md ru-RU  
+resgen DateStrings.ru-RU.txt  
+al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.resources  
+```  
+  
+ Here's the source code for the example (ShowDate.vb for the Visual Basic version or ShowDate.cs for the C# version).  
+  
+ [!code-csharp[System.Resources.ResourceManager.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.resources.resourcemanager.class/cs/showdate2.cs#3)]
+ [!code-vb[System.Resources.ResourceManager.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.resources.resourcemanager.class/vb/showdate2.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The value of the specified resource is not a string.</exception>
+        <exception cref="T:System.Resources.MissingManifestResourceException">No usable set of resources has been found, and there are no resources for a default culture. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the "Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions" section in the <see cref="T:System.Resources.ResourceManager" /> class topic.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <threadsafe>The <see cref="M:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)" /> method is thread safe.</threadsafe>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderVersionNumber">
+      <MemberSignature Language="C#" Value="public static readonly int HeaderVersionNumber;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 HeaderVersionNumber" />
+      <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.HeaderVersionNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the version of resource file headers that the current implementation of <see cref="T:System.Resources.ResourceManager" /> can interpret and produce.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCase">
+      <MemberSignature Language="C#" Value="public virtual bool IgnoreCase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
+      <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.IgnoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the resource manager allows case-insensitive resource lookups in the <see cref="M:System.Resources.ResourceManager.GetString(System.String)" /> and <see cref="M:System.Resources.ResourceManager.GetObject(System.String)" /> methods.</summary>
+        <value>
+          <see langword="true" /> to ignore case during resource lookup; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the <xref:System.Resources.ResourceManager.IgnoreCase%2A> property is `false`, a resource with the name "Resource" is not equivalent to the resource with the name "resource". If <xref:System.Resources.ResourceManager.IgnoreCase%2A> is `true`, a resource with the name "Resource" is equivalent to the resource with the name "resource". Note, however, that when <xref:System.Resources.ResourceManager.IgnoreCase%2A> is `true`, the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName> and <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName> methods perform case-insensitive string comparisons by using the invariant culture. The advantage is that results of case-insensitive string comparisons performed by these methods are the same on all computers regardless of culture. The disadvantage is that the results are not consistent with the casing rules of all cultures.  
+  
+ For example, the Turkish alphabet has two versions of the character I: one with a dot and one without a dot. In Turkish, the character I (Unicode 0049) is considered the uppercase version of a different character ı (Unicode 0131). The character i (Unicode 0069) is considered the lowercase version of yet another character İ (Unicode 0130). According to these casing rules, a case-insensitive string comparison of the characters i (Unicode 0069) and I (Unicode 0049) should fail for the culture "tr-TR" (Turkish in Turkey). However, because the comparison is conducted by using the casing rules of the invariant culture if <xref:System.Resources.ResourceManager.IgnoreCase%2A> is `true`, this comparison succeeds.  
+  
+> [!NOTE]
+>  For performance reasons, it is best to always specify the correct case for your resource names. Setting <xref:System.Resources.ResourceManager.IgnoreCase%2A> to `true` can cause a significant increase in working set and a significant decline in performance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalGetResourceSet">
+      <MemberSignature Language="C#" Value="protected virtual System.Resources.ResourceSet InternalGetResourceSet (System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Resources.ResourceSet InternalGetResourceSet(class System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.InternalGetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Resources.ResourceSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="createIfNotExists" Type="System.Boolean" />
+        <Parameter Name="tryParents" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The culture object to look for.</param>
+        <param name="createIfNotExists">
+          <see langword="true" /> to load the resource set, if it has not been loaded yet; otherwise, <see langword="false" />.</param>
+        <param name="tryParents">
+          <see langword="true" /> to check parent <see cref="T:System.Globalization.CultureInfo" /> objects if the resource set cannot be loaded; otherwise, <see langword="false" />.</param>
+        <summary>Provides the implementation for finding a resource set.</summary>
+        <returns>The specified resource set.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Resources.MissingManifestResourceException">The main assembly does not contain a .resources file, which is required to look up a resource.</exception>
+        <exception cref="T:System.ExecutionEngineException">There was an internal error in the runtime.</exception>
+        <exception cref="T:System.Resources.MissingSatelliteAssemblyException">The satellite assembly associated with <paramref name="culture" /> could not be located.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+        <block subset="none" type="overrides">
+          <para>This method completes all the work necessary to find a resource set, and can be recursive and reentrant. In other words, this method might load an assembly and trigger an <see cref="E:System.AppDomain.AssemblyLoad" /> event, which then calls back into a <see cref="T:System.Resources.ResourceManager" /> object that has not been completely initialized. To avoid taking extra locks, this method is not thread safe. The <see cref="M:System.Resources.ResourceManager.GetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />, <see cref="M:System.Resources.ResourceManager.GetString(System.String)" />, and <see cref="M:System.Resources.ResourceManager.GetObject(System.String)" /> methods do all the necessary synchronization.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="MagicNumber">
+      <MemberSignature Language="C#" Value="public static readonly int MagicNumber;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 MagicNumber" />
+      <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.MagicNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Holds the number used to identify resource files.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value is set to 0xBEEFCACE. The first four bytes of the system default file format contain a 32-bit signed integer in little-endian format (see <xref:System.Text.Encoding>).  
+  
+ If the <xref:System.Resources.ResourceManager.MagicNumber> is found, the bytes following it will be a version number for a <xref:System.Resources.ResourceManager> header, followed by a number indicating how many bytes should be skipped to get past this header. The next number indicates the version of the <xref:System.Resources.ResourceManager> that created the header, followed by version specific information.  
+  
+ The version number for the current implementation is one. The next bytes are a length-prefixed string containing the name of an <xref:System.Resources.IResourceReader>, which can read this file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MainAssembly">
+      <MemberSignature Language="C#" Value="protected System.Reflection.Assembly MainAssembly;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.Assembly MainAssembly" />
+      <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.MainAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the main assembly that contains the resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Resources.ResourceManager.MainAssembly> field is useful only if you write your own class that derives from the <xref:System.Resources.ResourceManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseAllResources">
+      <MemberSignature Language="C#" Value="public virtual void ReleaseAllResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseAllResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.ReleaseAllResources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tells the resource manager to call the <see cref="M:System.Resources.ResourceSet.Close" /> method on all <see cref="T:System.Resources.ResourceSet" /> objects and release all resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will shrink the working set in a running app. Any future resource lookups on this <xref:System.Resources.ResourceManager> object will be as expensive as the first lookup, because the resource manager will have to search and load resources again. This can be useful in some complex threading scenarios, where creating a new <xref:System.Resources.ResourceManager> object is the appropriate behavior.  
+  
+> [!NOTE]
+>  Starting with the .NET Framework version 2.0, the <xref:System.Resources.ResourceManager.ReleaseAllResources%2A> method is not thread safe with respect to <xref:System.Resources.ResourceManager.GetObject%2A>, <xref:System.Resources.ResourceManager.GetString%2A>, and <xref:System.Resources.ResourceManager.GetStream%2A> operations. The advantage of this change is a performance improvement for multiple threads that access resources. However, if you call the <xref:System.Resources.ResourceManager.ReleaseAllResources%2A> method in one thread while simultaneously getting a resource in another thread, the get operation can throw an <xref:System.ObjectDisposedException> exception.  
+  
+ You can also use this method in situations where the managed instances for the resources created by the current resource manager have to be released deterministically, without waiting for the resource manager to go completely out of scope and be garbage collected.  
+  
+> [!NOTE]
+>  Calling this method does not unload satellite assemblies. To unload satellite assemblies, use the <xref:System.AppDomain.Unload%2A> method .  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceSets">
+      <MemberSignature Language="C#" Value="protected System.Collections.Hashtable ResourceSets;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable ResourceSets" />
+      <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.ResourceSets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("call InternalGetResourceSet instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains a <see cref="T:System.Collections.Hashtable" /> that returns a mapping from cultures to <see cref="T:System.Resources.ResourceSet" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceSetType">
+      <MemberSignature Language="C#" Value="public virtual Type ResourceSetType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ResourceSetType" />
+      <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.ResourceSetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the resource set object that the resource manager uses to construct a <see cref="T:System.Resources.ResourceSet" /> object.</summary>
+        <value>The type of the resource set object that the resource manager uses to construct a <see cref="T:System.Resources.ResourceSet" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

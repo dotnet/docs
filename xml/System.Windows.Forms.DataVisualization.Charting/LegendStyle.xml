@@ -1,0 +1,73 @@
+<Type Name="LegendStyle" FullName="System.Windows.Forms.DataVisualization.Charting.LegendStyle">
+  <TypeSignature Language="C#" Value="public enum LegendStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the legend style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.LegendStyle> enumeration represents a legend style, and is used in conjunction with the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.LegendStyle%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="Column" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendStyle Column = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend items are displayed using one column and multiple rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="Row" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendStyle Row = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend items are displayed using multiple columns and one row.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="Table" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendStyle Table = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendStyle.Table" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend items are displayed using multiple columns and multiple rows.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

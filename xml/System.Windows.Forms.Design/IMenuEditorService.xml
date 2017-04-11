@@ -1,0 +1,134 @@
+<Type Name="IMenuEditorService" FullName="System.Windows.Forms.Design.IMenuEditorService">
+  <TypeSignature Language="C#" Value="public interface IMenuEditorService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMenuEditorService" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IMenuEditorService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the menu editing service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most of the implementation of this service is provided by the host environment.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMenu">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Menu GetMenu ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Menu GetMenu() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.GetMenu" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Menu</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the current menu.</summary>
+        <returns>The current <see cref="T:System.Windows.Forms.Menu" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsActive() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.IsActive" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the current menu is active.</summary>
+        <returns>
+          <see langword="true" /> if the current menu is currently active; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageFilter">
+      <MemberSignature Language="C#" Value="public bool MessageFilter (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MessageFilter(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.MessageFilter(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Allows the editor service to intercept Win32 messages.</summary>
+        <returns>
+          <see langword="true" /> if the message is for the control; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMenu">
+      <MemberSignature Language="C#" Value="public void SetMenu (System.Windows.Forms.Menu menu);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMenu(class System.Windows.Forms.Menu menu) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetMenu(System.Windows.Forms.Menu)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="menu" Type="System.Windows.Forms.Menu" />
+      </Parameters>
+      <Docs>
+        <param name="menu">The <see cref="T:System.Windows.Forms.Menu" /> to render.</param>
+        <summary>Sets the specified menu visible on the form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The menu is painted at the top of a form's window frame and can be directly edited by the user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelection">
+      <MemberSignature Language="C#" Value="public void SetSelection (System.Windows.Forms.MenuItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelection(class System.Windows.Forms.MenuItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IMenuEditorService.SetSelection(System.Windows.Forms.MenuItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Windows.Forms.MenuItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Windows.Forms.MenuItem" /> to set as the currently selected menu item.</param>
+        <summary>Sets the selected menu item of the current menu.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

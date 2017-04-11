@@ -1,0 +1,77 @@
+<Type Name="ColorMap" FullName="System.Drawing.Imaging.ColorMap">
+  <TypeSignature Language="C#" Value="public sealed class ColorMap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColorMap extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMap" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a map for converting colors. Several methods of the <see cref="T:System.Drawing.Imaging.ImageAttributes" /> class adjust image colors by using a color-remap table, which is an array of <see cref="T:System.Drawing.Imaging.ColorMap" /> structures. Not inheritable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class defines a mapping between existing colors and the new colors to which they are to be converted. When the map is applied, any pixel of the old color is converted to the new color.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ColorMap.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.ColorMap" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color NewColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color NewColor" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMap.NewColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new <see cref="T:System.Drawing.Color" /> structure to which to convert.</summary>
+        <value>The new <see cref="T:System.Drawing.Color" /> structure to which to convert.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color OldColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color OldColor" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMap.OldColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the existing <see cref="T:System.Drawing.Color" /> structure to be converted.</summary>
+        <value>The existing <see cref="T:System.Drawing.Color" /> structure to be converted.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

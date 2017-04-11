@@ -1,0 +1,47 @@
+---
+title: "ISymUnmanagedBinder3 Interface | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ISymUnmanagedBinder3"
+apilocation: 
+  - "diasymreader.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ISymUnmanagedBinder3 Interface"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ISymUnmanagedBinder3 interface [.NET Framework debugging]"
+ms.assetid: 37527a84-4b03-4f08-8135-94d898599089
+caps.latest.revision: 7
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+# ISymUnmanagedBinder3 Interface
+Extends the symbol binder interface. Obtain this interface by calling `QueryInterface` on an object that implements the `ISymUnmanagedBinder` interface.  
+  
+> [!IMPORTANT]
+>  It is a security risk to open a program database (PDB) file from an untrusted source.  
+  
+## Methods  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[GetReaderFromCallback Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-getreaderfromcallback-method.md)|Allows the user to implement or supply via callback either an `IID_IDiaReadExeAtRVACallback` or `IID_IDiaReadExeAtOffsetCallback` to obtain the Debug directory information from memory|  
+  
+## Requirements  
+ **Header:** CorSym.idl, CorSym.h  
+  
+## See Also  
+ [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)   
+ [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)   
+ [ISymUnmanagedBinder2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-interface.md)

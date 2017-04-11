@@ -68,7 +68,7 @@ A time zone-aware application often requires the presence of a particular time z
   
  Because the <xref:System.Resources.ResXResourceWriter.Generate%2A?displayProperty=fullName> method adds complete header information to a .NET XML resource file, it cannot be used to add resources to an existing file. The example handles this by checking for the SerializedTimeZones.resx file and, if it exists, storing all of its resources other than the two serialized time zones to a generic <xref:System.Collections.Generic.Dictionary%602> object. The existing file is then deleted and the existing resources are added to a new SerializedTimeZones.resx file. The serialized time zone data is also added to this file.  
   
- The key (or **Name**) fields of resources should not contain embedded spaces. The <xref:System.String.Replace%28System.String%2CSystem.String%29> method is called to remove all embedded spaces in the time zone identifiers before they are assigned to the resource file.  
+ The key (or **Name**) fields of resources should not contain embedded spaces. The <xref:System.String.Replace%28System.String%29> method is called to remove all embedded spaces in the time zone identifiers before they are assigned to the resource file.  
   
 ## Compiling the Code  
  This example requires:  

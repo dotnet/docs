@@ -33,7 +33,7 @@ Ordinarily, when you perform date and time arithmetic using <xref:System.DateTim
   
 3.  Perform the arithmetic operation on the UTC time.  
   
-4.  Convert the time from UTC to the original time's associated time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method.  
+4.  Convert the time from UTC to the original time's associated time zone by calling the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%29?displayProperty=fullName> method.  
   
 ## Example  
  The following example adds two hours and thirty minutes to March 9, 2008, at 1:30 A.M. Central Standard Time. The time zone's transition to daylight saving time occurs thirty minutes later, at 2:00 A.M. on March 9, 2008. Because the example follows the four steps listed in the previous section, it correctly reports the resulting time as 5:00 A.M. on March 9, 2008.  

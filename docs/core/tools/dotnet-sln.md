@@ -4,7 +4,7 @@ description: The dotnet-sln command provides a convenient option to add, remove,
 keywords: dotnet-sln, CLI, CLI command, .NET Core
 author: spboyer
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 04/11/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -22,9 +22,9 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 
 ```
 dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
-dotnet sln [<SOLUTION_NAME>] add **/**.{csproj,fsproj}
+dotnet sln [<SOLUTION_NAME>] add <GLOBBING_PATTERN>
 dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
-dotnet sln [<SOLUTION_NAME>] remove **/**
+dotnet sln [<SOLUTION_NAME>] remove <GLOBBING_PATTERN>
 dotnet sln [<SOLUTION_NAME>] list
 dotnet sln [-h|--help]
 ```
@@ -37,15 +37,13 @@ The `dotnet sln` command provides a convenient way to add, remove, and list proj
 
 `add <PROJECT> ...`
 
-`add **/*.{csproj,fsproj}`
-
 Adds a project or multiple projects to the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 `remove <PROJECT> ...`
 
-`remove **/*`
+`remove **/*.csproj`
 
-Remove a project or multiple projects from the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
+Removes a C# project or multiple C# projects from the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
 `list`
 
@@ -69,26 +67,22 @@ Add a C# project to a solution:
 
 `dotnet sln todo.sln add todo-app/todo-app.csproj`
 
-Add an F# project to a solution:
-
-`dotnet sln todo.sln add todo-app/todo-app.fsproj`
-
-Add a solution in the current directory:
-
-`dotnet sln add todo-app.csproj`
-
 Remove a project from a solution:
 
 `dotnet sln todo.sln remove todo-app/todo-app.csproj`
 
+Add multiple C# projects to a solution:
+
+`dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj`
+
+Remove multiple C# projects to a solution:
+
+`dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj`
+
 Add multiple C# projects to a solution using a globbing pattern:
 
-`dotnet sln todo.sln add **/**/*.csproj`
+`dotnet sln todo.sln add **/.csproj`
 
-Add multiple F# projects to a solution using a globbing pattern:
+Remove multiple C# projects from a solution using a globbing pattern:
 
-`dotnet sln todo.sln add **/**/*.fsproj`
-
-Add multiple C# and F# projects to a solution using a globbing pattern:
-
-`dotnet sln todo.sln add **/**/*.{csproj,fsproj}`
+`dotnet sln todo.sln remove **/.csproj`

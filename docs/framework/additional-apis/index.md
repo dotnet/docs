@@ -1,7 +1,7 @@
 ---
-title: "Additional Class Libraries and APIs | Microsoft Docs"
+title: "Additional class libraries and APIs | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "04/12/2017"
 ms.prod: ".net-framework-oob"
 ms.reviewer: ""
 ms.suite: ""
@@ -20,38 +20,38 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-# Additional Class Libraries and APIs
+
+# Additional class libraries and APIs
+
 The .NET Framework is constantly evolving and in order to improve cross-platform development or to introduce new functionality early to our customers, we release new features out of band (OOB). This topic lists the OOB projects that we provide documentation for.  
   
- In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the
- [CodePagesEncodingProvider Class](CodePagesEncodingProvider.xml) class  makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
+In addition, some libraries target specific platforms or implementations of the .NET Framework. For example, the [CodePagesEncodingProvider Class](https://msdn.microsoft.com/library/system.text.codepagesencodingprovider.aspx) class makes code page encodings available to UWP apps developed using the .NET Framework. This topic lists these libraries as well.  
   
-## OOB projects  
+## OOB projects
   
-|Project|Description|  
-|-------------|-----------------|  
-|[System.Collections.Immutable](System.Collections.Immutable.xml)|Provides collections that are thread safe and guaranteed to never change their contents.|  
-|[System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833)|Provides a message handler for [HttpClient Class](HttpClient.xml) based on the WinHTTP interface of Windows.|  
-<!-- todo: fix link -->
-|`System.Numerics.Vectors1`|Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
-<!-- restore this when the doc is found 
-|[TPL Dataflow Library](../Topic/TPL%20Dataflow%20Library.md)|The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications.|  
--->
+| Project | Description |  
+| ------- | ----------- |  
+| [System.Collections.Immutable](https://msdn.microsoft.com/library/system.collections.immutable.aspx) | Provides collections that are thread safe and guaranteed to never change their contents. |
+| [System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833) | Provides a message handler for <xref:System.Net.Http.HttpClient%2A> based on the WinHTTP interface of Windows. |
+| <xref:System.Numerics%2A> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
+| [TPL Dataflow Library](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |  
 
-## Platform-specific libraries  
+## Platform-specific libraries
   
-|Project|Description|  
-|-------------|-----------------|  
-|<xref:System.Text.CodePagesEncodingProvider>|Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform.|  
+| Project | Description |  
+| ------- | ----------- |  
+| [System.Text.CodePagesEncodingProvider](https://msdn.microsoft.com/library/system.text.codepagesencodingprovider.aspx) | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |  
   
 ## Private APIs  
- These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  
+
+These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  
   
-|API Name|  
-|--------------|  
-|[s_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md)|  
-|[DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md)|  
-|[DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md)|  
+| API Name |  
+| -------- |  
+| [s_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md) |  
+| [DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md) |  
+| [DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md) |  
   
-## See Also  
- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
+## See also
+
+[The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)

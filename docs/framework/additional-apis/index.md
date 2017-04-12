@@ -32,8 +32,8 @@ In addition, some libraries target specific platforms or implementations of the 
 | Project | Description |  
 | ------- | ----------- |  
 | [System.Collections.Immutable](https://msdn.microsoft.com/library/system.collections.immutable.aspx) | Provides collections that are thread safe and guaranteed to never change their contents. |
-| [System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833) | Provides a message handler for <xref:System.Net.Http.HttpClient%2A> based on the WinHTTP interface of Windows. |
-| <xref:System.Numerics%2A> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
+| [System.Net.Http.WinHttpHandler](http://go.microsoft.com/fwlink/p/?LinkId=624833) | Provides a message handler for <xref:System.Net.Http.HttpClient> based on the WinHTTP interface of Windows. |
+| <xref:System.Numerics> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
 | [TPL Dataflow Library](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |  
 
 ## Platform-specific libraries

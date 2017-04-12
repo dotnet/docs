@@ -73,7 +73,7 @@ namespace new_in_7
         #region 31_AsyncOptimizedValueTask
         public ValueTask<int> CachedFunc()
         {
-            return (cache) ? new ValueTask<int>(cacheResult) : new ValueTask<int>(loadCache());
+            return (cache) ? new ValueTask<int>(cacheResult) : new ValueTask<int>(LoadCache());
         }
         private bool cache = false;
         private int cacheResult;

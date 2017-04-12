@@ -4,7 +4,7 @@ description: Learn how you can extend the Command-line Interface (CLI) tools.
 keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/10/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -33,14 +33,14 @@ The CLI tools can be extended in three main ways:
   PATH-based tools are good for general, cross-project tools that are usable on a single machine. 
 
 The three extensibility mechanisms outlined above are not exclusive. You can use one, or all, or a combination of them. Which one to pick 
-depends largely on what's the goal you are trying to achieve with your extension.
+depends largely on the goal you are trying to achieve with your extension.
 
 ## Per-project based extensibility
 Per-project tools are [framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) that are distributed as NuGet packages. Tools are 
 only available in the context of the project that references them and for which they are restored. Invocation outside 
 
-of the context of the project (for example, outside of the directory that contains the project) will fail as the command will 
-not be able to be found.
+of the context of the project (for example, outside of the directory that contains the project) will fail because the command will 
+cannot be found.
 
 These tools are perfect for build servers, since nothing outside of the project file is needed. The build process 
 runs restore for the project it builds and tools will be available. Language projects, such as F#, are also in this 
@@ -54,7 +54,7 @@ category.
 Consuming these tools requires you to add a `<DotNetCliToolReference>` element to your project file for each tool you want to use. Inside the `<DotNetCliToolReference>` element, you reference the package in which the tool resides and specify the version you need. After running [`dotnet restore`](dotnet-restore.md), the tool and its dependencies are restored. 
 
 For tools that need to load the build output of the project for execution, there is usually another dependency which is 
-listed under the regular dependencies in the project file. Since CLI uses MSBuild as its build engine, it's recommended that these parts of the tool are written as custom MSBuild [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) and [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks) since that way they can take part in the overall build process. Also, they can get any and all data easily that is produced via the build, such as the location of the output files, the current configuration being built, etc. All this information becomes a set of MSBuild properties that can be read from any target. You can see how to add a custom target using NuGet later in this document. 
+listed under the regular dependencies in the project file. Since CLI uses MSBuild as its build engine, we recommend that these parts of the tool be written as custom MSBuild [targets](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets) and [tasks](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks), since they can then take part in the overall build process. Also, they can get any and all data easily that is produced via the build, such as the location of the output files, the current configuration being built, etc. All this information becomes a set of MSBuild properties that can be read from any target. You can see how to add a custom target using NuGet later in this document. 
 
 Let's review an example of adding a simple tools-only tool to a simple project. Given an example command called 
 `dotnet-api-search` that allows you to search through the NuGet packages for the specified 
@@ -78,8 +78,8 @@ The `<DotNetCliToolReference>` element is structured in a similar way as the `<P
 
 ### Building tools
 As mentioned, tools are just portable console applications. You build tools as you would build any other console application. 
-After you build it, you use [`dotnet pack`](dotnet-pack.md) command to create a NuGet package (.nupkg file) that contains 
-your code, information about its dependencies and so on. You can give any name to the package, but the 
+After you build it, you use the [`dotnet pack`](dotnet-pack.md) command to create a NuGet package (.nupkg file) that contains 
+your code, information about its dependencies, and so on. You can give any name to the package, but the 
 application inside, the actual tool binary, has to conform to the convention of `dotnet-<command>` in order for `dotnet` 
 to be able to invoke it. 
 
@@ -99,7 +99,7 @@ You can find richer examples and different combinations of this in the [.NET Cor
 You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.1/TestAssets/TestPackages) in the same repo. 
 
 ### Custom targets
-NuGet has had the capability to [package custom MSBuild targets and props files](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package) for a while. With the move of the .NET Core CLI tools to use MSBuild, the same mechanism of extensibility now applies to .NET Core projects. You would use this type of extensibility when you want to extend the build process, or when you want to access any of the artifacts in the build process, such as generated files, or you want to inspect the configuration under which the build is invoked, etc.
+NuGet has the capability to [package custom MSBuild targets and props files](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). With the move of the .NET Core CLI tools to use MSBuild, the same mechanism of extensibility now applies to .NET Core projects. You would use this type of extensibility when you want to extend the build process, or when you want to access any of the artifacts in the build process, such as generated files, or you want to inspect the configuration under which the build is invoked, etc.
 
 In the following example, you can see the target's project file using the `csproj` syntax. This instructs the [`dotnet pack`](dotnet-pack.md) command what to package, placing the targets files as well as the assemblies into the *build* folder inside the package. Notice the `<ItemGroup>` element that has the `Label` property set to `dotnet pack instructions`. 
 
@@ -143,7 +143,7 @@ In the following example, you can see the target's project file using the `cspro
 
 Consuming custom targets is done by providing a `<PackageReference>` that points to the package and its version inside the project that is being extended. Unlike the tools, the custom targets package does get included into the consuming project's dependency closure. 
 
-Using the custom target depends solely on how you configure it. Since it's a MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the `dotnet msbuild /t:<target-name>` command. 
+Using the custom target depends solely on how you configure it. Since it's an MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the `dotnet msbuild /t:<target-name>` command. 
 
 However, if you want to provide a better user experience to your users, you can combine per-project tools and custom targets. In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required [`dotnet msbuild`](dotnet-msbuild.md) invocation that would execute the target. You can see a sample of this kind of synergy on the [MVP Summit 2016 Hackathon samples](https://github.com/dotnet/MVPSummitHackathon2016) repo in the [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) project. 
 
@@ -154,10 +154,10 @@ tool exists. If you need it on another machine, you would have to deploy it.
 
 This pattern of CLI toolset extensibility is very simple. As covered in the [.NET Core CLI overview](index.md), `dotnet` driver 
 can run any command that is named after the `dotnet-<command>` convention. The default resolution logic first 
-probes several locations and finally falls to the system PATH. If the requested command exists in the system PATH 
+probes several locations and finally falls back to the system PATH. If the requested command exists in the system PATH 
 and is a binary that can be invoked, `dotnet` driver will invoke it. 
 
-The binary can be pretty much anything that the operating system can execute. On Unix systems, this means anything that 
+The file must be executable. On Unix systems, this means anything that 
 has the execute bit set via `chmod +x`. On Windows, you can use *cmd* files. 
 
 Let's take a look at the very simple implementation of a "Hello World" tool. We will use both `bash` and `cmd` on Windows. 

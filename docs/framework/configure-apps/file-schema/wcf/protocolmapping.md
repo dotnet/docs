@@ -64,5 +64,5 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ## See Also  
- [System.ServiceModel.Configuration.ProtocolMappingSection](assetId:///System.ServiceModel.Configuration.ProtocolMappingSection?qualifyHint=False&amp;autoUpgrade=True)   
- [System.ServiceModel.Configuration.ProtocolMappingElement](assetId:///System.ServiceModel.Configuration.ProtocolMappingElement?qualifyHint=False&amp;autoUpgrade=True)
+ <!-- TODO: review code entity reference <xref:System.ServiceModel.Configuration.ProtocolMappingSection>  -->   
+ <!-- TODO: review code entity reference <xref:System.ServiceModel.Configuration.ProtocolMappingElement>  -->

@@ -189,7 +189,7 @@ manager: "wpickett"
   
 <a name="options"></a>   
 ## Regular Expression Options  
- You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) constants. This quick reference lists only inline options. For more information about inline and [RegexOptions](assetId:///T:System.Text.RegularExpressions.RegexOptions?qualifyHint=False&autoUpgrade=True) options, see the article [Regular Expression Options](regular-expression-options.md).  
+ You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more <xref:System.Text.RegularExpressions.RegexOptions> constants. This quick reference lists only inline options. For more information about inline and <xref:System.Text.RegularExpressions.RegexOptions> options, see the article [Regular Expression Options](regular-expression-options.md).  
   
  You can specify an inline option in two ways:  
   
@@ -220,8 +220,8 @@ manager: "wpickett"
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
 ## See Also  
- [System.Text.RegularExpressions](assetId:///N:System.Text.RegularExpressions?qualifyHint=True&autoUpgrade=True)   
- [Regex](assetId:///T:System.Text.RegularExpressions.Regex?qualifyHint=False&autoUpgrade=True)   
+ <xref:System.Text.RegularExpressions?displayProperty=fullName>   
+ <xref:System.Text.RegularExpressions.Regex>   
  [Regular Expressions](regular-expressions.md)   
  [Regular Expression Classes](the-regular-expression-object-model.md)   
  [Regular Expression Examples](regular-expression-examples.md)   

@@ -93,9 +93,9 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`System.Xml.`<br /><br /> `IgnoreEmptyKeySequences`|Controls whether empty key sequences in compound keys are ignored by XSD schema validation. For more information, see [Mitigation: XML Schema Validation](../Topic/Mitigation:%20XML%20Schema%20Validation.md).|.NET Framework 4.6|  
   
 > [!NOTE]
->  Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) [AppContext.SetSwitch](assetId:///M:System.AppContext.SetSwitch(System.String,System.Boolean)?qualifyHint=True&autoUpgrade=True) method.  
+>  Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=fullName> method.  
   
- Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the [AppContext](assetId:///T:System.AppContext?qualifyHint=False&autoUpgrade=True) class.  
+ Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.  
   
 ## Example  
  The following example uses the `AppContextSwitchOverrides` element to define a single application  compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.  

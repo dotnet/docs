@@ -32,7 +32,7 @@ Along the way, you'll also see some C# language features:
 * How to process incoming HTTP Requests and generate the HTTP Response
 * How to work with nullable value types
 
-You can retrieve the code from our [GitHub repository.](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice)
+You can [view or download the sample app](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Why Docker?
 

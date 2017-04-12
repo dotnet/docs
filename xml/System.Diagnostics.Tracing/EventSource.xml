@@ -2477,7 +2477,7 @@ class AnotherEventSource : EventSource {
   
         fixed (char* arg1Ptr = arg1)  
         {  
-            EventData* dataDesc = stackalloc EventProvider.EventData[4];  
+            EventData* dataDesc = stackalloc EventData[4];  
   
             dataDesc[0].DataPointer = (IntPtr)arg1Ptr;  
             dataDesc[0].Size = (arg1.Length + 1) * 2; // Size in bytes, including a null terminator.   
@@ -2488,7 +2488,7 @@ class AnotherEventSource : EventSource {
             dataDesc[3].DataPointer = (IntPtr)(&arg4);  
             dataDesc[3].Size = 4;  
   
-            WriteEventCore(eventId, 4, (IntPtr)dataDesc);  
+            WriteEventCore(eventId, 4, dataDesc);  
         }  
     }  
 }  

@@ -75,7 +75,7 @@ dotnet-sdk-ubuntu.16.04-x64.1.0.1.deb               # SDK
 
 #### Proposed name format change
 
-`[product]-[major].[minor].[patch]-[previewN]-[optional build #]-[rid]-[component].[file ext]`
+`[product]-[major].[minor].[patch]-[preview-N]-[optional build #]-[rid]-[component].[file ext]`
 
 The proposed format change mitigates the issues highlighted above in a few ways.
 

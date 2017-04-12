@@ -33,7 +33,7 @@ manager: "wpickett"
 The fact that later .NET Framework 4.x versions are in-place updates to earlier versions means that you *cannot* install an earlier version listed in the table if a later version is already installed. For example, you cannot install the .NET Framework 4.6 on a Windows 10 November Update system, since the .NET Framework 4.6.1 is preinstalled on it.    
   
 > [!NOTE]
->  For information on the .NET Framework 3.5, see [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/dotnet-35-windows-10.md).  
+>  For information on the .NET Framework 3.5, see [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/net-framework-3-5-on-windows-8-plus.md).  
   
  Use the following table for quick links, or read further for details. To view the system requirements for the .NET Framework before installation, see [System Requirements](~/docs/framework/get-started/system-requirements.md). For help with troubleshooting, see [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md).  
   
@@ -208,5 +208,5 @@ The fact that later .NET Framework 4.x versions are in-place updates to earlier 
 ## See Also  
  [Deployment Guide for Developers](~/docs/framework/deployment/deployment-guide-for-developers.md)   
  [Deployment Guide for Administrators](~/docs/framework/deployment/guide-for-administrators.md)   
- [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/dotnet-35-windows-10.md)   
+ [Installing the .NET Framework 3.5 on Windows 8 and later versions](~/docs/framework/install/net-framework-3-5-on-windows-8-plus.md)   
  [Troubleshooting](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

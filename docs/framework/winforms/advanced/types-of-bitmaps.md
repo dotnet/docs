@@ -2,7 +2,7 @@
 title: "Types of Bitmaps | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -31,8 +31,8 @@ helpviewer_keywords:
   - "Exchangeable Image File"
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Types of Bitmaps

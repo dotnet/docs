@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: b1437b4a-48aa-4546-834a-d6d3ab015fe1
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Filter on Element Names (LINQ to XML) (Visual Basic)

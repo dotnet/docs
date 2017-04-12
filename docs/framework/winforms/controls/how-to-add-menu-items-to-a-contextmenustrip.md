@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "context menus, adding menu items"
 ms.assetid: 1ec14776-3ea2-4752-bd22-4fae0fd19e1a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Menu Items to a ContextMenuStrip

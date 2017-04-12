@@ -2,7 +2,7 @@
 title: "How to: Animate an Object Along a Path (Matrix Animation with Offset Accumulation) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "matrix animation with offset accumulation"
 ms.assetid: 1bca90ef-9832-4128-8ed6-62908e7ec146
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate an Object Along a Path (Matrix Animation with Offset Accumulation)

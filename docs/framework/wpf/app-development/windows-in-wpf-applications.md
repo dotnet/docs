@@ -2,7 +2,7 @@
 title: "Windows in WPF Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "WPF application, windows"
 ms.assetid: dc091d04-68cf-4592-9695-75fda037db76
 caps.latest.revision: 67
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows in WPF Applications

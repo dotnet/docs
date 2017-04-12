@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Windows Forms MonthCalendar Control&#39;s Appearance

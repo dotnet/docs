@@ -2,7 +2,7 @@
 title: "GridSplitter | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "content [WPF], GridSplitter control"
 ms.assetid: 98b007e8-ea6b-41b5-8120-ca7134e8239f
 caps.latest.revision: 61
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # GridSplitter

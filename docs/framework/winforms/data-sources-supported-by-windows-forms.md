@@ -2,7 +2,7 @@
 title: "Data Sources Supported by Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "data [Windows Forms], data providers"
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Sources Supported by Windows Forms

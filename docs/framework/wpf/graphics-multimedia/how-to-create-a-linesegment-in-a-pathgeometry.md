@@ -2,7 +2,7 @@
 title: "How to: Create a LineSegment in a PathGeometry | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "graphics [WPF], line segments"
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a LineSegment in a PathGeometry

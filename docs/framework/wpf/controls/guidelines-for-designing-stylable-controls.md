@@ -2,7 +2,7 @@
 title: "Guidelines for Designing Stylable Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "controls, style design"
 ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Guidelines for Designing Stylable Controls

@@ -2,7 +2,7 @@
 title: "Drawing Objects Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DrawingGroup objects"
 ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drawing Objects Overview

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "objects [Visual Basic], type determining"
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

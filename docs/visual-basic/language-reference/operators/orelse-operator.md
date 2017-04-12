@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "OrElse operator [Visual Basic]"
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

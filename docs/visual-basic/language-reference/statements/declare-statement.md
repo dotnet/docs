@@ -38,8 +38,8 @@ helpviewer_keywords:
   - "Function procedures, declaring"
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

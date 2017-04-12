@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Else keyword [Visual Basic]"
 ms.assetid: 154dd3d3-137b-4de6-a5aa-699b18dfb639
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

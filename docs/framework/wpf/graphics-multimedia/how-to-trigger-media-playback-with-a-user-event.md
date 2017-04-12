@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "multimedia, synchronizing media playback with events"
 ms.assetid: c4dbe632-6e7f-4d7f-9df5-98737a758bc3
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Trigger Media Playback with a User Event

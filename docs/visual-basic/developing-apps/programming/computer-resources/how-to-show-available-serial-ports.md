@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ports, serial port availability"
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

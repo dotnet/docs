@@ -2,7 +2,7 @@
 title: "IEnumRAWINPUTDEVICE | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "IEnumRAWINPUTDEVICE interface"
 ms.assetid: 88c8b389-a48b-46b9-b895-8ed7b1e26fea
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # IEnumRAWINPUTDEVICE

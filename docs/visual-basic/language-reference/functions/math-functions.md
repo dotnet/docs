@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Atn function"
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

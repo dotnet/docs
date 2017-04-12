@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add ActiveX Controls to Windows Forms

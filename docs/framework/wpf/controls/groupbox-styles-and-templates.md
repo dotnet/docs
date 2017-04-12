@@ -2,7 +2,7 @@
 title: "GroupBox Styles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "templates [WPF], GroupBox"
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # GroupBox Styles and Templates

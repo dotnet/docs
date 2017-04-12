@@ -2,7 +2,7 @@
 title: "How to: Enable Tab Characters in a TextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "tab characters, enabling"
 ms.assetid: 14b1b064-61f7-4958-be63-88d85b868d03
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Tab Characters in a TextBox Control

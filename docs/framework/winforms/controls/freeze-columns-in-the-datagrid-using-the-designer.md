@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: 87412dd2-478f-4751-af87-dafc591fc215
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Freeze Columns in the Windows Forms DataGridView Control Using the Designer

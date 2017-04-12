@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "dates, converting"
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

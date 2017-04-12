@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "truncation, integer division"
 ms.assetid: 4b0ee347-950c-45c9-8e23-54bc85df208e
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

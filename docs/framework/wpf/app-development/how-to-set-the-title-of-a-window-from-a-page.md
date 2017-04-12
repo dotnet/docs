@@ -2,7 +2,7 @@
 title: "How to: Set the Title of a Window from a Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "pages, setting window title from"
 ms.assetid: fecf0d19-3eb6-4f8c-a44f-ff1b6f2b34b3
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Title of a Window from a Page

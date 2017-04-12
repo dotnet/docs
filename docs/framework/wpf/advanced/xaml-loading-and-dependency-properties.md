@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "loading XML data"
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Loading and Dependency Properties

@@ -2,7 +2,7 @@
 title: "How to: Define a Rectangle Using a RectangleGeometry | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "RectangleGeometry class"
 ms.assetid: e40b8a8e-54b8-416b-a9f2-be6dca9fdf0b
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Define a Rectangle Using a RectangleGeometry

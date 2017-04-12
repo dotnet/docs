@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: 477a7398-5971-4de3-b24c-f49f32bdb28a
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "managed HTML DOM, accessing"
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Access the Managed HTML Document Object Model

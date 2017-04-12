@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 9d2572fd-27d4-426c-b079-16854cb9ec7d
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find an Attribute of the Parent (XPath-LINQ to XML) (Visual Basic)

@@ -2,7 +2,7 @@
 title: "Dependency Properties Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "resources, references to"
 ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Dependency Properties Overview

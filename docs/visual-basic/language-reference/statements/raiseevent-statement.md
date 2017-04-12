@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "event handlers, connecting events to"
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

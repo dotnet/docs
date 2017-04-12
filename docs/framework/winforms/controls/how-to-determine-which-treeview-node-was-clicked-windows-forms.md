@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], determining node clicked"
 ms.assetid: 06a4a191-d918-42af-9f49-956c93eff261
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine Which TreeView Node Was Clicked (Windows Forms)

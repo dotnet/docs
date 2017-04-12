@@ -2,7 +2,7 @@
 title: "Base Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "base elements"
 ms.assetid: 55034aa5-3c1d-442a-8293-f4692d8ea6ae
 caps.latest.revision: 70
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Base Elements

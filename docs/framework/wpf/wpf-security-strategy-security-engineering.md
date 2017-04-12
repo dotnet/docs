@@ -2,7 +2,7 @@
 title: "WPF Security Strategy - Security Engineering | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "Security Development Lifecycle (SDL), source editing tools"
 ms.assetid: 0fc04394-4e47-49ca-b0cf-8cd1161d95b9
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Security Strategy - Security Engineering

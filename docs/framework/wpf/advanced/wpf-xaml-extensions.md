@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "WPF Namespace"
 ms.assetid: 5e1d60e8-9403-47d0-98e4-b49aec871ee7
 caps.latest.revision: 52
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF XAML Extensions

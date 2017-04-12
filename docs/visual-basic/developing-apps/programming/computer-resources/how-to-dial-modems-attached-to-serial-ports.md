@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

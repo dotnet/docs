@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "application event logs, output filtering"
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

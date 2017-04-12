@@ -2,7 +2,7 @@
 title: "How to: Use a Color Matrix to Transform a Single Color | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "color matrices, using"
 ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Color Matrix to Transform a Single Color

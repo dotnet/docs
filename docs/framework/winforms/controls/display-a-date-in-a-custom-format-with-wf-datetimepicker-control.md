@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "dates, displaying in DateTimePicker control"
 ms.assetid: 39767691-2d2b-46b6-a663-b7901e581a6e
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control

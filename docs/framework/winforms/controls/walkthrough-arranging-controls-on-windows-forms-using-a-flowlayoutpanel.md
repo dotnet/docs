@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "layout [Windows Forms], walkthroughs"
 ms.assetid: a1744323-0316-49c2-992e-ebfc0a976b85
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel

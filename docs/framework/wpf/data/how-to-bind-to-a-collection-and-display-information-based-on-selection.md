@@ -2,7 +2,7 @@
 title: "How to: Bind to a Collection and Display Information Based on Selection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "data binding, binding to collections"
 ms.assetid: 952a7d76-dd29-49e5-86f5-32c4530e70eb
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind to a Collection and Display Information Based on Selection

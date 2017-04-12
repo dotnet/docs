@@ -2,7 +2,7 @@
 title: "ForwardTranslateAccelerator Function (WPF Unmanaged API Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ apilocation:
   - "PresentationHost_v0400.dll"
 ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ForwardTranslateAccelerator Function (WPF Unmanaged API Reference)

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLog_ReservedSpaceEncroached"
 ms.assetid: 95832e70-4ecc-47aa-90c1-f35c4d468151
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

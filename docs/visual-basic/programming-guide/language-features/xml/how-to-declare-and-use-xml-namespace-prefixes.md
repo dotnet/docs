@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XML namespace prefixes [Visual Basic]"
 ms.assetid: 4292e1d9-eb8f-49d6-a3aa-f05a5fbe24d1
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

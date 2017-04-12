@@ -2,7 +2,7 @@
 title: "Walkthrough: Creating Direct3D9 Content for Hosting in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 286e98bc-1eaa-4b5e-923d-3490a9cca5fc
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Creating Direct3D9 Content for Hosting in WPF

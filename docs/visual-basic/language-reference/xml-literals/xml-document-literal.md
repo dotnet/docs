@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "document literal [Visual Basic]"
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

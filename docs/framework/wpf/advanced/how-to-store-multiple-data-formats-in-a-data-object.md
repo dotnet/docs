@@ -2,7 +2,7 @@
 title: "How to: Store Multiple Data Formats in a Data Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], storing multiple formats"
 ms.assetid: 941ace29-29c4-4c26-b75b-ea7d06aa0d69
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Store Multiple Data Formats in a Data Object

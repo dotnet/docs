@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "folders, finding"
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

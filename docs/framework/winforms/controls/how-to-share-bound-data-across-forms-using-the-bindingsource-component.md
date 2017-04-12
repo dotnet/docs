@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BindingSource, using with multiple forms"
 ms.assetid: a1a49630-db9c-4485-b888-1f62a373a4f7
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Share Bound Data Across Forms Using the BindingSource Component

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Merging, automatic menu"
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Up Automatic Menu Merging for MDI Applications

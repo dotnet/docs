@@ -2,7 +2,7 @@
 title: "ThemeDictionary Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "XAML, ThemeDictionary markup extension"
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ThemeDictionary Markup Extension

@@ -2,7 +2,7 @@
 title: "How to: Get or Set Canvas Positioning Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Canvas control, setting positioning properties"
 ms.assetid: 1636b950-2b5a-4507-8a10-c5034cc58b1c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get or Set Canvas Positioning Properties

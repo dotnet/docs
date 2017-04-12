@@ -2,7 +2,7 @@
 title: "Expander | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "collapsing headers [WPF]"
 ms.assetid: e9dfc8d6-4555-47b9-a4de-0acd64f8770a
 caps.latest.revision: 64
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Expander

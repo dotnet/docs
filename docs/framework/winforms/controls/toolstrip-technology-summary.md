@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "menus [Windows Forms], technology summary"
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStrip Technology Summary

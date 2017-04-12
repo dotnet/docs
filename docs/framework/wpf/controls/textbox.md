@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TextBox control [WPF]"
 ms.assetid: 2512a277-e9d8-4de8-a12f-2bd95e8e7b60
 caps.latest.revision: 74
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TextBox

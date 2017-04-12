@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-libpath compiler option [Visual Basic]"
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

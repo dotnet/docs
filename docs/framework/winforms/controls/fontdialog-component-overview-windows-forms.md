@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "FontDialog component [Windows Forms], about FontDialog component"
 ms.assetid: daf46e57-1b4b-4b7a-bad0-b50ca7ba75dc
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FontDialog Component Overview (Windows Forms)

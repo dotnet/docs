@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "late binding"
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

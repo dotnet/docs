@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], hiding columns"
 ms.assetid: bcd0dd96-6687-4c48-b0e1-d5287b93ac91
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Delete or Hide Columns in the Windows Forms DataGrid Control

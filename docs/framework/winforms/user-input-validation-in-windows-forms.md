@@ -2,7 +2,7 @@
 title: "User Input Validation in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "validating user input, Windows Forms"
 ms.assetid: 4ec07681-1dee-4bf9-be5e-718f635a33a1
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # User Input Validation in Windows Forms

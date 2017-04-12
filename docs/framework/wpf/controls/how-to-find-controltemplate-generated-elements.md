@@ -2,7 +2,7 @@
 title: "How to: Find ControlTemplate-Generated Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "finding ControlTemplate elements"
 ms.assetid: d7b25447-ceff-4bb4-9be5-fd7c40ef00af
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Find ControlTemplate-Generated Elements

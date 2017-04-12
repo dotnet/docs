@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "displaying unbound data"
 ms.assetid: f234fa40-5a13-4209-930e-7c5f81e86e66
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

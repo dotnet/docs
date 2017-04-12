@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

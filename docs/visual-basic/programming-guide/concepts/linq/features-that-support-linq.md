@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "LINQ [Visual Basic], features supporting LINQ"
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
 caps.latest.revision: 51
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

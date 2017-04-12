@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "collections, standard types"
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute

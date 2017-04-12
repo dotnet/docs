@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "subitems"
 ms.assetid: e465f044-cde7-4fd9-a687-788a73a0f554
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Subitems in Columns with the Windows Forms ListView Control

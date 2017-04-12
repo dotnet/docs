@@ -2,11 +2,10 @@
 title: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47

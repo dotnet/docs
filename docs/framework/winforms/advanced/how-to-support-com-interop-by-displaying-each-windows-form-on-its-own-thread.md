@@ -2,7 +2,7 @@
 title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, interop"
 ms.assetid: a9e04765-d2de-4389-a494-a9a6d07aa6ee
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread

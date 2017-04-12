@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "numeric expressions"
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

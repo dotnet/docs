@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "ListCount property"
 ms.assetid: 7bcaea58-1cfa-46db-9baf-b75a69d8f9ec
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # When to Use a Windows Forms ComboBox Instead of a ListBox

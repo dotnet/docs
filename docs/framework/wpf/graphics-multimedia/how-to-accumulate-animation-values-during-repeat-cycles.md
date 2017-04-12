@@ -2,7 +2,7 @@
 title: "How to: Accumulate Animation Values During Repeat Cycles | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "animation, accumulating values across repeating cycles"
 ms.assetid: 548df369-c7cc-4dab-b569-08b95ced2e7e
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Accumulate Animation Values During Repeat Cycles

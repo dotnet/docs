@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], binding to DBNull values"
 ms.assetid: 96494e6f-5f40-4f83-af97-bbd7192c2af8
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind Windows Forms Controls to DBNull Database Values

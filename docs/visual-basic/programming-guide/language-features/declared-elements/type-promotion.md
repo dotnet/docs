@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "declared elements, visibility"
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

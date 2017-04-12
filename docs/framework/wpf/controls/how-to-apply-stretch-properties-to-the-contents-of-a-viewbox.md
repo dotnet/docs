@@ -2,7 +2,7 @@
 title: "How to: Apply Stretch Properties to the Contents of a Viewbox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Viewbox control"
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Stretch Properties to the Contents of a Viewbox

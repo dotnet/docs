@@ -2,7 +2,7 @@
 title: "Events How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "events, how-to topics"
 ms.assetid: 00463181-36eb-4be0-bfa2-452854cce642
 caps.latest.revision: 75
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Events How-to Topics

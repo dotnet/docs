@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "cells, customizing in DataGridView control"
 ms.assetid: 9b7dc7b6-5ce6-4566-9949-902f74f17a81
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance

@@ -2,7 +2,7 @@
 title: "How to: Animate in a ControlTemplate | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ControlTemplates, animating within"
 ms.assetid: 97abb5d9-4dc7-4085-a011-54bd8bcb497b
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate in a ControlTemplate

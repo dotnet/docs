@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Web pages, displaying in applications"
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WebBrowser Control Overview

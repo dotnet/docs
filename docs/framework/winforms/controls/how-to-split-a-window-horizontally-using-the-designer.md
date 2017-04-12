@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "windows, splitting horizontally"
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Split a Window Horizontally Using the Designer

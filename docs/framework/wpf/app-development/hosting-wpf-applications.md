@@ -2,7 +2,7 @@
 title: "Hosting WPF Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "hosting applications [WPF]"
 ms.assetid: 1f73067d-c60a-4e9a-b513-c817ee7da3a1
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Hosting WPF Applications

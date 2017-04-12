@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "localization, Windows Forms layout"
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Design a Windows Forms Layout that Responds Well to Localization

@@ -2,7 +2,7 @@
 title: "How to: Use Resources in Localizable Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "localizable applications"
 ms.assetid: 08539ad6-7fca-4f34-b82b-ff439e11dfa7
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Resources in Localizable Applications

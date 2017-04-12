@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "cells, changing DataGrid cell values"
 ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control

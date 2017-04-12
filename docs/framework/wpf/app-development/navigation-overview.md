@@ -2,7 +2,7 @@
 title: "Navigation Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "hyperlinks [WPF]"
 ms.assetid: 86ad2143-606a-4e34-bf7e-51a2594248b8
 caps.latest.revision: 69
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Navigation Overview

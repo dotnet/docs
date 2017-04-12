@@ -2,7 +2,7 @@
 title: "Mage.exe (Manifest Generation and Editing Tool) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Mage.exe"
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
 caps.latest.revision: 68
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Mage.exe (Manifest Generation and Editing Tool)

@@ -2,7 +2,7 @@
 title: "How to: Apply a Transform to an Element When an Event Occurs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "LayoutTransform property"
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply a Transform to an Element When an Event Occurs

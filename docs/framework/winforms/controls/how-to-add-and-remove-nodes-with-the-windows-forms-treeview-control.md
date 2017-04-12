@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], adding nodes"
 ms.assetid: de1b82db-4905-449a-9f59-af271a6b6673
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Nodes with the Windows Forms TreeView Control

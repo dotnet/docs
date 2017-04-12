@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "UI Automation [WPF], using with custom controls"
 ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # UI Automation of a WPF Custom Control

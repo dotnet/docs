@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: d450a556-a134-4261-b011-44e399660894
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Language-Integrated Axes in Visual Basic (LINQ to XML)

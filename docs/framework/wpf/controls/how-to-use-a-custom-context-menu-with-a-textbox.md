@@ -2,7 +2,7 @@
 title: "How to: Use a Custom Context Menu with a TextBox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TextBox control, custom content menus"
 ms.assetid: 842d3cd5-6fa0-4be4-8d90-6c7466213b1c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Custom Context Menu with a TextBox

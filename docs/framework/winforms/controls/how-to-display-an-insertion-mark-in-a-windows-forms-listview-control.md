@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "insertion marks"
 ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display an Insertion Mark in a Windows Forms ListView Control

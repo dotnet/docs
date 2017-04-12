@@ -2,11 +2,10 @@
 title: "Implementing a Dispose method | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 

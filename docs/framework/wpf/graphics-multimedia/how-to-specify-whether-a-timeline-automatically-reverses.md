@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Timelines, AutoReverse property"
 ms.assetid: 1648dd90-1bee-409a-ac69-ac729867f557
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify Whether a Timeline Automatically Reverses

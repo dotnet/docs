@@ -2,7 +2,7 @@
 title: "Walkthrough: Hosting a WPF Clock in Win32 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "interoperability [WPF], Win32"
 ms.assetid: 555e55a7-0851-4ec8-b1c6-0acba7e9b648
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting a WPF Clock in Win32

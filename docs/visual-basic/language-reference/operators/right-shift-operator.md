@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "right shift operators"
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "formatting [Windows Forms]"
 ms.assetid: b66057a6-5983-4864-b4e7-8cbc88a7010c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using the Designer with the Windows Forms DataGridView Control

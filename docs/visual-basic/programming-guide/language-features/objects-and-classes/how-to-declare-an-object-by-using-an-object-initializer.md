@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Video How tos, Visual Basic"
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

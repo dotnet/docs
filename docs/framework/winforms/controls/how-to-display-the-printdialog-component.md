@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], displaying print dialog box"
 ms.assetid: 745a8db7-0526-4b21-b09d-18e13ed32014
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display the PrintDialog Component

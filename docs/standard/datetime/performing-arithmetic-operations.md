@@ -2,11 +2,10 @@
 title: "Performing arithmetic operations with dates and times | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 

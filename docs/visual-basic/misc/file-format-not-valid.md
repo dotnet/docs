@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrID321"
 ms.assetid: d41e6286-6e4a-463b-87fa-e140723e5c7e
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

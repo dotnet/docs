@@ -2,7 +2,7 @@
 title: "How to: Bind to XDocument, XElement, or LINQ for XML Query Results | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "data binding [WPF], binding to XElement"
 ms.assetid: 6a629a49-fe1c-465d-b76a-3dcbf4307b64
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind to XDocument, XElement, or LINQ for XML Query Results

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms], child controls"
 ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Anchor and Dock Child Controls in a TableLayoutPanel Control

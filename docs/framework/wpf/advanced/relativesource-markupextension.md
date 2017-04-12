@@ -2,7 +2,7 @@
 title: "RelativeSource MarkupExtension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XAML, RelativeSource markup extension"
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RelativeSource MarkupExtension

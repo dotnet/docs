@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFinancial_CannotCalculateNPer"
 ms.assetid: a96fed1c-73e6-4a2b-9906-0190bc3d4c3c
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

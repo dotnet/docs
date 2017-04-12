@@ -2,7 +2,7 @@
 title: "How to: Bind to the Results of a LINQ Query | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "binding to LINQ query results [WPF]"
 ms.assetid: ff2844d9-17ed-4ea6-aab1-5111af0bc684
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind to the Results of a LINQ Query

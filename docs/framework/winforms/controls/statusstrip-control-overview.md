@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "status bars, about status bars"
 ms.assetid: c0d9bcbb-f8b8-46ef-bae2-4146b8c8ce99
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # StatusStrip Control Overview

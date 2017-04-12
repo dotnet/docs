@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "properties [Windows Forms], changes"
 ms.assetid: 268039ec-5aaa-4d76-b902-acccb036c850
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Property-Changed Events

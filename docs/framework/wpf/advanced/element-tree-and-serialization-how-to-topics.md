@@ -2,7 +2,7 @@
 title: "Element Tree and Serialization How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "serialization"
 ms.assetid: 2d8ef436-d559-4c3e-86de-5a160d5f87d2
 caps.latest.revision: 74
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Element Tree and Serialization How-to Topics

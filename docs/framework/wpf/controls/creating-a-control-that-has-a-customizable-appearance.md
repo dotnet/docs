@@ -2,7 +2,7 @@
 title: "Creating a Control That Has a Customizable Appearance | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "VisualStateManager [WPF], best practice"
 ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Creating a Control That Has a Customizable Appearance

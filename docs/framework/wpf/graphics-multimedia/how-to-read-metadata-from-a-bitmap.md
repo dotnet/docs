@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "metadata, reading from a bitmap"
 ms.assetid: 920784ed-d96b-43e6-92d4-5dea5228f628
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Read Metadata from a Bitmap

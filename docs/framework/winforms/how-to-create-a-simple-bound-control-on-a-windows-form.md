@@ -2,7 +2,7 @@
 title: "How to: Create a Simple-Bound Control on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Windows Forms controls, data binding"
 ms.assetid: 3bcaded8-0f1a-4cc0-8830-f59be253bf4e
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Simple-Bound Control on a Windows Form

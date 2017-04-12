@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
 ms.assetid: 9445af8f-4f62-48b0-a3f6-068058964b9f
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Image Displayed by a Windows Forms Control

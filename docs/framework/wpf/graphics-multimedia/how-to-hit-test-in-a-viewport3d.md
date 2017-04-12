@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Viewport3D"
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hit Test in a Viewport3D

@@ -2,7 +2,7 @@
 title: "How to: Draw a Single B&#233;zier Spline | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "drawing, Bezier splines"
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw a Single B&#233;zier Spline

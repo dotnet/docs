@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ElementHost control, mapping properties"
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Mapping Properties Using the ElementHost Control

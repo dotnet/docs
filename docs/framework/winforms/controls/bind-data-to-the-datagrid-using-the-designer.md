@@ -2,7 +2,7 @@
 title: "How to: Bind Data to the Windows Forms DataGridView Control Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: f4f46009-cec2-441b-8668-6b5af057558b
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind Data to the Windows Forms DataGridView Control Using the Designer

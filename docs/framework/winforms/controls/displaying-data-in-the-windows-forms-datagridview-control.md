@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Displaying Data in the Windows Forms DataGridView Control

@@ -2,7 +2,7 @@
 title: "How to: Distinguish Between Clicks and Double-Clicks | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "mouse clicks, single versus double"
 ms.assetid: d836ac8c-85bc-4f3a-a761-8aee03dc682c
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Distinguish Between Clicks and Double-Clicks

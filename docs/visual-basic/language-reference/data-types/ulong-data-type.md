@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "UL literal type characters"
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

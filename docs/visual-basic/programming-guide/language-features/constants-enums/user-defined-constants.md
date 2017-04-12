@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "circular references between constants"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

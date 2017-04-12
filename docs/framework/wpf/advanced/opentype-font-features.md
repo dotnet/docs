@@ -2,7 +2,7 @@
 title: "OpenType Font Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "OpenType font technology"
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 caps.latest.revision: 38
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # OpenType Font Features

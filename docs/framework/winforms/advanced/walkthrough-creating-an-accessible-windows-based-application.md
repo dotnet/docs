@@ -2,7 +2,7 @@
 title: "Walkthrough: Creating an Accessible Windows-based Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "applications [Windows Forms], accessibility"
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Creating an Accessible Windows-based Application

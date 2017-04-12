@@ -2,7 +2,7 @@
 title: "How to: Apply Transforms to Text | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "typography, skewed text"
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Transforms to Text

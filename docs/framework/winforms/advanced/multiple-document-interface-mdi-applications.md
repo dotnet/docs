@@ -2,7 +2,7 @@
 title: "Multiple-Document Interface (MDI) Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MDI"
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Multiple-Document Interface (MDI) Applications

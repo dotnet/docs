@@ -2,7 +2,7 @@
 title: "Walkthrough: Hosting an ActiveX Control in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "hosting ActiveX controls"
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF

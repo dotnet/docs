@@ -2,7 +2,7 @@
 title: "How To: Change the Value of an Existing Setting at Design Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], changing"
 ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Change the Value of an Existing Setting at Design Time

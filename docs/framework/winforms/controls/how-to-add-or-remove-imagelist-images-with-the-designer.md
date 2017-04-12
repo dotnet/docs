@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to ImageList component"
 ms.assetid: 5699b244-e37c-4d20-bc35-7441e55c1e3a
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add or Remove ImageList Images with the Designer

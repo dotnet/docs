@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "media, playback with animations"
 ms.assetid: 8982b7b7-1c6c-4b24-8801-b328862975f5
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Play Media with Animations

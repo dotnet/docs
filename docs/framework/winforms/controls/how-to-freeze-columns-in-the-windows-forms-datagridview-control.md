@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], columns always in view"
 ms.assetid: 2ef8b1de-782e-4867-af8d-58171ab5c106
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Freeze Columns in the Windows Forms DataGridView Control

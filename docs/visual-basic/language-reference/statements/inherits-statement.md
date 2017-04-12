@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Inherits statement, syntax"
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

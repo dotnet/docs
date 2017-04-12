@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "IsFalse operator"
 ms.assetid: 37fc9dbf-e5cc-4570-b93f-7213447974df
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

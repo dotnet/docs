@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "horizontal alignment of TileBrushes"
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Horizontal and Vertical Alignment of a TileBrush

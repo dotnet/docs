@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Work with Dictionaries Using LINQ to XML (Visual Basic)

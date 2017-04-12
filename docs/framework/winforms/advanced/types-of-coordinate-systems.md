@@ -2,7 +2,7 @@
 title: "Types of Coordinate Systems | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "transformations, world"
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Types of Coordinate Systems

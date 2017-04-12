@@ -2,7 +2,7 @@
 title: "How to: Apply Emissive Material to a 3-D Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "3-D objects, applying EmissiveMaterial"
 ms.assetid: fd442cc2-5adc-487a-ba70-e45ed54bb3b4
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Emissive Material to a 3-D Object

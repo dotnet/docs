@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "styles, event triggers"
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Styling and Templating

@@ -2,7 +2,7 @@
 title: "How to: Make Sure That a GridSplitter Is Visible | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "GridSplitter control, ensuring visibility of"
 ms.assetid: 0a62a964-89c8-48f0-9023-5df721a8cf47
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make Sure That a GridSplitter Is Visible

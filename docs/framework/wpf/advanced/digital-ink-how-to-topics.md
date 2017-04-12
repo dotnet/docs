@@ -2,7 +2,7 @@
 title: "Digital Ink How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "digital ink"
 ms.assetid: c29f8728-bfcb-4af7-9fbc-8169e180109f
 caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Digital Ink How-to Topics

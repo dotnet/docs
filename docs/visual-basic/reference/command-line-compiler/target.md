@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "/target compiler options [Visual Basic]"
 ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

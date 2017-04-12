@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, columns"
 ms.assetid: f0a0a9f1-8757-4bfd-891f-d7d12870dbed
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Column Types in the Windows Forms DataGridView Control

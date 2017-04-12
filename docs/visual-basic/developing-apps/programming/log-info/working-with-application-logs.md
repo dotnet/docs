@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "application event logs"
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

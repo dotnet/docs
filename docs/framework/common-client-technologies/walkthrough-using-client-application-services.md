@@ -2,7 +2,7 @@
 title: "Walkthrough: Using Client Application Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "client application services, walkthroughs"
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
 caps.latest.revision: 47
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Using Client Application Services

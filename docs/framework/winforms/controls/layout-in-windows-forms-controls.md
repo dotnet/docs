@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Padding property [Windws Forms]"
 ms.assetid: 99400e3a-720e-4f56-b68f-89df911a251c
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Layout in Windows Forms Controls

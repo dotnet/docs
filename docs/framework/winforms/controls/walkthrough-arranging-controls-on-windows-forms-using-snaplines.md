@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using Snaplines

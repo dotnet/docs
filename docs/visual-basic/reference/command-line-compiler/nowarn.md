@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-nowarn compiler option [Visual Basic]"
 ms.assetid: 7ebf2106-0652-4fdc-bf60-70fc86465d83
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

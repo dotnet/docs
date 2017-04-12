@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], TabControl"
 ms.assetid: 3d26404b-431e-432d-a82b-ef026feb3fff
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TabControl

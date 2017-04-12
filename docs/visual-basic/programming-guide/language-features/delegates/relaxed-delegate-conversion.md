@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "conversions, relaxed delegate"
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

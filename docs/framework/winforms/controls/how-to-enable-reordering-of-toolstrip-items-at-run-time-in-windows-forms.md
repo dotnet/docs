@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], reordering items"
 ms.assetid: 8480b69a-379f-4dc2-8dcf-365ed93692b2
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Reordering of ToolStrip Items at Run Time in Windows Forms

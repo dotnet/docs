@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], about ListBox control"
 ms.assetid: 37ea226b-6fc8-4c70-936a-c6af4e0cad4c
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ListBox Control Overview (Windows Forms)

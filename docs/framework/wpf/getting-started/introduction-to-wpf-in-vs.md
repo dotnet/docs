@@ -2,7 +2,7 @@
 title: "Introduction to WPF in Visual Studio 2015 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "3-D rendering [WPF]"
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
 caps.latest.revision: 54
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Introduction to WPF in Visual Studio 2015

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "applications [Visual Basic]"
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

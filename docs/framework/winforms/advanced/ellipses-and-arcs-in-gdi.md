@@ -2,7 +2,7 @@
 title: "Ellipses and Arcs in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "drawing, arcs"
 ms.assetid: 34f35133-a835-4ca4-81f6-0dfedee8b683
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Ellipses and Arcs in GDI+

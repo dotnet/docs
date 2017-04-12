@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFileSystem_PathNotFound1"
 ms.assetid: 184d09ab-771f-4298-bd71-94b33efc325b
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

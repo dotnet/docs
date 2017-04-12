@@ -2,7 +2,7 @@
 title: "How to: Enumerate Installed Fonts | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], fonts"
 ms.assetid: 26d74ef5-0f39-4eeb-8d20-00e66e014abe
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enumerate Installed Fonts

@@ -2,7 +2,7 @@
 title: "DocumentViewer Styles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "styles [WPF], DocumentViewer"
 ms.assetid: 6bd4ff8f-ea6a-4084-ac58-e7a67446ce1c
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DocumentViewer Styles and Templates

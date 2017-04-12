@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "forms, accessing all open"
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "Audio and Video How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "media"
 ms.assetid: f7d96707-ffb5-486c-9e85-db6f0d5ac547
 caps.latest.revision: 73
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Audio and Video How-to Topics

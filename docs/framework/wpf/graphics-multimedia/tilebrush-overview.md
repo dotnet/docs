@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "brushes, TileBrush"
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TileBrush Overview

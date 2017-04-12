@@ -2,7 +2,7 @@
 title: "How to: Apply Material to the Front and Back of a 3-D Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "classes, Material"
 ms.assetid: d93c8ad6-4939-4d29-9544-4d16d98093c1
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Material to the Front and Back of a 3-D Object

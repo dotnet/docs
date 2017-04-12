@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "PictureBox control [Windows Forms], adding pictures"
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Pictures at Run Time (Windows Forms)

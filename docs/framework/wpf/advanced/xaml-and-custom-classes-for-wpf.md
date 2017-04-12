@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "classes, custom classes in XAML"
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML and Custom Classes for WPF

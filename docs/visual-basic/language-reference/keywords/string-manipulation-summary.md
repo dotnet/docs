@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], manipulating"
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

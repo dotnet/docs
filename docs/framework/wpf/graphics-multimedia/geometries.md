@@ -2,7 +2,7 @@
 title: "Geometries | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "hit-test objects [WPF]"
 ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
 caps.latest.revision: 55
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Geometries

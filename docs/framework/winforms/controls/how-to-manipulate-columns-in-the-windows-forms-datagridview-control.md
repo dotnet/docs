@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, manipulating columns"
 ms.assetid: d8cfe6b3-bbab-4182-bec2-0517d9f1eaf6
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate Columns in the Windows Forms DataGridView Control

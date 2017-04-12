@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "menus"
 ms.assetid: b41cc5a3-cc59-4996-aa3c-8dd9c17d3c90
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # MainMenu Component Overview (Windows Forms)

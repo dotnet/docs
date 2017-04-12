@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Info object, tasks"
 ms.assetid: 13c145bc-5c85-4fea-a5dd-2ca8681a0252
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

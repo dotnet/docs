@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "MDI forms, walkthroughs"
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls

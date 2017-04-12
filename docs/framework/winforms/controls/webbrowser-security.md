@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "security [Windows Forms], WebBrowser control"
 ms.assetid: 0968846e-48ee-485a-9797-65b5b9a622f8
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WebBrowser Security

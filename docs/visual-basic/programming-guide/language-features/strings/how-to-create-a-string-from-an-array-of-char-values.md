@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], Char data type"
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Option keyword"
 ms.assetid: 6b2f41c4-2403-43b6-8a14-94a3775e5b47
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

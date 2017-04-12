@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, grouping"
 ms.assetid: 7e1cd708-fdb1-49d8-9ca2-5640b276bf2e
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Controls with the Windows Forms Panel Control Using the Designer

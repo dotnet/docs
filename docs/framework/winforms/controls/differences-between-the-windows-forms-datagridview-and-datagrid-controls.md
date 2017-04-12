@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], DataGrid control compared"
 ms.assetid: d412c786-140e-4210-8a56-a68467530a55
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Differences Between the Windows Forms DataGridView and DataGrid Controls

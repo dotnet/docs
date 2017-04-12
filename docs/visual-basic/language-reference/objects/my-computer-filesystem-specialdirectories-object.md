@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "SpecialDirectories object"
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

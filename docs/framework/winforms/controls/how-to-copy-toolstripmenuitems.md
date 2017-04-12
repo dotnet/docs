@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStripMenuItems, copying and pasting"
 ms.assetid: 17ef4207-e92e-4db2-b648-27246e6517ad
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Copy ToolStripMenuItems

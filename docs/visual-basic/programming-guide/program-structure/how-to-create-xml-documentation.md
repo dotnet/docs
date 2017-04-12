@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XML documentation, creating"
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

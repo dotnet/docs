@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "MainMenu control [Windows Forms]"
 ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # MainMenu Component (Windows Forms)

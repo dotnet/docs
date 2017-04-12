@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "garbage collection, Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

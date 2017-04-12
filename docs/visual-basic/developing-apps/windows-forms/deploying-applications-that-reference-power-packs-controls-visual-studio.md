@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Power Packs, deploying"
 ms.assetid: f2230f53-a745-4731-89e6-033943faa209
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

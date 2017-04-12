@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "HTML, accessing in Windows Forms"
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Access the HTML Source in the Managed HTML Document Object Model

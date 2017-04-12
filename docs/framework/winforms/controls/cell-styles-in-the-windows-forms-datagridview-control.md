@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, cell styles"
 ms.assetid: dbb75ed6-8804-4232-8382-f9920c2e380c
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Cell Styles in the Windows Forms DataGridView Control

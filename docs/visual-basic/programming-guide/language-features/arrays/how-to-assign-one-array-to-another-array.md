@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], covariance"
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

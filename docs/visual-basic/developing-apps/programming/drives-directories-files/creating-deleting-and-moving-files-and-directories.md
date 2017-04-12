@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], moving files"
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

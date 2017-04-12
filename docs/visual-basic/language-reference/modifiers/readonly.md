@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "read-only variables"
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

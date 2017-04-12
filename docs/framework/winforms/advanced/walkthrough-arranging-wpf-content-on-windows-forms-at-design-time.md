@@ -2,7 +2,7 @@
 title: "Walkthrough: Arranging WPF Content on Windows Forms at Design Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "interoperability [WPF]"
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Arranging WPF Content on Windows Forms at Design Time

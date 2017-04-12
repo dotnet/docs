@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "margins, setting check and image in Windows Forms ContextMenuStrips"
 ms.assetid: 3391c4c2-0c9e-4aa4-9492-13ff7644bdf2
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Configure ContextMenuStrip Check Margins and Image Margins

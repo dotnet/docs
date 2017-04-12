@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "text boxes, adding"
 ms.assetid: d1a9c7f5-fa53-480a-a75c-158f8649ea2f
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TextBox Control Overview (Windows Forms)

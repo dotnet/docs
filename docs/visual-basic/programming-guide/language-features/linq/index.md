@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

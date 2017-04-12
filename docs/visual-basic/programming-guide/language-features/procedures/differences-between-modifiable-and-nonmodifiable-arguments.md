@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], modifiable"
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

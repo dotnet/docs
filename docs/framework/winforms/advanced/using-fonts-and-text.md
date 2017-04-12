@@ -2,7 +2,7 @@
 title: "Using Fonts and Text | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "strings [Windows Forms], drawing in Windows Forms"
 ms.assetid: d43640f3-da94-4df2-a29d-a9d021a1c069
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using Fonts and Text

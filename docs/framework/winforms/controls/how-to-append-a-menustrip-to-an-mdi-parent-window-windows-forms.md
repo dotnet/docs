@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "MDI, merging menu items"
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Append a MenuStrip to an MDI Parent Window (Windows Forms)

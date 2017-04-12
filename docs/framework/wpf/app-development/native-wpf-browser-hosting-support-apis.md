@@ -2,7 +2,7 @@
 title: "Native WPF Browser Hosting Support APIs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "WPF browser hosting support APIs"
 ms.assetid: 82c133a8-d760-45fb-a2b9-3a997537f1d4
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Native WPF Browser Hosting Support APIs

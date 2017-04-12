@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "registry, security issues"
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

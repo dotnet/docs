@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "exceptions, tracking"
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

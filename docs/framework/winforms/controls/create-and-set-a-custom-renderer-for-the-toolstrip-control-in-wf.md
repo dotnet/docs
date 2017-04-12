@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], rendering"
 ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms

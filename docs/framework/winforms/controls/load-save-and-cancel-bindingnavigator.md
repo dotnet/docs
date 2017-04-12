@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "BindingNavigator control [Windows Forms], adding buttons"
 ms.assetid: faa33042-186e-4bb2-8798-17ceb987ec62
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: 02373442-bf94-4470-9f8a-e44c4a9d5b88
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer

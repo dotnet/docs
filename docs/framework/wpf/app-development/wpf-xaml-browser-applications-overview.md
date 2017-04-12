@@ -2,7 +2,7 @@
 title: "WPF XAML Browser Applications Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "browser-hosted applications [WPF]"
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 caps.latest.revision: 47
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF XAML Browser Applications Overview

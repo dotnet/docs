@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "brushes, painting with system brushes"
 ms.assetid: 5141a763-9235-42cb-a6bb-afc75513eac7
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with a System Brush

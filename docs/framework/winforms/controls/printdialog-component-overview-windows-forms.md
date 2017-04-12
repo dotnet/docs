@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "PrintDialog component [Windows Forms], about PrintDialog component"
 ms.assetid: 8327b8ac-1017-4b5e-a88b-fea9dd56999c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintDialog Component Overview (Windows Forms)

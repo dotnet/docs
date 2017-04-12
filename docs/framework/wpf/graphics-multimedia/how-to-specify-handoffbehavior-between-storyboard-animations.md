@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "animation, handoff behavior between"
 ms.assetid: 97bd6842-929b-49d9-813e-46553ae46472
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify HandoffBehavior Between Storyboard Animations

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "filealign compiler option [Visual Basic]"
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

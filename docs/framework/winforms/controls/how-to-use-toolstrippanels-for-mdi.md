@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], using for MDI"
 ms.assetid: d6b884fc-0846-465f-83c3-5dc0fe93b00f
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use ToolStripPanels for MDI

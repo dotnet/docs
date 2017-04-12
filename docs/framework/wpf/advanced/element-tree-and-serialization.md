@@ -2,7 +2,7 @@
 title: "Element Tree and Serialization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tree [WPF]"
 ms.assetid: 8f57e879-180b-421f-b3d0-ac007ff2ce80
 caps.latest.revision: 71
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Element Tree and Serialization

@@ -2,7 +2,7 @@
 title: "How to: Inherit Forms Using the Inheritance Picker Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "inherited forms, creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Inherit Forms Using the Inheritance Picker Dialog Box

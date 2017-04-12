@@ -2,7 +2,7 @@
 title: "Additional Security Considerations in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Clipboard, securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Additional Security Considerations in Windows Forms

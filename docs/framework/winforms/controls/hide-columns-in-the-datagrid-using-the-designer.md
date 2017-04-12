@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: a81c38e6-2527-426a-bcb1-be691403be04
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer

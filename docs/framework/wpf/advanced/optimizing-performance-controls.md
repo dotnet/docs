@@ -2,7 +2,7 @@
 title: "Optimizing Performance: Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "user interface virtualization"
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Optimizing Performance: Controls

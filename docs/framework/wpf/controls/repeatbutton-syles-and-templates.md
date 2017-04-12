@@ -2,7 +2,7 @@
 title: "RepeatButton Syles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "states [WPF], RepeatButton"
 ms.assetid: fd340743-f44f-4990-9077-085301469670
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RepeatButton Syles and Templates

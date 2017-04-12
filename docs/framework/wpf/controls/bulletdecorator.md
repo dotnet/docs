@@ -2,7 +2,7 @@
 title: "BulletDecorator | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "BulletDecorator control [WPF]"
 ms.assetid: 1756cabf-59b4-47a7-883d-1bdf2e5abe00
 caps.latest.revision: 67
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # BulletDecorator

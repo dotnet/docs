@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "vertical space"
 ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStripPanel Control

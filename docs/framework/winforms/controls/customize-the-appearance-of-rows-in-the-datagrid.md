@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], customizing rows"
 ms.assetid: d40b53d2-7e7c-48c5-8570-6e79d15c3bbb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control

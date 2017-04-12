@@ -2,7 +2,7 @@
 title: "Expander Styles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "parts [WPF], Expander"
 ms.assetid: da2e5a1c-5230-4c21-98a5-59c7895facd7
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Expander Styles and Templates

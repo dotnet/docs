@@ -2,7 +2,7 @@
 title: "How to: Manipulate a Table&#39;s Columns through the Columns Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Columns property"
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate a Table&#39;s Columns through the Columns Property

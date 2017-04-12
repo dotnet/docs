@@ -2,7 +2,7 @@
 title: "How to: Create a Text Decoration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "baseline type"
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Text Decoration

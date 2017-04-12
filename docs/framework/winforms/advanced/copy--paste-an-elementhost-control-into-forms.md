@@ -2,7 +2,7 @@
 title: "Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "WPF user control, hosting in Windows Forms"
 ms.assetid: 6e81bb13-577c-46c3-a1cf-8d15969fb83e
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms

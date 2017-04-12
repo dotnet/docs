@@ -2,7 +2,7 @@
 title: "How to: Convert a BitmapSource to a Different PixelFormat | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "BitmapSource objects, converting to palettized pixel format"
 ms.assetid: cd9df1e4-d5dc-4f57-b67b-4ec67e086b33
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Convert a BitmapSource to a Different PixelFormat

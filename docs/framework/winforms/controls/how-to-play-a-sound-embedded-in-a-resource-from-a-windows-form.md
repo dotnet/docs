@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "SoundPlayer class, playing sounds from resources"
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Play a Sound Embedded in a Resource from a Windows Form

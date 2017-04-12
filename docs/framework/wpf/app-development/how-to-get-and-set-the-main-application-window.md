@@ -2,7 +2,7 @@
 title: "How to: Get and Set the Main Application Window | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "getting windows objects"
 ms.assetid: ec902bc4-4a59-46f5-8ec1-963b46789356
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get and Set the Main Application Window

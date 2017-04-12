@@ -2,7 +2,7 @@
 title: "How to: Simulate Mouse and Keyboard Events in Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "mouse, event simulation"
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Simulate Mouse and Keyboard Events in Code

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "MaskedTextBox control [Windows Forms], binding data"
 ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind Data to the MaskedTextBox Control

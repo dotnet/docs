@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "timers, creating"
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Timer Component (Windows Forms)

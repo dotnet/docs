@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "text boxes, bullets"
 ms.assetid: abfb40e6-5642-4691-8ec1-9d9ae91688dc
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Indents, Hanging Indents, and Bulleted Paragraphs with the Windows Forms RichTextBox Control

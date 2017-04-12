@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "scroll bars, about scroll bars"
 ms.assetid: 8b307679-1cae-41d8-99aa-3d1efd207cd6
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # HScrollBar and VScrollBar Controls Overview (Windows Forms)

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "graphics [WPF], custom Transforms"
 ms.assetid: 919381ca-989f-47cf-86b4-1094060236e4
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a MatrixTransform to Create Custom Transforms

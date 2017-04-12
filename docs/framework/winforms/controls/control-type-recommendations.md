@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], creating"
 ms.assetid: 5235fe9d-c36a-4c08-ae76-6cb90b50085e
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Control Type Recommendations

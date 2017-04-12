@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "scrollable form, printing"
 ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

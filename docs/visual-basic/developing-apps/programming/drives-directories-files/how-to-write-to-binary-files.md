@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "binary files, writing in Visual Basic"
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

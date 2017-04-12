@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "MustInherit keyword"
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

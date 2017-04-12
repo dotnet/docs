@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TreeNode, attaching a shortcut menu using Designer"
 ms.assetid: 8e45e184-1313-4f8f-90ff-2cd5789b2268
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Attach a Shortcut Menu to a TreeNode Using the Designer

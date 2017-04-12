@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "declarations, modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

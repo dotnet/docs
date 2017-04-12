@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "notifications, clocks' state changes"
 ms.assetid: ecb10fc9-d0c2-45c3-b0a1-7b11baa733da
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Receive Notification When a Clock&#39;s State Changes

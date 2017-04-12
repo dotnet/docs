@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "menus, disabling menu items"
 ms.assetid: bcc1da84-50fd-41d2-8475-103b581d5654
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Disable ToolStripMenuItems

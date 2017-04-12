@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], setting formats"
 ms.assetid: fc6da49f-8942-41da-b49f-b2afc38cc656
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Default Cell Styles and Data Formats for the Windows Forms DataGridView Control Using the Designer

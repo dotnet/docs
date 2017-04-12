@@ -2,7 +2,7 @@
 title: "DatePicker Syles and Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "states [WPF], DatePicker"
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DatePicker Syles and Templates

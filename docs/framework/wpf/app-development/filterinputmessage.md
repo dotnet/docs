@@ -2,7 +2,7 @@
 title: "FilterInputMessage | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "FilterInputMessage method"
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FilterInputMessage

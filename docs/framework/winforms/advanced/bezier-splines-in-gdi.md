@@ -2,7 +2,7 @@
 title: "B&#233;zier Splines in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "GDI+, Bezier splines"
 ms.assetid: 5774ce1e-87d4-4bc7-88c4-4862052781b8
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # B&#233;zier Splines in GDI+

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "check boxes"
 ms.assetid: 0719d798-c307-40d3-9040-72a62679c227
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # CheckBox Control (Windows Forms)

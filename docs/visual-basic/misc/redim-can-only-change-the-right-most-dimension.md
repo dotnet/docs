@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArray_TypeMismatch"
 ms.assetid: d53cf41b-7a7a-466c-a29a-920d99698fa9
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

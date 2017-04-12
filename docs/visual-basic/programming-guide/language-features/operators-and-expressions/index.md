@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "expressions [Visual Basic]"
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

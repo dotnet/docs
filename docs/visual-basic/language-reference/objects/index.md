@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "objects [Visual Basic]"
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

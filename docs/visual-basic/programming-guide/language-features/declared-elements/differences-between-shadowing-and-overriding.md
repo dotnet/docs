@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "overriding, vs. shadowing"
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

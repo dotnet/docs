@@ -2,7 +2,7 @@
 title: "Data Templating Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "data templates"
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Templating Overview

@@ -2,7 +2,7 @@
 title: "How to: Specify the Direction of the Binding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "data binding, direction of binding"
 ms.assetid: 37334478-028b-4514-86c9-1420709f4818
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify the Direction of the Binding

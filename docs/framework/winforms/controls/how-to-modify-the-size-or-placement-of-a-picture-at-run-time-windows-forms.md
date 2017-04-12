@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "pictures, controlling placement in PictureBox control [Windows Forms]"
 ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Modify the Size or Placement of a Picture at Run Time (Windows Forms)

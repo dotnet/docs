@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Object data type, reference"
 ms.assetid: 61ea4a7c-3b3d-48d4-adc4-eacfa91779b2
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

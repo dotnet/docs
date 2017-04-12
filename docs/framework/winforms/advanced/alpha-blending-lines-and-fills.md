@@ -2,7 +2,7 @@
 title: "Alpha Blending Lines and Fills | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "shapes, adding transparency"
 ms.assetid: 5440f48c-3ac9-44c3-b170-c1c110bdbab8
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Alpha Blending Lines and Fills

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "CanOverflow property"
 ms.assetid: fa10e0ad-4cbf-4c0d-9082-359c2f855d4e
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manage ToolStrip Overflow in Windows Forms

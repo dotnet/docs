@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "procedure calls, property procedures"
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

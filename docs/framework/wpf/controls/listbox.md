@@ -2,7 +2,7 @@
 title: "ListBox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], ListBox"
 ms.assetid: b91bb352-4f51-44e0-9017-a041f216c852
 caps.latest.revision: 64
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ListBox

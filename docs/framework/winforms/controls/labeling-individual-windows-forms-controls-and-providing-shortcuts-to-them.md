@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, labels"
 ms.assetid: 6eaf868c-819f-4131-8f59-048e20c286f7
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Labeling Individual Windows Forms Controls and Providing Shortcuts to Them

@@ -2,7 +2,7 @@
 title: "IEnumRAWINPUTDEVIC:Skip | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Skip method"
 ms.assetid: c967b0f8-1c6a-459c-8c16-d4f08918ab65
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # IEnumRAWINPUTDEVIC:Skip

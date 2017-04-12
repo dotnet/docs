@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "bitwise comparison"
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

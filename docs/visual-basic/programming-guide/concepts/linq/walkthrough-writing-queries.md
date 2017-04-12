@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "writing LINQ queries [Visual Basic]"
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
 caps.latest.revision: 70
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

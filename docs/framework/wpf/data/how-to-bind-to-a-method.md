@@ -2,7 +2,7 @@
 title: "How to: Bind to a Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "methods, binding to"
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind to a Method

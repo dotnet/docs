@@ -2,7 +2,7 @@
 title: "How to: Create a Bitmap from a Visual | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "visuals, rendering to bitmaps"
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Bitmap from a Visual

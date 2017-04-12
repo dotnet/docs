@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "constants, grouping together"
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

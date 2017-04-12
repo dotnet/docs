@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "files, parsing"
 ms.assetid: fc31d6e6-af0c-403f-8a00-d556b2c57567
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

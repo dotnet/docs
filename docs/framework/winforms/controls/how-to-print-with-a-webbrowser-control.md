@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Print with a WebBrowser Control

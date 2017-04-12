@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "RectangleShape control"
 ms.assetid: 0275b4c6-7a13-46c8-90f3-61db308c6b5d
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

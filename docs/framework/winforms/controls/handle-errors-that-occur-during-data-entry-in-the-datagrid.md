@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "error handling, data entry"
 ms.assetid: 9004e72f-fdec-4264-a37d-2c99764efc13
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle Errors That Occur During Data Entry in the Windows Forms DataGridView Control

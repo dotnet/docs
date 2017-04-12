@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "controls [WPF], DataGrid"
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Display Data from a SQL Server Database in a DataGrid Control

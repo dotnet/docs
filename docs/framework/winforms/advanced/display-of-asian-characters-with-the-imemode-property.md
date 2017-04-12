@@ -2,7 +2,7 @@
 title: "Display of Asian Characters with the ImeMode Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "globalization [Windows Forms], character sets"
 ms.assetid: c60ae399-0dab-4f07-9dea-6dbfb15ec0ae
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Display of Asian Characters with the ImeMode Property

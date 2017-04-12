@@ -2,7 +2,7 @@
 title: "Walkthrough: Styling WPF Content | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "styles, WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Styling WPF Content

@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "floating-point numbers"
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

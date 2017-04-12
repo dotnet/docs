@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], print options"
 ms.assetid: 09b54db1-d7c7-42fa-b98a-840e6b80a9ad
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintDialog Component (Windows Forms)

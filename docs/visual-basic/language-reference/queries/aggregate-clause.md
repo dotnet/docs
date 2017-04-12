@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "queries [Visual Basic], Aggregate"
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-win32manifest compiler option [Visual Basic]"
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

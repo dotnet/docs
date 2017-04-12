@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ToolBar control [Windows Forms]"
 ms.assetid: 6b40e9ce-6a7a-4784-bfc9-7f1d36b7462e
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolBar Control (Windows Forms)

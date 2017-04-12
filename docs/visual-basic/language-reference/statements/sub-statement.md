@@ -40,8 +40,8 @@ helpviewer_keywords:
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
 caps.latest.revision: 52
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "How to: Encode a Visual to an Image File | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "visuals, encoding to an image file"
 ms.assetid: 2036385b-ea47-4d54-8027-5797f52c8149
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Encode a Visual to an Image File

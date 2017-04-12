@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "procedures, specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Run Procedures at Set Intervals with the Windows Forms Timer Component

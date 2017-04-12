@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "cells, merging"
 ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Span Rows and Columns in a TableLayoutPanel Control

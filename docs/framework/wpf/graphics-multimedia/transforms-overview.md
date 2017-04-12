@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "FrameworkElement objects, scaling"
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Transforms Overview

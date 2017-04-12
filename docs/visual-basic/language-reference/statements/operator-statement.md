@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "CType function, Operator statement"
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "How to: Create a Shaped Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "forms, custom shapes"
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Shaped Windows Form

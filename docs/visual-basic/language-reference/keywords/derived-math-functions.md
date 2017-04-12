@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "arccosine function"
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

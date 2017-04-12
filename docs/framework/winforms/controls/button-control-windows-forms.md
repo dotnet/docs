@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Button control [Windows Forms]"
 ms.assetid: d38bc40c-8040-4f19-9e88-2c665b0ab80b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Button Control (Windows Forms)

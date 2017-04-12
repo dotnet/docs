@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "nested control statements"
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

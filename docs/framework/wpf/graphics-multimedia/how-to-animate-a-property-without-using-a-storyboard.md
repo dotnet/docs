@@ -2,7 +2,7 @@
 title: "How to: Animate a Property Without Using a Storyboard | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "animation, non-Storyboard (local)"
 ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a Property Without Using a Storyboard

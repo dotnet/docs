@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "GetType keyword"
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

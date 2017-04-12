@@ -2,7 +2,7 @@
 title: "Bi-Directional Support for Windows Forms Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, bi-directional support"
 ms.assetid: 7b622fa4-f390-4e4d-b624-83a1917cccf2
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Bi-Directional Support for Windows Forms Applications

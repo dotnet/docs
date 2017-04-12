@@ -2,7 +2,7 @@
 title: "How to: Open a Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "dialog boxes, opening"
 ms.assetid: 6b1557d2-da98-4ef4-9f68-4089f04ab9ea
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Open a Dialog Box

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Grid Options for All Windows Forms

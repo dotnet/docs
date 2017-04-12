@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], tile view"
 ms.assetid: c20e67a3-2d94-413d-9fcf-ecbd0fe251da
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Tile View in a Windows Forms ListView Control

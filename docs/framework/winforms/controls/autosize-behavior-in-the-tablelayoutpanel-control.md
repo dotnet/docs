@@ -2,7 +2,7 @@
 title: "AutoSize Behavior in the TableLayoutPanel Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "AutoSizeMode property"
 ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # AutoSize Behavior in the TableLayoutPanel Control

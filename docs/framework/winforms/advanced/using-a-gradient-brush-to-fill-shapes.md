@@ -2,7 +2,7 @@
 title: "Using a Gradient Brush to Fill Shapes | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], gradient brushes"
 ms.assetid: 2c6037b9-05bd-44c0-a22a-19584b722524
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using a Gradient Brush to Fill Shapes

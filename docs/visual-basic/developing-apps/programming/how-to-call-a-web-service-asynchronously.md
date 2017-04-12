@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Web services, accessing"
 ms.assetid: ff8046f4-f1f2-4d8b-90b7-95e3f7415418
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

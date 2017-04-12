@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], Slider"
 ms.assetid: d89aa97b-075a-4752-9c41-9679df65c491
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Slider Styles and Templates

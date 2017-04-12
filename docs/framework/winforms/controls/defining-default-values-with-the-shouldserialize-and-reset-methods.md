@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ShouldPersist method"
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Defining Default Values with the ShouldSerialize and Reset Methods

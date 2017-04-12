@@ -2,7 +2,7 @@
 title: "How to: Fill a Shape with a Hatch Pattern | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "brushes, using hatch brushes"
 ms.assetid: 9c8300ff-187b-404f-af1f-ebd499f5b16f
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Fill a Shape with a Hatch Pattern

@@ -2,7 +2,7 @@
 title: "Group results by contiguous keys"
 description: How to group results by contiguous keys.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

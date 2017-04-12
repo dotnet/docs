@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: 7f994d45-600d-4190-a187-35803214b40c
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Type of a Windows Forms DataGridView Column Using the Designer

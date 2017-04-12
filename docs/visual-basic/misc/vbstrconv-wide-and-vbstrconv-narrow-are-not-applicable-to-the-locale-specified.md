@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_WideNarrowNotApplicable"
 ms.assetid: 5811098c-b124-4caf-8a2b-f81f12f1d5f5
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

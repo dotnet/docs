@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "graphics, origins of Transforms"
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify the Origin of a Transform by Using Relative Values

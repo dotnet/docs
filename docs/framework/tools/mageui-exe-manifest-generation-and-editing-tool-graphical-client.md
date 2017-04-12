@@ -2,7 +2,7 @@
 title: "MageUI.exe (Manifest Generation and Editing Tool, Graphical Client) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "MageUI.exe"
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
 caps.latest.revision: 38
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)

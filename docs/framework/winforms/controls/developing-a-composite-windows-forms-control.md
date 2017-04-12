@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ms.assetid: d086f2a3-baa3-4e09-b40c-a5bb3cfc51a6
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Developing a Composite Windows Forms Control

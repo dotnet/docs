@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "SaveFileDialog component"
 ms.assetid: 6f5d9321-37d7-4448-ac4c-a33c42b2a766
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # SaveFileDialog Component (Windows Forms)

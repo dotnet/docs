@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], selecting cells"
 ms.assetid: 82cffcad-8b30-4897-bddb-c3a79d751b83
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Selection and Clipboard Use with the Windows Forms DataGridView Control

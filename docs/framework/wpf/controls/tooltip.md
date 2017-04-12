@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "popups [WPF]"
 ms.assetid: a3cb42d6-6ce3-4aa0-a557-2cc5b142f1e4
 caps.latest.revision: 68
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolTip

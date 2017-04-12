@@ -2,7 +2,7 @@
 title: "PropertyPath XAML Syntax | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "XAML, PropertyPath object"
 ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PropertyPath XAML Syntax

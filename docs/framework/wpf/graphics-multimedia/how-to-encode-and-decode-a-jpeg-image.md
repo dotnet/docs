@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "JPEG encoding"
 ms.assetid: b8cfde37-9f68-4911-a05e-51d8d7bdec7b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Encode and Decode a JPEG Image

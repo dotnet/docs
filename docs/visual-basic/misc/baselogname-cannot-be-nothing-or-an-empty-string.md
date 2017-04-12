@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLogBaseNameNull"
 ms.assetid: 8e7665e3-5343-45fa-bc79-64e235a0477f
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "implicit conversions"
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 caps.latest.revision: 49
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
 ms.assetid: 525e2347-0804-49aa-b9a3-9b2cabbf1c35
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the ToolStrip Renderer at Run Time

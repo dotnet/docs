@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrNetwork_BadConnectionTimeout"
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

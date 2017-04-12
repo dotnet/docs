@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], selecting date range"
 ms.assetid: 95d9ab95-b0f8-4c19-9f63-b5cd4593a5d0
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Select a Range of Dates in the Windows Forms MonthCalendar Control

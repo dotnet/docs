@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "text, controls for input"
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Working with the MaskedTextBox Control

@@ -2,7 +2,7 @@
 title: "How to: Rotate, Reflect, and Skew Images | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "images [Windows Forms], skewing"
 ms.assetid: a3bf97eb-63ed-425a-ba07-dcc65efb567c
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Rotate, Reflect, and Skew Images

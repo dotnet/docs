@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "data-bound controls, DataGrid"
 ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer

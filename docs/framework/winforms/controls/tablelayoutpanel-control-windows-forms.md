@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "automatic sizing"
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TableLayoutPanel Control (Windows Forms)

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "My.Request object"
 ms.assetid: 93d5f0e2-6b60-4a2c-8652-d90216f6ad10
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

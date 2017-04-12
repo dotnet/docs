@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "StatusBar [WPF], styles and templates"
 ms.assetid: 9f5e1c25-81eb-4756-a0ac-d9e1fbe33ee2
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # StatusBar Styles and Templates

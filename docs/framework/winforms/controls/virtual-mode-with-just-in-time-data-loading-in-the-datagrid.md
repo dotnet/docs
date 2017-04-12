@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "virtual mode, just-in-time data loading"
 ms.assetid: 33825f92-7a22-40ee-86d9-9a2ed1ead7b7
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control

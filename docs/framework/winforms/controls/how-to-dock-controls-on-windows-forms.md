@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, filling client area"
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Dock Controls on Windows Forms

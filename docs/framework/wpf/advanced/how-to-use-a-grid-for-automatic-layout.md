@@ -2,7 +2,7 @@
 title: "How to: Use a Grid for Automatic Layout | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "automatic layout, grid use"
 ms.assetid: ab9de407-e0c1-4047-bdf0-24951bf73879
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Grid for Automatic Layout

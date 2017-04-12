@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], linking to Web pages"
 ms.assetid: 95089a37-a202-4f7a-94ee-6ee312908851
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Web-Style Links with the Windows Forms RichTextBox Control

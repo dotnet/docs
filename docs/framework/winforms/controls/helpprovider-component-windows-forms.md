@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "HelpProvider component [Windows Forms]"
 ms.assetid: a09a6e0b-79d8-457f-bb36-86fad2beeada
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # HelpProvider Component (Windows Forms)

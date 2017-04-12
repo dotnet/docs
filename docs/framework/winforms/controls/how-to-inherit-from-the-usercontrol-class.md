@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "composite controls, creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Inherit from the UserControl Class

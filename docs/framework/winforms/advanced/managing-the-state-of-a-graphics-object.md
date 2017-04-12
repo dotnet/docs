@@ -2,7 +2,7 @@
 title: "Managing the State of a Graphics Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "graphics, clipping"
 ms.assetid: 6207cad1-7a34-4bd6-bfc1-db823ca7a73e
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Managing the State of a Graphics Object

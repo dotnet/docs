@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "transformations, how-to topics"
 ms.assetid: ff71384e-8811-420f-8cc8-0a3332e0397f
 caps.latest.revision: 77
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Transformations How-to Topics

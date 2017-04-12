@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "owner drawing"
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Controls with Built-In Owner-Drawing Support

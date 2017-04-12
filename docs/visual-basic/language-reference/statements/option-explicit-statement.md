@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "Option Explicit statement"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

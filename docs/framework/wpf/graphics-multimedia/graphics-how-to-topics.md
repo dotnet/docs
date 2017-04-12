@@ -2,7 +2,7 @@
 title: "Graphics How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "visual effects"
 ms.assetid: 959cb1cc-d26c-4bbc-b637-251091987288
 caps.latest.revision: 56
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Graphics How-to Topics

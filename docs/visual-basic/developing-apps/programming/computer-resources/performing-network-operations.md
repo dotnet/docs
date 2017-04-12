@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My.Computer.Network object, tasks"
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

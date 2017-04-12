@@ -2,7 +2,7 @@
 title: "How to: Create a Shape by Using a PathGeometry | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "graphics [WPF], shapes"
 ms.assetid: 49a4a8b7-e738-45be-8dac-b54a6d8f5b21
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Shape by Using a PathGeometry

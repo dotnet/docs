@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "Double data type"
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

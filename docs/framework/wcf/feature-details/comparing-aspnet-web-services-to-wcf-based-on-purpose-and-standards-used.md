@@ -2,7 +2,7 @@
 title: "Comparing ASP.NET Web Services to WCF Based on Purpose and Standards Used | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

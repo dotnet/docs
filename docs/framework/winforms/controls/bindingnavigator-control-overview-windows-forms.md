@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "data navigation"
 ms.assetid: 4423eede-f8d1-4d02-822f-5bf8432680d0
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # BindingNavigator Control Overview (Windows Forms)

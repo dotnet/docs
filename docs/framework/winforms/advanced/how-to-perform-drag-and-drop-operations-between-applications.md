@@ -2,7 +2,7 @@
 title: "How to: Perform Drag-and-Drop Operations Between Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "drag and drop, between applications"
 ms.assetid: fa347436-2b12-4dd6-8507-59d7241f6a06
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Perform Drag-and-Drop Operations Between Applications

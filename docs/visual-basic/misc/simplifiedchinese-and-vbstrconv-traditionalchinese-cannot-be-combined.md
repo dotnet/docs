@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_StrConvSCandTC"
 ms.assetid: d8e6a11b-f549-43b5-8337-0594340e1325
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

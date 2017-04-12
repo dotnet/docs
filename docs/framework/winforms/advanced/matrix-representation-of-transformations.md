@@ -2,7 +2,7 @@
 title: "Matrix Representation of Transformations | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "affine transformations"
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Matrix Representation of Transformations

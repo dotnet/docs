@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "expressions [Visual Basic], returning control to"
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

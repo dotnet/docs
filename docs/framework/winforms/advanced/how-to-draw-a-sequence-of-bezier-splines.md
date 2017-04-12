@@ -2,7 +2,7 @@
 title: "How to: Draw a Sequence of B&#233;zier Splines | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Bezier splines, drawing sequence of"
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw a Sequence of B&#233;zier Splines

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, default button on form"
 ms.assetid: a1da0590-755f-49f2-aca7-609fac6351bf
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Designate a Windows Forms Button as the Accept Button Using the Designer

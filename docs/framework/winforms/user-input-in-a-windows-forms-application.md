@@ -2,7 +2,7 @@
 title: "User Input in a Windows Forms Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Windows Forms, user input"
 ms.assetid: 9d61fa96-70f7-4754-885a-49a4a6316bdb
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # User Input in a Windows Forms Application

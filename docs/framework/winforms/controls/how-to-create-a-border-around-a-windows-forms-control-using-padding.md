@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "Margin property [Windows Forms]"
 ms.assetid: bac7ed4d-a163-4259-98bd-155a36345890
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Border Around a Windows Forms Control Using Padding

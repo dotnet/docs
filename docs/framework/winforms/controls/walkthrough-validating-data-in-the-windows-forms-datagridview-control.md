@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: a4f1d015-2969-430c-8ea2-b612d179c290
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Validating Data in the Windows Forms DataGridView Control

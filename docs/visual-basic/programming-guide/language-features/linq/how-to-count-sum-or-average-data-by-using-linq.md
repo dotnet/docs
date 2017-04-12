@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "count operator [LINQ in Visual Basic]"
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

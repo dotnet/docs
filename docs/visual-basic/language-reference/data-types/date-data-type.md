@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "# specifier for Date literals"
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

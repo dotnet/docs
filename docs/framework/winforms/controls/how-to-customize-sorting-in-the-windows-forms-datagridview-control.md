@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, customizing sorting"
 ms.assetid: 92fb5c14-afab-4cf5-a97e-924fd9cb99f5
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize Sorting in the Windows Forms DataGridView Control

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "buttons, about buttons"
 ms.assetid: 255b291b-51a9-4a92-a1a4-2400cd82443f
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Button Control Overview (Windows Forms)

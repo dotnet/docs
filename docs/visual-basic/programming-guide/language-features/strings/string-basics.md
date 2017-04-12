@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], regular expressions"
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

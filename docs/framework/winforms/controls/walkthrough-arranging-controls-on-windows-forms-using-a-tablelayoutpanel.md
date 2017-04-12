@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, arranging"
 ms.assetid: d474885e-12cc-4ab7-b997-2a23a643049b
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel

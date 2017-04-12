@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DomainUpDown control [Windows Forms], about DomainUpDown control"
 ms.assetid: 3f40f9c1-20ad-4331-b9b5-b0127eb36eb3
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DomainUpDown Control Overview (Windows Forms)

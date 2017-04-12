@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ToolTip component [Windows Forms]"
 ms.assetid: 82e71dc3-0159-4f91-9f22-499224f004a0
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolTip Component (Windows Forms)

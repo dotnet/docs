@@ -2,7 +2,7 @@
 title: "Write LINQ queries in C#"
 description: How to write queries.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

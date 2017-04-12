@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-codepage compiler option [Visual Basic]"
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

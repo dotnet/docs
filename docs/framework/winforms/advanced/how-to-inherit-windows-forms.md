@@ -2,7 +2,7 @@
 title: "How to: Inherit Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, inheritance"
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Inherit Windows Forms

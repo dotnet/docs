@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC40056"
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

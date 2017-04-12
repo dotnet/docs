@@ -2,7 +2,7 @@
 title: "How to: Adjust Spacing Between Paragraphs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "documents, adjusting spacing between paragraphs"
 ms.assetid: 7cd2f2ac-0e19-4587-bfb6-7f5b18c9536e
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Adjust Spacing Between Paragraphs

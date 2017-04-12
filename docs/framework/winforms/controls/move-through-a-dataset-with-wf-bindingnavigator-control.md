@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingNavigator control"
 ms.assetid: 146d97be-3d97-400e-accb-860bbf47729d
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Move Through a DataSet with the Windows Forms BindingNavigator Control

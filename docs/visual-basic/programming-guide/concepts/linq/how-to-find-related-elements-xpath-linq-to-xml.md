@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 6b0ef058-d704-48a5-98cd-33f00d088af9
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Related Elements (XPath-LINQ to XML) (Visual Basic)

@@ -34,8 +34,8 @@ helpviewer_keywords:
   - "types [Visual Basic], user-defined"
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

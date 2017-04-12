@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "up-down controls, spin button controls"
 ms.assetid: fb7cf017-e931-4a95-9d21-8caee4ee122a
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DomainUpDown Control (Windows Forms)

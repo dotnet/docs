@@ -47,8 +47,8 @@ helpviewer_keywords:
   - "literal types, default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrNamedArgumentOnParamArray"
 ms.assetid: ba35fb86-329a-4ceb-864b-045c07661482
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

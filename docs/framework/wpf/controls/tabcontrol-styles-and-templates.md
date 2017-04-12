@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "templates [WPF], TabControl"
 ms.assetid: f6b19a30-f10e-4fa1-96ce-f17a54092ab6
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TabControl Styles and Templates

@@ -2,7 +2,7 @@
 title: "Change Notification in Windows Forms Data Binding | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, adding change notification for data binding"
 ms.assetid: b5b10f90-0585-41d9-a377-409835262a92
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Change Notification in Windows Forms Data Binding

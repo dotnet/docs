@@ -2,7 +2,7 @@
 title: "How to: Animate a 3-D Rotation Using Rotation3DAnimation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "animation, 3-D translations, with Rotation3DAnimation"
 ms.assetid: a92223ec-b634-4f5e-8e79-d33bc43ecfb3
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a 3-D Rotation Using Rotation3DAnimation

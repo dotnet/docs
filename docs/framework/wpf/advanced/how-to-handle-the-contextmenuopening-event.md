@@ -2,7 +2,7 @@
 title: "How to: Handle the ContextMenuOpening Event | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ContextMenuOpening event"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle the ContextMenuOpening Event

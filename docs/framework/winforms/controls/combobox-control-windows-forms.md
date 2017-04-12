@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "ComboBox control [Windows Forms]"
 ms.assetid: 86a1bbc3-0469-4290-91c5-99ff61b739ff
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ComboBox Control (Windows Forms)

@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "classes [Visual Basic], not inheritable"
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

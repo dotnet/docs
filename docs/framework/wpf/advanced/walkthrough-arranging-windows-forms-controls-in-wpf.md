@@ -2,7 +2,7 @@
 title: "Walkthrough: Arranging Windows Forms Controls in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "arranging controls"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF

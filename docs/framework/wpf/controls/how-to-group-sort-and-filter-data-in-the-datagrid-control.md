@@ -2,7 +2,7 @@
 title: "How to: Group, Sort, and Filter Data in the DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataGrid [WPF], filter"
 ms.assetid: 03345e85-89e3-4aec-9ed0-3b80759df770
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group, Sort, and Filter Data in the DataGrid Control

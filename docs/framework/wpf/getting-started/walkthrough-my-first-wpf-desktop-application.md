@@ -2,7 +2,7 @@
 title: "Walkthrough: My First WPF Desktop Application1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "WPF, getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 caps.latest.revision: 71
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: My First WPF Desktop Application

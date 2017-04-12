@@ -2,7 +2,7 @@
 title: "How To: Add Multiple Sets of Settings To Your Application in C# | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], C#"
 ms.assetid: 45007ac6-cf07-4be7-bc38-3f0ef962faf9
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Add Multiple Sets of Settings To Your Application in C# #

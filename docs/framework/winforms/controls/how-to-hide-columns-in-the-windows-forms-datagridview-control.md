@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "columns [Windows Forms], hiding"
 ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hide Columns in the Windows Forms DataGridView Control

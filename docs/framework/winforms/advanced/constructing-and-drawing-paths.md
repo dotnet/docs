@@ -2,7 +2,7 @@
 title: "Constructing and Drawing Paths | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], drawing paths"
 ms.assetid: f16ec921-56cf-46d1-9741-d7316ad06b23
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Constructing and Drawing Paths

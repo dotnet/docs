@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, adding to form"
 ms.assetid: 997508f2-87e5-4bec-a78e-9eec8f1fb15b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Putting Controls on Windows Forms

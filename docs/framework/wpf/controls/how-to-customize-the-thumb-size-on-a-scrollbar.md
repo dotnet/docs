@@ -2,7 +2,7 @@
 title: "How to: Customize the Thumb Size on a ScrollBar | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "thumb size"
 ms.assetid: fa32b866-5ca1-4e73-85e7-2ac64b80d194
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize the Thumb Size on a ScrollBar

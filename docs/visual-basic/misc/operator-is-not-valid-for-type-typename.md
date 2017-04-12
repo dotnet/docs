@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrNoValidOperator_OneOperand"
 ms.assetid: 9d5e01db-d3e7-446a-8d39-6600c73fea20
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

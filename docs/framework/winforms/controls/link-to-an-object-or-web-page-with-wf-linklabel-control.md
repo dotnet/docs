@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: 6c91c975-3cb7-4504-82f0-fc6255f8fb85
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control

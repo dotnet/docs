@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, adding Web browser functionality"
 ms.assetid: 3871f072-b57a-435b-9976-e5da28df04a7
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Web Browser Capabilities to a Windows Forms Application

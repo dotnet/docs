@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "rows [Windows Forms], data grids"
 ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control

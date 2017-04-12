@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Using statement"
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
 caps.latest.revision: 36
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

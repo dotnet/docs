@@ -2,7 +2,7 @@
 title: "How to: Sort a GridView Column When a Header Is Clicked | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "GridView controls, ListView control"
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Sort a GridView Column When a Header Is Clicked

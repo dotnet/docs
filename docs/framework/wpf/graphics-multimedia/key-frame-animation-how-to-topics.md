@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "key frames [WPF], how-to topics"
 ms.assetid: a5f9ab1a-d14c-4816-8540-3c5b8c8143d5
 caps.latest.revision: 55
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Key-Frame Animation How-to Topics

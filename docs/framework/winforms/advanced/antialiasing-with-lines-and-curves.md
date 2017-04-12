@@ -2,7 +2,7 @@
 title: "Antialiasing with Lines and Curves | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "GDI+, antialiasing"
 ms.assetid: 810da1a4-c136-4abf-88df-68e49efdd8d4
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Antialiasing with Lines and Curves

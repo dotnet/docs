@@ -2,7 +2,7 @@
 title: "How to: Share Sizing Properties Between Grids | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Grid control, sharing sizing data of rows"
 ms.assetid: a0535a6f-ff04-4b25-9912-7dd856e11044
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Share Sizing Properties Between Grids

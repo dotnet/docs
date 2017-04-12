@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "files, moving"
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

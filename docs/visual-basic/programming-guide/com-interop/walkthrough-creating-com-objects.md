@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "COM objects, walkthroughs"
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

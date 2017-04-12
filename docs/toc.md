@@ -90,7 +90,7 @@
 ### [Resources in Desktop Apps](framework/resources/)
 ### [Accessibility](framework/ui-automation/)
 ### [Data and Modeling](framework/data/)
-### [Client Applications](framework/develop-client-applications.md)
+### [Client Applications](framework/develop-client-apps.md)
 #### [Common Client Technologies](framework/common-client-technologies/)
 #### [Windows Presentation Foundation](framework/wpf/)
 #### [Windows Forms](framework/winforms/)

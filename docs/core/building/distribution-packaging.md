@@ -60,7 +60,6 @@ Update policies
 
 When an `update` is performed, the behavior of each package is as follows:
 
-* `dotnet`: `update` rolls forward major, minor, and patch versions.
 * `dotnet-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-sdk`: `update` rolls forward major, minor, and patch versions.
 * `dotnet-sdk-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.

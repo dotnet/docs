@@ -1,7 +1,7 @@
 ---
 title: "Working with calendars | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/10/2017"
+ms.date: "03/30/2017"
 ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""

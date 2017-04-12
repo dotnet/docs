@@ -2,9 +2,18 @@
   "need_generate_intellisense": false,
   "need_preview_pull_request": true,
   "need_pr_comments": false,
-  "need_generate_pdf_url_template": false,
+  "need_generate_pdf_url_template": true,
   "git_repository_branch_open_to_public_contributors": "master",
   "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
+  "branch_target_mapping": {
+		"live": ["Publish", "Pdf"],
+		"master": ["Publish", "Pdf"]
+	},
+  "Targets": {
+		"Pdf": {
+			"template_folder": "_themes.pdf"
+		}
+	},
   "docsets_to_publish": [
     {
       "docset_name": "core-docs",

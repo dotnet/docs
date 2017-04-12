@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "generic procedures, type inference"
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

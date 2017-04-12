@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Static keyword"
 ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

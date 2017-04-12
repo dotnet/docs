@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "assignment operators"
 ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

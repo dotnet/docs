@@ -2,7 +2,7 @@
 title: "How to: Enable Spell Checking in a Text Editing Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "checking spelling"
 ms.assetid: 6f953d2b-67e8-4012-84ce-53c0e958da47
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Spell Checking in a Text Editing Control

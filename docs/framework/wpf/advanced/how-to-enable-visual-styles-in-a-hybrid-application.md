@@ -2,7 +2,7 @@
 title: "How to: Enable Visual Styles in a Hybrid Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "visual styles [Windows Forms]"
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Visual Styles in a Hybrid Application

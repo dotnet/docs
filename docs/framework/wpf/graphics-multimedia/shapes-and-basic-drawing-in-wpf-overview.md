@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Shape objects"
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Shapes and Basic Drawing in WPF Overview

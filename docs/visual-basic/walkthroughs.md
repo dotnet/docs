@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "walkthroughs [Visual Basic]"
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], troubleshooting"
 ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

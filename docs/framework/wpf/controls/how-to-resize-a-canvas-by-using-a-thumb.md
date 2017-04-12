@@ -2,7 +2,7 @@
 title: "How to: Resize a Canvas by Using a Thumb | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Canvas control"
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Resize a Canvas by Using a Thumb

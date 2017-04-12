@@ -2,7 +2,7 @@
 title: "Drawings | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "DrawingGroup objects"
 ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
 caps.latest.revision: 53
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drawings

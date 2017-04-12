@@ -2,7 +2,7 @@
 title: "CheckBox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "CheckBox control [WPF]"
 ms.assetid: ee701cc2-968b-4683-8f81-3fafd8542700
 caps.latest.revision: 74
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # CheckBox

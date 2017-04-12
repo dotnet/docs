@@ -2,7 +2,7 @@
 title: "Popup | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "controls [WPF], Popup"
 ms.assetid: 36a4320f-91ce-4f5f-9621-7934de3eff77
 caps.latest.revision: 66
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Popup

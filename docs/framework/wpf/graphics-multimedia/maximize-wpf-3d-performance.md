@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "3-D graphics [WPF]"
 ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Maximize WPF 3D Performance

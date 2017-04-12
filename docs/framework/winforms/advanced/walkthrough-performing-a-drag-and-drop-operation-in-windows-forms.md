@@ -2,7 +2,7 @@
 title: "Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "drag and drop, Windows Forms"
 ms.assetid: eb66f6bf-4a7d-4c2d-b276-40fefb2d3b6c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms

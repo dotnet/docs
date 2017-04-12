@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "NumericUpDown control [Windows Forms]"
 ms.assetid: 32b0c20d-4f37-4aea-873d-faded741d2db
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # NumericUpDown Control (Windows Forms)

@@ -2,7 +2,7 @@
 title: "How to: Make a Freezable Read-Only | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Freezable objects, making read-only"
 ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make a Freezable Read-Only

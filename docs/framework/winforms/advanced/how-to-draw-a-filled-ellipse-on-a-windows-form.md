@@ -2,7 +2,7 @@
 title: "How to: Draw a Filled Ellipse on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "forms, drawing ellipses"
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw a Filled Ellipse on a Windows Form

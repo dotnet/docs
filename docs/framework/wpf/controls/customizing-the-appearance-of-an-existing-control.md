@@ -2,7 +2,7 @@
 title: "Customizing the Appearance of an Existing Control by Creating a ControlTemplate | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "templates [WPF], custom for existing controls"
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Customizing the Appearance of an Existing Control by Creating a ControlTemplate

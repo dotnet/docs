@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "run time, making controls invisible"
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make Your Control Invisible at Run Time

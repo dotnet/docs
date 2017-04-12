@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "CheckBox control [Windows Forms], using to set options"
 ms.assetid: 2ac70498-7e3e-4e07-8901-ccabaeb5fd3e
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Options with Windows Forms CheckBox Controls

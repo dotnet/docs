@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_RangeTwoBytes1"
 ms.assetid: d1ab6767-8334-4d7c-bb99-c837a793ed69
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

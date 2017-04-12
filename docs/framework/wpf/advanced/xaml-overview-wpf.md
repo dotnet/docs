@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
 ms.assetid: a80db4cd-dd0f-479f-a45f-3740017c22e4
 caps.latest.revision: 57
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Overview (WPF)

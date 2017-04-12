@@ -2,7 +2,7 @@
 title: "Fonts (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "fonts [WPF]"
 ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
 caps.latest.revision: 82
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Fonts (WPF)

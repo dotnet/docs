@@ -2,7 +2,7 @@
 title: "Walkthrough: Binding to Data in Hybrid Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "data binding [WPF interoperability]"
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
 caps.latest.revision: 39
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Binding to Data in Hybrid Applications

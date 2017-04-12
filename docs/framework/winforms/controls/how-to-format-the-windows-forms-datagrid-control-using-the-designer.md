@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "formatting [Windows Forms]"
 ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Format the Windows Forms DataGrid Control Using the Designer

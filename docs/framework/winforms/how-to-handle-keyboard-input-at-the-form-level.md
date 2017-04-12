@@ -2,7 +2,7 @@
 title: "How to: Handle Keyboard Input at the Form Level | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "keyboards, form-level input"
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle Keyboard Input at the Form Level

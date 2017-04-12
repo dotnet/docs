@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], sorting contents"
 ms.assetid: c268e387-3d1d-4d86-a940-19f6673c8d06
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control

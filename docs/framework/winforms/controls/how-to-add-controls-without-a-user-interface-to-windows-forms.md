@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "nonvisual controls"
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Controls Without a User Interface to Windows Forms

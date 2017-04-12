@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "ranking, arrays"
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

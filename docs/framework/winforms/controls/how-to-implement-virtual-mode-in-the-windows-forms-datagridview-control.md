@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], large data sets"
 ms.assetid: 98236267-f08e-4918-bcf9-77acf050a3ca
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement Virtual Mode in the Windows Forms DataGridView Control

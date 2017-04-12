@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: fe4dbc87-7b0d-40bf-88c3-5d706ee89a4d
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Generate XML from CSV Files (Visual Basic)

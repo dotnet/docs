@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrNoMethodTakingXArguments2"
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

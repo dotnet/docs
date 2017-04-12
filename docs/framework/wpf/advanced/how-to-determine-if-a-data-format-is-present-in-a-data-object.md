@@ -2,7 +2,7 @@
 title: "How to: Determine if a Data Format is Present in a Data Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "data formats [WPF], determining if present"
 ms.assetid: e487a454-c9fc-4e53-aeaa-c458d059ad4c
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine if a Data Format is Present in a Data Object

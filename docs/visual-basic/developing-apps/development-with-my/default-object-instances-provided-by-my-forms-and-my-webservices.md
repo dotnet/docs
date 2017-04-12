@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "rapid application development (RAD), My.WebServices"
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

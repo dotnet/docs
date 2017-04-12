@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, resizable"
 ms.assetid: babdf198-404c-485d-a914-ed370c6ecd99
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Resizable Windows Form for Data Entry

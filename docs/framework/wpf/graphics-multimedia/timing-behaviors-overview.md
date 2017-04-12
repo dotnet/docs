@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "behaviors, timing"
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Timing Behaviors Overview

@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

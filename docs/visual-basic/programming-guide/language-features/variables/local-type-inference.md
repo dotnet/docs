@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "type inference [Visual Basic]"
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
 caps.latest.revision: 43
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

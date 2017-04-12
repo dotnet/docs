@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "searching, adding search capabilities to ListView control"
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Search Capabilities to a ListView Control

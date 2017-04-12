@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "print preview, custom interface (using designer)"
 ms.assetid: 3fdb2e46-92a3-4e26-bb8d-63a89087b337
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintPreviewControl Control (Windows Forms)

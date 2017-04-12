@@ -2,7 +2,7 @@
 title: "ColorConvertedBitmap Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ColorConvertedBitmap markup extension"
 ms.assetid: 18321c18-c898-4470-93fa-a702b47770c1
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ColorConvertedBitmap Markup Extension

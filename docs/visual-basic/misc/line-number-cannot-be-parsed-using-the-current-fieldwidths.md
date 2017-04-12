@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_MalFormedFixedWidthLine"
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

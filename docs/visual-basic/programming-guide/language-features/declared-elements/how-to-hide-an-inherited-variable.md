@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], hiding inherited"
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

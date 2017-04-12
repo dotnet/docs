@@ -2,7 +2,7 @@
 title: "Drawing, Positioning, and Cloning Images in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "GDI+, positioning images"
 ms.assetid: 09f0c07a-19c0-43b4-90a2-862a10545ce8
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drawing, Positioning, and Cloning Images in GDI+

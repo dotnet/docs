@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: fb58d7c8-b702-4478-ad31-b00cae118882
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Inheriting from a Windows Forms Control with Visual Basic

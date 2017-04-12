@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], manipulating bands"
 ms.assetid: 1ea3470e-480f-4edc-bcbd-51373eca3856
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate Bands in the Windows Forms DataGridView Control

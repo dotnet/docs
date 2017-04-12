@@ -2,7 +2,7 @@
 title: "Globalization and Localization | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Windows Presentation Foundation, localization"
 ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
 caps.latest.revision: 77
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Globalization and Localization

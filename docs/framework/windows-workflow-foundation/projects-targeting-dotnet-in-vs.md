@@ -2,7 +2,7 @@
 title: "Writing Projects Targeting the .NET Framework 3.0 and 3.5 in Visual Studio 2010 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

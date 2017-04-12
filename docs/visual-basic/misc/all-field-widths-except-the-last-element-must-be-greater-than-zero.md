@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_FieldWidthsMustPositive"
 ms.assetid: 41d8c661-a749-4c89-be56-905c6e7c3c9d
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

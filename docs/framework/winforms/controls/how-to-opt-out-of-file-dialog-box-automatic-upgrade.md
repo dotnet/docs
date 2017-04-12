@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "AutoUpgradeEnabled property"
 ms.assetid: 522e482e-cc01-48b1-8d59-9617dc2c4ac1
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Opt Out of File Dialog Box Automatic Upgrade

@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "buttons"
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Create a Button by Using XAML

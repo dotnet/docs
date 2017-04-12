@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], handling errors and exceptions"
 ms.assetid: eddc5bad-9513-47df-ab28-f02d8dff7892
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle Errors and Exceptions that Occur with Databinding

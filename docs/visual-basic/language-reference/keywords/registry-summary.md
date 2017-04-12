@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "registry, Visual Basic"
 ms.assetid: 6e90eb8a-1a4e-4387-8a68-9287dc7875e8
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

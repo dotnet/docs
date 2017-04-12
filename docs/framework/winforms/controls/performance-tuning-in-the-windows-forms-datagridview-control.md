@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "performance tuning, data grids"
 ms.assetid: 6ccbff28-a0ff-41e4-b601-61b31b61851d
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Performance Tuning in the Windows Forms DataGridView Control

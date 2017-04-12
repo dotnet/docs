@@ -2,7 +2,7 @@
 title: "How to: Use a Color Matrix to Set Alpha Values in Images | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], using color matrices for semi-transparent"
 ms.assetid: a27121e6-f7e9-4c09-84e2-f05aa9d2a1bb
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Color Matrix to Set Alpha Values in Images

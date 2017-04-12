@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Visual Basic code, conventions"
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 caps.latest.revision: 48
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

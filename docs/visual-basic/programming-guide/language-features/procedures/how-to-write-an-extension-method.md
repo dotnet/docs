@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

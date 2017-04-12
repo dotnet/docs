@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "parts [WPF], ScrollBar"
 ms.assetid: 066ea45a-e27d-43b0-adfe-cce6934c22f5
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollBar Styles and Templates

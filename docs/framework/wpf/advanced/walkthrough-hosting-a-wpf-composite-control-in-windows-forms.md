@@ -2,7 +2,7 @@
 title: "Walkthrough: Hosting a WPF Composite Control in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "hosting WPF content in Windows Forms"
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 caps.latest.revision: 34
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting a WPF Composite Control in Windows Forms

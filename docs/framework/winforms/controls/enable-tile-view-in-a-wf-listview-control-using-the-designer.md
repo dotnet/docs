@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tiling, Windows Forms, controls"
 ms.assetid: 12f0816a-52b8-41ee-a6d9-ded3a8a5817a
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Tile View in a Windows Forms ListView Control Using the Designer

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "shortcut menus, for background processes"
 ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component

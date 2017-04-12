@@ -1,15 +1,26 @@
 ---
-title: Handling and throwing exceptions in .NET
-description: Understand how to use exceptions in .NET
-keywords: .NET, .NET Core
-author: mairaw
-ms.author: mairaw
-ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
+title: "Handling and Throwing Exceptions | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
 ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: bf116df6-0042-46bf-be13-b69864816210
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "exceptions [.NET Framework], handling"
+  - "runtime, exceptions"
+  - "filtering exceptions"
+  - "errors [.NET Framework], exceptions"
+  - "exceptions [.NET Framework], throwing"
+  - "exceptions [.NET Framework]"
+  - "common language runtime, exceptions"
+ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
+caps.latest.revision: 16
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 # Handling and throwing exceptions in .NET
 

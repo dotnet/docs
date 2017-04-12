@@ -2,7 +2,7 @@
 title: "How to: Detect Whether the WPF Plug-In for Firefox Is Installed | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "detecting whether the WPF plug-in for Firefox is installed [WPF]"
 ms.assetid: 5f839373-e3fb-44f1-88ad-4a0761f02189
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Detect Whether the WPF Plug-In for Firefox Is Installed

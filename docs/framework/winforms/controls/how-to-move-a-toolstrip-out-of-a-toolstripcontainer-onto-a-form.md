@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, parenting ToolStrip controls"
 ms.assetid: a1c94a7f-6fc5-4e4c-84cf-ff11dc573d33
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Move a ToolStrip Out of a ToolStripContainer onto a Form

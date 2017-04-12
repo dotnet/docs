@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "operator procedures"
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

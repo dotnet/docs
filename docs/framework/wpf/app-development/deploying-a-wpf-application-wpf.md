@@ -2,7 +2,7 @@
 title: "Deploying a WPF Application (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "deployment [WPF], applications"
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Deploying a WPF Application (WPF)

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Windows Forms dialog boxes, tabs"
 ms.assetid: 2b4ea784-a39d-463c-81d8-af74ce068476
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TabControl Control Overview (Windows Forms)

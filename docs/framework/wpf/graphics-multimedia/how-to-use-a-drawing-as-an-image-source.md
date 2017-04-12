@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "drawings, as image sources"
 ms.assetid: dcf71c7b-9e86-4b8e-8e39-0d0ce0389ef4
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Drawing as an Image Source

@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "3-D objects, scaling"
 ms.assetid: f3fdfe33-f7dc-44b0-84a5-e43b89947f35
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Transform the Scale of a 3-D Model

@@ -2,7 +2,7 @@
 title: "Optimizing Performance: Taking Advantage of Hardware | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "software rendering pipeline"
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Optimizing Performance: Taking Advantage of Hardware

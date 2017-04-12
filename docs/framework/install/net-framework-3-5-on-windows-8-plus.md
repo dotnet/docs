@@ -2,7 +2,7 @@
 title: "Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,7 @@
 title: "Attributes in Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "attributes [Windows Forms], classes"
 ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Attributes in Windows Forms Controls

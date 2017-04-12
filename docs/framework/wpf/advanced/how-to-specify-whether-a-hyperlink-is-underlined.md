@@ -2,7 +2,7 @@
 title: "How to: Specify Whether a Hyperlink is Underlined | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Hyperlink control type"
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify Whether a Hyperlink is Underlined

@@ -2,7 +2,7 @@
 title: "How to: Manipulate a FlowDocument through the Blocks Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "FlowDocuments, manipulating through Blocks property"
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate a FlowDocument through the Blocks Property

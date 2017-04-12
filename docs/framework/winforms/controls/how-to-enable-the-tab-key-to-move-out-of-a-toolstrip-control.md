@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], moving from"
 ms.assetid: 40f9e88b-09a3-428e-8da8-c00bb65079c6
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable the TAB Key to Move Out of a ToolStrip Control

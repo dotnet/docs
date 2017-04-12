@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "constituent controls"
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Expose Properties of Constituent Controls

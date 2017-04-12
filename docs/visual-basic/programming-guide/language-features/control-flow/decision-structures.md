@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "conditional statements, decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

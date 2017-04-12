@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "RichTextBox control [WPF], how-to topics"
 ms.assetid: 36e9f98e-f968-42d8-adb6-9e78c814aec0
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RichTextBox How-to Topics

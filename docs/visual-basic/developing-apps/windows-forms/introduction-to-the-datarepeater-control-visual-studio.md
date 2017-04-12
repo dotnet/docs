@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataRepeater"
 ms.assetid: 78a52a1d-65f0-4ecb-97ff-53bc114300c5
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

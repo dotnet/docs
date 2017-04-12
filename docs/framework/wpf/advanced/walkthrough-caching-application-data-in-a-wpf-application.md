@@ -2,7 +2,7 @@
 title: "Walkthrough: Caching Application Data in a WPF Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "caching [WPF]"
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Caching Application Data in a WPF Application

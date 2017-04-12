@@ -2,7 +2,7 @@
 title: "How to: Discover Whether a Print Job Can Be Printed At This Time of Day | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "print jobs, timing"
 ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Discover Whether a Print Job Can Be Printed At This Time of Day

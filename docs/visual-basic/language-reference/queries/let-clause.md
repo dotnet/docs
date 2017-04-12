@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Let statement"
 ms.assetid: 981aa516-16eb-4c53-b1f1-5aa3e82f316e
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

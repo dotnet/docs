@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "background operations"
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Implementing a Form That Uses a Background Operation

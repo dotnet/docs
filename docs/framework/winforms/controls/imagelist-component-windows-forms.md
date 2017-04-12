@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "image controls"
 ms.assetid: 83b48634-782b-464d-9b7d-568dc6e0bef2
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ImageList Component (Windows Forms)

@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "operator overloading"
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

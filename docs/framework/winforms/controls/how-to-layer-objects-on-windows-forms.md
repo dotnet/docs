@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "z-order"
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Layer Objects on Windows Forms

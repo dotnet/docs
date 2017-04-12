@@ -2,7 +2,7 @@
 title: "How to: Make an Object Follow the Mouse Pointer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "cursor (mouse pointer), making objects follow"
 ms.assetid: 50b20415-14bc-405c-baf3-2fb254fffde3
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make an Object Follow the Mouse Pointer

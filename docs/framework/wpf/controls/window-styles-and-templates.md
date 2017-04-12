@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "states [WPF], Window"
 ms.assetid: 2dfdf025-347b-4342-bf28-95206c273f35
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Window Styles and Templates

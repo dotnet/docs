@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "data grids, formatting data"
 ms.assetid: a6e72c70-ce18-425f-828d-d57be6f96ab6
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize Data Formatting in the Windows Forms DataGridView Control

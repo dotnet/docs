@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "localization, about localization"
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 caps.latest.revision: 39
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Globalization and Localization Overview

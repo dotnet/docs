@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "text files, reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

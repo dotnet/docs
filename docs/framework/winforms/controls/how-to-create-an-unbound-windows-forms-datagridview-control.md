@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data [Windows Forms], unbound"
 ms.assetid: b5d4b47d-9a28-4d88-9dba-0a3c90fba71d
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create an Unbound Windows Forms DataGridView Control

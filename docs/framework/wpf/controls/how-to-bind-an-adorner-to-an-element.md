@@ -2,7 +2,7 @@
 title: "How to: Bind an Adorner to an Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "adorners, binding to specified UIElements"
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind an Adorner to an Element

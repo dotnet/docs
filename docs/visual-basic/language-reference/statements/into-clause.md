@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Into keyword"
 ms.assetid: e1534550-8f4b-4978-b043-fad7b8fd79ac
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

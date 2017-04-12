@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "types [Windows Forms], binding controls to"
 ms.assetid: 94faeebb-d2bc-45d6-86d7-96a42661b43d
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind a Windows Forms Control to a Type

@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Char data type, character literals"
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

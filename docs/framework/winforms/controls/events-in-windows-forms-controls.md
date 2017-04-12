@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], events overview (using code)"
 ms.assetid: 7e3d1379-87aa-437c-afce-c99454eff30e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Events in Windows Forms Controls

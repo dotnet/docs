@@ -2,7 +2,7 @@
 title: "Hit Testing in the Visual Layer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "visual layer, hit testing functionality"
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
 caps.latest.revision: 42
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Hit Testing in the Visual Layer

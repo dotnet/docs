@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms controls, debugging"
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Troubleshooting Control and Component Authoring

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Slider control [WPF]"
 ms.assetid: fb037e2a-0002-458b-9e6b-321623fe72a7
 caps.latest.revision: 71
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Slider

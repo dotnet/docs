@@ -2,7 +2,7 @@
 title: "How to: Create an Add-In That Returns a UI | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "add-in [WPF], returns a UI"
 ms.assetid: 57f274b7-4c66-4b72-92eb-81939a393776
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create an Add-In That Returns a UI

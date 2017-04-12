@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Windows Forms controls, size"
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Resize Controls on Windows Forms

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "combo boxes, about combo boxes"
 ms.assetid: a58b393f-a614-45d1-8961-857a024b5acd
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ComboBox Control Overview (Windows Forms)

@@ -2,7 +2,7 @@
 title: "How to: Navigate Through the Objects in a Data CollectionView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "navigating through objects in data CollectionView"
 ms.assetid: fcd37590-bce1-4ac9-8b74-3b96c7458b8a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Navigate Through the Objects in a Data CollectionView

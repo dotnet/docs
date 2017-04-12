@@ -2,11 +2,10 @@
 title: "Event-based Asynchronous Pattern Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -21,8 +20,8 @@ helpviewer_keywords:
   - "AsyncCompletedEventArgs class"
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Event-based Asynchronous Pattern Overview

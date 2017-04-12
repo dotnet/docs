@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "Transforms, about Transforms"
 ms.assetid: 712b543f-d8b2-4dcf-ba2c-f7921c61c6fd
 caps.latest.revision: 50
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Transformations

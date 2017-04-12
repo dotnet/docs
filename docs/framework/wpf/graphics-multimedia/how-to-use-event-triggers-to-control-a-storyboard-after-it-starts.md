@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Storyboards, controlling after start"
 ms.assetid: 3b115594-6a93-4972-b24d-61aa16f1c15f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Event Triggers to Control a Storyboard After It Starts

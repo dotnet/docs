@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "colors, showing palettes"
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Show a Color Palette with the ColorDialog Component

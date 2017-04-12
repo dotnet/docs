@@ -2,7 +2,7 @@
 title: "How to: Use Compositing Mode to Control Alpha Blending | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "colors, controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Compositing Mode to Control Alpha Blending

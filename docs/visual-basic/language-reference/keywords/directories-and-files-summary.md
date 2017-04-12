@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "files [Visual Basic], summary"
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "Base Elements How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "base elements"
 ms.assetid: 09f3a88d-b132-4505-a8bb-55cbfc6bb55a
 caps.latest.revision: 75
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Base Elements How-to Topics

@@ -2,7 +2,7 @@
 title: "WPF Windows Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,8 @@ helpviewer_keywords:
   - "displaying XAML pages"
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Windows Overview

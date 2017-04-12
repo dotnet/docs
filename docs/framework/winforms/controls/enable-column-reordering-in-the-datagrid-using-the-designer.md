@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: d82bd69c-6799-4439-a32c-91139c5901d1
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "string conversion, Visual Basic"
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

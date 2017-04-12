@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "nested structures"
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "hiding menu items"
 ms.assetid: 418a768f-808a-44cd-8cef-f4e161883621
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hide ToolStripMenuItems

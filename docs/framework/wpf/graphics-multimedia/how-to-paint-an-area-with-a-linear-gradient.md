@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "painting, with linear gradients"
 ms.assetid: 00e0cd04-48c0-4ec5-850e-d321beb37a34
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with a Linear Gradient

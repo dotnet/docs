@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "option lists in Windows Forms"
 ms.assetid: 5bc064c7-bc1f-4b62-8f4b-252f864b118e
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms Controls Used to List Options

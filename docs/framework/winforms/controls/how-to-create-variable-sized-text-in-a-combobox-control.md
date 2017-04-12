@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ComboBox control [Windows Forms], drawing custom text"
 ms.assetid: ce39b9ea-e626-49fe-bd5a-f567f6d157df
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Variable Sized Text in a ComboBox Control

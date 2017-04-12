@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "parsing, file paths [Visual Basic]"
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

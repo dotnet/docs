@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "_MYTYPE"
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

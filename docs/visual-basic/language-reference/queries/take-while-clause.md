@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Take While statement"
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

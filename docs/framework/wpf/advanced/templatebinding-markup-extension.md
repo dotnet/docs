@@ -2,7 +2,7 @@
 title: "TemplateBinding Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "TemplateBinding markup extensions"
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TemplateBinding Markup Extension

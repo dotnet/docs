@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms], about TableLayoutPanel control"
 ms.assetid: 337661c8-61cb-44ee-93e0-3662bddec327
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TableLayoutPanel Control Overview

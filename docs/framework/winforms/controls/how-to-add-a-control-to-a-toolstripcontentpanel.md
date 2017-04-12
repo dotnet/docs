@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "ToolStripContentPanel [Windows Forms], adding controls"
 ms.assetid: fa410960-bf1a-42fc-80e8-f2e27fb3dbb8
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add a Control to a ToolStripContentPanel

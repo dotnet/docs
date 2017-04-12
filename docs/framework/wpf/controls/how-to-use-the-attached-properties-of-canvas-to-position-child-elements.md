@@ -2,7 +2,7 @@
 title: "How to: Use the Attached Properties of Canvas to Position Child Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Canvas control, attached properties"
 ms.assetid: 48f1d25d-3820-4107-a4cc-d6c1e5664a44
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use the Attached Properties of Canvas to Position Child Elements

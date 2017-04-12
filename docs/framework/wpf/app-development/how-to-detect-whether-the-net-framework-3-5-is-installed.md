@@ -2,7 +2,7 @@
 title: "How to: Detect Whether the .NET Framework 3.5 Is Installed | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "determining whether.NET Framework 3.5 is installed [WPF]"
 ms.assetid: 8556a9d2-1eb8-48ef-919c-5baf22a2a9a2
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Detect Whether the .NET Framework 3.5 Is Installed

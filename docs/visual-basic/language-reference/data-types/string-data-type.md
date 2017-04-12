@@ -29,8 +29,8 @@ helpviewer_keywords:
   - "identifier type characters, $"
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

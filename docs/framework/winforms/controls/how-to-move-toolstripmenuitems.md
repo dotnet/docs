@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "ToolStripMenuItems, cutting and pasting"
 ms.assetid: cab9e03e-4edd-4c25-b3e3-bd1edc602bd9
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Move ToolStripMenuItems

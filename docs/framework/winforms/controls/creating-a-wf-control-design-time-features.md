@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], controls"
 ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
 caps.latest.revision: 46
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features

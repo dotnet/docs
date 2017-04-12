@@ -2,7 +2,7 @@
 title: "Windows Forms Visual Inheritance | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Windows Forms, inheritance"
 ms.assetid: 857eb737-3602-4d49-bd8b-f70d33ace345
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms Visual Inheritance

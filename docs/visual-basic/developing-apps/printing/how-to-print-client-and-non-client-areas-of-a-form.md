@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "non-client area, printing"
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

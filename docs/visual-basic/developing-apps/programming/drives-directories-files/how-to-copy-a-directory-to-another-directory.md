@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "directories [Visual Basic], copying"
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

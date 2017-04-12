@@ -2,7 +2,7 @@
 title: "How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], adding nodes"
 ms.assetid: 35bf1750-045e-4ec5-97cb-b47b0dbdaa2c
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer

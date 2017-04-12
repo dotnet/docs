@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data binding, BindingSource component"
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # BindingSource Component Overview

@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "Me keyword, as object variable"
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Geometry objects, hit tests on visual objects"
 ms.assetid: 6c8bdbf2-19e0-4fbb-bf89-c1252b2ebc61
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hit Test Using Geometry as a Parameter

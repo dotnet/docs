@@ -2,7 +2,7 @@
 title: "The Ink Object Model: Windows Forms and COM versus WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "events, tablet pen"
 ms.assetid: 577835be-b145-4226-8570-1d309e9b3901
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # The Ink Object Model: Windows Forms and COM versus WPF

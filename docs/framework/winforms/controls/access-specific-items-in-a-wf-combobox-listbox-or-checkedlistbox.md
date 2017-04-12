@@ -2,7 +2,7 @@
 title: "How to: Access Specific Items in a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "CheckedListBox control [Windows Forms], accessing items"
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Access Specific Items in a Windows Forms ComboBox, ListBox, or CheckedListBox Control

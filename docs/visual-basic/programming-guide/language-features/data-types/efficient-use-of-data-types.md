@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "ChrW function, preferred to Chr"
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

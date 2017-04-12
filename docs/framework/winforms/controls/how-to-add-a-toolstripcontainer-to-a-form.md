@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStripContainer control [Windows Forms], adding to Windows Forms"
 ms.assetid: d0f55095-a833-453e-be5a-644906d75d54
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add a ToolStripContainer to a Form

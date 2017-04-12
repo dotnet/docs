@@ -2,7 +2,7 @@
 title: "Routed Events Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "bubbling"
 ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Routed Events Overview

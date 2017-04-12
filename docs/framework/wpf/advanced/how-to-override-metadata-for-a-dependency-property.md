@@ -2,7 +2,7 @@
 title: "How to: Override Metadata for a Dependency Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "overriding metadata for dependency properties"
 ms.assetid: f90f026e-60d8-428a-933d-edf0dba4441f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Override Metadata for a Dependency Property

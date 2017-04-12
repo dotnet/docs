@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "shortcut menus"
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ContextMenuStrip Control

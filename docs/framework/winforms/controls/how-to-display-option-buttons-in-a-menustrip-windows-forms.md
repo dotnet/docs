@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "option buttons [Windows Forms], displaying in MenuStrip"
 ms.assetid: 8b596af2-9ff8-4f7b-93d7-cba830e167f4
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Option Buttons in a MenuStrip (Windows Forms)

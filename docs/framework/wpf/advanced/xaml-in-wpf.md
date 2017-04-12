@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Extensible Application Markup Language"
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 caps.latest.revision: 79
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML in WPF

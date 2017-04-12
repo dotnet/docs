@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "shared components"
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

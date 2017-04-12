@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "#ExternalSource directive"
 ms.assetid: 243bc6a2-34c3-4eeb-a776-9fd2bf988149
 caps.latest.revision: 160
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

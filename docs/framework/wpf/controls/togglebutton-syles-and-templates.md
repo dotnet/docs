@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "parts [WPF], ToggleButton"
 ms.assetid: 54f23f30-4bcb-4f09-8ce4-376a13a255a1
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToggleButton Syles and Templates

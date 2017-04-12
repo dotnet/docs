@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "cells, getting and setting current"
 ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get and Set the Current Cell in the Windows Forms DataGridView Control

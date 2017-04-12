@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "transparency, Windows Forms custom controls"
 ms.assetid: 32433e63-f4e9-4305-9857-6de3edeb944a
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Give Your Control a Transparent Background

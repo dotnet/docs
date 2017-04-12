@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "FileDialog class"
 ms.assetid: 85a8fb62-c7d9-4a30-9b74-1cd10efe6ccb
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FileDialog Class

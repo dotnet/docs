@@ -2,7 +2,7 @@
 title: "How to: Diagnose Problematic Print Job | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "print jobs, diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Diagnose Problematic Print Job

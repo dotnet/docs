@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFileSystem_FileAlreadyOpen1"
 ms.assetid: e1cbc46a-1db0-412d-8109-31342ec9d327
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

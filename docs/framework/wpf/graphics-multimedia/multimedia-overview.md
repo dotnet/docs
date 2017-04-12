@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "media"
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Multimedia Overview

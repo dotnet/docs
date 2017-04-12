@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, column fill mode"
 ms.assetid: b4ef7411-ebf4-4e26-bb33-aecec90de80c
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Column Fill Mode in the Windows Forms DataGridView Control

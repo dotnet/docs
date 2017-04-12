@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "grids, resizing cells to fit content"
 ms.assetid: 63d770dc-b3f5-462b-901a-3125b2753792
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control

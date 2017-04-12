@@ -2,7 +2,7 @@
 title: "mc:ProcessContent Attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "XAML, mc:ProcessContent attribute"
 ms.assetid: 2689b2c8-b4dc-4b71-b9bd-f95e619122d7
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # mc:ProcessContent Attribute

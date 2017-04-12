@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DateTimePicker control [Windows Forms], displaying time"
 ms.assetid: 0c1c8b40-1b50-4301-a90c-39516775ccb1
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Time with the DateTimePicker Control

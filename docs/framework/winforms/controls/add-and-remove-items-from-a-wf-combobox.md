@@ -2,7 +2,7 @@
 title: "How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "CheckedListBox control [Windows Forms], adding and removing items"
 ms.assetid: 7224c8d2-4118-443e-ae1e-d7c17d1e69ee
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control

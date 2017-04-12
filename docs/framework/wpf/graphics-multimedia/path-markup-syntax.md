@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "XAML, object element usage"
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Path Markup Syntax

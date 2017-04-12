@@ -2,7 +2,7 @@
 title: "How to: Implement Validation with the DataGrid Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "validation [WPF], DataGrid"
 ms.assetid: ec6078a8-1e42-4648-b414-f4348e81bda1
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement Validation with the DataGrid Control

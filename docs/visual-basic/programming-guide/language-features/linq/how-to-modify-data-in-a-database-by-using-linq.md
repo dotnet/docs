@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

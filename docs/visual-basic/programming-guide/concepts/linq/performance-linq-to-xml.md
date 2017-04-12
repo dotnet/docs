@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 155557f6-5d7e-4784-9d00-f42092a28857
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Performance (LINQ to XML) (Visual Basic)

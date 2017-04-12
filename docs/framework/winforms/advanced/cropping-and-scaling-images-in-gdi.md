@@ -2,7 +2,7 @@
 title: "Cropping and Scaling Images in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "images [Windows Forms], compression"
 ms.assetid: ad5daf26-005f-45bc-a2af-e0e97777a21a
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Cropping and Scaling Images in GDI+

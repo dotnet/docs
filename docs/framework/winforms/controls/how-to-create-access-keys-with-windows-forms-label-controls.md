@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "access keys, Windows Forms"
 ms.assetid: 5ee8f823-80be-4a4f-96a4-412671e2e306
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Access Keys with Windows Forms Label Controls

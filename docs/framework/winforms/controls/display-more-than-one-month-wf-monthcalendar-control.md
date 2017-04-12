@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display More than One Month in the Windows Forms MonthCalendar Control

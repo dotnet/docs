@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], click events"
 ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Respond to Clicks in the Windows Forms DataGrid Control

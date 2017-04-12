@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

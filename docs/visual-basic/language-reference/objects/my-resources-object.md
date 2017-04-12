@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "My.Resources object"
 ms.assetid: 34c3f2dc-7b87-432c-9d5f-17ea666bb266
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

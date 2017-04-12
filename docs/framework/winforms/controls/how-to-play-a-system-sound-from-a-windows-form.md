@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], sounds"
 ms.assetid: afb206ff-4824-4804-a8d4-185bf5ad8e7c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Play a System Sound from a Windows Form

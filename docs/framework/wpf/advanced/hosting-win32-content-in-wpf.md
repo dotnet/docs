@@ -2,7 +2,7 @@
 title: "Hosting Win32 Content in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "interoperability [WPF], Win32"
 ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Hosting Win32 Content in WPF

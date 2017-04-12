@@ -2,7 +2,7 @@
 title: "Developing Client Applications with the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "client/server applications, Windows applications"
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Developing Client Applications with the .NET Framework

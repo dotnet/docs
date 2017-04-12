@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ScaleTransform class"
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Scale an Element

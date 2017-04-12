@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], disabling button cells"
 ms.assetid: 5c344d01-013a-4a6b-8f8d-62ec9321d81e
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control

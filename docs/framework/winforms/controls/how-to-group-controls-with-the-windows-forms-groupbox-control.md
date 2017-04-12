@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, grouping"
 ms.assetid: 0bda316d-bd2a-43aa-ac73-342453303169
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Controls with the Windows Forms GroupBox Control

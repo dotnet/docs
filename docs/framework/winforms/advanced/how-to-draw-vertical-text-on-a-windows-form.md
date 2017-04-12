@@ -2,7 +2,7 @@
 title: "How to: Draw Vertical Text on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "text [Windows Forms], vertical text"
 ms.assetid: 717a6131-00f6-4373-b574-9894e8317799
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw Vertical Text on a Windows Form

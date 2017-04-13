@@ -178,8 +178,8 @@ manager: "wpickett"
 |`$` *number*|Substitutes the substring matched by group *number*.|`\b(\w+)(\s)(\w+)\b`|`$3$2$1`|"one two"|"two one"|  
 |`${` *name* `}`|Substitutes the substring matched by the named group *name*.|`\b(?<word1>\w+)(\s)(?<word2>\w+)\b`|`${word2} ${word1}`|"one two"|"two one"|  
 |`$$`|Substitutes a literal "$".|`\b(\d+)\s?USD`|`$$$1`|"103 USD"|"$103"|  
-|`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"**$1.30\*\*"|  
-|`$``|Substitutes all the text of the input string before the match.|`B+`|`$``|"AABBCC"|"AAAACC"|  
+|`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
+|<code>$`</code>|Substitutes all the text of the input string before the match.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
 |`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|AACCDD|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  
@@ -192,7 +192,7 @@ manager: "wpickett"
   
  You can specify an inline option in two ways:  
   
--   By using the [miscellaneous construct](miscellaneous-constructs-in-regular-expressions)`(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
+-   By using the [miscellaneous construct](miscellaneous-constructs-in-regular-expressions.md) `(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
   
 -   By using the [grouping construct](grouping-constructs-in-regular-expressions.md)`(?imnsx-imnsx:`*subexpression*`)`, which defines options for the specified group only.  
   

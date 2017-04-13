@@ -192,7 +192,7 @@ manager: "wpickett"
   
  You can specify an inline option in two ways:  
   
--   By using the [miscellaneous construct](miscellaneous-constructs-in-regular-expressions.md)`(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
+-   By using the [miscellaneous construct](miscellaneous-constructs-in-regular-expressions.md) `(?imnsx-imnsx)`, where a minus sign (-) before an option or set of options turns those options off. For example, `(?i-mn)` turns case-insensitive matching (`i`) on, turns multiline mode (`m`) off, and turns unnamed group captures (`n`) off. The option applies to the regular expression pattern from the point at which the option is defined, and is effective either to the end of the pattern or to the point where another construct reverses the option.  
   
 -   By using the [grouping construct](grouping-constructs-in-regular-expressions.md)`(?imnsx-imnsx:`*subexpression*`)`, which defines options for the specified group only.  
   

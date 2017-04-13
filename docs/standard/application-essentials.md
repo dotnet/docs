@@ -38,8 +38,8 @@ This section of the .NET Framework documentation provides information about basi
  [Exceptions](../../docs/standard/exceptions/index.md)  
  Describes error handling provided by the .NET Framework and the fundamentals of handling exceptions.  
   
- [File and Stream I-O](../../docs/standard/io/file-and-stream-i-o.md)  
- Explains how you can perform synchronous and asynchronous file and data stream access, and how to use to isolated storage.  
+ [File and Stream I-O](../../docs/standard/io/index.md)  
+ Explains how you can perform synchronous and asynchronous file and data stream access and how to use to isolated storage.  
   
  [Dates, Times, and Time Zones](../../docs/standard/datetime/index.md)  
  Describes how to work with time zones and time zone conversions in time zone-aware applications.  

@@ -14,7 +14,7 @@
 ## [Base Types](base-types/)  
 # [.NET Class libraries](class-libraries.md)
 # [Portability Analyzer](portability-analyzer.md)
-# [Handling and throwing exceptions](exceptions)
+# [Handling and throwing exceptions](exceptions/)
 # [.NET Assembly File Format](assembly-format.md)
 # [Garbage Collection](garbage-collection/)
 # [Generic types](generics.md)

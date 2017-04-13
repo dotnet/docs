@@ -18,7 +18,6 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
 # How to: Save time zones to an embedded resource
 
 A time zone-aware application often requires the presence of a particular time zone. However, because the availability of individual <xref:System.TimeZoneInfo> objects depends on information stored in the local system's registry, even customarily available time zones may be absent. In addition, information about custom time zones instantiated by using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method is not stored with other time zone information in the registry. To ensure that these time zones are available when they are needed, you can save them by serializing them, and later restore them by deserializing them.

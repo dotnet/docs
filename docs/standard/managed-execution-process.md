@@ -116,6 +116,6 @@ manager: "wpickett"
  [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)   
  [Security](../../docs/standard/security/index.md)   
  [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)   
- [Deployment](../../docs/framework/deployment/net-framework-and-applications.md)   
+ [Deployment](../../docs/framework/deployment/net-framework-applications.md)   
  [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)   
  [Application Domains](../../docs/framework/app-domains/application-domains.md)
